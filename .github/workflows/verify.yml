@@ -1,0 +1,46 @@
+name: verify artifact
+
+# Every push and every tag. The tag run is the one that matters: a tag is the pin players
+# install, so a tag whose build id disagrees with version.txt, or whose artifact does not
+# parse, is a release that would break people silently.
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # luaparse is the only dependency, and the repo is a release tree rather than a project,
+      # so it is installed into the job instead of carrying a lockfile that would need its own
+      # upkeep on every runner bump.
+      - name: install parser
+        run: npm install --no-save --no-package-lock luaparse@0.3.1
+
+      - name: verify artifact
+        run: node ci/verify-artifact.mjs
+
+      - name: summary
+        if: always()
+        run: |
+          {
+            echo "### artifact check"
+            echo ""
+            echo "| field | value |"
+            echo "|---|---|"
+            echo "| build | \`$(cat version.txt)\` |"
+            echo "| bytes | $(wc -c < acbx.lua) |"
+            echo "| sha256 | \`$(sha256sum acbx.lua | cut -d' ' -f1)\` |"
+            echo "| ref | \`${GITHUB_REF_TYPE:-} ${GITHUB_REF_NAME:-}\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
