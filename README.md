@@ -10,8 +10,11 @@ loads are cached and a bad push cannot reach everyone at once.
 Pinned to a release (recommended - this is what you copy to share):
 
 ```lua
-loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/Cb2O/acbx@v0.996/acbx.lua"))()
+loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/Cb2O/acbx@v261101-2240/acbx.lua"))()
 ```
+
+Every release gets its own tag under [Releases](https://github.com/Cb2O/acbx/releases); copy the
+line for the one you want instead of editing the tag by hand.
 
 `main` tracks the newest push instead. jsDelivr caches branch refs for a while, so a fresh
 release can take up to an hour to appear there; the pinned tag is immediate.
