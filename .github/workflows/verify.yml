@@ -6,7 +6,9 @@ name: verify artifact
 on:
   push:
     branches: [main]
-    tags: ["v*"]
+    # Release tags are the dotted build id (0.998), not v0.998 - a `v*` filter alone never
+    # matched them, so the one run that checks the pin a player installs never fired.
+    tags: ["v*", "[0-9]*"]
   pull_request:
 
 permissions:

@@ -33,9 +33,13 @@ const blob = fs.readFileSync(blobPath);
 const text = blob.toString("utf8");
 const version = fs.readFileSync(versionPath, "utf8").trim();
 
-// 1. the version file has to look like a build id, because everything below compares to it
-if (!/^v\d{6}-\d{4}$/.test(version)) {
-    fail(`version.txt is "${version}", which is not a build id (vYYMMDD-HHMM)`);
+// 1. the version file has to be a release version, because everything below compares to it.
+//
+// Releases are dotted (0.998). The timestamp ids the build uses in development (vYYMMDD-HHMM)
+// are what must never reach this repo, so they fail here rather than being accepted as one of
+// two valid shapes.
+if (!/^\d+\.\d+$/.test(version)) {
+    fail(`version.txt is "${version}", which is not a release version (0.998)`);
 } else {
     ok(`version.txt ${version}`);
 }
@@ -62,10 +66,12 @@ const titles = [...text.matchAll(/"(ACB Rebirth v[^"]*)"/g)].map((m) => m[1]);
 
 if (titles.length !== 1) {
     fail(`expected exactly one window title literal, found ${titles.length}`);
-} else if (!/^ACB Rebirth v\d+\.\d+/.test(titles[0])) {
-    fail(`window title is "${titles[0]}", which is not a release version (v<major>.<minor>)`);
-} else if (titles[0].endsWith(version)) {
+} else if (/v\d{6}-\d{4}/.test(titles[0])) {
     fail(`window title is "${titles[0]}" - that is the dev stamp, not a release version`);
+} else if (titles[0] !== `ACB Rebirth v${version}`) {
+    // The literal is bumped by hand on every release, so a title left behind is a release that
+    // tells players the wrong version - and it is also how the dev stamp used to slip through.
+    fail(`window title is "${titles[0]}", expected "ACB Rebirth v${version}"`);
 } else {
     ok(`window title "${titles[0]}"`);
 }
