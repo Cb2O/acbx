@@ -33,13 +33,20 @@ const blob = fs.readFileSync(blobPath);
 const text = blob.toString("utf8");
 const version = fs.readFileSync(versionPath, "utf8").trim();
 
-// 1. the version file has to be a release version, because everything below compares to it.
+// 1. the version file has to name this build, because everything below compares to it.
 //
-// Releases are dotted (0.998). The timestamp ids the build uses in development (vYYMMDD-HHMM)
-// are what must never reach this repo, so they fail here rather than being accepted as one of
-// two valid shapes.
-if (!/^\d+\.\d+$/.test(version)) {
-    fail(`version.txt is "${version}", which is not a release version (0.998)`);
+// Two shapes are legal. The older one is a dotted release (0.998) and the tags still carry a few
+// of those. The current one is the build id (v261102-1750): the release a player sees is the
+// dotted number in the window title, and the id is what the updater compares. What must never
+// reach this repo is `dev` - a chunk that reports itself as a development build to every session
+// that loads it.
+const isDotted = /^\d+\.\d+$/.test(version);
+const isBuildId = /^v\d{6}-\d{4}$/.test(version);
+
+if (version === "dev") {
+    fail("version.txt is \"dev\" - that is the workshop stamp, not a build");
+} else if (!isDotted && !isBuildId) {
+    fail(`version.txt is "${version}", which is neither a release version (0.998) nor a build id (v261102-1750)`);
 } else {
     ok(`version.txt ${version}`);
 }
@@ -64,16 +71,25 @@ if (ids.length !== 1) {
 // build protects it from the string encoder.
 const titles = [...text.matchAll(/"(ACB Rebirth v[^"]*)"/g)].map((m) => m[1]);
 
+// The title shows the release a player is on (v1.0); version.txt carries the build id. They are
+// two different numbers on purpose, so the compare is: the title must be a dotted release, and on
+// a dotted version.txt it must be exactly that number.
 if (titles.length !== 1) {
     fail(`expected exactly one window title literal, found ${titles.length}`);
-} else if (/v\d{6}-\d{4}/.test(titles[0])) {
-    fail(`window title is "${titles[0]}" - that is the dev stamp, not a release version`);
-} else if (titles[0] !== `ACB Rebirth v${version}`) {
-    // The literal is bumped by hand on every release, so a title left behind is a release that
-    // tells players the wrong version - and it is also how the dev stamp used to slip through.
-    fail(`window title is "${titles[0]}", expected "ACB Rebirth v${version}"`);
 } else {
-    ok(`window title "${titles[0]}"`);
+    const shown = titles[0].replace(/^ACB Rebirth v/, "");
+
+    if (/^\d{6}-\d{4}$/.test(shown)) {
+        fail(`window title is "${titles[0]}" - that is the dev stamp, not a release version`);
+    } else if (shown === "dev") {
+        fail(`window title is "${titles[0]}" - that is the workshop stamp`);
+    } else if (isDotted && shown !== version) {
+        fail(`window title is "${titles[0]}", expected "ACB Rebirth v${version}"`);
+    } else if (!/^\d+(\.\d+)*$/.test(shown)) {
+        fail(`window title is "${titles[0]}" - the release shown must be a dotted number (v1.0)`);
+    } else {
+        ok(`window title "${titles[0]}"`);
+    }
 }
 
 // 4. it has to still be Lua. A truncated or half-written upload usually fails here and
