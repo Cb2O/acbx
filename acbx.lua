@@ -5,7 +5,7 @@ local cache = {}
 for i = 1, #A do
 M[string.sub(A, i, i)] = i - 1
 end
-local K = string.char(108, 52, 117, 53, 98, 103, 112)
+local K = string.char(120, 54, 55, 106, 118, 112, 56)
 local KL = #K
 local function xor(a, b)
 local r, m = 0, 1
@@ -42,67 +42,67 @@ return built
 end
 end)()
 
-local fqs = "ACB Rebirth v1.03"
+local mk = "ACB Rebirth v1.03"
 
-local function mr(zaqn)
-for wd, hq in ipairs(zaqn:GetDescendants()) do
-if hq:IsA(_d("OFENQS4GEglY")) and hq.Text == fqs then
-local vnt = hq
-while vnt and not vnt:IsA(_d("P1cHUAcJNxld")) do
-vnt = vnt.Parent
+local function eew(hd)
+for mol, lyl in ipairs(hd:GetDescendants()) do
+if lyl:IsA(_d("LFNPHjoRWh1a")) and lyl.Text == mk then
+local xm = lyl
+while xm and not xm:IsA(_d("K1VFDxMefw1f")) do
+xm = xm.Parent
 end
-return vnt
+return xm
 end
 end
 end
 
-local function ag()
-local mbof = game:GetService(_d("PFgUTAcVAw")).LocalPlayer
+local function jj()
+local llzm = game:GetService(_d("KFpWExMCSw")).LocalPlayer
 
-for fy, miub in ipairs({
-(gethui and gethui() or game:GetService(_d("L1sHUCUSGQ"))),
-game:GetService(_d("L1sHUCUSGQ")),
-mbof and mbof:FindFirstChild(_d("PFgUTAcVNxld")),
+for rqw, su in ipairs({
+(gethui and gethui() or game:GetService(_d("O1lFDzEFUQ"))),
+game:GetService(_d("O1lFDzEFUQ")),
+llzm and llzm:FindFirstChild(_d("KFpWExMCfw1f")),
 }) do
-for hzw, bz in ipairs(miub:GetChildren()) do
+for fm, nntv in ipairs(su:GetChildren()) do
 
-if bz:IsA(_d("P1cHUAcJNxld")) then
-local ij = bz:FindFirstChild(_d("LlUGUA"))
+if nntv:IsA(_d("K1VFDxMefw1f")) then
+local jfiw = nntv:FindFirstChild(_d("OldEDw"))
 
-if ij and ij:FindFirstChild(_d("P10RUAAGAg")) and ij:FindFirstChild(_d("L1sbQQcJBA")) then
-return bz
+if jfiw and jfiw:FindFirstChild(_d("K19TDxQRSg")) and jfiw:FindFirstChild(_d("O1lZHhMeTA")) then
+return nntv
 end
 end
 end
 end
 end
 
-if ag() and getgenv().ACBXAllowReload ~= true then
-local rkd = getgenv().ACBXWindow
-local ttmh = false
-local fyca = false
+if jj() and getgenv().ACBXAllowReload ~= true then
+local ml = getgenv().ACBXWindow
+local cx = false
+local hit = false
 
-if rkd and rkd.Dialog then
+if ml and ml.Dialog then
 pcall(function()
-if rkd.GetState and rkd:GetState() == false then
-rkd:SetState(true)
+if ml.GetState and ml:GetState() == false then
+ml:SetState(true)
 end
 
-rkd:Dialog({
-Title = _d("LXc3FTACEgVGAV1CDgNMVRlHBwYUFRQHQAwJGQJT"),
-Description = _d("LRQWWhIeUAVHVVQOFRUNUAwVDggRCFERFQsJUBhcHEZCFBUfRxxaDElQPlEFWQMEFUxdARUVDgQEFAFdCxRQA1oQCkIzGAkUB0AMCRkCU1VWDRcJTEcBWhIUUApdB0YWS1AfW1VaDAsJTFsbUEICBglGVVEQDgYJR1VBCgJQDVcWWhcJBEI"),
+ml:Dialog({
+Title = _d("OXV1SiQVWhFEQwJWGUtYV1sYExFcARZFHxgeURZR"),
+Description = _d("ORZUBQYJGBFFFwsaAl0ZUk5KGh9ZHFNTSh8eGAxeXhlWA10LRV4FGF4YKlNHBhcTXVhfQ0oBGUwQFkMCHwMYF1hSVVYkUB0WRR8YHlEWURcJGQBBWEVDBQYDGB5fRRkCXBgLWRcFGBxBWFlZD1YVTh1EFw4EGU4dRRceHhUYGVVUBQMeTFY"),
 Buttons = {
 {
-Name = _d("PlEFWQMEFQ"),
+Name = _d("KlNHBhcTXQ"),
 Callback = function()
-fyca = true
-ttmh = true
+hit = true
+cx = true
 end,
 },
 {
-Name = _d("J1EQRQ"),
+Name = _d("M1NSGg"),
 Callback = function()
-ttmh = true
+cx = true
 end,
 },
 },
@@ -110,505 +110,505 @@ end,
 end)
 else
 
-fyca = true
-ttmh = true
+hit = true
+cx = true
 end
 
-local alss = os.clock() + 90
+local zty = os.clock() + 90
 
-while not ttmh and os.clock() < alss do
+while not cx and os.clock() < zty do
 task.wait(0.25)
 end
 
-if not fyca then
-warn(_d("N3U2dzo6UABbFFFCFRUKQQZQBkddTEAdUEIEHxxNVUEKBgRMXQYVEBIeAl0bUkIUBA1NBhtCJBwFVx4VMAIAAFUWUEITH0xHAlQSRxkYGFVaEEcFH1FVYAwLHw1QVUYBFRkcQFVcDEcZGEdVZgcTBAVaEkZCExEOGg"))
+if not hit then
+warn(_d("I3d0KC4tGBRZVg5WAl0eQ0QPElAVWEJfD1YTVwhPFx4eEUxYX0RKBAVWFl9ZDVYDTBlPRERWM1QRVVxKJBVIFFdUD1YEV1hFQAsGUFEMGhcFBFBNC1MXPxgcVxlSFxkVAlEIQhcDGFBRDEUXORMETBFYUBlWBFkaGA"))
 
 return
 end
 
-warn(_d("N3U2dzo6UB5RBVkDBBkCU1VBCgJQHkEbWwsJF0xXGkUbRwcFQB0VFg8ZHxQaWwdJ"))
+warn(_d("I3d0KC4tGApTRwYXE1EWURceHhUYCkNZBB8eX1hVWBoPUE8RQl9KAhhRCxZYBBNe"))
 end
 
 getgenv().ACBXAllowReload = nil
 
-local fjg = getgenv().ACBXConnections
-if type(fjg) == _d("GFUXWQc") then
-for cjf, ckjy in ipairs(fjg) do
+local fnza = getgenv().ACBXConnections
+if type(fnza) == _d("DFdVBhM") then
+for sj, skv in ipairs(fnza) do
 pcall(function()
-ckjy:Disconnect()
+skv:Disconnect()
 end)
 end
 end
 
-local sb = {}
-getgenv().ACBXConnections = sb
+local eie = {}
+getgenv().ACBXConnections = eie
 
-local function jxjd(gkar, xakw)
-local mc = gkar:Connect(xakw)
+local function im(ro, iqso)
+local ugp = ro:Connect(iqso)
 
-table.insert(sb, mc)
+table.insert(eie, ugp)
 
-return mc
+return ugp
 end
 
-local oqcf = getgenv().ACBXWindow
-if oqcf then
+local dvym = getgenv().ACBXWindow
+if dvym then
 pcall(function()
-oqcf:Unload()
+dvym:Unload()
 end)
 end
 
-for px, jpvg in ipairs({
-game:GetService(_d("L1sHUCUSGQ")),
-game:GetService(_d("PFgUTAcVAw")).LocalPlayer:FindFirstChild(_d("PFgUTAcVNxld")),
+for uxm, nr in ipairs({
+game:GetService(_d("O1lFDzEFUQ")),
+game:GetService(_d("KFpWExMCSw")).LocalPlayer:FindFirstChild(_d("KFpWExMCfw1f")),
 }) do
-if jpvg then
-local hmlh = mr(jpvg)
-if hmlh then
-hmlh:Destroy()
+if nr then
+local qs = eew(nr)
+if qs then
+qs:Destroy()
 end
 end
 end
 
-local hset = game:GetService(_d("PFgUTAcVAw"))
-local kq = game:GetService(_d("PlEFWQsEERhREWYWCAINUxA"))
-local dx = game:GetService(_d("PFUBXQQOHghdG1IxAgIaXRZQ"))
-local lo = game:GetService(_d("PkEbZgcVBgVXEA"))
-local fh = hset.LocalPlayer
-local rd = fh:WaitForChild(_d("PFgUTAcVNxld"))
+local tdh = game:GetService(_d("KFpWExMCSw"))
+local ayu = game:GetService(_d("KlNHBh8TWQxTUzkCH0oZUVI"))
+local pfr = game:GetService(_d("KFdDAhAZVhxfWQ0lFUoOX1QP"))
+local ako = game:GetService(_d("KkNZORMCThFVUg"))
+local omhv = tdh.LocalPlayer
+local ff = omhv:WaitForChild(_d("KFpWExMCfw1f"))
 
-local sl = false
+local wamw = false
 
-local function qr()
+local function dk()
 pcall(function()
-local cipw = game:GetService(_d("OEMQUAw0FR5CHFYH"))
-local coup = (gethui and gethui()) or rd
-local haf = Color3.fromRGB(77, 166, 255)
-local yocy = fh.DisplayName
+local guxg = game:GetService(_d("LEFSDxgjXQpAXgkT"))
+local bzo = (gethui and gethui()) or ff
+local ueu = Color3.fromRGB(77, 166, 255)
+local sr = omhv.DisplayName
 
-local function yvv(yc, jjnf, ndz)
-cipw:Create(
-yc,
-TweenInfo.new(jjnf, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-ndz
+local function rqn(vmp, ahjg, vipu)
+guxg:Create(
+vmp,
+TweenInfo.new(ahjg, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+vipu
 ):Play()
-task.wait(jjnf)
+task.wait(ahjg)
 end
 
-local nean = Instance.new(_d("P1cHUAcJNxld"))
-nean.Name = _d("LXc3bSsJBB5b")
-nean.IgnoreGuiInset = true
-nean.DisplayOrder = 1000000
-nean.ResetOnSpawn = false
-nean.Parent = coup
+local svo = Instance.new(_d("K1VFDxMefw1f"))
+svo.Name = _d("OXV1Mj8eTApZ")
+svo.IgnoreGuiInset = true
+svo.DisplayOrder = 1000000
+svo.ResetOnSpawn = false
+svo.Parent = bzo
 
-local cau = Instance.new(_d("KkYUWAc"))
-cau.Size = UDim2.fromScale(1, 1)
-cau.BackgroundColor3 = Color3.fromRGB(4, 6, 11)
-cau.BackgroundTransparency = 1
-cau.BorderSizePixel = 0
-cau.Parent = nean
+local ncxx = Instance.new(_d("PkRWBxM"))
+ncxx.Size = UDim2.fromScale(1, 1)
+ncxx.BackgroundColor3 = Color3.fromRGB(4, 6, 11)
+ncxx.BackgroundTransparency = 1
+ncxx.BorderSizePixel = 0
+ncxx.Parent = svo
 
-local fnuy = Instance.new(_d("KkYUWAc"))
-fnuy.AnchorPoint = Vector2.new(0.5, 0.5)
-fnuy.Position = UDim2.fromScale(0.5, 0.5)
-fnuy.Size = UDim2.fromOffset(400, 176)
-fnuy.BackgroundColor3 = Color3.fromRGB(11, 16, 26)
-fnuy.BackgroundTransparency = 1
-fnuy.BorderSizePixel = 0
-fnuy.Parent = nean
+local zz = Instance.new(_d("PkRWBxM"))
+zz.AnchorPoint = Vector2.new(0.5, 0.5)
+zz.Position = UDim2.fromScale(0.5, 0.5)
+zz.Size = UDim2.fromOffset(400, 176)
+zz.BackgroundColor3 = Color3.fromRGB(11, 16, 26)
+zz.BackgroundTransparency = 1
+zz.BorderSizePixel = 0
+zz.Parent = svo
 
-local nec = Instance.new(_d("OX02WhAJFR4"))
-nec.CornerRadius = UDim.new(0, 14)
-nec.Parent = fnuy
+local up = Instance.new(_d("LX90BQQeXQo"))
+up.CornerRadius = UDim.new(0, 14)
+up.Parent = zz
 
-local ajj = Instance.new(_d("OX0mQRAIGwk"))
-ajj.Color = Color3.fromRGB(46, 60, 86)
-ajj.Thickness = 1
-ajj.Transparency = 1
-ajj.Parent = fnuy
+local tu = Instance.new(_d("LX9kHgQfUx0"))
+tu.Color = Color3.fromRGB(46, 60, 86)
+tu.Thickness = 1
+tu.Transparency = 1
+tu.Parent = zz
 
-local idkh = Instance.new(_d("KkYUWAc"))
-idkh.Size = UDim2.fromOffset(44, 2)
-idkh.Position = UDim2.new(0.5, -22, 0, 34)
-idkh.BackgroundColor3 = haf
-idkh.BorderSizePixel = 0
-idkh.BackgroundTransparency = 1
-idkh.Parent = fnuy
+local hzsb = Instance.new(_d("PkRWBxM"))
+hzsb.Size = UDim2.fromOffset(44, 2)
+hzsb.Position = UDim2.new(0.5, -22, 0, 34)
+hzsb.BackgroundColor3 = ueu
+hzsb.BorderSizePixel = 0
+hzsb.BackgroundTransparency = 1
+hzsb.Parent = zz
 
-local utf = Instance.new(_d("OFENQS4GEglY"))
-utf.BackgroundTransparency = 1
-utf.Size = UDim2.new(1, -48, 0, 48)
-utf.Position = UDim2.fromOffset(24, 42)
-utf.Font = Enum.Font.GothamBold
-utf.Text = _d("L3ZVfTcl")
-utf.TextSize = 28
-utf.TextYAlignment = Enum.TextYAlignment.Center
-utf.TextColor3 = Color3.fromRGB(236, 242, 255)
-utf.TextTransparency = 1
-utf.Parent = fnuy
+local edml = Instance.new(_d("LFNPHjoRWh1a"))
+edml.BackgroundTransparency = 1
+edml.Size = UDim2.new(1, -48, 0, 48)
+edml.Position = UDim2.fromOffset(24, 42)
+edml.Font = Enum.Font.GothamBold
+edml.Text = _d("O3QXIiMy")
+edml.TextSize = 28
+edml.TextYAlignment = Enum.TextYAlignment.Center
+edml.TextColor3 = Color3.fromRGB(236, 242, 255)
+edml.TextTransparency = 1
+edml.Parent = zz
 
-local kcj = Instance.new(_d("OFENQS4GEglY"))
-kcj.BackgroundTransparency = 1
-kcj.Size = UDim2.new(1, -48, 0, 20)
-kcj.Position = UDim2.fromOffset(24, 94)
-kcj.Font = Enum.Font.Gotham
-kcj.Text = _d("AFsUUQsJFw")
-kcj.TextSize = 14
-kcj.TextColor3 = Color3.fromRGB(150, 163, 186)
-kcj.TextTransparency = 1
-kcj.Parent = fnuy
+local wopd = Instance.new(_d("LFNPHjoRWh1a"))
+wopd.BackgroundTransparency = 1
+wopd.Size = UDim2.new(1, -48, 0, 20)
+wopd.Position = UDim2.fromOffset(24, 94)
+wopd.Font = Enum.Font.Gotham
+wopd.Text = _d("FFlWDh8eXw")
+wopd.TextSize = 14
+wopd.TextColor3 = Color3.fromRGB(150, 163, 186)
+wopd.TextTransparency = 1
+wopd.Parent = zz
 
-local xyti = Instance.new(_d("KkYUWAc"))
-xyti.Size = UDim2.fromOffset(240, 3)
-xyti.Position = UDim2.new(0.5, -120, 0, 130)
-xyti.BackgroundColor3 = Color3.fromRGB(34, 44, 64)
-xyti.BorderSizePixel = 0
-xyti.BackgroundTransparency = 1
-xyti.Parent = fnuy
+local kuhd = Instance.new(_d("PkRWBxM"))
+kuhd.Size = UDim2.fromOffset(240, 3)
+kuhd.Position = UDim2.new(0.5, -120, 0, 130)
+kuhd.BackgroundColor3 = Color3.fromRGB(34, 44, 64)
+kuhd.BorderSizePixel = 0
+kuhd.BackgroundTransparency = 1
+kuhd.Parent = zz
 
-local myau = Instance.new(_d("KkYUWAc"))
-myau.Size = UDim2.fromScale(0, 1)
-myau.BackgroundColor3 = haf
-myau.BorderSizePixel = 0
-myau.BackgroundTransparency = 1
-myau.Parent = xyti
+local xc = Instance.new(_d("PkRWBxM"))
+xc.Size = UDim2.fromScale(0, 1)
+xc.BackgroundColor3 = ueu
+xc.BorderSizePixel = 0
+xc.BackgroundTransparency = 1
+xc.Parent = kuhd
 
-local dk = Instance.new(_d("OX02WhAJFR4"))
-dk.CornerRadius = UDim.new(0, 4)
-dk.Parent = xyti
+local rfa = Instance.new(_d("LX90BQQeXQo"))
+rfa.CornerRadius = UDim.new(0, 4)
+rfa.Parent = kuhd
 
-local tf = Instance.new(_d("OX02WhAJFR4"))
-tf.CornerRadius = UDim.new(0, 4)
-tf.Parent = myau
+local tsto = Instance.new(_d("LX90BQQeXQo"))
+tsto.CornerRadius = UDim.new(0, 4)
+tsto.Parent = xc
 
-yvv(cau, 0.35, { BackgroundTransparency = 0.15 })
+rqn(ncxx, 0.35, { BackgroundTransparency = 0.15 })
 task.spawn(function()
-yvv(fnuy, 0.3, { BackgroundTransparency = 0 })
+rqn(zz, 0.3, { BackgroundTransparency = 0 })
 end)
 task.spawn(function()
-yvv(ajj, 0.3, { Transparency = 0 })
+rqn(tu, 0.3, { Transparency = 0 })
 end)
-yvv(utf, 0.3, { TextTransparency = 0 })
-yvv(idkh, 0.3, { BackgroundTransparency = 0 })
-yvv(kcj, 0.3, { TextTransparency = 0 })
-yvv(xyti, 0.3, { BackgroundTransparency = 0 })
-yvv(myau, 0.3, { BackgroundTransparency = 0 })
+rqn(edml, 0.3, { TextTransparency = 0 })
+rqn(hzsb, 0.3, { BackgroundTransparency = 0 })
+rqn(wopd, 0.3, { TextTransparency = 0 })
+rqn(kuhd, 0.3, { BackgroundTransparency = 0 })
+rqn(xc, 0.3, { BackgroundTransparency = 0 })
 
-local nrmb = { _d("AFsUUQsJFw"), _d("AFsUUQsJF0I"), _d("AFsUUQsJF0Ia"), _d("AFsUUQsJF0IaWw") }
+local caqm = { _d("FFlWDh8eXw"), _d("FFlWDh8eX1Y"), _d("FFlWDh8eX1YY"), _d("FFlWDh8eX1YYGQ") }
 task.spawn(function()
-cipw:Create(myau, TweenInfo.new(1.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+guxg:Create(xc, TweenInfo.new(1.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 Size = UDim2.fromScale(1, 1),
 }):Play()
-for xpf = 1, 6 do
-kcj.Text = nrmb[(xpf - 1) % #nrmb + 1]
+for mjg = 1, 6 do
+wopd.Text = caqm[(mjg - 1) % #caqm + 1]
 task.wait(0.2)
 end
 end)
 task.wait(1.2)
 
-yvv(utf, 0.2, { TextTransparency = 1 })
-yvv(kcj, 0.2, { TextTransparency = 1 })
-yvv(xyti, 0.2, { BackgroundTransparency = 1 })
-yvv(myau, 0.2, { BackgroundTransparency = 1 })
+rqn(edml, 0.2, { TextTransparency = 1 })
+rqn(wopd, 0.2, { TextTransparency = 1 })
+rqn(kuhd, 0.2, { BackgroundTransparency = 1 })
+rqn(xc, 0.2, { BackgroundTransparency = 1 })
 
-utf.Text = _d("OFwUWwkUUApbBxUXFBkCU1VYG0cDD0YcRRY")
-utf.TextSize = 22
-utf.TextWrapped = true
-kcj.Text = fqs
-yvv(utf, 0.25, { TextTransparency = 0 })
-yvv(kcj, 0.25, { TextTransparency = 0 })
+edml.Text = _d("LF5WBB0DGB5ZRUoDA1EWURcHD1BLG0ReGgI")
+edml.TextSize = 22
+edml.TextWrapped = true
+wopd.Text = mk
+rqn(edml, 0.25, { TextTransparency = 0 })
+rqn(wopd, 0.25, { TextTransparency = 0 })
 task.wait(1.1)
-yvv(utf, 0.2, { TextTransparency = 1 })
-yvv(kcj, 0.2, { TextTransparency = 1 })
+rqn(edml, 0.2, { TextTransparency = 1 })
+rqn(wopd, 0.2, { TextTransparency = 1 })
 
-utf.Text = _d("O1EZVg0KFUw") .. yocy .. _d("TGAaFSElUCRBFw")
-utf.TextSize = 22
-kcj.Text = _d("H0AURxYOHgs")
-yvv(utf, 0.3, { TextTransparency = 0 })
-yvv(kcj, 0.3, { TextTransparency = 0 })
+edml.Text = _d("L1NbCRkdXVg") .. sr .. _d("WGJYSjUyGDBDVQ")
+edml.TextSize = 22
+wopd.Text = _d("C0JWGAIZVh8")
+rqn(edml, 0.3, { TextTransparency = 0 })
+rqn(wopd, 0.3, { TextTransparency = 0 })
 task.wait(1.3)
 
-yvv(utf, 0.25, { TextTransparency = 1 })
-yvv(kcj, 0.25, { TextTransparency = 1 })
-yvv(cau, 0.35, { BackgroundTransparency = 1 })
+rqn(edml, 0.25, { TextTransparency = 1 })
+rqn(wopd, 0.25, { TextTransparency = 1 })
+rqn(ncxx, 0.35, { BackgroundTransparency = 1 })
 
-nean:Destroy()
+svo:Destroy()
 end)
 
-sl = true
+wamw = true
 end
 
-task.spawn(qr)
+task.spawn(dk)
 
-local as = kq:WaitForChild(_d("PlEYWhYCAw"))
+local nkq = ayu:WaitForChild(_d("KlNaBQIVSw"))
 
-local function ipt(tgy, wtx)
-local ussv = as:FindFirstChild(tgy)
+local function wek(yw, xh)
+local hwc = nkq:FindFirstChild(yw)
 
-if ussv then
-return ussv
+if hwc then
+return hwc
 end
 
-local zi = as:WaitForChild(tgy, wtx or 3)
+local gt = nkq:WaitForChild(yw, xh or 3)
 
-if not zi then
-warn(_d("LXc3bVhHAglZGkEHR1c") .. tgy .. _d("SxQbWkILHwJTEEdCAggFRwFGQg4eTEAdXBFHFw1ZEBUUAgIfXRpbQkpQGFwUQUIBFQ1AAEcHRxkfFBpTBA"))
+if not gt then
+warn(_d("OXV1MkxQSh1bWB4TUB8") .. yw .. _d("XxZZBVYcVxZRUhhWFUARRUMZVhlWWEJfAwVQXxlbUkoAFUoLX1gEVl0YDF5WHlYWXRlCQhgTUFELFlgMEA"))
 end
 
-return zi
+return gt
 end
 
-local bo = {
-StartNPCBattle = ipt(_d("P0AURxYpIC92FEEWCxU")),
-NPCBattleResult = ipt(_d("ImQ2dwMTBABRJ1AREhwY")),
-SyncNPCCooldowns = ipt(_d("P00bViw3My9bGlkGCAcCRw")),
-SetNPCDifficulty = ipt(_d("P1EBezIkNAVSE1wBEhwYTQ")),
-StartRaidBattle = ipt(_d("P0AURxY1EQVQN1QWExwJ")),
-SetRaidDifficulty = ipt(_d("P1EBZwMOFChdE1MLBAUAQAw")),
-RaidProgress = ipt(_d("PlUcUTIVHwtGEEYR")),
-RequestRaidProgress = ipt(_d("PlEEQAcUBD5VHFEyFR8LRhBGEQ")),
-SyncInfiniteRoomProgress = ipt(_d("P00bVisJFgVaHEEHNR8DWSVHDQACCUcG")),
-BuyRaidItem = ipt(_d("LkEMZwMOFCVAEFg")),
-RaidShopState = ipt(_d("PlUcUTEPHxxnAVQWAg")),
-RaidNotify = ipt(_d("PlUcUSwIBAVSDA")),
-SyncItems = ipt(_d("P00bVisTFQFH")),
+local xl = {
+StartNPCBattle = wek(_d("K0JWGAI+aDt0Vh4CHF0")),
+NPCBattleResult = wek(_d("NmZ0KBcETBRTZQ8FBVQM")),
+SyncNPCCooldowns = wek(_d("K09ZCTggeztZWAYSH08WRQ")),
+SetNPCDifficulty = wek(_d("K1NDJCYzfBFQUQMVBVQMTw")),
+StartRaidBattle = wek(_d("K0JWGAIiWRFSdQsCBFQd")),
+SetRaidDifficulty = wek(_d("K1NDOBcZXDxfUQwfE00UQk4")),
+RaidProgress = wek(_d("KldeDiYCVx9EUhkF")),
+RequestRaidProgress = wek(_d("KlNGHxMDTCpXXg4mAlcfRFIZBQ")),
+SyncInfiniteRoomProgress = wek(_d("K09ZCT8eXhFYXh4TIlcXW2cYGRdKHUVE")),
+BuyRaidItem = wek(_d("OkNOOBcZXDFCUgc")),
+RaidShopState = wek(_d("KldeDiUYVwhlQwsCFQ")),
+RaidNotify = wek(_d("KldeDjgfTBFQTg")),
+SyncItems = wek(_d("K09ZCT8EXRVF")),
 
-UseItem = ipt(_d("OUcQfBYCHQ")),
-UseItemResult = ipt(_d("OUcQfBYCHT5RBkAOEw")),
-RequestWeatherState = ipt(_d("PlEEQAcUBDtRFEEKAgI/QBRBBw")),
-WeatherChanged = ipt(_d("O1EUQQoCAi9cFFsFAhQ")),
-FishingUpdate = ipt(_d("Kl0GXQsJFzlEEVQWAg")),
-FishingThrow = ipt(_d("Kl0GXQsJFzhcB1oV")),
-FishingReel = ipt(_d("Kl0GXQsJFz5REFk")),
-FishingStop = ipt(_d("Kl0GXQsJFz9AGkU")),
+UseItem = wek(_d("LUVSIwIVVQ")),
+UseItemResult = wek(_d("LUVSIwIVVSpTRB8aBA")),
+RequestWeatherState = wek(_d("KlNGHxMDTC9TVh4eFUorQlYeEw")),
+WeatherChanged = wek(_d("L1NWHh4VSjteVgQRFVw")),
+FishingUpdate = wek(_d("Pl9EAh8eXy1GUwsCFQ")),
+FishingThrow = wek(_d("Pl9EAh8eXyxeRQUB")),
+FishingReel = wek(_d("Pl9EAh8eXypTUgY")),
+FishingStop = wek(_d("Pl9EAh8eXytCWBo")),
 
-FishingIslandTeleport = ipt(_d("Kl0GXQsJFyVHGVQMAyQJWBBFDRUE")),
+FishingIslandTeleport = wek(_d("Pl9EAh8eXzFFWwsYFGwdWlIaGQJM")),
 
-SyncCollection = ipt(_d("P00bViEIHABRFkELCB4")),
-RequestSync = ipt(_d("PlEEQAcUBD9NG1Y")),
-ClaimIndexReward = ipt(_d("L1gUXA8uHghRDWcHEBEeUA")),
-RequestAchievements = ipt(_d("PlEEQAcUBC1XHVwHERUBURtBEQ")),
-SyncAchievements = ipt(_d("P00bViMEGAVRA1APAh4YRw")),
-ClaimAchievement = ipt(_d("L1gUXA8mEwRdEEMHChUCQA")),
-RequestQuests = ipt(_d("PlEEQAcUBD1BEEYWFA")),
-SyncQuests = ipt(_d("P00bVjMSFR9ABg")),
-ClaimQuest = ipt(_d("L1gUXA82BQlHAQ")),
-RequestPeriodicQuests = ipt(_d("PlEEQAcUBDxRB1wNAxkPZQBQERMD")),
-SyncPeriodicQuests = ipt(_d("P00bVjICAgVbEVwBNgUJRwFG")),
-ClaimPeriodicQuest = ipt(_d("L1gUXA83FR5dGlELBCEZUQZB")),
+SyncCollection = wek(_d("K09ZCTUfVBRTVB4fH1Y")),
+RequestSync = wek(_d("KlNGHxMDTCtPWQk")),
+ClaimIndexReward = wek(_d("O1pWAxs5VhxTTzgTB1kKUg")),
+RequestAchievements = wek(_d("KlNGHxMDTDlVXwMTBl0VU1keBQ")),
+SyncAchievements = wek(_d("K09ZCTcTUBFTQQ8bFVYMRQ")),
+ClaimAchievement = wek(_d("O1pWAxsxWxBfUhwTHV0WQg")),
+RequestQuests = wek(_d("KlNGHxMDTClDUhkCAw")),
+SyncQuests = wek(_d("K09ZCScFXQtCRA")),
+ClaimQuest = wek(_d("O1pWAxshTR1FQw")),
+RequestPeriodicQuests = wek(_d("KlNGHxMDTChTRQMZFFEbZ0IPBQRL")),
+SyncPeriodicQuests = wek(_d("K09ZCSYVShFZUwMVIU0dRUMZ")),
+ClaimPeriodicQuest = wek(_d("O1pWAxsgXQpfWA4fE2kNU0Qe")),
 
-OpenFuseDialog = ipt(_d("I0QQWyQSAwlwHFQOCBc")),
-FuseCards = ipt(_d("KkEGUCEGAghH")),
-OpenDeconstructDialog = ipt(_d("I0QQWyYCEwNaBkEQEhMYcBxUDggX")),
-DeconstructCards = ipt(_d("KFEWWgwUBB5BFkEhBgIIRw")),
-OpenPackShop = ipt(_d("I0QQWzIGEwdnHVoS")),
-EquipPack = ipt(_d("KUUAXBI3EQ9f")),
+OpenFuseDialog = wek(_d("N0ZSBDAFSx1yXgsaH18")),
+FuseCards = wek(_d("PkNEDzURShxF")),
+OpenDeconstructDialog = wek(_d("N0ZSBDIVWxdYRB4EBVsMcl4LGh9f")),
+DeconstructCards = wek(_d("PFNUBRgDTApDVB41EUocRQ")),
+OpenPackShop = wek(_d("N0ZSBCYRWxNlXwUG")),
+EquipPack = wek(_d("PUdCAwYgWRtd")),
 
-RequestSkillTree = ipt(_d("PlEEQAcUBD9fHFkOMwIJUQ")),
-BuySkillNode = ipt(_d("LkEMZgkOHAB6GlEH")),
-OpenAccessoryShop = ipt(_d("I0QQWyMEEwlHBloQHiMEWwU")),
-OpenAccessoryShop2 = ipt(_d("I0QQWyMEEwlHBloQHiMEWwUH")),
-BuyAccessory = ipt(_d("LkEMdAEEFR9HGkcb")),
-BuyAccessory2 = ipt(_d("LkEMdAEEFR9HGkcbVQ")),
-EquipAccessory = ipt(_d("KUUAXBImEw9RBkYNFQk")),
+RequestSkillTree = wek(_d("KlNGHxMDTCtdXgYaJEodUw")),
+BuySkillNode = wek(_d("OkNOOR0ZVBR4WA4T")),
+OpenAccessoryShop = wek(_d("N0ZSBDcTWx1FRAUECWsQWUc")),
+OpenAccessoryShop2 = wek(_d("N0ZSBDcTWx1FRAUECWsQWUdY")),
+BuyAccessory = wek(_d("OkNOKxUTXQtFWBgP")),
+BuyAccessory2 = wek(_d("OkNOKxUTXQtFWBgPQg")),
+EquipAccessory = wek(_d("PUdCAwYxWxtTRBkZAkE")),
 
-RedeemCode = ipt(_d("PlERUAcKMwNQEA")),
+RedeemCode = wek(_d("KlNTDxMdexdSUg")),
 
-OpenNPCDialog = ipt(_d("I0QQWyw3MyhdFFkNAA")),
-TeleportToWorld = ipt(_d("OFEZUBIIAhhgGmINFRwI")),
-RaidBattleStarted = ipt(_d("PlUcUSAGBBhYEGYWBgIYURE")),
-BattleEnd = ipt(_d("LlUBQQ4CNQJQ")),
-StartBattle = ipt(_d("P0AURxYlERhAGVA")),
-RequestInfiniteRoomProgress = ipt(_d("PlEEQAcUBCVaE1wMDgQJZhpaDzcCA1MHUBEU")),
-EndTowerRemote = ipt(_d("KVoRYQ0QFR5mEFgNExU")),
-SaveClientData = ipt(_d("P1UDUCELGQlaAXEDExE")),
-OpenRaidShop = ipt(_d("I0QQWzAGGQhnHVoS")),
-RequestItemSync = ipt(_d("PlEEQAcUBCVAEFgxHh4P")),
-FishingGetState = ipt(_d("Kl0GXQsJFytRAWYWBgQJ")),
-FishingSetAuto = ipt(_d("Kl0GXQsJFz9RAXQXEx8")),
-FishingShop = ipt(_d("Kl0GXQsJFz9cGkU")),
-DigGetState = ipt(_d("KF0ScgcTIxhVAVA")),
-DigShop = ipt(_d("KF0SZgoIAA")),
-DigAction = ipt(_d("KF0SdAETGQNa")),
-DigUpdate = ipt(_d("KF0SYBIDERhR")),
+OpenNPCDialog = wek(_d("N0ZSBDggezxfVgYZFw")),
+TeleportToWorld = wek(_d("LFNbDwYfSgxiWD0ZAlQc")),
+RaidBattleStarted = wek(_d("KldeDjQRTAxaUjkCEUoMU1M")),
+BattleEnd = wek(_d("OldDHhoVfRZS")),
+StartBattle = wek(_d("K0JWGAIyWQxCWw8")),
+RequestInfiniteRoomProgress = wek(_d("KlNGHxMDTDFYUQMYGUwdZFgFGyBKF1FFDwUD")),
+EndTowerRemote = wek(_d("PVhTPhkHXQpkUgcZBF0")),
+SaveClientData = wek(_d("K1dBDzUcUR1YQy4XBFk")),
+OpenRaidShop = wek(_d("N0ZSBCQRURxlXwUG")),
+RequestItemSync = wek(_d("KlNGHxMDTDFCUgclCVYb")),
+FishingGetState = wek(_d("Pl9EAh8eXz9TQzkCEUwd")),
+FishingSetAuto = wek(_d("Pl9EAh8eXytTQysDBFc")),
+FishingShop = wek(_d("Pl9EAh8eXyteWBo")),
+DigGetState = wek(_d("PF9QLRMEawxXQw8")),
+DigShop = wek(_d("PF9QOR4fSA")),
+DigAction = wek(_d("PF9QKxUEURdY")),
+DigUpdate = wek(_d("PF9QPwYUWQxT")),
 }
 
-local ho = require(kq.ModuleScripts.NPCData)
-local svmh = require(kq.ModuleScripts.WorldDifficultyData)
-local dwo = require(kq.ModuleScripts.BossData)
-local qpz = require(kq.ModuleScripts.RaidData)
-local st = require(kq.ModuleScripts.InfiniteRoomData)
-local lfa = require(kq.ModuleScripts.CraftData)
-local vyyh = require(kq.ModuleScripts.AchievementData)
-local xhof = require(kq.ModuleScripts.RaidShopData)
-local hb = require(kq.ModuleScripts.ItemData)
-local iqbb = require(kq.ModuleScripts.CardData)
-local patj = require(kq.ModuleScripts.SkillTreeData)
+local cl = require(ayu.ModuleScripts.NPCData)
+local bsnf = require(ayu.ModuleScripts.WorldDifficultyData)
+local cd = require(ayu.ModuleScripts.BossData)
+local shz = require(ayu.ModuleScripts.RaidData)
+local jka = require(ayu.ModuleScripts.InfiniteRoomData)
+local ccrb = require(ayu.ModuleScripts.CraftData)
+local pa = require(ayu.ModuleScripts.AchievementData)
+local qaed = require(ayu.ModuleScripts.RaidShopData)
+local pc = require(ayu.ModuleScripts.ItemData)
+local ysw = require(ayu.ModuleScripts.CardData)
+local wo = require(ayu.ModuleScripts.SkillTreeData)
 
-local rqc = {
+local fq = {
 enabled = false,
-role = { _d("GFsCUBA"), _d("AkQW") },
+role = { _d("DFlADwQ"), _d("FkZU") },
 
-picked = { _d("OFsCUBA"), _d("ImQ2FQAGBBhYEEY") },
+picked = { _d("LFlADwQ"), _d("NmZ0ShQRTAxaUhk") },
 hasSlot2 = nil,
 toggle = nil,
 
 optionsFor = {
-{ _d("OFsCUBA"), _d("JFUZWQ0QFQlaVUENEBUe"), _d("ImQ2FQAGBBhYEEY") },
-{ _d("ImQ2FQAGBBhYEEY"), _d("JUcZVAwDUARVB1EBCAIJ") },
+{ _d("LFlADwQ"), _d("MFdbBhkHXR1YFx4ZB10K"), _d("NmZ0ShQRTAxaUhk") },
+{ _d("NmZ0ShQRTAxaUhk"), _d("MUVbCxgUGBBXRQ4VH0od") },
 },
 roleIds = {
-Tower = _d("GFsCUBA"),
+Tower = _d("DFlADwQ"),
 
-[_d("JFUHUQEIAgkUAVoVAgI")] = _d("BFUHUQEIAgk"),
-[_d("ImQ2FQAGBBhYEEY")] = _d("AkQW"),
-[_d("JFUZWQ0QFQlaVUENEBUe")] = _d("BFUZWQ0QFQla"),
-[_d("JUcZVAwDUARVB1EBCAIJ")] = _d("BFUHUQEIAgk"),
+[_d("MFdFDhUfSh0WQwUBFUo")] = _d("EFdFDhUfSh0"),
+[_d("NmZ0ShQRTAxaUhk")] = _d("FkZU"),
+[_d("MFdbBhkHXR1YFx4ZB10K")] = _d("EFdbBhkHXR1Y"),
+[_d("MUVbCxgUGBBXRQ4VH0od")] = _d("EFdFDhUfSh0"),
 },
 roleNames = {
-tower = _d("OFsCUBA"),
-hardcore = _d("JUcZVAwDUARVB1EBCAIJ"),
-npc = _d("ImQ2FQAGBBhYEEY"),
-halloween = _d("JFUZWQ0QFQlaVUENEBUe"),
+tower = _d("LFlADwQ"),
+hardcore = _d("MUVbCxgUGBBXRQ4VH0od"),
+npc = _d("NmZ0ShQRTAxaUhk"),
+halloween = _d("MFdbBhkHXR1YFx4ZB10K"),
 },
 }
 
-rqc.prioGroups = {
-{ id = _d("HlUcURE"), label = _d("PlUcURE"), rank = 1 },
-{ id = _d("DlsGRg"), label = _d("K1gaVwMLUA5bBkY"), rank = 2 },
-{ id = _d("AkQW"), label = _d("ImQ2FQAGBBhYEEZCQVAeWxpYEQ"), rank = 3 },
-{ id = _d("BFUHUQEIAgk"), label = _d("JUcZVAwDUCRVB1EBCAIJ"), rank = 4 },
-{ id = _d("G1UBUBA"), label = _d("Kl0GXQsJF0wbVXELABcFWhI"), rank = 5 },
+fq.prioGroups = {
+{ id = _d("CldeDgU"), label = _d("KldeDgU"), rank = 1 },
+{ id = _d("GllEGQ"), label = _d("P1pYCBccGBpZRBk"), rank = 2 },
+{ id = _d("FkZU"), label = _d("NmZ0ShQRTAxaUhlWVhgKWVgHBQ"), rank = 3 },
+{ id = _d("EFdFDhUfSh0"), label = _d("MUVbCxgUGDBXRQ4VH0od"), rank = 4 },
+{ id = _d("D1dDDwQ"), label = _d("Pl9EAh8eX1gZFy4fF18RWFA"), rank = 5 },
 }
 
-rqc.prioBlocks = function()
+fq.prioBlocks = function()
 return false
 end
 
-rqc.digBlocked = function()
+fq.digBlocked = function()
 return false
 end
 
-function rqc.detectSlot2()
-local uho = rd:FindFirstChild(_d("P1EBQQsJFx9zAFw"))
-local ao = uho and uho:FindFirstChild(_d("P1gaQTYCEQEGJ1oV"), true)
+function fq.detectSlot2()
+local rr = ff:FindFirstChild(_d("K1NDHh8eXwtxQgM"))
+local zl = rr and rr:FindFirstChild(_d("K1pYHiIVWRUEZQUB"), true)
 
-if ao then
-return ao.Visible == true
+if zl then
+return zl.Visible == true
 end
 
 return nil
 end
 
-function rqc.roleSlot(myu)
-if not rqc.enabled then
+function fq.roleSlot(ru)
+if not fq.enabled then
 return 1
 end
 
-for ib = 1, 2 do
-if rqc.role[ib] == myu then
-return ib
+for je = 1, 2 do
+if fq.role[je] == ru then
+return je
 end
 end
 
 return nil
 end
 
-function rqc.isTowerRole(imcw)
-return imcw == _d("GFsCUBA") or imcw == _d("BFUHUQEIAgk") or imcw == _d("BFUZWQ0QFQla")
+function fq.isTowerRole(sg)
+return sg == _d("DFlADwQ") or sg == _d("EFdFDhUfSh0") or sg == _d("EFdbBhkHXR1Y")
 end
 
-function rqc.towerSlot()
-return rqc.roleSlot(_d("GFsCUBA"))
+function fq.towerSlot()
+return fq.roleSlot(_d("DFlADwQ"))
 end
 
-function rqc.hardcoreSlot()
-local ftad = rqc.roleSlot(_d("BFUHUQEIAgk"))
+function fq.hardcoreSlot()
+local hnkf = fq.roleSlot(_d("EFdFDhUfSh0"))
 
-if ftad == 2 and rqc.hasSlot2 == false then
+if hnkf == 2 and fq.hasSlot2 == false then
 return 1
 end
 
-return ftad
+return hnkf
 end
 
-function rqc.halloweenSlot()
+function fq.halloweenSlot()
 
-local pgx = rqc.roleSlot(_d("BFUZWQ0QFQla"))
+local bp = fq.roleSlot(_d("EFdbBhkHXR1Y"))
 
-if pgx == 1 then
+if bp == 1 then
 return 1
 end
 
 return nil
 end
 
-function rqc.roomSlot()
-local ynk = rqc.roleSlot(_d("AkQW"))
+function fq.roomSlot()
+local cp = fq.roleSlot(_d("FkZU"))
 
-if not rqc.enabled then
+if not fq.enabled then
 return 1
 end
 
-if ynk == nil then
+if cp == nil then
 return nil
 end
 
-if ynk == 2 and rqc.hasSlot2 == false then
+if cp == 2 and fq.hasSlot2 == false then
 return 1
 end
 
-return ynk
+return cp
 end
 
-function rqc.splitNpc()
-return rqc.enabled and rqc.role[1] == _d("AkQW") and rqc.role[2] == _d("AkQW")
+function fq.splitNpc()
+return fq.enabled and fq.role[1] == _d("FkZU") and fq.role[2] == _d("FkZU")
 end
 
-function rqc.busy(dnxw)
-local fltn = rd:FindFirstChild(dnxw == 2 and _d("JVo3VBYTHAkG") or _d("JVo3VBYTHAk"))
+function fq.busy(vimc)
+local vla = ff:FindFirstChild(vimc == 2 and _d("MVh1CwIEVB0E") or _d("MVh1CwIEVB0"))
 
-return fltn ~= nil and fltn:IsA(_d("LlsaWTQGHBlR")) and fltn.Value == true
+return vla ~= nil and vla:IsA(_d("OllYBiARVA1T")) and vla.Value == true
 end
 
-function rqc.roleName(smt)
-return rqc.roleNames[rqc.role[smt]] or rqc.roleNames.npc
+function fq.roleName(ntkw)
+return fq.roleNames[fq.role[ntkw]] or fq.roleNames.npc
 end
 
-function rqc.roleLabel(jv)
-return rqc.picked[jv] or rqc.roleName(jv)
+function fq.roleLabel(vgwg)
+return fq.picked[vgwg] or fq.roleName(vgwg)
 end
 
-local wdlp = nil
+local dzky = nil
 
-if kq:FindFirstChild(_d("IVsRQA4CIw9GHEUWFA")) and kq.ModuleScripts:FindFirstChild(_d("JFUZWQ0QFQlaIVoVAgIoVQFU")) then
-local jw, ry = pcall(function()
-return require(kq.ModuleScripts.HalloweenTowerData)
+if ayu:FindFirstChild(_d("NVlTHxoVaxtEXhoCAw")) and ayu.ModuleScripts:FindFirstChild(_d("MFdbBhkHXR1YYwUBFUo8V0ML")) then
+local nvf, flz = pcall(function()
+return require(ayu.ModuleScripts.HalloweenTowerData)
 end)
 
-if jw then
-wdlp = ry
+if nvf then
+dzky = flz
 end
 end
 
-local kr = nil
+local lf = nil
 
-if kq:FindFirstChild(_d("IVsRQA4CIw9GHEUWFA")) and kq.ModuleScripts:FindFirstChild(_d("Kl0GXQsJFyhVAVQ")) then
-local cish, axmv = pcall(function()
-return require(kq.ModuleScripts.FishingData)
+if ayu:FindFirstChild(_d("NVlTHxoVaxtEXhoCAw")) and ayu.ModuleScripts:FindFirstChild(_d("Pl9EAh8eXzxXQws")) then
+local kvo, fr = pcall(function()
+return require(ayu.ModuleScripts.FishingData)
 end)
 
-if cish then
-kr = axmv
+if kvo then
+lf = fr
 end
 end
 
-local function ith(dkc)
-return tostring(dkc):reverse():gsub(_d("RBEREAZCFEU"), _d("SQVZ")):reverse():gsub(_d("Mhg"), _d(""))
+local function sjw(zcfr)
+return tostring(zcfr):reverse():gsub(_d("UBNTTxJVXFE"), _d("XQcb")):reverse():gsub(_d("Jho"), _d(""))
 end
 
-local pwc = {
+local rtjv = {
 upgrades = {},
 labels = {},
 remote = {},
@@ -642,355 +642,355 @@ lastMessage = nil,
 },
 }
 
-getgenv().ACBXHalloweenUpgrades = pwc.upgrade
-getgenv().ACBXHalloweenTower = pwc.run
+getgenv().ACBXHalloweenUpgrades = rtjv.upgrade
+getgenv().ACBXHalloweenTower = rtjv.run
 
-pwc.shopData = xhof.ShopById.halloween
-pwc.shopItems = {}
-pwc.shopLabels = {}
-pwc.cardNames = {
-hw_brook = _d("LkYaWglHWCFBBlwBBhxMZx5QDgIEA1pc"),
-hw_death_the_kid = _d("KFEUQQpHBARRVX4LA1BEfBRHDwgeBVdVchcJUDtdEFkGAgJF"),
-hw_barragan = _d("LlUHRwMAEQIUXWYJAhwJQBpbQiwZAlNc"),
+rtjv.shopData = qaed.ShopById.halloween
+rtjv.shopItems = {}
+rtjv.shopLabels = {}
+rtjv.cardNames = {
+hw_brook = _d("OkRYBR1QEDVDRAMVEVRYZVwPGhVMF1ge"),
+hw_death_the_kid = _d("PFNWHh5QTBBTFyEfFBhQflYYGx9WEVUXLQMeGC9fUgYSFUpR"),
+hw_barragan = _d("OldFGBcXWRYWHzkdFVQdQlgEVjtRFlEe"),
 }
-pwc.cardShortNames = {
-hw_brook = _d("LkYaWgk"),
-hw_death_the_kid = _d("KFEUQQpHBARRVX4LAw"),
-hw_barragan = _d("LlUHRwMAEQI"),
+rtjv.cardShortNames = {
+hw_brook = _d("OkRYBR0"),
+hw_death_the_kid = _d("PFNWHh5QTBBTFyEfFA"),
+hw_barragan = _d("OldFGBcXWRY"),
 }
 
-for qc, vmur in ipairs(pwc.shopData.Items) do
-local qx, bbxt = next(vmur.price or {})
-local ddb = vmur.id
-local wov = vmur.id
+for oukr, sl in ipairs(rtjv.shopData.Items) do
+local qxlq, dort = next(sl.price or {})
+local fnof = sl.id
+local xadn = sl.id
 
-if vmur.itemId then
-local kwj = hb.ById[vmur.itemId]
-ddb = kwj and (kwj.name or vmur.itemId) or vmur.itemId
-wov = ddb
-elseif vmur.cardId then
-ddb = pwc.cardNames[vmur.cardId] or (iqbb.ById[vmur.cardId] and iqbb.ById[vmur.cardId].name) or vmur.cardId
-wov = pwc.cardShortNames[vmur.cardId] or ddb
+if sl.itemId then
+local dcm = pc.ById[sl.itemId]
+fnof = dcm and (dcm.name or sl.itemId) or sl.itemId
+xadn = fnof
+elseif sl.cardId then
+fnof = rtjv.cardNames[sl.cardId] or (ysw.ById[sl.cardId] and ysw.ById[sl.cardId].name) or sl.cardId
+xadn = rtjv.cardShortNames[sl.cardId] or fnof
 end
 
-local banv = qx == _d("BFUZWQ0QFQlaKlYDCRQV") and _d("L1UbURs") or (qx == _d("BlUWXj0ILwBVG0EHFR4") and _d("IFUbQQcVHh8") or tostring(qx))
-local rws = ddb .. _d("TNb1oUI") .. ith(bbxt) .. _d("TA") .. banv
+local mppm = qxlq == _d("EFdbBhkHXR1YaAkXHlwB") and _d("O1dZDg8") or (qxlq == _d("EldUASkfZxRXWR4TAlY") and _d("NFdZHhMCVgs") or tostring(qxlq))
+local efd = fnof .. _d("WNS3/lY") .. sjw(dort) .. _d("WA") .. mppm
 
-table.insert(pwc.shopItems, {
-id = vmur.id,
-label = rws,
-shortName = wov,
-currency = qx,
-price = bbxt,
-stock = vmur.stock,
-cardId = vmur.cardId,
+table.insert(rtjv.shopItems, {
+id = sl.id,
+label = efd,
+shortName = xadn,
+currency = qxlq,
+price = dort,
+stock = sl.stock,
+cardId = sl.cardId,
 })
 
-table.insert(pwc.shopLabels, rws)
+table.insert(rtjv.shopLabels, efd)
 end
 
-for opnx, muu in ipairs({
-_d("PlEEQAcUBCRVGVkNEBUJWiBFBRURCFEG"),
-_d("LkEMfQMLHANDEFAMMgALRhRRBw"),
-_d("JFUZWQ0QFQlaIEUFFREIUSZBAxMV"),
-_d("PlEEQAcUBCRVGVkNEBUJWiFaFQICPEYaUhACAx8"),
-_d("P00bVioGHABbAlAHCSQDQxBHMhUfC0YQRhE"),
-_d("I0QQWyoGHABbAlAHCSQDQxBH"),
+for ho, tni in ipairs({
+_d("KlNGHxMDTDBXWwYZB10dWGIaEQJZHFNE"),
+_d("OkNOIhccVBdBUg8YJUgfRFYOEw"),
+_d("MFdbBhkHXR1YYhoRAlkcU2QeFwRd"),
+_d("KlNGHxMDTDBXWwYZB10dWGMFARVKKERYDQQVSws"),
+_d("K09ZCT4RVBRZQA8THmwXQVIYJgJXH0RSGQU"),
+_d("N0ZSBD4RVBRZQA8THmwXQVIY"),
 }) do
-pwc.remote[muu] = ipt(muu)
+rtjv.remote[tni] = wek(tni)
 end
 
-function pwc.fire(tfj, ...)
-local wa = pwc.remote[tfj]
+function rtjv.fire(wl, ...)
+local dj = rtjv.remote[wl]
 
-if not wa then
+if not dj then
 return
 end
 
-local gfyd = { ... }
+local fp = { ... }
 
 pcall(function()
-wa:FireServer(table.unpack(gfyd))
+dj:FireServer(table.unpack(fp))
 end)
 end
 
-function pwc.on(ptsr, cwgt)
-local jbw = pwc.remote[ptsr]
+function rtjv.on(zcw, cb)
+local cjxk = rtjv.remote[zcw]
 
-if jbw then
-jxjd(jbw.OnClientEvent, cwgt)
+if cjxk then
+im(cjxk.OnClientEvent, cb)
 end
 end
 
-if wdlp then
-for pq, oosr in ipairs(wdlp.Upgrades) do
-table.insert(pwc.upgrades, {
-id = oosr.id,
-name = oosr.name,
-maxLevel = oosr.maxLevel,
+if dzky then
+for at, fz in ipairs(dzky.Upgrades) do
+table.insert(rtjv.upgrades, {
+id = fz.id,
+name = fz.name,
+maxLevel = fz.maxLevel,
 })
 
-table.insert(pwc.labels, oosr.name)
+table.insert(rtjv.labels, fz.name)
 end
 end
 
-function pwc.level(pg)
-if not wdlp then
+function rtjv.level(fs)
+if not dzky then
 return 0
 end
 
-return wdlp.getUpgradeLevel(pwc.upgrade.levels, pg)
+return dzky.getUpgradeLevel(rtjv.upgrade.levels, fs)
 end
 
-function pwc.cost(ttqa)
-if not wdlp then
+function rtjv.cost(hq)
+if not dzky then
 return nil
 end
 
-return wdlp.getUpgradeCost(ttqa, pwc.level(ttqa))
+return dzky.getUpgradeCost(hq, rtjv.level(hq))
 end
 
-function pwc.bonus(ba, me)
-if not wdlp then
+function rtjv.bonus(pf, zj)
+if not dzky then
 return _d("")
 end
 
-return wdlp.formatUpgradeBonus(ba, me)
+return dzky.formatUpgradeBonus(pf, zj)
 end
 
-function pwc.request()
-pwc.upgrade.lastRequest = os.time()
-pwc.fire(_d("PlEEQAcUBCRVGVkNEBUJWiBFBRURCFEG"))
+function rtjv.request()
+rtjv.upgrade.lastRequest = os.time()
+rtjv.fire(_d("KlNGHxMDTDBXWwYZB10dWGIaEQJZHFNE"))
 end
 
-function pwc.text()
-if not wdlp then
-return _d("JFUZWQ0QFQlaVWENEBUeFBFUFgZQBUdVWw0TUAVaVUEKDgNMVgBcDgNe")
+function rtjv.text()
+if not dzky then
+return _d("MFdbBhkHXR1YFz4ZB10KFlMLAhEYEUUXBBkEGBFYFx4eGUtYVEIDGhQW")
 end
 
-local nfst = pwc.upgrade
-local parv = {}
+local hzx = rtjv.upgrade
+local wp = {}
 
-if nfst.balance == nil then
-table.insert(parv, _d("PEEYRQkOHh8OVRhCTxEfXxxbBUcEBFFVRgcVBglGXA"))
+if hzx.balance == nil then
+table.insert(wp, _d("KENaGh0ZVgsMF0dWWFkLXV4EEVBMEFMXGRMCTh1EHg"))
 else
-table.insert(parv, _d("PEEYRQkOHh8OVQ") .. ith(nfst.balance))
+table.insert(wp, _d("KENaGh0ZVgsMFw") .. sjw(hzx.balance))
 end
 
-for urvk, vfth in ipairs(pwc.upgrades) do
-local bsn = pwc.level(vfth.id)
-local jta = pwc.cost(vfth.id)
-local fcsg = nfst.selected[vfth.id] and _d("N0woFQ") or _d("NxQoFQ")
-local jrh = fcsg .. vfth.name .. _d("TBQ5Q0I") .. bsn .. _d("Qw") .. vfth.maxLevel
+for yrn, rj in ipairs(rtjv.upgrades) do
+local qyhy = rtjv.level(rj.id)
+local wdl = rtjv.cost(rj.id)
+local un = hzx.selected[rj.id] and _d("I05qSg") or _d("IxZqSg")
+local pvbw = un .. rj.name .. _d("WBZ7HFY") .. qyhy .. _d("Vw") .. rj.maxLevel
 
-if jta then
-table.insert(parv, jrh .. _d("TBQbUBoTUA") .. tostring(jta) .. _d("TBQ") .. pwc.bonus(vfth.id, bsn + 1))
+if wdl then
+table.insert(wp, pvbw .. _d("WBZZDw4EGA") .. tostring(wdl) .. _d("WBY") .. rtjv.bonus(rj.id, qyhy + 1))
 else
-table.insert(parv, jrh .. _d("TBQYVBoCFA"))
+table.insert(wp, pvbw .. _d("WBZaCw4VXA"))
 end
 end
 
-if not next(nfst.selected) then
-table.insert(parv, _d("PF0WXkISAAtGFFEHFFAFWlVBCgJQCEYaRQYIBwIUFFsGRzEZQBoVFxcXHlURUBFHEhlNBhUWDxVMVx1QAxcVH0BVWgwCUBVbABUBBh5MVRNTDRUUQg"))
+if not next(hzx.selected) then
+table.insert(wp, _d("KF9UAVYFSB9EVg4TAxgRWBceHhUYHERYGhIfTxYWVgQSUHkNQlhKAwBfCldTDwVQWg1PREoCGF1YVV8PFwBdC0IXBRgVGAFZQkoVEVZYV1EMGQJcVg"))
 end
 
-return table.concat(parv, _d("Zg"))
+return table.concat(wp, _d("cg"))
 end
 
-function pwc.buy()
-local uwm = pwc.upgrade
+function rtjv.buy()
+local facg = rtjv.upgrade
 
-if uwm.waiting or uwm.balance == nil or os.time() - uwm.lastBuy < 1 then
+if facg.waiting or facg.balance == nil or os.time() - facg.lastBuy < 1 then
 return
 end
 
-local gd = nil
-local lzv = nil
+local vwj = nil
+local vje = nil
 
-for af, rpmp in ipairs(pwc.upgrades) do
-if uwm.selected[rpmp.id] and os.time() >= (uwm.failedUntil[rpmp.id] or 0) then
-local edmd = pwc.cost(rpmp.id)
+for pzoy, me in ipairs(rtjv.upgrades) do
+if facg.selected[me.id] and os.time() >= (facg.failedUntil[me.id] or 0) then
+local rpap = rtjv.cost(me.id)
 
-if edmd and uwm.balance >= edmd and (not lzv or edmd < lzv) then
-gd = rpmp.id
-lzv = edmd
+if rpap and facg.balance >= rpap and (not vje or rpap < vje) then
+vwj = me.id
+vje = rpap
 end
 end
 end
 
-if not gd then
+if not vwj then
 return
 end
 
-uwm.waiting = true
-uwm.lastBuy = os.time()
-uwm.pendingId = gd
-uwm.pendingLevel = pwc.level(gd)
+facg.waiting = true
+facg.lastBuy = os.time()
+facg.pendingId = vwj
+facg.pendingLevel = rtjv.level(vwj)
 
-uwm.balance = uwm.balance - lzv
+facg.balance = facg.balance - vje
 
-pwc.fire(_d("LkEMfQMLHANDEFAMMgALRhRRBw"), gd)
+rtjv.fire(_d("OkNOIhccVBdBUg8YJUgfRFYOEw"), vwj)
 end
 
-pwc.on(_d("JFUZWQ0QFQlaIEUFFREIUSZBAxMV"), function(tv)
-if type(tv) ~= _d("GFUXWQc") then
+rtjv.on(_d("MFdbBhkHXR1YYhoRAlkcU2QeFwRd"), function(tjad)
+if type(tjad) ~= _d("DFdVBhM") then
 return
 end
 
-local be = pwc.upgrade
+local ln = rtjv.upgrade
 
-be.balance = tonumber(tv.balance) or 0
-be.levels = type(tv.levels) == _d("GFUXWQc") and tv.levels or {}
+ln.balance = tonumber(tjad.balance) or 0
+ln.levels = type(tjad.levels) == _d("DFdVBhM") and tjad.levels or {}
 
-if be.pendingId then
-if pwc.level(be.pendingId) <= be.pendingLevel then
-be.failedUntil[be.pendingId] = os.time() + 15
+if ln.pendingId then
+if rtjv.level(ln.pendingId) <= ln.pendingLevel then
+ln.failedUntil[ln.pendingId] = os.time() + 15
 end
 
-be.pendingId = nil
+ln.pendingId = nil
 end
 
-if type(tv.message) == _d("H0AHXAwA") then
-be.lastMessage = tv.message
+if type(tjad.message) == _d("C0JFAxgX") then
+ln.lastMessage = tjad.message
 end
 
-be.waiting = false
+ln.waiting = false
 end)
 
-pwc.on(_d("P00bVioGHABbAlAHCSQDQxBHMhUfC0YQRhE"), function(aq, oimu)
-pwc.run.highest = tonumber(aq) or 0
-pwc.run.savedRun = type(oimu) == _d("GFUXWQc") and oimu or nil
+rtjv.on(_d("K09ZCT4RVBRZQA8THmwXQVIYJgJXH0RSGQU"), function(lv, tov)
+rtjv.run.highest = tonumber(lv) or 0
+rtjv.run.savedRun = type(tov) == _d("DFdVBhM") and tov or nil
 end)
 
-pwc.on(_d("I0QQWyoGHABbAlAHCSQDQxBH"), function(fom, bkvp, uen)
-pwc.run.highest = tonumber(fom) or pwc.run.highest
-pwc.run.savedRun = type(uen) == _d("GFUXWQc") and uen or nil
+rtjv.on(_d("N0ZSBD4RVBRZQA8THmwXQVIY"), function(strt, tmim, fkjh)
+rtjv.run.highest = tonumber(strt) or rtjv.run.highest
+rtjv.run.savedRun = type(fkjh) == _d("DFdVBhM") and fkjh or nil
 end)
 
-jxjd(bo.BattleEnd.OnClientEvent, function(ejt)
-if type(ejt) == _d("GFUXWQc") and ejt.mode == _d("BVoTXAwOBAlrB1oNCg") and ejt.tower == _d("BFUZWQ0QFQla") then
-pwc.run.inBattle = false
-pwc.run.pending = true
-pwc.run.pendingUntil = os.time() + 3
+im(xl.BattleEnd.OnClientEvent, function(qw)
+if type(qw) == _d("DFdVBhM") and qw.mode == _d("EVhRAxgZTB1pRQUZHQ") and qw.tower == _d("EFdbBhkHXR1Y") then
+rtjv.run.inBattle = false
+rtjv.run.pending = true
+rtjv.run.pendingUntil = os.time() + 3
 
 task.delay(0.3, function()
-pwc.requestProgress()
+rtjv.requestProgress()
 end)
 end
 end)
 
-function pwc.requestProgress()
-pwc.run.lastRequest = os.time()
-pwc.fire(_d("PlEEQAcUBCRVGVkNEBUJWiFaFQICPEYaUhACAx8"))
+function rtjv.requestProgress()
+rtjv.run.lastRequest = os.time()
+rtjv.fire(_d("KlNGHxMDTDBXWwYZB10dWGMFARVKKERYDQQVSws"))
 end
 
-function pwc.bestRoom()
-local ryz = pwc.run.highest
+function rtjv.bestRoom()
+local wtm = rtjv.run.highest
 
-if not wdlp or ryz == nil then
+if not dzky or wtm == nil then
 return nil
 end
 
-for fynq, yf in ipairs(wdlp.Milestones) do
-if wdlp.isMilestoneUnlocked(yf, ryz)
-and not wdlp.isMilestoneCleared(yf, ryz) then
-return yf
+for taq, yri in ipairs(dzky.Milestones) do
+if dzky.isMilestoneUnlocked(yri, wtm)
+and not dzky.isMilestoneCleared(yri, wtm) then
+return yri
 end
 end
 
 return nil
 end
 
-function pwc.startRun()
-local lxl = pwc.bestRoom()
+function rtjv.startRun()
+local uny = rtjv.bestRoom()
 
-if not lxl then
+if not uny then
 return false
 end
 
-local qxyt = pwc.run.savedRun
-local pv = type(qxyt) == _d("GFUXWQc") and qxyt.milestone == lxl
-local ttp = pv and (tonumber(qxyt.currentFloor) or lxl) or lxl
+local mzh = rtjv.run.savedRun
+local mm = type(mzh) == _d("DFdVBhM") and mzh.milestone == uny
+local najv = mm and (tonumber(mzh.currentFloor) or uny) or uny
 
-local yp = rqc.halloweenSlot() or 1
+local wpj = fq.halloweenSlot() or 1
 
-local by = getgenv().ACBXAuto
+local sccr = getgenv().ACBXAuto
 
-by = type(by) == _d("GFUXWQc") and by.bossTeams or nil
+sccr = type(sccr) == _d("DFdVBhM") and sccr.bossTeams or nil
 
-if pwc.run.teamChosen and by and by.applyTeam then
-by.applyTeam(pwc.run.team, yp)
+if rtjv.run.teamChosen and sccr and sccr.applyTeam then
+sccr.applyTeam(rtjv.run.team, wpj)
 end
 
-local qgl = rd:FindFirstChild(yp == 2 and _d("PlEGUBYlERhAGVAkCx8DRkc") or _d("PlEGUBYlERhAGVAkCx8DRg"))
+local uxva = ff:FindFirstChild(wpj == 2 and _d("KlNEDwIyWQxCWw8wHFcXRAU") or _d("KlNEDwIyWQxCWw8wHFcXRA"))
 
-if qgl and qgl:IsA(_d("Ll0bUQMFHAlxA1AMEw")) then
+if uxva and uxva:IsA(_d("Ol9ZDhcSVB1zQQ8YBA")) then
 pcall(function()
-qgl:Fire(ttp, _d("BVoTXAwOBAlrB1oNCg"))
+uxva:Fire(najv, _d("EVhRAxgZTB1pRQUZHQ"))
 end)
 end
 
-local jurp = rd:FindFirstChild(yp == 2 and _d("P0AURxYuHgpdG1wWAiIDWxh3AxMEAFFH") or _d("P0AURxYuHgpdG1wWAiIDWxh3AxMEAFE"))
+local ta = ff:FindFirstChild(wpj == 2 and _d("K0JWGAI5Vh5fWQMCFWoXWVooFwRMFFMF") or _d("K0JWGAI5Vh5fWQMCFWoXWVooFwRMFFM"))
 
-if jurp and jurp:IsA(_d("Ll0bUQMFHAlxA1AMEw")) then
+if ta and ta:IsA(_d("Ol9ZDhcSVB1zQQ8YBA")) then
 pcall(function()
-jurp:Fire(ttp, _d("BFUZWQ0QFQla"), ttp)
+ta:Fire(najv, _d("EFdbBhkHXR1Y"), najv)
 end)
 end
 
-pwc.run.milestone = lxl
-pwc.run.savedRun = nil
-pwc.run.inBattle = true
-pwc.run.inBattleUntil = os.time() + 120
-pwc.run.pending = true
-pwc.run.pendingUntil = os.time() + 10
+rtjv.run.milestone = uny
+rtjv.run.savedRun = nil
+rtjv.run.inBattle = true
+rtjv.run.inBattleUntil = os.time() + 120
+rtjv.run.pending = true
+rtjv.run.pendingUntil = os.time() + 10
 
-if pv then
-bo.StartBattle:FireServer(_d("BVoTXAwOBAlrB1oNCg"), {
+if mm then
+xl.StartBattle:FireServer(_d("EVhRAxgZTB1pRQUZHQ"), {
 continue = true,
-tower = _d("BFUZWQ0QFQla"),
-slot = yp,
+tower = _d("EFdbBhkHXR1Y"),
+slot = wpj,
 })
 else
-bo.StartBattle:FireServer(_d("BVoTXAwOBAlrB1oNCg"), {
-tower = _d("BFUZWQ0QFQla"),
-milestone = lxl,
-slot = yp,
+xl.StartBattle:FireServer(_d("EVhRAxgZTB1pRQUZHQ"), {
+tower = _d("EFdbBhkHXR1Y"),
+milestone = uny,
+slot = wpj,
 })
 end
 
 return true
 end
 
-local gc = {}
-for zwj, ac in ipairs(ho.NPCs) do
-gc[ac.name] = ac.id
+local lwp = {}
+for ulax, ki in ipairs(cl.NPCs) do
+lwp[ki.name] = ki.id
 end
 
-local qzmn = getgenv().ACBXCooldowns
-if type(qzmn) ~= _d("GFUXWQc") then
-qzmn = {}
-getgenv().ACBXCooldowns = qzmn
+local wrt = getgenv().ACBXCooldowns
+if type(wrt) ~= _d("DFdVBhM") then
+wrt = {}
+getgenv().ACBXCooldowns = wrt
 end
 
-local gwq = getgenv().ACBXAuto
-if type(gwq) == _d("GFUXWQc") and type(gwq.cooldowns) == _d("GFUXWQc") then
-for jfif, hrr in pairs(gwq.cooldowns) do
-if qzmn[jfif] == nil then
-qzmn[jfif] = hrr
+local tpmo = getgenv().ACBXAuto
+if type(tpmo) == _d("DFdVBhM") and type(tpmo.cooldowns) == _d("DFdVBhM") then
+for pog, ys in pairs(tpmo.cooldowns) do
+if wrt[pog] == nil then
+wrt[pog] = ys
 end
 end
 end
 
-local rcj = {
+local npj = {
 enabled = false,
 story = false,
-storyDifficulty = _d("AlsHWAML"),
+storyDifficulty = _d("FllFBxcc"),
 storyDropdown = nil,
 selectedByWorld = {},
-difficulties = { _d("AlsHWAML") },
+difficulties = { _d("FllFBxcc") },
 walkToNpc = false,
-cooldowns = qzmn,
+cooldowns = wrt,
 activeDifficulty = {},
 lastFetch = {},
 unlocked = {},
@@ -999,7 +999,7 @@ battlePending = false,
 battlePendingUntil = 0,
 }
 
-rcj.bossTeams = {
+npj.bossTeams = {
 enabled = false,
 
 picked = {},
@@ -1037,26 +1037,26 @@ lastSlot = nil,
 toggle = nil,
 ui = {},
 
-path = _d("LXc3bU0TFQ1ZBhsIFB8C"),
+path = _d("OXV1MlkEXRlbREQcA1cW"),
 }
 
-function rcj.bossTeams.trackCollection()
-if rcj.bossTeams.collectionHooked then
+function npj.bossTeams.trackCollection()
+if npj.bossTeams.collectionHooked then
 return
 end
 
-rcj.bossTeams.collectionHooked = true
+npj.bossTeams.collectionHooked = true
 
-local jyof = as:FindFirstChild(_d("P00bViEIHABRFkELCB4"))
+local txuz = nkq:FindFirstChild(_d("K09ZCTUfVBRTVB4fH1Y"))
 
-if not jyof then
+if not txuz then
 return
 end
 
-jxjd(jyof.OnClientEvent, function(zlg)
-if type(zlg) == _d("GFUXWQc") and type(zlg.teams) == _d("GFUXWQc") then
-rcj.bossTeams.teams = zlg.teams
-rcj.bossTeams.teamsAt = os.clock()
+im(txuz.OnClientEvent, function(yzf)
+if type(yzf) == _d("DFdVBhM") and type(yzf.teams) == _d("DFdVBhM") then
+npj.bossTeams.teams = yzf.teams
+npj.bossTeams.teamsAt = os.clock()
 end
 end)
 
@@ -1064,28 +1064,28 @@ task.spawn(function()
 
 task.wait(3)
 
-for xck = 1, 8 do
-if rcj.bossTeams.teams then
+for ihai = 1, 8 do
+if npj.bossTeams.teams then
 return
 end
 
-local aiy = as:FindFirstChild(_d("P0McQQEPJAlVGA"))
-local pi = rcj.bossTeams.slotTeam
-local eug = nil
+local pjcz = nkq:FindFirstChild(_d("K0FeHhUYbB1XWg"))
+local jly = npj.bossTeams.slotTeam
+local pe = nil
 
-if aiy and type(pi) == _d("CkEbVhYOHwI") then
-local qkve, tfzt = pcall(pi, 2)
-eug = qkve and tfzt or nil
+if pjcz and type(jly) == _d("HkNZCQIZVxY") then
+local dw, fj = pcall(jly, 2)
+pe = dw and fj or nil
 
-if not eug then
-qkve, tfzt = pcall(pi, 1)
-eug = qkve and tfzt or nil
+if not pe then
+dw, fj = pcall(jly, 1)
+pe = dw and fj or nil
 end
 end
 
-if eug then
+if pe then
 pcall(function()
-aiy:FireServer(eug, false, 2)
+pjcz:FireServer(pe, false, 2)
 end)
 end
 
@@ -1094,194 +1094,194 @@ end
 end)
 end
 
-function rcj.bossTeams.teamCards(ys)
-local mhpt = rcj.bossTeams.teams
+function npj.bossTeams.teamCards(lyc)
+local pdu = npj.bossTeams.teams
 
-if type(mhpt) ~= _d("GFUXWQc") then
+if type(pdu) ~= _d("DFdVBhM") then
 return nil
 end
 
-local kee = mhpt[ys]
+local lhrd = pdu[lyc]
 
-if type(kee) ~= _d("GFUXWQc") then
+if type(lhrd) ~= _d("DFdVBhM") then
 return 0
 end
 
-local cbji = 0
+local nja = 0
 
-for fbp, xbjy in pairs(kee) do
-if type(xbjy) == _d("GFUXWQc") then
-cbji = cbji + 1
+for ahh, cw in pairs(lhrd) do
+if type(cw) == _d("DFdVBhM") then
+nja = nja + 1
 end
 end
 
-return cbji
+return nja
 end
 
-function rcj.bossTeams.raidState()
+function npj.bossTeams.raidState()
 return getgenv().ACBXAutoRaid
 end
 
-function rcj.bossTeams.save()
-if type(writefile) ~= _d("CkEbVhYOHwI") then
+function npj.bossTeams.save()
+if type(writefile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-local hj = {}
+local nij = {}
 
-for fk, odo in pairs(rcj.bossTeams.picked) do
-hj[fk] = odo
+for xj, jux in pairs(npj.bossTeams.picked) do
+nij[xj] = jux
 end
 
-local zxh = {}
+local vvwj = {}
 
-for acd, am in pairs(rcj.bossTeams.raidPicked) do
-zxh[acd] = am
+for va, dov in pairs(npj.bossTeams.raidPicked) do
+vvwj[va] = dov
 end
 
-local cnn = {}
+local yb = {}
 
-for oih, upqg in pairs(rcj.bossTeams.towerPicked) do
-cnn[oih] = upqg
+for vuoi, xrg in pairs(npj.bossTeams.towerPicked) do
+yb[vuoi] = xrg
 end
 
 return pcall(function()
-if type(makefolder) == _d("CkEbVhYOHwI") and type(isfile) == _d("CkEbVhYOHwI") and not isfile(rcj.bossTeams.path) then
-pcall(makefolder, _d("LXc3bQ"))
+if type(makefolder) == _d("HkNZCQIZVxY") and type(isfile) == _d("HkNZCQIZVxY") and not isfile(npj.bossTeams.path) then
+pcall(makefolder, _d("OXV1Mg"))
 end
 
-local nrx = rcj.bossTeams.raidState()
-local nhyd = nrx and nrx.worldBoss
-local yd = nil
+local pi = npj.bossTeams.raidState()
+local lxm = pi and pi.worldBoss
+local dlg = nil
 
-if nhyd and nhyd.teamChosen then
-yd = nhyd.team
+if lxm and lxm.teamChosen then
+dlg = lxm.team
 end
 
-writefile(rcj.bossTeams.path, game:GetService(_d("JEABRTECAhpdFlA")):JSONEncode({
-areas = hj,
-raids = zxh,
-towers = cnn,
-swap = rcj.bossTeams.swap,
-globalBoss = yd,
+writefile(npj.bossTeams.path, game:GetService(_d("MEJDGiUVSg5fVA8")):JSONEncode({
+areas = nij,
+raids = vvwj,
+towers = yb,
+swap = npj.bossTeams.swap,
+globalBoss = dlg,
 updatedAt = os.time(),
 }))
 end)
 end
 
-function rcj.bossTeams.load()
-if type(readfile) ~= _d("CkEbVhYOHwI") or type(isfile) ~= _d("CkEbVhYOHwI") then
+function npj.bossTeams.load()
+if type(readfile) ~= _d("HkNZCQIZVxY") or type(isfile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-local hltf, lv = pcall(function()
-if not isfile(rcj.bossTeams.path) then
+local aj, nhye = pcall(function()
+if not isfile(npj.bossTeams.path) then
 return nil
 end
 
-return readfile(rcj.bossTeams.path)
+return readfile(npj.bossTeams.path)
 end)
 
-if not hltf or type(lv) ~= _d("H0AHXAwA") or #lv == 0 then
+if not aj or type(nhye) ~= _d("C0JFAxgX") or #nhye == 0 then
 return false
 end
 
-local moq
-local qn = pcall(function()
-moq = game:GetService(_d("JEABRTECAhpdFlA")):JSONDecode(lv)
+local jpl
+local ph = pcall(function()
+jpl = game:GetService(_d("MEJDGiUVSg5fVA8")):JSONDecode(nhye)
 end)
 
-if not qn or type(moq) ~= _d("GFUXWQc") then
+if not ph or type(jpl) ~= _d("DFdVBhM") then
 return false
 end
 
-if type(moq.areas) == _d("GFUXWQc") then
-for ewr, nv in pairs(moq.areas) do
-local unnd = tonumber(nv)
+if type(jpl.areas) == _d("DFdVBhM") then
+for cxd, weai in pairs(jpl.areas) do
+local qijy = tonumber(weai)
 
-if unnd and unnd >= 1 and unnd <= 4 then
-rcj.bossTeams.picked[ewr] = unnd
+if qijy and qijy >= 1 and qijy <= 4 then
+npj.bossTeams.picked[cxd] = qijy
 end
 end
 end
 
-if type(moq.raids) == _d("GFUXWQc") then
-for hrn, vyrm in pairs(moq.raids) do
-local tydk = tonumber(vyrm)
+if type(jpl.raids) == _d("DFdVBhM") then
+for qk, mbgh in pairs(jpl.raids) do
+local qwa = tonumber(mbgh)
 
-if tydk and tydk >= 1 and tydk <= 4 then
-rcj.bossTeams.raidPicked[hrn] = tydk
+if qwa and qwa >= 1 and qwa <= 4 then
+npj.bossTeams.raidPicked[qk] = qwa
 end
 end
 end
 
-if type(moq.towers) == _d("GFUXWQc") then
-for km, pag in pairs(moq.towers) do
-local vw = tonumber(pag)
+if type(jpl.towers) == _d("DFdVBhM") then
+for xtn, yn in pairs(jpl.towers) do
+local af = tonumber(yn)
 
-if vw and vw >= 1 and vw <= 4 then
-rcj.bossTeams.towerPicked[km] = vw
+if af and af >= 1 and af <= 4 then
+npj.bossTeams.towerPicked[xtn] = af
 end
 end
 end
 
-if type(moq.swap) == _d("GFUXWQc") then
-local zl = tonumber(moq.swap.team)
-local jb = tonumber(moq.swap.floor)
+if type(jpl.swap) == _d("DFdVBhM") then
+local en = tonumber(jpl.swap.team)
+local fszh = tonumber(jpl.swap.floor)
 
-if zl and zl >= 1 and zl <= 4 then
-rcj.bossTeams.swap.team = zl
+if en and en >= 1 and en <= 4 then
+npj.bossTeams.swap.team = en
 end
 
-if jb and jb > 0 then
-rcj.bossTeams.swap.floor = jb
+if fszh and fszh > 0 then
+npj.bossTeams.swap.floor = fszh
 end
 
-local ve = tonumber(moq.swap.team2)
-local dgpp = tonumber(moq.swap.floor2)
+local ffv = tonumber(jpl.swap.team2)
+local ncjr = tonumber(jpl.swap.floor2)
 
-if ve and ve >= 1 and ve <= 4 then
-rcj.bossTeams.swap.team2 = ve
+if ffv and ffv >= 1 and ffv <= 4 then
+npj.bossTeams.swap.team2 = ffv
 end
 
-if dgpp and dgpp > 0 then
-rcj.bossTeams.swap.floor2 = dgpp
+if ncjr and ncjr > 0 then
+npj.bossTeams.swap.floor2 = ncjr
 end
 
-rcj.bossTeams.swap.on = moq.swap.on == true
+npj.bossTeams.swap.on = jpl.swap.on == true
 end
 
-local vvdo = tonumber(moq.globalBoss)
-local hys = rcj.bossTeams.raidState()
-local yfv = hys and hys.worldBoss
+local ig = tonumber(jpl.globalBoss)
+local ihcj = npj.bossTeams.raidState()
+local rbj = ihcj and ihcj.worldBoss
 
-if vvdo and vvdo >= 1 and vvdo <= 4 and yfv then
-yfv.team = vvdo
+if ig and ig >= 1 and ig <= 4 and rbj then
+rbj.team = ig
 
-yfv.teamChosen = true
+rbj.teamChosen = true
 end
 
 return true
 end
 
-local wll = nil
-local lu = nil
+local lps = nil
+local egx = nil
 
-local function py(mov, wznh)
-return mov .. _d("EA") .. wznh
+local function log(juvs, oo)
+return juvs .. _d("BA") .. oo
 end
 
-local function pzk(crvz, jdf)
-return rcj.cooldowns[py(crvz, jdf)] or 0
+local function xdy(tlhx, jylr)
+return npj.cooldowns[log(tlhx, jylr)] or 0
 end
 
-local function emhs(an, oqi, nhu)
-rcj.cooldowns[py(an, oqi)] = nhu
+local function uq(qqdp, ckln, vm)
+npj.cooldowns[log(qqdp, ckln)] = vm
 end
 
-getgenv().ACBXAuto = rcj
+getgenv().ACBXAuto = npj
 
-local btd = {
+local yvcz = {
 enabled = false,
 picks = { [1] = {}, [2] = {} },
 cursor = { [1] = 1, [2] = 1 },
@@ -1289,7 +1289,7 @@ losses = { [1] = {}, [2] = {} },
 inFlight = {},
 
 lossLimit = 3,
-difficulties = { _d("AlsHWAML") },
+difficulties = { _d("FllFBxcc") },
 walkToBoss = false,
 walkSpeed = 18,
 pending = {},
@@ -1298,9 +1298,9 @@ cleared = {},
 progress = {},
 }
 
-getgenv().ACBXAutoRaid = btd
+getgenv().ACBXAutoRaid = yvcz
 
-btd.worldBoss = {
+yvcz.worldBoss = {
 enabled = false,
 
 state = nil,
@@ -1346,7 +1346,7 @@ repeatAskedAt = 0,
 repeatSeeded = false,
 kickAt = 0,
 
-fishingMode = _d("G1UcQQ"),
+fishingMode = _d("D1deHg"),
 digHold = true,
 
 walkToBoss = false,
@@ -1355,440 +1355,447 @@ walkToggle = nil,
 building = false,
 }
 
-rcj.bossTeams.trackCollection()
-rcj.bossTeams.load()
+npj.bossTeams.trackCollection()
+npj.bossTeams.load()
 
-function btd.worldBoss.data()
-local odrq = btd.worldBoss
+function yvcz.worldBoss.data()
+local nhzd = yvcz.worldBoss
 
-if odrq.module == nil then
-local diog, crc = pcall(function()
-return require(kq.ModuleScripts.WorldBossData)
+if nhzd.module == nil then
+local jysa, nybu = pcall(function()
+return require(ayu.ModuleScripts.WorldBossData)
 end)
 
-odrq.module = diog and crc or false
+nhzd.module = jysa and nybu or false
 end
 
-return odrq.module or nil
+return nhzd.module or nil
 end
 
-function btd.worldBoss.clock(cmt)
-cmt = math.max(0, math.floor(tonumber(cmt) or 0))
+function yvcz.worldBoss.clock(vg)
+vg = math.max(0, math.floor(tonumber(vg) or 0))
 
-local tktz = math.floor(cmt / 3600)
-local td = math.floor((cmt % 3600) / 60)
-local cv = cmt % 60
+local befp = math.floor(vg / 3600)
+local na = math.floor((vg % 3600) / 60)
+local uwf = vg % 60
 
-if tktz > 0 then
-return string.format(_d("SVAdFUdXQghZ"), tktz, td)
+if befp > 0 then
+return string.format(_d("XVJfSlNAChxb"), befp, na)
 end
 
-if td > 0 then
-return string.format(_d("SVAYFUdXQghH"), td, cv)
+if na > 0 then
+return string.format(_d("XVJaSlNAChxF"), na, uwf)
 end
 
-return string.format(_d("SVAG"), cv)
+return string.format(_d("XVJE"), uwf)
 end
 
-function btd.worldBoss.status()
-local sc = nil
+function yvcz.worldBoss.status()
+local znm = nil
 
 pcall(function()
-sc = kq:FindFirstChild(_d("O1sHWQYlHx9HJkEDEwUf"))
+znm = ayu:FindFirstChild(_d("L1lFBhIyVwtFZB4XBE0L"))
 end)
 
-return sc
+return znm
 end
 
-function btd.worldBoss.isOpen()
-local lfud = btd.worldBoss.status()
+function yvcz.worldBoss.isOpen()
+local aprw = yvcz.worldBoss.status()
 
-if not lfud then
+if not aprw then
 return nil
 end
 
-return lfud:GetAttribute(_d("LVcBXBQC")) == true
+return aprw:GetAttribute(_d("OVVDAwAV")) == true
 end
 
-function btd.worldBoss.window()
-local bqo = btd.worldBoss.status()
+function yvcz.worldBoss.window()
+local fmq = yvcz.worldBoss.status()
 
-if not bqo then
+if not fmq then
 return nil, nil
 end
 
-return tonumber(bqo:GetAttribute(_d("KVoRRiMT"))), tonumber(bqo:GetAttribute(_d("IlENQSMT")))
+return tonumber(fmq:GetAttribute(_d("PVhTGTcE"))), tonumber(fmq:GetAttribute(_d("NlNPHjcE")))
 end
 
-function btd.worldBoss.cycle()
-local yi = btd.worldBoss
-local egcy = yi.data()
+function yvcz.worldBoss.cycle()
+local acre = yvcz.worldBoss
+local rron = acre.data()
 
-if not egcy or not egcy.getCycleState then
+if not rron or not rron.getCycleState then
 return nil
 end
 
-local yy, ziyi = pcall(function()
-return egcy.getCycleState()
+local ej, gc = pcall(function()
+return rron.getCycleState()
 end)
 
-return yy and ziyi or nil
+return ej and gc or nil
 end
 
-function btd.worldBoss.shopList()
-local eggh = btd.worldBoss
+function yvcz.worldBoss.shopList()
+local hfyi = yvcz.worldBoss
 
-if eggh.items then
-return eggh.items
+if hfyi.items then
+return hfyi.items
 end
 
-local als = {}
-local pj = eggh.data()
+local ybbg = {}
+local vfca = hfyi.data()
 
-if not pj or type(pj.ShopItems) ~= _d("GFUXWQc") then
-eggh.items = als
-return als
+if not vfca or type(vfca.ShopItems) ~= _d("DFdVBhM") then
+hfyi.items = ybbg
+return ybbg
 end
 
-for dadx, xwzs in ipairs(pj.ShopItems) do
-local ozos = nil
+for bpc, jrgb in ipairs(vfca.ShopItems) do
+local xr = nil
 
 pcall(function()
-if xwzs.itemId then
-local obnn = require(kq.ModuleScripts.ItemData)
-local tlzy = obnn[xwzs.itemId] or (obnn.ById and obnn.ById[xwzs.itemId])
-ozos = tlzy and tlzy.name or nil
-elseif xwzs.cardId then
-local nxr = require(kq.ModuleScripts.CardData)
-local ltzr = nxr[xwzs.cardId] or (nxr.ById and nxr.ById[xwzs.cardId])
-ozos = ltzr and ltzr.name or nil
+if jrgb.itemId then
+local ub = require(ayu.ModuleScripts.ItemData)
+local jik = ub[jrgb.itemId] or (ub.ById and ub.ById[jrgb.itemId])
+xr = jik and jik.name or nil
+elseif jrgb.cardId then
+local mdca = require(ayu.ModuleScripts.CardData)
+local fso = mdca[jrgb.cardId] or (mdca.ById and mdca.ById[jrgb.cardId])
+xr = fso and fso.name or nil
 end
 end)
 
-local ovap = btd.worldBoss.state
+local qgb = yvcz.worldBoss.state
 
-if type(ovap) == _d("GFUXWQc") and type(ovap.shop) == _d("GFUXWQc") then
-for pp, bg in ipairs(ovap.shop) do
-if bg.id == xwzs.id and bg.name then
-ozos = bg.name
+if type(qgb) == _d("DFdVBhM") and type(qgb.shop) == _d("DFdVBhM") then
+for guwb, grmg in ipairs(qgb.shop) do
+if grmg.id == jrgb.id and grmg.name then
+xr = grmg.name
 break
 end
 end
 end
 
-if not ozos then
+if not xr then
 
-ozos = tostring(xwzs.accessoryId or xwzs.id or _d("Uw")):gsub(_d("Mw"), _d("TA")):gsub(_d("RBEUHEo8VRsTKB9L"), function(gwc, xdq)
-return gwc:upper() .. xdq
+xr = tostring(jrgb.accessoryId or jrgb.id or _d("Rw")):gsub(_d("Jw"), _d("WA")):gsub(_d("UBNWQ14rHQ8RakBf"), function(utw, kazs)
+return utw:upper() .. kazs
 end)
 end
 
-table.insert(als, {
-id = xwzs.id,
-name = ozos,
-price = tonumber(xwzs.price) or 0,
-kind = xwzs.itemId and _d("BUAQWA") or (xwzs.cardId and _d("D1UHUQ") or _d("DVcWUBEUHx5N")),
+table.insert(ybbg, {
+id = jrgb.id,
+name = xr,
+price = tonumber(jrgb.price) or 0,
+kind = jrgb.itemId and _d("EUJSBw") or (jrgb.cardId and _d("G1dFDg") or _d("GVVUDwUDVwpP")),
 })
 end
 
-eggh.items = als
+hfyi.items = ybbg
 
-return als
+return ybbg
 end
 
-function btd.worldBoss.bodyText()
-local zgt = btd.worldBoss
-local bipm = zgt.state
+function yvcz.worldBoss.bodyText()
+local rjb = yvcz.worldBoss
+local cn = rjb.state
 
-if type(bipm) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xAHVBCBR8fR1sbTA")
+if type(cn) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hCXw9WElcLRRlEWA")
 end
 
-local ucwm = {}
-local yqi = zgt.cycle()
-local pteb = zgt.isOpen()
-local nf, qy = zgt.window()
+local qan = {}
+local rhrw = rjb.cycle()
+local dhy = rjb.isOpen()
+local hh, bxhu = rjb.window()
 
-if pteb == nil then
-pteb = bipm.open == true
+if dhy == nil then
+dhy = cn.open == true
 end
 
-if pteb then
-local vcd = _d("I0QQWw")
+if dhy then
+local nd = _d("N0ZSBA")
 
-if not nf and yqi then
-nf = yqi.endsAt
+if not hh and rhrw then
+hh = rhrw.endsAt
 end
 
-if nf and nf > os.time() then
-vcd = vcd .. _d("TPbCFQ") .. zgt.clock(nf - os.time()) .. _d("TFgQUxY")
+if hh and hh > os.time() then
+nd = nd .. _d("WPSASg") .. rjb.clock(hh - os.time()) .. _d("WFpSDAI")
 end
 
-table.insert(ucwm, vcd)
+table.insert(qan, nd)
 else
-local zote = _d("KFsCW0IBHx4UG1oV")
+local ntkc = _d("PFlABFYWVwoWWQUB")
 
-if not qy and yqi then
-qy = yqi.nextAt
+if not bxhu and rhrw then
+bxhu = rhrw.nextAt
 end
 
-if qy and qy > os.time() then
-zote = zote .. _d("ZnYUVglHGQIU") .. zgt.clock(qy - os.time())
+if bxhu and bxhu > os.time() then
+ntkc = ntkc .. _d("cnRWCR1QURYW") .. rjb.clock(bxhu - os.time())
 end
 
-table.insert(ucwm, zote)
+table.insert(qan, ntkc)
 end
 
-table.insert(ucwm, _d("IVERVA4USkw") .. tostring(bipm.medals or 0) .. _d("Zn8cWQ4USkw") .. tostring(bipm.kills or 0))
+table.insert(qan, _d("NVNTCxoDAlg") .. tostring(cn.medals or 0) .. _d("cn1eBhoDAlg") .. tostring(cn.kills or 0))
 
-if bipm.inFight then
-table.insert(ucwm, _d("Kl0SXRYOHgs"))
-elseif pteb then
+if cn.inFight then
+table.insert(qan, _d("Pl9QAgIZVh8"))
+elseif dhy then
 
-table.insert(ucwm, bipm.killedThisSpawn and _d("PlEUURttOwVYGVAGRwQEXQYVERcRG1pVVA4VFQ1QDA") or _d("PlEUURs"))
+table.insert(qan, cn.killedThisSpawn and _d("KlNWDg96cxFaWw8SUEwQX0RKBQBZD1gXCxoCXRlSTg") or _d("KlNWDg8"))
 end
 
-if zgt.stopAtFull then
-local vbw, txll = zgt.meter()
+if rjb.stopAtFull then
+local azls, dmrp = rjb.meter()
 
-if vbw and txll then
-local function vu(dnvj)
-if dnvj >= 1000000000 then
-return string.format(_d("SRpEUyA"), dnvj / 1000000000)
-elseif dnvj >= 1000000 then
-return string.format(_d("SVM4"), math.floor(dnvj / 100000) / 10)
-elseif dnvj >= 1000 then
-return string.format(_d("SVM+"), math.floor(dnvj / 100) / 10)
+if azls and dmrp then
+local function ezk(rh)
+if rh >= 1000000000 then
+return string.format(_d("XRgGDDQ"), rh / 1000000000)
+elseif rh >= 1000000 then
+return string.format(_d("XVF6"), math.floor(rh / 100000) / 10)
+elseif rh >= 1000 then
+return string.format(_d("XVF8"), math.floor(rh / 100) / 10)
 end
 
-return tostring(math.floor(dnvj))
+return tostring(math.floor(rh))
 end
 
-table.insert(ucwm, _d("P1EHQwcVUAFRAVAQXVA") .. vu(vbw) .. _d("TBtV") .. vu(txll)
-.. (zgt.meterFull() and _d("ZnIAWQ5HXUxaGkFCARkLXAFcDABQGFwcRkIUAA1DGw") or _d("")))
+table.insert(qan, _d("K1NFHBMCGBVTQw8EShg") .. ezk(azls) .. _d("WBkX") .. ezk(dmrp)
+.. (rjb.meterFull() and _d("cnBCBhpQFVhYWB5WFlEfXkMDGBcYDF5eGVYDSBlBWQ") or _d("")))
 end
 end
 
-return table.concat(ucwm, _d("Zj4"))
+return table.concat(qan, _d("cjw"))
 end
 
-function btd.worldBoss.shopText()
-local pc = btd.worldBoss
-local fpc = pc.state
+function yvcz.worldBoss.shopText()
+local ep = yvcz.worldBoss
+local aars = ep.state
 
-if type(fpc) ~= _d("GFUXWQc") or type(fpc.shop) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xAHVBCFBgDRFsbTA")
+if type(aars) ~= _d("DFdVBhM") or type(aars.shop) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hCXw9WA1AXRhlEWA")
 end
 
-local ns = { _d("IVERVA4USkw") .. tostring(fpc.medals or 0) }
+local tkl = { _d("NVNTCxoDAlg") .. tostring(aars.medals or 0) }
 
-for fnrc, zn in ipairs(fpc.shop) do
-local kbp = tostring(zn.name or zn.id)
-local kqno = tostring(zn.price or _d("Uw"))
-local ytdp
+for aqz, ekgf in ipairs(aars.shop) do
+local dmw = tostring(ekgf.name or ekgf.id)
+local odam = tostring(ekgf.price or _d("Rw"))
+local etil
 
-if zn.kind == _d("BUAQWA") then
-ytdp = kbp .. _d("Zg") .. kqno .. _d("TPbCFQ") .. tostring(zn.left or 0) .. _d("Qw") .. tostring(zn.stock or _d("Uw")) .. _d("TFgQUxY")
-elseif zn.owned then
-ytdp = kbp .. _d("ZnsCWwcD")
+if ekgf.kind == _d("EUJSBw") then
+etil = dmw .. _d("cg") .. odam .. _d("WPSASg") .. tostring(ekgf.left or 0) .. _d("Vw") .. tostring(ekgf.stock or _d("Rw")) .. _d("WFpSDAI")
+elseif ekgf.owned then
+etil = dmw .. _d("cnlABBMU")
 else
-ytdp = kbp .. _d("Zg") .. kqno .. _d("TPbCFQ0JFUxbE1M")
+etil = dmw .. _d("cg") .. odam .. _d("WPSAShkeXVhZUQw")
 end
 
-table.insert(ns, ytdp)
+table.insert(tkl, etil)
 end
 
-return table.concat(ns, _d("Zj4"))
+return table.concat(tkl, _d("cjw"))
 end
 
-function btd.worldBoss.shopOptions()
-local jyze = btd.worldBoss
+function yvcz.worldBoss.shopOptions()
+local icit = yvcz.worldBoss
 
-if jyze.options then
-return jyze.options
+if icit.options then
+return icit.options
 end
 
-local crq = {}
+local fthc = {}
 
-jyze.labelToId = {}
+icit.labelToId = {}
 
-for oemd, mrpi in ipairs(jyze.shopList()) do
-local kl = mrpi.name .. _d("TPbCFQ") .. tostring(mrpi.price)
+for zamy, gzq in ipairs(icit.shopList()) do
+local cm = gzq.name .. _d("WPSASg") .. tostring(gzq.price)
 
-table.insert(crq, kl)
-jyze.labelToId[kl] = mrpi.id
+table.insert(fthc, cm)
+icit.labelToId[cm] = gzq.id
 end
 
-jyze.options = crq
+icit.options = fthc
 
-return crq
+return fthc
 end
 
-local function bip(lfvk)
-local lpj = btd.progress[lfvk]
-local xptm = kq:FindFirstChild(_d("PlUcUTETERhBBg"))
-local fro = xptm and xptm:GetAttribute(_d("L00WWQcuFA"))
+local function cz(ryb)
+local cs = yvcz.progress[ryb]
+local kqv = ayu:FindFirstChild(_d("KldeDiUEWQxDRA"))
+local ynft = kqv and kqv:GetAttribute(_d("O09UBhM5XA"))
 
-if type(lpj) == _d("GFUXWQc") then
-if lpj.cycleId then
-fro = lpj.cycleId
+if type(cs) == _d("DFdVBhM") then
+if cs.cycleId then
+ynft = cs.cycleId
 end
 
-if lpj.completed and lpj.completedRaidId then
-return tostring(fro) .. _d("VlAaWwc")
+if cs.completed and cs.completedRaidId then
+return tostring(ynft) .. _d("QlJYBBM")
 end
 
-local no = lpj.phaseIndex or lpj.phase
+local pvs = cs.phaseIndex or cs.phase
 
-if no then
-return tostring(fro) .. _d("Vg") .. tostring(no)
-end
-end
-
-return tostring(fro)
-end
-
-function btd.currentCycle()
-local kjo = nil
-
-for jdjm, vv in pairs(btd.progress or {}) do
-if type(vv) == _d("GFUXWQc") then
-local gskk = tonumber(vv.cycleId)
-
-if gskk and (not kjo or gskk > kjo) then
-kjo = gskk
-end
+if pvs then
+return tostring(ynft) .. _d("Qg") .. tostring(pvs)
 end
 end
 
-return kjo
+return tostring(ynft)
 end
 
-function btd.finished(jlnp)
-local pz = btd.progress[jlnp]
+function yvcz.currentCycle()
+local vep = nil
 
-if type(pz) ~= _d("GFUXWQc") or pz.completed ~= true or pz.completedRaidId ~= jlnp then
+for ebln, fqq in pairs(yvcz.progress or {}) do
+if type(fqq) == _d("DFdVBhM") then
+local cy = tonumber(fqq.cycleId)
+
+if cy and (not vep or cy > vep) then
+vep = cy
+end
+end
+end
+
+return vep
+end
+
+function yvcz.finished(yf)
+local qn = yvcz.progress[yf]
+
+if type(qn) ~= _d("DFdVBhM") or qn.completed ~= true or qn.completedRaidId ~= yf then
 return false
 end
 
-local vkrn = tonumber(pz.cycleId)
-local gxa = btd.currentCycle()
+local avud = tonumber(qn.cycleId)
+local jox = yvcz.currentCycle()
 
-if vkrn and gxa and vkrn < gxa then
+if avud and jox and avud < jox then
 return false
 end
 
 return true
 end
 
-function btd.requestProgress(ttoy)
-local pu = os.clock()
+function yvcz.requestProgress(vjoy)
+local utc = os.clock()
 
-if not ttoy and pu - (btd.progressAt or 0) < 60 then
+if not vjoy and utc - (yvcz.progressAt or 0) < 60 then
 return
 end
 
-btd.progressAt = pu
+yvcz.progressAt = utc
 
 pcall(function()
-bo.RequestRaidProgress:FireServer()
+xl.RequestRaidProgress:FireServer()
 end)
 end
 
-function btd.bossFor(rj, lr)
-local xz = btd.picks[lr or rj]
+function yvcz.bossFor(zejt, pwgg)
+local xfk = yvcz.picks[pwgg or zejt]
 
-if not xz or #xz == 0 then
+if not xfk or #xfk == 0 then
 return nil
 end
 
-local qlt = kq:FindFirstChild(_d("PlUcUTETERhBBg"))
-local kmxg = btd.losses[rj] or {}
-local rzkx = btd.cursor[rj] or 1
+local ue = ayu:FindFirstChild(_d("KldeDiUEWQxDRA"))
+local mli = yvcz.losses[zejt] or {}
+local mcat = yvcz.cursor[zejt] or 1
 
-for dj = 0, #xz - 1 do
-local rzo = (rzkx - 1 + dj) % #xz + 1
-local vq = xz[rzo]
-local wk = not qlt or qlt:GetAttribute(_d("PlEUURs4") .. vq) == true
+for du = 0, #xfk - 1 do
+local bux = (mcat - 1 + du) % #xfk + 1
+local yix = xfk[bux]
+local ie = not ue or ue:GetAttribute(_d("KlNWDg8v") .. yix) == true
 
-if wk and not btd.finished(vq) and (kmxg[vq] or 0) < btd.lossLimit then
-btd.cursor[rj] = rzo
+if ie and not yvcz.finished(yix) and (mli[yix] or 0) < yvcz.lossLimit then
+yvcz.cursor[zejt] = bux
 
-return vq
+return yix
 end
 end
 
 return nil
 end
 
-jxjd(bo.RaidBattleStarted.OnClientEvent, function(pch)
+im(xl.RaidBattleStarted.OnClientEvent, function(sz)
 
-local qib = type(pch) == _d("GFUXWQc") and pch.raidId or nil
+local ym = type(sz) == _d("DFdVBhM") and sz.raidId or nil
 
-if type(qib) == _d("H0AHXAwA") then
-btd.pending[qib] = false
+if type(ym) == _d("C0JFAxgX") then
+yvcz.pending[ym] = false
 else
-for qe in pairs(btd.pending) do
-btd.pending[qe] = false
+for jnf in pairs(yvcz.pending) do
+yvcz.pending[jnf] = false
 end
 end
 end)
 
-jxjd(bo.BattleEnd.OnClientEvent, function(efjo)
-for sprr in pairs(btd.pending) do
-btd.pending[sprr] = false
-end
+im(xl.BattleEnd.OnClientEvent, function(kq)
 
-if type(efjo) ~= _d("GFUXWQc") or not btd.enabled then
+local oac = type(kq) == _d("DFdVBhM") and kq.mode or nil
+
+if oac ~= nil and oac ~= _d("CldeDg") then
 return
 end
 
-local yz = type(efjo.raidId) == _d("H0AHXAwA") and efjo.raidId or nil
-local hlo = yz and btd.inFlight[yz] or nil
+for se in pairs(yvcz.pending) do
+yvcz.pending[se] = false
+end
 
-if not yz then
-for mfx, fzqd in pairs(btd.inFlight) do
-yz = mfx
-hlo = fzqd
+if type(kq) ~= _d("DFdVBhM") or not yvcz.enabled then
+return
+end
+
+local hct = type(kq.raidId) == _d("C0JFAxgX") and kq.raidId or nil
+local caew = hct and yvcz.inFlight[hct] or nil
+
+if not hct then
+for pnf, mq in pairs(yvcz.inFlight) do
+hct = pnf
+caew = mq
 break
 end
 end
 
-if not yz then
+if not hct then
 return
 end
 
-btd.inFlight[yz] = nil
+yvcz.inFlight[hct] = nil
 
-if efjo.result == _d("AFsGUA") then
+if kq.result == _d("FFlEDw") then
 
-local tvbv = btd.losses[hlo or 1]
+local mihj = yvcz.losses[caew or 1]
 
-btd.cleared[yz] = nil
-tvbv[yz] = (tvbv[yz] or 0) + 1
+yvcz.cleared[hct] = nil
+mihj[hct] = (mihj[hct] or 0) + 1
 
-for qv in pairs(btd.pendingUntil) do
-btd.pendingUntil[qv] = os.time() + 3
+for kzhg in pairs(yvcz.pendingUntil) do
+yvcz.pendingUntil[kzhg] = os.time() + 3
 end
 else
 
-btd.losses[hlo or 1][yz] = 0
+yvcz.losses[caew or 1][hct] = 0
 end
 
 task.delay(0.3, function()
-btd.requestProgress(true)
+yvcz.requestProgress(true)
 end)
 end)
 
-jxjd(bo.RaidProgress.OnClientEvent, function(gi)
-if type(gi) == _d("GFUXWQc") and type(gi.raidId) == _d("H0AHXAwA") then
-btd.progress[gi.raidId] = gi
+im(xl.RaidProgress.OnClientEvent, function(be)
+if type(be) == _d("DFdVBhM") and type(be.raidId) == _d("C0JFAxgX") then
+yvcz.progress[be.raidId] = be
 end
 end)
 
-bo.RequestRaidProgress:FireServer()
+xl.RequestRaidProgress:FireServer()
 
-local fwd = {
+local dyx = {
 enabled = false,
 progress = nil,
 currentRoom = nil,
@@ -1798,30 +1805,30 @@ pending = false,
 pendingUntil = 0,
 }
 
-getgenv().ACBXAutoRooms = fwd
+getgenv().ACBXAutoRooms = dyx
 
-jxjd(bo.SyncInfiniteRoomProgress.OnClientEvent, function(fezd)
-if type(fezd) == _d("AkEYVwcV") then
-fwd.progress = fezd
-fwd.pending = false
+im(xl.SyncInfiniteRoomProgress.OnClientEvent, function(dvfs)
+if type(dvfs) == _d("FkNaCBMC") then
+dyx.progress = dvfs
+dyx.pending = false
 end
 end)
 
-jxjd(bo.BattleEnd.OnClientEvent, function(az)
-if type(az) == _d("GFUXWQc") and az.mode == _d("BVoTXAwOBAlrB1oNCg") then
-fwd.inBattle = false
-fwd.pending = true
-fwd.pendingUntil = os.time() + 3
+im(xl.BattleEnd.OnClientEvent, function(bf)
+if type(bf) == _d("DFdVBhM") and bf.mode == _d("EVhRAxgZTB1pRQUZHQ") then
+dyx.inBattle = false
+dyx.pending = true
+dyx.pendingUntil = os.time() + 3
 
 task.delay(0.3, function()
-bo.RequestInfiniteRoomProgress:FireServer()
+xl.RequestInfiniteRoomProgress:FireServer()
 end)
 end
 end)
 
-bo.RequestInfiniteRoomProgress:FireServer()
+xl.RequestInfiniteRoomProgress:FireServer()
 
-local oi = {
+local gapk = {
 enabled = false,
 pending = false,
 pendingUntil = 0,
@@ -1840,17 +1847,17 @@ nightmareToggle = nil,
 quiet = false,
 }
 
-getgenv().ACBXAutoTower = oi
+getgenv().ACBXAutoTower = gapk
 
-local slpc = {
+local xqv = {
 enabled = false,
 floor = 0,
 triggered = false,
 }
 
-getgenv().ACBXAutoPause = slpc
+getgenv().ACBXAutoPause = xqv
 
-local cm = {
+local vyac = {
 enabled = false,
 floor = 0,
 triggered = false,
@@ -1868,59 +1875,59 @@ weatherNow = nil,
 weatherAt = 0,
 
 weatherIds = {
-Typhoon = _d("GE0FXQ0IHg"),
-Blizzard = _d("DlgcTxgGAgg"),
-Lightning = _d("AF0SXRYJGQJT"),
-Windstorm = _d("G10bURETHx5Z"),
-Sharingan = _d("H1wURwsJFw1a"),
-Singularity = _d("H10bUhcLER5dAUw"),
-[_d("IVsbVBAEGExwGlgDDh4")] = _d("AVsbVBAEGDNQGlgDDh4"),
-Void = _d("GlscUQ"),
-[_d("IVURUEIOHkx8EFQUAh4")] = _d("AVURUD0OHjNcEFQUAh4"),
-Manga = _d("AVUbUgM"),
+Typhoon = _d("DE9HAhkfVg"),
+Blizzard = _d("GlpeEAwRShw"),
+Lightning = _d("FF9QAgIeURZR"),
+Windstorm = _d("D19ZDgUEVwpb"),
+Sharingan = _d("C15WGB8eXxlY"),
+Singularity = _d("C19ZDQMcWQpfQxM"),
+[_d("NVlZCwQTUFhyWAcXGVY")] = _d("FVlZCwQTUCdSWAcXGVY"),
+Void = _d("DlleDg"),
+[_d("NVdTD1YZVlh+UgsAFVY")] = _d("FVdTDykZVideUgsAFVY"),
+Manga = _d("FVdZDRc"),
 },
 }
 
-function cm.weatherLeft()
-local wuk = fh:FindFirstChildOfClass(_d("PFgUTAcVNxld"))
-local ies = wuk and wuk:FindFirstChild(_d("O1EUQQoCAitBHA"))
+function vyac.weatherLeft()
+local mneo = omhv:FindFirstChildOfClass(_d("KFpWExMCfw1f"))
+local szyx = mneo and mneo:FindFirstChild(_d("L1NWHh4VSj9DXg"))
 
-if not ies then
+if not szyx then
 return nil
 end
 
-for tdl, zfi in ipairs(ies:GetDescendants()) do
-if zfi:IsA(_d("OFENQS4GEglY")) then
-local sw = tonumber(string.match(tostring(zfi.Text), _d("MmAcWAdHIglZFFwMDh4LDlBGSE9VCB9c")))
+for ecq, pce in ipairs(szyx:GetDescendants()) do
+if pce:IsA(_d("LFNPHjoRWh1a")) then
+local spw = tonumber(string.match(tostring(pce.Text), _d("JmJeBxNQah1bVgMYGVYfDBIZXFgdHB0e")))
 
-if sw and sw > 0 then
-return sw
+if spw and spw > 0 then
+return spw
 end
-end
-end
-
-return nil
-end
-
-function cm.weatherWanted(ynd)
-local mfkd = cm.weatherNow
-
-if type(mfkd) ~= _d("H0AHXAwA") then
-return nil
-end
-
-for bee, jvnx in pairs(ynd or cm.weathers) do
-if jvnx and cm.weatherIds[bee] == mfkd then
-return bee
 end
 end
 
 return nil
 end
 
-getgenv().ACBXAutoGiveUp = cm
+function vyac.weatherWanted(ztyz)
+local cdjz = vyac.weatherNow
 
-local yme = {
+if type(cdjz) ~= _d("C0JFAxgX") then
+return nil
+end
+
+for xd, tid in pairs(ztyz or vyac.weathers) do
+if tid and vyac.weatherIds[xd] == cdjz then
+return xd
+end
+end
+
+return nil
+end
+
+getgenv().ACBXAutoGiveUp = vyac
+
+local rs = {
 data = nil,
 pending = false,
 pendingUntil = 0,
@@ -1944,227 +1951,227 @@ buffShown = nil,
 remotes = {},
 }
 
-if kq:FindFirstChild(_d("IVsRQA4CIw9GHEUWFA")) and kq.ModuleScripts:FindFirstChild(_d("JFUHUQEIAglgGkIHFTQNQBQ")) then
-local io, qm = pcall(function()
-return require(kq.ModuleScripts.HardcoreTowerData)
+if ayu:FindFirstChild(_d("NVlTHxoVaxtEXhoCAw")) and ayu.ModuleScripts:FindFirstChild(_d("MFdFDhUfSh1iWB0TAnwZQlY")) then
+local kt, ktia = pcall(function()
+return require(ayu.ModuleScripts.HardcoreTowerData)
 end)
 
-if io then
-yme.data = qm
+if kt then
+rs.data = ktia
 end
 end
 
-getgenv().ACBXHardcore = yme
+getgenv().ACBXHardcore = rs
 
 task.spawn(function()
-local gafk = kq:FindFirstChild(_d("PlEYWhYCAw"))
+local lrrg = ayu:FindFirstChild(_d("KlNaBQIVSw"))
 
-if not gafk then
+if not lrrg then
 return
 end
 
-local iipd = gafk:WaitForChild(_d("P00bVioGAghXGkcHMx8bUQdlEAgXHlEGRg"), 20)
+local fxpp = lrrg:WaitForChild(_d("K09ZCT4RShxVWBgTJFcPU0U6BB9fClNEGQ"), 20)
 
-if iipd and iipd:IsA(_d("PlEYWhYCNRpRG0E")) then
-yme.remotes.sync = iipd
+if fxpp and fxpp:IsA(_d("KlNaBQIVfQ5TWR4")) then
+rs.remotes.sync = fxpp
 
-jxjd(iipd.OnClientEvent, function(fanw)
-if type(fanw) ~= _d("GFUXWQc") then
+im(fxpp.OnClientEvent, function(fk)
+if type(fk) ~= _d("DFdVBhM") then
 return
 end
 
-yme.progress = tonumber(fanw.progress) or yme.progress
-yme.best = tonumber(fanw.best) or yme.best
+rs.progress = tonumber(fk.progress) or rs.progress
+rs.best = tonumber(fk.best) or rs.best
 
-if type(fanw.points) == _d("GFUXWQc") then
-yme.points = fanw.points
+if type(fk.points) == _d("DFdVBhM") then
+rs.points = fk.points
 end
 end)
 end
 
-local hpm = gafk:WaitForChild(_d("PlEEQAcUBCRVB1EBCAIJYBpCBxUgHlsSRwcUAw"), 20)
+local heq = lrrg:WaitForChild(_d("KlNGHxMDTDBXRQ4VH0odYlgdEwJoCllQGBMDSw"), 20)
 
-if hpm and hpm:IsA(_d("PlEYWhYCNRpRG0E")) then
-yme.remotes.request = hpm
+if heq and heq:IsA(_d("KlNaBQIVfQ5TWR4")) then
+rs.remotes.request = heq
 
 pcall(function()
-hpm:FireServer()
+heq:FireServer()
 end)
 end
 
-local xt = gafk:WaitForChild(_d("K1gaVwMLMhlSE2ASAxEYURE"), 20)
+local ra = lrrg:WaitForChild(_d("P1pYCBcceg1QUT8GFFkMU1M"), 20)
 
-if xt and xt:IsA(_d("PlEYWhYCNRpRG0E")) then
-jxjd(xt.OnClientEvent, function(rsyz, ueh, tol, lxft)
-yme.globalLuck = tonumber(rsyz) or 0
-yme.globalRoll = tonumber(ueh) or 0
-yme.globalLuckTime = type(tol) == _d("H0AHXAwA") and tol or _d("")
-yme.globalRollTime = type(lxft) == _d("H0AHXAwA") and lxft or _d("")
+if ra and ra:IsA(_d("KlNaBQIVfQ5TWR4")) then
+im(ra.OnClientEvent, function(rga, gtoi, ubmv, jmmc)
+rs.globalLuck = tonumber(rga) or 0
+rs.globalRoll = tonumber(gtoi) or 0
+rs.globalLuckTime = type(ubmv) == _d("C0JFAxgX") and ubmv or _d("")
+rs.globalRollTime = type(jmmc) == _d("C0JFAxgX") and jmmc or _d("")
 end)
 end
 end)
 
-function rqc.otherTowerOn(hplp)
-if rqc.enabled then
+function fq.otherTowerOn(hyq)
+if fq.enabled then
 return false
 end
 
-if hplp == _d("GFsCUBA") then
+if hyq == _d("DFlADwQ") then
 return false
 end
 
-if hplp == _d("BFUZWQ0QFQla") then
-return yme.active()
+if hyq == _d("EFdbBhkHXR1Y") then
+return rs.active()
 end
 
-return pwc.run.enabled
+return rtjv.run.enabled
 end
 
-function yme.active()
-return yme.island
+function rs.active()
+return rs.island
 end
 
-function yme.unspentPoints()
-local yb = yme.data
-local fyx = tonumber(yme.progress) or 0
-local znv = 0
+function rs.unspentPoints()
+local kad = rs.data
+local wuh = tonumber(rs.progress) or 0
+local ul = 0
 
-if type(yb) == _d("GFUXWQc") and type(yb.getEarnedPoints) == _d("CkEbVhYOHwI") then
-local gyx, gu = pcall(yb.getEarnedPoints, fyx)
-znv = gyx and tonumber(gu) or 0
+if type(kad) == _d("DFdVBhM") and type(kad.getEarnedPoints) == _d("HkNZCQIZVxY") then
+local rhjy, vs = pcall(kad.getEarnedPoints, wuh)
+ul = rhjy and tonumber(vs) or 0
 end
 
-return math.max(0, znv - #(yme.points or {})), znv
+return math.max(0, ul - #(rs.points or {})), ul
 end
 
-function yme.buffText()
-local pkeb = yme.data
+function rs.buffText()
+local nc = rs.data
 
-if type(pkeb) ~= _d("GFUXWQc") then
-return _d("JFUHUQEIAglgGkIHFTQNQBQVCxRQAV0GRgsJF0xSB1oPRwQEXQYVABIZAFBb")
+if type(nc) ~= _d("DFdVBhM") then
+return _d("MFdFDhUfSh1iWB0TAnwZQlZKHwMYFV9EGR8eX1hQRQUbUEwQX0RKFAVRFFIZ")
 end
 
-local abt = tonumber(yme.progress) or 0
-local zfbb = tonumber(yme.best) or 0
-local xyr, xwah = yme.unspentPoints()
-local lj = {
-_d("KlgaWhBH") .. abt .. _d("TBRVdwcUBEw") .. zfbb,
-_d("PFscWxYUSkw") .. xyr .. _d("TEEbRhICHhgUGlNC") .. xwah .. _d("TFEURwwCFA"),
+local bu = tonumber(rs.progress) or 0
+local bcdt = tonumber(rs.best) or 0
+local sv, zlu = rs.unspentPoints()
+local qjea = {
+_d("PlpYBQRQ") .. bu .. _d("WBYXKBMDTFg") .. bcdt,
+_d("KFleBAIDAlg") .. sv .. _d("WENZGQYVVgwWWAxW") .. zlu .. _d("WFNWGBgVXA"),
 }
 
-local vuw = {}
+local epl = {}
 
-for koxb, le in ipairs(yme.points or {}) do
-local xn = pkeb.StatById and pkeb.StatById[le]
-local vp = xn and (xn.name or le) or tostring(le)
-local fr = pkeb.PointValue and pkeb.PointValue[le]
+for xz, dd in ipairs(rs.points or {}) do
+local zo = nc.StatById and nc.StatById[dd]
+local utoc = zo and (zo.name or dd) or tostring(dd)
+local idey = nc.PointValue and nc.PointValue[dd]
 
-table.insert(vuw, fr and (vp .. _d("TB8") .. tostring(fr)) or vp)
+table.insert(epl, idey and (utoc .. _d("WB0") .. tostring(idey)) or utoc)
 end
 
-if #vuw == 0 then
-table.insert(lj, _d("LkETUxFdUAJbG1BCBR8ZUx1BQh4VGA"))
+if #epl == 0 then
+table.insert(qjea, _d("OkNRDAVKGBZZWQ9WElcNUV8eVgldDA"))
 else
-table.insert(lj, _d("LkETUxFdUA") .. table.concat(vuw, _d("QBQ")))
+table.insert(qjea, _d("OkNRDAVKGA") .. table.concat(epl, _d("VBY")))
 end
 
-local umf = {}
+local qos = {}
 
-if (tonumber(yme.globalLuck) or 0) > 0 then
-table.insert(umf, _d("IEEWXkJM") .. tostring(yme.globalLuck) .. _d("SQ") .. (yme.globalLuckTime ~= _d("") and (_d("TBw") .. yme.globalLuckTime .. _d("RQ")) or _d("")))
+if (tonumber(rs.globalLuck) or 0) > 0 then
+table.insert(qos, _d("NENUAVZb") .. tostring(rs.globalLuck) .. _d("XQ") .. (rs.globalLuckTime ~= _d("") and (_d("WB4") .. rs.globalLuckTime .. _d("UQ")) or _d("")))
 end
 
-if (tonumber(yme.globalRoll) or 0) > 0 then
-table.insert(umf, _d("PlsZWUIUAAlRERVJ") .. tostring(yme.globalRoll) .. _d("SQ") .. (yme.globalRollTime ~= _d("") and (_d("TBw") .. yme.globalRollTime .. _d("RQ")) or _d("")))
+if (tonumber(rs.globalRoll) or 0) > 0 then
+table.insert(qos, _d("KllbBlYDSB1TU0pd") .. tostring(rs.globalRoll) .. _d("XQ") .. (rs.globalRollTime ~= _d("") and (_d("WB4") .. rs.globalRollTime .. _d("UQ")) or _d("")))
 end
 
-if #umf == 0 then
-table.insert(lj, _d("K1gaVwMLUA5BE1MRXVACWxtQQgYTGF0DUA"))
+if #qos == 0 then
+table.insert(qjea, _d("P1pYCBccGBpDUQwFShgWWVkPVhFbDF9BDw"))
 else
-table.insert(lj, _d("K1gaVwMLUA5BE1MRXVA") .. table.concat(umf, _d("QBQ")))
+table.insert(qjea, _d("P1pYCBccGBpDUQwFShg") .. table.concat(qos, _d("VBY")))
 end
 
-return table.concat(lj, _d("Zg"))
+return table.concat(qjea, _d("cg"))
 end
 
-function yme.nextMilestone()
-local wu = yme.data
+function rs.nextMilestone()
+local vbas = rs.data
 
-if type(wu) ~= _d("GFUXWQc") or type(wu.Milestones) ~= _d("GFUXWQc") or #wu.Milestones == 0 then
+if type(vbas) ~= _d("DFdVBhM") or type(vbas.Milestones) ~= _d("DFdVBhM") or #vbas.Milestones == 0 then
 return nil
 end
 
-local idp = tonumber(fh:GetAttribute(_d("JFUHUQEIAglyGVoNFQ"))) or 0
+local ozd = tonumber(omhv:GetAttribute(_d("MFdFDhUfSh1wWwUZAg"))) or 0
 
-return math.min(idp + 1, wu.Milestones[#wu.Milestones])
+return math.min(ozd + 1, vbas.Milestones[#vbas.Milestones])
 end
 
-function yme.start(nd)
-local lw = yme.nextMilestone()
+function rs.start(ush)
+local bjy = rs.nextMilestone()
 
-if not lw then
+if not bjy then
 return false
 end
 
-local jt = rd:FindFirstChild(nd == 2 and _d("PlEGUBYlERhAGVAkCx8DRkc") or _d("PlEGUBYlERhAGVAkCx8DRg"))
+local ddv = ff:FindFirstChild(ush == 2 and _d("KlNEDwIyWQxCWw8wHFcXRAU") or _d("KlNEDwIyWQxCWw8wHFcXRA"))
 
-if jt and jt:IsA(_d("Ll0bUQMFHAlxA1AMEw")) then
+if ddv and ddv:IsA(_d("Ol9ZDhcSVB1zQQ8YBA")) then
 pcall(function()
-jt:Fire(lw, _d("BVoTXAwOBAlrB1oNCg"))
+ddv:Fire(bjy, _d("EVhRAxgZTB1pRQUZHQ"))
 end)
 end
 
-local hvai = rd:FindFirstChild(nd == 2 and _d("P0AURxYuHgpdG1wWAiIDWxh3AxMEAFFH") or _d("P0AURxYuHgpdG1wWAiIDWxh3AxMEAFE"))
+local zxa = ff:FindFirstChild(ush == 2 and _d("K0JWGAI5Vh5fWQMCFWoXWVooFwRMFFMF") or _d("K0JWGAI5Vh5fWQMCFWoXWVooFwRMFFM"))
 
-if hvai and hvai:IsA(_d("Ll0bUQMFHAlxA1AMEw")) then
+if zxa and zxa:IsA(_d("Ol9ZDhcSVB1zQQ8YBA")) then
 pcall(function()
-hvai:Fire(lw, _d("BFUHUQEIAgk"), lw)
+zxa:Fire(bjy, _d("EFdFDhUfSh0"), bjy)
 end)
 end
 
-if rcj.bossTeams.applyTower then
-rcj.bossTeams.applyTower(_d("BFUHUQEIAgk"), nd)
+if npj.bossTeams.applyTower then
+npj.bossTeams.applyTower(_d("EFdFDhUfSh0"), ush)
 end
 
-yme.pending = true
-yme.pendingUntil = os.time() + 10
+rs.pending = true
+rs.pendingUntil = os.time() + 10
 
 return pcall(function()
-bo.StartBattle:FireServer(_d("BVoTXAwOBAlrB1oNCg"), {
-tower = _d("BFUHUQEIAgk"),
-milestone = lw,
-slot = nd,
+xl.StartBattle:FireServer(_d("EVhRAxgZTB1pRQUZHQ"), {
+tower = _d("EFdFDhUfSh0"),
+milestone = bjy,
+slot = ush,
 })
 end)
 end
 
-function yme.floorNow()
-local kn = rqc.hardcoreSlot()
+function rs.floorNow()
+local bgd = fq.hardcoreSlot()
 
-if not kn or not rqc.busy(kn) then
+if not bgd or not fq.busy(bgd) then
 return nil
 end
 
-local nau = rd:FindFirstChild(kn == 2 and _d("LlUBQQ4CNxldRw") or _d("LlUBQQ4CNxld"))
-local wm = nau and nau:FindFirstChild(_d("PkEbcw4IHx54FFcHCw"))
-local mjb = wm and wm.Text or _d("")
+local xdd = ff:FindFirstChild(bgd == 2 and _d("OldDHhoVfw1fBQ") or _d("OldDHhoVfw1f"))
+local hrl = xdd and xdd:FindFirstChild(_d("KkNZLBofVwp6VggTHA"))
+local ekxk = hrl and hrl.Text or _d("")
 
-return tonumber(mjb:match(_d("MnIZWg0VVR8fXRAGTFk")))
+return tonumber(ekxk:match(_d("JnBbBRkCHQsdH08SWxE")))
 end
 
-local jrgd = {
+local vfcr = {
 enabled = true,
 nextAt = os.clock() + 300,
 jumps = 0,
 }
 
-getgenv().ACBXAntiKick = jrgd
+getgenv().ACBXAntiKick = vfcr
 
-local cmiu = getgenv().ACBXNoUpdate == true
+local qp = getgenv().ACBXNoUpdate == true
 
-local ct = {
-enabled = not cmiu,
-buildId = "v261103-0123",
+local mum = {
+enabled = not qp,
+buildId = "v261103-0148",
 interval = 180,
 retry = 45,
 forceAfter = 900,
@@ -2175,9 +2182,9 @@ pendingSince = nil,
 cameFrom = nil,
 }
 
-getgenv().ACBXUpdater = ct
+getgenv().ACBXUpdater = mum
 
-local pa = {
+local wf = {
 enabled = false,
 tpToBay = false,
 
@@ -2185,13 +2192,13 @@ stick = {
 enabled = false,
 at = 0,
 hits = 0,
-last = _d("A1IT"),
+last = _d("F1BR"),
 
 names = {
-[_d("H0AcVgk")] = true,
-[_d("AEEWXkIUBAVXHg")] = true,
-[_d("AEEWXhETGQ9f")] = true,
-[_d("AEEWXj0UBAVXHg")] = true,
+[_d("C0JeCR0")] = true,
+[_d("FENUAVYDTBFVXA")] = true,
+[_d("FENUAQUEURtd")] = true,
+[_d("FENUASkDTBFVXA")] = true,
 },
 },
 perfectCasts = true,
@@ -2204,10 +2211,10 @@ autoUnlocked = false,
 casts = 0,
 totalCasts = 0,
 luck = 0,
-rod = _d("QQ"),
+rod = _d("VQ"),
 castTime = 0,
 tutorialStep = 0,
-phase = _d("BVAZUA"),
+phase = _d("EVJbDw"),
 nextCastAt = 0,
 watchdogAt = 0,
 catches = {},
@@ -2221,7 +2228,7 @@ deepZone = false,
 deepWalk = false,
 deepDiveAt = 0,
 boatTier = 0,
-deepPhase = _d("BVAZUA"),
+deepPhase = _d("EVJbDw"),
 deepStageAt = 0,
 zoneId = nil,
 
@@ -2262,836 +2269,836 @@ islandAt = 0,
 islandMessage = nil,
 }
 
-local flk = Vector3.new(-546.8, 13.9, -40250.1)
+local fre = Vector3.new(-546.8, 13.9, -40250.1)
 
-if type(getgenv().ACBXFishingCatches) == _d("GFUXWQc") then
-pa.catches = getgenv().ACBXFishingCatches
+if type(getgenv().ACBXFishingCatches) == _d("DFdVBhM") then
+wf.catches = getgenv().ACBXFishingCatches
 end
 
-pa.totalCatches = 0
+wf.totalCatches = 0
 
-for eiiw, uij in pairs(pa.catches) do
-pa.totalCatches = pa.totalCatches + uij
+for alne, qh in pairs(wf.catches) do
+wf.totalCatches = wf.totalCatches + qh
 end
 
-getgenv().ACBXFishingCatches = pa.catches
-getgenv().ACBXFishing = pa
+getgenv().ACBXFishingCatches = wf.catches
+getgenv().ACBXFishing = wf
 
-pa.catchName = function(tg)
-local ow = hb.ById[tg]
+wf.catchName = function(ped)
+local al = pc.ById[ped]
 
-if ow and ow.name then
-return ow.name
+if al and al.name then
+return al.name
 end
 
-local jfvp = iqbb.ById[tg]
+local tx = ysw.ById[ped]
 
-if jfvp and jfvp.name then
-return jfvp.name
+if tx and tx.name then
+return tx.name
 end
 
-return tg
+return ped
 end
 
-local xh
+local lb
 
-xh = {
-folder = _d("LXc3bQ"),
-path = _d("LXc3bU0EERhXHVARSRofWxs"),
+lb = {
+folder = _d("OXV1Mg"),
+path = _d("OXV1MlkTWQxVXw8FXlILWVk"),
 at = 0,
 save = function()
-if type(writefile) ~= _d("CkEbVhYOHwI") then
+if type(writefile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-local gro = pcall(function()
-if type(makefolder) == _d("CkEbVhYOHwI") and type(isfile) == _d("CkEbVhYOHwI") and not isfile(xh.path) then
-pcall(makefolder, xh.folder)
+local pk = pcall(function()
+if type(makefolder) == _d("HkNZCQIZVxY") and type(isfile) == _d("HkNZCQIZVxY") and not isfile(lb.path) then
+pcall(makefolder, lb.folder)
 end
 
-writefile(xh.path, game:GetService(_d("JEABRTECAhpdFlA")):JSONEncode({
-catches = pa.catches,
-totalCatches = pa.totalCatches,
-lastCatch = pa.lastCatch,
+writefile(lb.path, game:GetService(_d("MEJDGiUVSg5fVA8")):JSONEncode({
+catches = wf.catches,
+totalCatches = wf.totalCatches,
+lastCatch = wf.lastCatch,
 updatedAt = os.time(),
 }))
 end)
 
-return gro
+return pk
 end,
 load = function()
-if type(readfile) ~= _d("CkEbVhYOHwI") or type(isfile) ~= _d("CkEbVhYOHwI") then
+if type(readfile) ~= _d("HkNZCQIZVxY") or type(isfile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-local irv, frt = pcall(function()
-if not isfile(xh.path) then
+local zgm, zm = pcall(function()
+if not isfile(lb.path) then
 return nil
 end
 
-return readfile(xh.path)
+return readfile(lb.path)
 end)
 
-if not irv or type(frt) ~= _d("H0AHXAwA") or #frt == 0 then
+if not zgm or type(zm) ~= _d("C0JFAxgX") or #zm == 0 then
 return false
 end
 
-local gbe
-local tqa = pcall(function()
-gbe = game:GetService(_d("JEABRTECAhpdFlA")):JSONDecode(frt)
+local oa
+local efdl = pcall(function()
+oa = game:GetService(_d("MEJDGiUVSg5fVA8")):JSONDecode(zm)
 end)
 
-if not tqa or type(gbe) ~= _d("GFUXWQc") or type(gbe.catches) ~= _d("GFUXWQc") then
+if not efdl or type(oa) ~= _d("DFdVBhM") or type(oa.catches) ~= _d("DFdVBhM") then
 return false
 end
 
-for sut, bvhk in pairs(gbe.catches) do
-local yk = tonumber(bvhk) or 0
+for ius, cuf in pairs(oa.catches) do
+local gus = tonumber(cuf) or 0
 
-if yk > 0 then
-pa.catches[tostring(sut)] = math.max(pa.catches[tostring(sut)] or 0, yk)
+if gus > 0 then
+wf.catches[tostring(ius)] = math.max(wf.catches[tostring(ius)] or 0, gus)
 end
 end
 
-pa.totalCatches = 0
+wf.totalCatches = 0
 
-for ez, nyw in pairs(pa.catches) do
-pa.totalCatches = pa.totalCatches + nyw
+for mnr, mu in pairs(wf.catches) do
+wf.totalCatches = wf.totalCatches + mu
 end
 
 return true
 end,
 }
 
-xh.load()
-getgenv().ACBXFishingStore = xh
+lb.load()
+getgenv().ACBXFishingStore = lb
 
-local qhv = {}
+local kgny = {}
 
-local auuq = 0
+local ueka = 0
 
-local function gpfu()
-local yha = {}
+local function efmz()
+local yls = {}
 
-for ak, nha in ipairs(workspace:GetDescendants()) do
-if nha:IsA(_d("LlUGUDIGAhg")) and nha.Name == _d("O1UBUBA") then
-table.insert(yha, nha)
+for lyu, spu in ipairs(workspace:GetDescendants()) do
+if spu:IsA(_d("OldEDyYRSgw")) and spu.Name == _d("L1dDDwQ") then
+table.insert(yls, spu)
 end
 end
 
-qhv = yha
-auuq = os.clock()
+kgny = yls
+ueka = os.clock()
 end
 
-local function lvs(hgv)
-if type(hgv) ~= _d("GFUXWQc") then
+local function pifh(bgxe)
+if type(bgxe) ~= _d("DFdVBhM") then
 return false
 end
 
-pa.loaded = true
-pa.dirty = false
-pa.fishing = hgv.fishing == true
-pa.autoOn = hgv.autoOn == true
-pa.autoUnlocked = hgv.autoUnlocked == true
-pa.casts = tonumber(hgv.casts) or pa.casts
-pa.totalCasts = tonumber(hgv.totalCasts) or pa.totalCasts
-pa.luck = tonumber(hgv.luck) or pa.luck
-pa.rod = tostring(hgv.equippedRod or pa.rod)
-pa.castTime = tonumber(hgv.castTime) or pa.castTime
-pa.tutorialStep = tonumber(hgv.tutorialStep) or pa.tutorialStep
+wf.loaded = true
+wf.dirty = false
+wf.fishing = bgxe.fishing == true
+wf.autoOn = bgxe.autoOn == true
+wf.autoUnlocked = bgxe.autoUnlocked == true
+wf.casts = tonumber(bgxe.casts) or wf.casts
+wf.totalCasts = tonumber(bgxe.totalCasts) or wf.totalCasts
+wf.luck = tonumber(bgxe.luck) or wf.luck
+wf.rod = tostring(bgxe.equippedRod or wf.rod)
+wf.castTime = tonumber(bgxe.castTime) or wf.castTime
+wf.tutorialStep = tonumber(bgxe.tutorialStep) or wf.tutorialStep
 
-if type(hgv.rods) == _d("GFUXWQc") then
-pa.rodsOwned = hgv.rods
+if type(bgxe.rods) == _d("DFdVBhM") then
+wf.rodsOwned = bgxe.rods
 end
 
-if type(hgv.baits) == _d("GFUXWQc") then
-pa.baitsOwned = hgv.baits
+if type(bgxe.baits) == _d("DFdVBhM") then
+wf.baitsOwned = bgxe.baits
 end
 
-if type(hgv.boats) == _d("GFUXWQc") then
-pa.boatsOwned = hgv.boats
+if type(bgxe.boats) == _d("DFdVBhM") then
+wf.boatsOwned = bgxe.boats
 end
 
-if type(hgv.mats) == _d("GFUXWQc") then
-pa.mats = hgv.mats
+if type(bgxe.mats) == _d("DFdVBhM") then
+wf.mats = bgxe.mats
 end
 
-if hgv.bootOwned ~= nil then
-pa.boot.owned = hgv.bootOwned == true
+if bgxe.bootOwned ~= nil then
+wf.boot.owned = bgxe.bootOwned == true
 end
 
-if hgv.bootEquipped ~= nil then
-pa.boot.equipped = hgv.bootEquipped == true
+if bgxe.bootEquipped ~= nil then
+wf.boot.equipped = bgxe.bootEquipped == true
 end
 
-if hgv.equippedBait ~= nil then
-pa.equippedBait = tostring(hgv.equippedBait)
+if bgxe.equippedBait ~= nil then
+wf.equippedBait = tostring(bgxe.equippedBait)
 end
 
-if hgv.activeBoat ~= nil then
-pa.activeBoat = tostring(hgv.activeBoat)
+if bgxe.activeBoat ~= nil then
+wf.activeBoat = tostring(bgxe.activeBoat)
 end
 
-pa.boatTier = tonumber(hgv.boatTier) or pa.boatTier
-pa.islandLocked = hgv.islandLocked == true
-pa.rebirths = tonumber(hgv.rebirths) or pa.rebirths
+wf.boatTier = tonumber(bgxe.boatTier) or wf.boatTier
+wf.islandLocked = bgxe.islandLocked == true
+wf.rebirths = tonumber(bgxe.rebirths) or wf.rebirths
 
-if type(hgv.rebirthCards) == _d("GFUXWQc") then
-pa.rebirthCards = hgv.rebirthCards
+if type(bgxe.rebirthCards) == _d("DFdVBhM") then
+wf.rebirthCards = bgxe.rebirthCards
 end
 
-pa.lastSync = os.time()
+wf.lastSync = os.time()
 
 return true
 end
 
-local function oavj()
-local yuhp, we = pcall(function()
-return bo.FishingGetState:InvokeServer()
+local function imaz()
+local jtht, vlfa = pcall(function()
+return xl.FishingGetState:InvokeServer()
 end)
 
-if not yuhp or type(we) ~= _d("GFUXWQc") then
-pa.loaded = false
+if not jtht or type(vlfa) ~= _d("DFdVBhM") then
+wf.loaded = false
 return false
 end
 
-return lvs(we)
+return pifh(vlfa)
 end
 
-local gmj = false
+local nazm = false
 
-local function elo()
-if gmj then
+local function gzdt()
+if nazm then
 return false
 end
 
-local ybk = fh.Character
+local ougt = omhv.Character
 
-if not ybk then
+if not ougt then
 return false
 end
 
-if ybk:FindFirstChild(_d("Kl0GXQsJFz5bEQ")) then
+if ougt:FindFirstChild(_d("Pl9EAh8eXypZUw")) then
 return true
 end
 
-local koiv = fh:FindFirstChild(_d("LlUWXhIGEwc"))
-local yv = koiv and koiv:FindFirstChild(_d("Kl0GXQsJFz5bEQ"))
-local iqix = ybk:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+local cee = omhv:FindFirstChild(_d("OldUAQYRWxM"))
+local fb = cee and cee:FindFirstChild(_d("Pl9EAh8eXypZUw"))
+local rq = ougt:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if not (yv and iqix) then
+if not (fb and rq) then
 return false
 end
 
 return pcall(function()
-iqix:EquipTool(yv)
+rq:EquipTool(fb)
 end)
 end
 
-local function gxts()
-local xe = fh.Character
-local ai = xe and xe:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function mgs()
+local wdr = omhv.Character
+local bb = wdr and wdr:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not ai then
+if not bb then
 return nil
 end
 
-local gh = RaycastParams.new()
-gh.FilterType = Enum.RaycastFilterType.Exclude
-gh.FilterDescendantsInstances = { xe }
+local rkob = RaycastParams.new()
+rkob.FilterType = Enum.RaycastFilterType.Exclude
+rkob.FilterDescendantsInstances = { wdr }
 
-local el = 24
-local cg = {}
-local ef = 0
+local htq = 24
+local kcon = {}
+local mfoz = 0
 
-for sm = 0, el - 1 do
-local ghsj = math.rad(sm * (360 / el))
-local wp = Vector3.new(math.sin(ghsj), 0, math.cos(ghsj))
-local flg = ai.Position + wp * 20 + Vector3.new(0, 40, 0)
-local emff = workspace:Raycast(flg, Vector3.new(0, -120, 0), gh)
-local zoo = emff and (ai.Position.Y - emff.Position.Y) or 120
+for riwo = 0, htq - 1 do
+local cniw = math.rad(riwo * (360 / htq))
+local qce = Vector3.new(math.sin(cniw), 0, math.cos(cniw))
+local qd = bb.Position + qce * 20 + Vector3.new(0, 40, 0)
+local tft = workspace:Raycast(qd, Vector3.new(0, -120, 0), rkob)
+local kjsm = tft and (bb.Position.Y - tft.Position.Y) or 120
 
-cg[sm] = zoo > 12
+kcon[riwo] = kjsm > 12
 
-if cg[sm] then
-ef = ef + 1
+if kcon[riwo] then
+mfoz = mfoz + 1
 end
 end
 
-if ef == 0 then
+if mfoz == 0 then
 return nil
 end
 
-local zfx, rokh = nil, 0
+local wnee, ze = nil, 0
 
-for xrt = 0, el - 1 do
-if cg[xrt] and not cg[(xrt - 1) % el] then
-local oqjj = 0
+for civl = 0, htq - 1 do
+if kcon[civl] and not kcon[(civl - 1) % htq] then
+local koqq = 0
 
-while oqjj < el and cg[(xrt + oqjj) % el] do
-oqjj = oqjj + 1
+while koqq < htq and kcon[(civl + koqq) % htq] do
+koqq = koqq + 1
 end
 
-if oqjj > rokh then
-zfx = xrt
-rokh = oqjj
+if koqq > ze then
+wnee = civl
+ze = koqq
 end
 end
 end
 
-if not zfx then
+if not wnee then
 return nil
 end
 
-local nx = zfx + (rokh - 1) / 2
-local hlhi = math.rad(nx * (360 / el))
+local ez = wnee + (ze - 1) / 2
+local nnnd = math.rad(ez * (360 / htq))
 
-return Vector3.new(math.sin(hlhi), 0, math.cos(hlhi))
+return Vector3.new(math.sin(nnnd), 0, math.cos(nnnd))
 end
 
-local function vj()
-local izb = fh.Character
-local xy = izb and izb:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function nk()
+local otbc = omhv.Character
+local recl = otbc and otbc:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not xy then
+if not recl then
 return nil
 end
 
-if #qhv == 0 or os.clock() - auuq > 20 then
-gpfu()
+if #kgny == 0 or os.clock() - ueka > 20 then
+efmz()
 end
 
-local dlj, jgp = nil, math.huge
+local efk, cv = nil, math.huge
 
-for kh, zj in ipairs(qhv) do
-if zj.Parent then
-local bc = (zj.Position - xy.Position).Magnitude
+for iiy, ybd in ipairs(kgny) do
+if ybd.Parent then
+local nza = (ybd.Position - recl.Position).Magnitude
 
-if bc < jgp then
-jgp = bc
-dlj = zj
+if nza < cv then
+cv = nza
+efk = ybd
 end
-end
-end
-
-if not dlj or jgp > 25 then
-local iwi = gxts()
-
-if iwi then
-return iwi
 end
 end
 
-if not dlj then
+if not efk or cv > 25 then
+local ldcj = mgs()
+
+if ldcj then
+return ldcj
+end
+end
+
+if not efk then
 return nil
 end
 
-local wcaq = Vector3.new(dlj.Position.X - xy.Position.X, 0, dlj.Position.Z - xy.Position.Z)
+local tr = Vector3.new(efk.Position.X - recl.Position.X, 0, efk.Position.Z - recl.Position.Z)
 
-if wcaq.Magnitude < 0.05 then
+if tr.Magnitude < 0.05 then
 return Vector3.new(0, 0, -1)
 end
 
-return wcaq.Unit
+return tr.Unit
 end
 
-local function sfi()
-local ls = fh.Character
-local rwy = ls and ls:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function ek()
+local pr = omhv.Character
+local rv = pr and pr:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not rwy then
+if not rv then
 return nil
 end
 
-local ofsz = rwy.CFrame.LookVector
-local fxu = Vector3.new(ofsz.X, 0, ofsz.Z)
+local pgvb = rv.CFrame.LookVector
+local kah = Vector3.new(pgvb.X, 0, pgvb.Z)
 
-if fxu.Magnitude < 0.05 then
+if kah.Magnitude < 0.05 then
 return nil
 end
 
-return fxu.Unit
+return kah.Unit
 end
 
-local function tjq()
-local lyyn = fh.Character
-local bnkh = lyyn and lyyn:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function fwpb()
+local tt = omhv.Character
+local dost = tt and tt:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not bnkh then
+if not dost then
 return false
 end
 
-local oclz = flk
-local zwkw = RaycastParams.new()
-zwkw.FilterType = Enum.RaycastFilterType.Exclude
-zwkw.FilterDescendantsInstances = { lyyn }
+local nuwr = fre
+local jief = RaycastParams.new()
+jief.FilterType = Enum.RaycastFilterType.Exclude
+jief.FilterDescendantsInstances = { tt }
 
-local xu = workspace:Raycast(flk + Vector3.new(0, 40, 0), Vector3.new(0, -200, 0), zwkw)
+local mb = workspace:Raycast(fre + Vector3.new(0, 40, 0), Vector3.new(0, -200, 0), jief)
 
-if xu and xu.Instance.Name ~= _d("O1UBUBA") then
-oclz = Vector3.new(flk.X, xu.Position.Y + 3, flk.Z)
+if mb and mb.Instance.Name ~= _d("L1dDDwQ") then
+nuwr = Vector3.new(fre.X, mb.Position.Y + 3, fre.Z)
 end
 
-bnkh.CFrame = CFrame.new(oclz)
+dost.CFrame = CFrame.new(nuwr)
 task.wait(0.5)
-gpfu()
+efmz()
 
 return true
 end
 
-local function vn()
-local ll = fh.Character
-local vjh = ll and ll:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function qdex()
+local vk = omhv.Character
+local ac = vk and vk:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not vjh then
+if not ac then
 return false
 end
 
-local qwo = Vector3.new(flk.X - vjh.Position.X, 0, flk.Z - vjh.Position.Z)
-local iiqe = qwo.Magnitude
+local ybz = Vector3.new(fre.X - ac.Position.X, 0, fre.Z - ac.Position.Z)
+local ofaj = ybz.Magnitude
 
-if iiqe < 2 then
+if ofaj < 2 then
 return false
 end
 
-local ufh = qwo.Unit
+local ds = ybz.Unit
 
-if iiqe > 12 then
-local ie = math.min(14, iiqe - 6)
-local nffg = vjh.Position + ufh * ie
-local grjt = RaycastParams.new()
-grjt.FilterType = Enum.RaycastFilterType.Exclude
-grjt.FilterDescendantsInstances = { ll }
+if ofaj > 12 then
+local ih = math.min(14, ofaj - 6)
+local mia = ac.Position + ds * ih
+local vn = RaycastParams.new()
+vn.FilterType = Enum.RaycastFilterType.Exclude
+vn.FilterDescendantsInstances = { vk }
 
-local jl = workspace:Raycast(nffg + Vector3.new(0, 25, 0), Vector3.new(0, -80, 0), grjt)
+local uvtg = workspace:Raycast(mia + Vector3.new(0, 25, 0), Vector3.new(0, -80, 0), vn)
 
-if jl and jl.Instance.Name ~= _d("O1UBUBA") then
-local vs = jl.Position.Y + 3.2
+if uvtg and uvtg.Instance.Name ~= _d("L1dDDwQ") then
+local gfnt = uvtg.Position.Y + 3.2
 
-if math.abs(vs - vjh.Position.Y) <= 10 then
-local vwgk = Vector3.new(jl.Position.X, vs, jl.Position.Z)
-vjh.CFrame = CFrame.lookAt(vwgk, vwgk + ufh)
-
-return true
-end
-end
-end
-
-vjh.CFrame = CFrame.lookAt(vjh.Position, vjh.Position + ufh)
+if math.abs(gfnt - ac.Position.Y) <= 10 then
+local he = Vector3.new(uvtg.Position.X, gfnt, uvtg.Position.Z)
+ac.CFrame = CFrame.lookAt(he, he + ds)
 
 return true
 end
+end
+end
 
-local jucv = {}
+ac.CFrame = CFrame.lookAt(ac.Position, ac.Position + ds)
 
-jucv.surfaceWait = 8
+return true
+end
 
-jucv.walking = false
-jucv.walkStartedAt = 0
+local arc = {}
 
-jucv.islandHold = Vector3.new(-7384, 16.3, -40539)
+arc.surfaceWait = 8
 
-jucv.custom = nil
-jucv.customIsland = nil
+arc.walking = false
+arc.walkStartedAt = 0
 
-jucv.islandAnchors = {
-{ id = _d("DVYUWwYIHglQKlwRCxECUA"), x = -3800 },
-{ id = _d("GEMcWz0FFQ1XHVAR"), x = -6180 },
-{ id = _d("G10bUQ8OHABrHEYOAg"), x = -7480 },
+arc.islandHold = Vector3.new(-7384, 16.3, -40539)
+
+arc.custom = nil
+arc.customIsland = nil
+
+arc.islandAnchors = {
+{ id = _d("GVRWBBIfVh1SaAMFHFkWUg"), x = -3800 },
+{ id = _d("DEFeBCkSXRlVXw8F"), x = -6180 },
+{ id = _d("D19ZDhsZVBRpXhkaFQ"), x = -7480 },
 }
 
-jucv.arrivals = {
+arc.arrivals = {
 abandoned_island = Vector3.new(-3825, 24, -40260),
 twin_beaches = Vector3.new(-6180, 40, -40350),
 windmill_isle = Vector3.new(-7480, 30, -40350),
 lobby = Vector3.new(-499, 17, -40234),
 }
 
-function jucv.islandOf(ovjm)
-if not ovjm then
-return _d("AFsXVxs")
+function arc.islandOf(dc)
+if not dc then
+return _d("FFlVCA8")
 end
 
-if ovjm.X > -4500 then
-return _d("AFsXVxs")
+if dc.X > -4500 then
+return _d("FFlVCA8")
 end
 
-local sp, rlmb = _d("DVYUWwYIHglQKlwRCxECUA"), math.huge
+local nt, abz = _d("GVRWBBIfVh1SaAMFHFkWUg"), math.huge
 
-for hmn, dvyo in ipairs(jucv.islandAnchors) do
-local jwo = math.abs(ovjm.X - dvyo.x)
+for wqch, phef in ipairs(arc.islandAnchors) do
+local ae = math.abs(dc.X - phef.x)
 
-if jwo < rlmb then
-sp = dvyo.id
-rlmb = jwo
+if ae < abz then
+nt = phef.id
+abz = ae
 end
 end
 
-return sp
+return nt
 end
 
-jucv.savedVersion = 2
+arc.savedVersion = 2
 
 do
-local qksn = getgenv().ACBXDeepSpot
+local tkc = getgenv().ACBXDeepSpot
 
-if type(qksn) == _d("GFUXWQc") and qksn.v == jucv.savedVersion
-and tonumber(qksn.X) and tonumber(qksn.Y) and tonumber(qksn.Z) then
-jucv.custom = Vector3.new(tonumber(qksn.X), tonumber(qksn.Y), tonumber(qksn.Z))
-jucv.customIsland = qksn.island
+if type(tkc) == _d("DFdVBhM") and tkc.v == arc.savedVersion
+and tonumber(tkc.X) and tonumber(tkc.Y) and tonumber(tkc.Z) then
+arc.custom = Vector3.new(tonumber(tkc.X), tonumber(tkc.Y), tonumber(tkc.Z))
+arc.customIsland = tkc.island
 end
 end
 
-function jucv.spot()
-return jucv.custom or jucv.islandHold
+function arc.spot()
+return arc.custom or arc.islandHold
 end
 
-function jucv.dropStale()
-if not jucv.custom then
+function arc.dropStale()
+if not arc.custom then
 return false
 end
 
-if jucv.zoneAt(jucv.custom) then
+if arc.zoneAt(arc.custom) then
 return false
 end
 
-jucv.custom = nil
-jucv.customIsland = nil
+arc.custom = nil
+arc.customIsland = nil
 getgenv().ACBXDeepSpot = nil
 
 return true
 end
 
-function jucv.capture()
-local xyj = fh.Character
-local biqq = xyj and xyj:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function arc.capture()
+local ipy = omhv.Character
+local wzm = ipy and ipy:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not biqq then
-return false, _d("IltVVgoGAg1XAVAQRwQDFAdQAwNQDRQGRQ0TUApGGlhM")
+if not wzm then
+return false, _d("NlkXCR4RShlVQw8EUEwXFkUPFxQYGRZEGhkEGB5EWAdY")
 end
 
-local daj = biqq.Position
-local vz = jucv.floorAt(Vector3.new(daj.X, daj.Y + 10, daj.Z))
+local yqua = wzm.Position
+local wxsj = arc.floorAt(Vector3.new(yqua.X, yqua.Y + 10, yqua.Z))
 
-if not vz then
-return false, _d("P0AUWwZHHwIUBloODhRMUwdaFwkUTFIcRxETUEEUAV0LFFAfRBpBQg8RHxQbWkIBHANbBxUWCFAPVQZBQgECA1lb")
+if not wxsj then
+return false, _d("K0JWBBJQVxYWRAUaGVxYUUUFAx5cWFBeGAUEGFUWQwIfAxgLRlgeVhhZCxZZBVYWVBdZRUoCHxgbV0QeVhZKF1sZ")
 end
 
-local gv = jucv.zoneAt(daj)
+local hzvo = arc.zoneAt(yqua)
 
-if not gv then
-return false, _d("OFwcRkIUAANAVVwRRx8ZQAZcBgJQCUIQRxtHFgVHHVwMAFAeXRtSQkpQH0AUWwZHHxpRBxUWDxVMQxRBBxVQCl0HRhZJ")
+if not hzvo then
+return false, _d("LF5eGVYDSBdCFwMFUFcNQkQDEhUYHUBSGA9QXhFFXwMYFxgKX1kNVl0YC0JWBBJQVw5TRUoCGF1YQVYeEwIYHl9FGQJe")
 end
 
-jucv.custom = daj
-jucv.customIsland = jucv.islandOf(daj)
+arc.custom = yqua
+arc.customIsland = arc.islandOf(yqua)
 
 getgenv().ACBXDeepSpot = {
-X = daj.X,
-Y = daj.Y,
-Z = daj.Z,
-island = jucv.customIsland,
-v = jucv.savedVersion,
+X = yqua.X,
+Y = yqua.Y,
+Z = yqua.Z,
+island = arc.customIsland,
+v = arc.savedVersion,
 }
 
-return true, _d("P1UDUAZHBARdBhURFx8YFBRGQhMYCRQRUAcXXRtVAVAQRxgDWBEVSg") .. tostring(gv.name) .. _d("RRo")
+return true, _d("K1dBDxJQTBBfREoFAFcMFlYZVgRQHRZTDxMAFQ9XQw8EUFAXWlNKXg") .. tostring(hzvo.name) .. _d("URg")
 end
 
-function jucv.zoneTable()
-local kdve = {}
+function arc.zoneTable()
+local lyr = {}
 
-if kr and type(kr.Zones) == _d("GFUXWQc") then
-for jvf, psng in ipairs(kr.Zones) do
-kdve[#kdve + 1] = {
-id = tostring(psng.id),
-name = tostring(psng.name or psng.id),
-half = tonumber(psng.half) or 0,
-luck = tonumber(psng.luck) or 0,
-index = tonumber(psng.index) or 0,
-boatTier = tonumber(psng.boatTier) or 0,
+if lf and type(lf.Zones) == _d("DFdVBhM") then
+for tyl, fam in ipairs(lf.Zones) do
+lyr[#lyr + 1] = {
+id = tostring(fam.id),
+name = tostring(fam.name or fam.id),
+half = tonumber(fam.half) or 0,
+luck = tonumber(fam.luck) or 0,
+index = tonumber(fam.index) or 0,
+boatTier = tonumber(fam.boatTier) or 0,
 }
 end
 end
 
-table.sort(kdve, function(ggkd, bb)
-return ggkd.index < bb.index
+table.sort(lyr, function(djjc, kjq)
+return djjc.index < kjq.index
 end)
 
-return kdve
+return lyr
 end
 
-function jucv.zoneAt(rxd)
-local obcv = kr and kr.ZoneCenter
-local hhg = jucv.zoneTable()
+function arc.zoneAt(emlr)
+local gzk = lf and lf.ZoneCenter
+local hfnz = arc.zoneTable()
 
-if not (obcv and rxd and #hhg > 0) then
+if not (gzk and emlr and #hfnz > 0) then
 return nil
 end
 
-local bra = math.max(math.abs(rxd.X - obcv.X), math.abs(rxd.Z - obcv.Z))
+local gal = math.max(math.abs(emlr.X - gzk.X), math.abs(emlr.Z - gzk.Z))
 
-for mbt, lh in ipairs(hhg) do
-if bra < lh.half then
-return lh
+for chc, vt in ipairs(hfnz) do
+if gal < vt.half then
+return vt
 end
-end
-
-return nil
-end
-
-function jucv.current()
-local ub = fh.Character
-local nrs = ub and ub:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-
-return nrs and jucv.zoneAt(nrs.Position) or nil
-end
-
-function jucv.sync()
-local pcwr = jucv.current()
-pa.zoneId = pcwr and pcwr.id or nil
-end
-
-function jucv.floorAt(ovk)
-local yr = fh.Character
-local xme = RaycastParams.new()
-xme.FilterType = Enum.RaycastFilterType.Exclude
-xme.FilterDescendantsInstances = { yr }
-
-local xut = workspace:Raycast(Vector3.new(ovk.X, ovk.Y + 20, ovk.Z), Vector3.new(0, -80, 0), xme)
-
-if xut and xut.Instance.Name ~= _d("O1UBUBA") then
-return xut
 end
 
 return nil
 end
 
-function jucv.ensureSpotMap()
-local ovg = jucv.spot()
-local th = Vector3.new(ovg.X, ovg.Y + 20, ovg.Z)
+function arc.current()
+local rz = omhv.Character
+local gf = rz and rz:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if jucv.floorAt(th) then
+return gf and arc.zoneAt(gf.Position) or nil
+end
+
+function arc.sync()
+local mgt = arc.current()
+wf.zoneId = mgt and mgt.id or nil
+end
+
+function arc.floorAt(hyot)
+local zyqy = omhv.Character
+local dpet = RaycastParams.new()
+dpet.FilterType = Enum.RaycastFilterType.Exclude
+dpet.FilterDescendantsInstances = { zyqy }
+
+local qbdz = workspace:Raycast(Vector3.new(hyot.X, hyot.Y + 20, hyot.Z), Vector3.new(0, -80, 0), dpet)
+
+if qbdz and qbdz.Instance.Name ~= _d("L1dDDwQ") then
+return qbdz
+end
+
+return nil
+end
+
+function arc.ensureSpotMap()
+local xwr = arc.spot()
+local xry = Vector3.new(xwr.X, xwr.Y + 20, xwr.Z)
+
+if arc.floorAt(xry) then
 return true
 end
 
-local otzi = workspace:FindFirstChild(_d("IVUFRg"))
+local nuqw = workspace:FindFirstChild(_d("NVdHGQ"))
 
-if otzi and otzi:FindFirstChild(_d("L1sURhYGHCBbF1cb")) then
-if os.clock() - (jucv.hopAt or 0) > 1 then
-jucv.hopAt = os.clock()
-jucv.hop(ovg)
-pa.lastMessage = _d("IVsDXAwAUBhbVUEKAlAIURBFTxARGFEHFREXHxg")
+if nuqw and nuqw:FindFirstChild(_d("O1lWGQIRVDRZVQgP")) then
+if os.clock() - (arc.hopAt or 0) > 1 then
+arc.hopAt = os.clock()
+arc.hop(xwr)
+wf.lastMessage = _d("NVlBAxgXGAxZFx4eFRgcU1IaWwdZDFNFSgUAVww")
 end
 
 return false
 end
 
-if os.clock() - (jucv.islandAskedAt or 0) > 1.2 then
-jucv.islandAskedAt = os.clock()
+if os.clock() - (arc.islandAskedAt or 0) > 1.2 then
+arc.islandAskedAt = os.clock()
 
-local nug = jucv.customIsland or jucv.islandOf(ovg)
+local xbi = arc.customIsland or arc.islandOf(xwr)
 
-if nug == _d("AFsXVxs") then
+if xbi == _d("FFlVCA8") then
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 else
 pcall(function()
-bo.FishingIslandTeleport:FireServer(_d("G1UMRQ0OHhg"), nug)
+xl.FishingIslandTeleport:FireServer(_d("D1dOGhkZVgw"), xbi)
 end)
 end
 
-pa.lastMessage = _d("OFUeXAwAUBhcEBUFBh0JEwYVFgIcCUQaRxZHBAMUAV0HRxQJUQUYFQYECUZVWAMX")
+wf.lastMessage = _d("LFdcAxgXGAxeUkoREVUdEURKAhVUHUZYGAJQTBcWQwITUFwdU0dHARFMHUQXBxcA")
 end
 
 return false
 end
 
-function jucv.hop(iy)
-local ne = fh.Character
-local scmz = ne and ne:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local qup = ne and ne:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+function arc.hop(egzn)
+local bkf = omhv.Character
+local oe = bkf and bkf:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local kws = bkf and bkf:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if not (scmz and qup) then
+if not (oe and kws) then
 return false
 end
 
-if qup.SeatPart then
+if kws.SeatPart then
 pcall(function()
-qup.Sit = false
+kws.Sit = false
 end)
 end
 
-scmz.AssemblyLinearVelocity = Vector3.zero
-scmz.CFrame = CFrame.new(Vector3.new(iy.X, iy.Y + 8, iy.Z))
+oe.AssemblyLinearVelocity = Vector3.zero
+oe.CFrame = CFrame.new(Vector3.new(egzn.X, egzn.Y + 8, egzn.Z))
 
 return true
 end
 
-function jucv.faceWater()
-local ufr = fh.Character
-local meuf = ufr and ufr:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function arc.faceWater()
+local mdqd = omhv.Character
+local hbk = mdqd and mdqd:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not meuf then
+if not hbk then
 return false
 end
 
-local ji = vj()
+local sh = nk()
 
-if not ji then
-local mdzw = kr and kr.ZoneCenter
+if not sh then
+local wsr = lf and lf.ZoneCenter
 
-if mdzw then
-local eh = Vector3.new(mdzw.X - meuf.Position.X, 0, mdzw.Z - meuf.Position.Z)
+if wsr then
+local vazh = Vector3.new(wsr.X - hbk.Position.X, 0, wsr.Z - hbk.Position.Z)
 
-ji = eh.Magnitude > 1 and eh.Unit or nil
+sh = vazh.Magnitude > 1 and vazh.Unit or nil
 end
 end
 
-if not ji then
+if not sh then
 return false
 end
 
-meuf.CFrame = CFrame.lookAt(meuf.Position, meuf.Position + ji)
+hbk.CFrame = CFrame.lookAt(hbk.Position, hbk.Position + sh)
 
 return true
 end
 
-function jucv.aimWater(yox)
-local wy = fh.Character
-local wqs = wy and wy:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function arc.aimWater(wind)
+local hrnq = omhv.Character
+local txq = hrnq and hrnq:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not wqs then
+if not txq then
 return false
 end
 
-if yox then
-gpfu()
+if wind then
+efmz()
 end
 
-local oia = wqs.CFrame.LookVector
-local notm = Vector3.new(oia.X, 0, oia.Z)
-local adcs = vj()
+local jngj = txq.CFrame.LookVector
+local knx = Vector3.new(jngj.X, 0, jngj.Z)
+local ttec = nk()
 
-if not adcs then
+if not ttec then
 return false
 end
 
-if notm.Magnitude > 0.05 and notm.Unit:Dot(adcs) > 0.985 then
+if knx.Magnitude > 0.05 and knx.Unit:Dot(ttec) > 0.985 then
 return true
 end
 
-wqs.CFrame = CFrame.lookAt(wqs.Position, wqs.Position + adcs)
+txq.CFrame = CFrame.lookAt(txq.Position, txq.Position + ttec)
 
 return true
 end
 
-function jucv.hold(qptl)
-local bjl = fh.Character
-local hxk = bjl and bjl:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local hhkh = bjl and bjl:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+function arc.hold(gsag)
+local rrjg = omhv.Character
+local abfb = rrjg and rrjg:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local huv = rrjg and rrjg:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if not (hxk and hhkh) then
+if not (abfb and huv) then
 return false
 end
 
-if hhkh.SeatPart then
+if huv.SeatPart then
 pcall(function()
-hhkh.Sit = false
+huv.Sit = false
 end)
 end
 
-local eokf = jucv.floorAt(qptl)
+local mnpy = arc.floorAt(gsag)
 
-if not eokf then
+if not mnpy then
 return false
 end
 
-hxk.AssemblyLinearVelocity = Vector3.zero
-hxk.CFrame = CFrame.new(Vector3.new(qptl.X, eokf.Position.Y + 3.2, qptl.Z))
+abfb.AssemblyLinearVelocity = Vector3.zero
+abfb.CFrame = CFrame.new(Vector3.new(gsag.X, mnpy.Position.Y + 3.2, gsag.Z))
 
-pcall(jucv.aimWater, true)
+pcall(arc.aimWater, true)
 
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
 
 return true
 end
 
-function jucv.dive()
-local sq = jucv.spot()
+function arc.dive()
+local is = arc.spot()
 
-if not jucv.ensureSpotMap() then
+if not arc.ensureSpotMap() then
 return false
 end
 
-if not jucv.hold(sq) then
+if not arc.hold(is) then
 return false
 end
 
-jucv.islandAskedAt = 0
+arc.islandAskedAt = 0
 
-local mvt = jucv.zoneAt(sq)
+local dlyx = arc.zoneAt(is)
 
-pa.lastMessage = mvt
-and (_d("JFsZUQsJF0xAHVBCAxUJRFhCAxMVHhQGRQ0TUEQ") .. tostring(mvt.name) .. _d("RQ"))
-or _d("JFsZUQsJF0xAHVBCAxUJRFhCAxMVHhQGRQ0T")
+wf.lastMessage = dlyx
+and (_d("MFlbDh8eX1hCXw9WFF0dRhodFwRdChZEGhkEGFA") .. tostring(dlyx.name) .. _d("UQ"))
+or _d("MFlbDh8eX1hCXw9WFF0dRhodFwRdChZEGhkE")
 
 task.wait(0.25)
-jucv.sync()
-pa.deepDiveAt = os.clock() + 2
+arc.sync()
+wf.deepDiveAt = os.clock() + 2
 
 return true
 end
 
-function jucv.walk()
-local khhd = fh.Character
-local dsx = khhd and khhd:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function arc.walk()
+local sbwu = omhv.Character
+local ht = sbwu and sbwu:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if jucv.walking and os.clock() - (jucv.walkStartedAt or 0) < 60 then
+if arc.walking and os.clock() - (arc.walkStartedAt or 0) < 60 then
 return false
 end
 
-if not dsx then
+if not ht then
 return false
 end
 
-local wqv = jucv.spot()
+local tvv = arc.spot()
 
-if (dsx.Position - Vector3.new(wqv.X, dsx.Position.Y, wqv.Z)).Magnitude <= 8 then
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
+if (ht.Position - Vector3.new(tvv.X, ht.Position.Y, tvv.Z)).Magnitude <= 8 then
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
 
 return true
 end
 
-jucv.walking = true
-jucv.walkStartedAt = os.clock()
-pa.deepPhase = _d("G1UZXg")
-pa.deepStageAt = os.clock()
-pa.lastMessage = _d("O1UZXgsJF0xAGhUWDxVMUBBQEgIDGBQCVBYCAkxHBVoW")
+arc.walking = true
+arc.walkStartedAt = os.clock()
+wf.deepPhase = _d("D1dbAQ")
+wf.deepStageAt = os.clock()
+wf.lastMessage = _d("L1dbAR8eX1hCWEoCGF1YUlIPBhVLDBZACwIVSlhFRwUC")
 
 task.spawn(function()
-local ir = khhd and khhd:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+local plb = sbwu and sbwu:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-local dzvp, lgx = pcall(function()
+local pms, dhdg = pcall(function()
 
-local lrav = workspace:FindFirstChild(_d("IVUFRg"))
-local wwar = jucv.customIsland or jucv.islandOf(wqv)
-local tct = (dsx.Position - Vector3.new(wqv.X, dsx.Position.Y, wqv.Z)).Magnitude
+local ufmz = workspace:FindFirstChild(_d("NVdHGQ"))
+local pqtr = arc.customIsland or arc.islandOf(tvv)
+local lgbx = (ht.Position - Vector3.new(tvv.X, ht.Position.Y, tvv.Z)).Magnitude
 
-if tct > 400 then
-if not (lrav and lrav:FindFirstChild(_d("L1sURhYGHCBbF1cb"))) then
+if lgbx > 400 then
+if not (ufmz and ufmz:FindFirstChild(_d("O1lWGQIRVDRZVQgP"))) then
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 
-local zr = os.clock() + 20
+local wg = os.clock() + 20
 
-while pa.deepWalk and os.clock() < zr do
-local cyh = workspace:FindFirstChild(_d("IVUFRg"))
+while wf.deepWalk and os.clock() < wg do
+local pzx = workspace:FindFirstChild(_d("NVdHGQ"))
 
-if cyh and cyh:FindFirstChild(_d("L1sURhYGHCBbF1cb")) then
+if pzx and pzx:FindFirstChild(_d("O1lWGQIRVDRZVQgP")) then
 break
 end
 
@@ -3099,101 +3106,101 @@ task.wait(0.5)
 end
 end
 
-if pa.deepWalk then
-local gxyd = jucv.arrivals and jucv.arrivals[wwar]
+if wf.deepWalk then
+local sy = arc.arrivals and arc.arrivals[pqtr]
 
-if gxyd then
-jucv.hop(gxyd)
+if sy then
+arc.hop(sy)
 else
-local trc = Vector3.new(wqv.X - dsx.Position.X, 0, wqv.Z - dsx.Position.Z)
-local uf = trc.Magnitude > 1 and trc.Unit or Vector3.new(1, 0, 0)
+local zefb = Vector3.new(tvv.X - ht.Position.X, 0, tvv.Z - ht.Position.Z)
+local kv = zefb.Magnitude > 1 and zefb.Unit or Vector3.new(1, 0, 0)
 
-jucv.hop(Vector3.new(wqv.X - uf.X * 120, wqv.Y, wqv.Z - uf.Z * 120))
+arc.hop(Vector3.new(tvv.X - kv.X * 120, tvv.Y, tvv.Z - kv.Z * 120))
 end
 
 task.wait(1.5)
 end
 end
 
-if pa.deepWalk and ir then
+if wf.deepWalk and plb then
 
-local sv = (dsx.Position - Vector3.new(wqv.X, dsx.Position.Y, wqv.Z)).Magnitude
-local gay = os.clock() + math.clamp(sv / 8, 30, 600)
-local vduq = 0
-local ysr = dsx.Position
-local kcfz = os.clock()
+local foc = (ht.Position - Vector3.new(tvv.X, ht.Position.Y, tvv.Z)).Magnitude
+local ndai = os.clock() + math.clamp(foc / 8, 30, 600)
+local xpw = 0
+local hwdr = ht.Position
+local jh = os.clock()
 
-while pa.deepWalk and os.clock() < gay do
-local otn = Vector3.new(wqv.X - dsx.Position.X, 0, wqv.Z - dsx.Position.Z)
+while wf.deepWalk and os.clock() < ndai do
+local cwzz = Vector3.new(tvv.X - ht.Position.X, 0, tvv.Z - ht.Position.Z)
 
-if otn.Magnitude <= 3 then
+if cwzz.Magnitude <= 3 then
 break
 end
 
-if os.clock() - vduq >= 0.25 then
-ir:MoveTo(Vector3.new(wqv.X, dsx.Position.Y, wqv.Z))
-vduq = os.clock()
+if os.clock() - xpw >= 0.25 then
+plb:MoveTo(Vector3.new(tvv.X, ht.Position.Y, tvv.Z))
+xpw = os.clock()
 end
 
-if os.clock() - kcfz >= 1.2 then
-if (dsx.Position - ysr).Magnitude < 2 then
-ir.Jump = true
+if os.clock() - jh >= 1.2 then
+if (ht.Position - hwdr).Magnitude < 2 then
+plb.Jump = true
 end
 
-ysr = dsx.Position
-kcfz = os.clock()
+hwdr = ht.Position
+jh = os.clock()
 end
 
 task.wait(0.1)
 end
 
-ir:MoveTo(dsx.Position)
+plb:MoveTo(ht.Position)
 end
 end)
 
-jucv.walking = false
+arc.walking = false
 
-if not dzvp then
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = os.clock()
-pa.lastMessage = _d("O1UZXkITH0xwEFASAgMYFCJUFgICTFIUXA4CFFYU") .. tostring(lgx)
+if not pms then
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = os.clock()
+wf.lastMessage = _d("L1dbAVYEV1hyUg8GFUsMFmALAhVKWFBWAxoVXEIW") .. tostring(dhdg)
 
 return
 end
 
-if not pa.deepWalk then
+if not wf.deepWalk then
 return
 end
 
-local zjr = Vector3.new(dsx.Position.X - wqv.X, 0, dsx.Position.Z - wqv.Z)
+local co = Vector3.new(ht.Position.X - tvv.X, 0, ht.Position.Z - tvv.Z)
 
-if zjr.Magnitude <= 6 then
+if co.Magnitude <= 6 then
 
-pcall(jucv.aimWater, true)
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
-pa.deepPhase = _d("BFsZUQ")
-pa.deepStageAt = os.clock()
-jucv.sync()
-pa.lastMessage = _d("O1UZXgcDUBhbVUEKAlAfVQNQBkcUCVEFGBUGBAlGVUYSCAQ")
+pcall(arc.aimWater, true)
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
+wf.deepPhase = _d("EFlbDg")
+wf.deepStageAt = os.clock()
+arc.sync()
+wf.lastMessage = _d("L1dbARMUGAxZFx4eFRgLV0EPElBcHVNHRwERTB1EFxkGH0w")
 else
 
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = os.clock()
-pa.lastMessage = _d("L1sAWQZHHgNAVUIDCxtMQBoVFg8VTFAQUBICAxgUAlQWAgJMRwVaFkddTEAHTAsJF0xVElQLCQ")
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = os.clock()
+wf.lastMessage = _d("O1lCBhJQVhdCFx0XHFNYQlhKAhhdWFJSDwYVSwwWQAsCFUpYRUcFAlAVWEJFEx8eX1hXUAsfHg")
 end
 end)
 
 return false
 end
 
-function jucv.settle()
-for dtx = 1, 30 do
-if not pa.deepZone or pa.deepWalk then
+function arc.settle()
+for iifg = 1, 30 do
+if not wf.deepZone or wf.deepWalk then
 return false
 end
 
-if jucv.dive() then
+if arc.dive() then
 return true
 end
 
@@ -3203,775 +3210,775 @@ end
 return false
 end
 
-function jucv.surface()
-local br = fh.Character
-local ezz = br and br:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function arc.surface()
+local orzw = omhv.Character
+local ybuz = orzw and orzw:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not ezz then
+if not ybuz then
 return false
 end
 
-local iz = RaycastParams.new()
-iz.FilterType = Enum.RaycastFilterType.Exclude
-iz.FilterDescendantsInstances = { br }
+local xf = RaycastParams.new()
+xf.FilterType = Enum.RaycastFilterType.Exclude
+xf.FilterDescendantsInstances = { orzw }
 
-local kdo = workspace:Raycast(flk + Vector3.new(0, 40, 0), Vector3.new(0, -200, 0), iz)
-local gl = flk
+local nh = workspace:Raycast(fre + Vector3.new(0, 40, 0), Vector3.new(0, -200, 0), xf)
+local izvj = fre
 
-if kdo and kdo.Instance.Name ~= _d("O1UBUBA") then
-gl = Vector3.new(flk.X, kdo.Position.Y + 3, flk.Z)
+if nh and nh.Instance.Name ~= _d("L1dDDwQ") then
+izvj = Vector3.new(fre.X, nh.Position.Y + 3, fre.Z)
 end
 
-ezz.CFrame = CFrame.new(gl)
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
+ybuz.CFrame = CFrame.new(izvj)
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
 
 return true
 end
 
-function pa.gotoIsland()
-local mgiw = fh.Character
-local rxa = mgiw and mgiw:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local rz = workspace:FindFirstChild(_d("JUcZVAwDNgVHHVAQChECeiV2"), true)
+function wf.gotoIsland()
+local nxi = omhv.Character
+local ygdj = nxi and nxi:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local kfdx = workspace:FindFirstChild(_d("MUVbCxgUfhFFXw8EHVkWeGcp"), true)
 
-if not (rxa and rz) then
+if not (ygdj and kfdx) then
 return false
 end
 
-local nfa = rz:GetPivot()
-local cj = RaycastParams.new()
-cj.FilterType = Enum.RaycastFilterType.Exclude
-cj.FilterDescendantsInstances = { mgiw, rz }
+local kzlg = kfdx:GetPivot()
+local bid = RaycastParams.new()
+bid.FilterType = Enum.RaycastFilterType.Exclude
+bid.FilterDescendantsInstances = { nxi, kfdx }
 
-local hsa = nil
-local tw = -math.huge
+local zcnt = nil
+local yyhn = -math.huge
 
-for hfl, rtnp in ipairs({ Vector3.new(0, 0, 6), Vector3.new(6, 0, 0), Vector3.new(0, 0, -6), Vector3.new(-6, 0, 0), Vector3.new(0, 0, 0) }) do
-local lbdr = workspace:Raycast(nfa.Position + rtnp + Vector3.new(0, 30, 0), Vector3.new(0, -120, 0), cj)
+for cpbs, iz in ipairs({ Vector3.new(0, 0, 6), Vector3.new(6, 0, 0), Vector3.new(0, 0, -6), Vector3.new(-6, 0, 0), Vector3.new(0, 0, 0) }) do
+local tm = workspace:Raycast(kzlg.Position + iz + Vector3.new(0, 30, 0), Vector3.new(0, -120, 0), bid)
 
-if lbdr and lbdr.Position.Y > tw then
-hsa = lbdr
-tw = lbdr.Position.Y
+if tm and tm.Position.Y > yyhn then
+zcnt = tm
+yyhn = tm.Position.Y
 end
 end
 
-if hsa then
-rxa.CFrame = CFrame.new(Vector3.new(hsa.Position.X, tw + 3.5, hsa.Position.Z))
+if zcnt then
+ygdj.CFrame = CFrame.new(Vector3.new(zcnt.Position.X, yyhn + 3.5, zcnt.Position.Z))
 else
-rxa.CFrame = CFrame.new(nfa.Position + Vector3.new(0, 4, 0))
+ygdj.CFrame = CFrame.new(kzlg.Position + Vector3.new(0, 4, 0))
 end
 
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
 
 return true
 end
 
-function jucv.cycle()
-local cgy = os.clock()
-local cl = pa.deepPhase or _d("BVAZUA")
-local ldup = tonumber(pa.deepStageAt) or 0
+function arc.cycle()
+local rem = os.clock()
+local xps = wf.deepPhase or _d("EVJbDw")
+local aow = tonumber(wf.deepStageAt) or 0
 
-if cgy < math.max(pa.shopTripUntil or 0, pa.tpHoldUntil or 0) then
+if rem < math.max(wf.shopTripUntil or 0, wf.tpHoldUntil or 0) then
 return
 end
 
-if cl == _d("BVAZUA") then
-pa.deepPhase = _d("BFsZUQ")
-pa.deepStageAt = cgy
+if xps == _d("EVJbDw") then
+wf.deepPhase = _d("EFlbDg")
+wf.deepStageAt = rem
 
-if pa.deepWalk then
-jucv.walk()
+if wf.deepWalk then
+arc.walk()
 else
-jucv.dive()
+arc.dive()
 end
 
 return
 end
 
-if cl == _d("G1UZXg") then
+if xps == _d("D1dbAQ") then
 return
 end
 
-if cl == _d("BFsZUQ") then
-local ehyv = jucv.current()
+if xps == _d("EFlbDg") then
+local estn = arc.current()
 
-local lwh = jucv.zoneAt(jucv.spot())
+local ou = arc.zoneAt(arc.spot())
 
-if ehyv and not fh:GetAttribute(_d("P0McWA8OHgs")) and cgy - (pa.deepAimAt or 0) > 2 then
-pa.deepAimAt = cgy
-pcall(jucv.aimWater)
+if estn and not omhv:GetAttribute(_d("K0FeBxsZVh8")) and rem - (wf.deepAimAt or 0) > 2 then
+wf.deepAimAt = rem
+pcall(arc.aimWater)
 end
 
-if fh:GetAttribute(_d("P0McWA8OHgs")) then
-if pa.deepWalk then
+if omhv:GetAttribute(_d("K0FeBxsZVh8")) then
+if wf.deepWalk then
 
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = cgy
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = rem
 else
-pa.deepPhase = _d("CF0F")
-pa.deepStageAt = cgy
-pa.lastMessage = _d("P0McWA8OHgsUFEFCExgJFBFQBxdQH0QaQUJKUB9BB1MDBBUIFBNaEEcRBUY")
+wf.deepPhase = _d("HF9H")
+wf.deepStageAt = rem
+wf.lastMessage = _d("K0FeBxsZVh8WVh5WBFAdFlMPEwAYC0ZYHlZdGAtDRQwXE10cFlEFBFBZEUQ")
 end
-elseif not ehyv or (lwh and ehyv.index < lwh.index) then
+elseif not estn or (ou and estn.index < ou.index) then
 
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = cgy
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = rem
 end
 
 return
 end
 
-if cl == _d("CF0F") then
-jucv.surface()
-pa.deepPhase = _d("H0EHUwMEFQ")
-pa.deepStageAt = cgy
+if xps == _d("HF9H") then
+arc.surface()
+wf.deepPhase = _d("C0NFDBcTXQ")
+wf.deepStageAt = rem
 
 return
 end
 
-if cl == _d("H0EHUwMEFQ") and cgy - ldup >= jucv.surfaceWait then
-pa.deepPhase = _d("BVAZUA")
+if xps == _d("C0NFDBcTXQ") and rem - aow >= arc.surfaceWait then
+wf.deepPhase = _d("EVJbDw")
 end
 end
 
-local function pm()
-local pajm = fh.Character
-local jbbx = pajm and pajm:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function znxa()
+local skm = omhv.Character
+local iwt = skm and skm:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not jbbx then
+if not iwt then
 return false
 end
 
-return (jbbx.Position - flk).Magnitude <= 12
+return (iwt.Position - fre).Magnitude <= 12
 end
 
-local function bhhc()
-if not elo() then
+local function xxfo()
+if not gzdt() then
 return false
 end
 
-local mtq = pcall(function()
-bo.FishingSetAuto:FireServer(true)
+local yem = pcall(function()
+xl.FishingSetAuto:FireServer(true)
 end)
 
-pa.usingGameAuto = mtq
-return mtq
+wf.usingGameAuto = yem
+return yem
 end
 
-local function zkx()
-pa.usingGameAuto = false
+local function vekc()
+wf.usingGameAuto = false
 
 pcall(function()
-bo.FishingSetAuto:FireServer(false)
+xl.FishingSetAuto:FireServer(false)
 end)
 
 pcall(function()
-bo.FishingStop:FireServer()
+xl.FishingStop:FireServer()
 end)
 end
 
-function pa.recover()
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
-pa.deepDiveAt = 0
-pa.waterRefusals = 0
-pa.usingGameAuto = false
-pa.castMark = pa.totalCasts
-pa.castMarkAt = os.clock()
+function wf.recover()
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
+wf.deepDiveAt = 0
+wf.waterRefusals = 0
+wf.usingGameAuto = false
+wf.castMark = wf.totalCasts
+wf.castMarkAt = os.clock()
 
-pcall(zkx)
-pcall(elo)
+pcall(vekc)
+pcall(gzdt)
 
-if pa.deepZone and not jucv.current() then
+if wf.deepZone and not arc.current() then
 
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
-elseif pa.tpToBay and not pm() then
-pcall(tjq)
+elseif wf.tpToBay and not znxa() then
+pcall(fwpb)
 end
 
-pa.lastMessage = _d("Kl0GXQsJF0xHAVQOCxUIFFgVEAIDCUBVQQoCUBtVAVAQRxECUFVBDQgbTEAdUEIAEQFRUkZCCx8OVgwVEAgH")
+wf.lastMessage = _d("Pl9EAh8eX1hFQwsaHF0cFhpKBBVLHUIXHh4VGA9XQw8EUFkWUhceGR9TWEJfD1YXWRVTEBlWHFcaVE5KBB9P")
 end
 
-local function yxoe()
-if not elo() then
-pa.lastMessage = _d("IltVUwsUGAVaEhUQCBRMXRsVFg8VTFYUVgkXEQ9f")
+local function nmj()
+if not gzdt() then
+wf.lastMessage = _d("NlkXDB8DUBFYUEoEH1xYX1lKAhhdWFRWCR0AWRtd")
 return false
 end
 
-local pwd = sfi()
-local kbfs = vj()
-local dpk = pwd or kbfs
+local oveb = ek()
+local ltnz = nk()
+local ug = oveb or ltnz
 
-if not dpk then
-pa.lastMessage = _d("IltVQgMTFR4UE1oXCRRMWhBUEAUJ")
+if not ug then
+wf.lastMessage = _d("NlkXHRcEXQoWUQUDHlxYWFILBBJB")
 return false
 end
 
-if pwd and kbfs and pwd:Dot(kbfs) < 0.25 then
-dpk = kbfs
+if oveb and ltnz and oveb:Dot(ltnz) < 0.25 then
+ug = ltnz
 end
 
-pa.phase = _d("D1UGQQsJFw")
-pa.lastMessage = nil
-pa.watchdogAt = os.clock() + 25
+wf.phase = _d("G1dEHh8eXw")
+wf.lastMessage = nil
+wf.watchdogAt = os.clock() + 25
 
-local ceax, xid = pcall(function()
-bo.FishingThrow:FireServer(1, dpk)
+local tl, clrg = pcall(function()
+xl.FishingThrow:FireServer(1, ug)
 end)
 
-if not ceax then
-pa.phase = _d("BVAZUA")
-pa.lastMessage = tostring(xid)
-pa.nextCastAt = os.clock() + 3
+if not tl then
+wf.phase = _d("EVJbDw")
+wf.lastMessage = tostring(clrg)
+wf.nextCastAt = os.clock() + 3
 return false
 end
 
 return true
 end
 
-local iucp = jxjd(bo.FishingUpdate.OnClientEvent, function(eou, tyw)
-pa.dirty = true
+local yfhk = im(xl.FishingUpdate.OnClientEvent, function(yrpr, krec)
+wf.dirty = true
 
-if eou == _d("P0AUQQc") then
-if type(tyw) == _d("GFUXWQc") then
-pa.autoOn = tyw.autoOn == true
+if yrpr == _d("K0JWHhM") then
+if type(krec) == _d("DFdVBhM") then
+wf.autoOn = krec.autoOn == true
 end
 
 return
 end
 
-if eou == _d("L1UGQQ") then
-pa.phase = _d("G1UcQQsJFy5dAVA")
-pa.waterRefusals = 0
+if yrpr == _d("O1dEHg") then
+wf.phase = _d("D1deHh8eXzpfQw8")
+wf.waterRefusals = 0
 return
 end
 
-if eou == _d("Ll0BUA") then
-local fiv = type(tyw) == _d("GFUXWQc") and tonumber(tyw.warning) or 1
+if yrpr == _d("Ol9DDw") then
+local axhw = type(krec) == _d("DFdVBhM") and tonumber(krec.warning) or 1
 
-pa.phase = _d("HlEQWQsJFw")
-pa.watchdogAt = os.clock() + 15
+wf.phase = _d("ClNSBh8eXw")
+wf.watchdogAt = os.clock() + 15
 
-task.delay(math.max(0.3, fiv + 0.8), function()
-if pa.phase ~= _d("HlEQWQsJFw") then
+task.delay(math.max(0.3, axhw + 0.8), function()
+if wf.phase ~= _d("ClNSBh8eXw") then
 return
 end
 
 pcall(function()
-bo.FishingReel:FireServer(true, 120)
+xl.FishingReel:FireServer(true, 120)
 end)
 
-pa.phase = _d("HlEGWg4RGQJT")
+wf.phase = _d("ClNEBRoGURZR")
 end)
 
 return
 end
 
-if eou == _d("L1UBVgo") then
+if yrpr == _d("O1dDCR4") then
 
-local nzjq = type(tyw) == _d("GFUXWQc") and tonumber(tyw.totalCasts) or nil
-local rblw = tonumber(getgenv().ACBXFishingCatchMark) or 0
+local go = type(krec) == _d("DFdVBhM") and tonumber(krec.totalCasts) or nil
+local eyp = tonumber(getgenv().ACBXFishingCatchMark) or 0
 
-if nzjq and nzjq <= rblw and rblw - nzjq < 25 then
+if go and go <= eyp and eyp - go < 25 then
 return
 end
 
-if nzjq then
-getgenv().ACBXFishingCatchMark = nzjq
+if go then
+getgenv().ACBXFishingCatchMark = go
 end
 
-local zm = type(tyw) == _d("GFUXWQc") and tostring(tyw.itemId) or _d("GVoeWw0QHg")
-local xq = pa.catchName(zm)
+local oulq = type(krec) == _d("DFdVBhM") and tostring(krec.itemId) or _d("DVhcBBkHVg")
+local gw = wf.catchName(oulq)
 
-pa.catches[zm] = (pa.catches[zm] or 0) + 1
-pa.totalCatches = (pa.totalCatches or 0) + 1
+wf.catches[oulq] = (wf.catches[oulq] or 0) + 1
+wf.totalCatches = (wf.totalCatches or 0) + 1
 
-local aqn = type(tyw) == _d("GFUXWQc") and tyw.chest or nil
+local vc = type(krec) == _d("DFdVBhM") and krec.chest or nil
 
-if type(aqn) == _d("GFUXWQc") and aqn.itemId then
-local yifw = tostring(aqn.itemId)
+if type(vc) == _d("DFdVBhM") and vc.itemId then
+local aovf = tostring(vc.itemId)
 
-pa.catches[yifw] = (pa.catches[yifw] or 0) + 1
+wf.catches[aovf] = (wf.catches[aovf] or 0) + 1
 end
 
-if os.clock() - (xh.at or 0) >= 5 then
-xh.at = os.clock()
-xh.save()
+if os.clock() - (lb.at or 0) >= 5 then
+lb.at = os.clock()
+lb.save()
 end
-pa.lastCatch = xq
-pa.lastMessage = nil
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = os.clock() + 2.5
+wf.lastCatch = gw
+wf.lastMessage = nil
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = os.clock() + 2.5
 
-if type(tyw) == _d("GFUXWQc") then
-pa.casts = tonumber(tyw.casts) or pa.casts
-pa.totalCasts = tonumber(tyw.totalCasts) or pa.totalCasts
-pa.autoUnlocked = tyw.autoUnlocked == true or pa.autoUnlocked
+if type(krec) == _d("DFdVBhM") then
+wf.casts = tonumber(krec.casts) or wf.casts
+wf.totalCasts = tonumber(krec.totalCasts) or wf.totalCasts
+wf.autoUnlocked = krec.autoUnlocked == true or wf.autoUnlocked
 end
 
 return
 end
 
-if eou == _d("LUEBWi0BFg") then
+if yrpr == _d("OUNDBTkWXg") then
 
-pa.usingGameAuto = false
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = os.clock() + 1
+wf.usingGameAuto = false
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = os.clock() + 1
 return
 end
 
-if eou == _d("KUcWVBICFA") then
-pa.phase = _d("BVAZUA")
-pa.lastMessage = _d("OFwQFQQOAwQUEloWRxEbVQw")
-pa.nextCastAt = os.clock() + 2.5
+if yrpr == _d("PUVUCwYVXA") then
+wf.phase = _d("EVJbDw")
+wf.lastMessage = _d("LF5SShAZSxAWUAUCUFkPV04")
+wf.nextCastAt = os.clock() + 2.5
 return
 end
 
-if eou == _d("PlEfUAETFQg") then
-pa.phase = _d("BVAZUA")
+if yrpr == _d("KlNdDxUEXRw") then
+wf.phase = _d("EVJbDw")
 
-local lk = type(tyw) == _d("GFUXWQc") and tostring(tyw.message) or _d("L1UGQUIVFQZRFkEHAw")
-pa.lastMessage = lk
+local mii = type(krec) == _d("DFdVBhM") and tostring(krec.message) or _d("O1dEHlYCXRJTVB4TFA")
+wf.lastMessage = mii
 
-if lk:lower():find(_d("G1UBUBA"), 1, true) then
-pa.waterRefusals = (pa.waterRefusals or 0) + 1
+if mii:lower():find(_d("D1dDDwQ"), 1, true) then
+wf.waterRefusals = (wf.waterRefusals or 0) + 1
 
-if pa.waterRefusals >= 2 then
-pa.waterRefusals = 0
+if wf.waterRefusals >= 2 then
+wf.waterRefusals = 0
 
-if vn() then
-pa.lastMessage = _d("PlETQBECFExAAlwBAlBBFAFAEAkVCBQXVAEMUBhbAlQQA1AYXBAVFQYECUY")
-pa.nextCastAt = os.clock() + 1.5
+if qdex() then
+wf.lastMessage = _d("KlNRHwUVXFhCQAMVFRhVFkMfBB5dHBZVCxUbGAxZQAsEFBgMXlJKARFMHUQ")
+wf.nextCastAt = os.clock() + 1.5
 return
 end
 end
 
-pa.nextCastAt = os.clock() + 8
+wf.nextCastAt = os.clock() + 8
 return
 end
 
-pa.waterRefusals = 0
-pa.nextCastAt = os.clock() + 3
+wf.waterRefusals = 0
+wf.nextCastAt = os.clock() + 3
 return
 end
 end)
 
-local function dr()
-if not pa.loaded then
-return _d("PlEUUQsJF0xSHEYKDh4LFAZBAxMVQhpb")
+local function quz()
+if not wf.loaded then
+return _d("KlNWDh8eX1hQXhkeGVYfFkQeFwRdVhgZ")
 end
 
-local uto = pa.autoUnlocked == true
-or (pa.totalCasts or 0) > 0
-or (pa.tutorialStep or 0) > 0
-local ng = kr and kr.RodsById and kr.RodsById[pa.rod]
-local igug = ng and tostring(ng.name) or tostring(pa.rod)
-local tzgi = math.floor((tonumber(pa.luck) or 0) * 100 + 0.5)
+local tvxk = wf.autoUnlocked == true
+or (wf.totalCasts or 0) > 0
+or (wf.tutorialStep or 0) > 0
+local hcyu = lf and lf.RodsById and lf.RodsById[wf.rod]
+local dxcn = hcyu and tostring(hcyu.name) or tostring(wf.rod)
+local gio = math.floor((tonumber(wf.luck) or 0) * 100 + 0.5)
 
-local em = {
-_d("PlsRD0I") .. igug,
-_d("IEEWXlhH") .. tzgi .. _d("SQ"),
+local gkul = {
+_d("KllTUFY") .. dxcn,
+_d("NENUAUxQ") .. gio .. _d("XQ"),
 }
 
-local jmdf = jucv.current()
+local hghh = arc.current()
 
-if jmdf then
-table.insert(em, _d("NlsbUFhH") .. jmdf.name .. _d("TBxe") .. tostring(math.floor(jmdf.luck * 100 + 0.5)) .. _d("SRQZQAEMWQ"))
+if hghh then
+table.insert(gkul, _d("IllZD0xQ") .. hghh.name .. _d("WB4c") .. tostring(math.floor(hghh.luck * 100 + 0.5)) .. _d("XRZbHxUbEQ"))
 end
 
-table.insert(em, _d(""))
-table.insert(em, _d("L1UGQRFHBAMUBkUHCRRWFA") .. ith(pa.casts or 0))
-table.insert(em, _d("OFsBVA5HEw1HAUZYRw") .. ith(pa.totalCasts or 0))
+table.insert(gkul, _d(""))
+table.insert(gkul, _d("O1dEHgVQTBcWRBoTHlxCFg") .. sjw(wf.casts or 0))
+table.insert(gkul, _d("LFlDCxpQWxlFQxlMUA") .. sjw(wf.totalCasts or 0))
 
-table.insert(em, _d(""))
-table.insert(em, _d("Kl0GXQsJF0xBG1kNBBsJUE8V") .. (uto and _d("FVEG") or _d("Als")))
-table.insert(em, _d("LUEBWk8BGR9cVUASAAINUBAPQg") .. (pa.autoUnlocked and _d("A0MbUAY") or _d("AlsBFQ0QHglQ")))
+table.insert(gkul, _d(""))
+table.insert(gkul, _d("Pl9EAh8eX1hDWQYZE1MdUg1K") .. (tvxk and _d("AVNE") or _d("Flk")))
+table.insert(gkul, _d("OUNDBVsWUQteFx8GF0oZUlJQVg") .. (wf.autoUnlocked and _d("F0FZDxI") or _d("FllDShkHVh1S")))
 
-if pa.enabled then
-local li = pa.usingGameAuto and _d("C1UYUEIGBRhb") or tostring(pa.phase)
+if wf.enabled then
+local oj = wf.usingGameAuto and _d("H1daD1YRTQxZ") or tostring(wf.phase)
 
-if li == _d("G1UcQQsJFy5dAVA") then
-li = _d("G1UcQQsJF0xSGkdCBlAOXQFQ")
-elseif li == _d("HlEQWQsJFw") then
-li = _d("HlEQWQsJF0xdGw")
-elseif li == _d("HlEGWg4RGQJT") then
-li = _d("AFUbUQsJF0xdAQ")
+if oj == _d("D1deHh8eXzpfQw8") then
+oj = _d("D1deHh8eX1hQWBhWERgaX0MP")
+elseif oj == _d("ClNSBh8eXw") then
+oj = _d("ClNSBh8eX1hfWQ")
+elseif oj == _d("ClNEBRoGURZR") then
+oj = _d("FFdZDh8eX1hfQw")
 end
 
-table.insert(em, _d(""))
-table.insert(em, _d("LUEBWkIhGR9cTxU") .. li)
+table.insert(gkul, _d(""))
+table.insert(gkul, _d("OUNDBVY2UQteDUo") .. oj)
 
-local tbz = btd.worldBoss
+local nity = yvcz.worldBoss
 
-if tbz and type(tbz.hasWork) == _d("CkEbVhYOHwI") and tbz.enabled and tbz.hasWork() then
-table.insert(em, _d("JFsZUQsJF1YUElkNBREAFBdaERRQBUdVQBJHWB5RBkAPAgNMWxsVCxMDTFcaWg4DHxtaXA"))
+if nity and type(nity.hasWork) == _d("HkNZCQIZVxY") and nity.enabled and nity.hasWork() then
+table.insert(gkul, _d("MFlbDh8eX0IWUAYZElkUFlUFBQMYEUUXHwZQEApTRB8bFUtYWVlKHwRLWFVYBRoUVw9YHg"))
 end
 
-if pa.lastCatch then
-table.insert(em, _d("IFUGQUIEERhXHQ9C") .. pa.lastCatch)
-end
-end
-
-if pa.lastMessage then
-table.insert(em, _d(""))
-table.insert(em, _d("IlsBUFhH") .. pa.lastMessage)
-end
-
-return table.concat(em, _d("Zg"))
-end
-
-local function rsn()
-local xjd = 0
-
-for tdho, lfp in pairs(pa.catches) do
-local ua = hb.ById[tdho]
-
-if not (ua and ua.type == _d("D1wQRhY")) then
-xjd = xjd + lfp
+if wf.lastCatch then
+table.insert(gkul, _d("NFdEHlYTWQxVX1BW") .. wf.lastCatch)
 end
 end
 
-return xjd
+if wf.lastMessage then
+table.insert(gkul, _d(""))
+table.insert(gkul, _d("NllDD0xQ") .. wf.lastMessage)
 end
 
-local function olo()
-local xugd = {}
+return table.concat(gkul, _d("cg"))
+end
 
-for zjo, bnmo in pairs(pa.catches) do
-local ubcj = hb.ById[zjo]
-local pxga = ubcj and ubcj.type == _d("D1wQRhY") or false
+local function xay()
+local ycll = 0
 
-table.insert(xugd, {
-name = pa.catchName(zjo),
-count = bnmo,
-chest = pxga,
-rank = pxga and (tonumber(ubcj.border) or 1) or 0,
+for pj, mi in pairs(wf.catches) do
+local zyhu = pc.ById[pj]
+
+if not (zyhu and zyhu.type == _d("G15SGQI")) then
+ycll = ycll + mi
+end
+end
+
+return ycll
+end
+
+local function ss()
+local qpxu = {}
+
+for oipu, lpj in pairs(wf.catches) do
+local gkea = pc.ById[oipu]
+local sdq = gkea and gkea.type == _d("G15SGQI") or false
+
+table.insert(qpxu, {
+name = wf.catchName(oipu),
+count = lpj,
+chest = sdq,
+rank = sdq and (tonumber(gkea.border) or 1) or 0,
 })
 end
 
-if #xugd == 0 then
-return _d("IlsBXQsJF0xXFEAFDwRMTRBBTG16OEEHW0IIHkx1AEENRzYFRx0VAwkUTEAdUEITEQBYDBURExEeQAYVCgICCRpVfBZHAw1CEEZCDgQfURlTTkcDAxQcQUIEER5GHFARRx8aUQcVDAIIGBQGUBEUGQNaWw")
+if #qpxu == 0 then
+return _d("NllDAh8eX1hVVh8RGExYT1IeWHoyLENFBFYfVlh3Qh4ZUH4RRV9KFx5cWEJfD1YEWRRaTkoFBFkKQkRKHhVKHRgXIwJQSxlAUhlWGUwLU1sMWlBLFxZeHlYTWQpEXg8FUFcOU0VKGBVADBZEDwUDURdYGQ")
 end
 
-table.sort(xugd, function(hssr, egw)
-if hssr.chest ~= egw.chest then
-return hssr.chest
+table.sort(qpxu, function(pv, eqdy)
+if pv.chest ~= eqdy.chest then
+return pv.chest
 end
 
-if hssr.chest and hssr.rank ~= egw.rank then
-return hssr.rank > egw.rank
+if pv.chest and pv.rank ~= eqdy.rank then
+return pv.rank > eqdy.rank
 end
 
-if hssr.count ~= egw.count then
-return hssr.count > egw.count
+if pv.count ~= eqdy.count then
+return pv.count > eqdy.count
 end
 
-return hssr.name < egw.name
+return pv.name < eqdy.name
 end)
 
-local bqkj = {}
+local dka = {}
 
-for bhr, llu in ipairs(xugd) do
-table.insert(bqkj, llu.name .. _d("TNb1oUI") .. ith(llu.count))
+for rhi, zzep in ipairs(qpxu) do
+table.insert(dka, zzep.name .. _d("WNS3/lY") .. sjw(zzep.count))
 end
 
-local fgju = {
-table.concat(bqkj, _d("Zj4")),
+local ij = {
+table.concat(dka, _d("cjw")),
 _d(""),
-_d("OFsBVA5HEw1BEl0WXVA") .. ith(rsn()) .. _d("TPbCFQ") .. #xugd .. _d("TF8cWwYU"),
+_d("LFlDCxpQWxlDUAICShg") .. sjw(xay()) .. _d("WPSASg") .. #qpxu .. _d("WF1eBBID"),
 }
 
-if pa.lastCatch then
-table.insert(fgju, _d("IFUGQUIEERhXHQ9C") .. tostring(pa.lastCatch))
+if wf.lastCatch then
+table.insert(ij, _d("NFdEHlYTWQxVX1BW") .. tostring(wf.lastCatch))
 end
 
-return table.concat(fgju, _d("Zg"))
+return table.concat(ij, _d("cg"))
 end
 
-local lbpg = {
+local xfp = {
 rod = Vector3.new(-493, 18, -40254),
 bait = Vector3.new(-493, 18, -40254),
 }
 
-local function muwp(ike)
-if not kr then
+local function rwd(altr)
+if not lf then
 return {}
 end
 
-local big
+local eo
 
-if ike == _d("HlsR") then
-big = kr.RodsById
-elseif ike == _d("DlUcQQ") then
-big = kr.BaitsById
+if altr == _d("CllT") then
+eo = lf.RodsById
+elseif altr == _d("GldeHg") then
+eo = lf.BaitsById
 else
-big = nil
+eo = nil
 end
 
-local nt = {}
+local fxp = {}
 
-for ti, zv in pairs(big or {}) do
-if not zv.crafted then
-table.insert(nt, {
-id = tostring(ti),
-name = tostring(zv.name or ti),
-cost = tonumber(zv.cost) or 0,
-luck = tonumber(zv.luck) or 0,
-index = tonumber(zv.index) or 0,
-island = zv.shop == _d("BUcZVAwD"),
+for ng, quaq in pairs(eo or {}) do
+if not quaq.crafted then
+table.insert(fxp, {
+id = tostring(ng),
+name = tostring(quaq.name or ng),
+cost = tonumber(quaq.cost) or 0,
+luck = tonumber(quaq.luck) or 0,
+index = tonumber(quaq.index) or 0,
+island = quaq.shop == _d("EUVbCxgU"),
 })
 end
 end
 
-table.sort(nt, function(yiu, jo)
-if yiu.index ~= jo.index then
-return yiu.index < jo.index
+table.sort(fxp, function(ad, ja)
+if ad.index ~= ja.index then
+return ad.index < ja.index
 end
 
-return yiu.cost < jo.cost
+return ad.cost < ja.cost
 end)
 
-return nt
+return fxp
 end
 
-local function iltw(jgf)
-if jgf == _d("HlsR") then
-return pa.rodsOwned or {}
-elseif jgf == _d("DlUcQQ") then
-return pa.baitsOwned or {}
+local function eyl(xnyg)
+if xnyg == _d("CllT") then
+return wf.rodsOwned or {}
+elseif xnyg == _d("GldeHg") then
+return wf.baitsOwned or {}
 end
 
 return {}
 end
 
-local function yo(qj)
-if qj == _d("HlsR") then
-return pa.rod
-elseif qj == _d("DlUcQQ") then
-return pa.equippedBait
+local function vglz(fv)
+if fv == _d("CllT") then
+return wf.rod
+elseif fv == _d("GldeHg") then
+return wf.equippedBait
 end
 
 return nil
 end
 
-local function vsne(ctju)
-local sco = iltw(ctju)
-local gcz = nil
+local function fjp(jkj)
+local gwya = eyl(jkj)
+local atzh = nil
 
-for qg, mjn in ipairs(muwp(ctju)) do
-if sco[mjn.id] == true then
-gcz = mjn
+for omq, hl in ipairs(rwd(jkj)) do
+if gwya[hl.id] == true then
+atzh = hl
 end
 end
 
-if ctju == _d("HlsR") and kr and kr.RodsById then
-local yfys = kr.RodsById.rod_secret
+if jkj == _d("CllT") and lf and lf.RodsById then
+local iuiw = lf.RodsById.rod_secret
 
-if yfys and sco.rod_secret == true then
-gcz = {
-id = _d("HlsRahECEx5RAQ"),
-name = tostring(yfys.name or _d("KUwWVA4OEhlG")),
-cost = tonumber(yfys.cost) or 0,
-luck = tonumber(yfys.luck) or 0,
-index = tonumber(yfys.index) or 0,
+if iuiw and gwya.rod_secret == true then
+atzh = {
+id = _d("CllTNQUVWwpTQw"),
+name = tostring(iuiw.name or _d("PU5UCxoZWg1E")),
+cost = tonumber(iuiw.cost) or 0,
+luck = tonumber(iuiw.luck) or 0,
+index = tonumber(iuiw.index) or 0,
 island = true,
 }
 end
 end
 
-return gcz
+return atzh
 end
 
-local function uxf(uja)
-if uja.island and pa.islandLocked then
+local function irze(vqj)
+if vqj.island and wf.islandLocked then
 return false
 end
 
 return true
 end
 
-local function ptk(dpj)
-local kxor = iltw(dpj)
-local pyca = pa.casts or 0
-local pyv = nil
+local function wwl(ne)
+local qrqd = eyl(ne)
+local zde = wf.casts or 0
+local qbqv = nil
 
-for krvw, obz in ipairs(muwp(dpj)) do
-if kxor[obz.id] ~= true and obz.cost <= pyca and uxf(obz) then
-pyv = obz
+for jovc, ycw in ipairs(rwd(ne)) do
+if qrqd[ycw.id] ~= true and ycw.cost <= zde and irze(ycw) then
+qbqv = ycw
 end
 end
 
-return pyv
+return qbqv
 end
 
-local function kp(shb)
-local snv = iltw(shb)
+local function wjnd(zsi)
+local aop = eyl(zsi)
 
-for hul, jj in ipairs(muwp(shb)) do
-if snv[jj.id] ~= true and uxf(jj) then
-return jj
+for azo, eest in ipairs(rwd(zsi)) do
+if aop[eest.id] ~= true and irze(eest) then
+return eest
 end
 end
 
 return nil
 end
 
-local function ncmx(wh, klrh)
-if not klrh then
-return _d("AlsbUEIIBwJREQ")
+local function eepa(tzk, nzz)
+if not nzz then
+return _d("FllZD1YfTxZTUw")
 end
 
-return klrh.name .. _d("TBxe") .. tostring(math.floor(klrh.luck * 100 + 0.5)) .. _d("SRQZQAEMWQ")
+return nzz.name .. _d("WB4c") .. tostring(math.floor(nzz.luck * 100 + 0.5)) .. _d("XRZbHxUbEQ")
 end
 
-local function pr()
-if not kr then
-return _d("Kl0GXQsJFyhVAVRCCR8YFBNaFwkUTBlVRgoIAExQFEEDRwUCVQNUCwsRDlgQGw")
+local function fdv()
+if not lf then
+return _d("Pl9EAh8eXzxXQwtWHlcMFlEFAx5cWBsXGR4fSFhSVh4XUE0WV0ELHxxZGlpSRA")
 end
 
-local xv = {}
-local euk = { rod = _d("PlsR"), bait = _d("LlUcQQ") }
+local pil = {}
+local fvyn = { rod = _d("KllT"), bait = _d("OldeHg") }
 
-for vlw, ibv in ipairs({ _d("HlsR"), _d("DlUcQQ") }) do
-local fijr = vsne(ibv)
-local apsx = nil
+for nmo, rps in ipairs({ _d("CllT"), _d("GldeHg") }) do
+local ffw = fjp(rps)
+local gtou = nil
 
-for tz, lnqd in ipairs(muwp(ibv)) do
-if lnqd.id == yo(ibv) then
-apsx = lnqd.name
+for lsj, ttr in ipairs(rwd(rps)) do
+if ttr.id == vglz(rps) then
+gtou = ttr.name
 end
 end
 
-if #xv > 0 then
-table.insert(xv, _d(""))
+if #pil > 0 then
+table.insert(pil, _d(""))
 end
 
-table.insert(xv, euk[ibv] .. _d("VhQ") .. ncmx(ibv, fijr))
-table.insert(xv, _d("I1pVWw0QSkw") .. (apsx or _d("AlsbUA")))
+table.insert(pil, fvyn[rps] .. _d("QhY") .. eepa(rps, ffw))
+table.insert(pil, _d("N1gXBBkHAlg") .. (gtou or _d("FllZDw")))
 
-local ru = ptk(ibv) or kp(ibv)
+local mnj = wwl(rps) or wjnd(rps)
 
-if ru then
-local ynqh = ru.cost - (pa.casts or 0)
+if mnj then
+local epsk = mnj.cost - (wf.casts or 0)
 
-table.insert(xv, _d("IlENQVhH") .. ru.name .. _d("TPbCFQ") .. ith(ru.cost) .. _d("TFcURhYU"))
+table.insert(pil, _d("NlNPHkxQ") .. mnj.name .. _d("WPSASg") .. sjw(mnj.cost) .. _d("WFVWGQID"))
 
-if ynqh > 0 then
-table.insert(xv, _d("IlEQUUI") .. ith(ynqh) .. _d("TFkaRwc"))
+if epsk > 0 then
+table.insert(pil, _d("NlNSDlY") .. sjw(epsk) .. _d("WFtYGBM"))
 end
 else
-table.insert(xv, _d("IlENQVhHFRpRB0wWDxkCU1VaFQkVCA"))
+table.insert(pil, _d("NlNPHkxQXQ5TRRMCGFEWURcFAR5dHA"))
 end
 end
 
-table.insert(xv, _d(""))
-table.insert(xv, _d("L1UGQRFHBAMUBkUHCRRWFA") .. ith(pa.casts or 0))
+table.insert(pil, _d(""))
+table.insert(pil, _d("O1dEHgVQTBcWRBoTHlxCFg") .. sjw(wf.casts or 0))
 
-if pa.shopMessage then
-table.insert(xv, _d(""))
-table.insert(xv, pa.shopMessage)
+if wf.shopMessage then
+table.insert(pil, _d(""))
+table.insert(pil, wf.shopMessage)
 end
 
-return table.concat(xv, _d("Zg"))
+return table.concat(pil, _d("cg"))
 end
 
-local function on(msoq, yh)
-local ctq = os.clock()
+local function gi(bx, nto)
+local phw = os.clock()
 
-if ctq < (pa.shopCallAt or 0) then
-return false, _d("H1gaQg")
+if phw < (wf.shopCallAt or 0) then
+return false, _d("C1pYHQ")
 end
 
-pa.shopCallAt = ctq + 1.4
+wf.shopCallAt = phw + 1.4
 
-local sz, cnxi, ah, lf = pcall(function()
-return bo.FishingShop:InvokeServer(msoq, yh)
+local vks, scdg, ncjf, evhf = pcall(function()
+return xl.FishingShop:InvokeServer(bx, nto)
 end)
 
-if not sz then
-return false, _d("CUYHWhBH") .. tostring(cnxi)
+if not vks then
+return false, _d("HURFBQRQ") .. tostring(scdg)
 end
 
-lvs(lf)
+pifh(evhf)
 
-if cnxi == true then
+if scdg == true then
 return true, nil
 end
 
-return false, tostring(ah or _d("HlETQBECFA"))
+return false, tostring(ncjf or _d("ClNRHwUVXA"))
 end
 
-function pa.rebirthCardsHeld()
-local zrnv = kr and type(kr.RebirthCards) == _d("GFUXWQc") and #kr.RebirthCards or 0
+function wf.rebirthCardsHeld()
+local grzw = lf and type(lf.RebirthCards) == _d("DFdVBhM") and #lf.RebirthCards or 0
 
-if zrnv == 0 then
+if grzw == 0 then
 return 0, 0
 end
 
-local jjcr = 0
+local uaz = 0
 
-for riqj, wlf in ipairs(kr.RebirthCards) do
-if pa.rebirthCards[wlf.cardId] then
-jjcr = jjcr + 1
+for qdb, nzqz in ipairs(lf.RebirthCards) do
+if wf.rebirthCards[nzqz.cardId] then
+uaz = uaz + 1
 end
 end
 
-return jjcr, zrnv
+return uaz, grzw
 end
 
-function pa.rebirthReady()
-local vbkt, ikoq = pa.rebirthCardsHeld()
+function wf.rebirthReady()
+local jbk, sfu = wf.rebirthCardsHeld()
 
-return ikoq > 0 and vbkt >= ikoq and (tonumber(pa.rebirths) or 0) < 1
+return sfu > 0 and jbk >= sfu and (tonumber(wf.rebirths) or 0) < 1
 end
 
-function pa.rebirthText()
-local fa, uoi = pa.rebirthCardsHeld()
+function wf.rebirthText()
+local wyes, qnqa = wf.rebirthCardsHeld()
 
-if uoi == 0 then
-return _d("Kl0GXQsJF0xQFEEDRx4DQFVZDQYUCVBZFREIUB5RF1wQExhMXQYVFwkRGlUcWQMFHAka")
+if qnqa == 0 then
+return _d("Pl9EAh8eX1hSVh4XUFYXQhcGGRFcHVIbSgUfGApTVQMEBFBYX0RKAx5ZDldeBhcSVB0Y")
 end
 
-if (tonumber(pa.rebirths) or 0) >= 1 then
-return _d("PlEXXBATGAlQWxU2DxVMdRdUDAMfAlERFSsUHA1aERULFFADRBBbTA")
+if (tonumber(wf.rebirths) or 0) >= 1 then
+return _d("KlNVAwQEUB1SGUoiGF1Yd1ULGBRXFlNTSj8DVBlYU0ofAxgXRlIEWA")
 end
 
-if fa >= uoi then
-return _d("LVgZFQ") .. uoi .. _d("TFcURwYUUApdBl0HA15MZhBUBh5QGFtVRwcFGR5AHRs")
+if wyes >= qnqa then
+return _d("OVpbSg") .. qnqa .. _d("WFVWGBIDGB5fRAITFBZYZFILEgkYDFkXGBMSUQpCX0Q")
 end
 
-local xihg = {}
+local xu = {}
 
-for ure, lnp in ipairs(kr.RebirthCards) do
-if not pa.rebirthCards[lnp.cardId] then
-table.insert(xihg, (string.gsub(lnp.cardId, _d("MlIcRgo4"), _d(""))))
+for ycm, tw in ipairs(lf.RebirthCards) do
+if not wf.rebirthCards[tw.cardId] then
+table.insert(xu, (string.gsub(tw.cardId, _d("JlBeGR4v"), _d(""))))
 end
 end
 
-return fa .. _d("Qw") .. uoi .. _d("TFcURwYUXkxnAVwOC1ACURBRQg") .. table.concat(xihg, _d("QBQ")) .. _d("Qg")
+return wyes .. _d("Vw") .. qnqa .. _d("WFVWGBIDFlhlQwMaHBgWU1IOVg") .. table.concat(xu, _d("VBY")) .. _d("Vg")
 end
 
-local function apby(cmjx)
-local xwua = fh.Character
-local sfwd = xwua and xwua:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local function qsgt(cvpp)
+local bz = omhv.Character
+local ye = bz and bz:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not sfwd then
+if not ye then
 return false
 end
 
-return (sfwd.Position - (lbpg[cmjx] or lbpg.rod)).Magnitude <= 26
+return (ye.Position - (xfp[cvpp] or xfp.rod)).Magnitude <= 26
 end
 
-local function tnc(bsq, knk)
+local function ylk(gba, kklb)
 
-if knk and knk.island then
-if not pa.shopIsland or not pa.shopIsland.toIsland() then
-pa.shopMessage = _d("L1sAWQZHHgNAVUcHBhMEFAFdB0cZH1gUWwZHEwNBG0EHFQ")
+if kklb and kklb.island then
+if not wf.shopIsland or not wf.shopIsland.toIsland() then
+wf.shopMessage = _d("O1lCBhJQVhdCFxgTEVsQFkMCE1BRC1pWBBJQWxdDWR4TAg")
 
 return false
 end
@@ -3979,248 +3986,248 @@ end
 return true
 end
 
-if apby(bsq) then
+if qsgt(gba) then
 return true
 end
 
-local qi = fh.Character
-local gpzz = qi and qi:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local geo = omhv.Character
+local eizo = geo and geo:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not gpzz then
+if not eizo then
 return false
 end
 
-local sft = lbpg[bsq] or lbpg.rod
-pa.shopTripUntil = os.clock() + 12
-pa.shopHoldUntil = os.clock() + 12
+local nos = xfp[gba] or xfp.rod
+wf.shopTripUntil = os.clock() + 12
+wf.shopHoldUntil = os.clock() + 12
 
 pcall(function()
-gpzz.CFrame = CFrame.new(sft)
+eizo.CFrame = CFrame.new(nos)
 end)
 
 task.wait(1.2)
 
-return apby(bsq)
+return qsgt(gba)
 end
 
-local function xx(qrh, tuv, foh)
-if not foh then
+local function pqu(ykq, uj, bbq)
+if not bbq then
 return false
 end
 
-if (pa.casts or 0) < foh.cost then
+if (wf.casts or 0) < bbq.cost then
 return false
 end
 
-if not tnc(qrh, foh) then
-pa.shopMessage = _d("L1sAWQZHHgNAVUcHBhMEFAFdB0cDBFsFFQQIAkw") .. foh.name
+if not ylk(ykq, bbq) then
+wf.shopMessage = _d("O1lCBhJQVhdCFxgTEVsQFkMCE1BLEFlHShAfSlg") .. bbq.name
 return false
 end
 
-local jkt, kua = on(tuv, foh.id)
+local gmx, raty = gi(uj, bbq.id)
 
-if not jkt then
-local tpf = tostring(kua)
-local tta = tpf:find(_d("OFUZXkITH0xAHVBCIRkfXBBHDwYe"), 1, true) or tpf:find(_d("LlsUQUIjFQ1YEEc"), 1, true)
+if not gmx then
+local nwo = tostring(raty)
+local ty = nwo:find(_d("LFdbAVYEV1hCXw9WNlELXlIYGxFW"), 1, true) or nwo:find(_d("OllWHlY0XRlaUhg"), 1, true)
 
-if tta then
+if ty then
 
-pa.shopMessage = _d("O1UZXgsJF0xBBRUWCFAYXBAVAQgFAkAQR0IBHx4U") .. foh.name
+wf.shopMessage = _d("L1dbAR8eX1hDR0oCHxgMXlJKFR9NFkJSGFYWVwoW") .. bbq.name
 return false
 end
 
-if kua ~= _d("H1gaQg") then
-pa.shopAt = os.clock() + 15
-pa.shopMessage = _d("P1EHQwcVUB5RE0ARAhRM") .. foh.name .. _d("TBw") .. tpf .. _d("RQ")
+if raty ~= _d("C1pYHQ") then
+wf.shopAt = os.clock() + 15
+wf.shopMessage = _d("K1NFHBMCGApTUR8FFVxY") .. bbq.name .. _d("WB4") .. nwo .. _d("UQ")
 end
 
 return false
 end
 
-pa.shopMessage = _d("LlsAUgoTUA") .. foh.name
+wf.shopMessage = _d("OllCDR4EGA") .. bbq.name
 
 return true
 end
 
-local function dpmq(lsto)
-local vckw = vsne(lsto)
+local function ls(fnkw)
+local wiz = fjp(fnkw)
 
-if not vckw or yo(lsto) == vckw.id then
+if not wiz or vglz(fnkw) == wiz.id then
 return false
 end
 
-local wgl
+local oipz
 
-if lsto == _d("HlsR") then
-wgl = _d("KUUAXBI1Hwg")
-elseif lsto == _d("DlUcQQ") then
-wgl = _d("KUUAXBIlEQVA")
+if fnkw == _d("CllT") then
+oipz = _d("PUdCAwYiVxw")
+elseif fnkw == _d("GldeHg") then
+oipz = _d("PUdCAwYyWRFC")
 else
 return false
 end
 
-local us, yx = on(wgl, vckw.id)
+local lyp, ol = gi(oipz, wiz.id)
 
-if not us then
-if yx ~= _d("H1gaQg") then
-pa.shopMessage = _d("L1sAWQZHHgNAVVATEhkcFA") .. vckw.name .. _d("TBw") .. tostring(yx) .. _d("RQ")
+if not lyp then
+if ol ~= _d("C1pYHQ") then
+wf.shopMessage = _d("O1lCBhJQVhdCFw8HBVEIFg") .. wiz.name .. _d("WB4") .. tostring(ol) .. _d("UQ")
 end
 
 return false
 end
 
-if lsto == _d("HlsR") then
-pa.rod = vckw.id
-elseif lsto == _d("DlUcQQ") then
-pa.equippedBait = vckw.id
+if fnkw == _d("CllT") then
+wf.rod = wiz.id
+elseif fnkw == _d("GldeHg") then
+wf.equippedBait = wiz.id
 else
 return false
 end
 
-pa.shopMessage = _d("KUUAXBIXFQgU") .. vckw.name
+wf.shopMessage = _d("PUdCAwYAXRwW") .. wiz.name
 
 return true
 end
 
-local function vsz()
-local hcl = pa.shop
+local function mgr()
+local sk = wf.shop
 
-if os.time() - (pa.lastSync or 0) >= 5 then
-oavj()
+if os.time() - (wf.lastSync or 0) >= 5 then
+imaz()
 end
 
-if hcl.equipRod then
-dpmq(_d("HlsR"))
+if sk.equipRod then
+ls(_d("CllT"))
 end
 
-if hcl.equipBait then
-dpmq(_d("DlUcQQ"))
+if sk.equipBait then
+ls(_d("GldeHg"))
 end
 
-if hcl.autoBuyRod then
-xx(_d("HlsR"), _d("LkEMZw0D"), ptk(_d("HlsR")))
+if sk.autoBuyRod then
+pqu(_d("CllT"), _d("OkNOOBkU"), wwl(_d("CllT")))
 end
 
-if hcl.autoBuyBait then
-xx(_d("DlUcQQ"), _d("LkEMdwMOBA"), ptk(_d("DlUcQQ")))
+if sk.autoBuyBait then
+pqu(_d("GldeHg"), _d("OkNOKBcZTA"), wwl(_d("GldeHg")))
 end
 end
 
-local function mw()
-local quhe = pa.shop
+local function md()
+local kdxe = wf.shop
 
-return quhe.autoBuyRod or quhe.autoBuyBait or quhe.equipRod or quhe.equipBait
+return kdxe.autoBuyRod or kdxe.autoBuyBait or kdxe.equipRod or kdxe.equipBait
 end
 
-pa.shopIsland = {
+wf.shopIsland = {
 rods = function()
-local xw = kr and kr.RodsById or {}
-local es = {}
+local iksf = lf and lf.RodsById or {}
+local qqd = {}
 
-for iujk, lra in pairs(xw) do
-if tostring(lra.shop) == _d("BUcZVAwD") then
-table.insert(es, {
-id = tostring(iujk),
-name = tostring(lra.name or iujk),
-cost = tonumber(lra.cost) or 0,
-luck = tonumber(lra.luck) or 0,
-index = tonumber(lra.index) or 0,
-crafted = lra.crafted == true,
+for wu, uitf in pairs(iksf) do
+if tostring(uitf.shop) == _d("EUVbCxgU") then
+table.insert(qqd, {
+id = tostring(wu),
+name = tostring(uitf.name or wu),
+cost = tonumber(uitf.cost) or 0,
+luck = tonumber(uitf.luck) or 0,
+index = tonumber(uitf.index) or 0,
+crafted = uitf.crafted == true,
 })
 end
 end
 
-table.sort(es, function(lxny, ncgx)
-return lxny.index < ncgx.index
+table.sort(qqd, function(foaq, tcc)
+return foaq.index < tcc.index
 end)
 
-return es
+return qqd
 end,
 
 angler = function()
-local ip = workspace:FindFirstChild(_d("ImQ2Rg"), true)
+local rbvc = workspace:FindFirstChild(_d("NmZ0GQ"), true)
 
-if not ip then
+if not rbvc then
 return nil
 end
 
-for tgw, vaj in ipairs(ip:GetChildren()) do
-if vaj:GetAttribute(_d("P1EWRwcTMQJTGVAQKSAv")) then
-return vaj
+for mv, cum in ipairs(rbvc:GetChildren()) do
+if cum:GetAttribute(_d("K1NUGBMEeRZRWw8EPmg7")) then
+return cum
 end
 end
 
 return nil
 end,
-held = function(lcn)
-return (pa.rodsOwned or {})[lcn] == true
+held = function(ofy)
+return (wf.rodsOwned or {})[ofy] == true
 end,
-recipeHeld = function(iq)
-for oe, uw in ipairs(iq or {}) do
-local ae = tonumber((pa.mats or {})[uw.id]) or 0
+recipeHeld = function(xxe)
+for stc, bdp in ipairs(xxe or {}) do
+local ogo = tonumber((wf.mats or {})[bdp.id]) or 0
 
-if ae < (tonumber(uw.count) or 0) then
+if ogo < (tonumber(bdp.count) or 0) then
 return false
 end
 end
 
 return true
 end,
-recipeText = function(my)
-local uknh = {}
+recipeText = function(ry)
+local bgvt = {}
 
-for qefn, kd in ipairs(my or {}) do
-local wtjt = tonumber((pa.mats or {})[kd.id]) or 0
-local uhia = (hb.ById[kd.id] and hb.ById[kd.id].name) or tostring(kd.id)
+for ndqp, upla in ipairs(ry or {}) do
+local vytk = tonumber((wf.mats or {})[upla.id]) or 0
+local ouzr = (pc.ById[upla.id] and pc.ById[upla.id].name) or tostring(upla.id)
 
-table.insert(uknh, uhia .. _d("TA") .. ith(wtjt) .. _d("Qw") .. ith(tonumber(kd.count) or 0))
+table.insert(bgvt, ouzr .. _d("WA") .. sjw(vytk) .. _d("Vw") .. sjw(tonumber(upla.count) or 0))
 end
 
-return table.concat(uknh, _d("TPbCFQ"))
+return table.concat(bgvt, _d("WPSASg"))
 end,
 
-stand = function(tr)
-local lvbc = fh.Character
-local dlb = lvbc and lvbc:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+stand = function(id)
+local iu = omhv.Character
+local er = iu and iu:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (dlb and tr) then
+if not (er and id) then
 return false
 end
 
-local uj = tr:GetPivot()
-local drr = tr:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA")) or tr:FindFirstChildWhichIsA(_d("LlUGUDIGAhg"), true)
-local ent = drr and (drr.CFrame * CFrame.new(0, 0, -5)).Position or nil
+local ca = id:GetPivot()
+local gvv = id:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg")) or id:FindFirstChildWhichIsA(_d("OldEDyYRSgw"), true)
+local jkdu = gvv and (gvv.CFrame * CFrame.new(0, 0, -5)).Position or nil
 
-if not ent then
-local kxi = RaycastParams.new()
-kxi.FilterType = Enum.RaycastFilterType.Exclude
-kxi.FilterDescendantsInstances = { lvbc, tr }
+if not jkdu then
+local lnxi = RaycastParams.new()
+lnxi.FilterType = Enum.RaycastFilterType.Exclude
+lnxi.FilterDescendantsInstances = { iu, id }
 
-local hf = nil
-local lb = math.huge
+local bgwi = nil
+local as = math.huge
 
-for wkng, rmvw in ipairs({ Vector3.new(0, 0, 6), Vector3.new(6, 0, 0), Vector3.new(0, 0, -6), Vector3.new(-6, 0, 0), Vector3.new(0, 0, 0) }) do
-local pexb = workspace:Raycast(uj.Position + rmvw + Vector3.new(0, 30, 0), Vector3.new(0, -140, 0), kxi)
+for eng, ob in ipairs({ Vector3.new(0, 0, 6), Vector3.new(6, 0, 0), Vector3.new(0, 0, -6), Vector3.new(-6, 0, 0), Vector3.new(0, 0, 0) }) do
+local wao = workspace:Raycast(ca.Position + ob + Vector3.new(0, 30, 0), Vector3.new(0, -140, 0), lnxi)
 
-if pexb and tostring(pexb.Instance.Name) ~= _d("O1UBUBA") and pexb.Position.Y <= uj.Position.Y + 10 then
-local adk = math.abs(pexb.Position.Y - uj.Position.Y)
+if wao and tostring(wao.Instance.Name) ~= _d("L1dDDwQ") and wao.Position.Y <= ca.Position.Y + 10 then
+local feb = math.abs(wao.Position.Y - ca.Position.Y)
 
-if adk < lb then
-hf = pexb
-lb = adk
+if feb < as then
+bgwi = wao
+as = feb
 end
 end
 end
 
-ent = hf and Vector3.new(hf.Position.X, hf.Position.Y + 3.5, hf.Position.Z) or (uj.Position + Vector3.new(0, 4, 0))
+jkdu = bgwi and Vector3.new(bgwi.Position.X, bgwi.Position.Y + 3.5, bgwi.Position.Z) or (ca.Position + Vector3.new(0, 4, 0))
 end
 
-pa.shopTripUntil = os.clock() + 12
+wf.shopTripUntil = os.clock() + 12
 
-pa.islandTripUntil = os.clock() + 12
+wf.islandTripUntil = os.clock() + 12
 
 pcall(function()
-dlb.CFrame = CFrame.new(ent)
+er.CFrame = CFrame.new(jkdu)
 end)
 
 task.wait(1.2)
@@ -4228,202 +4235,202 @@ task.wait(1.2)
 return true
 end,
 atIsland = function()
-local alpm = workspace:FindFirstChild(_d("JUcZVAwDNgVHHVAQChECeiV2"), true)
-local ssu = fh.Character
-local mlu = ssu and ssu:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local oex = workspace:FindFirstChild(_d("MUVbCxgUfhFFXw8EHVkWeGcp"), true)
+local mp = omhv.Character
+local ua = mp and mp:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (alpm and mlu) then
+if not (oex and ua) then
 return false
 end
 
-return (mlu.Position - alpm:GetPivot().Position).Magnitude <= 45
+return (ua.Position - oex:GetPivot().Position).Magnitude <= 45
 end,
 toIsland = function()
-if pa.shopIsland.atIsland() then
+if wf.shopIsland.atIsland() then
 return true
 end
 
-pa.shopTripUntil = os.clock() + 12
+wf.shopTripUntil = os.clock() + 12
 
-if not pa.gotoIsland() then
+if not wf.gotoIsland() then
 return false
 end
 
 task.wait(1.2)
 
-return pa.shopIsland.atIsland()
+return wf.shopIsland.atIsland()
 end,
 
 craftExcalibur = function()
-local wbqo = pa.shopIsland.angler()
+local dp = wf.shopIsland.angler()
 
-if not wbqo or pa.shopIsland.held(_d("HlsRahECEx5RAQ")) then
+if not dp or wf.shopIsland.held(_d("CllTNQUVWwpTQw")) then
 return false
 end
 
-if not pa.shopIsland.recipeHeld(kr and kr.SecretRecipe) then
+if not wf.shopIsland.recipeHeld(lf and lf.SecretRecipe) then
 return false
 end
 
-pa.shopIsland.stand(wbqo)
+wf.shopIsland.stand(dp)
 
-local mlzt, pcnp = on(_d("L0YUUxY1Hwg"), _d("HlsRahECEx5RAQ"))
+local zf, guzz = gi(_d("O0RWDAIiVxw"), _d("CllTNQUVWwpTQw"))
 
-if mlzt then
-pa.rod = _d("HlsRahECEx5RAQ")
-pa.islandMessage = _d("L0YUUxYCFExAHVBCIggPVRlcABICTEYaUUIGBExAHVBCLxkIUBBbQiYeC1gQRw")
-elseif pcnp ~= _d("H1gaQg") then
-pa.islandMessage = _d("JF0RUQcJUC1aElkHFVAeURNAEQIUTEAdUEIiCA9VGVwAEgJMHA") .. tostring(pcnp) .. _d("RQ")
+if zf then
+wf.rod = _d("CllTNQUVWwpTQw")
+wf.islandMessage = _d("O0RWDAIVXFhCXw9WNUAbV1sDFAVKWERYDlYRTFhCXw9WOFEcUlIEVjFWH1pSGA")
+elseif guzz ~= _d("C1pYHQ") then
+wf.islandMessage = _d("MF9TDhMeGDlYUAYTAhgKU1EfBRVcWEJfD1Y1QBtXWwMUBUpYHg") .. tostring(guzz) .. _d("UQ")
 end
 
-return mlzt
+return zf
 end,
 craftBoot = function()
-if pa.boot.owned or pa.islandLocked then
+if wf.boot.owned or wf.islandLocked then
 return false
 end
 
-if not pa.shopIsland.recipeHeld(kr and kr.BootRecipe) then
+if not wf.shopIsland.recipeHeld(lf and lf.BootRecipe) then
 return false
 end
 
-if not pa.shopIsland.toIsland() then
-pa.islandMessage = _d("L1sAWQZHHgNAVUcHBhMEFAFdB0cZH1gUWwZHEwNBG0EHFQ")
+if not wf.shopIsland.toIsland() then
+wf.islandMessage = _d("O1lCBhJQVhdCFxgTEVsQFkMCE1BRC1pWBBJQWxdDWR4TAg")
 return false
 end
 
-local eo, bd = on(_d("L0YUUxYlHwNA"))
+local mrx, eca = gi(_d("O0RWDAIyVxdC"))
 
-if eo then
-pa.boot.owned = true
-pa.islandMessage = _d("L0YUUxYCFExAHVBCKxULURtRAxUJTHYaWhY")
-elseif bd ~= _d("H1gaQg") then
-pa.islandMessage = _d("JUcZVAwDUCpdBl0HFR0NWlVHBwEFH1ERFRYPFUxWGloWR1g") .. tostring(bd) .. _d("RQ")
+if mrx then
+wf.boot.owned = true
+wf.islandMessage = _d("O0RWDAIVXFhCXw9WPF0fU1kOFwJBWHRYBQI")
+elseif eca ~= _d("C1pYHQ") then
+wf.islandMessage = _d("MUVbCxgUGD5fRAITAlUZWBcYExZNC1NTSgIYXVhUWAUCUBA") .. tostring(eca) .. _d("UQ")
 end
 
-return eo
+return mrx
 end,
 best = function()
-local myxo = pa.rodsOwned or {}
-local qqfq = nil
+local zmhd = wf.rodsOwned or {}
+local ene = nil
 
-for qtj, rb in ipairs(pa.shopIsland.rods()) do
-if myxo[rb.id] == true and (qqfq == nil or rb.luck > qqfq.luck) then
-qqfq = rb
+for lvh, re in ipairs(wf.shopIsland.rods()) do
+if zmhd[re.id] == true and (ene == nil or re.luck > ene.luck) then
+ene = re
 end
 end
 
-return qqfq
+return ene
 end,
 
 equipBoot = function()
-if not pa.boot.owned or pa.boot.equipped then
+if not wf.boot.owned or wf.boot.equipped then
 return false
 end
 
-local ky, zq = on(_d("KUUAXBIlHwNA"), true)
+local yv, lga = gi(_d("PUdCAwYyVxdC"), true)
 
-if ky then
-pa.boot.equipped = true
-pa.islandMessage = _d("KUUAXBIXFQgUAV0HRzwJUxBbBgYCFRQ3Wg0T")
-elseif zq ~= _d("H1gaQg") then
-pa.islandMessage = _d("L1sAWQZHHgNAVVATEhkcFAFdB0cSA1sBFUo") .. tostring(zq) .. _d("RQ")
+if yv then
+wf.boot.equipped = true
+wf.islandMessage = _d("PUdCAwYAXRwWQwITUHQdUVIEEhFKARZ1BRkE")
+elseif lga ~= _d("C1pYHQ") then
+wf.islandMessage = _d("O1lCBhJQVhdCFw8HBVEIFkMCE1BaF1lDSl4") .. tostring(lga) .. _d("UQ")
 end
 
-return ky
+return yv
 end,
 active = function()
-local nww = pa.island
+local hjs = wf.island
 
-return nww.autoRod or nww.autoAcc or nww.equipAcc
+return hjs.autoRod or hjs.autoAcc or hjs.equipAcc
 end,
 run = function()
-local uc = pa.island
+local liaj = wf.island
 
-if os.time() - (pa.lastSync or 0) >= 8 then
-oavj()
+if os.time() - (wf.lastSync or 0) >= 8 then
+imaz()
 end
 
-if uc.autoRod then
-pa.shopIsland.craftExcalibur()
+if liaj.autoRod then
+wf.shopIsland.craftExcalibur()
 end
 
-if uc.autoAcc then
-pa.shopIsland.craftBoot()
+if liaj.autoAcc then
+wf.shopIsland.craftBoot()
 end
 
-if uc.equipAcc then
-pa.shopIsland.equipBoot()
+if liaj.equipAcc then
+wf.shopIsland.equipBoot()
 end
 end,
 text = function()
-if not kr then
-return _d("Kl0GXQsJFyhVAVRCCR8YFBNaFwkUTBlVQQoCUAVHGVQMA1AfXBpFQg4DTEEbVBQGGQBVF1kHSQ")
+if not lf then
+return _d("Pl9EAh8eXzxXQwtWHlcMFlEFAx5cWBsXHh4VGBFFWwsYFBgLXlgaVhlLWENZCwARURRXVQYTXg")
 end
 
-local et = {}
-local yqye = pa.rodsOwned or {}
+local oi = {}
+local hka = wf.rodsOwned or {}
 
-table.insert(et, pa.islandLocked and _d("LVYUWwYIHglQVXwRCxECUFVcEUccA1ceUAZHXUxGEFcLFQQEFBNcEBQEQg") or _d("LVYUWwYIHglQVXwRCxECUFVcEUcfHFEbGw"))
+table.insert(oi, wf.islandLocked and _d("OVRWBBIfVh1SFyMFHFkWUhcDBVBUF1VcDxJQFVhEUggfAkwQFlEDBANMVg") or _d("OVRWBBIfVh1SFyMFHFkWUhcDBVBXCFNZRA"))
 
-for re, pld in ipairs(pa.shopIsland.rods()) do
-local niza
+for jf, dh in ipairs(wf.shopIsland.rods()) do
+local dqbt
 
-if yqye[pld.id] == true then
-niza = pa.rod == pld.id and _d("A0MbUAZHstsUGltCCR8b") or _d("A0MbUAY")
-elseif pld.crafted then
-niza = _d("JF0RUQcJUC1aElkHFVAeURZcEgI")
+if hka[dh.id] == true then
+dqbt = wf.rod == dh.id and _d("F0FZDxJQ+s8WWARWHlcP") or _d("F0FZDxI")
+elseif dh.crafted then
+dqbt = _d("MF9TDhMeGDlYUAYTAhgKU1QDBhU")
 else
-niza = ith(pld.cost) .. _d("TFcURhYU")
+dqbt = sjw(dh.cost) .. _d("WFVWGQID")
 end
 
-table.insert(et, pld.name .. _d("TNb1oUI") .. niza)
+table.insert(oi, dh.name .. _d("WNS3/lY") .. dqbt)
 end
 
-table.insert(et, _d(""))
+table.insert(oi, _d(""))
 
-if yqye.rod_secret then
-table.insert(et, _d("KUwWVA4OEhlGTxUNEB4JUA"))
+if hka.rod_secret then
+table.insert(oi, _d("PU5UCxoZWg1EDUoZB1YdUg"))
 else
-local iut = pa.shopIsland.recipeHeld(kr.SecretRecipe)
+local juuk = wf.shopIsland.recipeHeld(lf.SecretRecipe)
 
-table.insert(et, _d("KUwWVA4OEhlGTxU") .. (iut and _d("HlEWXBICUB5RFFEb") or _d("HlEWXBICUB9cGkcW")))
-table.insert(et, pa.shopIsland.recipeText(kr.SecretRecipe))
+table.insert(oi, _d("PU5UCxoZWg1EDUo") .. (juuk and _d("ClNUAwYVGApTVg4P") or _d("ClNUAwYVGAteWBgC")))
+table.insert(oi, wf.shopIsland.recipeText(lf.SecretRecipe))
 end
 
-table.insert(et, _d("JF0RUQcJUC1aElkHFUpM") .. (pa.shopIsland.angler() and _d("GURVWw0Q") or _d("AlsBFQoCAgk")))
-table.insert(et, _d(""))
+table.insert(oi, _d("MF9TDhMeGDlYUAYTAgJY") .. (wf.shopIsland.angler() and _d("DUYXBBkH") or _d("FllDSh4VSh0")))
+table.insert(oi, _d(""))
 
-local fq = pa.boot
-local ck
+local vuw = wf.boot
+local ebdb
 
-if fq.equipped then
-ck = _d("IFESUAwDER5NVXcNCARWFBBEFw4AHFER")
-elseif fq.owned then
-ck = _d("IFESUAwDER5NVXcNCARWFBpCDAIU")
-elseif pa.shopIsland.recipeHeld(kr.BootRecipe) then
-ck = _d("IFESUAwDER5NVXcNCARWFAdQAQ4ACRQHUAMDCQ")
+if vuw.equipped then
+ebdb = _d("NFNQDxgUWQpPFygZH0xCFlIbAxlICFNT")
+elseif vuw.owned then
+ebdb = _d("NFNQDxgUWQpPFygZH0xCFlgdGBVc")
+elseif wf.shopIsland.recipeHeld(lf.BootRecipe) then
+ebdb = _d("NFNQDxgUWQpPFygZH0xCFkUPFRlIHRZFDxcUQQ")
 else
-ck = _d("IFESUAwDER5NVXcNCARWFA") .. pa.shopIsland.recipeText(kr.BootRecipe)
+ebdb = _d("NFNQDxgUWQpPFygZH0xCFg") .. wf.shopIsland.recipeText(lf.BootRecipe)
 end
 
-table.insert(et, ck)
-table.insert(et, _d("L1UGQRFHBAMUBkUHCRRWFA") .. ith(pa.casts or 0))
+table.insert(oi, ebdb)
+table.insert(oi, _d("O1dEHgVQTBcWRBoTHlxCFg") .. sjw(wf.casts or 0))
 
-if pa.islandMessage then
-table.insert(et, _d(""))
-table.insert(et, pa.islandMessage)
+if wf.islandMessage then
+table.insert(oi, _d(""))
+table.insert(oi, wf.islandMessage)
 end
 
-return table.concat(et, _d("Zg"))
+return table.concat(oi, _d("cg"))
 end,
 }
 
 task.spawn(function()
-oavj()
+imaz()
 end)
 
-local llqc = {
+local eday = {
 enabled = false,
 selected = {},
 balances = {},
@@ -4439,89 +4446,89 @@ uiTimerSeconds = 0,
 uiTimerAt = 0,
 }
 
-getgenv().ACBXAutoBuyHalloween = llqc
+getgenv().ACBXAutoBuyHalloween = eday
 
-jxjd(bo.SyncItems.OnClientEvent, function(ehvg)
-if type(ehvg) == _d("GFUXWQc") then
-llqc.balances = ehvg
-llqc.lastSync = os.time()
+im(xl.SyncItems.OnClientEvent, function(mc)
+if type(mc) == _d("DFdVBhM") then
+eday.balances = mc
+eday.lastSync = os.time()
 end
 end)
 
-bo.RequestItemSync:FireServer()
+xl.RequestItemSync:FireServer()
 
-jxjd(bo.RaidShopState.OnClientEvent, function(tdpe)
-if type(tdpe) == _d("GFUXWQc") and tdpe.shopId == _d("BFUZWQ0QFQla") then
-llqc.shopState = tdpe
-llqc.stateAt = os.clock()
+im(xl.RaidShopState.OnClientEvent, function(fzkn)
+if type(fzkn) == _d("DFdVBhM") and fzkn.shopId == _d("EFdbBhkHXR1Y") then
+eday.shopState = fzkn
+eday.stateAt = os.clock()
 end
 end)
 
-jxjd(bo.RaidNotify.OnClientEvent, function(qkm)
-local xgbi = llqc.pending
+im(xl.RaidNotify.OnClientEvent, function(qmfq)
+local gzhc = eday.pending
 
-if not xgbi or type(qkm) ~= _d("H0AHXAwA") then
+if not gzhc or type(qmfq) ~= _d("C0JFAxgX") then
 return
 end
 
-if qkm:sub(1, 9) == _d("PGEndiomIylw") then
-llqc.purchased[xgbi.id] = (llqc.purchased[xgbi.id] or 0) + 1
-llqc.pending = nil
+if qmfq:sub(1, 9) == _d("KGNlKT4xaz1y") then
+eday.purchased[gzhc.id] = (eday.purchased[gzhc.id] or 0) + 1
+eday.pending = nil
 else
-if llqc.balances[xgbi.currency] then
-llqc.balances[xgbi.currency] = llqc.balances[xgbi.currency] + xgbi.price
+if eday.balances[gzhc.currency] then
+eday.balances[gzhc.currency] = eday.balances[gzhc.currency] + gzhc.price
 end
 
-llqc.failedUntil[xgbi.id] = os.time() + 5
-llqc.pending = nil
+eday.failedUntil[gzhc.id] = os.time() + 5
+eday.pending = nil
 end
 end)
 
-pwc.trip = {
+rtjv.trip = {
 untilAt = 0,
 lastTry = 0,
 lastResult = nil,
 spot = nil,
 }
 
-function pwc.merchant()
-local mie = workspace:FindFirstChild(_d("ImQ2Rg"))
-local ewt = pwc.shopData and pwc.shopData.NpcName or _d("PEEYRQkOHkx5EEcBDxECQA")
+function rtjv.merchant()
+local pic = workspace:FindFirstChild(_d("NmZ0GQ"))
+local pjbd = rtjv.shopData and rtjv.shopData.NpcName or _d("KENaGh0ZVlh7UhgVGFkWQg")
 
-return mie and mie:FindFirstChild(ewt) or nil
+return pic and pic:FindFirstChild(pjbd) or nil
 end
 
-function pwc.stand()
-local fsnj = pwc.merchant()
-local so = fsnj and (fsnj:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA")) or fsnj:FindFirstChildWhichIsA(_d("LlUGUDIGAhg")))
-local gp = fh.Character
-local ew = gp and gp:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function rtjv.stand()
+local zd = rtjv.merchant()
+local xpp = zd and (zd:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg")) or zd:FindFirstChildWhichIsA(_d("OldEDyYRSgw")))
+local el = omhv.Character
+local jeh = el and el:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (so and ew) then
+if not (xpp and jeh) then
 return false
 end
 
-pwc.trip.spot = so.Position + Vector3.new(0, 3, 4)
-ew.AssemblyLinearVelocity = Vector3.zero
-ew.CFrame = CFrame.new(pwc.trip.spot)
+rtjv.trip.spot = xpp.Position + Vector3.new(0, 3, 4)
+jeh.AssemblyLinearVelocity = Vector3.zero
+jeh.CFrame = CFrame.new(rtjv.trip.spot)
 
 return true
 end
 
-function pwc.fresh()
-return llqc.shopState ~= nil and os.clock() - llqc.stateAt < 30
+function rtjv.fresh()
+return eday.shopState ~= nil and os.clock() - eday.stateAt < 30
 end
 
-function pwc.guiOpen()
-local bmdm = rd:FindFirstChild(_d("JFUZWQ0QFQlaJl0NFzcZXQ"))
-local gdx = bmdm and bmdm:FindFirstChild(_d("P1waRSQVEQFR"))
+function rtjv.guiOpen()
+local udpn = ff:FindFirstChild(_d("MFdbBhkHXR1YZAIZAH8NXw"))
+local qsdv = udpn and udpn:FindFirstChild(_d("K15YGjACWRVT"))
 
-if gdx then
-return gdx.Visible == true
+if qsdv then
+return qsdv.Visible == true
 end
 
-for zmyc, rt in ipairs(rd:GetChildren()) do
-if rt:IsA(_d("P1cHUAcJNxld")) and rt.Name:lower():find(_d("BFUZWQ0QFQla"), 1, true) and rt.Enabled then
+for mnc, yy in ipairs(ff:GetChildren()) do
+if yy:IsA(_d("K1VFDxMefw1f")) and yy.Name:lower():find(_d("EFdbBhkHXR1Y"), 1, true) and yy.Enabled then
 return true
 end
 end
@@ -4529,82 +4536,82 @@ end
 return false
 end
 
-function pwc.close()
-local hol = rd:FindFirstChild(_d("JFUZWQ0QFQlaJl0NFzcZXQ"))
-local uqno = hol and hol:FindFirstChild(_d("P1waRSQVEQFR"))
+function rtjv.close()
+local htgu = ff:FindFirstChild(_d("MFdbBhkHXR1YZAIZAH8NXw"))
+local bbh = htgu and htgu:FindFirstChild(_d("K15YGjACWRVT"))
 
-if not (uqno and uqno.Visible) then
+if not (bbh and bbh.Visible) then
 return false
 end
 
-local zbf = uqno:FindFirstChild(_d("L1gaRgclBRhAGls"))
+local fsv = bbh:FindFirstChild(_d("O1pYGRMyTQxCWAQ"))
 
-if not zbf then
-for ja, bs in ipairs(uqno:GetDescendants()) do
-if bs:IsA(_d("K0EcdxcTBANa")) and tostring(bs.Name):lower():find(_d("D1gaRgc"), 1, true) then
-zbf = bs
+if not fsv then
+for hm, axoh in ipairs(bbh:GetDescendants()) do
+if axoh:IsA(_d("P0NeKAMETBdY")) and tostring(axoh.Name):lower():find(_d("G1pYGRM"), 1, true) then
+fsv = axoh
 break
 end
 end
 end
 
-if zbf and type(firesignal) == _d("CkEbVhYOHwI") then
+if fsv and type(firesignal) == _d("HkNZCQIZVxY") then
 pcall(function()
-firesignal(zbf.MouseButton1Click)
+firesignal(fsv.MouseButton1Click)
 end)
 
 task.wait(0.3)
 
-if not uqno.Visible then
+if not bbh.Visible then
 return true
 end
 end
 
 pcall(function()
-uqno.Visible = false
+bbh.Visible = false
 end)
 
 return true
 end
 
-function pwc.spend()
-if llqc.pending or os.time() - (llqc.lastAttempt or 0) < 1 then
+function rtjv.spend()
+if eday.pending or os.time() - (eday.lastAttempt or 0) < 1 then
 return nil
 end
 
-local bj = llqc.shopState
+local eppw = eday.shopState
 
-for ox, uyi in ipairs(pwc.shopItems) do
-if llqc.selected[uyi.id] and os.time() >= (llqc.failedUntil[uyi.id] or 0) then
-local unlf = uyi.stock
-local atb = llqc.purchased[uyi.id] or 0
+for fej, igx in ipairs(rtjv.shopItems) do
+if eday.selected[igx.id] and os.time() >= (eday.failedUntil[igx.id] or 0) then
+local veb = igx.stock
+local phj = eday.purchased[igx.id] or 0
 
-if bj and bj.stocks and bj.stocks[uyi.id] then
-unlf = bj.stocks[uyi.id]
+if eppw and eppw.stocks and eppw.stocks[igx.id] then
+veb = eppw.stocks[igx.id]
 end
 
-if bj and bj.bought then
-atb = math.max(atb, bj.bought[uyi.id] or 0)
+if eppw and eppw.bought then
+phj = math.max(phj, eppw.bought[igx.id] or 0)
 end
 
-local vbmq = unlf and (unlf - atb) or 1
-local ap = llqc.balances[uyi.currency] or 0
+local avdt = veb and (veb - phj) or 1
+local uqxd = eday.balances[igx.currency] or 0
 
-if vbmq > 0 and ap >= uyi.price then
-llqc.pending = {
-id = uyi.id,
-price = uyi.price,
-currency = uyi.currency,
+if avdt > 0 and uqxd >= igx.price then
+eday.pending = {
+id = igx.id,
+price = igx.price,
+currency = igx.currency,
 at = os.time(),
 }
-llqc.lastAttempt = os.time()
-llqc.balances[uyi.currency] = ap - uyi.price
+eday.lastAttempt = os.time()
+eday.balances[igx.currency] = uqxd - igx.price
 
 pcall(function()
-bo.BuyRaidItem:FireServer(uyi.id, 1)
+xl.BuyRaidItem:FireServer(igx.id, 1)
 end)
 
-return uyi.id
+return igx.id
 end
 end
 end
@@ -4612,386 +4619,386 @@ end
 return nil
 end
 
-function pwc.open(tl)
-if not tl and pwc.fresh() then
+function rtjv.open(nuey)
+if not nuey and rtjv.fresh() then
 return true
 end
 
-if not tl and os.clock() < (pwc.trip.lastTry or 0) + 8 then
+if not nuey and os.clock() < (rtjv.trip.lastTry or 0) + 8 then
 return false
 end
 
-pwc.trip.lastTry = os.clock()
-pwc.trip.untilAt = os.clock() + 12
+rtjv.trip.lastTry = os.clock()
+rtjv.trip.untilAt = os.clock() + 12
 
-pa.shopTripUntil = os.clock() + 12
-pa.shopHoldUntil = os.clock() + 12
-pa.phase = _d("BVAZUA")
+wf.shopTripUntil = os.clock() + 12
+wf.shopHoldUntil = os.clock() + 12
+wf.phase = _d("EVJbDw")
 
-local ybyw = pwc.merchant()
-local oktk = ybyw and ybyw:FindFirstChild(_d("PEYaTQsKGRhNJUcNCgAY"))
+local cgf = rtjv.merchant()
+local zsx = cgf and cgf:FindFirstChild(_d("KERYEh8dUQxPZxgZHUgM"))
 
-if not (ybyw and oktk) then
-pa.deepPhase = _d("BVAZUA")
-pwc.trip.untilAt = os.clock() + 60
-pwc.trip.lastResult = _d("OFwQFTISHRxfHFtCKhUeVx1UDBNQBUdVWw0TUAVaVUEKDgNMVgBcDgNe")
+if not (cgf and zsx) then
+wf.deepPhase = _d("EVJbDw")
+rtjv.trip.untilAt = os.clock() + 60
+rtjv.trip.lastResult = _d("LF5SSiYFVQhdXgRWPV0KVV8LGAQYEUUXBBkEGBFYFx4eGUtYVEIDGhQW")
 
 return false
 end
 
-local pma = os.clock() + 3
-local bsws = 0
+local sb = os.clock() + 3
+local hj = 0
 
-while os.clock() < pma do
+while os.clock() < sb do
 
-pwc.stand()
+rtjv.stand()
 
-if os.clock() >= bsws then
-bsws = os.clock() + 0.8
+if os.clock() >= hj then
+hj = os.clock() + 0.8
 
-if type(fireproximityprompt) == _d("CkEbVhYOHwI") then
+if type(fireproximityprompt) == _d("HkNZCQIZVxY") then
 pcall(function()
-fireproximityprompt(oktk)
+fireproximityprompt(zsx)
 end)
 end
 
 pcall(function()
-bo.OpenRaidShop:FireServer(_d("BFUZWQ0QFQla"))
+xl.OpenRaidShop:FireServer(_d("EFdbBhkHXR1Y"))
 end)
 end
 
-if pwc.guiOpen() or pwc.fresh() then
+if rtjv.guiOpen() or rtjv.fresh() then
 break
 end
 
 task.wait(0.1)
 end
 
-if not (pwc.guiOpen() or pwc.fresh()) then
+if not (rtjv.guiOpen() or rtjv.fresh()) then
 
-pa.deepPhase = _d("BVAZUA")
-pwc.trip.untilAt = os.clock() + 60
-pwc.trip.lastResult = _d("OFwQFQEIBQJAEEdCAxkIFBtaFkcRAkcCUBBHXUxdARUNCRwVFBpFBwkDTF0bFRYPFUxHEFQRCB4NWFVUEAIRQg")
+wf.deepPhase = _d("EVJbDw")
+rtjv.trip.untilAt = os.clock() + 60
+rtjv.trip.lastResult = _d("LF5SShUfTRZCUhhWFFEcFlkFAlBZFkVADwRQFVhfQ0oZHlQBFlgaEx5LWF9ZSgIYXVhFUgsFH1YZWhcLBBVZVg")
 
 return false
 end
 
-pwc.trip.lastResult = _d("L1sAWxYCAkxbBVAMSQ")
+rtjv.trip.lastResult = _d("O1lCBAIVSlhZRw8YXg")
 
-for alz = 1, 3 do
-pwc.stand()
+for voxu = 1, 3 do
+rtjv.stand()
 
-if not pwc.spend() then
+if not rtjv.spend() then
 break
 end
 
 task.wait(1.2)
 end
 
-pcall(pwc.close)
+pcall(rtjv.close)
 
-pa.deepPhase = _d("BVAZUA")
+wf.deepPhase = _d("EVJbDw")
 
 return true
 end
 
-local function ypw(fl)
-fl = math.max(0, math.floor(fl))
-local jem = math.floor(fl / 3600)
-local fn = math.floor((fl % 3600) / 60)
-local npx = fl % 60
+local function yaoe(aqp)
+aqp = math.max(0, math.floor(aqp))
+local dls = math.floor(aqp / 3600)
+local syi = math.floor((aqp % 3600) / 60)
+local bge = aqp % 60
 
-if jem > 0 then
-return string.format(_d("SVAdFUdXQghZ"), jem, fn)
-elseif fn > 0 then
-return string.format(_d("SVAYFUdXQghH"), fn, npx)
+if dls > 0 then
+return string.format(_d("XVJfSlNAChxb"), dls, syi)
+elseif syi > 0 then
+return string.format(_d("XVJaSlNAChxF"), syi, bge)
 end
 
-return string.format(_d("SVAG"), npx)
+return string.format(_d("XVJE"), bge)
 end
 
-local function ezwd()
-local uobc = rd:FindFirstChild(_d("JFUZWQ0QFQlaJl0NFzcZXQ"))
-local zp = uobc and uobc:FindFirstChild(_d("P1waRSQVEQFR"))
-local dl = zp and zp:FindFirstChild(_d("JUAQWC4OAxg"))
-local vvm = {}
-local ul = nil
+local function xws()
+local pyb = ff:FindFirstChild(_d("MFdbBhkHXR1YZAIZAH8NXw"))
+local cj = pyb and pyb:FindFirstChild(_d("K15YGjACWRVT"))
+local st = cj and cj:FindFirstChild(_d("MUJSBzoZSww"))
+local mdmw = {}
+local kcey = nil
 
-if dl then
-for qeem, igni in ipairs(pwc.shopItems) do
-local wt = dl:FindFirstChild(igni.id)
-local tqvd = wt and wt:FindFirstChild(_d("LlsN"))
-local mcup = tqvd and tqvd:FindFirstChild(_d("P0AaVgk"))
+if st then
+for darq, bi in ipairs(rtjv.shopItems) do
+local ay = st:FindFirstChild(bi.id)
+local rxr = ay and ay:FindFirstChild(_d("OllP"))
+local aos = rxr and rxr:FindFirstChild(_d("K0JYCR0"))
 
-if mcup and mcup:IsA(_d("OFENQS4GEglY")) then
-local iab, jmk = mcup.Text:match(_d("RBERHktCA0YbUEZIT1UIH1w"))
+if aos and aos:IsA(_d("LFNPHjoRWh1a")) then
+local hjau, sf = aos.Text:match(_d("UBNTQV9VS1IZEhlcWB0cHR4"))
 
-if iab and jmk then
-vvm[igni.id] = {
-remaining = tonumber(iab),
-total = tonumber(jmk),
+if hjau and sf then
+mdmw[bi.id] = {
+remaining = tonumber(hjau),
+total = tonumber(sf),
 }
 end
 end
 end
 end
 
-if zp then
-for yggt, arey in ipairs(zp:GetDescendants()) do
-if arey:IsA(_d("OFENQS4GEglY")) and arey.Text:find(_d("HlEGUBYUUAVa"), 1, true) then
-ul = arey.Text:match(_d("HlEGUBYUUAVaUEZIT15HHVE"))
+if cj then
+for vmid, zzwh in ipairs(cj:GetDescendants()) do
+if zzwh:IsA(_d("LFNPHjoRWh1a")) and zzwh.Text:find(_d("ClNEDwIDGBFY"), 1, true) then
+kcey = zzwh.Text:match(_d("ClNEDwIDGBFYEhlcWBZTHxM"))
 break
 end
 end
 end
 
-return vvm, ul
+return mdmw, kcey
 end
 
-local function rc(tcbs)
-if type(tcbs) ~= _d("H0AHXAwA") then
+local function ipvf(itbn)
+if type(itbn) ~= _d("C0JFAxgX") then
 return 0
 end
 
-local xea = tonumber(tcbs:match(_d("RBERHksP"))) or 0
-local vaoo = tonumber(tcbs:match(_d("RBERHksK"))) or 0
-local lmod = tonumber(tcbs:match(_d("RBERHksU"))) or 0
-return xea * 3600 + vaoo * 60 + lmod
+local anz = tonumber(itbn:match(_d("UBNTQV8Y"))) or 0
+local uyw = tonumber(itbn:match(_d("UBNTQV8d"))) or 0
+local zhe = tonumber(itbn:match(_d("UBNTQV8D"))) or 0
+return anz * 3600 + uyw * 60 + zhe
 end
 
-local function levp()
-local jip = llqc.shopState
-local gcge, zb = ezwd()
-local cnom = {}
-local lhd = {}
-local bln = {}
+local function vmqw()
+local th = eday.shopState
+local yo, qgpc = xws()
+local jm = {}
+local gd = {}
+local ge = {}
 
-for un, sjp in ipairs(pwc.shopItems) do
-local ekpb = sjp.stock
-local klh = nil
+for maes, lq in ipairs(rtjv.shopItems) do
+local om = lq.stock
+local ch = nil
 
-if jip and jip.stocks and jip.stocks[sjp.id] then
-ekpb = jip.stocks[sjp.id]
+if th and th.stocks and th.stocks[lq.id] then
+om = th.stocks[lq.id]
 end
 
-local arg = llqc.purchased[sjp.id] or 0
+local qx = eday.purchased[lq.id] or 0
 
-if jip and jip.bought then
-arg = math.max(arg, jip.bought[sjp.id] or 0)
+if th and th.bought then
+qx = math.max(qx, th.bought[lq.id] or 0)
 end
 
-if ekpb then
-klh = math.max(0, ekpb - arg)
+if om then
+ch = math.max(0, om - qx)
 end
 
-if (not jip or not jip.bought) and gcge[sjp.id] then
-klh = gcge[sjp.id].remaining
-ekpb = gcge[sjp.id].total
+if (not th or not th.bought) and yo[lq.id] then
+ch = yo[lq.id].remaining
+om = yo[lq.id].total
 end
 
-local wre = sjp.currency == _d("BlUWXj0ILwBVG0EHFR4") and _d("IFUbQQcVHh8") or _d("L1UbURs")
-local ypzl
+local kbkd = lq.currency == _d("EldUASkfZxRXWR4TAlY") and _d("NFdZHhMCVgs") or _d("O1dZDg8")
+local ifkl
 
-if klh == nil then
-ypzl = sjp.shortName
-elseif klh <= 0 then
-ypzl = sjp.shortName .. _d("TPbCFREIHAgUGkAW")
+if ch == nil then
+ifkl = lq.shortName
+elseif ch <= 0 then
+ifkl = lq.shortName .. _d("WPSASgUfVBwWWB8C")
 else
-ypzl = sjp.shortName .. _d("TPbCFQ") .. tostring(klh) .. _d("Qw") .. tostring(ekpb or _d("Uw"))
+ifkl = lq.shortName .. _d("WPSASg") .. tostring(ch) .. _d("Vw") .. tostring(om or _d("Rw"))
 end
 
-if not lhd[wre] then
-lhd[wre] = {}
-table.insert(bln, wre)
+if not gd[kbkd] then
+gd[kbkd] = {}
+table.insert(ge, kbkd)
 end
 
-table.insert(lhd[wre], ypzl)
+table.insert(gd[kbkd], ifkl)
 end
 
-local yjxa = {}
+local afs = {}
 
-for pjb, cxk in ipairs(bln) do
-table.insert(yjxa, cxk)
+for cyn, xmu in ipairs(ge) do
+table.insert(afs, xmu)
 
-for xwg, juc in ipairs(lhd[cxk]) do
-table.insert(yjxa, juc)
+for euh, sxo in ipairs(gd[xmu]) do
+table.insert(afs, sxo)
 end
 end
 
-table.insert(cnom, table.concat(yjxa, _d("Zj4")))
-table.insert(cnom, _d(""))
+table.insert(jm, table.concat(afs, _d("cjw")))
+table.insert(jm, _d(""))
 
-if jip and type(jip.resetsIn) == _d("AkEYVwcV") then
-local okk = jip.resetsIn - (os.clock() - llqc.stateAt)
-table.insert(cnom, _d("PlEGQQ0EGx8UHFtC") .. ypw(okk))
-elseif zb then
-if llqc.uiTimerText ~= zb then
-llqc.uiTimerText = zb
-llqc.uiTimerSeconds = rc(zb)
-llqc.uiTimerAt = os.clock()
+if th and type(th.resetsIn) == _d("FkNaCBMC") then
+local yi = th.resetsIn - (os.clock() - eday.stateAt)
+table.insert(jm, _d("KlNEHhkTUwsWXgRW") .. yaoe(yi))
+elseif qgpc then
+if eday.uiTimerText ~= qgpc then
+eday.uiTimerText = qgpc
+eday.uiTimerSeconds = ipvf(qgpc)
+eday.uiTimerAt = os.clock()
 end
 
-local mq = llqc.uiTimerSeconds - (os.clock() - llqc.uiTimerAt)
-table.insert(cnom, _d("PlEGQQ0EGx8UHFtC") .. ypw(mq))
+local uzg = eday.uiTimerSeconds - (os.clock() - eday.uiTimerAt)
+table.insert(jm, _d("KlNEHhkTUwsWXgRW") .. yaoe(uzg))
 else
-table.insert(cnom, _d("PlEGQQ0EGx8UEVQLCwlM9sIVFA4DBUBVQQoCUB9cGkU"))
+table.insert(jm, _d("KlNEHhkTUwsWUwsfHEFY9IBKABlLEUIXHh4VGAteWBo"))
 end
 
-if not pwc.fresh() then
-table.insert(cnom, pwc.trip.lastResult or _d("OFwQFQEIBQJAEEdCDgNMVxlaEQIUTBlVehICHkxHHVoSRwcNWB5GQhMYCRQWXQMVEQ9AEEdCEgBMQBoVCxNe"))
+if not rtjv.fresh() then
+table.insert(jm, rtjv.trip.lastResult or _d("LF5SShUfTRZCUhhWGUtYVVsFBRVcWBsXJQYVVlhFXwUGUE8ZWlwZVgRQHRZUAhcCWRtCUhhWBUhYQlhKHwQW"))
 end
 
-return table.concat(cnom, _d("Zg"))
+return table.concat(jm, _d("cg"))
 end
 
-jxjd(bo.NPCBattleResult.OnClientEvent, function(aj)
-if type(aj) ~= _d("GFUXWQc") then
+im(xl.NPCBattleResult.OnClientEvent, function(xwy)
+if type(xwy) ~= _d("DFdVBhM") then
 return
 end
 
-rcj.battlePending = false
+npj.battlePending = false
 
-if aj.result == _d("D1saWQYIBwI") and type(aj.remaining) == _d("AkEYVwcV") and wll and lu then
-emhs(wll, lu, os.time() + aj.remaining)
+if xwy.result == _d("G1lYBhIfTxY") and type(xwy.remaining) == _d("FkNaCBMC") and lps and egx then
+uq(lps, egx, os.time() + xwy.remaining)
 return
 end
 
-if type(aj.npcId) == _d("H0AHXAwA") then
-local pow = type(aj.difficulty) == _d("H0AHXAwA") and aj.difficulty or rcj.activeDifficulty[aj.npcId] or _d("AlsHWAML")
-local jowo = ho.ById[aj.npcId]
-local ekk = tonumber(aj.cooldown) or (jowo and jowo.cooldown) or 300
-emhs(aj.npcId, pow, os.time() + ekk)
+if type(xwy.npcId) == _d("C0JFAxgX") then
+local bpp = type(xwy.difficulty) == _d("C0JFAxgX") and xwy.difficulty or npj.activeDifficulty[xwy.npcId] or _d("FllFBxcc")
+local aetu = cl.ById[xwy.npcId]
+local zzz = tonumber(xwy.cooldown) or (aetu and aetu.cooldown) or 300
+uq(xwy.npcId, bpp, os.time() + zzz)
 end
 end)
 
-jxjd(bo.SyncNPCCooldowns.OnClientEvent, function(piz)
-if type(piz) ~= _d("GFUXWQc") then
+im(xl.SyncNPCCooldowns.OnClientEvent, function(zou)
+if type(zou) ~= _d("DFdVBhM") then
 return
 end
 
-for vsnp, yrve in pairs(piz) do
-if type(vsnp) == _d("H0AHXAwA") and type(yrve) == _d("AkEYVwcV") then
-local jg = rcj.activeDifficulty[vsnp] or _d("AlsHWAML")
-emhs(vsnp, jg, yrve)
+for ogb, cjjr in pairs(zou) do
+if type(ogb) == _d("C0JFAxgX") and type(cjjr) == _d("FkNaCBMC") then
+local gfhj = npj.activeDifficulty[ogb] or _d("FllFBxcc")
+uq(ogb, gfhj, cjjr)
 end
 end
 end)
 
-local hdp = {}
-local myn = {}
+local ubmj = {}
+local xs = {}
 
-for mj, szfx in ipairs(svmh.Worlds) do
+for enzu, lzj in ipairs(bsnf.Worlds) do
 
-local ma = { _d("LVgZ") }
-local smr = {}
-local iyyh = {}
-local vi = nil
+local sztz = { _d("OVpb") }
+local bh = {}
+local bn = {}
+local ipce = nil
 
-for vo, mn in ipairs(szfx.npcs or {}) do
-local cgp = ho.ById[mn]
-if cgp then
-table.insert(ma, cgp.name)
-table.insert(iyyh, mn)
-smr[cgp.name] = mn
-if cgp.type == _d("DlUBQQ4C") then
-vi = mn
+for mjzb, poxi in ipairs(lzj.npcs or {}) do
+local ionm = cl.ById[poxi]
+if ionm then
+table.insert(sztz, ionm.name)
+table.insert(bn, poxi)
+bh[ionm.name] = poxi
+if ionm.type == _d("GldDHhoV") then
+ipce = poxi
 end
 end
 end
 
-local jdc = szfx.id
-if vi and dwo.ById[vi] then
-jdc = dwo.ById[vi].worldId or jdc
+local ohj = lzj.id
+if ipce and cd.ById[ipce] then
+ohj = cd.ById[ipce].worldId or ohj
 end
 
-for jhxw, mlk in ipairs(szfx.npcs or {}) do
-myn[mlk] = jdc
+for xfl, vhe in ipairs(lzj.npcs or {}) do
+xs[vhe] = ohj
 
-rcj.bossTeams.worldOf[mlk] = szfx.id
+npj.bossTeams.worldOf[vhe] = lzj.id
 end
 
-table.insert(hdp, {
-id = szfx.id,
-teleportWorldId = jdc,
-name = szfx.name,
-options = ma,
-ids = iyyh,
-byName = smr,
-npcs = szfx.npcs,
+table.insert(ubmj, {
+id = lzj.id,
+teleportWorldId = ohj,
+name = lzj.name,
+options = sztz,
+ids = bn,
+byName = bh,
+npcs = lzj.npcs,
 })
 end
 
-local mho = {}
-local lle = {}
-local pqqj = {}
+local kp = {}
+local acyl = {}
+local rir = {}
 
-for tn, zkun in ipairs(svmh.Difficulties) do
-table.insert(mho, zkun.name)
-lle[zkun.name] = zkun.id
-pqqj[zkun.id] = zkun.name
+for jb, rbba in ipairs(bsnf.Difficulties) do
+table.insert(kp, rbba.name)
+acyl[rbba.name] = rbba.id
+rir[rbba.id] = rbba.name
 end
 
-local ccg = {}
-local vmn = {}
+local fia = {}
+local vrm = {}
 
-for ohn, efh in ipairs(qpz.Difficulties) do
-table.insert(ccg, efh.name)
-vmn[efh.name] = efh.id
+for bls, phka in ipairs(shz.Difficulties) do
+table.insert(fia, phka.name)
+vrm[phka.name] = phka.id
 end
 
-local dcus = {}
-local wzcl = {}
-local iwq = {}
-local yg = {
-soul_king = _d("PlUcUTUIAgBQ"),
-beerus = _d("PlUcUTUIAgBQKncHAgIZRw"),
-reid = _d("PlUcUTUIAgBQKmcHDhQ"),
+local qzfs = {}
+local llr = {}
+local tak = {}
+local tkvd = {
+soul_king = _d("KldeDiEfShRS"),
+beerus = _d("KldeDiEfShRSaCgTFUoNRQ"),
+reid = _d("KldeDiEfShRSaDgTGVw"),
 }
 
-for ips, ou in ipairs(qpz.Raids) do
-if ou.BossTitle and ou.id then
-table.insert(dcus, ou.BossTitle)
-wzcl[ou.BossTitle] = ou.id
-iwq[ou.id] = ou.NpcId
+for rsrp, ly in ipairs(shz.Raids) do
+if ly.BossTitle and ly.id then
+table.insert(qzfs, ly.BossTitle)
+llr[ly.BossTitle] = ly.id
+tak[ly.id] = ly.NpcId
 end
 end
 
-local function xsdq()
-for egt, gav in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local oyo = rd:FindFirstChild(gav)
-local ojmy = oyo and oyo:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-if ojmy and ojmy.Visible then
-return ojmy
-end
-end
-end
-
-local function rhq()
-for wyb, ycz in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local qd = rd:FindFirstChild(ycz)
-local fpsw = qd and qd:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-if fpsw then
-return fpsw
+local function waqa()
+for mhzc, ptl in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local og = ff:FindFirstChild(ptl)
+local ib = og and og:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+if ib and ib.Visible then
+return ib
 end
 end
 end
 
-local function ny()
-if xsdq() then
+local function bo()
+for ihu, po in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local utu = ff:FindFirstChild(po)
+local qc = utu and utu:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+if qc then
+return qc
+end
+end
+end
+
+local function hja()
+if waqa() then
 return true
 end
 
-for xqug, ogj in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local elv = rd:FindFirstChild(ogj)
-local zxpz = elv and elv:FindFirstChild(_d("JF0RUCAGBBhYEHcXEwQDWg"))
-if zxpz and zxpz.Visible then
+for bmm, iytd in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local epmz = ff:FindFirstChild(iytd)
+local zsnm = epmz and epmz:FindFirstChild(_d("MF9TDzQRTAxaUigDBEwXWA"))
+if zsnm and zsnm.Visible then
 return true
 end
 end
 
-for oio, db in ipairs({ _d("JVo3VBYTHAk"), _d("JVo3VBYTHAkG") }) do
-local rnp = rd:FindFirstChild(db)
-if rnp and rnp:IsA(_d("LlsaWTQGHBlR")) and rnp.Value then
+for gkmm, gs in ipairs({ _d("MVh1CwIEVB0"), _d("MVh1CwIEVB0E") }) do
+local kz = ff:FindFirstChild(gs)
+if kz and kz:IsA(_d("OllYBiARVA1T")) and kz.Value then
 return true
 end
 end
@@ -4999,376 +5006,376 @@ end
 return false
 end
 
-function rqc.slotFree(fw)
+function fq.slotFree(php)
 
-if fw == nil then
+if php == nil then
 return false
 end
 
-if not rqc.enabled then
-return not ny()
+if not fq.enabled then
+return not hja()
 end
 
-return not rqc.busy(fw)
+return not fq.busy(php)
 end
 
-function rqc.npcSlot()
-return rqc.roleSlot(_d("AkQW"))
+function fq.npcSlot()
+return fq.roleSlot(_d("FkZU"))
 end
 
-local izz
+local zq
 
-local function lvmx(snx)
-snx = math.max(0, math.floor(snx))
-if snx <= 0 then
-return _d("HlEUURs")
+local function nzmk(kurc)
+kurc = math.max(0, math.floor(kurc))
+if kurc <= 0 then
+return _d("ClNWDg8")
 end
 
-local sd = math.floor(snx / 60)
-local rwki = snx % 60
+local oy = math.floor(kurc / 60)
+local mysk = kurc % 60
 
-if sd > 0 then
-return string.format(_d("SVAYFUdXQghH"), sd, rwki)
+if oy > 0 then
+return string.format(_d("XVJaSlNAChxF"), oy, mysk)
 end
 
-return string.format(_d("SVAG"), rwki)
+return string.format(_d("XVJE"), mysk)
 end
 
-local function rkj()
-for wepq, ybik in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local qgkp = rd:FindFirstChild(ybik)
-if qgkp then
-local hzpp = qgkp:FindFirstChild(_d("PkEbcw4IHx54FFcHCw"))
-local lmhe = qgkp:FindFirstChild(_d("OFsCUBAhHANbB3kDBRUA"))
-if (hzpp and hzpp.Visible) or (lmhe and lmhe.Visible) then
-return _d("JVpVYQ0QFR4")
+local function qph()
+for otc, vke in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local biuk = ff:FindFirstChild(vke)
+if biuk then
+local ndb = biuk:FindFirstChild(_d("KkNZLBofVwp6VggTHA"))
+local uyv = biuk:FindFirstChild(_d("LFlADwQ2VBdZRSYXEl0U"))
+if (ndb and ndb.Visible) or (uyv and uyv.Visible) then
+return _d("MVgXPhkHXQo")
 end
 end
 end
 
-if fwd.currentRoom and (fwd.inBattle or ny()) then
-local soq = nil
+if dyx.currentRoom and (dyx.inBattle or hja()) then
+local prqt = nil
 
-for sqxz, vxtg in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local qmsf = rd:FindFirstChild(vxtg)
-local sf = qmsf and qmsf:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-local gkd = sf and sf:FindFirstChild(_d("KVoQWBsmExhdA1AhBgII"))
-local xl = gkd and gkd:FindFirstChild(_d("IlUYUC4GEglY"))
+for yzag, skn in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local zbkd = ff:FindFirstChild(skn)
+local mpoq = zbkd and zbkd:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+local mtli = mpoq and mpoq:FindFirstChild(_d("PVhSBw8xWwxfQQ81EUoc"))
+local ltsr = mtli and mtli:FindFirstChild(_d("NldaDzoRWh1a"))
 
-if xl and xl.Text ~= _d("") then
-soq = xl.Text
+if ltsr and ltsr.Text ~= _d("") then
+prqt = ltsr.Text
 break
 end
 end
 
-if soq then
-return _d("LlUBQQ4OHgsU") .. soq .. _d("TG8nWg0KUA") .. fwd.currentRoom .. _d("MQ")
+if prqt then
+return _d("OldDHhoZVh8W") .. prqt .. _d("WG1lBRkdGA") .. dyx.currentRoom .. _d("JQ")
 end
 
-return _d("LlUBQQ4OHgsULmcNCB1M") .. fwd.currentRoom .. _d("MQ")
+return _d("OldDHhoZVh8WbDgZH1VY") .. dyx.currentRoom .. _d("JQ")
 end
 
-local ayhz = rhq()
-if ny() and ayhz then
-local kxbi = ayhz:FindFirstChild(_d("KVoQWBsmExhdA1AhBgII"))
-local bgld = kxbi and kxbi:FindFirstChild(_d("IlUYUC4GEglY"))
-local jnl = bgld and bgld.Text
+local cogq = bo()
+if hja() and cogq then
+local rezu = cogq:FindFirstChild(_d("PVhSBw8xWwxfQQ81EUoc"))
+local lsf = rezu and rezu:FindFirstChild(_d("NldaDzoRWh1a"))
+local crmb = lsf and lsf.Text
 
-local bjy = nil
-if rcj.currentBattle then
-bjy = rcj.currentBattle.difficulty
-elseif jnl then
-local kdq = gc[jnl]
-if kdq then
-bjy = rcj.activeDifficulty[kdq]
-end
-end
-
-local jqfi = _d("")
-if bjy then
-jqfi = _d("TG8") .. (pqqj[bjy] or bjy) .. _d("MQ")
-end
-
-local froi = jnl
-if rcj.currentBattle and rcj.currentBattle.npcId then
-local bwc = ho.ById[rcj.currentBattle.npcId]
-if bwc then
-froi = bwc.name
+local luoq = nil
+if npj.currentBattle then
+luoq = npj.currentBattle.difficulty
+elseif crmb then
+local njx = lwp[crmb]
+if njx then
+luoq = npj.activeDifficulty[njx]
 end
 end
 
-if froi and froi ~= _d("") then
-return _d("LlUBQQ4OHgsU") .. froi .. jqfi
+local ju = _d("")
+if luoq then
+ju = _d("WG0") .. (rir[luoq] or luoq) .. _d("JQ")
 end
 
-return _d("LlUBQQ4OHgs") .. jqfi
-end
-
-rcj.currentBattle = nil
-
-local ppkc = btd.enabled and (btd.bossFor(1) or btd.bossFor(2))
-
-if ppkc then
-local ex = kq:FindFirstChild(_d("PlUcUTETERhBBg"))
-
-if ex then
-local idl = ppkc
-local kgeb = qpz.ById[idl]
-local hv = kgeb and kgeb.BossTitle or idl
-local zfmo = ex:GetAttribute(_d("JUc6RQcJ")) == true or ex:GetAttribute(_d("KlsHVgcD")) == true
-local oj = ex:GetAttribute(_d("PlEUURs4") .. idl) == true
-local hxs = btd.progress[idl]
-local vboq = hxs and hxs.locked == true
-
-if not zfmo then
-local wbmr = tonumber(ex:GetAttribute(_d("L1wUWwUCAy1A"))) or 0
-return _d("JVAZUEJKUA") .. hv .. _d("TGYUXAZdUA") .. lvmx(wbmr - os.time())
-end
-
-if hxs and hxs.cooldowns then
-local irjg = tonumber(hxs.cooldowns.normal)
-
-if irjg and irjg > 0 then
-return _d("JVAZUEJKUA") .. hv .. _d("TGYUXAZdUA") .. lvmx(irjg)
+local ea = crmb
+if npj.currentBattle and npj.currentBattle.npcId then
+local qqp = cl.ById[npj.currentBattle.npcId]
+if qqp then
+ea = qqp.name
 end
 end
 
-if not oj or vboq then
-return _d("JVAZUEJKUA") .. hv .. _d("TGYUXAZdUABbFl4HAw")
+if ea and ea ~= _d("") then
+return _d("OldDHhoZVh8W") .. ea .. ju
 end
 
-return _d("JVAZUEJKUA") .. hv .. _d("TGYUXAZdUB5RFFEb")
+return _d("OldDHhoZVh8") .. ju
+end
+
+npj.currentBattle = nil
+
+local pmvi = yvcz.enabled and (yvcz.bossFor(1) or yvcz.bossFor(2))
+
+if pmvi then
+local dik = ayu:FindFirstChild(_d("KldeDiUEWQxDRA"))
+
+if dik then
+local ndpz = pmvi
+local fptt = shz.ById[ndpz]
+local lt = fptt and fptt.BossTitle or ndpz
+local dlwp = dik:GetAttribute(_d("MUV4GhMe")) == true or dik:GetAttribute(_d("PllFCRMU")) == true
+local rmf = dik:GetAttribute(_d("KlNWDg8v") .. ndpz) == true
+local wrxf = yvcz.progress[ndpz]
+local iek = wrxf and wrxf.locked == true
+
+if not dlwp then
+local amf = tonumber(dik:GetAttribute(_d("O15WBBEVSzlC"))) or 0
+return _d("MVJbD1ZdGA") .. lt .. _d("WGRWAxJKGA") .. nzmk(amf - os.time())
+end
+
+if wrxf and wrxf.cooldowns then
+local wtb = tonumber(wrxf.cooldowns.normal)
+
+if wtb and wtb > 0 then
+return _d("MVJbD1ZdGA") .. lt .. _d("WGRWAxJKGA") .. nzmk(wtb)
 end
 end
 
-if pa.enabled then
-if pa.usingGameAuto then
-return _d("Kl0GXQsJF0wZVVIDChVMVQBBDUdY") .. ith(rsn()) .. _d("TFcUQAUPBEU")
+if not rmf or iek then
+return _d("MVJbD1ZdGA") .. lt .. _d("WGRWAxJKGBRZVAETFA")
 end
 
-if pa.phase == _d("D1UGQQsJFw") then
-return _d("Kl0GXQsJF0wZVVYDFAQFWhI")
+return _d("MVJbD1ZdGA") .. lt .. _d("WGRWAxJKGApTVg4P")
+end
 end
 
-if pa.phase == _d("G1UcQQsJFy5dAVA") then
-return _d("Kl0GXQsJF0wZVUIDDgQFWhIVBAgCTFVVVwsTFQ")
+if wf.enabled then
+if wf.usingGameAuto then
+return _d("Pl9EAh8eX1gbFw0XHV1YV0IeGVAQ") .. sjw(xay()) .. _d("WFVWHxEYTFE")
 end
 
-if pa.phase == _d("HlEQWQsJFw") or pa.phase == _d("HlEGWg4RGQJT") then
-return _d("Kl0GXQsJF0wZVUcHAhwFWhIVDQkVTF0b")
+if wf.phase == _d("G1dEHh8eXw") then
+return _d("Pl9EAh8eX1gbFwkXA0wRWFA")
 end
 
-return _d("Kl0GXQsJF0wZVVwGCxVMHA") .. ith(rsn()) .. _d("TFcUQAUPBEU")
+if wf.phase == _d("D1deHh8eXzpfQw8") then
+return _d("Pl9EAh8eX1gbFx0XGUwRWFBKEB9KWFcXCB8EXQ")
 end
 
-if not rcj.enabled and not rcj.story then
-return _d("JVAZUA")
+if wf.phase == _d("ClNSBh8eXw") or wf.phase == _d("ClNEBRoGURZR") then
+return _d("Pl9EAh8eX1gbFxgTFVQRWFBKGR5dWF9Z")
 end
 
-local bdl, vwc, ctj = izz()
-
-if bdl then
-local qtsa = ho.ById[bdl]
-local scg = qtsa and qtsa.name or bdl
-local kvg = (vwc or 0) - os.time()
-local vulv = pqqj[ctj] or ctj or _d("IlsHWAML")
-
-return _d("JVAZUEJKUCJRDUFYRw") .. scg .. _d("TG8") .. vulv .. _d("MRRd") .. lvmx(kvg) .. _d("RQ")
+return _d("Pl9EAh8eX1gbFwMSHF1YHg") .. sjw(xay()) .. _d("WFVWHxEYTFE")
 end
 
-return _d("JVAZUA")
+if not npj.enabled and not npj.story then
+return _d("MVJbDw")
 end
 
-local function kjw(ro)
-local jtz = workspace:FindFirstChild(_d("ImQ2Rg"))
-if not jtz then
+local pjii, gp, yuqx = zq()
+
+if pjii then
+local jag = cl.ById[pjii]
+local dm = jag and jag.name or pjii
+local rvd = (gp or 0) - os.time()
+local mqw = rir[yuqx] or yuqx or _d("NllFBxcc")
+
+return _d("MVJbD1ZdGDZTTx5MUA") .. dm .. _d("WG0") .. mqw .. _d("JRYf") .. nzmk(rvd) .. _d("UQ")
+end
+
+return _d("MVJbDw")
+end
+
+local function uvbd(ux)
+local zn = workspace:FindFirstChild(_d("NmZ0GQ"))
+if not zn then
 return nil
 end
 
-for sxcj, jp in ipairs(jtz:GetChildren()) do
-if jp:GetAttribute(_d("ImQ2fAY")) == ro then
-return jp
+for ogl, qcvo in ipairs(zn:GetChildren()) do
+if qcvo:GetAttribute(_d("NmZ0IxI")) == ux then
+return qcvo
 end
 end
 
 return nil
 end
 
-local function qqct(woyj)
-local aqc = fh.Character
-local yhwr = aqc and aqc:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-if not (yhwr and woyj) then
+local function jc(mqv)
+local rb = omhv.Character
+local dhws = rb and rb:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+if not (dhws and mqv) then
 return false
 end
 
-local hfxf, tql = pcall(function()
-return woyj:GetPivot()
+local vj, kfgn = pcall(function()
+return mqv:GetPivot()
 end)
-if not hfxf then
+if not vj then
 return false
 end
 
-local kvgt = tql.Position + tql.LookVector * 6 + Vector3.new(0, 3, 0)
-local xne = Vector3.new(tql.Position.X, kvgt.Y, tql.Position.Z)
+local wbuh = kfgn.Position + kfgn.LookVector * 6 + Vector3.new(0, 3, 0)
+local icy = Vector3.new(kfgn.Position.X, wbuh.Y, kfgn.Position.Z)
 
-yhwr.CFrame = CFrame.lookAt(kvgt, xne)
+dhws.CFrame = CFrame.lookAt(wbuh, icy)
 return true
 end
 
-local function pnwd()
-local cw = fh:FindFirstChild(_d("PFgUTAcVIw9GHEUWFA"))
-local um = cw and cw:FindFirstChild(_d("PFgUTAcVPQNQAFkH"))
+local function rn()
+local kloq = omhv:FindFirstChild(_d("KFpWExMCaxtEXhoCAw"))
+local tycx = kloq and kloq:FindFirstChild(_d("KFpWExMCdRdSQgYT"))
 
-if not um then
+if not tycx then
 return nil
 end
 
-local oqq, fi = pcall(require, um)
-if not oqq then
+local wrr, pd = pcall(require, tycx)
+if not wrr then
 return nil
 end
 
-local fpm, fjvo = pcall(function()
-return fi:GetControls()
+local nmml, qqt = pcall(function()
+return pd:GetControls()
 end)
 
-if fpm then
-return fjvo
+if nmml then
+return qqt
 end
 end
 
-local function feji(tplb, unw, fd, hoyp, zu)
-hoyp = hoyp or 8
+local function rlp(fea, cqo, apxu, mcqo, ms)
+mcqo = mcqo or 8
 
-local function tbq()
-return unw and unw()
+local function euvb()
+return cqo and cqo()
 end
 
-local uvm = os.clock()
+local vy = os.clock()
 
-while os.clock() - uvm < 5 do
-if tbq() then
+while os.clock() - vy < 5 do
+if euvb() then
 return false
 end
 
-if fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA")) then
+if omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg")) then
 break
 end
 task.wait(0.2)
 end
 
-local krj = fh.Character
-local rwj = krj and krj:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
-local enex = krj and krj:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local qy = omhv.Character
+local wphv = qy and qy:FindFirstChildOfClass(_d("MENaCxgfURw"))
+local arle = qy and qy:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (rwj and enex) then
+if not (wphv and arle) then
 return false
 end
 
-if (enex.Position - tplb).Magnitude <= hoyp then
+if (arle.Position - fea).Magnitude <= mcqo then
 return true
 end
 
-local nsl = fd or rwj.WalkSpeed
-local iuqa = pnwd()
-local dmlf = rwj.JumpPower
-local vzof = rwj.UseJumpPower
+local fxh = apxu or wphv.WalkSpeed
+local fnbf = rn()
+local qyz = wphv.JumpPower
+local feaq = wphv.UseJumpPower
 
-if zu then
+if ms then
 pcall(function()
-rwj.UseJumpPower = true
-rwj.JumpPower = math.max(dmlf, 60)
+wphv.UseJumpPower = true
+wphv.JumpPower = math.max(qyz, 60)
 end)
 end
 
-if iuqa then
+if fnbf then
 pcall(function()
-iuqa:Disable()
+fnbf:Disable()
 end)
 end
 
-local gne = rwj:FindFirstChildOfClass(_d("LVocWAMTHx4"))
-local csho = nil
-local trwc = krj:FindFirstChild(_d("LVocWAMTFQ"))
-local hxxe = trwc and (trwc:FindFirstChild(_d("O1UZXiMJGQE"), true) or trwc:FindFirstChild(_d("PkEbdAwOHQ"), true))
+local qm = wphv:FindFirstChildOfClass(_d("OVheBxcEVwo"))
+local cots = nil
+local ffn = qy:FindFirstChild(_d("OVheBxcEXQ"))
+local hfb = ffn and (ffn:FindFirstChild(_d("L1dbATceURU"), true) or ffn:FindFirstChild(_d("KkNZKxgZVQ"), true))
 
-if gne and hxxe then
-local ngp, mqco = pcall(function()
-return gne:LoadAnimation(hxxe)
+if qm and hfb then
+local mdu, flsq = pcall(function()
+return qm:LoadAnimation(hfb)
 end)
 
-if ngp and mqco then
-csho = mqco
-csho.Looped = true
-csho.Priority = Enum.AnimationPriority.Movement
+if mdu and flsq then
+cots = flsq
+cots.Looped = true
+cots.Priority = Enum.AnimationPriority.Movement
 pcall(function()
-csho:Play()
+cots:Play()
 end)
 end
 end
 
-local function cak(pyy)
-enex.AssemblyLinearVelocity = Vector3.new(0, enex.AssemblyLinearVelocity.Y, 0)
+local function tce(hw)
+arle.AssemblyLinearVelocity = Vector3.new(0, arle.AssemblyLinearVelocity.Y, 0)
 
-if csho then
+if cots then
 pcall(function()
-csho:Stop(0.1)
+cots:Stop(0.1)
 end)
 end
 
-if iuqa then
+if fnbf then
 pcall(function()
-iuqa:Enable()
+fnbf:Enable()
 end)
 end
 
-if zu then
+if ms then
 pcall(function()
-rwj.JumpPower = dmlf
-rwj.UseJumpPower = vzof
+wphv.JumpPower = qyz
+wphv.UseJumpPower = feaq
 end)
 end
 
-return pyy
+return hw
 end
 
-local function lm(gppd, zggd)
-local vqp = os.clock()
-local ntdq = os.clock()
-local hyi = 0
-local mrt = enex.Position
+local function dq(my, rgl)
+local zzqh = os.clock()
+local ghxx = os.clock()
+local xih = 0
+local fuue = arle.Position
 
-while os.clock() - vqp < zggd do
-if tbq() then
+while os.clock() - zzqh < rgl do
+if euvb() then
 return false
 end
 
-local zrwi = gppd - enex.Position
-zrwi = Vector3.new(zrwi.X, 0, zrwi.Z)
+local fas = my - arle.Position
+fas = Vector3.new(fas.X, 0, fas.Z)
 
-if zrwi.Magnitude <= 3 then
+if fas.Magnitude <= 3 then
 return true
 end
 
-local rre = zrwi.Unit
-enex.AssemblyLinearVelocity = Vector3.new(
-rre.X * nsl,
-enex.AssemblyLinearVelocity.Y,
-rre.Z * nsl
+local vyy = fas.Unit
+arle.AssemblyLinearVelocity = Vector3.new(
+vyy.X * fxh,
+arle.AssemblyLinearVelocity.Y,
+vyy.Z * fxh
 )
 
-if zu and os.clock() - ntdq >= 0.5 then
-local krlc = (enex.Position - mrt).Magnitude
-local vlcz = rwj:GetState()
-local dc = vlcz ~= Enum.HumanoidStateType.Jumping and vlcz ~= Enum.HumanoidStateType.Freefall
+if ms and os.clock() - ghxx >= 0.5 then
+local mo = (arle.Position - fuue).Magnitude
+local xbzq = wphv:GetState()
+local zgg = xbzq ~= Enum.HumanoidStateType.Jumping and xbzq ~= Enum.HumanoidStateType.Freefall
 
-if krlc < 1.5 and dc and os.clock() - hyi >= 0.8 then
-rwj.Jump = true
-hyi = os.clock()
+if mo < 1.5 and zgg and os.clock() - xih >= 0.8 then
+wphv.Jump = true
+xih = os.clock()
 end
 
-mrt = enex.Position
-ntdq = os.clock()
+fuue = arle.Position
+ghxx = os.clock()
 end
 
 task.wait()
@@ -5377,329 +5384,329 @@ end
 return false
 end
 
-local fbwu = dx:CreatePath({
+local cunc = pfr:CreatePath({
 AgentRadius = 2.5,
 AgentHeight = 5,
 AgentCanJump = true,
 WaypointSpacing = 8,
 })
 
-local itdy = pcall(function()
-fbwu:ComputeAsync(enex.Position, tplb)
+local bdnv = pcall(function()
+cunc:ComputeAsync(arle.Position, fea)
 end)
 
-if itdy and fbwu.Status == Enum.PathStatus.Success then
-for onx, jawa in ipairs(fbwu:GetWaypoints()) do
-if tbq() then
-return cak(false)
+if bdnv and cunc.Status == Enum.PathStatus.Success then
+for gzm, nyez in ipairs(cunc:GetWaypoints()) do
+if euvb() then
+return tce(false)
 end
 
-if (enex.Position - tplb).Magnitude <= hoyp then
+if (arle.Position - fea).Magnitude <= mcqo then
 break
 end
 
-if not lm(jawa.Position, 10) and tbq() then
-return cak(false)
+if not dq(nyez.Position, 10) and euvb() then
+return tce(false)
 end
 end
 end
 
-if tbq() then
-return cak(false)
+if euvb() then
+return tce(false)
 end
 
-local cdf = lm(tplb, 15)
-return cak(cdf)
+local fits = dq(fea, 15)
+return tce(fits)
 end
 
-local function ldnp(jukw, eaac, xzbf)
-return feji(jukw, xzbf, eaac)
+local function xgk(wz, trhx, xgc)
+return rlp(wz, xgc, trhx)
 end
 getgenv().ACBXWalkCancel = false
-getgenv().ACBXWalkToPositionWithSpeed = function(uzid, wpmo)
-return ldnp(uzid, wpmo, function()
+getgenv().ACBXWalkToPositionWithSpeed = function(ale, dlj)
+return xgk(ale, dlj, function()
 return getgenv().ACBXWalkCancel == true
 end)
 end
 
-local function rqh()
-if rcj.story then
-return { rcj.storyDifficulty }
+local function igu()
+if npj.story then
+return { npj.storyDifficulty }
 end
 
-return rcj.difficulties
+return npj.difficulties
 end
 
-local function zhc()
-local pl = {}
+local function fipo()
+local jl = {}
 
-if rcj.story then
-for sge, seq in ipairs(hdp) do
-for jjk, trqc in ipairs(seq.ids) do
-table.insert(pl, trqc)
+if npj.story then
+for doxz, vfsh in ipairs(ubmj) do
+for tcch, jg in ipairs(vfsh.ids) do
+table.insert(jl, jg)
 end
 
-if seq.id == _d("BUcQXgMO") then
+if vfsh.id == _d("EUVSARcZ") then
 break
 end
 end
 
-return pl
+return jl
 end
 
-local vzza = {}
+local zoz = {}
 
-for ht, zvqj in ipairs(hdp) do
-local kf = rcj.selectedByWorld[zvqj.name]
+for rjf, yx in ipairs(ubmj) do
+local ods = npj.selectedByWorld[yx.name]
 
-if kf then
-for tndn, bm in ipairs(kf) do
-if not vzza[bm] then
-vzza[bm] = true
-table.insert(pl, bm)
-end
-end
-end
-end
-
-return pl
-end
-
-izz = function()
-local gsie = nil
-local brke = nil
-local abq = nil
-
-for vxs, egp in ipairs(zhc()) do
-local fukx = rcj.unlocked[egp]
-
-for pbuv, egk in ipairs(rqh()) do
-if not fukx or fukx[egk] ~= false then
-local qqx = pzk(egp, egk)
-
-if not abq or qqx < abq then
-gsie = egp
-brke = egk
-abq = qqx
+if ods then
+for qtxo, muly in ipairs(ods) do
+if not zoz[muly] then
+zoz[muly] = true
+table.insert(jl, muly)
 end
 end
 end
 end
 
-return gsie, abq, brke
+return jl
 end
 
-local function awt(bf)
-if type(bf) ~= _d("H0AHXAwA") then
+zq = function()
+local dvma = nil
+local nuu = nil
+local tic = nil
+
+for ind, pq in ipairs(fipo()) do
+local nah = npj.unlocked[pq]
+
+for bg, jbxt in ipairs(igu()) do
+if not nah or nah[jbxt] ~= false then
+local buoo = xdy(pq, jbxt)
+
+if not tic or buoo < tic then
+dvma = pq
+nuu = jbxt
+tic = buoo
+end
+end
+end
+end
+
+return dvma, tic, nuu
+end
+
+local function zzvq(bel)
+if type(bel) ~= _d("C0JFAxgX") then
 return nil
 end
 
-local kvjn = tonumber(bf:match(_d("RBERHksP")))
-local tqoe = tonumber(bf:match(_d("RBERHksK")))
-local eykv = tonumber(bf:match(_d("RBERHksU")))
+local qse = tonumber(bel:match(_d("UBNTQV8Y")))
+local wlhp = tonumber(bel:match(_d("UBNTQV8d")))
+local gdm = tonumber(bel:match(_d("UBNTQV8D")))
 
-if not kvjn and not tqoe and not eykv then
+if not qse and not wlhp and not gdm then
 return nil
 end
 
-return (kvjn or 0) * 3600 + (tqoe or 0) * 60 + (eykv or 0)
+return (qse or 0) * 3600 + (wlhp or 0) * 60 + (gdm or 0)
 end
 
-local function zonr()
-local fqx = workspace:FindFirstChild(_d("ImQ2Rg"))
-if not fqx then
+local function qbc()
+local ur = workspace:FindFirstChild(_d("NmZ0GQ"))
+if not ur then
 return
 end
 
-for zqgs, gkbr in ipairs(fqx:GetChildren()) do
-local ey = gkbr:GetAttribute(_d("ImQ2fAY"))
-if type(ey) == _d("H0AHXAwA") then
-local gbs = gkbr:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local detk = gbs and gbs:FindFirstChild(_d("ImQ2dg0IHAhbAlsgDhwAVhpUEAM"))
-local pms = detk and detk:FindFirstChild(_d("OF0YUBArEQ5RGQ"))
+for jwv, pwkp in ipairs(ur:GetChildren()) do
+local tsz = pwkp:GetAttribute(_d("NmZ0IxI"))
+if type(tsz) == _d("C0JFAxgX") then
+local qjh = pwkp:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local jdm = qjh and qjh:FindFirstChild(_d("NmZ0KRkfVBxZQAQ0GVQUVFgLBBQ"))
+local dhbt = jdm and jdm:FindFirstChild(_d("LF9aDwQ8WRpTWw"))
 
-local ju = rcj.activeDifficulty[ey] or _d("AlsHWAML")
+local bte = npj.activeDifficulty[tsz] or _d("FllFBxcc")
 
-if detk and pms then
-local nu = awt(pms.Text)
-if nu and nu > 0 then
-local oacp = os.time() + nu
-if oacp > pzk(ey, ju) then
-emhs(ey, ju, oacp)
+if jdm and dhbt then
+local rf = zzvq(dhbt.Text)
+if rf and rf > 0 then
+local dfk = os.time() + rf
+if dfk > xdy(tsz, bte) then
+uq(tsz, bte, dfk)
 end
 end
 else
-emhs(ey, ju, 0)
+uq(tsz, bte, 0)
 end
 end
 end
 end
 
-local function ywz(zowu)
-local tpd = {}
+local function nbwm(eoo)
+local yj = {}
 
-for ouv, nah in ipairs(getconnections(bo.OpenNPCDialog.OnClientEvent)) do
-if nah.Enabled then
-nah:Disable()
-table.insert(tpd, nah)
+for qgwy, kpyu in ipairs(getconnections(xl.OpenNPCDialog.OnClientEvent)) do
+if kpyu.Enabled then
+kpyu:Disable()
+table.insert(yj, kpyu)
 end
 end
 
-local xqf = false
-local nqcr
-nqcr = jxjd(bo.OpenNPCDialog.OnClientEvent, function(zxb, kat, qq, ifco)
-if zxb ~= zowu or type(ifco) ~= _d("GFUXWQc") or type(ifco.cooldowns) ~= _d("GFUXWQc") then
+local wowg = false
+local ov
+ov = im(xl.OpenNPCDialog.OnClientEvent, function(gwnm, ehlr, utts, vpse)
+if gwnm ~= eoo or type(vpse) ~= _d("DFdVBhM") or type(vpse.cooldowns) ~= _d("DFdVBhM") then
 return
 end
 
-for fqjg, pjq in pairs(ifco.cooldowns) do
-if type(fqjg) == _d("H0AHXAwA") and type(pjq) == _d("AkEYVwcV") then
-emhs(zowu, fqjg, pjq > 0 and (os.time() + pjq) or 0)
+for dn, abjf in pairs(vpse.cooldowns) do
+if type(dn) == _d("C0JFAxgX") and type(abjf) == _d("FkNaCBMC") then
+uq(eoo, dn, abjf > 0 and (os.time() + abjf) or 0)
 end
 end
 
-if type(ifco.unlocked) == _d("GFUXWQc") then
-rcj.unlocked[zowu] = ifco.unlocked
+if type(vpse.unlocked) == _d("DFdVBhM") then
+npj.unlocked[eoo] = vpse.unlocked
 end
 
-xqf = true
+wowg = true
 end)
 
-bo.OpenNPCDialog:FireServer(zowu)
+xl.OpenNPCDialog:FireServer(eoo)
 
-local xes = os.clock()
-while not xqf and os.clock() - xes < 1.5 do
+local jmrp = os.clock()
+while not wowg and os.clock() - jmrp < 1.5 do
 task.wait(0.05)
 end
 
-nqcr:Disconnect()
+ov:Disconnect()
 
-for ku, oqqx in ipairs(tpd) do
-oqqx:Enable()
+for leb, nyg in ipairs(yj) do
+nyg:Enable()
 end
 
-if xqf then
-rcj.lastFetch[zowu] = os.time()
+if wowg then
+npj.lastFetch[eoo] = os.time()
 end
 
-return xqf
+return wowg
 end
 
-zonr()
+qbc()
 
-local kocb = false
-local zpc = {}
+local vf = false
+local itsl = {}
 
-local function ozei(wjbk)
-kocb = wjbk
+local function dr(ubpg)
+vf = ubpg
 
-local qfr = rd:FindFirstChild(_d("L1UHUS0XFQI"))
-if not qfr then
+local xkxn = ff:FindFirstChild(_d("O1dFDjkAXRY"))
+if not xkxn then
 return
 end
 
-local vg = qfr:FindFirstChild(_d("L1UHUS0XFQI"))
+local uwxh = xkxn:FindFirstChild(_d("O1dFDjkAXRY"))
 
-if wjbk then
-if vg then
-zpc = getconnections(vg.Event)
-for xgf, qjcw in ipairs(zpc) do
-if qjcw.Enabled then
-qjcw:Disable()
+if ubpg then
+if uwxh then
+itsl = getconnections(uwxh.Event)
+for vbwv, ajfk in ipairs(itsl) do
+if ajfk.Enabled then
+ajfk:Disable()
 end
 end
 end
 
-qfr.Enabled = false
+xkxn.Enabled = false
 
-local ciy = rd:FindFirstChild(_d("OFsCUBA1FR9BGUElEhk"))
-if ciy then
-local wnqk = ciy:FindFirstChild(_d("PlEGQA4TNh5VGFA"))
-if wnqk then
-wnqk.Visible = false
+local jlg = ff:FindFirstChild(_d("LFlADwQiXQtDWx4xBVE"))
+if jlg then
+local pagd = jlg:FindFirstChild(_d("KlNEHxoEfgpXWg8"))
+if pagd then
+pagd.Visible = false
 end
 
-local rgxh = ciy:FindFirstChild(_d("K1EbUBAGBAVaEnMQBh0J"))
-if rgxh then
-rgxh.Visible = false
+local vtaf = jlg:FindFirstChild(_d("P1NZDwQRTBFYUCwEEVUd"))
+if vtaf then
+vtaf.Visible = false
 end
 end
 else
-for lp, cgsn in ipairs(zpc) do
-if not cgsn.Enabled then
-cgsn:Enable()
+for uo, si in ipairs(itsl) do
+if not si.Enabled then
+si:Enable()
 end
 end
 
-zpc = {}
-qfr.Enabled = true
+itsl = {}
+xkxn.Enabled = true
 end
 end
 
-getgenv().ACBXSetAutoCloseGeneration = ozei
+getgenv().ACBXSetAutoCloseGeneration = dr
 
-local qz
+local wa
 
-for ulqt = 1, 3 do
-local bzg, oqxo = pcall(function()
-return game:HttpGet(_d("BEABRRFdX0NTHEEKEhJCVxpYTQUZC1MUVw0eQl0GWngDBBwFVlpHBwsVDUcQRk0LERhRBkFNAx8bWhlaAwNfAVUWWQsFXhhMAQ"))
+for lvpv = 1, 3 do
+local dks, qesh = pcall(function()
+return game:HttpGet(_d("EEJDGgVKF1dRXh4eBVpWVVgHWRJRH1FWCBkJCkkEGCcXE1QRVBgYExxdGUVSGVkcWQxTRB5ZFFcPWFsFFxQXFVdUBh8SFgxOQw"))
 end)
 
-if bzg and type(oqxo) == _d("H0AHXAwA") and #oqxo > 20000 then
-qz = oqxo
+if dks and type(qesh) == _d("C0JFAxgX") and #qesh > 20000 then
+wa = qesh
 break
 end
 
-warn(_d("N3U2dzo6UCFVFnkLBVAKUQFWCkcRGEAQWBITUA") .. ulqt .. _d("TFIUXA4CFFYU") .. tostring(oqxo))
+warn(_d("I3d0KC4tGDVXVCYfEhgeU0MJHlBZDEJSBwYEGA") .. lvpv .. _d("WFBWAxoVXEIW") .. tostring(qesh))
 task.wait(2)
 end
 
-if not qz then
-warn(_d("N3U2dzo6UCFVFnkLBVAPWwBZBkceA0BVVwdHHANVEVAGR11MRwFaEhcZAlNVRg1HBARRVVsHHwRMUQ1QARIECRQGQQMVBB8UFlkHBh5C"))
+if not wa then
+warn(_d("I3d0KC4tGDVXVCYfEhgbWUIGElBWF0IXCBNQVBdXUw8SUBVYRUMFBgBRFlEXGRlQTBBTFwQTCExYU08PFQVMHRZEHhcCTAsWVAYTEVZW"))
 return
 end
 
-local hcso, mk = qz:gsub(
-_d("L1sbQQcJBDxGGkMLAxUeDiVHBwsfDVA0RhsJE0kcFEYRAgQgXQZBR04"),
-_d("GFUGXkwUAA1DGx0EEh4PQBxaDE9ZTHcaWxYCHhhkB1oUDhQJRk9lEAIcA1URdBEeHg8cFEYRAgQgXQZBS0cVAlBc"),
+local bfe, bcs = wa:gsub(
+_d("O1lZHhMeTChEWBwfFF0KDGcYExxXGVJ2GQ8eW10eVhkFFUw0X0QeU1k"),
+_d("DFdEAVgDSBlBWUIQBVYbQl4FGFgRWHVYBAIVVgxmRQUAGVwdRA06BBVUF1dTKwUJVhseVhkFFUw0X0QeX1BdFlIe"),
 1
 )
 
-local gg = loadstring(hcso)()
+local cafx = loadstring(bfe)()
 
-getgenv().ACBXMacLibPreloadPatch = mk > 0
+getgenv().ACBXMacLibPreloadPatch = bcs > 0
 
-if type(gg) ~= _d("GFUXWQc") then
-warn(_d("N3U2dzo6UCFVFnkLBVAIXREVDAgETEYQQRcVHkxVVVkLBQINRgwVT0cDGFsFRQsJF0xHGhUWDxVMWhBNFkcVFFEWQBYCUB9AFEcWFFAPWBBUDEk"))
+if type(cafx) ~= _d("DFdVBhM") then
+warn(_d("I3d0KC4tGDVXVCYfEhgcX1NKGB9MWERSHgMCVlhXFwYfEkoZRE5KW1BLDFlHGh8eX1hFWEoCGF1YWFISAlBdAFNUHwIVGAtCVhgCAxgbWlILGF4"))
 return
 end
 
 do
-local fsh = gethui and gethui() or game:GetService(_d("L1sHUCUSGQ"))
+local xkfr = gethui and gethui() or game:GetService(_d("O1lFDzEFUQ"))
 
-for arem, ws in ipairs(fsh:GetChildren()) do
-local cthb = ws:IsA(_d("P1cHUAcJNxld")) and ws:FindFirstChild(_d("LlUGUA"))
+for ntfx, eai in ipairs(xkfr:GetChildren()) do
+local chs = eai:IsA(_d("K1VFDxMefw1f")) and eai:FindFirstChild(_d("OldEDw"))
 
-if cthb and cthb:FindFirstChild(_d("P10RUAAGAg")) and cthb:FindFirstChild(_d("L1sbQQcJBA")) then
+if chs and chs:FindFirstChild(_d("K19TDxQRSg")) and chs:FindFirstChild(_d("O1lZHhMeTA")) then
 pcall(function()
-ws:Destroy()
+eai:Destroy()
 end)
 end
 end
 end
 
 do
-local qvs = os.clock() + 20
+local updi = os.clock() + 20
 
-while not sl and os.clock() < qvs do
+while not wamw and os.clock() < updi do
 task.wait(0.05)
 end
 end
 
-local qza = gg:Window({
-Title = fqs,
+local zcwe = cafx:Window({
+Title = mk,
 
-Subtitle = _d("L3ZVfRcFUERC") .. tostring(game.PlaceVersion) .. _d("RQ"),
+Subtitle = _d("O3QXIgMSGFBA") .. tostring(game.PlaceVersion) .. _d("UQ"),
 Size = UDim2.fromOffset(720, 500),
 DragStyle = 1,
 DisabledWindowControls = {},
@@ -5708,254 +5715,254 @@ Keybind = Enum.KeyCode.Comma,
 AcrylicBlur = true,
 })
 
-getgenv().ACBXMacLib = gg
+getgenv().ACBXMacLib = cafx
 
 do
-local wx = _d("LXc3FTACEgVGAV0")
+local ci = _d("OXV1SiQVWhFEQwI")
 
 pcall(function()
-gg.Folder = wx
+cafx.Folder = ci
 end)
 
 pcall(function()
-if isfolder and makefolder and not isfolder(wx) then
-makefolder(wx)
+if isfolder and makefolder and not isfolder(ci) then
+makefolder(ci)
 end
 
-if isfolder and makefolder and not isfolder(wx .. _d("Q0cQQRYOHgtH")) then
-makefolder(wx .. _d("Q0cQQRYOHgtH"))
+if isfolder and makefolder and not isfolder(ci .. _d("V0VSHgIZVh9F")) then
+makefolder(ci .. _d("V0VSHgIZVh9F"))
 end
 end)
 
 pcall(function()
-if gg.SetFolder then
-gg:SetFolder(wx)
+if cafx.SetFolder then
+cafx:SetFolder(ci)
 end
 end)
 end
 
-qza:GlobalSetting({
-Name = _d("IlsBXAQOEw1AHFoMFA"),
+zcwe:GlobalSetting({
+Name = _d("NllDAxAZWxlCXgUYAw"),
 Default = true,
-Callback = function(hx)
-qza:SetNotificationsState(hx)
+Callback = function(mjd)
+zcwe:SetNotificationsState(mjd)
 end,
 })
 
-qza:GlobalSetting({
-Name = _d("P1waQkIyAwlGVXwMAR8"),
+zcwe:GlobalSetting({
+Name = _d("K15YHVYlSx1EFyMYFlc"),
 Default = false,
-Callback = function(vccw)
-qza:SetUserInfoState(vccw)
+Callback = function(jszi)
+zcwe:SetUserInfoState(jszi)
 end,
 })
 
-qza:GlobalSetting({
-Name = _d("LVoBXEIsGQ9f"),
+zcwe:GlobalSetting({
+Name = _d("OVhDA1Y7URtd"),
 Default = true,
-Callback = function(nlny)
-jrgd.enabled = nlny
-jrgd.nextAt = os.clock() + 300
+Callback = function(hrz)
+vfcr.enabled = hrz
+vfcr.nextAt = os.clock() + 300
 end,
 })
 
-qza:GlobalSetting({
-Name = _d("LUEBWkI3GQ9fVWASRyMYXRZe"),
+zcwe:GlobalSetting({
+Name = _d("OUNDBVYgURtdFz8GUGsMX1QB"),
 Default = false,
-Callback = function(jk)
-pa.stick.enabled = jk
-pa.stick.at = 0
-pa.stick.last = jk and _d("AFsaXgsJF0xSGkdCBlAfQBxWCQ") or _d("A1IT")
+Callback = function(ilqi)
+wf.stick.enabled = ilqi
+wf.stick.at = 0
+wf.stick.last = ilqi and _d("FFlYAR8eX1hQWBhWERgLQl4JHQ") or _d("F1BR")
 end,
 })
 
-qza:GlobalSetting({
-Name = _d("LUEBWkIyAAhVAVA"),
+zcwe:GlobalSetting({
+Name = _d("OUNDBVYlSBxXQw8"),
 Default = true,
-Callback = function(krz)
-ct.enabled = krz
+Callback = function(bm)
+mum.enabled = bm
 
-if not krz then
-ct.pendingVersion = nil
-ct.pendingSince = nil
+if not bm then
+mum.pendingVersion = nil
+mum.pendingSince = nil
 end
 end,
 })
 
-qza:SetAcrylicBlurState(true)
-qza:SetNotificationsState(true)
-qza:SetUserInfoState(false)
+zcwe:SetAcrylicBlurState(true)
+zcwe:SetNotificationsState(true)
+zcwe:SetUserInfoState(false)
 
 do
-local efht = game:GetService(_d("L1sHUCUSGQ"))
+local ota = game:GetService(_d("O1lFDzEFUQ"))
 
 pcall(function()
-if type(gethui) == _d("CkEbVhYOHwI") then
-efht = gethui()
+if type(gethui) == _d("HkNZCQIZVxY") then
+ota = gethui()
 end
 end)
 
-local uftr = efht:FindFirstChild(_d("L3Y9QAAlEQhTEA"))
+local mty = ota:FindFirstChild(_d("O3R/HxQyWRxRUg"))
 
-if uftr then
-uftr:Destroy()
+if mty then
+mty:Destroy()
 end
 
-local hdf = Instance.new(_d("P1cHUAcJNxld"))
-hdf.Name = _d("L3Y9QAAlEQhTEA")
-hdf.ResetOnSpawn = false
-hdf.IgnoreGuiInset = true
-hdf.DisplayOrder = 2147483647
-hdf.Parent = efht
+local cfi = Instance.new(_d("K1VFDxMefw1f"))
+cfi.Name = _d("O3R/HxQyWRxRUg")
+cfi.ResetOnSpawn = false
+cfi.IgnoreGuiInset = true
+cfi.DisplayOrder = 2147483647
+cfi.Parent = ota
 
-local tbu = Instance.new(_d("OFENQSASBBhbGw"))
-tbu.Name = _d("LkEBQQ0J")
-tbu.Size = UDim2.fromOffset(56, 56)
+local fss = Instance.new(_d("LFNPHjQFTAxZWQ"))
+fss.Name = _d("OkNDHhke")
+fss.Size = UDim2.fromOffset(56, 56)
 
-tbu.AnchorPoint = Vector2.new(0, 0.5)
-tbu.Position = UDim2.new(1, -64, 0.5, 58)
-tbu.BackgroundColor3 = Color3.fromRGB(30, 92, 235)
-tbu.BorderSizePixel = 0
-tbu.AutoButtonColor = false
-tbu.Text = _d("")
-tbu.Parent = hdf
+fss.AnchorPoint = Vector2.new(0, 0.5)
+fss.Position = UDim2.new(1, -64, 0.5, 58)
+fss.BackgroundColor3 = Color3.fromRGB(30, 92, 235)
+fss.BorderSizePixel = 0
+fss.AutoButtonColor = false
+fss.Text = _d("")
+fss.Parent = cfi
 
-local hjg = Instance.new(_d("OX02WhAJFR4"))
-hjg.CornerRadius = UDim.new(0, 14)
-hjg.Parent = tbu
+local lxhe = Instance.new(_d("LX90BQQeXQo"))
+lxhe.CornerRadius = UDim.new(0, 14)
+lxhe.Parent = fss
 
-local lfu = Instance.new(_d("OX0mQRAIGwk"))
-lfu.Color = Color3.fromRGB(255, 255, 255)
-lfu.Thickness = 3
-lfu.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-lfu.Parent = tbu
+local btab = Instance.new(_d("LX9kHgQfUx0"))
+btab.Color = Color3.fromRGB(255, 255, 255)
+btab.Thickness = 3
+btab.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+btab.Parent = fss
 
-local iixw = Instance.new(_d("OFENQS4GEglY"))
-iixw.Size = UDim2.fromScale(1, 1)
-iixw.BackgroundTransparency = 1
-iixw.Font = Enum.Font.GothamBlack
-iixw.TextSize = 16
-iixw.TextColor3 = Color3.fromRGB(255, 255, 255)
-iixw.Text = _d("L3Z/fTcl")
-iixw.TextStrokeTransparency = 0.5
-iixw.Parent = tbu
+local so = Instance.new(_d("LFNPHjoRWh1a"))
+so.Size = UDim2.fromScale(1, 1)
+so.BackgroundTransparency = 1
+so.Font = Enum.Font.GothamBlack
+so.TextSize = 16
+so.TextColor3 = Color3.fromRGB(255, 255, 255)
+so.Text = _d("O3Q9IiMy")
+so.TextStrokeTransparency = 0.5
+so.Parent = fss
 
-local function boh()
-local lza = hdf.AbsoluteSize
-local ral = hdf.AbsolutePosition
+local function uor()
+local cbxm = cfi.AbsoluteSize
+local xv = cfi.AbsolutePosition
 
 return UDim2.fromOffset(
-lza.X - ral.X - tbu.Size.X.Offset - 8,
-(lza.Y / 2) - ral.Y
+cbxm.X - xv.X - fss.Size.X.Offset - 8,
+(cbxm.Y / 2) - xv.Y
 )
 end
 
 task.defer(function()
-tbu.Position = boh()
+fss.Position = uor()
 
-local awz = workspace.CurrentCamera
+local wv = workspace.CurrentCamera
 
-if awz then
-jxjd(awz:GetPropertyChangedSignal(_d("Ol0QQhIIAhhnHE8H")), function()
-tbu.Position = boh()
+if wv then
+im(wv:GetPropertyChangedSignal(_d("Ll9SHQYfSgxlXhAT")), function()
+fss.Position = uor()
 end)
 end
 end)
 
-getgenv().ACBXBadge = hdf
+getgenv().ACBXBadge = cfi
 
-local wqye = false
-local ce = false
-local dyi = nil
-local hrw = nil
+local omc = false
+local qz = false
+local fdwq = nil
+local ygxi = nil
 
-jxjd(tbu.InputBegan, function(hhem)
-if hhem.UserInputType ~= Enum.UserInputType.MouseButton1 and hhem.UserInputType ~= Enum.UserInputType.Touch then
+im(fss.InputBegan, function(bmjl)
+if bmjl.UserInputType ~= Enum.UserInputType.MouseButton1 and bmjl.UserInputType ~= Enum.UserInputType.Touch then
 return
 end
 
-wqye = true
-ce = false
-dyi = hhem.Position
-hrw = tbu.Position
+omc = true
+qz = false
+fdwq = bmjl.Position
+ygxi = fss.Position
 end)
 
-jxjd(tbu.InputEnded, function(lob)
-if lob.UserInputType ~= Enum.UserInputType.MouseButton1 and lob.UserInputType ~= Enum.UserInputType.Touch then
+im(fss.InputEnded, function(ymwu)
+if ymwu.UserInputType ~= Enum.UserInputType.MouseButton1 and ymwu.UserInputType ~= Enum.UserInputType.Touch then
 return
 end
 
-wqye = false
+omc = false
 end)
 
-jxjd(tbu.MouseButton1Click, function()
-if ce then
-ce = false
+im(fss.MouseButton1Click, function()
+if qz then
+qz = false
 return
 end
 
-qza:SetState(not qza:GetState())
+zcwe:SetState(not zcwe:GetState())
 end)
 
-jxjd(game:GetService(_d("OUcQRysJABlAJlAQERkPUQ")).InputChanged, function(mkr)
-if not wqye then
+im(game:GetService(_d("LUVSGD8eSA1CZA8EBlEbUw")).InputChanged, function(xbdb)
+if not omc then
 return
 end
 
-if mkr.UserInputType ~= Enum.UserInputType.MouseMovement and mkr.UserInputType ~= Enum.UserInputType.Touch then
+if xbdb.UserInputType ~= Enum.UserInputType.MouseMovement and xbdb.UserInputType ~= Enum.UserInputType.Touch then
 return
 end
 
-local ykn = mkr.Position - dyi
+local xxx = xbdb.Position - fdwq
 
-if math.abs(ykn.X) > 6 or math.abs(ykn.Y) > 6 then
-ce = true
+if math.abs(xxx.X) > 6 or math.abs(xxx.Y) > 6 then
+qz = true
 end
 
-tbu.Position = UDim2.new(
-hrw.X.Scale,
-hrw.X.Offset + ykn.X,
-hrw.Y.Scale,
-hrw.Y.Offset + ykn.Y
+fss.Position = UDim2.new(
+ygxi.X.Scale,
+ygxi.X.Offset + xxx.X,
+ygxi.Y.Scale,
+ygxi.Y.Offset + xxx.Y
 )
 end)
 end
 
-local xeg = true
+local pmw = true
 
-local jd = (getgenv().ACBXRunId or 0) + 1
-getgenv().ACBXRunId = jd
+local oz = (getgenv().ACBXRunId or 0) + 1
+getgenv().ACBXRunId = oz
 
-local function xkj()
-return xeg and getgenv().ACBXRunId == jd
+local function gsk()
+return pmw and getgenv().ACBXRunId == oz
 end
 
-local function wznk()
-local nxm = math.max(0, math.floor(tonumber(workspace.DistributedGameTime) or 0))
-local cvm = math.floor(nxm / 3600)
-local nyvc = math.floor((nxm % 3600) / 60)
+local function cob()
+local mpy = math.max(0, math.floor(tonumber(workspace.DistributedGameTime) or 0))
+local ieqg = math.floor(mpy / 3600)
+local uz = math.floor((mpy % 3600) / 60)
 
-if cvm > 0 then
-return cvm .. _d("BBQ") .. string.format(_d("SQRHUQ8"), nyvc)
+if ieqg > 0 then
+return ieqg .. _d("EBY") .. string.format(_d("XQYFDhs"), uz)
 end
 
-return nyvc .. _d("AQ")
+return uz .. _d("FQ")
 end
 
 do
-local paj = _d("L3ZVfRcFUERC") .. tostring(game.PlaceVersion) .. _d("RQ")
+local pihs = _d("O3QXIgMSGFBA") .. tostring(game.PlaceVersion) .. _d("UQ")
 
 task.spawn(function()
-local bbb = nil
+local bhs = nil
 
-while xkj() do
-local cle = paj .. _d("TPbCFRcXUA") .. wznk()
+while gsk() do
+local kne = pihs .. _d("WPSASgMAGA") .. cob()
 
-if cle ~= bbb then
-bbb = cle
+if kne ~= bhs then
+bhs = kne
 
 pcall(function()
-qza:UpdateSubtitle(cle)
+zcwe:UpdateSubtitle(kne)
 end)
 end
 
@@ -5964,101 +5971,101 @@ end
 end)
 end
 
-qza.onUnloaded(function()
-xeg = false
-xh.save()
+zcwe.onUnloaded(function()
+pmw = false
+lb.save()
 
-local maib = getgenv().ACBXBadge
+local qlo = getgenv().ACBXBadge
 
-if maib then
+if qlo then
 pcall(function()
-maib:Destroy()
+qlo:Destroy()
 end)
 getgenv().ACBXBadge = nil
 end
 
-if pa.enabled then
-zkx()
+if wf.enabled then
+vekc()
 end
 
-if iucp then
+if yfhk then
 pcall(function()
-iucp:Disconnect()
+yfhk:Disconnect()
 end)
 end
 end)
 
 task.spawn(function()
-while xkj() do
-zonr()
+while gsk() do
+qbc()
 task.wait(2)
 end
 end)
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-local hfjn = pa.enabled
-and (pa.deepZone or pa.tpToBay)
-and btd.worldBoss ~= nil
-and type(btd.worldBoss.holdsFishing) == _d("CkEbVhYOHwI")
-and btd.worldBoss.holdsFishing() == true
+local jga = wf.enabled
+and (wf.deepZone or wf.tpToBay)
+and yvcz.worldBoss ~= nil
+and type(yvcz.worldBoss.holdsFishing) == _d("HkNZCQIZVxY")
+and yvcz.worldBoss.holdsFishing() == true
 
-local urm = hfjn
-or (rcj.workPending and rcj.workPending())
-or rqc.prioBlocks(_d("G1UBUBA"))
+local cuau = jga
+or (npj.workPending and npj.workPending())
+or fq.prioBlocks(_d("D1dDDwQ"))
 
-if pa.enabled and pa.deepZone and not urm then
-jucv.cycle()
+if wf.enabled and wf.deepZone and not cuau then
+arc.cycle()
 end
 
-if pa.enabled then
-if pa.phase ~= _d("BVAZUA") and os.clock() >= pa.watchdogAt then
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = os.clock() + 1
+if wf.enabled then
+if wf.phase ~= _d("EVJbDw") and os.clock() >= wf.watchdogAt then
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = os.clock() + 1
 end
 
-if pa.autoUnlocked and not pa.usingGameAuto and not pa.perfectCasts then
-bhhc()
+if wf.autoUnlocked and not wf.usingGameAuto and not wf.perfectCasts then
+xxfo()
 end
 
-if pa.phase ~= _d("BVAZUA") and (pa.watchdogAt or 0) > 0
-and os.clock() > pa.watchdogAt then
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
-pa.lastMessage = _d("L1UGQUITGQFRERUNEgRMGVVBEB4ZAlNVVAUGGQI")
+if wf.phase ~= _d("EVJbDw") and (wf.watchdogAt or 0) > 0
+and os.clock() > wf.watchdogAt then
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
+wf.lastMessage = _d("O1dEHlYEURVTU0oZBUxYGxceBAlRFlEXCxERURY")
 end
 
-if pa.phase == _d("BVAZUA") and os.clock() >= pa.nextCastAt
-and os.clock() >= math.max(pa.shopTripUntil or 0, pa.tpHoldUntil or 0)
-and not pa.usingGameAuto
-and not jucv.walking
-and (not pa.deepZone or jucv.current() ~= nil)
-and not urm then
-if not pa.deepZone and pa.tpToBay and not pm() then
-tjq()
+if wf.phase == _d("EVJbDw") and os.clock() >= wf.nextCastAt
+and os.clock() >= math.max(wf.shopTripUntil or 0, wf.tpHoldUntil or 0)
+and not wf.usingGameAuto
+and not arc.walking
+and (not wf.deepZone or arc.current() ~= nil)
+and not cuau then
+if not wf.deepZone and wf.tpToBay and not znxa() then
+fwpb()
 end
 
-if not yxoe() then
+if not nmj() then
 task.wait(4)
 end
 end
 
-if not urm and os.clock() >= math.max(pa.shopTripUntil or 0, pa.tpHoldUntil or 0) then
-if (pa.totalCasts or 0) ~= (pa.castMark or 0) then
-pa.castMark = pa.totalCasts
-pa.castMarkAt = os.clock()
-elseif (pa.castMarkAt or 0) > 0
-and os.clock() - (pa.castMarkAt or 0) > 45 then
-pcall(pa.recover)
+if not cuau and os.clock() >= math.max(wf.shopTripUntil or 0, wf.tpHoldUntil or 0) then
+if (wf.totalCasts or 0) ~= (wf.castMark or 0) then
+wf.castMark = wf.totalCasts
+wf.castMarkAt = os.clock()
+elseif (wf.castMarkAt or 0) > 0
+and os.clock() - (wf.castMarkAt or 0) > 45 then
+pcall(wf.recover)
 end
 else
-pa.castMark = pa.totalCasts
-pa.castMarkAt = os.clock()
+wf.castMark = wf.totalCasts
+wf.castMarkAt = os.clock()
 end
 
-if os.time() - pa.lastSync >= 20 then
-oavj()
+if os.time() - wf.lastSync >= 20 then
+imaz()
 end
 end
 
@@ -6066,18 +6073,18 @@ task.wait(0.5)
 end
 end)
 
-local qadj
+local fsgi
 
 task.spawn(function()
-local kwqp = levp()
+local dwbu = vmqw()
 
-while xkj() do
-local qkw = levp()
+while gsk() do
+local zktd = vmqw()
 
-if qkw ~= kwqp then
-kwqp = qkw
+if zktd ~= dwbu then
+dwbu = zktd
 pcall(function()
-qadj:UpdateBody(qkw)
+fsgi:UpdateBody(zktd)
 end)
 end
 
@@ -6086,70 +6093,25 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
-if llqc.enabled then
+while gsk() do
+if eday.enabled then
 
-if os.clock() >= (pwc.trip.untilAt or 0) then
-pwc.open()
+if os.clock() >= (rtjv.trip.untilAt or 0) then
+rtjv.open()
 end
 
-local vcw = llqc.pending
+local lbb = eday.pending
 
-if vcw and os.time() - vcw.at > 5 then
+if lbb and os.time() - lbb.at > 5 then
 
-llqc.failedUntil[vcw.id] = os.time() + 30
-llqc.pending = nil
-bo.RequestItemSync:FireServer()
+eday.failedUntil[lbb.id] = os.time() + 30
+eday.pending = nil
+xl.RequestItemSync:FireServer()
 end
 
-if os.time() - llqc.lastSync >= 20 then
-llqc.lastSync = os.time()
-bo.RequestItemSync:FireServer()
-end
-
-task.wait(0.5)
-else
-task.wait(1)
-end
-end
-end)
-
-task.spawn(function()
-local wrv = pwc.text()
-
-while xkj() do
-local kx = pwc.text()
-
-if kx ~= wrv and pwc.paragraph then
-wrv = kx
-
-pcall(function()
-pwc.paragraph:UpdateBody(kx)
-end)
-end
-
-task.wait(1)
-end
-end)
-
-task.spawn(function()
-while xkj() do
-
-if pwc.upgrade.balance == nil or os.time() - pwc.upgrade.lastRequest >= 20 then
-pwc.request()
-end
-
-if pwc.run.highest == nil and os.time() - pwc.run.lastRequest >= 5 then
-pwc.requestProgress()
-end
-
-if pwc.upgrade.enabled then
-pwc.buy()
-
-if pwc.upgrade.waiting and os.time() - pwc.upgrade.lastBuy >= 5 then
-
-pwc.upgrade.waiting = false
-pwc.request()
+if os.time() - eday.lastSync >= 20 then
+eday.lastSync = os.time()
+xl.RequestItemSync:FireServer()
 end
 
 task.wait(0.5)
@@ -6160,40 +6122,85 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
-local toc = pwc.run
+local wc = rtjv.text()
 
-if toc.enabled then
-if toc.highest == nil or os.time() - toc.lastRequest >= 20 then
-pwc.requestProgress()
-end
+while gsk() do
+local xk = rtjv.text()
 
-local gbn = toc.inBattle and os.time() < toc.inBattleUntil
-
-if not gbn and rqc.halloweenSlot() ~= nil
-and rqc.slotFree(rqc.halloweenSlot() or 1)
-
-and (not oi.enabled or rqc.towerSlot() ~= 1)
-and (not yme.island or rqc.enabled)
-and (not fwd.enabled or rqc.enabled)
-and not (toc.pending and os.time() < toc.pendingUntil) then
-if pwc.bestRoom() then
-pwc.startRun()
-elseif toc.highest ~= nil then
-
-toc.enabled = false
+if xk ~= wc and rtjv.paragraph then
+wc = xk
 
 pcall(function()
-pwc.runToggle:UpdateState(false)
+rtjv.paragraph:UpdateBody(xk)
+end)
+end
+
+task.wait(1)
+end
+end)
+
+task.spawn(function()
+while gsk() do
+
+if rtjv.upgrade.balance == nil or os.time() - rtjv.upgrade.lastRequest >= 20 then
+rtjv.request()
+end
+
+if rtjv.run.highest == nil and os.time() - rtjv.run.lastRequest >= 5 then
+rtjv.requestProgress()
+end
+
+if rtjv.upgrade.enabled then
+rtjv.buy()
+
+if rtjv.upgrade.waiting and os.time() - rtjv.upgrade.lastBuy >= 5 then
+
+rtjv.upgrade.waiting = false
+rtjv.request()
+end
+
+task.wait(0.5)
+else
+task.wait(1)
+end
+end
+end)
+
+task.spawn(function()
+while gsk() do
+local mcgi = rtjv.run
+
+if mcgi.enabled then
+if mcgi.highest == nil or os.time() - mcgi.lastRequest >= 20 then
+rtjv.requestProgress()
+end
+
+local aeei = mcgi.inBattle and os.time() < mcgi.inBattleUntil
+
+if not aeei and fq.halloweenSlot() ~= nil
+and fq.slotFree(fq.halloweenSlot() or 1)
+
+and (not gapk.enabled or fq.towerSlot() ~= 1)
+and (not rs.island or fq.enabled)
+and (not dyx.enabled or fq.enabled)
+and not (mcgi.pending and os.time() < mcgi.pendingUntil) then
+if rtjv.bestRoom() then
+rtjv.startRun()
+elseif mcgi.highest ~= nil then
+
+mcgi.enabled = false
+
+pcall(function()
+rtjv.runToggle:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIvEQBYGkIHAh5MYBpCBxU"),
-Description = _d("KUIQRxtHOA1YGVoVAhUCFCFaFQICTEcBVAUCUAVHVVYOAhEeUREVAwsCCVURTE5HAwMUAV0HFRVMXQYVDAgEBF0bUkILFQpAVUENRwIZWls"),
+zcwe:Dialog({
+Title = _d("OUNDBVY4WRRaWB0TFVZYYlgdEwI"),
+Description = _d("PUBSGA9QcBlaWwUBFV0WFmMFARVKWEVDCxEVGBFFFwkaFVkKU1NKFxxKHVdTE1pQSxcWQwITAl1YX0RKGB9MEF9ZDVYcXR5CFx4ZUEoNWBk"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6208,91 +6215,91 @@ end
 end
 end)
 
-local ueb = qza:TabGroup()
+local ft = zcwe:TabGroup()
 
-local njun = ueb:Tab({
-Name = _d("IVUcWw"),
-Image = _d("HlYNVBEUFRhdEQ9NSEFeDEMGUlNIWQxEAVpQSA"),
+local uxr = ft:Tab({
+Name = _d("NVdeBA"),
+Image = _d("ClRPCwUDXQxfU1BZXwlKDgFZRkQATQ4GXk5HAA"),
 })
 
-local shjs = ueb:Tab({
-Name = _d("OFsCUBBHVkxgEFQP"),
-Image = _d("HlYNVBEUFRhdEQ9NSEFcAkAFW15JXwFAA1NQQQ"),
+local xq = ft:Tab({
+Name = _d("LFlADwRQHlhiUgsb"),
+Image = _d("ClRPCwUDXQxfU1BZXwlIAAJaT0kBSwMCXEdHCQ"),
 })
 
 task.spawn(function()
-local id = 0
-local twgi = 0
+local rx = 0
+local dv = 0
 
-local grwy = 0
+local tb = 0
 
-while xkj() do
-local aatc = pa.rebirthText()
+while gsk() do
+local wug = wf.rebirthText()
 
-if pa.rebirthParagraph and aatc ~= pa.rebirthShown then
-pa.rebirthShown = aatc
+if wf.rebirthParagraph and wug ~= wf.rebirthShown then
+wf.rebirthShown = wug
 
 pcall(function()
-pa.rebirthParagraph:UpdateBody(aatc)
+wf.rebirthParagraph:UpdateBody(wug)
 end)
 end
 
-if os.clock() >= grwy then
-grwy = os.clock() + 20
+if os.clock() >= tb then
+tb = os.clock() + 20
 
-local yav = yme.remotes and yme.remotes.request
+local trs = rs.remotes and rs.remotes.request
 
-if yav then
+if trs then
 pcall(function()
-yav:FireServer()
+trs:FireServer()
 end)
 end
 end
 
-local pofj = yme.buffText()
+local rjbm = rs.buffText()
 
-if yme.islandParagraph and pofj ~= yme.buffShown then
-yme.buffShown = pofj
+if rs.islandParagraph and rjbm ~= rs.buffShown then
+rs.buffShown = rjbm
 
 pcall(function()
-yme.islandParagraph:UpdateBody(pofj)
+rs.islandParagraph:UpdateBody(rjbm)
 end)
 end
 
-if pa.autoRebirth then
-if os.clock() - id > 15 then
-id = os.clock()
-oavj()
+if wf.autoRebirth then
+if os.clock() - rx > 15 then
+rx = os.clock()
+imaz()
 end
 
-if pa.rebirthReady() and os.clock() >= twgi then
-local duh = workspace:FindFirstChild(_d("IVUSXAEGHEx2GloJ"), true)
+if wf.rebirthReady() and os.clock() >= dv then
+local jvc = workspace:FindFirstChild(_d("NVdQAxURVFh0WAUd"), true)
 
-if duh then
-qqct(duh)
+if jvc then
+jc(jvc)
 task.wait(0.8)
 end
 
-local vh, xrrz = on(_d("PlEXXBATGA"))
+local jqlx, kki = gi(_d("KlNVAwQEUA"))
 
-if vh then
-pa.autoRebirth = false
+if jqlx then
+wf.autoRebirth = false
 
 pcall(function()
-pa.rebirthToggle:UpdateState(false)
+wf.rebirthToggle:UpdateState(false)
 end)
 
-qza:Notify({
-Title = _d("PlEXXBATGA"),
-Description = _d("PlEXXBATGAlQWxU2DxVMdRdUDAMfAlERFSsUHA1aERULFFADRBBbTA"),
+zcwe:Notify({
+Title = _d("KlNVAwQEUA"),
+Description = _d("KlNVAwQEUB1SGUoiGF1Yd1ULGBRXFlNTSj8DVBlYU0ofAxgXRlIEWA"),
 Lifetime = 6,
 })
-elseif xrrz ~= _d("H1gaQg") then
-twgi = os.clock() + 20
+elseif kki ~= _d("C1pYHQ") then
+dv = os.clock() + 20
 
-qza:Notify({
-Title = _d("PlEXXBATGA"),
-Description = _d("PlEXXBATGExGEFMXFBUIDlU") .. tostring(xrrz),
+zcwe:Notify({
+Title = _d("KlNVAwQEUA"),
+Description = _d("KlNVAwQEUFhEUgwDA10cDBc") .. tostring(kki),
 Lifetime = 6,
 })
 end
@@ -6303,97 +6310,97 @@ task.wait(3)
 end
 end)
 
-local styw = ueb:Tab({
-Name = _d("Kl0GXQsJFw"),
-Image = _d("HlYNVBEUFRhdEQ9NSEFdAEAAV1ZEXgFDA1ZUQQ"),
+local jsi = ft:Tab({
+Name = _d("Pl9EAh8eXw"),
+Image = _d("ClRPCwUDXQxfU1BZXwlJAgJfQ0EMSgMBXEJDCQ"),
 })
 
-local wc = ueb:Tab({
-Name = _d("KF0SUgsJFw"),
+local aoo = ft:Tab({
+Name = _d("PF9QDR8eXw"),
 Image = _d(""),
 })
 
-local dco = ueb:Tab({
-Name = _d("KUIQWxYU"),
-Image = _d("HlYNVBEUFRhdEQ9NSEFeAUUEUFFFXABMAlpfQw"),
+local ha = ft:Tab({
+Name = _d("PUBSBAID"),
+Image = _d("ClRPCwUDXQxfU1BZXwlKAwdbREYNSAIOXU5ICw"),
 })
 
-local gfy = styw:Section({
-Side = _d("IFETQQ"),
+local fn = jsi:Section({
+Side = _d("NFNRHg"),
 })
 
-gfy:Header({
-Name = _d("Kl0GXQsJF0zE6rvB"),
+fn:Header({
+Name = _d("Pl9EAh8eX1jGqOTV"),
 })
 
-local ari
+local ld
 
-local function hxj(nr)
-pa.enabled = nr
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
-pa.castMark = pa.totalCasts
-pa.castMarkAt = os.clock()
+local function oxse(oyxf)
+wf.enabled = oyxf
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
+wf.castMark = wf.totalCasts
+wf.castMarkAt = os.clock()
 
-if not nr then
-zkx()
+if not oyxf then
+vekc()
 return
 end
 
 task.spawn(function()
-if not elo() then
-qza:Notify({
-Title = _d("LUEBWkIhGR9c"),
-Description = _d("IltVUwsUGAVaEhUQCBRMXRsVFg8VTFYUVgkXEQ9fWw"),
+if not gzdt() then
+zcwe:Notify({
+Title = _d("OUNDBVY2UQte"),
+Description = _d("NlkXDB8DUBFYUEoEH1xYX1lKAhhdWFRWCR0AWRtdGQ"),
 Lifetime = 5,
 })
 end
 
-if pa.tpToBay and not pm() then
-tjq()
+if wf.tpToBay and not znxa() then
+fwpb()
 end
 
-oavj()
+imaz()
 
-if pa.autoUnlocked and not pa.perfectCasts then
-bhhc()
+if wf.autoUnlocked and not wf.perfectCasts then
+xxfo()
 end
 end)
 end
 
-local rzx = false
+local lqz = false
 
-local function mdm()
-if pa.tpToBay or pa.deepZone then
-if pa.autoFishWanted then
+local function oc()
+if wf.tpToBay or wf.deepZone then
+if wf.autoFishWanted then
 
-pa.autoFishWanted = false
+wf.autoFishWanted = false
 
 pcall(function()
-ari:UpdateState(true)
+ld:UpdateState(true)
 end)
 
-if not pa.enabled then
-hxj(true)
+if not wf.enabled then
+oxse(true)
 end
 end
 
 return true
 end
 
-if pa.enabled then
+if wf.enabled then
 
-pa.autoFishWanted = true
+wf.autoFishWanted = true
 
-hxj(false)
+oxse(false)
 
-if not rzx then
-qza:Dialog({
-Title = _d("LUEBWkIhGR9cVVoEAQ"),
-Description = _d("JUBVWwcCFB8UFBURFx8YFAFaQgEZH1xVVBZHXUxAAEcMRx8CFCFlQhMfTHYUTEIIAkxVVXEHAgBMYxRBBxUDTEcCXBYEGEI"),
+if not lqz then
+zcwe:Dialog({
+Title = _d("OUNDBVY2UQteFwUQFg"),
+Description = _d("MUIXBBMVXAsWVkoFAFcMFkMFVhZRC14XCwJQFVhCQhgYUFcWFmM6VgRXWHRWE1YfSlhXFy4TFUhYYVYeEwJLWEVAAwITUFY"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6403,22 +6410,22 @@ end
 return false
 end
 
-ari = gfy:Toggle({
-Name = _d("LUEBWkIhGR9c"),
+ld = fn:Toggle({
+Name = _d("OUNDBVY2UQte"),
 Default = false,
-Callback = function(ukw)
-if ukw and gmj then
+Callback = function(cvb)
+if cvb and nazm then
 pcall(function()
-ari:UpdateState(false)
+ld:UpdateState(false)
 end)
 
-if not rzx then
-qza:Dialog({
-Title = _d("LUEBWkIhGR9cVVwRRwANRh5QBg"),
-Description = _d("LUEBWkIjGQsUHVQRRwQEUVVGCggGCVhVXAxHGA1aERtCMwUeWlV0FxMfTHAcUkIIFgoUFFsGRzEZQBoVJA4DBBQGQQMVBB8UG1oQChEAWAwb"),
+if not lqz then
+zcwe:Dialog({
+Title = _d("OUNDBVY2UQteFwMFUEgZRFwPEg"),
+Description = _d("OUNDBVY0UR8WXwsFUEwQUxcZHh9OHVoXAxhQUBlYU0RWJE0KWBcrAwRXWHJeDVYfXh4WVgQSUHkNQlhKMBlLEBZEHhcCTAsWWQUEHVkUWk5E"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6427,21 +6434,21 @@ end
 return
 end
 
-if ukw and not (pa.tpToBay or pa.deepZone) then
+if cvb and not (wf.tpToBay or wf.deepZone) then
 
 pcall(function()
-ari:UpdateState(false)
+ld:UpdateState(false)
 end)
 
-pa.autoFishWanted = true
+wf.autoFishWanted = true
 
-if not rzx then
-qza:Dialog({
-Title = _d("LUEBWkIhGR9cVVsHAhQfFBQVERcfGA"),
-Description = _d("OEEHW0IIHkxgJRUWCFAuVQwVDRVQDRQxUAcXUDtVAVAQFFAfQxxBAQ9QCl0HRhZHXUx1AEENRzYFRx0VERMRHkAGFQAeUAVABlAOAVANR1VGDQgeTFUGFQ0JFUxbExUWDxUBFBxGQggeQg"),
+if not lqz then
+zcwe:Dialog({
+Title = _d("OUNDBVY2UQteFwQTFVwLFlZKBQBXDA"),
+Description = _d("LENFBFYfVlhiZ0oCHxg6V05KGQIYGRZzDxMAGC9XQw8EAxgLQV4eFRgYHl9FGQJQFVh3Qh4ZUH4RRV9KBQRZCkJEShQJGBFCRA8aFhgZRRcZGR9WWFdEShkeXVhZUUoCGF0VFl4ZVh9WVg"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6450,111 +6457,111 @@ end
 return
 end
 
-pa.autoFishWanted = false
+wf.autoFishWanted = false
 
-hxj(ukw)
+oxse(cvb)
 end,
-}, _d("DUEBWj0BGR9c"))
+}, _d("GUNDBSkWUQte"))
 
-pa.autoFishToggle = ari
+wf.autoFishToggle = ld
 
-gfy:Toggle({
-Name = _d("PFEHUwcEBExXFEYWFFBETEcVDhITBx0"),
+fn:Toggle({
+Name = _d("KFNFDBMTTFhVVhkCAxhQTgVKGgVbEx8"),
 Default = true,
-Callback = function(unc)
-pa.perfectCasts = unc
+Callback = function(hyt)
+wf.perfectCasts = hyt
 
-if unc and pa.usingGameAuto then
-zkx()
+if hyt and wf.usingGameAuto then
+vekc()
 end
 end,
-}, _d("HFEHUwcEBDNXFEYWFC8UBipZFwQb"))
+}, _d("CFNFDBMTTCdVVhkCA2cABGgGAxNT"))
 
-gfy:Toggle({
-Name = _d("OGRVQQ1HMg1N"),
+fn:Toggle({
+Name = _d("LGYXHhlQehlP"),
 Default = false,
-Callback = function(gw)
-pa.tpToBay = gw
+Callback = function(aheh)
+wf.tpToBay = aheh
 
-mdm()
+oc()
 end,
-}, _d("GEQqQQ04Eg1N"))
+}, _d("DEZoHhkvWhlP"))
 
-local oqga
-local jnyk
+local mt
+local ncxr
 
-oqga = gfy:Toggle({
-Name = _d("OFEZUBIIAhgUAVpCIxUJRBBGFkcnDUAQRw"),
+mt = fn:Toggle({
+Name = _d("LFNbDwYfSgwWQwVWNF0dRlIZAlBvGUJSGA"),
 Default = false,
-Callback = function(fee)
-if fee then
+Callback = function(jgrh)
+if jgrh then
 
-pa.deepWalk = false
-pa.deepDiveAt = 0
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
+wf.deepWalk = false
+wf.deepDiveAt = 0
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
 
 pcall(function()
-jnyk:UpdateState(false)
+ncxr:UpdateState(false)
 end)
 
-pa.deepZone = true
+wf.deepZone = true
 
 task.spawn(function()
-if not jucv.settle() and pa.deepZone and not pa.deepWalk then
-qza:Notify({
-Title = _d("OFEZUBIIAhgUAVpCIxUJRBBGFkcnDUAQRw"),
-Description = _d("OFwQFQYCFRwZAlQWAgJMWRRFQgkVGlEHFQ4IEQhRERtCMwUeWlVBCgJQH0McQQEPUANSExUDCRRMWxsVAwARBVpVQQ1HAglAB0xM"),
+if not arc.settle() and wf.deepZone and not wf.deepWalk then
+zcwe:Notify({
+Title = _d("LFNbDwYfSgwWQwVWNF0dRlIZAlBvGUJSGA"),
+Description = _d("LF5SShIVXQgbQAsCFUpYW1YaVh5dDlNFShofWRxTU0RWJE0KWBceHhUYC0FeHhUYGBdQUUoXHlxYWVlKFxdZEVgXHhlQSh1CRRNY"),
 Lifetime = 8,
 })
 end
 end)
 
-mdm()
+oc()
 
 return
 end
 
-if pa.deepWalk then
+if wf.deepWalk then
 return
 end
 
-pa.deepZone = false
-pa.deepDiveAt = 0
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
+wf.deepZone = false
+wf.deepDiveAt = 0
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
 
 task.spawn(function()
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 end)
 
-mdm()
+oc()
 end,
-}, _d("CFEQRT0QERhRB2oAAgMYaxlAAQw"))
+}, _d("HFNSGikHWQxTRTUUFUsMaVsfFRs"))
 
-jnyk = gfy:Toggle({
-Name = _d("O1UZXkITH0xwEFASAgMYFCJUFgIC"),
+ncxr = fn:Toggle({
+Name = _d("L1dbAVYEV1hyUg8GFUsMFmALAhVK"),
 Default = false,
-Callback = function(kbrl)
-if kbrl then
+Callback = function(bmvt)
+if bmvt then
 
-local yeo = jucv.customIsland or jucv.islandOf(jucv.spot())
+local uig = arc.customIsland or arc.islandOf(arc.spot())
 
-if pa.islandLocked and yeo == _d("DVYUWwYIHglQKlwRCxECUA") then
-pa.deepWalk = false
+if wf.islandLocked and uig == _d("GVRWBBIfVh1SaAMFHFkWUg") then
+wf.deepWalk = false
 
 pcall(function()
-jnyk:UpdateState(false)
+ncxr:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("O1UZXkITH0xwEFASAgMYFCJUFgICTFoQUAYUUBhcEBUjBRECUBpbBwNQJUcZVAwD"),
-Description = _d("OFwQFQsUHA1aERULFFAAWxZeBwNQA1pVQQoOA0xVFlYNEh4YGlV6DAJQHlEXXBATGExbBVAMFFAFQFUYQhIeGF0ZFRYPFQIUAV0HRxcNWRAVCgYDTFoaFRYCHAlEGkcWRwQEUQdQQhMfTEAUXgdJ"),
+zcwe:Dialog({
+Title = _d("L1dbAVYEV1hyUg8GFUsMFmALAhVKWFhSDxIDGAxeUko3ElkWUlgEExQYMUVbCxgU"),
+Description = _d("LF5SSh8DVBlYU0ofAxgUWVQBExQYF1gXHh4ZS1hXVAkZBVYMGBclGBUYClNVAwQEUFhZRw8YAxgRQhdHVgVWDF9bSgIYXRYWQwITUF8ZW1JKHhFLWFhYSgIVVB1GWBgCUEwQU0UPVgRXWEJWARNe"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6562,139 +6569,139 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-pa.deepWalk = true
-pa.deepDiveAt = 0
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
+wf.deepWalk = true
+wf.deepDiveAt = 0
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
 
 pcall(function()
-oqga:UpdateState(false)
+mt:UpdateState(false)
 end)
 
-pa.deepZone = true
+wf.deepZone = true
 
 task.spawn(function()
-jucv.walk()
+arc.walk()
 end)
 
-mdm()
+oc()
 
 return
 end
 
-if not pa.deepWalk then
+if not wf.deepWalk then
 return
 end
 
-pa.deepWalk = false
-pa.deepZone = false
-pa.deepDiveAt = 0
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
+wf.deepWalk = false
+wf.deepZone = false
+wf.deepDiveAt = 0
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
 
 task.spawn(function()
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 end)
 
-mdm()
+oc()
 end,
-}, _d("G1UZXj0DFQlEKkIDExUe"))
+}, _d("D1dbASkUXR1GaB0XBF0K"))
 
-gfy:Paragraph({
-Header = _d("KFEQRQcUBExjFEEHFQ"),
-Body = _d("LlsBXUIUBwVAFl0HFFAAVRtRQggeTEAdUEIwGQJQGFwOC1AlRxlQQgMfD19VGEITGAkUEVAHFxUfQFVHCwkXQBQiXAwDBw1GERU1BgQJRgYVT0cDAxQBQBAJGQJTVVoMAlADWlVTEAgdTFUbTBUPFR5RVVwMRwQEUVVSAwoVTFYHXAwAA0xNGkBCBREPX1VBDUcEBFUBFREXHxgafz81BhwHFBZaFAICHxQBXQdHHA1HARUREwIJQBZdQggeTFIaWhZHBwVAHRUWDxVMUxRYB0ADTFsCW0IGHgVZFEELCB5XFCFQDgIAA0YBFRISBB8UDFoXRwQEUQdQQhAZGFwaQBZHBARRVUIDCxtCFCFaQg8fAFBVVEIDGQpSEEcHCQRMRwVaFkcZAkcBUAMDXExGAFtCJjMubDFQBxcnDUAQR0wEERxAAEcHT1lMXRsVFg8VTFcaWxEIHAkUAl0LCxVMRwFUDAMZAlNVWgxHGRga"),
+fn:Paragraph({
+Header = _d("PFNSGhMDTFhhVh4TAg"),
+Body = _d("OllDAlYDTxFCVAITAxgUV1kOVh9WWEJfD1YnURZSWgMaHBgxRVsPVhRXG10XR1YEUB0WUw8TAF0LQhcYHx5fVBZgAxgUTxlEU0ohEUwdRERKW1BLFxZDHwQeURZRFwUYFRgXWBcMBB9VWFdZEwEYXQpTFwMYUEwQUxcNFx1dWFRFAxgXS1hPWB9WElkbXRceGVBMEFdDSgUAVwwYPWAhEVQTFlQFABVKCxZDAhNQVBlFQ0oFBEodQlQCVh9WWFBYBQJQTxFCX0oCGF1YUVYHE1dLWFlABFYRVhFbVh4fH1ZDFmMPGhVIF0RDSgYFTAsWTgUDUEwQU0UPVgdRDF5YHwJQTBBTFx0XHFNWFmMFVhhXFFIXC1YUUR5QUhgTHkxYRUcFAlBRFkVDDxcUFFhEQgRWMXs6bnMPEwBvGUJSGFgTWQhCQhgTWBFYX1lKAhhdWFVYBAUfVB0WQAIfHF1YRUMLGBRRFlEXBRhQUQwY"),
 })
 
-local gfg
+local hrv
 
-gfg = gfy:Paragraph({
-Header = _d("Kl0GXQsJF0xHAVQWAg"),
-Body = dr(),
+hrv = fn:Paragraph({
+Header = _d("Pl9EAh8eX1hFQwsCFQ"),
+Body = quz(),
 })
 
-local khf = dco:Section({
-Side = _d("IFETQQ"),
+local qj = ha:Section({
+Side = _d("NFNRHg"),
 })
 
-khf:Header({
-Name = _d("LUEBWkIvEQBYGkIHAh5MYBpCBxWA87r2xf3B9w"),
+qj:Header({
+Name = _d("OUNDBVY4WRRaWB0TFVZYYlgdEwLI57i0munWvw"),
 })
 
-pwc.runToggle = khf:Toggle({
-Name = _d("LUEBWkIvEQBYGkIHAh5MYBpCBxU"),
+rtjv.runToggle = qj:Toggle({
+Name = _d("OUNDBVY4WRRaWB0TFVZYYlgdEwI"),
 Default = false,
-Callback = function(zzzt)
-pwc.run.enabled = zzzt
-pwc.run.pending = false
-pwc.run.pendingUntil = 0
+Callback = function(cdjc)
+rtjv.run.enabled = cdjc
+rtjv.run.pending = false
+rtjv.run.pendingUntil = 0
 
-if zzzt then
-pwc.requestProgress()
+if cdjc then
+rtjv.requestProgress()
 end
 end,
-}, _d("DUEBWj0PEQBYGkIHAh4zQBpCBxU"))
+}, _d("GUNDBSkYWRRaWB0TFVYnQlgdEwI"))
 
-pwc.run.team = math.clamp(math.floor(tonumber(rcj.bossTeams.towerPicked.halloween) or 1), 1, 4)
-pwc.run.teamChosen = tonumber(rcj.bossTeams.towerPicked.halloween) ~= nil
-pwc.run.building = true
+rtjv.run.team = math.clamp(math.floor(tonumber(npj.bossTeams.towerPicked.halloween) or 1), 1, 4)
+rtjv.run.teamChosen = tonumber(npj.bossTeams.towerPicked.halloween) ~= nil
+rtjv.run.building = true
 
-pwc.run.teamDropdown = khf:Dropdown({
-Name = _d("OFEUWA"),
+rtjv.run.teamDropdown = qj:Dropdown({
+Name = _d("LFNWBw"),
 Search = false,
 Multi = false,
 Required = false,
-Default = pwc.run.team,
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(qirv)
-local qw = type(qirv) == _d("GFUXWQc") and qirv[1] or qirv
-local xrno = type(qw) == _d("H0AHXAwA") and tonumber(qw:match(_d("RBERHks"))) or nil
+Default = rtjv.run.team,
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(hfbj)
+local xy = type(hfbj) == _d("DFdVBhM") and hfbj[1] or hfbj
+local mz = type(xy) == _d("C0JFAxgX") and tonumber(xy:match(_d("UBNTQV8"))) or nil
 
-if not xrno then
+if not mz then
 return
 end
 
-pwc.run.team = xrno
+rtjv.run.team = mz
 
-if pwc.run.building then
+if rtjv.run.building then
 return
 end
 
-pwc.run.teamChosen = true
-rcj.bossTeams.towerPicked.halloween = xrno
-rcj.bossTeams.save()
+rtjv.run.teamChosen = true
+npj.bossTeams.towerPicked.halloween = mz
+npj.bossTeams.save()
 
 pcall(function()
-pwc.run.teamDropdown:UpdateName(_d("OFEUWEKF8M4U") .. (qw or (_d("OFEUWEI") .. tostring(xrno))))
+rtjv.run.teamDropdown:UpdateName(_d("LFNWB1aSuNoW") .. (xy or (_d("LFNWB1Y") .. tostring(mz))))
 end)
 end,
-}, _d("GFEUWD0PEQBYGkIHAh4"))
+}, _d("DFNWBykYWRRaWB0TFVY"))
 
 pcall(function()
-pwc.run.teamDropdown:UpdateSelection(_d("OFEUWEI") .. tostring(pwc.run.team))
-pwc.run.teamDropdown:UpdateName(_d("OFEUWEKF8M4UIVADClA") .. tostring(pwc.run.team))
+rtjv.run.teamDropdown:UpdateSelection(_d("LFNWB1Y") .. tostring(rtjv.run.team))
+rtjv.run.teamDropdown:UpdateName(_d("LFNWB1aSuNoWYw8XHRg") .. tostring(rtjv.run.team))
 end)
 
-pwc.run.building = false
+rtjv.run.building = false
 
-pwc.toggle = khf:Toggle({
-Name = _d("LUEBWkISAAtGFFEHFA"),
+rtjv.toggle = qj:Toggle({
+Name = _d("OUNDBVYFSB9EVg4TAw"),
 Default = false,
-Callback = function(hdx)
-if hdx and not next(pwc.upgrade.selected) then
-pwc.upgrade.enabled = false
+Callback = function(cahv)
+if cahv and not next(rtjv.upgrade.selected) then
+rtjv.upgrade.enabled = false
 
 pcall(function()
-pwc.toggle:UpdateState(false)
+rtjv.toggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkISAAtGFFEHFA"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVEhIdHF8cW0ISAAtGFFEHRxkCFAFdB0cUHlsFUQ0QHkxSHEcRE1BBFDRAFghQGUQSRwMDFR8UBkUHCRQfFAxaFxVQJlUWXkIIV0x4FFsWAgICR1VaDEcEBFEYFQMUUB9bGltCBgNMTRpAQgQRAhQUUwQIAggUGlsHSQ"),
+zcwe:Dialog({
+Title = _d("OUNDBVYFSB9EVg4TAw"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKBgVVCF1eBFYFSB9EVg4TUFEWFkMCE1BcCllHDhkHVlhQXhgFBBhVFnYfAh8YDUZQGBcUXQsWRBoTHlwLFk4FAwIYMldUAVYfH1h6VgQCFUoWRRcFGFBMEFNaShcDGAtZWARWEUtYT1gfVhNZFhZWDBAfShwWWAQTXg"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6702,170 +6709,170 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-pwc.upgrade.enabled = hdx
+rtjv.upgrade.enabled = cahv
 
-if hdx then
-pwc.request()
+if cahv then
+rtjv.request()
 end
 end,
-}, _d("DUEBWj0SAAtGFFEHFA"))
+}, _d("GUNDBSkFSB9EVg4TAw"))
 
-khf:Dropdown({
-Name = _d("PEEYRQkOHkxBBVIQBhQJRw"),
+qj:Dropdown({
+Name = _d("KENaGh0ZVlhDRw0EEVwdRQ"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = pwc.labels,
-Callback = function(rkp)
-local uxt = {}
+Options = rtjv.labels,
+Callback = function(owi)
+local nxq = {}
 
-if type(rkp) == _d("GFUXWQc") then
-for xb, ijpb in ipairs(pwc.upgrades) do
-if rkp[ijpb.name] then
-uxt[ijpb.id] = true
+if type(owi) == _d("DFdVBhM") then
+for gvf, lbp in ipairs(rtjv.upgrades) do
+if owi[lbp.name] then
+nxq[lbp.id] = true
 end
 end
 end
 
-pwc.upgrade.selected = uxt
+rtjv.upgrade.selected = nxq
 
-if not next(uxt) and pwc.upgrade.enabled then
-pwc.upgrade.enabled = false
+if not next(nxq) and rtjv.upgrade.enabled then
+rtjv.upgrade.enabled = false
 
 pcall(function()
-pwc.toggle:UpdateState(false)
+rtjv.toggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkISAAtGFFEHFFADUhM"),
-Description = _d("IlsBXQsJF0xdBhURAhwJVwFQBkceA0NZFREIUBhcEEcHRxkfFBtaFg8ZAlNVWQcBBExAGhUAEglCFCVcAQxQDVpVQBIAAg1QEBUDCRRMQABHDEcZGBQXVAEMUANaWw"),
+zcwe:Dialog({
+Title = _d("OUNDBVYFSB9EVg4TAxgXUFE"),
+Description = _d("NllDAh8eX1hfREoFFVQdVUMPElBWF0EbSgUfGAxeUhgTUFELFlkFAhhRFlEXBhMWTFhCWEoUBUFWFmcDFRsYGVgXHwYXShlSUkoXHlxYQkIYGFBRDBZVCxUbGBdYGQ"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
 end
 end,
-}, _d("HEEYRQkOHjNBBVIQBhQJRw"))
+}, _d("CENaGh0ZVidDRw0EEVwdRQ"))
 
-pwc.paragraph = khf:Paragraph({
-Header = _d("PEEYRQkOHh8"),
-Body = pwc.text(),
+rtjv.paragraph = qj:Paragraph({
+Header = _d("KENaGh0ZVgs"),
+Body = rtjv.text(),
 })
 
-local yrj = dco:Section({
-Side = _d("IFETQQ"),
+local ui = ha:Section({
+Side = _d("NFNRHg"),
 })
 
-yrj:Header({
-Name = _d("JFUZWQ0QFQlaVUYKCACcq/qfkvji7A"),
+ui:Header({
+Name = _d("MFdbBhkHXR1YFxkeH0iIqbjAhu+q+A"),
 })
 
-yrj:Toggle({
-Name = _d("LUEBWkIlBRU"),
+ui:Toggle({
+Name = _d("OUNDBVYyTQE"),
 Default = false,
-Callback = function(kdh)
-llqc.enabled = kdh
-llqc.pending = nil
+Callback = function(fcif)
+eday.enabled = fcif
+eday.pending = nil
 
-if kdh then
-bo.RequestItemSync:FireServer()
+if fcif then
+xl.RequestItemSync:FireServer()
 task.spawn(function()
-pwc.open(true)
+rtjv.open(true)
 end)
 end
 end,
-}, _d("DUEBWj0FBRU"))
+}, _d("GUNDBSkSTQE"))
 
-yrj:Button({
-Name = _d("I0QQW0IUGANE"),
+ui:Button({
+Name = _d("N0ZSBFYDUBdG"),
 Callback = function()
 task.spawn(function()
-local qgg = pwc.open(true)
+local nanh = rtjv.open(true)
 
-qza:Notify({
-Title = _d("JFUZWQ0QFQlaVUYKCAA"),
-Description = qgg and _d("L1sAWxYCAkxbBVAMR11MUBRcDh5QH0AaVglHAglVERUEFR8BFAFdB0cDCUYDUBBJ") or tostring(pwc.trip.lastResult),
+zcwe:Notify({
+Title = _d("MFdbBhkHXR1YFxkeH0g"),
+Description = nanh and _d("O1lCBAIVSlhZRw8YUBVYUlYDGgkYC0JYCR1QSh1XU0oQAlcVFkMCE1BLHURBDwRe") or tostring(rtjv.trip.lastResult),
 Lifetime = 6,
 })
 
-if qadj then
+if fsgi then
 pcall(function()
-qadj:UpdateBody(levp())
+fsgi:UpdateBody(vmqw())
 end)
 end
 end)
 end,
 })
 
-yrj:Dropdown({
-Name = _d("JUAQWBE"),
+ui:Dropdown({
+Name = _d("MUJSBwU"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = pwc.shopLabels,
-Callback = function(twt)
-local szpf = {}
+Options = rtjv.shopLabels,
+Callback = function(ba)
+local hs = {}
 
-if type(twt) == _d("GFUXWQc") then
-for mx, eblj in ipairs(pwc.shopItems) do
-if twt[eblj.label] then
-szpf[eblj.id] = true
+if type(ba) == _d("DFdVBhM") then
+for qcn, weej in ipairs(rtjv.shopItems) do
+if ba[weej.label] then
+hs[weej.id] = true
 end
 end
 end
 
-llqc.selected = szpf
+eday.selected = hs
 end,
-}, _d("BUAQWBE"))
+}, _d("EUJSBwU"))
 
-qadj = yrj:Paragraph({
-Header = _d("P0AaVglHVkxGEEYHEw"),
-Body = levp(),
+fsgi = ui:Paragraph({
+Header = _d("K0JYCR1QHlhEUhkTBA"),
+Body = vmqw(),
 })
 
-local mbz = dco:Section({
-Side = _d("Pl0SXRY"),
+local eof = ha:Section({
+Side = _d("Kl9QAgI"),
 })
 
-mbz:Paragraph({
-Header = _d("P1EURg0JEQAUEEMHCQQf"),
-Body = _d("JFUZWQ0QFQlaVVwRRxwFQhAPQhMYCRQGXQ0XUA1aERUWDxVMYBpCBxVQDlsBXUIQHx5fWz9oJgUYW1V9AwscA0MQUAxHJANDEEdCFAQNRgFGQh4fGUZVUQcCAAlHARUXCRwDVx5QBkcCA1sYG0IkHAlVB1wMAFAfQBRSBxRQHFUMRkItEQ9fVVpFRzwNWgFQEAkDQBQUWwZHMRlAGhUXFxceVRFQEUcDHFEbURFHBARRGBUNCVAcUQdYAwkVAkBVQQ0QFR4UF0AEAQNC"),
+eof:Paragraph({
+Header = _d("K1NWGRkeWRQWUhwTHkwL"),
+Body = _d("MFdbBhkHXR1YFwMFUFQRQFJQVgRQHRZEAhkAGBlYU0oCGF1YYlgdEwIYGllDAlYHVwpdGWB8MU0MWRciFxxUF0FSDxhQbBdBUhhWA0wZREMZVglXDUQXDhMVSB1FQ0oDHlQXVVwPElBKF1laRFYzVB1XRQMYFxgLQlYNEwMYCFdOGVY6WRtdFwVRUHQZWEMPBB5LVBZWBBJQeQ1CWEoDAF8KV1MPBVBLCFNZDgVQTBBTWkoZHhgIU0UHFx5dFkIXHhkHXQoWVR8QFktW"),
 })
 
-btd.worldBoss.section = dco:Section({
-Side = _d("Pl0SXRY"),
+yvcz.worldBoss.section = ha:Section({
+Side = _d("Kl9QAgI"),
 })
 
-btd.worldBoss.section:Header({
-Name = _d("LUEBWkIgHANWFFlCJR8fRw"),
+yvcz.worldBoss.section:Header({
+Name = _d("OUNDBVY3VBdUVgZWMlcLRQ"),
 })
 
-btd.worldBoss.section:Paragraph({
-Header = _d("PEYcWhAOBBU"),
-Body = _d("PlUbXhFHBwVAHRUWDxVMRhRcBhRKTEAdUEITHxtRBxURExECUAYVBggHAhQTWhBHGRgYVVQMA1AtQQFaQikgLxQaQBYVEQJfBhULE15mPiFdB0cWBVMdQUITEQdRBhUDRwMAWwEZQhQfTF0BFQEIBQJABhUDFFANWlV7MiRQDlUBQQ4CUBhcEEcHSQ"),
+yvcz.worldBoss.section:Paragraph({
+Header = _d("KEReBQQZTAE"),
+Body = _d("KldZAQVQTxFCX0oCGF1YRFYDEgMCWEJfD1YEVw9TRUoFBFkWUkRKEh9PFhZRBQRQUQwaFwsYFBg5Q0MFVj5oOxZYHwICWRZdREofBBZyPGMCE1BeEVFfHlYEWRNTREoXUEsUWUNGVgNXWF9DShUfTRZCREoXAxgZWBckJjMYGldDHhoVGAxeUhgTXg"),
 })
 
-btd.worldBoss.toggle = btd.worldBoss.section:Toggle({
-Name = _d("LUEBWkIgHANWFFlCJR8fRw"),
+yvcz.worldBoss.toggle = yvcz.worldBoss.section:Toggle({
+Name = _d("OUNDBVY3VBdUVgZWMlcLRQ"),
 Default = false,
-Callback = function(ekw)
-if ekw and not btd.worldBoss.teamChosen then
-btd.worldBoss.enabled = false
+Callback = function(jlwa)
+if jlwa and not yvcz.worldBoss.teamChosen then
+yvcz.worldBoss.enabled = false
 
 pcall(function()
-btd.worldBoss.toggle:UpdateState(false)
+yvcz.worldBoss.toggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkIgHANWFFlCJR8fR1VbBwIUHxQUFRYCEQE"),
-Description = _d("PF0WXkITGAkUAVADClAFQFVGCggFAFBVUwsAGBgUAlwWD1AFWlVBCgJQOFEUWEIDAgNEEVoVCVAKXQdGFklQOFwQFREEAgVEARUKBgNMQBoVERAZGFcdFRYPERgUBlkNE1cfFAFQAwpQDlETWhACUBhcEBUEDhcEQFVGFgYCGEdZFQMJFExgEFQPR0FMXQYVDQkcFRQBXQdHFAlSFEAOE1BBFBxBQg4DTFoaQUIGUA9cGlwBAlAZWgFcDkcJA0FVWAMMFUxdARs"),
+zcwe:Dialog({
+Title = _d("OUNDBVY3VBdUVgZWMlcLRRcEExVcCxZWSgIVWRU"),
+Description = _d("KF9UAVYEUB0WQw8XHRgRQhcZHh9NFFIXDB8XUAwWQAMCGBgRWBceHhUYLFNWB1YUShdGUwUBHhgeX0UZAl4YLF5SSgUTShFGQ0oeEUtYQlhKBQdRDFVfSgIYWQwWRAYZBB8LFkMPFx0YGlNRBQQVGAxeUkoQGV8QQhcZAhFKDEUbShceXFhiUgsbUAlYX0RKGR5UARZDAhNQXB1QVh8aBBhVFl4eVhlLWFhYHlYRGBteWAMVFRgNWEMDGlBBF0MXBxcbXVhfQ0Q"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6873,23 +6880,23 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-if ekw then
-local fptw = btd.worldBoss.team
-local tuo = rcj.bossTeams.teamCards(fptw)
+if jlwa then
+local yvgk = yvcz.worldBoss.team
+local dng = npj.bossTeams.teamCards(yvgk)
 
-if tuo == 0 then
-btd.worldBoss.enabled = false
+if dng == 0 then
+yvcz.worldBoss.enabled = false
 
 pcall(function()
-btd.worldBoss.toggle:UpdateState(false)
+yvcz.worldBoss.toggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("OFEUWEI") .. tostring(fptw) .. _d("TFwURkIJH0xXFEcGFA"),
-Description = _d("PEEBFQMTUABRFEYWRx8CUVVWAxUUTF0bFTYCEQEU") .. tostring(fptw) .. _d("TBwxUAEMA0UYVVoQRwAFVx4VA0cECVUYFRYPERgUFFkQAhEITVVdAxRQD1UHURFHGQIUAV0HRyQJVRgVBhUfHFAaQgxLUBhcEFtCEwUeWlV0FxMfTHMZWgAGHEx2GkYRRxINVx4VDQle"),
+zcwe:Dialog({
+Title = _d("LFNWB1Y") .. tostring(yvgk) .. _d("WF5WGVYeV1hVVhgSAw"),
+Description = _d("KENDShcEGBRTVhkCUFcWUxcJFwJcWF9ZSiIVWRUW") .. tostring(yvgk) .. _d("WB5zDxUbS1EaFwUEUEgRVVxKF1BMHVdaSgIYWQwWVgYEFVkcTxcCFwMYG1dFDgVQURYWQwITUGwdV1pKEgJXCFJYHRhcGAxeUgRWBE0KWBcrAwRXWHFbBRQRVFh0WBkFUFoZVVxKGR4W"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -6898,125 +6905,125 @@ return
 end
 end
 
-btd.worldBoss.enabled = ekw
-btd.worldBoss.holdUntil = 0
+yvcz.worldBoss.enabled = jlwa
+yvcz.worldBoss.holdUntil = 0
 
-btd.worldBoss.nextFightAt = 0
+yvcz.worldBoss.nextFightAt = 0
 
-if not ekw then
-btd.worldBoss.setRepeat(false)
+if not jlwa then
+yvcz.worldBoss.setRepeat(false)
 end
 
-if ekw then
+if jlwa then
 
-btd.worldBoss.syncedAt = 0
-btd.worldBoss.askedAt = 0
-btd.worldBoss.chainWaitAt = nil
-btd.worldBoss.repeatSeeded = false
-btd.worldBoss.seenKills = nil
-btd.worldBoss.progressAt = os.clock()
-btd.worldBoss.kickAt = 0
+yvcz.worldBoss.syncedAt = 0
+yvcz.worldBoss.askedAt = 0
+yvcz.worldBoss.chainWaitAt = nil
+yvcz.worldBoss.repeatSeeded = false
+yvcz.worldBoss.seenKills = nil
+yvcz.worldBoss.progressAt = os.clock()
+yvcz.worldBoss.kickAt = 0
 end
 end,
-}, _d("DUEBWj0AHANWFFk9BR8fRw"))
+}, _d("GUNDBSkXVBdUVgYpElcLRQ"))
 
-btd.worldBoss.claimToggle = btd.worldBoss.section:Toggle({
-Name = _d("LUEBWkIEHA1dGBUQAgcNRhFG"),
+yvcz.worldBoss.claimToggle = yvcz.worldBoss.section:Toggle({
+Name = _d("OUNDBVYTVBlfWkoEFU8ZRFMZ"),
 Default = false,
-Callback = function(qckv)
-btd.worldBoss.autoClaim = qckv
-btd.worldBoss.claimAt = 0
+Callback = function(mkp)
+yvcz.worldBoss.autoClaim = mkp
+yvcz.worldBoss.claimAt = 0
 
-if qckv then
-btd.worldBoss.syncedAt = 0
-btd.worldBoss.askedAt = 0
-btd.worldBoss.chainWaitAt = nil
+if mkp then
+yvcz.worldBoss.syncedAt = 0
+yvcz.worldBoss.askedAt = 0
+yvcz.worldBoss.chainWaitAt = nil
 end
 end,
-}, _d("DUEBWj0EHA1dGGoQAgcNRhFG"))
+}, _d("GUNDBSkTVBlfWjUEFU8ZRFMZ"))
 
-btd.worldBoss.fullToggle = btd.worldBoss.section:Toggle({
-Name = _d("P0AaRUIQGAlaVUEKAlAOVQcVBA4cAEc"),
+yvcz.worldBoss.fullToggle = yvcz.worldBoss.section:Toggle({
+Name = _d("K0JYGlYHUB1YFx4eFRgaV0VKEBlUFEU"),
 Default = false,
-Callback = function(mes)
-btd.worldBoss.stopAtFull = mes
-btd.worldBoss.meterAt = 0
+Callback = function(uyj)
+yvcz.worldBoss.stopAtFull = uyj
+yvcz.worldBoss.meterAt = 0
 end,
-}, _d("G1YqRhYIADNVAWoEEhwA"))
+}, _d("D1RoGQIfSCdXQzUQBVQU"))
 
-btd.worldBoss.walkToggle = btd.worldBoss.section:Toggle({
-Name = _d("O1UZXkITH0xTGVoABhxMVhpGEQ"),
+yvcz.worldBoss.walkToggle = yvcz.worldBoss.section:Toggle({
+Name = _d("L1dbAVYEV1hRWwUUEVRYVFgZBQ"),
 Default = false,
-Callback = function(ylc)
-btd.worldBoss.walkToBoss = ylc
+Callback = function(zijc)
+yvcz.worldBoss.walkToBoss = zijc
 
-btd.worldBoss.travelUntil = 0
+yvcz.worldBoss.travelUntil = 0
 end,
-}, _d("G1YqQgMLGzNAGmoACAMf"))
+}, _d("D1RoHRccUydCWDUUH0sL"))
 
-btd.worldBoss.bodyParagraph = btd.worldBoss.section:Paragraph({
-Header = _d("LlsGRg"),
-Body = btd.worldBoss.bodyText(),
+yvcz.worldBoss.bodyParagraph = yvcz.worldBoss.section:Paragraph({
+Header = _d("OllEGQ"),
+Body = yvcz.worldBoss.bodyText(),
 })
 
-btd.worldBoss.section:Header({
-Name = _d("LlsGRkIUGANEVcX96e+DjPo"),
+yvcz.worldBoss.section:Header({
+Name = _d("OllEGVYDUBdGF5rp/qeXjrg"),
 })
 
-btd.worldBoss.shopParagraph = btd.worldBoss.section:Paragraph({
-Header = _d("JVpVRhYIEwc"),
-Body = btd.worldBoss.shopText(),
+yvcz.worldBoss.shopParagraph = yvcz.worldBoss.section:Paragraph({
+Header = _d("MVgXGQIfWxM"),
+Body = yvcz.worldBoss.shopText(),
 })
 
-btd.worldBoss.itemsDropdown = btd.worldBoss.section:Dropdown({
-Name = _d("JUAQWBE"),
+yvcz.worldBoss.itemsDropdown = yvcz.worldBoss.section:Dropdown({
+Name = _d("MUJSBwU"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = btd.worldBoss.shopOptions(),
-Callback = function(oes)
-local oyr = {}
+Options = yvcz.worldBoss.shopOptions(),
+Callback = function(noq)
+local cexu = {}
 
-if type(oes) == _d("GFUXWQc") then
-for cwmo, pqiz in pairs(oes) do
-local jql = btd.worldBoss.labelToId[cwmo]
+if type(noq) == _d("DFdVBhM") then
+for jcx, raw in pairs(noq) do
+local rnw = yvcz.worldBoss.labelToId[jcx]
 
-if pqiz and jql then
-oyr[jql] = true
+if raw and rnw then
+cexu[rnw] = true
 end
 end
 end
 
-btd.worldBoss.selected = oyr
+yvcz.worldBoss.selected = cexu
 
-if not next(oyr) and btd.worldBoss.autoBuy then
-btd.worldBoss.autoBuy = false
+if not next(cexu) and yvcz.worldBoss.autoBuy then
+yvcz.worldBoss.autoBuy = false
 
 pcall(function()
-btd.worldBoss.shopToggle:UpdateState(false)
+yvcz.worldBoss.shopToggle:UpdateState(false)
 end)
 end
 end,
-}, _d("BUAQWBE4Qg"))
+}, _d("EUJSBwUvCg"))
 
-btd.worldBoss.shopToggle = btd.worldBoss.section:Toggle({
-Name = _d("LUEBWkIFBRU"),
+yvcz.worldBoss.shopToggle = yvcz.worldBoss.section:Toggle({
+Name = _d("OUNDBVYSTQE"),
 Default = false,
-Callback = function(xan)
-if xan and not next(btd.worldBoss.selected) then
-btd.worldBoss.autoBuy = false
+Callback = function(agpn)
+if agpn and not next(yvcz.worldBoss.selected) then
+yvcz.worldBoss.autoBuy = false
 
 pcall(function()
-btd.worldBoss.shopToggle:UpdateState(false)
+yvcz.worldBoss.shopToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkIFBRU"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVCxMVARQcW0IuBAlZBhUEDgIfQFUYQiYFGFtVVxceUB9EEFsGFFA+UREVMA4SDlsbFS8CFA1YBhUNCVAbXBRBBxEVHhQcQUIEEQIUFFMECAIIFBNHDQpQGFwUQUILGR9AWw"),
+zcwe:Dialog({
+Title = _d("OUNDBVYSTQE"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKHwRdFRZeBFY5TB1bREoQGUoLQhdHVjFNDFkXCAMJGAtGUgQSAxgqU1NKJBlaGllZSjsVXBlaREoZHhgPXlYeEwZdChZeHlYTWRYWVgwQH0ocFlEYGR0YDF5WHlYcUQtCGQ"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -7024,20 +7031,20 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-btd.worldBoss.autoBuy = xan
+yvcz.worldBoss.autoBuy = agpn
 end,
-}, _d("DUEBWj0FBRVrRw"))
+}, _d("GUNDBSkSTQFpBQ"))
 
-btd.worldBoss.section:Button({
-Name = _d("LkEMFRECHAlXAVAG"),
+yvcz.worldBoss.section:Button({
+Name = _d("OkNOSgUVVB1VQw8S"),
 Callback = function()
-if not next(btd.worldBoss.selected) then
-qza:Dialog({
-Title = _d("LkEMFRECHAlXAVAG"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVCxMVARQcW0IuBAlZBhUEDgIfQFs"),
+if not next(yvcz.worldBoss.selected) then
+zcwe:Dialog({
+Title = _d("OkNOSgUVVB1VQw8S"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKHwRdFRZeBFY5TB1bREoQGUoLQhk"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -7045,15 +7052,15 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-local rs = btd.worldBoss.buy()
+local zwbo = yvcz.worldBoss.buy()
 
-if rs == 0 then
-qza:Dialog({
-Title = _d("LkEMFRECHAlXAVAG"),
-Description = _d("IlsBXQsJF0xDFEZCBR8ZUx1BWEceAxQYUAYGHB8UAVpCFAAJWhEZQgIGCUYMFRIOEwcUHEZCCAUYFBpTQhQEA1ceGUIIAkxAHVBCBR8fR1VGCggATFwURkIJHxgUBkwMBBUIFAxQFkk"),
+if zwbo == 0 then
+zcwe:Dialog({
+Title = _d("OkNOSgUVVB1VQw8S"),
+Description = _d("NllDAh8eX1hBVhlWElcNUV8eTFBWFxZaDxIRVAsWQwVWA0gdWFNGVhVOHUROSgYZWxMWXhlWH00MFlgMVgNMF1VcRlYfSlhCXw9WElcLRRcZHh9IWF5WGVYeVwwWRBMYE10cFk4PAl4"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -7061,47 +7068,47 @@ end
 end,
 })
 
-btd.worldBoss.building = true
+yvcz.worldBoss.building = true
 
-btd.worldBoss.teamDropdown = btd.worldBoss.section:Dropdown({
-Name = _d("OFEUWA"),
+yvcz.worldBoss.teamDropdown = yvcz.worldBoss.section:Dropdown({
+Name = _d("LFNWBw"),
 Search = false,
 Multi = false,
 Required = false,
 Default = 1,
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(nut)
-if btd.worldBoss.building then
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(ve)
+if yvcz.worldBoss.building then
 return
 end
 
-local vfqu = type(nut) == _d("GFUXWQc") and nut[1] or nut
-local ora = type(vfqu) == _d("H0AHXAwA") and tonumber(vfqu:match(_d("RBERHks"))) or nil
+local htj = type(ve) == _d("DFdVBhM") and ve[1] or ve
+local ccmj = type(htj) == _d("C0JFAxgX") and tonumber(htj:match(_d("UBNTQV8"))) or nil
 
-if ora then
-btd.worldBoss.team = ora
-btd.worldBoss.teamChosen = true
-rcj.bossTeams.save()
+if ccmj then
+yvcz.worldBoss.team = ccmj
+yvcz.worldBoss.teamChosen = true
+npj.bossTeams.save()
 end
 
 pcall(function()
-btd.worldBoss.teamDropdown:UpdateName(_d("OFEUWEKF8M4U") .. (vfqu or _d("OFEUWEJW")))
+yvcz.worldBoss.teamDropdown:UpdateName(_d("LFNWB1aSuNoW") .. (htj or _d("LFNWB1ZB")))
 end)
 end,
-}, _d("GFEUWA"))
+}, _d("DFNWBw"))
 
 pcall(function()
-btd.worldBoss.teamDropdown:UpdateSelection(_d("OFEUWEI") .. tostring(btd.worldBoss.team))
-btd.worldBoss.teamDropdown:UpdateName(_d("OFEUWEKF8M4UIVADClA") .. tostring(btd.worldBoss.team))
+yvcz.worldBoss.teamDropdown:UpdateSelection(_d("LFNWB1Y") .. tostring(yvcz.worldBoss.team))
+yvcz.worldBoss.teamDropdown:UpdateName(_d("LFNWB1aSuNoWYw8XHRg") .. tostring(yvcz.worldBoss.team))
 end)
 
 task.defer(function()
-btd.worldBoss.building = false
+yvcz.worldBoss.building = false
 end)
 
-btd.misc = btd.misc or {}
+yvcz.misc = yvcz.misc or {}
 
-btd.misc.expeditions = {
+yvcz.misc.expeditions = {
 state = nil,
 
 offset = 0,
@@ -7117,7 +7124,7 @@ claimAt = 0,
 autoClose = false,
 rewardLog = {},
 rewardsShown = nil,
-rewardPath = _d("LXc3bU0CCBxREVwWDh8CR1tfEQge"),
+rewardPath = _d("OXV1MlkVQAhTUwMCGVcWRRkABR9W"),
 module = nil,
 action = nil,
 section = nil,
@@ -7127,496 +7134,496 @@ startToggle = nil,
 dropdown = nil,
 }
 
-function btd.misc.expeditions.data()
-local mfu = btd.misc.expeditions
+function yvcz.misc.expeditions.data()
+local eym = yvcz.misc.expeditions
 
-if mfu.module ~= nil then
-return mfu.module or nil
+if eym.module ~= nil then
+return eym.module or nil
 end
 
-local xit, hth = pcall(function()
-return require(kq.ModuleScripts.ExpeditionData)
+local gq, rgud = pcall(function()
+return require(ayu.ModuleScripts.ExpeditionData)
 end)
 
-mfu.module = xit and hth or false
+eym.module = gq and rgud or false
 
-return mfu.module or nil
+return eym.module or nil
 end
 
-function btd.misc.expeditions.tiers()
-local rx = btd.misc.expeditions.data()
+function yvcz.misc.expeditions.tiers()
+local odbk = yvcz.misc.expeditions.data()
 
-return rx and rx.Tiers or {}
+return odbk and odbk.Tiers or {}
 end
 
-function btd.misc.expeditions.remote()
-local fiep = btd.misc.expeditions
+function yvcz.misc.expeditions.remote()
+local ku = yvcz.misc.expeditions
 
-if fiep.action and fiep.action.Parent then
-return fiep.action
+if ku.action and ku.action.Parent then
+return ku.action
 end
 
-fiep.action = ipt(_d("KUwFUAYOBAVbG3QBExkDWg"), 3)
+ku.action = wek(_d("PU5HDxIZTBFZWSsVBFEXWA"), 3)
 
-return fiep.action
+return ku.action
 end
 
-function btd.misc.expeditions.clockText(fog)
-local lmg = btd.misc.expeditions.data()
+function yvcz.misc.expeditions.clockText(ruw)
+local qfwr = yvcz.misc.expeditions.data()
 
-if lmg and type(lmg.formatDuration) == _d("CkEbVhYOHwI") then
-return lmg.formatDuration(fog)
+if qfwr and type(qfwr.formatDuration) == _d("HkNZCQIZVxY") then
+return qfwr.formatDuration(ruw)
 end
 
-local md = math.max(0, math.floor((fog or 0) / 60))
+local irhc = math.max(0, math.floor((ruw or 0) / 60))
 
-return tostring(md) .. _d("AQ")
+return tostring(irhc) .. _d("FQ")
 end
 
-function btd.misc.expeditions.status(ix)
-local txk = btd.misc.expeditions
-local jhqt = txk.state
-local slq = type(jhqt) == _d("GFUXWQc") and type(jhqt.active) == _d("GFUXWQc") and jhqt.active[ix] or nil
+function yvcz.misc.expeditions.status(wguw)
+local fktq = yvcz.misc.expeditions
+local awjr = fktq.state
+local upmj = type(awjr) == _d("DFdVBhM") and type(awjr.active) == _d("DFdVBhM") and awjr.active[wguw] or nil
 
-if type(slq) ~= _d("GFUXWQc") then
-return _d("DUIUXA4GEgBR"), nil
+if type(upmj) ~= _d("DFdVBhM") then
+return _d("GUBWAxoRWhRT"), nil
 end
 
-local xlqg = (tonumber(slq.endsAt) or 0) - (os.time() + (txk.offset or 0))
+local dnlg = (tonumber(upmj.endsAt) or 0) - (os.time() + (fktq.offset or 0))
 
-if xlqg <= 0 then
-return _d("HlEUURs"), xlqg
+if dnlg <= 0 then
+return _d("ClNWDg8"), dnlg
 end
 
-return _d("HkEbWwsJFw"), xlqg
+return _d("CkNZBB8eXw"), dnlg
 end
 
-function btd.misc.expeditions.candidates(zpl)
-local gcw = btd.misc.expeditions
-local nml = gcw.data()
-local std = gcw.state
-local dy = nml and nml.ById and nml.ById[zpl]
-local fty = {}
+function yvcz.misc.expeditions.candidates(vlfg)
+local usyt = yvcz.misc.expeditions
+local vzpw = usyt.data()
+local aqs = usyt.state
+local etie = vzpw and vzpw.ById and vzpw.ById[vlfg]
+local iedk = {}
 
-if not (dy and type(std) == _d("GFUXWQc") and type(std.eligible) == _d("GFUXWQc")) then
-return fty
+if not (etie and type(aqs) == _d("DFdVBhM") and type(aqs.eligible) == _d("DFdVBhM")) then
+return iedk
 end
 
-for ii, tawg in ipairs(std.eligible) do
-if type(tawg) == _d("GFUXWQc") and tawg.cardId then
-local ok = tonumber(tawg.rarity) or 0
-local sh = (tonumber(tawg.count) or 0) - (tonumber(tawg.locked) or 0)
+for sgoz, gubo in ipairs(aqs.eligible) do
+if type(gubo) == _d("DFdVBhM") and gubo.cardId then
+local rfo = tonumber(gubo.rarity) or 0
+local xt = (tonumber(gubo.count) or 0) - (tonumber(gubo.locked) or 0)
 
-if ok >= (tonumber(dy.minRarity) or 0) and sh > 0 then
+if rfo >= (tonumber(etie.minRarity) or 0) and xt > 0 then
 
-table.insert(fty, { cardId = tawg.cardId, borderLevel = tawg.borderLevel, rarity = ok, count = sh })
+table.insert(iedk, { cardId = gubo.cardId, borderLevel = gubo.borderLevel, rarity = rfo, count = xt })
 end
 end
 end
 
-table.sort(fty, function(ahl, ur)
-if ahl.rarity == ur.rarity then
-return tostring(ahl.cardId) < tostring(ur.cardId)
+table.sort(iedk, function(usch, nyc)
+if usch.rarity == nyc.rarity then
+return tostring(usch.cardId) < tostring(nyc.cardId)
 end
 
-return ahl.rarity < ur.rarity
+return usch.rarity < nyc.rarity
 end)
 
-return fty
+return iedk
 end
 
-function btd.misc.expeditions.cards(utr, beaq)
-local lg = btd.misc.expeditions
-local zt = lg.data()
-local esr = zt and tonumber(zt.CardsPerExpedition) or 4
-local upg = {}
-local fgg = lg.candidates(utr)
+function yvcz.misc.expeditions.cards(yec, jdq)
+local zg = yvcz.misc.expeditions
+local zap = zg.data()
+local ueiu = zap and tonumber(zap.CardsPerExpedition) or 4
+local rfgs = {}
+local laqs = zg.candidates(yec)
 
-beaq = beaq or {}
+jdq = jdq or {}
 
-local function rcd(wob, mys)
-local uve = tostring(wob.cardId) .. _d("Tw") .. tostring(wob.borderLevel)
+local function fpk(ixa, pck)
+local dyao = tostring(ixa.cardId) .. _d("Ww") .. tostring(ixa.borderLevel)
 
-while #upg < esr and (beaq[uve] or 0) < mys do
-beaq[uve] = (beaq[uve] or 0) + 1
+while #rfgs < ueiu and (jdq[dyao] or 0) < pck do
+jdq[dyao] = (jdq[dyao] or 0) + 1
 
-table.insert(upg, { cardId = wob.cardId, borderLevel = wob.borderLevel })
+table.insert(rfgs, { cardId = ixa.cardId, borderLevel = ixa.borderLevel })
 end
 end
 
-for svua, hflh in ipairs(fgg) do
-if #upg >= esr then
+for uic, mim in ipairs(laqs) do
+if #rfgs >= ueiu then
 break
 end
 
-if hflh.count > 1 then
-rcd(hflh, hflh.count - 1)
+if mim.count > 1 then
+fpk(mim, mim.count - 1)
 end
 end
 
-if #upg < esr then
-for ha, iu in ipairs(fgg) do
-if #upg >= esr then
+if #rfgs < ueiu then
+for wink, oyz in ipairs(laqs) do
+if #rfgs >= ueiu then
 break
 end
 
-rcd(iu, iu.count)
+fpk(oyz, oyz.count)
 end
 end
 
-return upg
+return rfgs
 end
 
-function btd.misc.expeditions.available(ziqm)
-local bh = btd.misc.expeditions
-local gak = bh.data()
-local fvcq = gak and tonumber(gak.CardsPerExpedition) or 4
-local tqj = 0
+function yvcz.misc.expeditions.available(ud)
+local slcg = yvcz.misc.expeditions
+local da = slcg.data()
+local qyig = da and tonumber(da.CardsPerExpedition) or 4
+local tfjp = 0
 
-for pdpm, xveu in ipairs(bh.candidates(ziqm)) do
-tqj = tqj + xveu.count
+for kwcp, fza in ipairs(slcg.candidates(ud)) do
+tfjp = tfjp + fza.count
 
-if tqj >= fvcq then
-return fvcq
+if tfjp >= qyig then
+return qyig
 end
 end
 
-return tqj
+return tfjp
 end
 
-function btd.misc.expeditions.text()
-local ea = btd.misc.expeditions
+function yvcz.misc.expeditions.text()
+local ers = yvcz.misc.expeditions
 
-if type(ea.state) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xRDUUHAxkYXRpbEUleQg")
+if type(ers.state) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hTTxoTFFEMX1gEBV4WVg")
 end
 
-local udyl = ea.data()
-local wuf = udyl and tonumber(udyl.CardsPerExpedition) or 4
-local ygj = {}
+local lpc = ers.data()
+local qxtk = lpc and tonumber(lpc.CardsPerExpedition) or 4
+local jk = {}
 
-for fdpa, ems in ipairs(ea.tiers()) do
-local ync, whqn = ea.status(ems.id)
-local nn = tostring(ems.name)
+for tgc, au in ipairs(ers.tiers()) do
+local yka, qfcl = ers.status(au.id)
+local yu = tostring(au.name)
 
-if ea.tiersWanted[ems.id] then
-nn = _d("jrTXFQ") .. nn
+if ers.tiersWanted[au.id] then
+yu = _d("mraVSg") .. yu
 end
 
-if ync == _d("HkEbWwsJFw") then
-nn = nn .. _d("ZmYQQRcVHh8UHFtC") .. ea.clockText(whqn)
-elseif ync == _d("HlEUURs") then
-nn = nn .. _d("ZmYQVAYeUBhbVVYOBhkB")
+if yka == _d("CkNZBB8eXw") then
+yu = yu .. _d("cmRSHgMCVgsWXgRW") .. ers.clockText(qfcl)
+elseif yka == _d("ClNWDg8") then
+yu = yu .. _d("cmRSCxIJGAxZFwkaEVEV")
 else
-local oxm = ea.available(ems.id)
-nn = nn .. _d("Zg") .. tostring(oxm) .. _d("TFsTFQ") .. tostring(wuf) .. _d("TFcURwYU")
+local uij = ers.available(au.id)
+yu = yu .. _d("cg") .. tostring(uij) .. _d("WFlRSg") .. tostring(qxtk) .. _d("WFVWGBID")
 
-if oxm >= wuf then
-nn = nn .. _d("ZncUW0IUBA1GAQ")
+if uij >= qxtk then
+yu = yu .. _d("cnVWBFYDTBlEQw")
 end
 end
 
-table.insert(ygj, nn)
+table.insert(jk, yu)
 end
 
-table.insert(ygj, _d("KUIQRxtHFBlEGVwBBgQJFBxGQhQVAkBVVwcBHx5RVVRCBBEeUFVMDRJQBFsZUUIIHgkUGlNORxECUFVaDAJQD1sFTEIIFkxVVVYDFRRMXQYVCQIAGBQXVAEMUBtcEEcHRwQEUVVBCwICTFcUW0IUAA1GEBULE1BBFBQVDggeCRQWWhIeUANaGUxCAB8JR1VaFxNQG1wQW0ITGAkUAVwHFVAPVRtbDRNQDlFVUwsLHAlQVUILExgDQQEVCxNe"))
+table.insert(jk, _d("PUBSGA9QXA1GWwMVEUwdFl4ZVgNdFkIXCBMWVwpTFwtWE1kKUhcTGQUYEFlbDlYfVh0WWAxaUFkWUhcFGBUYG1lHE1YfXlhXFwkXAlxYX0RKHRVIDBZVCxUbGA9eUhgTUEwQUxceHxVKWFVWBFYDSBlEUkofBBhVFlZKGh9WHRZUBQYJGBdYWxNWF1cdRRcFAwQYD15SBFYEUB0WQwMTAhgbV1kEGQQYGlMXDB8cVB1SFx0fBFAXQ0NKHwQW"))
 
-return table.concat(ygj, _d("Zj4"))
+return table.concat(jk, _d("cjw"))
 end
 
-function btd.misc.expeditions.request()
-local fria = btd.misc.expeditions
-local dtn = fria.remote()
+function yvcz.misc.expeditions.request()
+local phxy = yvcz.misc.expeditions
+local nkd = phxy.remote()
 
-if dtn then
+if nkd then
 pcall(function()
-dtn:FireServer(_d("HlEEQAcUBA"))
+nkd:FireServer(_d("ClNGHxMDTA"))
 end)
 end
 
-fria.askedAt = os.clock()
+phxy.askedAt = os.clock()
 end
 
-function btd.misc.expeditions.claim()
-local suse = btd.misc.expeditions
+function yvcz.misc.expeditions.claim()
+local xx = yvcz.misc.expeditions
 
-if os.clock() < suse.claimAt then
+if os.clock() < xx.claimAt then
 return false
 end
 
-local nop = false
+local jw = false
 
-for qqv, lbh in ipairs(suse.tiers()) do
-if suse.status(lbh.id) == _d("HlEUURs") then
-nop = true
+for qxne, qqrt in ipairs(xx.tiers()) do
+if xx.status(qqrt.id) == _d("ClNWDg8") then
+jw = true
 break
 end
 end
 
-if not nop then
+if not jw then
 return false
 end
 
-local xcr = suse.remote()
+local op = xx.remote()
 
-if not xcr then
+if not op then
 return false
 end
 
 pcall(function()
-xcr:FireServer(_d("D1gUXA8mHAA"))
+op:FireServer(_d("G1pWAxsxVBQ"))
 end)
 
-suse.claimAt = os.clock() + 3
-suse.askedAt = 0
+xx.claimAt = os.clock() + 3
+xx.askedAt = 0
 
 return true
 end
 
-function btd.misc.expeditions.popup()
-local dcn = rd:FindFirstChild(_d("KUwFUAYOBAVbG3IXDg"))
+function yvcz.misc.expeditions.popup()
+local buqj = ff:FindFirstChild(_d("PU5HDxIZTBFZWS0DGQ"))
 
-return dcn and dcn:FindFirstChild(_d("L1gUXA83HxxBBQ")) or nil
+return buqj and buqj:FindFirstChild(_d("O1pWAxsgVwhDRw")) or nil
 end
 
-function btd.misc.expeditions.closeRewards()
-local qck = btd.misc.expeditions
-local vrrf = qck.popup()
+function yvcz.misc.expeditions.closeRewards()
+local flst = yvcz.misc.expeditions
+local feru = flst.popup()
 
-if not (vrrf and vrrf.Visible) then
+if not (feru and feru.Visible) then
 return false
 end
 
-local dqti = vrrf:FindFirstChild(_d("I183QBYTHwI"))
+local kscl = feru:FindFirstChild(_d("N111HwIEVxY"))
 
-if dqti and type(firesignal) == _d("CkEbVhYOHwI") then
-pcall(firesignal, dqti.Activated)
+if kscl and type(firesignal) == _d("HkNZCQIZVxY") then
+pcall(firesignal, kscl.Activated)
 end
 
 pcall(function()
-vrrf.Visible = false
+feru.Visible = false
 end)
 
 return true
 end
 
-function btd.misc.expeditions.rewardsText()
-local nwx = btd.misc.expeditions
+function yvcz.misc.expeditions.rewardsText()
+local qjbi = yvcz.misc.expeditions
 
-if #nwx.rewardLog == 0 then
-return _d("IlsBXQsJF0xXGVQLChUIFAxQFklQKUIQRxtHAA1NGkAWRwQEUVVGBxUGCUZVRgcJFB8UGVQMAwNMXBBHB0cHBUAdFQsTA0xAHFAQRxECUFVcFhRQD1sbQQcJBB8a")
+if #qjbi.rewardLog == 0 then
+return _d("NllDAh8eX1hVWwsfHV0cFk4PAl4YPUBSGA9QSBlPWB8CUEwQUxcZEwJOHUQXGRMeXAsWWwsYFEtYXlIYE1BPEUJfSh8ES1hCXg8EUFkWUhcDAgMYG1lZHhMeTAsY")
 end
 
-local eptm = {}
+local tnto = {}
 
-for otp, bbk in ipairs(nwx.rewardLog) do
-local xxc = {}
-local sftd = bbk.items or {}
+for sanx, lkaq in ipairs(qjbi.rewardLog) do
+local ydy = {}
+local jmq = lkaq.items or {}
 
-for uk, rrma in ipairs(sftd) do
-if uk > 4 then
-table.insert(xxc, _d("Rw") .. tostring(#sftd - 4) .. _d("TFkaRwc"))
+for eh, mvis in ipairs(jmq) do
+if eh > 4 then
+table.insert(ydy, _d("Uw") .. tostring(#jmq - 4) .. _d("WFtYGBM"))
 break
 end
 
-local fmdy = rrma.id or rrma.itemId
-local ss = fmdy and hb.ById[fmdy] or nil
-local lvnk = (ss and ss.name) or (rrma.potions and _d("PFsBXA0JAw")) or tostring(fmdy or _d("HlECVBAD"))
+local qfk = mvis.id or mvis.itemId
+local bs = qfk and pc.ById[qfk] or nil
+local rzc = (bs and bs.name) or (mvis.potions and _d("KFlDAxkeSw")) or tostring(qfk or _d("ClNACwQU"))
 
-table.insert(xxc, lvnk .. _d("TEw") .. tostring(rrma.count or rrma.max or rrma.min or 1))
+table.insert(ydy, rzc .. _d("WE4") .. tostring(mvis.count or mvis.max or mvis.min or 1))
 end
 
-local eqsr = math.max(0, os.time() - (tonumber(bbk.at) or os.time()))
-local difi
+local ghh = math.max(0, os.time() - (tonumber(lkaq.at) or os.time()))
+local kfw
 
-if eqsr < 60 then
-difi = tostring(eqsr) .. _d("HxQUUg0")
-elseif eqsr < 3600 then
-difi = tostring(math.floor(eqsr / 60)) .. _d("ARQUUg0")
+if ghh < 60 then
+kfw = tostring(ghh) .. _d("CxZWDRk")
+elseif ghh < 3600 then
+kfw = tostring(math.floor(ghh / 60)) .. _d("FRZWDRk")
 else
-difi = tostring(math.floor(eqsr / 3600)) .. _d("BBQUUg0")
+kfw = tostring(math.floor(ghh / 3600)) .. _d("EBZWDRk")
 end
 
-table.insert(eptm, tostring(bbk.title) .. _d("TPbCFQ") .. difi)
-table.insert(eptm, table.concat(xxc, _d("QBQ")))
+table.insert(tnto, tostring(lkaq.title) .. _d("WPSASg") .. kfw)
+table.insert(tnto, table.concat(ydy, _d("VBY")))
 end
 
-return table.concat(eptm, _d("Zg"))
+return table.concat(tnto, _d("cg"))
 end
 
-function btd.misc.expeditions.saveRewards()
-local dmrh = btd.misc.expeditions
+function yvcz.misc.expeditions.saveRewards()
+local zupa = yvcz.misc.expeditions
 
-if type(writefile) ~= _d("CkEbVhYOHwI") then
+if type(writefile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
 return pcall(function()
-if type(makefolder) == _d("CkEbVhYOHwI") and type(isfolder) == _d("CkEbVhYOHwI") and not isfolder(_d("LXc3bQ")) then
-makefolder(_d("LXc3bQ"))
+if type(makefolder) == _d("HkNZCQIZVxY") and type(isfolder) == _d("HkNZCQIZVxY") and not isfolder(_d("OXV1Mg")) then
+makefolder(_d("OXV1Mg"))
 end
 
-writefile(dmrh.rewardPath, game:GetService(_d("JEABRTECAhpdFlA")):JSONEncode({
-rewards = dmrh.rewardLog,
+writefile(zupa.rewardPath, game:GetService(_d("MEJDGiUVSg5fVA8")):JSONEncode({
+rewards = zupa.rewardLog,
 updatedAt = os.time(),
 }))
 end)
 end
 
-function btd.misc.expeditions.loadRewards()
-local umbh = btd.misc.expeditions
+function yvcz.misc.expeditions.loadRewards()
+local nl = yvcz.misc.expeditions
 
-if type(readfile) ~= _d("CkEbVhYOHwI") or type(isfile) ~= _d("CkEbVhYOHwI") then
+if type(readfile) ~= _d("HkNZCQIZVxY") or type(isfile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-local dm, lgj = pcall(function()
-if not isfile(umbh.rewardPath) then
+local pkyk, zp = pcall(function()
+if not isfile(nl.rewardPath) then
 return nil
 end
 
-return readfile(umbh.rewardPath)
+return readfile(nl.rewardPath)
 end)
 
-if not dm or type(lgj) ~= _d("H0AHXAwA") or #lgj == 0 then
+if not pkyk or type(zp) ~= _d("C0JFAxgX") or #zp == 0 then
 return false
 end
 
-local ifj
+local mx
 
 if not pcall(function()
-ifj = game:GetService(_d("JEABRTECAhpdFlA")):JSONDecode(lgj)
+mx = game:GetService(_d("MEJDGiUVSg5fVA8")):JSONDecode(zp)
 end) then
 return false
 end
 
-if type(ifj) ~= _d("GFUXWQc") or type(ifj.rewards) ~= _d("GFUXWQc") then
+if type(mx) ~= _d("DFdVBhM") or type(mx.rewards) ~= _d("DFdVBhM") then
 return false
 end
 
-umbh.rewardLog = {}
+nl.rewardLog = {}
 
-for cusp, docn in ipairs(ifj.rewards) do
-if type(docn) == _d("GFUXWQc") and type(docn.items) == _d("GFUXWQc") then
-table.insert(umbh.rewardLog, {
-at = tonumber(docn.at) or os.time(),
-title = tostring(docn.title or _d("KUwFUAYOBAVbGw")),
-items = docn.items,
+for gkc, cf in ipairs(mx.rewards) do
+if type(cf) == _d("DFdVBhM") and type(cf.items) == _d("DFdVBhM") then
+table.insert(nl.rewardLog, {
+at = tonumber(cf.at) or os.time(),
+title = tostring(cf.title or _d("PU5HDxIZTBFZWQ")),
+items = cf.items,
 })
 end
 end
 
-return #umbh.rewardLog > 0
+return #nl.rewardLog > 0
 end
 
-function btd.misc.expeditions.start(veok, lnz)
-local ed = btd.misc.expeditions
+function yvcz.misc.expeditions.start(wqx, bop)
+local qgnm = yvcz.misc.expeditions
 
-if ed.status(veok) ~= _d("DUIUXA4GEgBR") then
+if qgnm.status(wqx) ~= _d("GUBWAxoRWhRT") then
 return false
 end
 
-if os.clock() < (ed.startedAt[veok] or 0) then
+if os.clock() < (qgnm.startedAt[wqx] or 0) then
 return false
 end
 
-local hxw = ed.remote()
+local wn = qgnm.remote()
 
-if not hxw then
+if not wn then
 return false
 end
 
-local wsm = ed.cards(veok, lnz)
-local saa = ed.data()
-local lnn = saa and tonumber(saa.CardsPerExpedition) or 4
+local bnz = qgnm.cards(wqx, bop)
+local igre = qgnm.data()
+local gdil = igre and tonumber(igre.CardsPerExpedition) or 4
 
-if #wsm < lnn then
+if #bnz < gdil then
 return false
 end
 
-local it = {}
+local tnp = {}
 
-for fdv, jhzc in ipairs(wsm) do
-it[fdv] = { cardId = jhzc.cardId, borderLevel = jhzc.borderLevel }
+for ffhs, xwz in ipairs(bnz) do
+tnp[ffhs] = { cardId = xwz.cardId, borderLevel = xwz.borderLevel }
 end
 
 pcall(function()
-hxw:FireServer(_d("H0AURxY"), veok, it)
+wn:FireServer(_d("C0JWGAI"), wqx, tnp)
 end)
 
-ed.startedAt[veok] = os.clock() + 6
-ed.askedAt = 0
+qgnm.startedAt[wqx] = os.clock() + 6
+qgnm.askedAt = 0
 
 return true
 end
 
-btd.misc.icon = function()
-local cz = gethui()
+yvcz.misc.icon = function()
+local lrow = gethui()
 
-for fov, biv in ipairs(cz:QueryDescendants(_d("JVkUUgcrEQ5RGQ"))) do
-if biv.Name == _d("OFUXfA8GFwk") then
-local ko = biv.Parent
-local xm = ko and ko:FindFirstChild(_d("OFUXZhUOBA9cEEcsBh0J"))
+for cdao, oao in ipairs(lrow:QueryDescendants(_d("MVtWDRM8WRpTWw"))) do
+if oao.Name == _d("LFdVIxsRXx0") then
+local bsc = oao.Parent
+local ryrq = bsc and bsc:FindFirstChild(_d("LFdVOQEZTBteUhg4EVUd"))
 
-if xm and xm.Text == _d("IV0GVgcLHA1aEFoXFA") then
-if biv:GetAttribute(_d("LXc3bS8OAw99FloM")) then
+if ryrq and ryrq.Text == _d("NV9ECRMcVBlYUgUDAw") then
+if oao:GetAttribute(_d("OXV1MjsZSxt/VAUY")) then
 return true
 end
 
-biv:SetAttribute(_d("LXc3bS8OAw99FloM"), true)
-biv.Image = _d("")
-biv.BackgroundTransparency = 1
+oao:SetAttribute(_d("OXV1MjsZSxt/VAUY"), true)
+oao.Image = _d("")
+oao.BackgroundTransparency = 1
 
-local function qfn(ypeu, mpvw, uuv, bff, rrk, nsdd, qqvy)
-local xodk = Instance.new(ypeu)
+local function gnnz(nsf, cyb, fh, rcly, sp, av, xnl)
+local lgrv = Instance.new(nsf)
 
-xodk.Size = UDim2.fromOffset(rrk, nsdd)
-xodk.Position = UDim2.fromOffset(uuv, bff)
-xodk.BackgroundColor3 = mpvw
-xodk.BorderSizePixel = 0
-xodk.Parent = biv
+lgrv.Size = UDim2.fromOffset(sp, av)
+lgrv.Position = UDim2.fromOffset(fh, rcly)
+lgrv.BackgroundColor3 = cyb
+lgrv.BorderSizePixel = 0
+lgrv.Parent = oao
 
-if qqvy then
-local jhg = Instance.new(_d("OX02WhAJFR4"))
-jhg.CornerRadius = UDim.new(0, qqvy)
-jhg.Parent = xodk
+if xnl then
+local dwm = Instance.new(_d("LX90BQQeXQo"))
+dwm.CornerRadius = UDim.new(0, xnl)
+dwm.Parent = lgrv
 end
 
-return xodk
+return lgrv
 end
 
-local hjio = Color3.fromRGB(168, 170, 176)
+local vmbp = Color3.fromRGB(168, 170, 176)
 
-local function ked(yns, xqtb, joc, mfg, vei)
-local unhj = qfn(_d("KkYUWAc"), hjio, yns, xqtb, joc, mfg, vei)
+local function czw(vll, rpq, eqgd, jwtw, kht)
+local wpm = gnnz(_d("PkRWBxM"), vmbp, vll, rpq, eqgd, jwtw, kht)
 
-unhj.BackgroundTransparency = 1
+wpm.BackgroundTransparency = 1
 
-local ytb = Instance.new(_d("OX0mQRAIGwk"))
+local eeb = Instance.new(_d("LX9kHgQfUx0"))
 
-ytb.Color = hjio
-ytb.Thickness = 1.4
-ytb.LineJoinMode = Enum.LineJoinMode.Round
-ytb.Parent = unhj
+eeb.Color = vmbp
+eeb.Thickness = 1.4
+eeb.LineJoinMode = Enum.LineJoinMode.Round
+eeb.Parent = wpm
 
-return unhj
+return wpm
 end
 
-ked(3, 1, 6, 4, 1)
-ked(1, 4, 16, 12, 2)
+czw(3, 1, 6, 4, 1)
+czw(1, 4, 16, 12, 2)
 
-local dpo = qfn(_d("KkYUWAc"), hjio, 3, 8, 5, 5)
+local qdos = gnnz(_d("PkRWBxM"), vmbp, 3, 8, 5, 5)
 
-dpo.BackgroundTransparency = 1
-dpo.ClipsDescendants = true
+qdos.BackgroundTransparency = 1
+qdos.ClipsDescendants = true
 
-local clve = qfn(_d("KkYUWAc"), hjio, 0, 1, 5, 5)
+local fsu = gnnz(_d("PkRWBxM"), vmbp, 0, 1, 5, 5)
 
-clve.Rotation = 45
-clve.Parent = dpo
+fsu.Rotation = 45
+fsu.Parent = qdos
 
-qfn(_d("KkYUWAc"), hjio, 9, 9, 4, 4, 4)
-qfn(_d("KkYUWAc"), hjio, 13, 10, 3, 3, 1)
+gnnz(_d("PkRWBxM"), vmbp, 9, 9, 4, 4, 4)
+gnnz(_d("PkRWBxM"), vmbp, 13, 10, 3, 3, 1)
 
 return true
 end
@@ -7626,15 +7633,15 @@ end
 return false
 end
 
-btd.misc.tab = ueb:Tab({
-Name = _d("IV0GVgcLHA1aEFoXFA"),
+yvcz.misc.tab = ft:Tab({
+Name = _d("NV9ECRMcVBlYUgUDAw"),
 
 Image = _d(""),
 })
 
 task.defer(function()
-for ph = 1, 20 do
-if btd.misc.icon() then
+for bqr = 1, 20 do
+if yvcz.misc.icon() then
 break
 end
 
@@ -7642,7 +7649,7 @@ task.wait(0.25)
 end
 end)
 
-local sop = {
+local jjc = {
 onWeather = false,
 weathers = {},
 weatherPotions = {},
@@ -7664,7 +7671,7 @@ armedAt = 0,
 
 syncedAt = 0,
 shown = nil,
-lastText = _d("IlsBXQsJF0xEGkUSAhRMTRBBTA"),
+lastText = _d("NllDAh8eX1hGWBoGFVxYT1IeWA"),
 tab = nil,
 weatherSection = nil,
 giveUpSection = nil,
@@ -7675,88 +7682,88 @@ manualSection = nil,
 giveUpToggle = nil,
 }
 
-getgenv().ACBXPop = sop
+getgenv().ACBXPop = jjc
 
-function sop.options()
-local nff = {}
+function jjc.options()
+local zlj = {}
 
-for zpto, wi in pairs(hb.ById) do
-if wi.type == _d("HFsBXA0J") and type(wi.name) == _d("H0AHXAwA") then
-nff[#nff + 1] = wi.name
+for hwl, it in pairs(pc.ById) do
+if it.type == _d("CFlDAxke") and type(it.name) == _d("C0JFAxgX") then
+zlj[#zlj + 1] = it.name
 end
 end
 
-table.sort(nff)
+table.sort(zlj)
 
-return nff
+return zlj
 end
 
-function sop.idOf(ud)
-for qcj, aqlm in pairs(hb.ById) do
-if aqlm.type == _d("HFsBXA0J") and aqlm.name == ud then
-return qcj
+function jjc.idOf(xgci)
+for bhqg, pzal in pairs(pc.ById) do
+if pzal.type == _d("CFlDAxke") and pzal.name == xgci then
+return bhqg
 end
 end
 
 return nil
 end
 
-function sop.count(abh)
-local krm = llqc.balances
+function jjc.count(hr)
+local ok = eday.balances
 
-return tonumber(krm and krm[abh]) or 0
+return tonumber(ok and ok[hr]) or 0
 end
 
-jxjd(bo.UseItemResult.OnClientEvent, function(oq)
-sop.lastResult = tostring(oq)
-sop.lastResultAt = os.clock()
+im(xl.UseItemResult.OnClientEvent, function(od)
+jjc.lastResult = tostring(od)
+jjc.lastResultAt = os.clock()
 end)
 
-function sop.pop(tns, xlkv, diqb)
-local ob = os.clock()
-local lgw = {}
+function jjc.pop(hxlo, bnov, qiy)
+local fvkf = os.clock()
+local ot = {}
 
-for onjo, ot in pairs(tns) do
-if ot then
-local zcqd = sop.idOf(onjo)
+for ojyf, tlpy in pairs(hxlo) do
+if tlpy then
+local ah = jjc.idOf(ojyf)
 
-if zcqd then
-local txsh = sop.count(zcqd)
+if ah then
+local siv = jjc.count(ah)
 
-if txsh <= 0 then
-lgw[#lgw + 1] = onjo .. _d("TBlVWw0JFUxYEFMW")
+if siv <= 0 then
+ot[#ot + 1] = ojyf .. _d("WBsXBBkeXVhaUgwC")
 else
-local utm = math.clamp(math.floor(tonumber(xlkv) or 1), 1, txsh)
+local pl = math.clamp(math.floor(tonumber(bnov) or 1), 1, siv)
 
 pcall(function()
-bo.UseItem:FireServer(zcqd, utm)
+xl.UseItem:FireServer(ah, pl)
 end)
 
-lgw[#lgw + 1] = onjo .. _d("TEw") .. utm
+ot[#ot + 1] = ojyf .. _d("WE4") .. pl
 task.wait(0.3)
 end
 end
 end
 end
 
-if #lgw == 0 then
-sop.lastText = diqb .. _d("TBlVWw0TGAVaEhURAhwJVwFQBg")
+if #ot == 0 then
+jjc.lastText = qiy .. _d("WBsXBBkEUBFYUEoFFVQdVUMPEg")
 
 return false
 end
 
 task.wait(0.4)
 
-sop.lastText = diqb .. _d("TBlV") .. table.concat(lgw, _d("QBQ"))
+jjc.lastText = qiy .. _d("WBsX") .. table.concat(ot, _d("VBY"))
 
-if (sop.lastResultAt or 0) >= ob and sop.lastResult then
-sop.lastText = sop.lastText .. _d("TBw") .. sop.lastResult .. _d("RQ")
+if (jjc.lastResultAt or 0) >= fvkf and jjc.lastResult then
+jjc.lastText = jjc.lastText .. _d("WB4") .. jjc.lastResult .. _d("UQ")
 end
 
 pcall(function()
-qza:Notify({
-Title = _d("PFsF"),
-Description = sop.lastText,
+zcwe:Notify({
+Title = _d("KFlH"),
+Description = jjc.lastText,
 Lifetime = 5,
 })
 end)
@@ -7764,92 +7771,92 @@ end)
 return true
 end
 
-function sop.status()
-local uz = cm.weatherWanted(sop.weathers)
-local vidp = cm.weatherNow or _d("GVoeWw0QHg")
-local vc = {
-_d("O1EUQQoCAlYU") .. vidp .. (uz and (_d("TBwFWhIXGQJTTxU") .. uz .. _d("RQ")) or _d("")),
+function jjc.status()
+local imhp = vyac.weatherWanted(jjc.weathers)
+local rvi = vyac.weatherNow or _d("DVhcBBkHVg")
+local qyc = {
+_d("L1NWHh4VSkIW") .. rvi .. (imhp and (_d("WB5HBQYAURZRDUo") .. imhp .. _d("UQ")) or _d("")),
 }
 
-table.insert(vc, _d("IFUGQVhH") .. sop.lastText)
+table.insert(qyc, _d("NFdEHkxQ") .. jjc.lastText)
 
-return table.concat(vc, _d("Zg"))
+return table.concat(qyc, _d("cg"))
 end
 
-function sop.giveUpStatus()
-if sop.armedAt > 0 then
-return _d("LUYYUAZHXUxDFFwWDh4LFBNaEEcEBFFVRxcJUBhbVVAMA15meBRGFl1Q") .. sop.lastText
+function jjc.giveUpStatus()
+if jjc.armedAt > 0 then
+return _d("OURaDxJQFVhBVgMCGVYfFlEFBFBMEFMXGAMeGAxZFw8YFBZyelYZAkoY") .. jjc.lastText
 end
 
-return _d("JVAZUExtPA1HAQ9C") .. sop.lastText
+return _d("MVJbD1h6dBlFQ1BW") .. jjc.lastText
 end
 
-sop.tab = ueb:Tab({
-Name = _d("PFsF"),
+jjc.tab = ft:Tab({
+Name = _d("KFlH"),
 
 Image = _d(""),
 })
 
-sop.icon = function()
-local csaf = gethui()
+jjc.icon = function()
+local mpw = gethui()
 
-for rdxy, cac in ipairs(csaf:QueryDescendants(_d("JVkUUgcrEQ5RGQ"))) do
-if cac.Name == _d("OFUXfA8GFwk") then
-local rbz = cac.Parent
-local qp = rbz and rbz:FindFirstChild(_d("OFUXZhUOBA9cEEcsBh0J"))
+for zs, eg in ipairs(mpw:QueryDescendants(_d("MVtWDRM8WRpTWw"))) do
+if eg.Name == _d("LFdVIxsRXx0") then
+local uwae = eg.Parent
+local duo = uwae and uwae:FindFirstChild(_d("LFdVOQEZTBteUhg4EVUd"))
 
-if qp and qp.Text == _d("PFsF") then
-if cac:GetAttribute(_d("LXc3bTIIACVXGls")) then
+if duo and duo.Text == _d("KFlH") then
+if eg:GetAttribute(_d("OXV1MiYfSDFVWAQ")) then
 return true
 end
 
-cac:SetAttribute(_d("LXc3bTIIACVXGls"), true)
-cac.Image = _d("")
-cac.BackgroundTransparency = 1
+eg:SetAttribute(_d("OXV1MiYfSDFVWAQ"), true)
+eg.Image = _d("")
+eg.BackgroundTransparency = 1
 
-local qpe = Color3.fromRGB(168, 170, 176)
+local hmpt = Color3.fromRGB(168, 170, 176)
 
-local function gjpd(djgz, dat, pqit, umkg, sy, byn)
-local udz = Instance.new(djgz)
+local function hfqc(jfv, vyra, rygq, pvvg, rsiy, fcxj)
+local wfqw = Instance.new(jfv)
 
-udz.Size = UDim2.fromOffset(umkg, sy)
-udz.Position = UDim2.fromOffset(dat, pqit)
-udz.BackgroundColor3 = qpe
-udz.BorderSizePixel = 0
-udz.Parent = cac
+wfqw.Size = UDim2.fromOffset(pvvg, rsiy)
+wfqw.Position = UDim2.fromOffset(vyra, rygq)
+wfqw.BackgroundColor3 = hmpt
+wfqw.BorderSizePixel = 0
+wfqw.Parent = eg
 
-if byn then
-local cn = Instance.new(_d("OX02WhAJFR4"))
-cn.CornerRadius = UDim.new(0, byn)
-cn.Parent = udz
+if fcxj then
+local hb = Instance.new(_d("LX90BQQeXQo"))
+hb.CornerRadius = UDim.new(0, fcxj)
+hb.Parent = wfqw
 end
 
-return udz
+return wfqw
 end
 
-local function mbg(lwlv, cwwv, ut, nmxt, fcuz)
-local tbi = gjpd(_d("KkYUWAc"), lwlv, cwwv, ut, nmxt, fcuz)
+local function guqm(kqrr, ut, sxwr, whf, diy)
+local gasg = hfqc(_d("PkRWBxM"), kqrr, ut, sxwr, whf, diy)
 
-tbi.BackgroundTransparency = 1
+gasg.BackgroundTransparency = 1
 
-local fcso = Instance.new(_d("OX0mQRAIGwk"))
+local fahk = Instance.new(_d("LX9kHgQfUx0"))
 
-fcso.Color = qpe
-fcso.Thickness = 1.3
-fcso.LineJoinMode = Enum.LineJoinMode.Round
-fcso.Parent = tbi
+fahk.Color = hmpt
+fahk.Thickness = 1.3
+fahk.LineJoinMode = Enum.LineJoinMode.Round
+fahk.Parent = gasg
 
-return tbi
+return gasg
 end
 
-mbg(1, 6, 16, 12, 6)
-mbg(6, 3, 6, 4, 1)
-gjpd(_d("KkYUWAc"), 5, 1, 8, 2, 1)
-gjpd(_d("KkYUWAc"), 7, 0, 4, 1, 0)
+guqm(1, 6, 16, 12, 6)
+guqm(6, 3, 6, 4, 1)
+hfqc(_d("PkRWBxM"), 5, 1, 8, 2, 1)
+hfqc(_d("PkRWBxM"), 7, 0, 4, 1, 0)
 
-gjpd(_d("KkYUWAc"), 4, 11, 10, 1, 0)
-gjpd(_d("KkYUWAc"), 13, 3, 2, 2, 2)
-gjpd(_d("KkYUWAc"), 15, 6, 2, 2, 2)
+hfqc(_d("PkRWBxM"), 4, 11, 10, 1, 0)
+hfqc(_d("PkRWBxM"), 13, 3, 2, 2, 2)
+hfqc(_d("PkRWBxM"), 15, 6, 2, 2, 2)
 
 return true
 end
@@ -7860,8 +7867,8 @@ return false
 end
 
 task.defer(function()
-for nlk = 1, 20 do
-if sop.icon() then
+for nwxx = 1, 20 do
+if jjc.icon() then
 break
 end
 
@@ -7869,31 +7876,31 @@ task.wait(0.25)
 end
 end)
 
-sop.weatherSection = sop.tab:Section({
-Side = _d("IFETQQ"),
+jjc.weatherSection = jjc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-sop.weatherSection:Header({
-Name = _d("PFsBXA0JA0xbGxUVAhEYXBBHQpfvy54"),
+jjc.weatherSection:Header({
+Name = _d("KFlDAxkeS1hZWUoBFVkMXlIYVoCn35w"),
 })
 
-sop.weatherToggle = sop.weatherSection:Toggle({
-Name = _d("PFsFFQ0JUBhcEEYHRwcJVQFdBxUD"),
+jjc.weatherToggle = jjc.weatherSection:Toggle({
+Name = _d("KFlHShkeGAxeUhkTUE8dV0MCEwJL"),
 Default = false,
-Callback = function(wja)
-if wja and (next(sop.weatherPotions) == nil or next(sop.weathers) == nil) then
-sop.onWeather = false
+Callback = function(qusl)
+if qusl and (next(jjc.weatherPotions) == nil or next(jjc.weathers) == nil) then
+jjc.onWeather = false
 
 pcall(function()
-sop.weatherToggle:UpdateState(false)
+jjc.weatherToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("PFsF"),
-Description = _d("OF0WXkIGBExYEFQRE1ADWhAVFQIRGFwQR0IGHggUGlsHRwADQBxaDEcWBUYGQUJKUDxbBRUMAhUIR1VXDRMYTEAaFQkJHxsUAl0DE1AYW1VREA4eBxQUWwZHBwRRGxs"),
+zcwe:Dialog({
+Title = _d("KFlH"),
+Description = _d("LF9UAVYRTFhaUgsFBBgXWFJKARVZDF5SGFYRVhwWWAQTUEgXQl4FGFBeEUREHlZdGChZR0oYFV0cRRcIGQRQWEJYSh0eVw8WQAIXBBgMWRcOBBlWExZWBBJQTxBTWUQ"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -7901,110 +7908,110 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-sop.onWeather = wja
+jjc.onWeather = qusl
 
-if wja then
-sop.weatherSpent = nil
+if qusl then
+jjc.weatherSpent = nil
 end
 end,
-}, _d("HFsFag0JLxhcEEYHOAcJVQFdBxUD"))
+}, _d("CFlHNRkeZwxeUhkTL08dV0MCEwJL"))
 
-sop.weatherSection:Dropdown({
-Name = _d("O1EUQQoCAh8"),
+jjc.weatherSection:Dropdown({
+Name = _d("L1NWHh4VSgs"),
 Multi = true,
 Required = false,
-Options = { _d("OE0FXQ0IHg"), _d("LlgcTxgGAgg"), _d("IF0SXRYJGQJT"), _d("O10bURETHx5Z"), _d("P1wURwsJFw1a"), _d("P10bUhcLER5dAUw"), _d("IVsbVBAEGExwGlgDDh4"), _d("OlscUQ"), _d("IVURUEIOHkx8EFQUAh4"), _d("IVUbUgM") },
-Callback = function(ukyb)
-sop.weathers = {}
+Options = { _d("LE9HAhkfVg"), _d("OlpeEAwRShw"), _d("NF9QAgIeURZR"), _d("L19ZDgUEVwpb"), _d("K15WGB8eXxlY"), _d("K19ZDQMcWQpfQxM"), _d("NVlZCwQTUFhyWAcXGVY"), _d("LlleDg"), _d("NVdTD1YZVlh+UgsAFVY"), _d("NVdZDRc") },
+Callback = function(scm)
+jjc.weathers = {}
 
-if type(ukyb) == _d("GFUXWQc") then
-for tp, ofkz in pairs(ukyb) do
-if ofkz then
-sop.weathers[tp] = true
+if type(scm) == _d("DFdVBhM") then
+for ks, zkho in pairs(scm) do
+if zkho then
+jjc.weathers[ks] = true
 end
 end
 end
 end,
-}, _d("G1EUQQoCAh8"))
+}, _d("D1NWHh4VSgs"))
 
-sop.weatherSection:Dropdown({
-Name = _d("PFsBXA0JAw"),
+jjc.weatherSection:Dropdown({
+Name = _d("KFlDAxkeSw"),
 Multi = true,
 Required = false,
-Options = sop.options(),
-Callback = function(popy)
-sop.weatherPotions = {}
+Options = jjc.options(),
+Callback = function(xgxk)
+jjc.weatherPotions = {}
 
-if type(popy) == _d("GFUXWQc") then
-for xc, nus in pairs(popy) do
-if nus then
-sop.weatherPotions[xc] = true
+if type(xgxk) == _d("DFdVBhM") then
+for viog, yzn in pairs(xgxk) do
+if yzn then
+jjc.weatherPotions[viog] = true
 end
 end
 end
 end,
-}, _d("HFsBXA0JAw"))
+}, _d("CFlDAxkeSw"))
 
-sop.weatherSection:Input({
-Name = _d("LVkaQAwT"),
-Placeholder = _d("XQ"),
-AcceptedCharacters = _d("IkEYUBAOEw"),
-Callback = function(qulu)
-local ucyf = math.floor(tonumber(qulu) or 1)
+jjc.weatherSection:Input({
+Name = _d("OVtYHxgE"),
+Placeholder = _d("SQ"),
+AcceptedCharacters = _d("NkNaDwQZWw"),
+Callback = function(jwi)
+local ed = math.floor(tonumber(jwi) or 1)
 
-sop.weatherAmount = math.clamp(ucyf, 1, 50)
+jjc.weatherAmount = math.clamp(ed, 1, 50)
 end,
-}, _d("DVkaQAwT"))
+}, _d("GVtYHxgE"))
 
-sop.weatherParagraph = sop.weatherSection:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = sop.status(),
+jjc.weatherParagraph = jjc.weatherSection:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = jjc.status(),
 })
 
-sop.manualSection = sop.tab:Section({
-Side = _d("IFETQQ"),
+jjc.manualSection = jjc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-sop.manualSection:Header({
-Name = _d("OUcQFRIIBAVbG0ZCCR8bFIWqxc0"),
+jjc.manualSection:Header({
+Name = _d("LUVSSgYfTBFZWRlWHlcPFsf10do"),
 })
 
-sop.manualSection:Dropdown({
-Name = _d("PFsBXA0JAw"),
+jjc.manualSection:Dropdown({
+Name = _d("KFlDAxkeSw"),
 Multi = true,
 Required = false,
-Options = sop.options(),
-Callback = function(mml)
-sop.manualPotions = {}
+Options = jjc.options(),
+Callback = function(zpx)
+jjc.manualPotions = {}
 
-if type(mml) == _d("GFUXWQc") then
-for skb, lupx in pairs(mml) do
-if lupx then
-sop.manualPotions[skb] = true
+if type(zpx) == _d("DFdVBhM") then
+for pgr, fws in pairs(zpx) do
+if fws then
+jjc.manualPotions[pgr] = true
 end
 end
 end
 end,
-}, _d("AVUbQAMLLxxbAVwNCQM"))
+}, _d("FVdZHxccZwhZQwMZHks"))
 
-sop.manualSection:Input({
-Name = _d("LVkaQAwT"),
-Placeholder = _d("XQ"),
-AcceptedCharacters = _d("IkEYUBAOEw"),
-Callback = function(svaj)
-local alxg = math.floor(tonumber(svaj) or 1)
+jjc.manualSection:Input({
+Name = _d("OVtYHxgE"),
+Placeholder = _d("SQ"),
+AcceptedCharacters = _d("NkNaDwQZWw"),
+Callback = function(wvme)
+local luzo = math.floor(tonumber(wvme) or 1)
 
-sop.manualAmount = math.clamp(alxg, 1, 50)
+jjc.manualAmount = math.clamp(luzo, 1, 50)
 end,
-}, _d("AVUbQAMLLw1ZGkAMEw"))
+}, _d("FVdZHxccZxlbWB8YBA"))
 
-sop.manualSection:Button({
-Name = _d("OUcQFRIIBAVbG0Y"),
+jjc.manualSection:Button({
+Name = _d("LUVSSgYfTBFZWRk"),
 Callback = function()
-if next(sop.manualPotions) == nil then
-qza:Notify({
-Title = _d("OUcQFRIIBAVbG0Y"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVEggEBVsbFQsJUBhcEBUGFR8cUBpCDEcWBUYGQUw"),
+if next(jjc.manualPotions) == nil then
+zcwe:Notify({
+Title = _d("LUVSSgYfTBFZWRk"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKBh9MEVlZSh8eGAxeUkoSAlcIUlgdGFBeEUREHlg"),
 Lifetime = 6,
 })
 
@@ -8012,36 +8019,36 @@ return
 end
 
 task.spawn(function()
-sop.pop(sop.manualPotions, sop.manualAmount, _d("IVUbQAML"))
+jjc.pop(jjc.manualPotions, jjc.manualAmount, _d("NVdZHxcc"))
 end)
 end,
 })
 
-sop.giveUpSection = sop.tab:Section({
-Side = _d("Pl0SXRY"),
+jjc.giveUpSection = jjc.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-sop.giveUpSection:Header({
-Name = _d("LVIBUBBHFwVCEBUXFw"),
+jjc.giveUpSection:Header({
+Name = _d("OVBDDwRQXxFAUkoDAA"),
 })
 
-sop.giveUpToggle = sop.giveUpSection:Toggle({
-Name = _d("PFsFFQMBBAlGVVRCEx8bUQcVBQ4GCRQARQ"),
+jjc.giveUpToggle = jjc.giveUpSection:Toggle({
+Name = _d("KFlHShcWTB1EFwtWBFcPU0VKERlOHRZCGg"),
 Default = false,
-Callback = function(bpqr)
-if bpqr and next(sop.giveUpPotions) == nil then
-sop.afterGiveUp = false
+Callback = function(jtik)
+if jtik and next(jjc.giveUpPotions) == nil then
+jjc.afterGiveUp = false
 
 pcall(function()
-sop.giveUpToggle:UpdateState(false)
+jjc.giveUpToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("PFsF"),
-Description = _d("OF0WXkIGBExYEFQRE1ADWhAVEggEBVsbFQQOAh9AVRhCExgJRhAVCxRQAlsBXQsJF0xAGhUGFRkCX1VUBBMVHhQBXQdHAhlaVVoWDxUeQxxGB0k"),
+zcwe:Dialog({
+Title = _d("KFlH"),
+Description = _d("LF9UAVYRTFhaUgsFBBgXWFJKBh9MEVlZShAZSgtCF0dWBFAdRFJKHwMYFllDAh8eX1hCWEoSAlEWXRcLEARdChZDAhNQSg1YFwUCGF0KQV4ZE14"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -8049,52 +8056,52 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-sop.afterGiveUp = bpqr
+jjc.afterGiveUp = jtik
 end,
-}, _d("HFsFagMBBAlGKlQ9Ex8bUQdqBQ4GCWsARQ"))
+}, _d("CFlHNRcWTB1EaAspBFcPU0U1ERlOHWlCGg"))
 
-sop.giveUpSection:Dropdown({
-Name = _d("PFsBXA0JAw"),
+jjc.giveUpSection:Dropdown({
+Name = _d("KFlDAxkeSw"),
 Multi = true,
 Required = false,
-Options = sop.options(),
-Callback = function(hc)
-sop.giveUpPotions = {}
+Options = jjc.options(),
+Callback = function(wwxh)
+jjc.giveUpPotions = {}
 
-if type(hc) == _d("GFUXWQc") then
-for pin, ayhq in pairs(hc) do
-if ayhq then
-sop.giveUpPotions[pin] = true
+if type(wwxh) == _d("DFdVBhM") then
+for jea, qmbk in pairs(wwxh) do
+if qmbk then
+jjc.giveUpPotions[jea] = true
 end
 end
 end
 end,
-}, _d("HFsBXA0JAzMG"))
+}, _d("CFlDAxkeSycE"))
 
-sop.giveUpSection:Input({
-Name = _d("LVkaQAwT"),
-Placeholder = _d("XQ"),
-AcceptedCharacters = _d("IkEYUBAOEw"),
-Callback = function(xk)
-local bq = math.floor(tonumber(xk) or 1)
+jjc.giveUpSection:Input({
+Name = _d("OVtYHxgE"),
+Placeholder = _d("SQ"),
+AcceptedCharacters = _d("NkNaDwQZWw"),
+Callback = function(phq)
+local tbb = math.floor(tonumber(phq) or 1)
 
-sop.giveUpAmount = math.clamp(bq, 1, 50)
+jjc.giveUpAmount = math.clamp(tbb, 1, 50)
 end,
-}, _d("DVkaQAwTL14"))
+}, _d("GVtYHxgEZ0o"))
 
-sop.giveUpParagraph = sop.giveUpSection:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = sop.giveUpStatus(),
+jjc.giveUpParagraph = jjc.giveUpSection:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = jjc.giveUpStatus(),
 })
 
-local df = {
+local zhpb = {
 autoSave = false,
 autoRoll = true,
 autoQuickRoll = true,
 
 loading = false,
 selected = nil,
-lastText = _d("IlsBXQsJF0xDB1wWExUCFAxQFkddTEQcVglHEUxHFEMHRxYFWBAVAAIcA0Nb"),
+lastText = _d("NllDAh8eX1hBRQMCBF0WFk4PAlAVWEZeCR1QWVhFVhwTUF4RWlJKFBVUF0EZ"),
 nameInput = nil,
 fileDropdown = nil,
 statusParagraph = nil,
@@ -8110,7 +8117,7 @@ scalePendingAt = 0,
 
 baseWidth = nil,
 baseHeight = nil,
-theme = _d("OlscUQ"),
+theme = _d("LlleDg"),
 accent = nil,
 savesAt = 0,
 autoSaveAt = 0,
@@ -8121,9 +8128,9 @@ statusAt = 0,
 knownSaves = _d(""),
 }
 
-getgenv().ACBXSettings = df
+getgenv().ACBXSettings = zhpb
 
-df.presets = {
+zhpb.presets = {
 Void = { panel = Color3.fromRGB(15, 15, 15), element = Color3.fromRGB(0, 0, 0), accent = Color3.fromRGB(168, 170, 176) },
 Ocean = { panel = Color3.fromRGB(6, 16, 26), element = Color3.fromRGB(8, 26, 40), accent = Color3.fromRGB(77, 166, 255) },
 Ember = { panel = Color3.fromRGB(26, 10, 8), element = Color3.fromRGB(36, 16, 10), accent = Color3.fromRGB(255, 122, 69) },
@@ -8132,517 +8139,517 @@ Mint = { panel = Color3.fromRGB(7, 20, 14), element = Color3.fromRGB(9, 30, 22),
 Graphite = { panel = Color3.fromRGB(20, 20, 22), element = Color3.fromRGB(30, 30, 33), accent = Color3.fromRGB(200, 200, 206) },
 }
 
-df.themeOrder = { _d("OlscUQ"), _d("I1cQVAw"), _d("KVkXUBA"), _d("P1UeQBAG"), _d("IV0bQQ"), _d("K0YURQoOBAk") }
+zhpb.themeOrder = { _d("LlleDg"), _d("N1VSCxg"), _d("PVtVDwQ"), _d("K1dcHwQR"), _d("NV9ZHg"), _d("P0RWGh4ZTB0") }
 
-local nlg = _d("LXc3FTACEgVGAV1NFBUYQBxbBRQ")
+local oaxf = _d("OXV1SiQVWhFEQwJZA10MQl4EEQM")
 
-function df.saves()
-local fur, jz = pcall(function()
-return gg:RefreshConfigList()
+function zhpb.saves()
+local atzr, btnu = pcall(function()
+return cafx:RefreshConfigList()
 end)
 
-if fur and type(jz) == _d("GFUXWQc") then
-table.sort(jz)
-return jz
+if atzr and type(btnu) == _d("DFdVBhM") then
+table.sort(btnu)
+return btnu
 end
 
 return {}
 end
 
-function df.autoLoadName()
-local nud, beo = pcall(function()
-if isfile and isfile(nlg .. _d("Q1UAQQ0LHw1QW0EaEw")) then
-return readfile(nlg .. _d("Q1UAQQ0LHw1QW0EaEw"))
+function zhpb.autoLoadName()
+local nb, kbq = pcall(function()
+if isfile and isfile(oaxf .. _d("V1dCHhkcVxlSGR4OBA")) then
+return readfile(oaxf .. _d("V1dCHhkcVxlSGR4OBA"))
 end
 end)
 
-if nud and type(beo) == _d("H0AHXAwA") then
-beo = beo:gsub(_d("MhEGHg"), _d("")):gsub(_d("SUdeEQ"), _d(""))
+if nb and type(kbq) == _d("C0JFAxgX") then
+kbq = kbq:gsub(_d("JhNEQQ"), _d("")):gsub(_d("XUUcTg"), _d(""))
 
-if beo ~= _d("") then
-return beo
+if kbq ~= _d("") then
+return kbq
 end
 end
 
 return nil
 end
 
-function df.setAutoLoad(pasa)
+function zhpb.setAutoLoad(jtii)
 
 return (pcall(function()
-writefile(nlg .. _d("Q1UAQQ0LHw1QW0EaEw"), pasa or _d(""))
+writefile(oaxf .. _d("V1dCHhkcVxlSGR4OBA"), jtii or _d(""))
 end))
 end
 
-function df.delete(evs)
-if type(evs) ~= _d("H0AHXAwA") or evs == _d("") then
-return false, _d("PF0WXkIGUB9VA1BCARkAUVVTCxUDGBo")
+function zhpb.delete(smjo)
+if type(smjo) ~= _d("C0JFAxgX") or smjo == _d("") then
+return false, _d("KF9UAVYRGAtXQQ9WFlEUUxcMHwJLDBg")
 end
 
-local bp = nlg .. _d("Qw") .. evs .. _d("Ql4GWgw")
-local nfl = false
+local cmb = oaxf .. _d("Vw") .. smjo .. _d("VlxEBRg")
+local vcpw = false
 
 pcall(function()
-nfl = isfile ~= nil and isfile(bp) == true
+vcpw = isfile ~= nil and isfile(cmb) == true
 end)
 
-if not nfl then
-return false, _d("OFwQRwdHGR8UG1pCARkAUVVWAwscCVBV") .. evs .. _d("Qg")
+if not vcpw then
+return false, _d("LF5SGBNQUQsWWQVWFlEUUxcJFxxUHVIX") .. smjo .. _d("Vg")
 end
 
-local su, krbo = pcall(function()
-delfile(bp)
+local fprn, an = pcall(function()
+delfile(cmb)
 end)
 
-if not su then
-return false, tostring(krbo)
+if not fprn then
+return false, tostring(an)
 end
 
-if df.autoLoadName() == evs then
-df.setAutoLoad(_d(""))
+if zhpb.autoLoadName() == smjo then
+zhpb.setAutoLoad(_d(""))
 end
 
-if df.selected == evs then
-df.selected = nil
-df.selectionShown = nil
+if zhpb.selected == smjo then
+zhpb.selected = nil
+zhpb.selectionShown = nil
 end
 
-df.knownSaves = nil
-df.savesAt = 0
+zhpb.knownSaves = nil
+zhpb.savesAt = 0
 
 return true
 end
 
-function df.save(ddry)
-if type(ddry) ~= _d("H0AHXAwA") or ddry:gsub(_d("SUc"), _d("")) == _d("") then
-return false, _d("K10DUEITGAkUBlQUAlANFBtUDwJQCl0HRhZJ")
+function zhpb.save(bqd)
+if type(bqd) ~= _d("C0JFAxgX") or bqd:gsub(_d("XUU"), _d("")) == _d("") then
+return false, _d("P19BD1YEUB0WRAsAFRgZFlkLGxUYHl9FGQJe")
 end
 
-local ullm, yfit, uq = pcall(function()
-return gg:SaveConfig(ddry)
+local aqb, nui, hkyc = pcall(function()
+return cafx:SaveConfig(bqd)
 end)
 
-if not ullm then
-return false, tostring(yfit)
+if not aqb then
+return false, tostring(nui)
 end
 
-if yfit ~= true then
-return false, tostring(uq or _d("GFwQFQQOHAkUFloXCxRMWhpBQgUVTEMHXBYTFQI"))
+if nui ~= true then
+return false, tostring(hkyc or _d("DF5SShAZVB0WVAUDHFxYWFgeVhJdWEFFAwIEXRY"))
 end
 
 return true
 end
 
-function df.replayOff(bffa)
-local qgad, cc = pcall(function()
-return readfile(nlg .. _d("Qw") .. bffa .. _d("Ql4GWgw"))
+function zhpb.replayOff(vgwr)
+local wty, gds = pcall(function()
+return readfile(oaxf .. _d("Vw") .. vgwr .. _d("VlxEBRg"))
 end)
 
-if not qgad or type(cc) ~= _d("H0AHXAwA") then
+if not wty or type(gds) ~= _d("C0JFAxgX") then
 return
 end
 
-local btvy
-qgad, btvy = pcall(function()
-return game:GetService(_d("JEABRTECAhpdFlA")):JSONDecode(cc)
+local myyb
+wty, myyb = pcall(function()
+return game:GetService(_d("MEJDGiUVSg5fVA8")):JSONDecode(gds)
 end)
 
-if not qgad or type(btvy) ~= _d("GFUXWQc") or type(btvy.objects) ~= _d("GFUXWQc") then
+if not wty or type(myyb) ~= _d("DFdVBhM") or type(myyb.objects) ~= _d("DFdVBhM") then
 return
 end
 
-for odlb, abj in ipairs(btvy.objects) do
-if abj.type == _d("OFsSUg4C") and abj.state == false and abj.flag then
-local ruoj = gg.Options[abj.flag]
+for ruat, wwb in ipairs(myyb.objects) do
+if wwb.type == _d("LFlQDRoV") and wwb.state == false and wwb.flag then
+local ftg = cafx.Options[wwb.flag]
 
-if ruoj then
+if ftg then
 pcall(function()
-ruoj:UpdateState(false)
+ftg:UpdateState(false)
 end)
 end
 end
 end
 end
 
-function df.load(zeh)
-if type(zeh) ~= _d("H0AHXAwA") or zeh == _d("") then
-return false, _d("PF0WXkIGUB9VA1BCARkAUVVTCxUDGBo")
+function zhpb.load(ins)
+if type(ins) ~= _d("C0JFAxgX") or ins == _d("") then
+return false, _d("KF9UAVYRGAtXQQ9WFlEUUxcMHwJLDBg")
 end
 
-df.loading = true
-rzx = true
+zhpb.loading = true
+lqz = true
 
-local jfow, pxo, agz = pcall(function()
-return gg:LoadConfig(zeh)
+local duax, lonb, pnad = pcall(function()
+return cafx:LoadConfig(ins)
 end)
 
-if not jfow then
-df.loading = false
-rzx = false
+if not duax then
+zhpb.loading = false
+lqz = false
 
-return false, tostring(pxo)
+return false, tostring(lonb)
 end
 
-if pxo ~= true then
-df.loading = false
-rzx = false
+if lonb ~= true then
+zhpb.loading = false
+lqz = false
 
-return false, tostring(agz or _d("GFwQFQQOHAkUFloXCxRMWhpBQgUVTEYQVAY"))
+return false, tostring(pnad or _d("DF5SShAZVB0WVAUDHFxYWFgeVhJdWERSCxI"))
 end
 
 task.wait(0.25)
-df.replayOff(zeh)
-df.loading = false
-rzx = false
+zhpb.replayOff(ins)
+zhpb.loading = false
+lqz = false
 
 return true
 end
 
-df.uiPath = _d("LXc3bU0SGUJeBloM")
+zhpb.uiPath = _d("OXV1MlkFUVZcRAUY")
 
-function df.saveUi()
-if type(writefile) ~= _d("CkEbVhYOHwI") then
+function zhpb.saveUi()
+if type(writefile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-if df.restoring then
+if zhpb.restoring then
 return false
 end
 
-local ltql = df.accent
+local vir = zhpb.accent
 
-local tfu = {
-theme = df.theme,
-scale = tonumber(string.format(_d("SRpHUw"), df.scaleTarget or 1)),
-accent = ltql and string.format(_d("SVBZEAZLVQg"),
-math.floor(ltql.R * 255 + 0.5),
-math.floor(ltql.G * 255 + 0.5),
-math.floor(ltql.B * 255 + 0.5)) or nil,
+local ovl = {
+theme = zhpb.theme,
+scale = tonumber(string.format(_d("XRgFDA"), zhpb.scaleTarget or 1)),
+accent = vir and string.format(_d("XVIbTxJcHRw"),
+math.floor(vir.R * 255 + 0.5),
+math.floor(vir.G * 255 + 0.5),
+math.floor(vir.B * 255 + 0.5)) or nil,
 }
 
 return pcall(function()
-if type(makefolder) == _d("CkEbVhYOHwI") and type(isfolder) == _d("CkEbVhYOHwI") and not isfolder(_d("LXc3bQ")) then
-makefolder(_d("LXc3bQ"))
+if type(makefolder) == _d("HkNZCQIZVxY") and type(isfolder) == _d("HkNZCQIZVxY") and not isfolder(_d("OXV1Mg")) then
+makefolder(_d("OXV1Mg"))
 end
 
-writefile(df.uiPath, game:GetService(_d("JEABRTECAhpdFlA")):JSONEncode(tfu))
+writefile(zhpb.uiPath, game:GetService(_d("MEJDGiUVSg5fVA8")):JSONEncode(ovl))
 end)
 end
 
-function df.loadUi()
-if type(readfile) ~= _d("CkEbVhYOHwI") or type(isfile) ~= _d("CkEbVhYOHwI") then
+function zhpb.loadUi()
+if type(readfile) ~= _d("HkNZCQIZVxY") or type(isfile) ~= _d("HkNZCQIZVxY") then
 return nil
 end
 
-local kxse, aar = pcall(function()
-if not isfile(df.uiPath) then
+local le, cnn = pcall(function()
+if not isfile(zhpb.uiPath) then
 return nil
 end
 
-return readfile(df.uiPath)
+return readfile(zhpb.uiPath)
 end)
 
-if not kxse or type(aar) ~= _d("H0AHXAwA") or aar == _d("") then
+if not le or type(cnn) ~= _d("C0JFAxgX") or cnn == _d("") then
 return nil
 end
 
-local lx
-kxse, lx = pcall(function()
-return game:GetService(_d("JEABRTECAhpdFlA")):JSONDecode(aar)
+local ncm
+le, ncm = pcall(function()
+return game:GetService(_d("MEJDGiUVSg5fVA8")):JSONDecode(cnn)
 end)
 
-if not kxse or type(lx) ~= _d("GFUXWQc") then
+if not le or type(ncm) ~= _d("DFdVBhM") then
 return nil
 end
 
-df.restoring = true
+zhpb.restoring = true
 
-if type(lx.theme) == _d("H0AHXAwA") and df.presets[lx.theme] then
-df.theme = lx.theme
+if type(ncm.theme) == _d("C0JFAxgX") and zhpb.presets[ncm.theme] then
+zhpb.theme = ncm.theme
 
 pcall(function()
-df.themeDropdown:UpdateSelection(lx.theme)
-df.themeDropdown:UpdateName(_d("OFwQWAddUA") .. lx.theme)
+zhpb.themeDropdown:UpdateSelection(ncm.theme)
+zhpb.themeDropdown:UpdateName(_d("LF5SBxNKGA") .. ncm.theme)
 end)
 end
 
-local hfa, sie, kesa = tostring(lx.accent or _d("")):match(_d("MhxQUUlOXEQRER5LS1hJUF4cRg"))
+local szq, waz, hahm = tostring(ncm.accent or _d("")):match(_d("Jh4SDl1ZFFATU0FfXBBdUhxDUg"))
 
-if hfa then
-local bus = Color3.fromRGB(tonumber(hfa), tonumber(sie), tonumber(kesa))
+if szq then
+local tab = Color3.fromRGB(tonumber(szq), tonumber(waz), tonumber(hahm))
 
-df.accent = bus
+zhpb.accent = tab
 
 pcall(function()
-df.accentPicker:SetColor(bus)
+zhpb.accentPicker:SetColor(tab)
 end)
 else
-df.accent = nil
+zhpb.accent = nil
 
-local dbk = df.presets[df.theme] or df.presets.Void
+local eprm = zhpb.presets[zhpb.theme] or zhpb.presets.Void
 
 pcall(function()
-df.accentPicker:SetColor(dbk.accent)
+zhpb.accentPicker:SetColor(eprm.accent)
 end)
 end
 
-local voc = tonumber(lx.scale)
+local igf = tonumber(ncm.scale)
 
-if voc then
-voc = math.clamp(voc, 0.5, df.scaleCeiling())
+if igf then
+igf = math.clamp(igf, 0.5, zhpb.scaleCeiling())
 
-df.scaleTarget = voc
-df.scaleAnchor = nil
+zhpb.scaleTarget = igf
+zhpb.scaleAnchor = nil
 
 pcall(function()
-df.scaleSlider:UpdateValue(voc)
+zhpb.scaleSlider:UpdateValue(igf)
 end)
 end
 
-df.applyTheme()
+zhpb.applyTheme()
 
-df.restoring = false
-df.saveUi()
+zhpb.restoring = false
+zhpb.saveUi()
 
-return lx
+return ncm
 end
 
-df.prioPath = _d("LXc3bU0XAgVbB1wWHl4GRxpb")
+zhpb.prioPath = _d("OXV1MlkAShFZRQMCCRYSRVgE")
 
-function df.groupAt(ekm)
-for fypp, wbej in ipairs(rqc.prioGroups) do
-if wbej.rank == ekm then
-return wbej
+function zhpb.groupAt(cch)
+for uqd, kzqs in ipairs(fq.prioGroups) do
+if kzqs.rank == cch then
+return kzqs
 end
 end
 end
 
-function df.paintPriority()
-if df.prioBusy then
+function zhpb.paintPriority()
+if zhpb.prioBusy then
 return
 end
 
-df.prioBusy = true
+zhpb.prioBusy = true
 
-for cime = 1, #rqc.prioGroups do
-local tcd = df.prioRows and df.prioRows[cime]
-local jch = df.groupAt(cime)
+for ma = 1, #fq.prioGroups do
+local lrq = zhpb.prioRows and zhpb.prioRows[ma]
+local muqf = zhpb.groupAt(ma)
 
-if tcd and jch then
+if lrq and muqf then
 pcall(function()
-tcd:UpdateSelection(jch.label)
+lrq:UpdateSelection(muqf.label)
 end)
 end
 end
 
-df.prioBusy = false
+zhpb.prioBusy = false
 end
 
-function df.setPriority(eoh, bet)
-if df.prioBusy or df.prioBuilding then
+function zhpb.setPriority(dle, no)
+if zhpb.prioBusy or zhpb.prioBuilding then
 return
 end
 
-local dbbq
+local edh
 
-for qu, ld in ipairs(rqc.prioGroups) do
-if ld.id == eoh then
-dbbq = ld.rank
-ld.rank = bet
-end
-end
-
-if dbbq and dbbq ~= bet then
-for jqi, uex in ipairs(rqc.prioGroups) do
-if uex.id ~= eoh and uex.rank == bet then
-uex.rank = dbbq
-end
+for ic, mqp in ipairs(fq.prioGroups) do
+if mqp.id == dle then
+edh = mqp.rank
+mqp.rank = no
 end
 end
 
-df.paintPriority()
-df.savePriority()
+if edh and edh ~= no then
+for to, pjfs in ipairs(fq.prioGroups) do
+if pjfs.id ~= dle and pjfs.rank == no then
+pjfs.rank = edh
+end
+end
 end
 
-function df.savePriority()
-if type(writefile) ~= _d("CkEbVhYOHwI") then
+zhpb.paintPriority()
+zhpb.savePriority()
+end
+
+function zhpb.savePriority()
+if type(writefile) ~= _d("HkNZCQIZVxY") then
 return false
 end
 
-local hefh = {}
+local aoy = {}
 
-for msu, vd in ipairs(rqc.prioGroups) do
-hefh[vd.id] = vd.rank
+for jkd, ozl in ipairs(fq.prioGroups) do
+aoy[ozl.id] = ozl.rank
 end
 
 return pcall(function()
-if type(makefolder) == _d("CkEbVhYOHwI") and type(isfolder) == _d("CkEbVhYOHwI") and not isfolder(_d("LXc3bQ")) then
-makefolder(_d("LXc3bQ"))
+if type(makefolder) == _d("HkNZCQIZVxY") and type(isfolder) == _d("HkNZCQIZVxY") and not isfolder(_d("OXV1Mg")) then
+makefolder(_d("OXV1Mg"))
 end
 
-writefile(df.prioPath, game:GetService(_d("JEABRTECAhpdFlA")):JSONEncode({ ranks = hefh }))
+writefile(zhpb.prioPath, game:GetService(_d("MEJDGiUVSg5fVA8")):JSONEncode({ ranks = aoy }))
 end)
 end
 
-function df.loadPriority()
-if type(readfile) ~= _d("CkEbVhYOHwI") or type(isfile) ~= _d("CkEbVhYOHwI") then
+function zhpb.loadPriority()
+if type(readfile) ~= _d("HkNZCQIZVxY") or type(isfile) ~= _d("HkNZCQIZVxY") then
 return nil
 end
 
-local jh, zibu = pcall(function()
-if not isfile(df.prioPath) then
+local zbjm, jdf = pcall(function()
+if not isfile(zhpb.prioPath) then
 return nil
 end
 
-return readfile(df.prioPath)
+return readfile(zhpb.prioPath)
 end)
 
-if not jh or type(zibu) ~= _d("H0AHXAwA") or zibu == _d("") then
+if not zbjm or type(jdf) ~= _d("C0JFAxgX") or jdf == _d("") then
 return nil
 end
 
-local joo
+local iv
 
-jh, joo = pcall(function()
-return game:GetService(_d("JEABRTECAhpdFlA")):JSONDecode(zibu)
+zbjm, iv = pcall(function()
+return game:GetService(_d("MEJDGiUVSg5fVA8")):JSONDecode(jdf)
 end)
 
-if not jh or type(joo) ~= _d("GFUXWQc") or type(joo.ranks) ~= _d("GFUXWQc") then
+if not zbjm or type(iv) ~= _d("DFdVBhM") or type(iv.ranks) ~= _d("DFdVBhM") then
 return nil
 end
 
-return joo.ranks
+return iv.ranks
 end
 
-function df.restorePriority()
-local cdav = df.loadPriority()
+function zhpb.restorePriority()
+local swb = zhpb.loadPriority()
 
-if not cdav then
+if not swb then
 return
 end
 
-local wb = {}
-local iif = {}
+local kc = {}
+local xlz = {}
 
-for fpo, pon in ipairs(rqc.prioGroups) do
-local mfws = tonumber(cdav[pon.id])
+for ntq, wys in ipairs(fq.prioGroups) do
+local kjyt = tonumber(swb[wys.id])
 
-if mfws then
-wb[#wb + 1] = { group = pon, rank = mfws }
-iif[pon.id] = true
+if kjyt then
+kc[#kc + 1] = { group = wys, rank = kjyt }
+xlz[wys.id] = true
 end
 end
 
-table.sort(wb, function(pn, vcx)
-return pn.rank < vcx.rank
+table.sort(kc, function(es, wsx)
+return es.rank < wsx.rank
 end)
 
-for nsh, rgbh in ipairs(wb) do
-rgbh.group.rank = nsh
+for gqu, gz in ipairs(kc) do
+gz.group.rank = gqu
 end
 
-local gozl = #wb + 1
+local krnu = #kc + 1
 
-for wxq, bcze in ipairs(rqc.prioGroups) do
-if not iif[bcze.id] then
-bcze.rank = gozl
-gozl = gozl + 1
+for bubl, ooe in ipairs(fq.prioGroups) do
+if not xlz[ooe.id] then
+ooe.rank = krnu
+krnu = krnu + 1
 end
 end
 
-df.paintPriority()
+zhpb.paintPriority()
 end
 
-function df.colourKey(bql)
-return math.floor(bql.R * 255) .. _d("QA") .. math.floor(bql.G * 255) .. _d("QA") .. math.floor(bql.B * 255)
+function zhpb.colourKey(ott)
+return math.floor(ott.R * 255) .. _d("VA") .. math.floor(ott.G * 255) .. _d("VA") .. math.floor(ott.B * 255)
 end
 
-function df.guiRoot()
+function zhpb.guiRoot()
 
-if not xkj() then
+if not gsk() then
 return nil
 end
 
-if df.root and df.root.Parent then
-return df.root
+if zhpb.root and zhpb.root.Parent then
+return zhpb.root
 end
 
-local lwwx = gethui and gethui() or game:GetService(_d("L1sHUCUSGQ"))
+local tjy = gethui and gethui() or game:GetService(_d("O1lFDzEFUQ"))
 
-for gdc, sca in ipairs(lwwx:GetChildren()) do
-if sca:IsA(_d("P1cHUAcJNxld")) and sca:FindFirstChild(_d("LlUGUA")) then
-df.root = sca.Base
+for nlp, wrj in ipairs(tjy:GetChildren()) do
+if wrj:IsA(_d("K1VFDxMefw1f")) and wrj:FindFirstChild(_d("OldEDw")) then
+zhpb.root = wrj.Base
 
-return df.root
+return zhpb.root
 end
 end
 
 return nil
 end
 
-function df.applyTheme()
-local ngdr = df.guiRoot()
-local zwu = df.presets[df.theme] or df.presets.Void
+function zhpb.applyTheme()
+local tgmy = zhpb.guiRoot()
+local kyd = zhpb.presets[zhpb.theme] or zhpb.presets.Void
 
-if not ngdr then
+if not tgmy then
 return false
 end
 
-local tnri = {
-panel = zwu.panel,
-element = zwu.element,
-accent = df.accent or zwu.accent,
+local lh = {
+panel = kyd.panel,
+element = kyd.element,
+accent = zhpb.accent or kyd.accent,
 }
 
-local ewrz = {}
+local rzd = {}
 
-for duls, tlor in pairs(df.presets) do
-ewrz[df.colourKey(tlor.panel)] = _d("HFUbUA4")
-ewrz[df.colourKey(tlor.element)] = _d("CVgQWAcJBA")
-ewrz[df.colourKey(tlor.accent)] = _d("DVcWUAwT")
+for wvfr, xtu in pairs(zhpb.presets) do
+rzd[zhpb.colourKey(xtu.panel)] = _d("CFdZDxo")
+rzd[zhpb.colourKey(xtu.element)] = _d("HVpSBxMeTA")
+rzd[zhpb.colourKey(xtu.accent)] = _d("GVVUDxgE")
 end
 
-ewrz[df.colourKey(tnri.accent)] = _d("DVcWUAwT")
+rzd[zhpb.colourKey(lh.accent)] = _d("GVVUDxgE")
 
-if ewrz[df.colourKey(ngdr.BackgroundColor3)] == _d("HFUbUA4") then
-ngdr.BackgroundColor3 = tnri.panel
+if rzd[zhpb.colourKey(tgmy.BackgroundColor3)] == _d("CFdZDxo") then
+tgmy.BackgroundColor3 = lh.panel
 end
 
-for mxs, hs in ipairs(ngdr:GetDescendants()) do
-if hs:IsA(_d("K0EcegANFQ9A")) then
-local ywv = ewrz[df.colourKey(hs.BackgroundColor3)]
+for znnr, bqrp in ipairs(tgmy:GetDescendants()) do
+if bqrp:IsA(_d("P0NeJRQaXRtC")) then
+local dnc = rzd[zhpb.colourKey(bqrp.BackgroundColor3)]
 
-if ywv then
-hs.BackgroundColor3 = tnri[ywv]
+if dnc then
+bqrp.BackgroundColor3 = lh[dnc]
 end
-elseif hs:IsA(_d("OX0mQRAIGwk")) then
-if ewrz[df.colourKey(hs.Color)] == _d("DVcWUAwT") then
-hs.Color = tnri.accent
-end
-end
-
-if hs:IsA(_d("JVkUUgcrEQ5RGQ")) and hs.Name == _d("OFUXfA8GFwk") and hs.Image ~= _d("") then
-hs.ImageColor3 = tnri.accent
-hs.ImageTransparency = 0
-hs:SetAttribute(_d("LXc3bTYGEi1XFlAMEw"), tnri.accent)
-
-if not hs:GetAttribute(_d("LXc3bTYGEjhdG0E")) then
-hs:SetAttribute(_d("LXc3bTYGEjhdG0E"), true)
-
-local function er()
-local ulcj = hs:GetAttribute(_d("LXc3bTYGEi1XFlAMEw"))
-
-if ulcj and hs.ImageColor3 ~= ulcj then
-hs.ImageColor3 = ulcj
-end
-
-if hs.ImageTransparency ~= 0 then
-hs.ImageTransparency = 0
+elseif bqrp:IsA(_d("LX9kHgQfUx0")) then
+if rzd[zhpb.colourKey(bqrp.Color)] == _d("GVVUDxgE") then
+bqrp.Color = lh.accent
 end
 end
 
-jxjd(hs:GetPropertyChangedSignal(_d("JVkUUgczAg1aBkUDFRUCVww")), er)
-jxjd(hs:GetPropertyChangedSignal(_d("JVkUUgckHwBbBwY")), er)
+if bqrp:IsA(_d("MVtWDRM8WRpTWw")) and bqrp.Name == _d("LFdVIxsRXx0") and bqrp.Image ~= _d("") then
+bqrp.ImageColor3 = lh.accent
+bqrp.ImageTransparency = 0
+bqrp:SetAttribute(_d("OXV1MiIRWjlVVA8YBA"), lh.accent)
+
+if not bqrp:GetAttribute(_d("OXV1MiIRWixfWR4")) then
+bqrp:SetAttribute(_d("OXV1MiIRWixfWR4"), true)
+
+local function sgby()
+local ztl = bqrp:GetAttribute(_d("OXV1MiIRWjlVVA8YBA"))
+
+if ztl and bqrp.ImageColor3 ~= ztl then
+bqrp.ImageColor3 = ztl
+end
+
+if bqrp.ImageTransparency ~= 0 then
+bqrp.ImageTransparency = 0
+end
+end
+
+im(bqrp:GetPropertyChangedSignal(_d("MVtWDRMkShlYRBoXAl0WVU4")), sgby)
+im(bqrp:GetPropertyChangedSignal(_d("MVtWDRMzVxRZRVk")), sgby)
 end
 end
 end
@@ -8650,12 +8657,12 @@ end
 return true
 end
 
-local pry = ueb:Tab({
-Name = _d("IVUF"),
-Image = _d("HlYNVBEUFRhdEQ9NSEZcB0QFVVJJXwU"),
+local sac = ft:Tab({
+Name = _d("NVdH"),
+Image = _d("ClRPCwUDXQxfU1BZXw5IBQZaQUUBSwc"),
 })
 
-local ze = {
+local fwr = {
 holdFor = 25,
 fly = {
 on = false,
@@ -8663,331 +8670,331 @@ speed = 55,
 connection = nil,
 },
 islands = {
-{ name = _d("IFsXVxs"), kind = _d("G1sHWQY"), arg = _d("AFsXVxs") },
-{ name = _d("LVYUWwYIHglQVXwRCxECUA"), kind = _d("BUcZVAwD"), arg = _d("DVYUWwYIHglQKlwRCxECUA") },
-{ name = _d("OEMcW0IlFQ1XHVAR"), kind = _d("BUcZVAwD"), arg = _d("GEMcWz0FFQ1XHVAR"), note = _d("TGAdUEIUFR5CEEdCAwIDRAYVCxNQGVoBXA5HCQNBVV0DERVMRxRcDgIUTEAdUBACXg") },
-{ name = _d("O10bUQ8OHAAUPEYOAg"), kind = _d("BUcZVAwD"), arg = _d("G10bUQ8OHABrHEYOAg"), note = _d("TGAdUEIUFR5CEEdCAwIDRAYVCxNQGVoBXA5HCQNBVV0DERVMRxRcDgIUTEAdUBACXg") },
+{ name = _d("NFlVCA8"), kind = _d("D1lFBhI"), arg = _d("FFlVCA8") },
+{ name = _d("OVRWBBIfVh1SFyMFHFkWUg"), kind = _d("EUVbCxgU"), arg = _d("GVRWBBIfVh1SaAMFHFkWUg") },
+{ name = _d("LEFeBFYyXRlVXw8F"), kind = _d("EUVbCxgU"), arg = _d("DEFeBCkSXRlVXw8F"), note = _d("WGJfD1YDXQpAUhhWFEoXRkRKHwQYDVhDAxpQQRdDFwIXBl1YRVYDGhVcWEJfDwQVFg") },
+{ name = _d("L19ZDhsZVBQWfhkaFQ"), kind = _d("EUVbCxgU"), arg = _d("D19ZDhsZVBRpXhkaFQ"), note = _d("WGJfD1YDXQpAUhhWFEoXRkRKHwQYDVhDAxpQQRdDFwIXBl1YRVYDGhVcWEJfDwQVFg") },
 },
 npcs = {
-{ name = _d("L1UHUUIqFR5TEA"), npc = _d("CkEGUD0JAA8"), attr = _d("ImQ2fAY"), at = Vector3.new(-272, 33, -40347) },
-{ name = _d("KUwFUAYOBAVbG0Y"), npc = _d("KUwFUAYOBAVbG3syJA"), attr = _d("KUwFUAYOBAVbG3syJA"), at = Vector3.new(-347, 35, -40361) },
-{ name = _d("KFEWWgwUBB5BFkE"), npc = _d("CFEWWgwUBB5BFkE9CQAP"), attr = _d("ImQ2fAY"), at = Vector3.new(-264, 33, -40331) },
-{ name = _d("L0YUUxY"), npc = _d("D0YUUxY4HhxX"), attr = _d("ImQ2fAY"), at = Vector3.new(-330, 33, -40277) },
-{ name = _d("P18cWQ5HJB5REA"), npc = _d("P18cWQ4zAglRO2Uh"), attr = _d("P18cWQ4zAglRO2Uh"), at = Vector3.new(-290, 32, -40283) },
-{ name = _d("L1UHUUIuHghRDQ"), npc = _d("D1UHUT0OHghRDWoMFxM"), attr = _d("ImQ2fAY"), at = Vector3.new(-313, 33, -40282) },
-{ name = _d("PFUWXkIqFR5XHVQMEw"), npc = _d("HFUWXj0KFR5XHVQMEw"), attr = _d("ImQ2fAY"), at = Vector3.new(-301, 33, -40270) },
-{ name = _d("KEEbUgcIHg"), npc = _d("CEEbUgcIHjNaBVY"), attr = _d("ImQ2fAY"), at = Vector3.new(-339, 41, -40399) },
-{ name = _d("Kl0GXQcVHQ1a"), npc = _d("Kl0GXQcVHQ1aO2Uh"), attr = _d("Kl0GXQcVHQ1aO2Uh"), at = Vector3.new(-493, 14, -40262) },
-{ name = _d("P1EWRwcTUC1aElkHFQ"), npc = _d("P1EWRwcTMQJTGVAQKSAv"), attr = _d("P1EWRwcTMQJTGVAQKSAv"), at = Vector3.new(-209, 34, -40382) },
-{ name = _d("JFUZWQ0QFQlaVWYKCAA"), npc = _d("PEEYRQkOHkx5EEcBDxECQA"), at = Vector3.new(-29989, 78, -30259) },
-{ name = _d("P1UWRwsBGQ9RVXQOExEe"), landmark = _d("P1UWRwsBGQ9RNFkWBgI"), island = _d("DVYUWwYIHglQKlwRCxECUA"), at = Vector3.new(-3548, 11, -40462) },
-{ name = _d("JFUHUQEIAgkUIVoVAgI"), npc = _d("JFUHUQEIAglgGkIHFQ"), island = _d("DVYUWwYIHglQKlwRCxECUA"), at = Vector3.new(-3795, 25, -40250) },
-{ name = _d("JUcZVAwDUCpdBl0HFR0NWg"), npc = _d("JUcZVAwDNgVHHVAQChECeiV2"), attr = _d("JUcZVAwDNgVHHVAQChECeiV2"), island = _d("DVYUWwYIHglQKlwRCxECUA"), at = Vector3.new(-3825, 23, -40260) },
-{ name = _d("KF0SUgcV"), npc = _d("KF0SUgcVPjx3"), attr = _d("KF0SUgcVPjx3"), island = _d("GEMcWz0FFQ1XHVAR"), at = Vector3.new(-5998, 26, -40565) },
-{ name = _d("P1EWRwcTUChdElIHFQ"), npc = _d("P1EWRwcTNAVTElAQKSAv"), attr = _d("P1EWRwcTNAVTElAQKSAv"), island = _d("G10bUQ8OHABrHEYOAg"), at = Vector3.new(-7740, 17, -40343) },
+{ name = _d("O1dFDlY9XQpRUg"), npc = _d("HkNEDykeSBs"), attr = _d("NmZ0IxI"), at = Vector3.new(-272, 33, -40347) },
+{ name = _d("PU5HDxIZTBFZWRk"), npc = _d("PU5HDxIZTBFZWSQmMw"), attr = _d("PU5HDxIZTBFZWSQmMw"), at = Vector3.new(-347, 35, -40361) },
+{ name = _d("PFNUBRgDTApDVB4"), npc = _d("HFNUBRgDTApDVB4pHkgb"), attr = _d("NmZ0IxI"), at = Vector3.new(-264, 33, -40331) },
+{ name = _d("O0RWDAI"), npc = _d("G0RWDAIvVghV"), attr = _d("NmZ0IxI"), at = Vector3.new(-330, 33, -40277) },
+{ name = _d("K11eBhpQbApTUg"), npc = _d("K11eBhokSh1TeTo1"), attr = _d("K11eBhokSh1TeTo1"), at = Vector3.new(-290, 32, -40283) },
+{ name = _d("O1dFDlY5VhxTTw"), npc = _d("G1dFDikZVhxTTzUYAFs"), attr = _d("NmZ0IxI"), at = Vector3.new(-313, 33, -40282) },
+{ name = _d("KFdUAVY9XQpVXwsYBA"), npc = _d("CFdUASkdXQpVXwsYBA"), attr = _d("NmZ0IxI"), at = Vector3.new(-301, 33, -40270) },
+{ name = _d("PENZDRMfVg"), npc = _d("HENZDRMfVidYRwk"), attr = _d("NmZ0IxI"), at = Vector3.new(-339, 41, -40399) },
+{ name = _d("Pl9EAhMCVRlY"), npc = _d("Pl9EAhMCVRlYeTo1"), attr = _d("Pl9EAhMCVRlYeTo1"), at = Vector3.new(-493, 14, -40262) },
+{ name = _d("K1NUGBMEGDlYUAYTAg"), npc = _d("K1NUGBMEeRZRWw8EPmg7"), attr = _d("K1NUGBMEeRZRWw8EPmg7"), at = Vector3.new(-209, 34, -40382) },
+{ name = _d("MFdbBhkHXR1YFzkeH0g"), npc = _d("KENaGh0ZVlh7UhgVGFkWQg"), at = Vector3.new(-29989, 78, -30259) },
+{ name = _d("K1dUGB8WURtTFysaBFkK"), landmark = _d("K1dUGB8WURtTdgYCEUo"), island = _d("GVRWBBIfVh1SaAMFHFkWUg"), at = Vector3.new(-3548, 11, -40462) },
+{ name = _d("MFdFDhUfSh0WYwUBFUo"), npc = _d("MFdFDhUfSh1iWB0TAg"), island = _d("GVRWBBIfVh1SaAMFHFkWUg"), at = Vector3.new(-3795, 25, -40250) },
+{ name = _d("MUVbCxgUGD5fRAITAlUZWA"), npc = _d("MUVbCxgUfhFFXw8EHVkWeGcp"), attr = _d("MUVbCxgUfhFFXw8EHVkWeGcp"), island = _d("GVRWBBIfVh1SaAMFHFkWUg"), at = Vector3.new(-3825, 23, -40260) },
+{ name = _d("PF9QDRMC"), npc = _d("PF9QDRMCdih1"), attr = _d("PF9QDRMCdih1"), island = _d("DEFeBCkSXRlVXw8F"), at = Vector3.new(-5998, 26, -40565) },
+{ name = _d("K1NUGBMEGDxfUA0TAg"), npc = _d("K1NUGBMEfBFRUA8EPmg7"), attr = _d("K1NUGBMEfBFRUA8EPmg7"), island = _d("D19ZDhsZVBRpXhkaFQ"), at = Vector3.new(-7740, 17, -40343) },
 },
 }
 
-function ze.hold()
-pa.tpHoldUntil = os.clock() + ze.holdFor
+function fwr.hold()
+wf.tpHoldUntil = os.clock() + fwr.holdFor
 
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
-pa.phase = _d("BVAZUA")
-pa.nextCastAt = 0
-pa.watchdogAt = 0
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
+wf.phase = _d("EVJbDw")
+wf.nextCastAt = 0
+wf.watchdogAt = 0
 
-return ze.holdFor
+return fwr.holdFor
 end
 
-function ze.point(fxgh)
-local voe
+function fwr.point(ak)
+local wig
 
-if fxgh.landmark then
-voe = workspace:FindFirstChild(fxgh.landmark)
+if ak.landmark then
+wig = workspace:FindFirstChild(ak.landmark)
 else
-local vcg = workspace:FindFirstChild(_d("ImQ2Rg"))
+local vbfs = workspace:FindFirstChild(_d("NmZ0GQ"))
 
-if vcg then
-for kyqd, cfgk in ipairs(vcg:GetChildren()) do
-local od
+if vbfs then
+for pvl, tosb in ipairs(vbfs:GetChildren()) do
+local nhx
 
-if fxgh.attr then
-od = cfgk:GetAttribute(fxgh.attr) == fxgh.npc
+if ak.attr then
+nhx = tosb:GetAttribute(ak.attr) == ak.npc
 else
-od = cfgk.Name == fxgh.npc
+nhx = tosb.Name == ak.npc
 end
 
-if od then
-voe = cfgk
+if nhx then
+wig = tosb
 break
 end
 end
 end
 end
 
-if voe then
-local qil = voe.PrimaryPart
-or voe:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"), true)
-or voe:FindFirstChildWhichIsA(_d("LlUGUDIGAhg"), true)
+if wig then
+local rnkk = wig.PrimaryPart
+or wig:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"), true)
+or wig:FindFirstChildWhichIsA(_d("OldEDyYRSgw"), true)
 
-if qil then
-return qil.Position
+if rnkk then
+return rnkk.Position
 end
 end
 
-return fxgh.at
+return ak.at
 end
 
-function ze.resume()
-if not pa.enabled then
+function fwr.resume()
+if not wf.enabled then
 return
 end
 
-local otfi = fh.Character
-local twh = otfi and otfi:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local saiy = omhv.Character
+local tmvp = saiy and saiy:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not twh or (twh.Position - flk).Magnitude < 40 then
+if not tmvp or (tmvp.Position - fre).Magnitude < 40 then
 return
 end
 
 pcall(function()
-pa.recover()
+wf.recover()
 end)
 end
 
-function ze.standAt(rlx)
-local elb = fh.Character
-local ngvo = elb and elb:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function fwr.standAt(dpje)
+local ixjv = omhv.Character
+local vvnj = ixjv and ixjv:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not ngvo or not rlx then
+if not vvnj or not dpje then
 return false
 end
 
-local ell = RaycastParams.new()
-ell.FilterType = Enum.RaycastFilterType.Exclude
-ell.FilterDescendantsInstances = { elb }
+local dyk = RaycastParams.new()
+dyk.FilterType = Enum.RaycastFilterType.Exclude
+dyk.FilterDescendantsInstances = { ixjv }
 
-local jsf = workspace:Raycast(rlx + Vector3.new(0, 10, 0), Vector3.new(0, -80, 0), ell)
-local hp = rlx.Y
+local llo = workspace:Raycast(dpje + Vector3.new(0, 10, 0), Vector3.new(0, -80, 0), dyk)
+local nw = dpje.Y
 
-if jsf and jsf.Instance.Name ~= _d("O1UBUBA") then
-local hox = jsf.Position.Y + 3.2
+if llo and llo.Instance.Name ~= _d("L1dDDwQ") then
+local tmtb = llo.Position.Y + 3.2
 
-if math.abs(hox - rlx.Y) <= 8 then
-hp = hox
+if math.abs(tmtb - dpje.Y) <= 8 then
+nw = tmtb
 end
 end
 
-local im = Vector3.new(ngvo.Position.X - rlx.X, 0, ngvo.Position.Z - rlx.Z)
+local ecd = Vector3.new(vvnj.Position.X - dpje.X, 0, vvnj.Position.Z - dpje.Z)
 
-if im.Magnitude < 1 then
-im = Vector3.new(4, 0, 0)
+if ecd.Magnitude < 1 then
+ecd = Vector3.new(4, 0, 0)
 else
-im = im.Unit * 4
+ecd = ecd.Unit * 4
 end
 
-local mu = Vector3.new(rlx.X + im.X, hp, rlx.Z + im.Z)
+local fnv = Vector3.new(dpje.X + ecd.X, nw, dpje.Z + ecd.Z)
 
-ngvo.CFrame = CFrame.new(mu)
+vvnj.CFrame = CFrame.new(fnv)
 
 return true
 end
 
-function ze.unlock()
-local cqnw = {
-{ id = _d("DVYUWwYIHglQKlwRCxECUA"), at = Vector3.new(-3825, 24, -40260) },
-{ id = _d("GEMcWz0FFQ1XHVAR"), at = Vector3.new(-6180, 40, -40350) },
-{ id = _d("G10bUQ8OHABrHEYOAg"), at = Vector3.new(-7480, 30, -40350) },
+function fwr.unlock()
+local fd = {
+{ id = _d("GVRWBBIfVh1SaAMFHFkWUg"), at = Vector3.new(-3825, 24, -40260) },
+{ id = _d("DEFeBCkSXRlVXw8F"), at = Vector3.new(-6180, 40, -40350) },
+{ id = _d("D19ZDhsZVBRpXhkaFQ"), at = Vector3.new(-7480, 30, -40350) },
 }
-local gpd = {}
+local vbhr = {}
 
-for ozw, pmw in ipairs(cqnw) do
-local fv = bo.FishingGetState:InvokeServer()
+for gekv, pvzs in ipairs(fd) do
+local tbg = xl.FishingGetState:InvokeServer()
 
-if fv and fv.areas and fv.areas[pmw.id] == true then
-table.insert(gpd, pmw.id .. _d("VhQUWRACEQhNVVoSAh4"))
+if tbg and tbg.areas and tbg.areas[pvzs.id] == true then
+table.insert(vbhr, pvzs.id .. _d("QhZWBgQVWRxPFwUGFVY"))
 else
-ze.hold()
-ze.standAt(pmw.at)
+fwr.hold()
+fwr.standAt(pvzs.at)
 task.wait(2.4)
 
-local lpd = bo.FishingGetState:InvokeServer()
+local mhpa = xl.FishingGetState:InvokeServer()
 
-table.insert(gpd, pmw.id .. (lpd and lpd.areas and lpd.areas[pmw.id] and _d("VhQAWw4IEwdREQ") or _d("VhQTVAsLFQg")))
+table.insert(vbhr, pvzs.id .. (mhpa and mhpa.areas and mhpa.areas[pvzs.id] and _d("QhZCBBofWxNTUw") or _d("QhZRCx8cXRw")))
 end
 end
 
-ze.hold()
+fwr.hold()
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 task.wait(2.5)
 
-return table.concat(gpd, _d("TPbCFQ"))
+return table.concat(vbhr, _d("WPSASg"))
 end
 
-function ze.flyToggle(fe)
-ze.fly.on = fe
+function fwr.flyToggle(whkl)
+fwr.fly.on = whkl
 
-if not fe then
-return _d("KlgMFQ0BFkI")
+if not whkl then
+return _d("PlpOShkWXlY")
 end
 
-local jxie = fh.Character
-local cdzm = jxie and jxie:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local eqf = omhv.Character
+local fqna = eqf and eqf:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not cdzm then
-return _d("IltVVgoGAg1XAVAQRwQDFBlcBBNe")
+if not fqna then
+return _d("NlkXCR4RShlVQw8EUEwXFlsDEAQW")
 end
 
-ze.fly.height = cdzm.Position.Y
+fwr.fly.height = fqna.Position.Y
 
-if ze.fly.connection then
-return _d("KlgMFQ0JXg")
+if fwr.fly.connection then
+return _d("PlpOShkeFg")
 end
 
-local wg = game:GetService(_d("OUcQRysJABlAJlAQERkPUQ"))
+local bph = game:GetService(_d("LUVSGD8eSA1CZA8EBlEbUw"))
 
-ze.fly.connection = jxjd(game:GetService(_d("PkEbZgcVBgVXEA")).Heartbeat, function(ndxp)
-if not ze.fly.on then
+fwr.fly.connection = im(game:GetService(_d("KkNZORMCThFVUg")).Heartbeat, function(zy)
+if not fwr.fly.on then
 return
 end
 
-local vyrq = fh.Character
-local uv = vyrq and vyrq:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local az = omhv.Character
+local ohwg = az and az:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not uv then
+if not ohwg then
 return
 end
 
-local ci = workspace.CurrentCamera
-local uuez = Vector3.zero
+local vmz = workspace.CurrentCamera
+local smgj = Vector3.zero
 
-if ci then
-local wo = ci.CFrame.LookVector
-local wwgy = Vector3.new(wo.X, 0, wo.Z)
+if vmz then
+local apbz = vmz.CFrame.LookVector
+local lm = Vector3.new(apbz.X, 0, apbz.Z)
 
-if wwgy.Magnitude > 0.01 then
-wwgy = wwgy.Unit
+if lm.Magnitude > 0.01 then
+lm = lm.Unit
 end
 
-local qxa = Vector3.new(wwgy.Z, 0, -wwgy.X)
+local qjxy = Vector3.new(lm.Z, 0, -lm.X)
 
-if wg:IsKeyDown(Enum.KeyCode.W) then
-uuez = uuez + wwgy
+if bph:IsKeyDown(Enum.KeyCode.W) then
+smgj = smgj + lm
 end
 
-if wg:IsKeyDown(Enum.KeyCode.S) then
-uuez = uuez - wwgy
+if bph:IsKeyDown(Enum.KeyCode.S) then
+smgj = smgj - lm
 end
 
-if wg:IsKeyDown(Enum.KeyCode.D) then
-uuez = uuez + qxa
+if bph:IsKeyDown(Enum.KeyCode.D) then
+smgj = smgj + qjxy
 end
 
-if wg:IsKeyDown(Enum.KeyCode.A) then
-uuez = uuez - qxa
+if bph:IsKeyDown(Enum.KeyCode.A) then
+smgj = smgj - qjxy
 end
 end
 
-local yzef = 0
+local buno = 0
 
-if wg:IsKeyDown(Enum.KeyCode.Space) then
-yzef = 1
-elseif wg:IsKeyDown(Enum.KeyCode.LeftControl) then
-yzef = -1
+if bph:IsKeyDown(Enum.KeyCode.Space) then
+buno = 1
+elseif bph:IsKeyDown(Enum.KeyCode.LeftControl) then
+buno = -1
 end
 
-local cbvn = ze.fly.speed or 55
-local smsh = uuez * cbvn * ndxp + Vector3.new(0, yzef * cbvn * 0.6 * ndxp, 0)
+local pwto = fwr.fly.speed or 55
+local iht = smgj * pwto * zy + Vector3.new(0, buno * pwto * 0.6 * zy, 0)
 
-if smsh.Magnitude < 0.001 then
+if iht.Magnitude < 0.001 then
 return
 end
 
-uv.CFrame = uv.CFrame + smsh
-uv.AssemblyLinearVelocity = Vector3.zero
+ohwg.CFrame = ohwg.CFrame + iht
+ohwg.AssemblyLinearVelocity = Vector3.zero
 end)
 
-return _d("KlgMFQ0JXg")
+return _d("PlpOShkeFg")
 end
 
-function ze.go(yqcp)
-ze.hold()
+function fwr.go(mg)
+fwr.hold()
 
-if yqcp.kind == _d("G1sHWQY") then
+if mg.kind == _d("D1lFBhI") then
 pcall(function()
-bo.TeleportToWorld:FireServer(yqcp.arg)
+xl.TeleportToWorld:FireServer(mg.arg)
 end)
 
-return _d("P1EbQUITGAkU") .. yqcp.name .. _d("TEAQWQcXHx5AWw")
+return _d("K1NZHlYEUB0W") .. mg.name .. _d("WEJSBhMAVwpCGQ")
 end
 
-if yqcp.kind == _d("BUcZVAwD") then
+if mg.kind == _d("EUVbCxgU") then
 pcall(function()
-bo.FishingIslandTeleport:FireServer(yqcp.arg)
+xl.FishingIslandTeleport:FireServer(mg.arg)
 end)
 
-return _d("P1EbQUITGAkU") .. yqcp.name .. _d("TEAQWQcXHx5AWw") .. tostring(yqcp.note or _d(""))
+return _d("K1NZHlYEUB0W") .. mg.name .. _d("WEJSBhMAVwpCGQ") .. tostring(mg.note or _d(""))
 end
 
-local eaw = ze.point(yqcp)
-local qyr = fh.Character
-local bez = qyr and qyr:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local zkx = fwr.point(mg)
+local itl = omhv.Character
+local mlpz = itl and itl:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if eaw and bez and (bez.Position - eaw).Magnitude > 1500 then
+if zkx and mlpz and (mlpz.Position - zkx).Magnitude > 1500 then
 pcall(function()
-if yqcp.island then
-bo.FishingIslandTeleport:FireServer(yqcp.island)
+if mg.island then
+xl.FishingIslandTeleport:FireServer(mg.island)
 else
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end
 end)
 
-task.wait(yqcp.island and 3.5 or 4.5)
+task.wait(mg.island and 3.5 or 4.5)
 
-eaw = ze.point(yqcp)
+zkx = fwr.point(mg)
 
-bez = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+mlpz = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if eaw and bez and (bez.Position - eaw).Magnitude > 1500 then
-return yqcp.name .. _d("TF0GFQ0JUA") .. tostring(yqcp.island or _d("GFwQFQ4IEg5N"))
-.. _d("TBlVQQoCUAtVGFBCFRUKQQZQEUcEBFUBFRYVGRwUAFsWDhxMXQEVCgYDTFYQUAxHAglVFl0HA1ADWhZQTA")
+if zkx and mlpz and (mlpz.Position - zkx).Magnitude > 1500 then
+return mg.name .. _d("WF9EShkeGA") .. tostring(mg.island or _d("DF5SShofWhpP"))
+.. _d("WBsXHh4VGB9XWg9WAl0eQ0QPBVBMEFdDSgICUQgWQgQCGVRYX0NKHhFLWFRSDxhQSh1XVAITFBgXWFQPWA")
 end
 end
 
-if not eaw then
-return yqcp.name .. _d("TF0GFQwIBExdGxUWDxkfFAJaEAsUQg")
+if not zkx then
+return mg.name .. _d("WF9EShgfTFhfWUoCGFELFkAFBBxcVg")
 end
 
-if not ze.standAt(eaw) then
-return _d("IltVVgoGAg1XAVAQRwQDFBhaFAJe")
+if not fwr.standAt(zkx) then
+return _d("NlkXCR4RShlVQw8EUEwXFloFABUW")
 end
 
-task.delay(ze.holdFor + 2, function()
-pcall(ze.resume)
+task.delay(fwr.holdFor + 2, function()
+pcall(fwr.resume)
 end)
 
-return _d("P0AaWgZHEglHHFEHRw") .. yqcp.name .. _d("Qg")
+return _d("K0JYBRJQWh1FXg4TUA") .. mg.name .. _d("Vg")
 end
 
-ze.islandSection = pry:Section({ Side = _d("IFETQQ") })
-ze.islandSection:Header({ Name = _d("JUcZVAwDA0zE6rr/iMjj") })
+fwr.islandSection = sac:Section({ Side = _d("NFNRHg") })
+fwr.islandSection:Header({ Name = _d("MUVbCxgUS1jGqOXrn4D3") })
 
-ze.npcSection = pry:Section({ Side = _d("Pl0SXRY") })
-ze.npcSection:Header({ Name = _d("ImQ2RkKX7/+5") })
+fwr.npcSection = sac:Section({ Side = _d("Kl9QAgI") })
+fwr.npcSection:Header({ Name = _d("NmZ0GVaAp+u7") })
 
-for al, ui in ipairs(ze.islands) do
-ze.islandSection:Button({
-Name = ui.name,
+for rtz, tn in ipairs(fwr.islands) do
+fwr.islandSection:Button({
+Name = tn.name,
 Callback = function()
 task.spawn(function()
-local gjsw = ze.go(ui)
+local olio = fwr.go(tn)
 
-qza:Notify({
-Title = _d("OFEZUBIIAhg"),
-Description = gjsw,
+zcwe:Notify({
+Title = _d("LFNbDwYfSgw"),
+Description = olio,
 Lifetime = 6,
 })
 end)
@@ -8995,56 +9002,56 @@ end,
 })
 end
 
-ze.state = pa
-ze.tab = pry
-ze.islandSection:Button({
-Name = _d("OVoZWgEMUA1YGRULFBwNWhFG"),
+fwr.state = wf
+fwr.tab = sac
+fwr.islandSection:Button({
+Name = _d("LVhbBRUbGBlaW0ofA1QZWFMZ"),
 Callback = function()
 task.spawn(function()
-local vrwj = ze.unlock()
+local kr = fwr.unlock()
 
-qza:Notify({
-Title = _d("JUcZVAwDAw"),
-Description = vrwj,
+zcwe:Notify({
+Title = _d("MUVbCxgUSw"),
+Description = kr,
 Lifetime = 10,
 })
 end)
 end,
 })
 
-ze.flySection = pry:Section({ Side = _d("IFETQQ") })
-ze.flySection:Header({ Name = _d("KlgMFYD7+IOM+g") })
+fwr.flySection = sac:Section({ Side = _d("NFNRHg") })
+fwr.flySection:Header({ Name = _d("PlpOSpTssJeOuA") })
 
-ze.flySection:Toggle({
-Name = _d("KlgMFUowMT9wWRUxFxEPUVVAEktQL0AHWUIDHxtaXA"),
+fwr.flySection:Toggle({
+Name = _d("PlpOSl4neStyG0olAFkbUxcfBlwYO0JFBlYUVw9YHg"),
 Default = false,
-Callback = function(wey)
-local kb = ze.flyToggle(wey)
+Callback = function(coi)
+local karr = fwr.flyToggle(coi)
 
-qza:Notify({
-Title = _d("KlgM"),
-Description = kb,
+zcwe:Notify({
+Title = _d("PlpO"),
+Description = karr,
 Lifetime = 4,
 })
 end,
-}, _d("DVcXTT0BHBU"))
+}, _d("GVVVEikWVAE"))
 
-getgenv().ACBXTeleport = ze
+getgenv().ACBXTeleport = fwr
 
-getgenv().ACBXDeepWater = jucv
+getgenv().ACBXDeepWater = arc
 
-pcall(jucv.dropStale)
+pcall(arc.dropStale)
 
-for jx, spl in ipairs(ze.npcs) do
-ze.npcSection:Button({
-Name = spl.name,
+for wk, rl in ipairs(fwr.npcs) do
+fwr.npcSection:Button({
+Name = rl.name,
 Callback = function()
 task.spawn(function()
-local sxv = ze.go(spl)
+local xe = fwr.go(rl)
 
-qza:Notify({
-Title = _d("OFEZUBIIAhg"),
-Description = sxv,
+zcwe:Notify({
+Title = _d("LFNbDwYfSgw"),
+Description = xe,
 Lifetime = 6,
 })
 end)
@@ -9052,11 +9059,11 @@ end,
 })
 end
 
-local hza = wc:Section({ Side = _d("IFETQQ") })
+local qsi = aoo:Section({ Side = _d("NFNRHg") })
 
-hza:Header({ Name = _d("KF0SUgsJF0zW7rqN3/8") })
+qsi:Header({ Name = _d("PF9QDR8eX1jUrOWZyLc") })
 
-local uu = {
+local hrcx = {
 busy = false,
 
 treasures = {},
@@ -9069,48 +9076,48 @@ skipped = 0,
 resultAt = 0,
 }
 
-local mnx = (tonumber(getgenv().ACBXDigGeneration) or 0) + 1
-getgenv().ACBXDigGeneration = mnx
+local rde = (tonumber(getgenv().ACBXDigGeneration) or 0) + 1
+getgenv().ACBXDigGeneration = rde
 
-function uu.read()
-local wbw, hxe = pcall(function()
-return bo.DigGetState:InvokeServer()
+function hrcx.read()
+local mxfr, sml = pcall(function()
+return xl.DigGetState:InvokeServer()
 end)
 
-return wbw and type(hxe) == _d("GFUXWQc") and hxe or nil
+return mxfr and type(sml) == _d("DFdVBhM") and sml or nil
 end
 
-function uu.call(rxm, yajv)
-local hic, gizg = pcall(function()
-return bo.DigShop:InvokeServer(rxm, yajv)
+function hrcx.call(btdz, watd)
+local veqb, mdx = pcall(function()
+return xl.DigShop:InvokeServer(btdz, watd)
 end)
 
 task.wait(2.5)
 
-return hic and gizg == true
+return veqb and mdx == true
 end
 
-function uu.wear()
-local wgc = fh.Character
+function hrcx.wear()
+local pxta = omhv.Character
 
-if not wgc then
+if not pxta then
 return false
 end
 
-local ruga = wgc:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
-local krje = fh:FindFirstChild(_d("LlUWXhIGEwc"))
+local ifx = pxta:FindFirstChildOfClass(_d("MENaCxgfURw"))
+local wbo = omhv:FindFirstChild(_d("OldUAQYRWxM"))
 
-if not (ruga and krje) then
+if not (ifx and wbo) then
 return false
 end
 
-ruga:UnequipTools()
+ifx:UnequipTools()
 task.wait(0.4)
 
-for ccu = 1, 8 do
-for zjd, wku in ipairs(krje:GetChildren()) do
-if wku:IsA(_d("OFsaWQ")) and wku.Name:find(_d("MnAcUjEPHxpRGQ")) then
-ruga:EquipTool(wku)
+for efys = 1, 8 do
+for rarl, hrm in ipairs(wbo:GetChildren()) do
+if hrm:IsA(_d("LFlYBg")) and hrm.Name:find(_d("JnJeDSUYVw5TWw")) then
+ifx:EquipTool(hrm)
 
 return true
 end
@@ -9122,164 +9129,164 @@ end
 return false
 end
 
-function uu.run()
-local uqz = uu.read()
+function hrcx.run()
+local dhr = hrcx.read()
 
-if not uqz then
-return _d("OFwQFQYOF0xHHVoSRxkfFBtaFkcRAkcCUBAOHgsa")
+if not dhr then
+return _d("LF5SShIZX1hFXwUGUFELFlkFAlBZFkVADwQZVh8Y")
 end
 
-local csq = {}
+local tv = {}
 
 pcall(function()
-local ynck = bo.FishingGetState:InvokeServer()
+local yer = xl.FishingGetState:InvokeServer()
 
-csq = ynck and ynck.areas or {}
+tv = yer and yer.areas or {}
 end)
 
-if not (csq.abandoned_island and csq.twin_beaches and csq.windmill_isle) then
-ze.unlock()
+if not (tv.abandoned_island and tv.twin_beaches and tv.windmill_isle) then
+fwr.unlock()
 task.wait(1)
 end
 
-local crp
+local ypx
 
-for vok, vhu in ipairs(ze.npcs) do
-if vhu.name == _d("KF0SUgcV") then
-crp = vhu
+for bnma, qps in ipairs(fwr.npcs) do
+if qps.name == _d("PF9QDRMC") then
+ypx = qps
 break
 end
 end
 
-if not crp then
-return _d("OFwQFTYVFQ1HAEcHRzgZWgFQEEcZHxQbWhZHGQIUAV0LFFAbWwdZBkk")
+if not ypx then
+return _d("LF5SSiICXRlFQhgTUHANWEMPBFBRCxZZBQJQURYWQwIfAxgPWUUGEl4")
 end
 
-ze.go(crp)
+fwr.go(ypx)
 task.wait(2)
 
-local tkw = fh.Character
-local zszs = tkw and tkw:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local sey = ze.point(crp)
+local gghh = omhv.Character
+local psy = gghh and gghh:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local wvie = fwr.point(ypx)
 
-if not (zszs and sey) or (zszs.Position - sey).Magnitude > 40 then
-return _d("L1sAWQZHHgNAVUcHBhMEFAFdB0ckHlEURhcVFUx8AFsWAgJC")
+if not (psy and wvie) or (psy.Position - wvie).Magnitude > 40 then
+return _d("O1lCBhJQVhdCFxgTEVsQFkMCE1BsClNWGQMCXVh+QgQCFUpW")
 end
 
-uqz = uu.read() or uqz
+dhr = hrcx.read() or dhr
 
-local uowy = false
-local rhfa = uqz.shovels and uqz.shovels.shovel_basic == true
-local hlh = uqz.detectors and uqz.detectors.detector_basic == true
+local fhj = false
+local aa = dhr.shovels and dhr.shovels.shovel_basic == true
+local vnk = dhr.detectors and dhr.detectors.detector_basic == true
 
-if not (rhfa and hlh) then
-uowy = uu.call(_d("L1gUXA80BA1GAVAQ"), _d("H1waQwcLLw5VBlwB"))
-uqz = uu.read() or uqz
+if not (aa and vnk) then
+fhj = hrcx.call(_d("O1pWAxsjTBlEQw8E"), _d("C15YHBMcZxpXRAMV"))
+dhr = hrcx.read() or dhr
 end
 
-if uqz.equippedShovel ~= _d("H1waQwcLLw5VBlwB") then
-uu.call(_d("KUUAXBI0GANCEFk"), _d("H1waQwcLLw5VBlwB"))
+if dhr.equippedShovel ~= _d("C15YHBMcZxpXRAMV") then
+hrcx.call(_d("PUdCAwYjUBdAUgY"), _d("C15YHBMcZxpXRAMV"))
 end
 
-if uqz.equippedDetector ~= _d("CFEBUAETHx5rF1QRDhM") then
-uu.call(_d("KUUAXBIjFRhRFkENFQ"), _d("CFEBUAETHx5rF1QRDhM"))
+if dhr.equippedDetector ~= _d("HFNDDxUEVwppVQsFGVs") then
+hrcx.call(_d("PUdCAwY0XQxTVB4ZAg"), _d("HFNDDxUEVwppVQsFGVs"))
 end
 
-uqz = uu.read() or uqz
+dhr = hrcx.read() or dhr
 
-if uqz.equippedShovel == _d("H1waQwcLLw5VBlwB") and uqz.equippedDetector == _d("CFEBUAETHx5rF1QRDhM") then
-local dom = uu.wear()
-local dv = false
+if dhr.equippedShovel == _d("C15YHBMcZxpXRAMV") and dhr.equippedDetector == _d("HFNDDxUEVwppVQsFGVs") then
+local qjlj = hrcx.wear()
+local geh = false
 
-if dom and pa.enabled then
-pa.autoFishWanted = false
-dv = true
+if qjlj and wf.enabled then
+wf.autoFishWanted = false
+geh = true
 
-hxj(false)
+oxse(false)
 
 pcall(function()
-ari:UpdateState(false)
+ld:UpdateState(false)
 end)
 end
 
-return (uowy and _d("L1gUXA8CFExVG1FCAgEZXQVFBwM") or _d("KUUAXBIXFQg"))
-.. _d("TEAdUEIlER9dFhUxDx8aURkVAwkUTHYURgsEUChRAVABEx8eGg")
-.. (dv and _d("THUAQQ1HNgVHHRUNARZMGVVBCgJQH1waQwcLUARVBhUWDxVMQBpaDkcDAFsBGw") or _d(""))
+return (fhj and _d("O1pWAxsVXFhXWQ5WFUkNX0caExQ") or _d("PUdCAwYAXRw"))
+.. _d("WEJfD1YyWQtfVEolGFcOU1tKFx5cWHRWGR8TGDxTQw8VBFcKGA")
+.. (geh and _d("WHdCHhlQfhFFX0oZFl5YGxceHhUYC15YHBMcGBBXREoCGF1YQlgFGlBLFFlDRA") or _d(""))
 end
 
-return _d("OFwQFSAGAwVXVWYKCAYJWFVaEEc0CUAQVhYIAkxdBhURExkAWFVYCxQDBVoSGw")
+return _d("LF5SSjQRSxFVFzkeH04dWhcFBFB8HUJSCQIfSlhfREoFBFEUWhcHHwNLEVhQRA")
 end
 
-function uu.unlock()
-if uu.busy then
-return _d("LVgHUAMDCUxDGkcJDh4LGg")
+function hrcx.unlock()
+if hrcx.busy then
+return _d("OVpFDxcUQVhBWBgdGVYfGA")
 end
 
-uu.busy = true
+hrcx.busy = true
 
-local hzc, llh = pcall(uu.run)
+local zc, eep = pcall(hrcx.run)
 
-uu.busy = false
+hrcx.busy = false
 
-if not hzc then
-return _d("KF0SUgsJF0xSFFwOAhRWFA") .. tostring(llh)
+if not zc then
+return _d("PF9QDR8eX1hQVgMaFVxCFg") .. tostring(eep)
 end
 
-return llh
+return eep
 end
 
-uu.icon = function()
-local keb = gethui()
+hrcx.icon = function()
+local gkl = gethui()
 
-for rhf, qzfz in ipairs(keb:QueryDescendants(_d("JVkUUgcrEQ5RGQ"))) do
-if qzfz.Name == _d("OFUXfA8GFwk") then
-local yqez = qzfz.Parent
-local lzxn = yqez and yqez:FindFirstChild(_d("OFUXZhUOBA9cEEcsBh0J"))
+for dvdq, wil in ipairs(gkl:QueryDescendants(_d("MVtWDRM8WRpTWw"))) do
+if wil.Name == _d("LFdVIxsRXx0") then
+local ehyc = wil.Parent
+local mn = ehyc and ehyc:FindFirstChild(_d("LFdVOQEZTBteUhg4EVUd"))
 
-if lzxn and lzxn.Text == _d("KF0SUgsJFw") then
-if qzfz:GetAttribute(_d("LXc3bSYOFyVXGls")) then
+if mn and mn.Text == _d("PF9QDR8eXw") then
+if wil:GetAttribute(_d("OXV1MjIZXzFVWAQ")) then
 return true
 end
 
-qzfz:SetAttribute(_d("LXc3bSYOFyVXGls"), true)
-qzfz.Image = _d("")
-qzfz.BackgroundTransparency = 1
+wil:SetAttribute(_d("OXV1MjIZXzFVWAQ"), true)
+wil.Image = _d("")
+wil.BackgroundTransparency = 1
 
-local pjil = Color3.fromRGB(233, 236, 242)
+local xfau = Color3.fromRGB(233, 236, 242)
 
-for sgmb, pxpc in ipairs(keb:QueryDescendants(_d("JVkUUgcrEQ5RGQ"))) do
-if pxpc.Name == _d("OFUXfA8GFwk") and pxpc ~= qzfz and pxpc.Image ~= _d("") then
-pjil = pxpc.ImageColor3
+for iadf, rlpx in ipairs(gkl:QueryDescendants(_d("MVtWDRM8WRpTWw"))) do
+if rlpx.Name == _d("LFdVIxsRXx0") and rlpx ~= wil and rlpx.Image ~= _d("") then
+xfau = rlpx.ImageColor3
 break
 end
 end
 
-local function awi(ki, div, rbq, oowy, biwc, mwp)
-local jcac = Instance.new(_d("KkYUWAc"))
+local function utj(phyg, qeb, cps, lou, jqrb, fgu)
+local zyrm = Instance.new(_d("PkRWBxM"))
 
-jcac.Size = UDim2.fromOffset(rbq, oowy)
-jcac.Position = UDim2.fromOffset(ki, div)
-jcac.BackgroundColor3 = pjil
-jcac.BorderSizePixel = 0
-jcac.Parent = qzfz
+zyrm.Size = UDim2.fromOffset(cps, lou)
+zyrm.Position = UDim2.fromOffset(phyg, qeb)
+zyrm.BackgroundColor3 = xfau
+zyrm.BorderSizePixel = 0
+zyrm.Parent = wil
 
-if mwp then
-jcac.Rotation = mwp
+if fgu then
+zyrm.Rotation = fgu
 end
 
-if biwc then
-local ej = Instance.new(_d("OX02WhAJFR4"))
+if jqrb then
+local prm = Instance.new(_d("LX90BQQeXQo"))
 
-ej.CornerRadius = UDim.new(0, biwc)
-ej.Parent = jcac
+prm.CornerRadius = UDim.new(0, jqrb)
+prm.Parent = zyrm
 end
 
-return jcac
+return zyrm
 end
 
-awi(1.1, 10.2, 7, 6.4, 1.6, -45)
-awi(3.1, 8.3, 11, 2.2, 0.8, -45)
-awi(9.8, 4.4, 5.6, 2, 0.8, 45)
+utj(1.1, 10.2, 7, 6.4, 1.6, -45)
+utj(3.1, 8.3, 11, 2.2, 0.8, -45)
+utj(9.8, 4.4, 5.6, 2, 0.8, 45)
 
 return true
 end
@@ -9290,8 +9297,8 @@ return false
 end
 
 task.defer(function()
-for tyon = 1, 20 do
-if uu.icon() then
+for xoy = 1, 20 do
+if hrcx.icon() then
 break
 end
 
@@ -9299,41 +9306,41 @@ task.wait(0.25)
 end
 end)
 
-hza:Button({
-Name = _d("OVoZWgEMUAhdElILCRc"),
+qsi:Button({
+Name = _d("LVhbBRUbGBxfUA0fHl8"),
 Callback = function()
 task.spawn(function()
-qza:Notify({
-Title = _d("KF0SUgsJFw"),
-Description = _d("JFEUUQsJF0xAGhUWDxVMYAdQAxQFHlFVfRcJBAlGWw"),
+zcwe:Notify({
+Title = _d("PF9QDR8eXw"),
+Description = _d("MFNWDh8eX1hCWEoCGF1YYkUPFwNNClMXIgMeTB1EGQ"),
 Lifetime = 5,
 })
 
-local xojp = uu.unlock()
+local eznu = hrcx.unlock()
 
-qza:Notify({
-Title = _d("KF0SUgsJFw"),
-Description = xojp,
+zcwe:Notify({
+Title = _d("PF9QDR8eXw"),
+Description = eznu,
 Lifetime = 10,
 })
 end)
 end,
 })
 
-uu.statusParagraph = hza:Paragraph({
-Header = _d("KF0SFRETERhR"),
-Body = _d("PlEUUQsJF0xAHVBCAxkLFAZUFAJeQho"),
+hrcx.statusParagraph = qsi:Paragraph({
+Header = _d("PF9QSgUEWQxT"),
+Body = _d("KlNWDh8eX1hCXw9WFFEfFkQLABUWVhg"),
 })
 
-uu.data = require(kq.ModuleScripts.DigData)
+hrcx.data = require(ayu.ModuleScripts.DigData)
 
-function uu.zoneAt(gr)
-for go, cy in ipairs(game:GetService(_d("L1sZWQcEBAVbG2YHFQYFVxA")):GetTagged(uu.data.ZoneTag)) do
-if cy:IsA(_d("LlUGUDIGAhg")) and cy:IsDescendantOf(workspace) then
-local szkj = cy.CFrame:PointToObjectSpace(gr)
-local htdq = cy.Size * 0.5
+function hrcx.zoneAt(dz)
+for cmzb, upux in ipairs(game:GetService(_d("O1lbBhMTTBFZWTkTAk4RVVI")):GetTagged(hrcx.data.ZoneTag)) do
+if upux:IsA(_d("OldEDyYRSgw")) and upux:IsDescendantOf(workspace) then
+local fg = upux.CFrame:PointToObjectSpace(dz)
+local cph = upux.Size * 0.5
 
-if math.abs(szkj.X) <= htdq.X and math.abs(szkj.Y) <= htdq.Y and math.abs(szkj.Z) <= htdq.Z then
+if math.abs(fg.X) <= cph.X and math.abs(fg.Y) <= cph.Y and math.abs(fg.Z) <= cph.Z then
 return true
 end
 end
@@ -9342,9 +9349,9 @@ end
 return false
 end
 
-function uu.onIsland()
-for jwp, ndx in ipairs(game:GetService(_d("L1sZWQcEBAVbG2YHFQYFVxA")):GetTagged(uu.data.ZoneTag)) do
-if ndx:IsA(_d("LlUGUDIGAhg")) and ndx:IsDescendantOf(workspace) then
+function hrcx.onIsland()
+for wyp, gizn in ipairs(game:GetService(_d("O1lbBhMTTBFZWTkTAk4RVVI")):GetTagged(hrcx.data.ZoneTag)) do
+if gizn:IsA(_d("OldEDyYRSgw")) and gizn:IsDescendantOf(workspace) then
 return true
 end
 end
@@ -9352,110 +9359,110 @@ end
 return false
 end
 
-function uu.bestShovel(gwky)
-local iw = gwky and gwky.shovels or {}
-local btsi = nil
+function hrcx.bestShovel(juy)
+local mtp = juy and juy.shovels or {}
+local cyvg = nil
 
-for otbz, fxe in ipairs(uu.data.Shovels) do
-if iw[fxe.id] == true then
-btsi = fxe.id
+for pfj, tk in ipairs(hrcx.data.Shovels) do
+if mtp[tk.id] == true then
+cyvg = tk.id
 end
 end
 
-return btsi
+return cyvg
 end
 
-function uu.equipBest()
-local hln = uu.read()
-local apo = uu.bestShovel(hln)
+function hrcx.equipBest()
+local lay = hrcx.read()
+local ia = hrcx.bestShovel(lay)
 
-if not apo then
+if not ia then
 return nil
 end
 
-if hln.equippedShovel ~= apo then
-uu.call(_d("KUUAXBI0GANCEFk"), apo)
+if lay.equippedShovel ~= ia then
+hrcx.call(_d("PUdCAwYjUBdAUgY"), ia)
 end
 
-uu.wear()
+hrcx.wear()
 
-return apo
+return ia
 end
 
-function uu.bestDetector(zy)
-local rxy = zy and zy.detectors or {}
-local xncx = nil
+function hrcx.bestDetector(cgk)
+local rsw = cgk and cgk.detectors or {}
+local bksl = nil
 
-for wv, lz in ipairs(uu.data.Detectors) do
-if rxy[lz.id] == true then
-xncx = lz.id
+for choa, kzda in ipairs(hrcx.data.Detectors) do
+if rsw[kzda.id] == true then
+bksl = kzda.id
 end
 end
 
-return xncx
+return bksl
 end
 
-function uu.equipBestDetector()
-local xip = uu.read()
-local sfma = uu.bestDetector(xip)
+function hrcx.equipBestDetector()
+local avdo = hrcx.read()
+local unku = hrcx.bestDetector(avdo)
 
-if not sfma then
+if not unku then
 return nil
 end
 
-if xip.equippedDetector ~= sfma then
-uu.call(_d("KUUAXBIjFRhRFkENFQ"), sfma)
+if avdo.equippedDetector ~= unku then
+hrcx.call(_d("PUdCAwY0XQxTVB4ZAg"), unku)
 end
 
-return sfma
+return unku
 end
 
-function uu.leaveNpc()
-local kzom = fh.Character
-local dwfo = kzom and kzom:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local akyt = kzom and kzom:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+function hrcx.leaveNpc()
+local gbtg = omhv.Character
+local rqml = gbtg and gbtg:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local udhk = gbtg and gbtg:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if not (dwfo and akyt) then
+if not (rqml and udhk) then
 return false
 end
 
-local fae
+local ahyx
 
-for fnrr, dosa in ipairs(ze.npcs) do
-if dosa.name == _d("KF0SUgcV") then
-fae = dosa
+for ukvw, xcmp in ipairs(fwr.npcs) do
+if xcmp.name == _d("PF9QDRMC") then
+ahyx = xcmp
 break
 end
 end
 
-local noxf = fae and ze.point(fae)
+local ibs = ahyx and fwr.point(ahyx)
 
-if not noxf then
+if not ibs then
 return false
 end
 
-local wyik = Vector3.new(dwfo.Position.X - noxf.X, 0, dwfo.Position.Z - noxf.Z)
+local yaf = Vector3.new(rqml.Position.X - ibs.X, 0, rqml.Position.Z - ibs.Z)
 
-if wyik.Magnitude >= 16 then
+if yaf.Magnitude >= 16 then
 return true
 end
 
-if wyik.Magnitude < 1 then
-wyik = Vector3.new(0, 0, -1)
+if yaf.Magnitude < 1 then
+yaf = Vector3.new(0, 0, -1)
 end
 
-wyik = wyik.Unit
+yaf = yaf.Unit
 
-local qdyt = Vector3.new(noxf.X + wyik.X * 22, dwfo.Position.Y, noxf.Z + wyik.Z * 22)
-local dlf = os.clock() + 6
+local gls = Vector3.new(ibs.X + yaf.X * 22, rqml.Position.Y, ibs.Z + yaf.Z * 22)
+local vvn = os.clock() + 6
 
-akyt:MoveTo(qdyt)
+udhk:MoveTo(gls)
 
-while os.clock() < dlf do
-local jnx = fh.Character
-local ol = jnx and jnx:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+while os.clock() < vvn do
+local pep = omhv.Character
+local seds = pep and pep:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not ol or (ol.Position - qdyt).Magnitude < 4 then
+if not seds or (seds.Position - gls).Magnitude < 4 then
 break
 end
 
@@ -9463,95 +9470,95 @@ task.wait(0.15)
 end
 
 pcall(function()
-akyt:MoveTo(dwfo.Position)
+udhk:MoveTo(rqml.Position)
 end)
 
 return true
 end
 
-function uu.goToSand(trhb)
+function hrcx.goToSand(zahq)
 
-if trhb or not uu.onIsland() then
-if not trhb then
+if zahq or not hrcx.onIsland() then
+if not zahq then
 
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 
-local ukpa = os.clock() + 15
+local gk = os.clock() + 15
 
-while not uu.onIsland() and os.clock() < ukpa do
+while not hrcx.onIsland() and os.clock() < gk do
 task.wait(0.5)
 end
 end
 
-local bjqs
+local nryw
 
-for hr, xp in ipairs(ze.npcs) do
-if xp.name == _d("KF0SUgcV") then
-bjqs = xp
+for tdz, pzr in ipairs(fwr.npcs) do
+if pzr.name == _d("PF9QDRMC") then
+nryw = pzr
 break
 end
 end
 
-if bjqs then
-ze.go(bjqs)
+if nryw then
+fwr.go(nryw)
 task.wait(2)
 end
 end
 
-if uu.onIsland() then
-uu.leaveNpc()
+if hrcx.onIsland() then
+hrcx.leaveNpc()
 end
 end
 
-function uu.spot()
-local ibbr = fh.Character
-local xwje = ibbr and ibbr:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function hrcx.spot()
+local elwm = omhv.Character
+local nprw = elwm and elwm:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not xwje then
+if not nprw then
 return nil
 end
 
-local anrr = xwje.CFrame.LookVector
-local voo = Vector3.new(anrr.X, 0, anrr.Z)
+local ts = nprw.CFrame.LookVector
+local wx = Vector3.new(ts.X, 0, ts.Z)
 
-if voo.Magnitude < 0.01 then
-voo = Vector3.new(0, 0, -1)
+if wx.Magnitude < 0.01 then
+wx = Vector3.new(0, 0, -1)
 end
 
-voo = voo.Unit
+wx = wx.Unit
 
-local pt = RaycastParams.new()
-pt.FilterType = Enum.RaycastFilterType.Exclude
-pt.FilterDescendantsInstances = { ibbr }
+local tlm = RaycastParams.new()
+tlm.FilterType = Enum.RaycastFilterType.Exclude
+tlm.FilterDescendantsInstances = { elwm }
 
-local function vtdc(ec, spdw)
-local skk = xwje.Position + ec * spdw + Vector3.new(0, 4, 0)
-local zng = workspace:Raycast(skk, Vector3.new(0, -18, 0), pt)
+local function buq(spur, ekmd)
+local aizy = nprw.Position + spur * ekmd + Vector3.new(0, 4, 0)
+local zu = workspace:Raycast(aizy, Vector3.new(0, -18, 0), tlm)
 
-if zng and uu.zoneAt(zng.Position) then
-return zng.Position
-end
-end
-
-for iob, kble in ipairs({ 4, 7, 10, 2 }) do
-local vgqi = vtdc(voo, kble)
-
-if vgqi then
-return vgqi
+if zu and hrcx.zoneAt(zu.Position) then
+return zu.Position
 end
 end
 
-local kahz = Vector3.new(-voo.Z, 0, voo.X)
+for igs, ple in ipairs({ 4, 7, 10, 2 }) do
+local uh = buq(wx, ple)
 
-for ep, kkd in ipairs({ 4, 8 }) do
-for qh, dclq in ipairs({ 1, -1 }) do
-for izq, lbr in ipairs({ 1, 0.5 }) do
-local qvh = vtdc((kahz * (dclq * lbr) + voo * (1 - lbr)).Unit, kkd)
+if uh then
+return uh
+end
+end
 
-if qvh then
-return qvh
+local dzc = Vector3.new(-wx.Z, 0, wx.X)
+
+for tq, oyi in ipairs({ 4, 8 }) do
+for uik, pda in ipairs({ 1, -1 }) do
+for ivph, icbh in ipairs({ 1, 0.5 }) do
+local poa = buq((dzc * (pda * icbh) + wx * (1 - icbh)).Unit, oyi)
+
+if poa then
+return poa
 end
 end
 end
@@ -9560,214 +9567,214 @@ end
 return nil
 end
 
-function uu.turn()
-local igl = fh.Character
-local gbvd = igl and igl:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function hrcx.turn()
+local wsb = omhv.Character
+local uju = wsb and wsb:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not gbvd then
+if not uju then
 return
 end
 
-local nc = gbvd.CFrame.LookVector
-local yly = Vector3.new(nc.X, 0, nc.Z)
+local mtk = uju.CFrame.LookVector
+local iuy = Vector3.new(mtk.X, 0, mtk.Z)
 
-if yly.Magnitude < 0.01 then
-yly = Vector3.new(0, 0, -1)
+if iuy.Magnitude < 0.01 then
+iuy = Vector3.new(0, 0, -1)
 end
 
-yly = yly.Unit
+iuy = iuy.Unit
 
-local cu = Vector3.new(-yly.Z, 0, yly.X)
+local lmfq = Vector3.new(-iuy.Z, 0, iuy.X)
 
-gbvd.CFrame = CFrame.lookAt(gbvd.Position, gbvd.Position + cu)
+uju.CFrame = CFrame.lookAt(uju.Position, uju.Position + lmfq)
 end
 
-uu.misses = 0
+hrcx.misses = 0
 
-uu.pending = false
+hrcx.pending = false
 
-uu.spots = {}
-uu.treasures = {}
+hrcx.spots = {}
+hrcx.treasures = {}
 
-local function lyd(ww)
-local wtf = {}
-local yfhq = {}
+local function kb(amur)
+local fvn = {}
+local dcv = {}
 
-for axw, rdbl in pairs(ww) do
-local rgtm
-local krdf
+for arsk, kpf in pairs(amur) do
+local mwfs
+local ptkq
 
-if typeof(rdbl) == _d("OlEWQQ0VQw") or typeof(rdbl) == _d("L3IHVA8C") then
-rgtm = axw
-krdf = rdbl
-elseif type(rdbl) == _d("GFUXWQc") then
-rgtm = rdbl.id or rdbl.Id or rdbl[1]
-krdf = rdbl.position or rdbl.Position or rdbl.pos or rdbl[2]
+if typeof(kpf) == _d("LlNUHhkCCw") or typeof(kpf) == _d("O3BFCxsV") then
+mwfs = arsk
+ptkq = kpf
+elseif type(kpf) == _d("DFdVBhM") then
+mwfs = kpf.id or kpf.Id or kpf[1]
+ptkq = kpf.position or kpf.Position or kpf.pos or kpf[2]
 end
 
-if typeof(krdf) == _d("L3IHVA8C") then
-krdf = krdf.Position
+if typeof(ptkq) == _d("O3BFCxsV") then
+ptkq = ptkq.Position
 end
 
-if rgtm ~= nil and typeof(krdf) == _d("OlEWQQ0VQw") then
-table.insert(wtf, { id = rgtm, position = krdf, spot = true })
-yfhq[rgtm] = true
+if mwfs ~= nil and typeof(ptkq) == _d("LlNUHhkCCw") then
+table.insert(fvn, { id = mwfs, position = ptkq, spot = true })
+dcv[mwfs] = true
 end
 end
 
-return wtf, yfhq
+return fvn, dcv
 end
 
 pcall(function()
-jxjd(bo.DigUpdate.OnClientEvent, function(nul, ih)
-if nul == _d("KF0SZwcUBQBA") then
-uu.pending = false
-uu.resultAt = os.clock()
-elseif nul == _d("KF0SdgMJEwlY") then
-uu.pending = false
-elseif nul == _d("KF0SZhYGAhg") then
+im(xl.DigUpdate.OnClientEvent, function(kin, bfs)
+if kin == _d("PF9QOBMDTRRC") then
+hrcx.pending = false
+hrcx.resultAt = os.clock()
+elseif kin == _d("PF9QKRceWx1a") then
+hrcx.pending = false
+elseif kin == _d("PF9QOQIRSgw") then
 
-uu.startedAt = os.clock()
-uu.startDuration = type(ih) == _d("GFUXWQc") and tonumber(ih.duration) or nil
+hrcx.startedAt = os.clock()
+hrcx.startDuration = type(bfs) == _d("DFdVBhM") and tonumber(bfs.duration) or nil
 end
 
-if (nul == _d("P0QaQRE") or nul == _d("OEYQVBESAglH")) and type(ih) == _d("GFUXWQc") then
-local bgh, nnh = lyd(ih)
+if (kin == _d("K0ZYHgU") or kin == _d("LERSCwUFSh1F")) and type(bfs) == _d("DFdVBhM") then
+local rwt, dszi = kb(bfs)
 
-if nul == _d("P0QaQRE") then
-for acu, ejii in ipairs(bgh) do
-ejii.spot = true
+if kin == _d("K0ZYHgU") then
+for arj, gahw in ipairs(rwt) do
+gahw.spot = true
 end
 
-uu.spots = bgh
-uu.reportedSpots = nnh
+hrcx.spots = rwt
+hrcx.reportedSpots = dszi
 else
-uu.treasures = bgh
+hrcx.treasures = rwt
 
-for zuh, xnnk in ipairs(bgh) do
-xnnk.spot = nil
+for hu, iy in ipairs(rwt) do
+iy.spot = nil
 end
 
-uu.reported = nnh
+hrcx.reported = dszi
 end
 
-local ml = uu.target
+local tz = hrcx.target
 
-if ml and not ml.mark then
-local pf = ml.spot and uu.reportedSpots or uu.reported
+if tz and not tz.mark then
+local lho = tz.spot and hrcx.reportedSpots or hrcx.reported
 
-if pf and not pf[ml.id] then
-uu.targetGone = true
+if lho and not lho[tz.id] then
+hrcx.targetGone = true
 end
 end
 end
 end)
 end)
 
-function uu.withinDig(djp)
-local dbf = fh.Character
-local xzl = dbf and dbf:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function hrcx.withinDig(zcnn)
+local agc = omhv.Character
+local tjd = agc and agc:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not xzl then
+if not tjd then
 return false
 end
 
-return (xzl.Position - djp).Magnitude <= 10
+return (tjd.Position - zcnn).Magnitude <= 10
 end
 
-uu.markGone = {}
+hrcx.markGone = {}
 
-function uu.marked()
-local cuas = workspace:FindFirstChild(_d("KF0SeAMVGx8"))
-local tm = {}
+function hrcx.marked()
+local nifv = workspace:FindFirstChild(_d("PF9QJxcCUws"))
+local adpr = {}
 
-if not cuas then
-return tm
+if not nifv then
+return adpr
 end
 
-local sccl = os.clock()
+local ylml = os.clock()
 
-for lhoy, ovis in ipairs(cuas:GetChildren()) do
-if ovis.Name == _d("NHkURwk") and ovis:IsA(_d("LlUGUDIGAhg")) then
-local mhr = ovis.Position
-local dgnc = string.format(_d("AVUHXlhCXlxSTxBMVxY"), mhr.X, mhr.Z)
-local hhxi = uu.markGone[dgnc]
+for jxz, xsix in ipairs(nifv:GetChildren()) do
+if xsix.Name == _d("IHtWGB0") and xsix:IsA(_d("OldEDyYRSgw")) then
+local ihs = xsix.Position
+local fzfb = string.format(_d("FVdFAUxVFkhQDU9YQF4"), ihs.X, ihs.Z)
+local xtki = hrcx.markGone[fzfb]
 
-if not (hhxi and sccl - hhxi < 90) then
-table.insert(tm, { id = dgnc, position = mhr, mark = true })
+if not (xtki and ylml - xtki < 90) then
+table.insert(adpr, { id = fzfb, position = ihs, mark = true })
 end
 end
 end
 
-return tm
+return adpr
 end
 
-function uu.chests()
-local vhne = {}
+function hrcx.chests()
+local jpt = {}
 
-for rln, vno in ipairs(uu.spots or {}) do
-table.insert(vhne, vno)
+for bquv, xnvv in ipairs(hrcx.spots or {}) do
+table.insert(jpt, xnvv)
 end
 
-for kg, oxgk in ipairs(uu.treasures or {}) do
-table.insert(vhne, oxgk)
+for kde, znh in ipairs(hrcx.treasures or {}) do
+table.insert(jpt, znh)
 end
 
-for xi, uvoy in ipairs(uu.marked()) do
-local xd = false
+for seq, npn in ipairs(hrcx.marked()) do
+local she = false
 
-for fzla, kj in ipairs(vhne) do
-if (kj.position - uvoy.position).Magnitude < 2 then
-xd = true
+for ixea, tori in ipairs(jpt) do
+if (tori.position - npn.position).Magnitude < 2 then
+she = true
 
 break
 end
 end
 
-if not xd then
-table.insert(vhne, uvoy)
+if not she then
+table.insert(jpt, npn)
 end
 end
 
-return vhne
+return jpt
 end
 
-function uu.release(tnk)
-if tnk.mark then
-uu.markGone[tnk.id] = os.clock()
+function hrcx.release(fece)
+if fece.mark then
+hrcx.markGone[fece.id] = os.clock()
 else
-uu.forget(tnk)
+hrcx.forget(fece)
 end
 end
 
-function uu.nearestChest(ruf)
-local xscb = fh.Character
-local ufxk = xscb and xscb:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function hrcx.nearestChest(pfgu)
+local gfxw = omhv.Character
+local uki = gfxw and gfxw:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not ufxk then
+if not uki then
 return nil
 end
 
-local fg
-local jpnz
+local kig
+local iryv
 
-for itz, aa in ipairs(uu.chests()) do
-local qcld = (aa.position - ufxk.Position).Magnitude
+for jcz, idu in ipairs(hrcx.chests()) do
+local hjuu = (idu.position - uki.Position).Magnitude
 
-if qcld <= ruf and (not jpnz or qcld < jpnz) then
-fg = aa
-jpnz = qcld
+if hjuu <= pfgu and (not iryv or hjuu < iryv) then
+kig = idu
+iryv = hjuu
 end
 end
 
-return fg
+return kig
 end
 
-function uu.forget(qgxe)
-for fyu, vrq in ipairs({ uu.spots or {}, uu.treasures or {} }) do
-for wf, yboe in ipairs(vrq) do
-if yboe.id == qgxe.id then
-table.remove(vrq, wf)
+function hrcx.forget(gli)
+for ivwe, zvsx in ipairs({ hrcx.spots or {}, hrcx.treasures or {} }) do
+for bul, mbm in ipairs(zvsx) do
+if mbm.id == gli.id then
+table.remove(zvsx, bul)
 
 return
 end
@@ -9775,49 +9782,49 @@ end
 end
 end
 
-function uu.walkTo(dqwx)
-local gzw = fh.Character
-local ilb = gzw and gzw:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local jrhy = gzw and gzw:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+function hrcx.walkTo(xfg)
+local kdtg = omhv.Character
+local hqub = kdtg and kdtg:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local zivd = kdtg and kdtg:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if not (ilb and jrhy) then
+if not (hqub and zivd) then
 return false
 end
 
-local dipg = os.clock() + 12
-local jop = (ilb.Position - dqwx).Magnitude
-local ux = os.clock()
-local dti = false
+local msu = os.clock() + 12
+local apkn = (hqub.Position - xfg).Magnitude
+local ck = os.clock()
+local wcma = false
 
 pcall(function()
-jrhy:MoveTo(dqwx)
+zivd:MoveTo(xfg)
 end)
 
-while os.clock() < dipg do
-local sjf = fh.Character
-local fozr = sjf and sjf:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+while os.clock() < msu do
+local kicl = omhv.Character
+local aoia = kicl and kicl:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not fozr then
+if not aoia then
 break
 end
 
-local lmj = (fozr.Position - dqwx).Magnitude
+local dvio = (aoia.Position - xfg).Magnitude
 
-if lmj <= 4 then
-dti = true
+if dvio <= 4 then
+wcma = true
 
 break
 end
 
-if uu.targetGone or not uu.autoOn
-or getgenv().ACBXDigGeneration ~= mnx or not xkj() then
+if hrcx.targetGone or not hrcx.autoOn
+or getgenv().ACBXDigGeneration ~= rde or not gsk() then
 break
 end
 
-if lmj < jop - 1 then
-jop = lmj
-ux = os.clock()
-elseif os.clock() - ux > 1.5 then
+if dvio < apkn - 1 then
+apkn = dvio
+ck = os.clock()
+elseif os.clock() - ck > 1.5 then
 break
 end
 
@@ -9825,186 +9832,186 @@ task.wait(0.15)
 end
 
 pcall(function()
-jrhy:MoveTo(ilb.Position)
+zivd:MoveTo(hqub.Position)
 end)
 
-return dti
+return wcma
 end
 
-function uu.digAt(fu)
-uu.misses = 0
-uu.pending = true
-uu.startedAt = 0
-uu.startDuration = nil
-uu.refused = false
+function hrcx.digAt(wqr)
+hrcx.misses = 0
+hrcx.pending = true
+hrcx.startedAt = 0
+hrcx.startDuration = nil
+hrcx.refused = false
 
-local pemn = os.clock()
-local ksm = pcall(function()
-bo.DigAction:FireServer(_d("P0AURxY"), fu)
+local qjw = os.clock()
+local jt = pcall(function()
+xl.DigAction:FireServer(_d("K0JWGAI"), wqr)
 end)
 
-if not ksm then
-uu.pending = false
-uu.refused = true
+if not jt then
+hrcx.pending = false
+hrcx.refused = true
 
 return false
 end
 
-local dbg = pemn + 1.2
-local bgce
+local fod = qjw + 1.2
+local xgux
 
-while uu.pending and uu.autoOn
-and getgenv().ACBXDigGeneration == mnx and xkj() do
-local cx = os.clock()
+while hrcx.pending and hrcx.autoOn
+and getgenv().ACBXDigGeneration == rde and gsk() do
+local bjj = os.clock()
 
-if (uu.startedAt or 0) >= pemn then
+if (hrcx.startedAt or 0) >= qjw then
 
-bgce = bgce or (uu.startedAt + (uu.startDuration or 0) + 1.5)
+xgux = xgux or (hrcx.startedAt + (hrcx.startDuration or 0) + 1.5)
 
-if cx >= bgce then
+if bjj >= xgux then
 break
 end
-elseif cx >= dbg then
+elseif bjj >= fod then
 break
 end
 
 task.wait()
 end
 
-local omk = (uu.resultAt or 0) >= pemn
+local uai = (hrcx.resultAt or 0) >= qjw
 
-uu.pending = false
+hrcx.pending = false
 
-if omk then
-uu.dugAt = os.clock()
+if uai then
+hrcx.dugAt = os.clock()
 end
 
-uu.refused = (uu.startedAt or 0) < pemn
+hrcx.refused = (hrcx.startedAt or 0) < qjw
 
-return omk
+return uai
 end
 
-function uu.autoLoop()
-local hh = false
+function hrcx.autoLoop()
+local mehs = false
 
-while uu.autoOn and xkj() and getgenv().ACBXDigGeneration == mnx do
-local fmi = btd and btd.worldBoss
-local qk = fmi ~= nil
-and type(fmi.holdsDigging) == _d("CkEbVhYOHwI")
-and fmi.holdsDigging() == true
+while hrcx.autoOn and gsk() and getgenv().ACBXDigGeneration == rde do
+local rqdn = yvcz and yvcz.worldBoss
+local zml = rqdn ~= nil
+and type(rqdn.holdsDigging) == _d("HkNZCQIZVxY")
+and rqdn.holdsDigging() == true
 
-local oqsh = fmi ~= nil and type(fmi.bossUp) == _d("CkEbVhYOHwI") and fmi.bossUp() == true
+local blqz = rqdn ~= nil and type(rqdn.bossUp) == _d("HkNZCQIZVxY") and rqdn.bossUp() == true
 
-local ibx = oqsh
-and not (fmi.stopAtFull and type(fmi.meterFull) == _d("CkEbVhYOHwI") and fmi.meterFull())
-local byms = ibx
-and (rqc.prioRank(_d("DlsGRg")) or 0) < (rqc.prioRank(_d("G1UBUBA")) or 0)
+local sauo = blqz
+and not (rqdn.stopAtFull and type(rqdn.meterFull) == _d("HkNZCQIZVxY") and rqdn.meterFull())
+local txc = sauo
+and (fq.prioRank(_d("GllEGQ")) or 0) < (fq.prioRank(_d("D1dDDwQ")) or 0)
 
-if byms then
-qk = true
+if txc then
+zml = true
 end
 
-if uu.shopping then
+if hrcx.shopping then
 
 task.wait(0.5)
-elseif qk or rqc.digBlocked() then
+elseif zml or fq.digBlocked() then
 
-hh = true
+mehs = true
 
-uu.heldAt = os.clock()
+hrcx.heldAt = os.clock()
 task.wait(1)
 else
-if hh then
+if mehs then
 
-hh = false
+mehs = false
 
-if type(fmi.setRepeat) == _d("CkEbVhYOHwI") then
-fmi.setRepeat(false)
+if type(rqdn.setRepeat) == _d("HkNZCQIZVxY") then
+rqdn.setRepeat(false)
 end
 
-uu.goToSand()
+hrcx.goToSand()
 end
 
-local idy = uu.chestOn and uu.nearestChest(2500) or nil
-local hmgg = false
+local vol = hrcx.chestOn and hrcx.nearestChest(2500) or nil
+local blvm = false
 
-if idy then
-uu.target = idy
-uu.targetGone = false
+if vol then
+hrcx.target = vol
+hrcx.targetGone = false
 
-local vvw = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local iamg = vvw and (vvw.Position - idy.position).Magnitude or 999
+local jn = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local ouh = jn and (jn.Position - vol.position).Magnitude or 999
 
-if iamg > 45 then
+if ouh > 45 then
 pcall(function()
-ze.standAt(idy.position)
+fwr.standAt(vol.position)
 end)
 
 task.wait(0.6)
 end
 
-if not uu.walkTo(idy.position) and not uu.targetGone then
+if not hrcx.walkTo(vol.position) and not hrcx.targetGone then
 pcall(function()
-ze.standAt(idy.position)
+fwr.standAt(vol.position)
 end)
 
 task.wait(0.6)
-uu.walkTo(idy.position)
+hrcx.walkTo(vol.position)
 end
 
-local rkm = not uu.withinDig(idy.position)
-local pszb = uu.targetGone
+local rsla = not hrcx.withinDig(vol.position)
+local hbe = hrcx.targetGone
 
-if pszb or rkm then
-uu.strikes = pszb and 0 or (uu.strikes + 1)
+if hbe or rsla then
+hrcx.strikes = hbe and 0 or (hrcx.strikes + 1)
 
-if pszb or uu.strikes >= 2 then
-uu.strikes = 0
-uu.release(idy)
-uu.skipped = uu.skipped + 1
+if hbe or hrcx.strikes >= 2 then
+hrcx.strikes = 0
+hrcx.release(vol)
+hrcx.skipped = hrcx.skipped + 1
 end
 else
 
-if uu.digAt(idy.position) then
-uu.strikes = 0
-uu.release(idy)
-uu.dug = uu.dug + 1
-hmgg = true
-elseif uu.refused then
+if hrcx.digAt(vol.position) then
+hrcx.strikes = 0
+hrcx.release(vol)
+hrcx.dug = hrcx.dug + 1
+blvm = true
+elseif hrcx.refused then
 
-uu.strikes = 0
-uu.release(idy)
-uu.skipped = uu.skipped + 1
+hrcx.strikes = 0
+hrcx.release(vol)
+hrcx.skipped = hrcx.skipped + 1
 else
 
-uu.strikes = uu.strikes + 1
+hrcx.strikes = hrcx.strikes + 1
 
-if uu.strikes >= 3 then
-uu.strikes = 0
-uu.release(idy)
-uu.skipped = uu.skipped + 1
+if hrcx.strikes >= 3 then
+hrcx.strikes = 0
+hrcx.release(vol)
+hrcx.skipped = hrcx.skipped + 1
 end
 end
 end
 
-uu.target = nil
-uu.targetGone = false
+hrcx.target = nil
+hrcx.targetGone = false
 end
 
-if not hmgg then
-local jfzz = uu.spot()
+if not blvm then
+local tgv = hrcx.spot()
 
-if jfzz then
-uu.digAt(jfzz)
+if tgv then
+hrcx.digAt(tgv)
 else
 
-uu.misses = (uu.misses or 0) + 1
+hrcx.misses = (hrcx.misses or 0) + 1
 
-if uu.misses >= 4 then
-uu.misses = 0
-uu.goToSand(true)
+if hrcx.misses >= 4 then
+hrcx.misses = 0
+hrcx.goToSand(true)
 else
-uu.turn()
+hrcx.turn()
 task.wait(0.25)
 end
 end
@@ -10013,173 +10020,173 @@ end
 end
 end
 
-function uu.autoStart()
-local dh = uu.read()
+function hrcx.autoStart()
+local qpcj = hrcx.read()
 
-if not (dh and uu.bestShovel(dh)) then
-return _d("IltVRgoIBglYVVoVCRUIFFgVNwkcA1ceFQYOFwtdG1JCARkeRwEb")
+if not (qpcj and hrcx.bestShovel(qpcj)) then
+return _d("NlkXGR4fTh1aFwUBHl0cFhpKIx5UF1VcShIZXx9fWQ1WFlEKRUNE")
 end
 
-local bvtp = false
+local szx = false
 
-if pa.enabled then
-pa.autoFishWanted = false
+if wf.enabled then
+wf.autoFishWanted = false
 
-hxj(false)
+oxse(false)
 pcall(function()
-ari:UpdateState(false)
+ld:UpdateState(false)
 end)
 
-bvtp = true
+szx = true
 end
 
-gmj = true
-uu.equipBest()
+nazm = true
+hrcx.equipBest()
 
-if uu.chestOn then
-pcall(uu.equipBestDetector)
+if hrcx.chestOn then
+pcall(hrcx.equipBestDetector)
 end
 
-uu.goToSand()
-uu.dugAt = os.clock()
+hrcx.goToSand()
+hrcx.dugAt = os.clock()
 
-task.spawn(uu.runAuto)
+task.spawn(hrcx.runAuto)
 
-return _d("KF0SUgsJF0I") .. (bvtp and _d("THUAQQ1HNgVHHRUNARZMGVVBCgJQH1waQwcLUARVBhUWDxVMQBpaDkcDAFsBGw") or _d(""))
+return _d("PF9QDR8eX1Y") .. (szx and _d("WHdCHhlQfhFFX0oZFl5YGxceHhUYC15YHBMcGBBXREoCGF1YQlgFGlBLFFlDRA") or _d(""))
 end
 
-function uu.runAuto()
-if uu.loopLive then
+function hrcx.runAuto()
+if hrcx.loopLive then
 return
 end
 
-uu.loopLive = true
+hrcx.loopLive = true
 
-local cmd, vbbu = pcall(uu.autoLoop)
+local jv, cmrw = pcall(hrcx.autoLoop)
 
-uu.loopLive = false
+hrcx.loopLive = false
 
-if not cmd then
-uu.loopError = tostring(vbbu)
+if not jv then
+hrcx.loopError = tostring(cmrw)
 end
 end
 
 task.spawn(function()
-while xkj() and xeg do
+while gsk() and pmw do
 task.wait(5)
 
-if uu.autoOn and not uu.shopping then
-local koz = os.clock()
+if hrcx.autoOn and not hrcx.shopping then
+local rk = os.clock()
 
-if not uu.loopLive then
-task.spawn(uu.runAuto)
-elseif koz - (uu.dugAt or koz) > 25
-and koz - (uu.heldAt or 0) > 25
-and koz - (uu.watchdogAt or 0) > 20 then
-uu.watchdogAt = koz
-uu.pending = false
-uu.strikes = 0
-uu.misses = 0
-uu.target = nil
-uu.targetGone = false
-
-pcall(function()
-uu.goToSand(true)
-uu.equipBest()
-end)
-end
-end
-end
-end)
-
-function uu.toggleAuto(vqcd, jvql)
-if vqcd then
-local aosp = uu.autoOn == true
-
-uu.chestOn = jvql == true
-uu.switching = true
+if not hrcx.loopLive then
+task.spawn(hrcx.runAuto)
+elseif rk - (hrcx.dugAt or rk) > 25
+and rk - (hrcx.heldAt or 0) > 25
+and rk - (hrcx.watchdogAt or 0) > 20 then
+hrcx.watchdogAt = rk
+hrcx.pending = false
+hrcx.strikes = 0
+hrcx.misses = 0
+hrcx.target = nil
+hrcx.targetGone = false
 
 pcall(function()
-local si = jvql and uu.autoToggle or uu.chestToggle
-
-if si then
-si:UpdateState(false)
+hrcx.goToSand(true)
+hrcx.equipBest()
+end)
+end
+end
 end
 end)
 
-uu.switching = false
+function hrcx.toggleAuto(yz, cfqg)
+if yz then
+local przg = hrcx.autoOn == true
 
-if aosp then
+hrcx.chestOn = cfqg == true
+hrcx.switching = true
+
+pcall(function()
+local kw = cfqg and hrcx.autoToggle or hrcx.chestToggle
+
+if kw then
+kw:UpdateState(false)
+end
+end)
+
+hrcx.switching = false
+
+if przg then
 return
 end
 
-uu.autoOn = true
+hrcx.autoOn = true
 
 task.spawn(function()
-local muaz = uu.autoStart()
+local fgq = hrcx.autoStart()
 
-qza:Notify({
-Title = jvql and _d("LUEBWkIjGQsUNl0HFAQf") or _d("LUEBWkIjGQs"),
-Description = muaz,
+zcwe:Notify({
+Title = cfqg and _d("OUNDBVY0UR8WdAITA0wL") or _d("OUNDBVY0UR8"),
+Description = fgq,
 Lifetime = 6,
 })
 end)
 else
 
-if uu.switching then
+if hrcx.switching then
 return
 end
 
-uu.autoOn = false
-uu.pending = false
-gmj = false
+hrcx.autoOn = false
+hrcx.pending = false
+nazm = false
 end
 end
 
-uu.autoToggle = hza:Toggle({
-Name = _d("LUEBWkIjGQs"),
+hrcx.autoToggle = qsi:Toggle({
+Name = _d("OUNDBVY0UR8"),
 Default = false,
-Callback = function(mcv)
-uu.toggleAuto(mcv, false)
+Callback = function(vzo)
+hrcx.toggleAuto(vzo, false)
 end,
-}, _d("CF0SUgsJFzNVAEEN"))
+}, _d("HF9QDR8eXydXQh4Z"))
 
-uu.chestToggle = hza:Toggle({
-Name = _d("LUEBWkIjGQsUNl0HFAQf"),
+hrcx.chestToggle = qsi:Toggle({
+Name = _d("OUNDBVY0UR8WdAITA0wL"),
 Default = false,
-Callback = function(hz)
-uu.toggleAuto(hz, true)
+Callback = function(ubb)
+hrcx.toggleAuto(ubb, true)
 end,
-}, _d("CF0SUgsJFzNVAEENOBMEUQZB"))
+}, _d("HF9QDR8eXydXQh4ZL1sQU0Qe"))
 
-uu.chestParagraph = hza:Paragraph({
-Header = _d("L1wQRhYU"),
-Body = _d("OEYUVgkCFFYURRVPRzQZU08VUkddTGceXBIXFQgOVQU"),
+hrcx.chestParagraph = qsi:Paragraph({
+Header = _d("O15SGQID"),
+Body = _d("LERWCR0VXEIWB0pbUHwNUQ1KRlAVWGVcAwYAXRwMF1o"),
 })
 
 task.spawn(function()
-local kzt
+local fzmh
 
-while xkj() and xeg do
-local qmj = #uu.chests()
-local hey = _d("OEYUVgkCFFYU") .. qmj .. _d("TBlVcRcASkw") .. uu.dug .. _d("TBlVZgkOABxREQ9C") .. uu.skipped
+while gsk() and pmw do
+local yxr = #hrcx.chests()
+local klx = _d("LERWCR0VXEIW") .. yxr .. _d("WBsXLgMXAlg") .. hrcx.dug .. _d("WBsXOR0ZSAhTU1BW") .. hrcx.skipped
 
-if uu.chestOn and qmj > 0 then
-local oze = uu.nearestChest(2500)
-local voz = fh.Character
-local tzjr = voz and voz:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+if hrcx.chestOn and yxr > 0 then
+local jeb = hrcx.nearestChest(2500)
+local rqaf = omhv.Character
+local fyir = rqaf and rqaf:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if oze and tzjr then
-local ffhr = math.floor((oze.position - tzjr.Position).Magnitude)
-hey = hey .. _d("ZnoQVBACAxgOVQ") .. ffhr .. (ffhr > 45 and _d("TEcBQAYUUERcGkVL") or _d("TEcBQAYU"))
+if jeb and fyir then
+local lc = math.floor((jeb.position - fyir.Position).Magnitude)
+klx = klx .. _d("cnhSCwQVSwwMFw") .. lc .. (lc > 45 and _d("WEVDHxIDGFBeWBpf") or _d("WEVDHxID"))
 end
 end
 
-if hey ~= kzt then
-kzt = hey
+if klx ~= fzmh then
+fzmh = klx
 
 pcall(function()
-uu.chestParagraph:UpdateBody(hey)
+hrcx.chestParagraph:UpdateBody(klx)
 end)
 end
 
@@ -10187,127 +10194,127 @@ task.wait(0.5)
 end
 end)
 
-function uu.npcRow()
-for cflv, shn in ipairs(ze.npcs) do
-if shn.name == _d("KF0SUgcV") then
-return shn
+function hrcx.npcRow()
+for gepc, dgwk in ipairs(fwr.npcs) do
+if dgwk.name == _d("PF9QDRMC") then
+return dgwk
 end
 end
 end
 
-function uu.shop(bni, vfqz)
-local nrg, bfzn, thxz, rbp = pcall(function()
-return bo.DigShop:InvokeServer(bni, vfqz)
+function hrcx.shop(ayds, tlf)
+local uuz, fyuj, zb, fsnc = pcall(function()
+return xl.DigShop:InvokeServer(ayds, tlf)
 end)
 
-if not nrg then
-return false, _d("OFwQFQYOF0xHHVoSRxkfFBtaFkcRAkcCUBAOHgsa")
+if not uuz then
+return false, _d("LF5SShIZX1hFXwUGUFELFlkFAlBZFkVADwQZVh8Y")
 end
 
-return bfzn == true, thxz, type(rbp) == _d("GFUXWQc") and rbp or nil
+return fyuj == true, zb, type(fsnc) == _d("DFdVBhM") and fsnc or nil
 end
 
-function uu.pickShovel(oui)
-local yq = oui.shovels or {}
-local om = tonumber(oui.digs) or 0
-local ndgg
+function hrcx.pickShovel(ojhc)
+local jbix = ojhc.shovels or {}
+local oejw = tonumber(ojhc.digs) or 0
+local gdak
 
-for zyib, oge in ipairs(uu.data.Shovels) do
-if not oge.crafted and oge.id ~= _d("H1waQwcLLw5VBlwB") and yq[oge.id] ~= true then
-local dkdn = tonumber(oge.cost) or math.huge
+for dac, cbkm in ipairs(hrcx.data.Shovels) do
+if not cbkm.crafted and cbkm.id ~= _d("C15YHBMcZxpXRAMV") and jbix[cbkm.id] ~= true then
+local lwu = tonumber(cbkm.cost) or math.huge
 
-if dkdn <= om and (not ndgg or dkdn > (tonumber(ndgg.cost) or 0)) then
-ndgg = oge
-end
-end
-end
-
-return ndgg
-end
-
-function uu.pickDetector(eb)
-local sr = eb.detectors or {}
-local qtl = tonumber(eb.digs) or 0
-local ypr
-
-for fkte, fj in ipairs(uu.data.Detectors) do
-if not fj.crafted and fj.id ~= _d("CFEBUAETHx5rF1QRDhM") and sr[fj.id] ~= true then
-local cin = tonumber(fj.cost) or math.huge
-
-if cin <= qtl and (not ypr or cin > (tonumber(ypr.cost) or 0)) then
-ypr = fj
+if lwu <= oejw and (not gdak or lwu > (tonumber(gdak.cost) or 0)) then
+gdak = cbkm
 end
 end
 end
 
-return ypr
+return gdak
 end
 
-function uu.nextDef(faqu, ayga)
-local brzu
+function hrcx.pickDetector(vbc)
+local lbe = vbc.detectors or {}
+local hbt = tonumber(vbc.digs) or 0
+local pmr
 
-for nbyj, pnb in ipairs(faqu) do
-local ff = tonumber(pnb.cost)
+for ont, hpxl in ipairs(hrcx.data.Detectors) do
+if not hpxl.crafted and hpxl.id ~= _d("HFNDDxUEVwppVQsFGVs") and lbe[hpxl.id] ~= true then
+local yhi = tonumber(hpxl.cost) or math.huge
 
-if not pnb.crafted and ff and ayga[pnb.id] ~= true then
-if not brzu or ff < (tonumber(brzu.cost) or math.huge) then
-brzu = pnb
+if yhi <= hbt and (not pmr or yhi > (tonumber(pmr.cost) or 0)) then
+pmr = hpxl
 end
 end
 end
 
-return brzu
+return pmr
 end
 
-function uu.toCounter()
-local biwa = uu.npcRow()
-local eq = biwa and ze.point(biwa)
-local gz = fh.Character
-local fqu = gz and gz:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function hrcx.nextDef(tzr, vij)
+local sduw
 
-if not (eq and fqu) then
+for pm, utib in ipairs(tzr) do
+local yiup = tonumber(utib.cost)
+
+if not utib.crafted and yiup and vij[utib.id] ~= true then
+if not sduw or yiup < (tonumber(sduw.cost) or math.huge) then
+sduw = utib
+end
+end
+end
+
+return sduw
+end
+
+function hrcx.toCounter()
+local xqo = hrcx.npcRow()
+local fc = xqo and fwr.point(xqo)
+local oey = omhv.Character
+local aim = oey and oey:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+
+if not (fc and aim) then
 return false
 end
 
-if (fqu.Position - eq).Magnitude <= 20 then
+if (aim.Position - fc).Magnitude <= 20 then
 return true
 end
 
-ze.go(biwa)
+fwr.go(xqo)
 task.wait(2.2)
 
-gz = fh.Character
-fqu = gz and gz:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+oey = omhv.Character
+aim = oey and oey:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-return fqu ~= nil and (fqu.Position - eq).Magnitude <= 20
-end
-
-function uu.secretRow()
-for fllx, aeh in ipairs(ze.npcs) do
-if aeh.name == _d("P1EWRwcTUChdElIHFQ") then
-return aeh
-end
-end
+return aim ~= nil and (aim.Position - fc).Magnitude <= 20
 end
 
-function uu.secretDef(bu)
-for yxay, tssc in ipairs(bu or {}) do
-if tssc.crafted then
-return tssc
+function hrcx.secretRow()
+for ebtb, nboz in ipairs(fwr.npcs) do
+if nboz.name == _d("K1NUGBMEGDxfUA0TAg") then
+return nboz
 end
 end
 end
 
-function uu.recipeHeld(pov)
-local reqy = uu.data and uu.data.SecretRecipe
-local nfww = pov and pov.mats
+function hrcx.secretDef(wgn)
+for aloe, hopm in ipairs(wgn or {}) do
+if hopm.crafted then
+return hopm
+end
+end
+end
 
-if type(reqy) ~= _d("GFUXWQc") or type(nfww) ~= _d("GFUXWQc") then
+function hrcx.recipeHeld(otk)
+local rkr = hrcx.data and hrcx.data.SecretRecipe
+local vfvr = otk and otk.mats
+
+if type(rkr) ~= _d("DFdVBhM") or type(vfvr) ~= _d("DFdVBhM") then
 return false
 end
 
-for wwuy, lxp in ipairs(reqy) do
-if (tonumber(nfww[lxp.id]) or 0) < (tonumber(lxp.count) or 0) then
+for hxl, xrj in ipairs(rkr) do
+if (tonumber(vfvr[xrj.id]) or 0) < (tonumber(xrj.count) or 0) then
 return false
 end
 end
@@ -10315,296 +10322,296 @@ end
 return true
 end
 
-function uu.toSecret()
-local ic = uu.secretRow()
+function hrcx.toSecret()
+local ddtg = hrcx.secretRow()
 
-if not ic then
+if not ddtg then
 return false
 end
 
-local sbg = workspace:FindFirstChild(_d("ImQ2Rg"))
-local ad = sbg and sbg:FindFirstChild(_d("P1EWRwcTNAVTElAQKSAv"))
-local myl = ad and ad:GetPivot().Position or ze.point(ic)
+local gpxi = workspace:FindFirstChild(_d("NmZ0GQ"))
+local elpv = gpxi and gpxi:FindFirstChild(_d("K1NUGBMEfBFRUA8EPmg7"))
+local sqha = elpv and elpv:GetPivot().Position or fwr.point(ddtg)
 
-if not myl then
+if not sqha then
 return false
 end
 
-ze.hold()
+fwr.hold()
 
-for lou = 1, 3 do
-local ijq = fh.Character
-local zs = ijq and ijq:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+for fu = 1, 3 do
+local ssvd = omhv.Character
+local qmj = ssvd and ssvd:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not zs then
+if not qmj then
 return false
 end
 
-local npsl = (zs.Position - myl).Magnitude
+local jxx = (qmj.Position - sqha).Magnitude
 
-if npsl <= 20 then
+if jxx <= 20 then
 return true
 end
 
-if npsl > 1500 and ic.island then
+if jxx > 1500 and ddtg.island then
 pcall(function()
-bo.FishingIslandTeleport:FireServer(ic.island)
+xl.FishingIslandTeleport:FireServer(ddtg.island)
 end)
 
 task.wait(4.5)
 else
 pcall(function()
-ze.standAt(myl)
+fwr.standAt(sqha)
 end)
 task.wait(0.9)
 end
 end
 
-local ska = fh.Character
-local yuu = ska and ska:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local ysit = omhv.Character
+local bdop = ysit and ysit:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-return yuu ~= nil and (yuu.Position - myl).Magnitude <= 20
+return bdop ~= nil and (bdop.Position - sqha).Magnitude <= 20
 end
 
-function uu.craftSecret(ajvn, ooj, zd)
-local jbr = {}
-local gbpx = ajvn and uu.secretDef(uu.data.Shovels) or nil
-local tri = ooj and uu.secretDef(uu.data.Detectors) or nil
+function hrcx.craftSecret(oqyz, kdu, tmp)
+local vlau = {}
+local dif = oqyz and hrcx.secretDef(hrcx.data.Shovels) or nil
+local fdbh = kdu and hrcx.secretDef(hrcx.data.Detectors) or nil
 
-local uadt = gbpx and (zd.shovels or {})[gbpx.id] ~= true
-local dbib = tri and (zd.detectors or {})[tri.id] ~= true
+local wuz = dif and (tmp.shovels or {})[dif.id] ~= true
+local kgxf = fdbh and (tmp.detectors or {})[fdbh.id] ~= true
 
-if not (uadt or dbib) then
-return jbr, nil, zd
+if not (wuz or kgxf) then
+return vlau, nil, tmp
 end
 
-if not uu.recipeHeld(zd) then
-return jbr, nil, zd
+if not hrcx.recipeHeld(tmp) then
+return vlau, nil, tmp
 end
 
-uu.shopping = true
+hrcx.shopping = true
 
-local fp = uu.toSecret()
-local bhk
+local favp = hrcx.toSecret()
+local bd
 
-if fp then
-local function yvtg(iacn, meh)
-if not meh or not uu.recipeHeld(zd) then
+if favp then
+local function qmvx(bdo, kjj)
+if not kjj or not hrcx.recipeHeld(tmp) then
 return
 end
 
-local kxc, ax = uu.shop(iacn, meh.id)
+local rp, xwof = hrcx.shop(bdo, kjj.id)
 
-if kxc then
-table.insert(jbr, meh.name)
-elseif not bhk then
-bhk = tostring(ax)
+if rp then
+table.insert(vlau, kjj.name)
+elseif not bd then
+bd = tostring(xwof)
 end
 
-zd = uu.read() or zd
+tmp = hrcx.read() or tmp
 end
 
-yvtg(_d("L0YUUxY0GANCEFk"), uadt and gbpx or nil)
-yvtg(_d("L0YUUxYjFRhRFkENFQ"), dbib and tri or nil)
+qmvx(_d("O0RWDAIjUBdAUgY"), wuz and dif or nil)
+qmvx(_d("O0RWDAI0XQxTVB4ZAg"), kgxf and fdbh or nil)
 end
 
-uu.shopping = false
+hrcx.shopping = false
 
-return jbr, bhk, zd
+return vlau, bd, tmp
 end
 
-function uu.upgradeAll()
-local prp = uu.buyOn == true
-local fpvm = uu.detBuyOn == true
+function hrcx.upgradeAll()
+local wy = hrcx.buyOn == true
+local orib = hrcx.detBuyOn == true
 
-if not (prp or fpvm) then
-return nil, _d("I1ITGw")
+if not (wy or orib) then
+return nil, _d("N1BRRA")
 end
 
-local xcs = uu.read()
+local fnez = hrcx.read()
 
-if not xcs then
-return nil, _d("OFwQFQYOF0xHHVoSRxkfFBtaFkcRAkcCUBAOHgsa")
+if not fnez then
+return nil, _d("LF5SShIZX1hFXwUGUFELFlkFAlBZFkVADwQZVh8Y")
 end
 
-local gm, hy, ia = uu.craftSecret(prp, fpvm, xcs)
+local lli, edv, vdoz = hrcx.craftSecret(wy, orib, fnez)
 
-if ia then
-xcs = ia
+if vdoz then
+fnez = vdoz
 end
 
-if prp then
-local xwe = uu.bestShovel(xcs)
+if wy then
+local tc = hrcx.bestShovel(fnez)
 
-if xwe and xcs.equippedShovel ~= xwe then
-uu.equipBest()
-end
-end
-
-if fpvm then
-local coq = uu.bestDetector(xcs)
-
-if coq and xcs.equippedDetector ~= coq then
-uu.equipBestDetector()
+if tc and fnez.equippedShovel ~= tc then
+hrcx.equipBest()
 end
 end
 
-local iizw = prp and uu.pickShovel(xcs) or nil
-local tzse = fpvm and uu.pickDetector(xcs) or nil
+if orib then
+local jkai = hrcx.bestDetector(fnez)
 
-if not (iizw or tzse) then
-
-if #gm > 0 then
-if uu.autoOn then
-uu.leaveNpc()
+if jkai and fnez.equippedDetector ~= jkai then
+hrcx.equipBestDetector()
+end
 end
 
-return table.concat(gm, _d("TB9V"))
+local qi = wy and hrcx.pickShovel(fnez) or nil
+local aif = orib and hrcx.pickDetector(fnez) or nil
+
+if not (qi or aif) then
+
+if #lli > 0 then
+if hrcx.autoOn then
+hrcx.leaveNpc()
 end
 
-return nil, hy and (_d("L0YUUxZHAglSAEYHA0pM") .. tostring(hy))
-or _d("IltVQBIAAg1QEBULFFANUhNaEAMRDlgQFRsCBEI")
+return table.concat(lli, _d("WB0X"))
 end
 
-uu.shopping = true
-uu.toCounter()
-
-local nod = {}
-local nypx
-
-for yho, igs in ipairs(gm) do
-nod[#nod + 1] = igs
+return nil, edv and (_d("O0RWDAJQSh1QQhkTFAJY") .. tostring(edv))
+or _d("NlkXHwYXShlSUkofAxgZUFEFBBRZGlpSSg8VTFY")
 end
 
-local function wdbs(xzqa, jr)
-if not jr then
+hrcx.shopping = true
+hrcx.toCounter()
+
+local xi = {}
+local uxt
+
+for gcs, zru in ipairs(lli) do
+xi[#xi + 1] = zru
+end
+
+local function gkdn(qdd, fxsi)
+if not fxsi then
 return
 end
 
-local jmmy, rw = uu.shop(xzqa, jr.id)
+local yylr, gya = hrcx.shop(qdd, fxsi.id)
 
-if jmmy then
-table.insert(nod, jr.name)
-elseif not nypx then
-nypx = tostring(rw)
+if yylr then
+table.insert(xi, fxsi.name)
+elseif not uxt then
+uxt = tostring(gya)
 end
 end
 
-wdbs(_d("LkEMZgoIBglY"), iizw)
-wdbs(_d("LkEMcQcTFQ9AGkc"), tzse)
+gkdn(_d("OkNOOR4fTh1a"), qi)
+gkdn(_d("OkNOLhMEXRtCWBg"), aif)
 
-if #nod == 0 then
-uu.shopping = false
+if #xi == 0 then
+hrcx.shopping = false
 
-return nil, _d("LkEMFRACFhlHEFFYRw") .. (nypx or _d("AltVVAwUBwlG"))
+return nil, _d("OkNOSgQVXg1FUg5MUA") .. (uxt or _d("FlkXCxgDTx1E"))
 end
 
-if prp then
-uu.equipBest()
+if wy then
+hrcx.equipBest()
 end
 
-if fpvm then
-uu.equipBestDetector()
+if orib then
+hrcx.equipBestDetector()
 end
 
-if uu.autoOn then
-uu.leaveNpc()
+if hrcx.autoOn then
+hrcx.leaveNpc()
 end
 
-uu.shopping = false
+hrcx.shopping = false
 
-return table.concat(nod, _d("TB9V"))
+return table.concat(xi, _d("WB0X"))
 end
 
-function uu.buyLoop()
-while uu.buyOn or uu.detBuyOn do
-local yfme, rh, ts = pcall(uu.upgradeAll)
+function hrcx.buyLoop()
+while hrcx.buyOn or hrcx.detBuyOn do
+local kkiw, vtur, ev = pcall(hrcx.upgradeAll)
 
-uu.shopping = false
+hrcx.shopping = false
 
-if not yfme then
+if not kkiw then
 task.wait(10)
-elseif rh then
-qza:Notify({
-Title = _d("LUEBWkIlBRUUMVwFABkCU1VyBwYC"),
-Description = _d("KUUAXBIXFQgUAV0HRw") .. rh .. _d("Qg"),
+elseif vtur then
+zcwe:Notify({
+Title = _d("OUNDBVYyTQEWcwMRF1EWURctExFK"),
+Description = _d("PUdCAwYAXRwWQwITUA") .. vtur .. _d("Vg"),
 Lifetime = 6,
 })
 
 task.wait(3)
 else
-task.wait(ts == _d("I1ITGw") and 0.5 or 10)
+task.wait(ev == _d("N1BRRA") and 0.5 or 10)
 end
 end
 end
 
-function uu.syncBuyLoop()
-if not (uu.buyOn or uu.detBuyOn) or uu.buyRunning then
+function hrcx.syncBuyLoop()
+if not (hrcx.buyOn or hrcx.detBuyOn) or hrcx.buyRunning then
 return
 end
 
-uu.buyRunning = true
+hrcx.buyRunning = true
 
 task.spawn(function()
-uu.buyLoop()
+hrcx.buyLoop()
 
-uu.buyRunning = false
+hrcx.buyRunning = false
 end)
 end
 
-hza:Toggle({
-Name = _d("LUEBWkIlBRUUN1ARE1A/XBpDBws"),
+qsi:Toggle({
+Name = _d("OUNDBVYyTQEWdQ8FBBgrXlgcExw"),
 Default = false,
-Callback = function(fo)
-uu.buyOn = fo
-uu.syncBuyLoop()
+Callback = function(tvn)
+hrcx.buyOn = tvn
+hrcx.syncBuyLoop()
 end,
-}, _d("CF0SUgsJFzNWAEw"))
+}, _d("HF9QDR8eXydUQhM"))
 
-hza:Toggle({
-Name = _d("LUEBWkIlBRUUN1ARE1AoUQFQARMfHg"),
+qsi:Toggle({
+Name = _d("OUNDBVYyTQEWdQ8FBBg8U0MPFQRXCg"),
 Default = false,
-Callback = function(aacu)
-uu.detBuyOn = aacu
-uu.syncBuyLoop()
+Callback = function(td)
+hrcx.detBuyOn = td
+hrcx.syncBuyLoop()
 end,
-}, _d("CF0SUgsJFzNWAEw9AxUYURZBDRU"))
+}, _d("HF9QDR8eXydUQhMpFF0MU1QeGQI"))
 
-function uu.statusText()
-local dgtn = uu.read()
+function hrcx.statusText()
+local llk = hrcx.read()
 
-if not dgtn then
-return _d("OFwQFQYOF0xHHVoSRxkfFBtaFkcRAkcCUBAOHgsa")
+if not llk then
+return _d("LF5SShIZX1hFXwUGUFELFlkFAlBZFkVADwQZVh8Y")
 end
 
-local pfe = tonumber(dgtn.digs) or 0
-local vxy = { _d("KF0SRlhH") .. pfe }
+local dss = tonumber(llk.digs) or 0
+local fzm = { _d("PF9QGUxQ") .. dss }
 
-local function wkih(hkj, lbe)
-if not lbe then
-return hkj .. _d("VhQQQwcVCRhcHFsFRx8bWhBRTA")
+local function dde(dehm, faby)
+if not faby then
+return dehm .. _d("QhZSHBMCQQxeXgQRUFcPWFIOWA")
 end
 
-local en = tonumber(lbe.cost) or 0
-local qjb = en - pfe
+local gtr = tonumber(faby.cost) or 0
+local nnod = gtr - dss
 
-return hkj .. _d("VhQ") .. tostring(lbe.name) .. _d("TBlV") .. en
-.. (qjb <= 0 and _d("TBwHUAMDCUU") or (_d("TBw") .. qjb .. _d("TEAaFQUIWQ")))
+return dehm .. _d("QhY") .. tostring(faby.name) .. _d("WBsX") .. gtr
+.. (nnod <= 0 and _d("WB5FDxcUQVE") or (_d("WB4") .. nnod .. _d("WEJYShEfEQ")))
 end
 
-table.insert(vxy, wkih(_d("IlENQUIUGANCEFk"), uu.nextDef(uu.data.Shovels, dgtn.shovels or {})))
-table.insert(vxy, wkih(_d("IlENQUIDFRhRFkENFQ"), uu.nextDef(uu.data.Detectors, dgtn.detectors or {})))
+table.insert(fzm, dde(_d("NlNPHlYDUBdAUgY"), hrcx.nextDef(hrcx.data.Shovels, llk.shovels or {})))
+table.insert(fzm, dde(_d("NlNPHlYUXQxTVB4ZAg"), hrcx.nextDef(hrcx.data.Detectors, llk.detectors or {})))
 
-return table.concat(vxy, _d("Zg"))
+return table.concat(fzm, _d("cg"))
 end
 
 task.spawn(function()
-while xkj() and xeg do
-local kry, iac = pcall(uu.statusText)
+while gsk() and pmw do
+local xw, yshz = pcall(hrcx.statusText)
 
-if kry and uu.statusParagraph then
+if xw and hrcx.statusParagraph then
 pcall(function()
-uu.statusParagraph:UpdateBody(iac)
+hrcx.statusParagraph:UpdateBody(yshz)
 end)
 end
 
@@ -10612,64 +10619,64 @@ task.wait(6)
 end
 end)
 
-getgenv().ACBXDigging = uu
+getgenv().ACBXDigging = hrcx
 
-df.tab = ueb:Tab({
-Name = _d("P1EBQQsJFx8"),
+zhpb.tab = ft:Tab({
+Name = _d("K1NDHh8eXws"),
 
 Image = _d(""),
 })
 
-df.icon = function()
-local lkxi = gethui()
+zhpb.icon = function()
+local xigl = gethui()
 
-for usx, yeqs in ipairs(lkxi:QueryDescendants(_d("JVkUUgcrEQ5RGQ"))) do
-if yeqs.Name == _d("OFUXfA8GFwk") then
-local aqq = yeqs.Parent
-local sefr = aqq and aqq:FindFirstChild(_d("OFUXZhUOBA9cEEcsBh0J"))
+for gubv, dvpy in ipairs(xigl:QueryDescendants(_d("MVtWDRM8WRpTWw"))) do
+if dvpy.Name == _d("LFdVIxsRXx0") then
+local prco = dvpy.Parent
+local ygz = prco and prco:FindFirstChild(_d("LFdVOQEZTBteUhg4EVUd"))
 
-if sefr and sefr.Text == _d("P1EBQQsJFx8") then
-if yeqs:GetAttribute(_d("LXc3bSEIFyVXGls")) then
+if ygz and ygz.Text == _d("K1NDHh8eXws") then
+if dvpy:GetAttribute(_d("OXV1MjUfXzFVWAQ")) then
 return true
 end
 
-yeqs:SetAttribute(_d("LXc3bSEIFyVXGls"), true)
-yeqs.Image = _d("")
-yeqs.BackgroundTransparency = 1
+dvpy:SetAttribute(_d("OXV1MjUfXzFVWAQ"), true)
+dvpy.Image = _d("")
+dvpy.BackgroundTransparency = 1
 
-local jrnt = Color3.fromRGB(168, 170, 176)
+local lyva = Color3.fromRGB(168, 170, 176)
 
-local function rf(dfs, fuwy, auvh, ojq, di, yiw)
-local wrka = Instance.new(_d("KkYUWAc"))
+local function llsk(kl, nm, ops, thdk, lmhq, mst)
+local nyel = Instance.new(_d("PkRWBxM"))
 
-wrka.Size = UDim2.fromOffset(auvh, ojq)
-wrka.Position = UDim2.fromOffset(dfs, fuwy)
-wrka.BackgroundColor3 = jrnt
-wrka.BorderSizePixel = 0
-wrka.Parent = yeqs
+nyel.Size = UDim2.fromOffset(ops, thdk)
+nyel.Position = UDim2.fromOffset(kl, nm)
+nyel.BackgroundColor3 = lyva
+nyel.BorderSizePixel = 0
+nyel.Parent = dvpy
 
-if not yiw then
-wrka.BackgroundTransparency = 1
+if not mst then
+nyel.BackgroundTransparency = 1
 
-local jeks = Instance.new(_d("OX0mQRAIGwk"))
+local ngm = Instance.new(_d("LX9kHgQfUx0"))
 
-jeks.Color = jrnt
-jeks.Thickness = 1.3
-jeks.LineJoinMode = Enum.LineJoinMode.Round
-jeks.Parent = wrka
+ngm.Color = lyva
+ngm.Thickness = 1.3
+ngm.LineJoinMode = Enum.LineJoinMode.Round
+ngm.Parent = nyel
 end
 
-if di then
-local yfxe = Instance.new(_d("OX02WhAJFR4"))
+if lmhq then
+local xlac = Instance.new(_d("LX90BQQeXQo"))
 
-yfxe.CornerRadius = UDim.new(0, di)
-yfxe.Parent = wrka
+xlac.CornerRadius = UDim.new(0, lmhq)
+xlac.Parent = nyel
 end
 
-return wrka
+return nyel
 end
 
-local kvi = {
+local xvlj = {
 { 8, 0, 2, 3 },
 { 8, 15, 2, 3 },
 { 0, 8, 3, 2 },
@@ -10680,12 +10687,12 @@ local kvi = {
 { 13, 13, 3, 3 },
 }
 
-for enm, yamh in ipairs(kvi) do
-rf(yamh[1], yamh[2], yamh[3], yamh[4], 0, true)
+for nakf, nv in ipairs(xvlj) do
+llsk(nv[1], nv[2], nv[3], nv[4], 0, true)
 end
 
-rf(2, 2, 14, 14, 7, false)
-rf(7, 7, 4, 4, 2, true)
+llsk(2, 2, 14, 14, 7, false)
+llsk(7, 7, 4, 4, 2, true)
 
 return true
 end
@@ -10696,8 +10703,8 @@ return false
 end
 
 task.defer(function()
-for nwsd = 1, 20 do
-if df.icon() then
+for xlog = 1, 20 do
+if zhpb.icon() then
 break
 end
 
@@ -10705,117 +10712,117 @@ task.wait(0.25)
 end
 end)
 
-df.prioSection = df.tab:Section({
-Side = _d("IFETQQ"),
+zhpb.prioSection = zhpb.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-df.prioSection:Header({
-Name = _d("PEYcWhAOBBU"),
+zhpb.prioSection:Header({
+Name = _d("KEReBQQZTAE"),
 })
 
-df.prioSection:Paragraph({
-Header = _d("O1waFQUIFR8UE1wQFAQ"),
-Body = _d("XRQBVAkCA0xAHVBCBhMPWwBbFkcWBUYGQU5HRUxDFFwWFFAKWwcVBxEVHk0XWgYeXkxxFFYKRwIDQ1VcEUcRTFoAWAACAkxVG1FCExgJFBFHDRcUA0MbFRcJFAlGVVwWRxkfFAJdAxNQH0AUWwYUUBhcEEcHR11MRBxWCUcRTFoUWAdHBARVARUDCwIJVRFMQg8fAFAGFQMJHxhcEEdCCQUBVhBHQgYeCBQBXQdHBBtbVUYVBgBCFDQVEAgHTF0GFQoCHAgUF1QBDFADWhlMQgUJTFVVWwMKFUxVF1oUAlAFQFVBCgYETFwURkIUHwFRAV0LCRdMQBoVBghQHl0SXRZHHgNDWz9oMx8bUQdGQgYCCRQbWhZHHwIUAV0LFFAAXQZBWEcRTEAaQgcVUApdEl0WFFADWlVBCgJQH1EHQwcVUA1aERUOAhEaUQYVFg8VTFcdVBAGExhRBxUEFRUJGFVGDUcZGBQHQAwUUA1YGlsFFBkIUVVQFAICFUAdXAwAUARRB1BCBh4IFBpbDh5QH0AUWwYUUA1HHFEHRxYDRlVHAw4UHxhVQQoCUAtYGlcDC1AOWwZGQgYeCBQ7ZSFHEg1AAVkHFF5mPiZdDRcDQBQYUBAAGQJTWRUHHwAJUBxBCwgeHxQUWwZHBARRVUcHFARMWxMVFg8VTFsbUE8UGANAVUEQDgAfFBRHB0ceA0BVXQcVFUxbGxUSEgIcWwZQWEcEBFEMFQMLAglVEUxCFAQNWhEVFg8VTEYAWwwOHgsUFEAWCB0NQBxaDEcUA0MbFRUPGQBRVUEKAglMUBoVFg8VBUZVXw0FXg"),
+zhpb.prioSection:Paragraph({
+Header = _d("L15YShEfXQsWUQMEA0w"),
+Body = _d("SRZDCx0VS1hCXw9WEVsbWUIEAlBeEUREHlpQDVhBVgMCAxgeWUVKEwZdCk9VBRIJFlhzVgkeUEoXQRcDBVBZWFhCBxQVSlhXWQ5WBFAdFlMYGQBcF0FZSgMeXB1EFwMCUFELFkACFwQYC0JWBBIDGAxeUhgTUBVYRl4JHVBZWFhWBxNQTBBXQ0oXHEodV1MTVhhXFFJEShceVwxeUhhWHk0VVFIYVhFWHBZDAhNQTA9ZFxkBEUhWFnZKBB9PWF9ESh4VVBwWVQsVGxgXWFsTVhJBWFcXBBcdXVhXVQUAFRgRQhceHhFMWF5WGVYDVxVTQwIfHl9YQlhKEh8YCl9QAgJQVhdBGWB8JFcPU0UZVhFKHRZZBQJQVxYWQwIfAxgUX0QeTFBZWEJYHRMCGB5fUAICAxgXWBceHhUYC1NFHBMCGBlYU0oaFVkOU0RKAhhdWFVfCwQRWwxTRUoQAl0dGhcZGVBRDBZFHxgDGBlaWAQRA1EcUxcPABVKAUJfAxgXGBBTRQ9WEVYcFlgEGgkYC0JWBBIDGBlFXg4TUF4XRBcYFxlcCxoXHh4VGB9aWAgXHBgaWUQZVhFWHBZ5OjVQWhlCQwYTAxZyPGQCGQBLVBZaDwQXURZRG0oTCEgdUl4eHx9WCxZWBBJQTBBTFxgTA0xYWVFKAhhdWFlZD1sDUBdCFx4EGUgLFlYYE1BWF0IXAhMCXVhZWUoGBUoIWUQPTFBMEFNOShccSh1XUxNWA0wZWFNKAhhdWERCBBgZVh8WVh8CH1UZQl4FGFBcF0FZSgEYURRTFx4eFUFYUlhKAhhdEUQXABkSFg"),
 })
 
-df.prioRows = {}
+zhpb.prioRows = {}
 
-df.prioBuilding = true
+zhpb.prioBuilding = true
 
-local hge = {}
+local hrtw = {}
 
-for hm, rcq in ipairs(rqc.prioGroups) do
-hge[#hge + 1] = rcq.label
+for wfef, dug in ipairs(fq.prioGroups) do
+hrtw[#hrtw + 1] = dug.label
 end
 
-for zfr = 1, #rqc.prioGroups do
-local yrh = nil
+for yfd = 1, #fq.prioGroups do
+local cku = nil
 
 pcall(function()
-yrh = df.prioSection:Dropdown({
-Name = _d("PEYcWhAOBBUU") .. zfr,
+cku = zhpb.prioSection:Dropdown({
+Name = _d("KEReBQQZTAEW") .. yfd,
 Search = false,
 Multi = false,
 Required = false,
-Default = zfr,
-Options = hge,
-Callback = function(sld)
-local kdc = type(sld) == _d("GFUXWQc") and sld[1] or sld
-local axic
+Default = yfd,
+Options = hrtw,
+Callback = function(et)
+local flud = type(et) == _d("DFdVBhM") and et[1] or et
+local zzw
 
-for kaz, wwke in ipairs(rqc.prioGroups) do
-if wwke.label == kdc then
-axic = wwke
+for cgj, hve in ipairs(fq.prioGroups) do
+if hve.label == flud then
+zzw = hve
 
 break
 end
 end
 
-if axic then
-df.setPriority(axic.id, zfr)
+if zzw then
+zhpb.setPriority(zzw.id, yfd)
 end
 end,
-}, _d("HEYcWj0VEQJfKg") .. zfr)
+}, _d("CEReBSkCWRZdaA") .. yfd)
 end)
 
-df.prioRows[zfr] = yrh
+zhpb.prioRows[yfd] = cku
 end
 
-df.prioBuilding = false
+zhpb.prioBuilding = false
 
-df.configSection = df.tab:Section({
-Side = _d("IFETQQ"),
+zhpb.configSection = zhpb.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-df.configSection:Header({
-Name = _d("L1sbUwsAUCFVG1QFAh0JWgE"),
+zhpb.configSection:Header({
+Name = _d("O1lZDB8XGDVXWQsRFVUdWEM"),
 })
 
-df.autoSaveToggle = df.configSection:Toggle({
-Name = _d("LUEBWkIUERpR"),
+zhpb.autoSaveToggle = zhpb.configSection:Toggle({
+Name = _d("OUNDBVYDWQ5T"),
 Default = false,
-Callback = function(hi)
-df.autoSave = hi
-df.autoSaveAt = 0
+Callback = function(itbf)
+zhpb.autoSave = itbf
+zhpb.autoSaveAt = 0
 
-if hi then
-local aixq = df.selected or _d("CFETVBcLBA")
-local tsn, xfo = df.save(aixq)
+if itbf then
+local cgt = zhpb.selected or _d("HFNRCwMcTA")
+local phl, ylky = zhpb.save(cgt)
 
-df.selected = aixq
-df.lastText = tsn and (_d("LUEBWkIUERpRVVoMR11MQwdaFgJQ") .. aixq)
-or (_d("LUEBWkIUERpRVVoMS1AKXQdGFkcHHl0BUEIBEQVYEFFYRw") .. tostring(xfo))
+zhpb.selected = cgt
+zhpb.lastText = phl and (_d("OUNDBVYDWQ5TFwUYUBVYQUUFAhUY") .. cgt)
+or (_d("OUNDBVYDWQ5TFwUYXBgeX0UZAlBPCl9DD1YWWRFaUg5MUA") .. tostring(ylky))
 else
-df.lastText = _d("LUEBWkIUERpRVVoEAV4")
+zhpb.lastText = _d("OUNDBVYDWQ5TFwUQFhY")
 end
 end,
-}, _d("D1sbUwsALw1BAVo9FBEaUQ"))
+}, _d("G1lZDB8XZxlDQwUpA1kOUw"))
 
-df.nameInput = df.configSection:Input({
-Name = _d("P1UDUEIJEQFR"),
-Placeholder = _d("CRoSG0I1EQVQBg"),
-AcceptedCharacters = _d("LVgZ"),
-Callback = function(opi)
-df.nameDraft = opi
+zhpb.nameInput = zhpb.configSection:Input({
+Name = _d("K1dBD1YeWRVT"),
+Placeholder = _d("HRhQRFYiWRFSRA"),
+AcceptedCharacters = _d("OVpb"),
+Callback = function(euoe)
+zhpb.nameDraft = euoe
 end,
 })
 
-df.nameInput.IgnoreConfig = true
+zhpb.nameInput.IgnoreConfig = true
 
-df.configSection:Button({
-Name = _d("L0YQVBYCUB9VA1A"),
+zhpb.configSection:Button({
+Name = _d("O0RSCwIVGAtXQQ8"),
 Callback = function()
-local fjh = df.nameDraft or df.nameInput:GetInput()
+local ufq = zhpb.nameDraft or zhpb.nameInput:GetInput()
 
-fjh = type(fjh) == _d("H0AHXAwA") and fjh:gsub(_d("MhEGHg"), _d("")):gsub(_d("SUdeEQ"), _d("")) or _d("")
+ufq = type(ufq) == _d("C0JFAxgX") and ufq:gsub(_d("JhNEQQ"), _d("")):gsub(_d("XUUcTg"), _d("")) or _d("")
 
-if fjh == _d("") then
-qza:Dialog({
-Title = _d("L1sbUwsA"),
-Description = _d("OE0FUEIGUAJVGFBCAR8eFAFdB0cDDUIQFQQOAh9AVRhCDgRMVhBWDQoVHxQBXQdHFgVYEBIRRx4NWRAb"),
+if ufq == _d("") then
+zcwe:Dialog({
+Title = _d("O1lZDB8X"),
+Description = _d("LE9HD1YRGBZXWg9WFlcKFkMCE1BLGUBSShAZSgtCF0dWGUxYVFIJGR1dCxZDAhNQXhFaUk0FUFYZW1JE"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -10823,445 +10830,445 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-local to, jvdq = df.save(fjh)
+local jd, bc = zhpb.save(ufq)
 
-if not to then
-df.lastText = _d("P1UDUEIBEQVYEFFYRw") .. tostring(jvdq)
+if not jd then
+zhpb.lastText = _d("K1dBD1YWWRFaUg5MUA") .. tostring(bc)
 
 return
 end
 
-df.selected = fjh
-df.lastText = _d("L0YQVBYCFEw") .. fjh .. _d("Qg")
-df.savesAt = 0
+zhpb.selected = ufq
+zhpb.lastText = _d("O0RSCwIVXFg") .. ufq .. _d("Vg")
+zhpb.savesAt = 0
 
 task.defer(function()
 task.wait(0.25)
 
 pcall(function()
-df.fileDropdown:UpdateSelection(fjh)
+zhpb.fileDropdown:UpdateSelection(ufq)
 end)
 end)
 end,
 })
 
-df.fileDropdown = df.configSection:Dropdown({
-Name = _d("P1UDUEIBGQBR"),
+zhpb.fileDropdown = zhpb.configSection:Dropdown({
+Name = _d("K1dBD1YWURRT"),
 Search = false,
 Multi = false,
 Required = false,
-Options = df.saves(),
-Callback = function(rdk)
-local sxu = type(rdk) == _d("GFUXWQc") and rdk[1] or rdk
+Options = zhpb.saves(),
+Callback = function(yhtp)
+local duwc = type(yhtp) == _d("DFdVBhM") and yhtp[1] or yhtp
 
-if type(sxu) == _d("H0AHXAwA") and sxu ~= _d("") then
-df.selected = sxu
-df.selectionShown = sxu
+if type(duwc) == _d("C0JFAxgX") and duwc ~= _d("") then
+zhpb.selected = duwc
+zhpb.selectionShown = duwc
 
 pcall(function()
-df.fileDropdown:UpdateName(_d("P1UDUEIBGQBRTxU") .. sxu)
+zhpb.fileDropdown:UpdateName(_d("K1dBD1YWURRTDUo") .. duwc)
 end)
 end
 end,
 })
 
-df.fileDropdown.IgnoreConfig = true
+zhpb.fileDropdown.IgnoreConfig = true
 
-df.configSection:Button({
-Name = _d("IFsUUUIUFQBRFkEHAw"),
+zhpb.configSection:Button({
+Name = _d("NFlWDlYDXRRTVB4TFA"),
 Callback = function()
-local rwth = df.selected or df.fileDropdown.Value
-local cf, qzl = df.load(rwth)
+local dfr = zhpb.selected or zhpb.fileDropdown.Value
+local kxl, thd = zhpb.load(dfr)
 
-df.lastText = cf and (_d("IFsUUQcDUA") .. rwth .. _d("Qg")) or (_d("IFsUUUIBEQVYEFFYRw") .. tostring(qzl))
+zhpb.lastText = kxl and (_d("NFlWDhMUGA") .. dfr .. _d("Vg")) or (_d("NFlWDlYWWRFaUg5MUA") .. tostring(thd))
 end,
 })
 
-df.configSection:Button({
-Name = _d("P1UDUEITH0xHEFkHBAQJUA"),
+zhpb.configSection:Button({
+Name = _d("K1dBD1YEV1hFUgYTE0wdUg"),
 Callback = function()
-local yhx = df.selected or df.fileDropdown.Value
-local wqfm, vak = df.save(yhx)
+local muer = zhpb.selected or zhpb.fileDropdown.Value
+local jqxy, scu = zhpb.save(muer)
 
-df.lastText = wqfm and (_d("O0YaQQdH") .. yhx .. _d("Qg")) or (_d("P1UDUEIBEQVYEFFYRw") .. tostring(vak))
+zhpb.lastText = jqxy and (_d("L0RYHhNQ") .. muer .. _d("Vg")) or (_d("K1dBD1YWWRFaUg5MUA") .. tostring(scu))
 end,
 })
 
-df.configSection:Button({
-Name = _d("KFEZUBYCUB9RGVABExUIFAZUFAI"),
+zhpb.configSection:Button({
+Name = _d("PFNbDwIVGAtTWw8VBF0cFkQLABU"),
 Callback = function()
-local zxcx = df.selected or df.fileDropdown.Value
+local twki = zhpb.selected or zhpb.fileDropdown.Value
 
-if type(zxcx) ~= _d("H0AHXAwA") or zxcx == _d("") then
-df.lastText = _d("PF0WXkIGUB9VA1BCARkAUVVTCxUDGBo")
+if type(twki) ~= _d("C0JFAxgX") or twki == _d("") then
+zhpb.lastText = _d("KF9UAVYRGAtXQQ9WFlEUUxcMHwJLDBg")
 
 return
 end
 
-qza:Dialog({
-Title = _d("KFEZUBYCUA") .. zxcx .. _d("Uw"),
-Description = _d("OFwQFQQOHAkUHEZCFRUBWwNQBkcWHlsYFQYOAwcUFFsGRxMNWhtaFkcSCRQHUAEIBglGEFFM"),
+zcwe:Dialog({
+Title = _d("PFNbDwIVGA") .. twki .. _d("Rw"),
+Description = _d("LF5SShAZVB0WXhlWAl0VWUEPElBeCllaShIZSxMWVgQSUFsZWFkFAlBaHRZFDxUfTh1EUg5Y"),
 Buttons = {
 {
-Name = _d("KFEZUBYC"),
+Name = _d("PFNbDwIV"),
 Callback = function()
-local xjw, ytt = df.delete(zxcx)
+local jjgg, ohu = zhpb.delete(twki)
 
-df.lastText = xjw
-and (_d("KFEZUBYCFEw") .. zxcx .. _d("Qg"))
-or (_d("L1sAWQZHHgNAVVEHCxUYUU8V") .. tostring(ytt))
+zhpb.lastText = jjgg
+and (_d("PFNbDwIVXFg") .. twki .. _d("Vg"))
+or (_d("O1lCBhJQVhdCFw4THF0MUw1K") .. tostring(ohu))
 end,
 },
 {
-Name = _d("L1UbVgcL"),
+Name = _d("O1dZCRMc"),
 },
 },
 })
 end,
 })
 
-df.configSection:Button({
-Name = _d("PlETRwcUGExYHEYW"),
+zhpb.configSection:Button({
+Name = _d("KlNRGBMDUFhaXhkC"),
 Callback = function()
-df.savesAt = 0
-df.lastText = _d("P1UDUEILGR9AVUcHAQIJRx1QBkk")
+zhpb.savesAt = 0
+zhpb.lastText = _d("K1dBD1YcUQtCFxgTFkodRV8PEl4")
 end,
 })
 
-df.configSection:Button({
-Name = _d("IVUHXkIGA0xVAEENRxwDVRE"),
+zhpb.configSection:Button({
+Name = _d("NVdFAVYRS1hXQh4ZUFQXV1M"),
 Callback = function()
-local glqw = df.selected or df.fileDropdown.Value
+local iupu = zhpb.selected or zhpb.fileDropdown.Value
 
-if type(glqw) ~= _d("H0AHXAwA") or glqw == _d("") then
-df.lastText = _d("PF0WXkIGUB9VA1BCARkAUVVTCxUDGBo")
+if type(iupu) ~= _d("C0JFAxgX") or iupu == _d("") then
+zhpb.lastText = _d("KF9UAVYRGAtXQQ9WFlEUUxcMHwJLDBg")
 
 return
 end
 
-if df.setAutoLoad(glqw) then
-df.lastText = glqw .. _d("TFgaVAYUUANaVUYWBgIYGg")
+if zhpb.setAutoLoad(iupu) then
+zhpb.lastText = iupu .. _d("WFpYCxIDGBdYFxkCEUoMGA")
 else
-df.lastText = _d("L1sAWQZHHgNAVUIQDgQJFAFdB0cRGUAaFQ4IEQgUGFQQDBUeGg")
+zhpb.lastText = _d("O1lCBhJQVhdCFx0EGUwdFkMCE1BZDUJYShofWRwWWgsEG10KGA")
 end
 end,
 })
 
-df.configSection:Button({
-Name = _d("L1gQVBBHERlAGhUOCBEI"),
+zhpb.configSection:Button({
+Name = _d("O1pSCwRQWQ1CWEoaH1kc"),
 Callback = function()
-df.setAutoLoad(_d(""))
-df.lastText = _d("IlsBXQsJF0xYGlQGFFADWlVGFgYCGBo")
+zhpb.setAutoLoad(_d(""))
+zhpb.lastText = _d("NllDAh8eX1haWAsSAxgXWBcZAhFKDBg")
 end,
 })
 
-df.statusParagraph = df.configSection:Paragraph({
-Header = _d("P0AUQRcU"),
+zhpb.statusParagraph = zhpb.configSection:Paragraph({
+Header = _d("K0JWHgMD"),
 Body = _d(""),
 })
 
-df.miscSection = df.tab:Section({
-Side = _d("Pl0SXRY"),
+zhpb.miscSection = zhpb.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-df.miscSection:Header({
-Name = _d("IV0GVg"),
+zhpb.miscSection:Header({
+Name = _d("NV9ECQ"),
 })
 
-df.miscSection:Toggle({
-Name = _d("LUEBWkIEHANHEBUFAh4JRhRBCwgeTGE8"),
+zhpb.miscSection:Toggle({
+Name = _d("OUNDBVYTVBdFUkoRFVYdRFYeHx9WWGN+"),
 Default = false,
-Callback = function(oli)
-ozei(oli)
+Callback = function(vdvf)
+dr(vdvf)
 end,
-}, _d("AV0GVj0GBRhbKlYOCAMJaxJQDAICDUAcWgw"))
+}, _d("FV9ECSkRTQxZaAkaH0sdaVAPGBVKGUJeBRg"))
 
-df.miscSection:Toggle({
-Name = _d("LUEBWkI1HwBY"),
+zhpb.miscSection:Toggle({
+Name = _d("OUNDBVYiVxRa"),
 Default = true,
-Callback = function(dvhb)
-df.autoRoll = dvhb
+Callback = function(ydm)
+zhpb.autoRoll = ydm
 
-if dvhb and df.setRollButton then
-df.setRollButton(_d("LUEBWjAIHAB2AEEWCB4"), true)
+if ydm and zhpb.setRollButton then
+zhpb.setRollButton(_d("OUNDBSQfVBR0Qh4CH1Y"), true)
 end
 end,
-}, _d("AV0GVj0GBRhbKkcNCxw"))
+}, _d("FV9ECSkRTQxZaBgZHFQ"))
 
-df.miscSection:Toggle({
-Name = _d("LUEBWkI2BQVXHhUwCBwA"),
+zhpb.miscSection:Toggle({
+Name = _d("OUNDBVYhTRFVXEokH1QU"),
 Default = true,
-Callback = function(dlmb)
-df.autoQuickRoll = dlmb
+Callback = function(ejoa)
+zhpb.autoQuickRoll = ejoa
 
-if dlmb and df.setRollButton then
-df.setRollButton(_d("PUEcVgk1HwBYN0AWEx8C"), true)
+if ejoa and zhpb.setRollButton then
+zhpb.setRollButton(_d("KUNeCR0iVxRadR8CBFcW"), true)
 end
 end,
-}, _d("AV0GVj0GBRhbKkQXDhMHawdaDgs"))
+}, _d("FV9ECSkRTQxZaBsDGVsTaUUFGhw"))
 
-df.uiSection = df.tab:Section({
-Side = _d("Pl0SXRY"),
+zhpb.uiSection = zhpb.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-df.uiSection:Header({
-Name = _d("OX0"),
+zhpb.uiSection:Header({
+Name = _d("LX8"),
 })
 
-df.uiSection:Toggle({
-Name = _d("LlUWXgUVHxlaERUACwUe"),
+zhpb.uiSection:Toggle({
+Name = _d("OldUARECVw1YU0oUHE0K"),
 Default = true,
-Callback = function(prns)
+Callback = function(gzw)
 pcall(function()
-qza:SetAcrylicBlurState(prns)
+zcwe:SetAcrylicBlurState(gzw)
 end)
 end,
-}, _d("GV0qVwMEGwtGGkAMAy8OWABH"))
+}, _d("DV9oCBcTUx9EWB8YFGcaWkIY"))
 
-function df.widthFactor(xypk)
-return 1 + math.max(0, (xypk or 1) - 1) * 0.8
+function zhpb.widthFactor(lml)
+return 1 + math.max(0, (lml or 1) - 1) * 0.8
 end
 
-function df.scaleCap()
-local ohow = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1280, 720)
-local zg = math.min(120, math.floor(((ohow.Y - 40 - 8 - 8) / 500) * 100))
+function zhpb.scaleCap()
+local iyzi = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1280, 720)
+local ogyu = math.min(120, math.floor(((iyzi.Y - 40 - 8 - 8) / 500) * 100))
 
-while zg > 50 and (df.baseWidth or 720) * (zg / 100) * df.widthFactor(zg / 100) > ohow.X - 16 do
-zg = zg - 1
+while ogyu > 50 and (zhpb.baseWidth or 720) * (ogyu / 100) * zhpb.widthFactor(ogyu / 100) > iyzi.X - 16 do
+ogyu = ogyu - 1
 end
 
-return math.max(50, zg)
+return math.max(50, ogyu)
 end
 
-function df.scaleCeiling()
-return math.min(1.2, df.scaleCap() / 100)
+function zhpb.scaleCeiling()
+return math.min(1.2, zhpb.scaleCap() / 100)
 end
 
-function df.refreshScaleCap()
-local jlgy = df.scaleSlider
+function zhpb.refreshScaleCap()
+local fvp = zhpb.scaleSlider
 
-if not jlgy then
+if not fvp then
 return
 end
 
-local dgtc = df.scaleCeiling()
+local wop = zhpb.scaleCeiling()
 
 pcall(function()
-jlgy.Settings.Maximum = dgtc
+fvp.Settings.Maximum = wop
 end)
 
-local ngoc = tonumber(jlgy:GetValue()) or 1
+local pawb = tonumber(fvp:GetValue()) or 1
 
-if ngoc > dgtc then
-df.scaleTarget = dgtc
+if pawb > wop then
+zhpb.scaleTarget = wop
 
 pcall(function()
-jlgy:UpdateValue(dgtc)
+fvp:UpdateValue(wop)
 end)
 end
 end
 
-df.scaleSlider = df.uiSection:Slider({
-Name = _d("OX1VRgEGHAk"),
+zhpb.scaleSlider = zhpb.uiSection:Slider({
+Name = _d("LX8XGRURVB0"),
 Default = 1,
 Minimum = 0.5,
 
-Maximum = df.scaleCeiling(),
-DisplayMethod = _d("OlUZQAc"),
+Maximum = zhpb.scaleCeiling(),
+DisplayMethod = _d("LldbHxM"),
 Precision = 2,
 
-Callback = function(geoo)
-df.scalePending = tonumber(geoo)
-df.scalePendingAt = os.clock()
+Callback = function(ehae)
+zhpb.scalePending = tonumber(ehae)
+zhpb.scalePendingAt = os.clock()
 end,
-onInputComplete = function(bej)
-local hu = df.scaleCeiling()
+onInputComplete = function(pvd)
+local prg = zhpb.scaleCeiling()
 
-df.scaleTarget = math.clamp(tonumber(bej) or df.scalePending or 1, 0.5, hu)
-df.scalePending = nil
+zhpb.scaleTarget = math.clamp(tonumber(pvd) or zhpb.scalePending or 1, 0.5, prg)
+zhpb.scalePending = nil
 
-df.scaleAnchor = nil
+zhpb.scaleAnchor = nil
 
-df.saveUi()
+zhpb.saveUi()
 end,
-}, _d("GV0qRgEGHAk"))
+}, _d("DV9oGRURVB0"))
 
-df.refreshScaleCap()
+zhpb.refreshScaleCap()
 
-df.themeDropdown = df.uiSection:Dropdown({
-Name = _d("OFwQWAddUDpbHFE"),
+zhpb.themeDropdown = zhpb.uiSection:Dropdown({
+Name = _d("LF5SBxNKGC5ZXg4"),
 Search = false,
 Multi = false,
 Required = false,
 Default = 1,
-Options = df.themeOrder,
-Callback = function(avhx)
-local ogoq = type(avhx) == _d("GFUXWQc") and avhx[1] or avhx
+Options = zhpb.themeOrder,
+Callback = function(lgx)
+local xynx = type(lgx) == _d("DFdVBhM") and lgx[1] or lgx
 
-if type(ogoq) == _d("H0AHXAwA") and df.presets[ogoq] then
-df.theme = ogoq
-df.accent = nil
-df.applyTheme()
+if type(xynx) == _d("C0JFAxgX") and zhpb.presets[xynx] then
+zhpb.theme = xynx
+zhpb.accent = nil
+zhpb.applyTheme()
 
 pcall(function()
-df.themeDropdown:UpdateName(_d("OFwQWAddUA") .. ogoq)
+zhpb.themeDropdown:UpdateName(_d("LF5SBxNKGA") .. xynx)
 end)
 
-df.saveUi()
+zhpb.saveUi()
 end
 end,
-}, _d("GV0qQQoCHQk"))
+}, _d("DV9oHh4VVR0"))
 
-df.accentPicker = df.uiSection:Colorpicker({
-Name = _d("LVcWUAwTUA9bGVoXFQ"),
+zhpb.accentPicker = zhpb.uiSection:Colorpicker({
+Name = _d("OVVUDxgEGBtZWwUDAg"),
 Default = Color3.fromRGB(168, 170, 176),
 Alpha = 0,
-Callback = function(prkh)
-df.accent = prkh
-df.applyTheme()
-df.saveUi()
+Callback = function(dwk)
+zhpb.accent = dwk
+zhpb.applyTheme()
+zhpb.saveUi()
 end,
-}, _d("GV0qVAEEFQJA"))
+}, _d("DV9oCxUTXRZC"))
 
-df.codesSection = df.tab:Section({
-Side = _d("Pl0SXRY"),
+zhpb.codesSection = zhpb.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-df.codesSection:Header({
-Name = _d("L1sRUBE"),
+zhpb.codesSection:Header({
+Name = _d("O1lTDwU"),
 })
 
-df.codeText = _d("PlERUAcKA0xRA1AQHlAPWxFQQhMYBUdVUgMKFUxHHVwSFFAbXQFdTkcfAlFVUBQCAhUUFloXFxwJFBpTQhQVD1sbURFJ")
+zhpb.codeText = _d("KlNTDxMdS1hTQQ8ECRgbWVMPVgRQEUUXDRcdXVhFXwMGAxgPX0MCWlBXFlMXDwAVSgEWVAUDAFQdFlgMVgNdG1lZDgVe")
 
-function df.setCodeText(jlom)
-df.codeText = jlom
+function zhpb.setCodeText(gub)
+zhpb.codeText = gub
 
 pcall(function()
-df.codeParagraph:UpdateBody(jlom)
+zhpb.codeParagraph:UpdateBody(gub)
 end)
 end
 
-function df.redeemCodes()
-if df.redeeming then
+function zhpb.redeemCodes()
+if zhpb.redeeming then
 return
 end
 
-local fm = bo.RedeemCode
-local cph = kq:FindFirstChild(_d("IVsRQA4CIw9GHEUWFA"))
-local ysb = cph and cph:FindFirstChild(_d("L1sRUCYGBA0"))
-local emkb, hbvo = false, nil
+local caq = xl.RedeemCode
+local kf = ayu:FindFirstChild(_d("NVlTHxoVaxtEXhoCAw"))
+local aich = kf and kf:FindFirstChild(_d("O1lTDzIRTBk"))
+local ids, rxi = false, nil
 
-if fm and ysb then
-emkb, hbvo = pcall(function()
-return require(ysb)
+if caq and aich then
+ids, rxi = pcall(function()
+return require(aich)
 end)
 end
 
-local de = emkb and type(hbvo) == _d("GFUXWQc") and hbvo.Codes or nil
+local qt = ids and type(rxi) == _d("DFdVBhM") and rxi.Codes or nil
 
-if not fm or type(de) ~= _d("GFUXWQc") then
-df.setCodeText(_d("OFwcRkIRFR5HHFoMRx8KFAFdB0cXDVkQFQoGA0xaGhUBCBQJFBlcERNQA0ZVWw1HAglQEFAPRwIJWRpBB0k"))
+if not caq or type(qt) ~= _d("DFdVBhM") then
+zhpb.setCodeText(_d("LF5eGVYGXQpFXgUYUFceFkMCE1BfGVtSSh4RS1hYWEoVH1wdFlsDBQQYF0QXBBlQSh1SUg8bUEodW1geE14"))
 return
 end
 
-local xkhk = {}
+local kai = {}
 
-for thf in pairs(de) do
-xkhk[#xkhk + 1] = thf
+for dfc in pairs(qt) do
+kai[#kai + 1] = dfc
 end
 
-table.sort(xkhk)
+table.sort(kai)
 
-local mctf = #xkhk
+local owu = #kai
 
-df.redeeming = true
-df.setCodeText(_d("PlERUAcKGQJTVQ") .. mctf .. _d("TFcaUQcUXkIa"))
+zhpb.redeeming = true
+zhpb.setCodeText(_d("KlNTDxMdURZRFw") .. owu .. _d("WFVYDhMDFlYY"))
 
 task.spawn(function()
-local nxd, ndf, nrza = 0, 0, 0
-local cb = {}
+local avz, czq, qo = 0, 0, 0
+local qcks = {}
 
-for ducr = 1, mctf do
-if not xkj() then
+for cywe = 1, owu do
+if not gsk() then
 break
 end
 
-local du = xkhk[ducr]
-local sqk, rdv = pcall(function()
-return fm:InvokeServer(du)
+local hsat = kai[cywe]
+local kfrn, ain = pcall(function()
+return caq:InvokeServer(hsat)
 end)
 
-local pvab = sqk and type(rdv) == _d("GFUXWQc") and rdv.success == true
-local zvu = sqk and type(rdv) == _d("GFUXWQc") and tostring(rdv.message or _d("")) or tostring(rdv or _d(""))
+local kugi = kfrn and type(ain) == _d("DFdVBhM") and ain.success == true
+local ylyy = kfrn and type(ain) == _d("DFdVBhM") and tostring(ain.message or _d("")) or tostring(ain or _d(""))
 
-if not pvab and string.find(string.lower(zvu), _d("G1UcQQ"), 1, true) then
+if not kugi and string.find(string.lower(ylyy), _d("D1deHg"), 1, true) then
 task.wait(3.5)
 
-sqk, rdv = pcall(function()
-return fm:InvokeServer(du)
+kfrn, ain = pcall(function()
+return caq:InvokeServer(hsat)
 end)
 
-pvab = sqk and type(rdv) == _d("GFUXWQc") and rdv.success == true
-zvu = sqk and type(rdv) == _d("GFUXWQc") and tostring(rdv.message or _d("")) or tostring(rdv or _d(""))
+kugi = kfrn and type(ain) == _d("DFdVBhM") and ain.success == true
+ylyy = kfrn and type(ain) == _d("DFdVBhM") and tostring(ain.message or _d("")) or tostring(ain or _d(""))
 end
 
-if pvab then
-nxd = nxd + 1
-elseif string.find(string.lower(zvu), _d("DVgHUAMDCQ"), 1, true) then
-ndf = ndf + 1
+if kugi then
+avz = avz + 1
+elseif string.find(string.lower(ylyy), _d("GVpFDxcUQQ"), 1, true) then
+czq = czq + 1
 else
-nrza = nrza + 1
+qo = qo + 1
 
-if #cb < 6 then
-cb[#cb + 1] = du .. _d("VhQ") .. (zvu ~= _d("") and zvu or _d("AltVVAwUBwlG"))
+if #qcks < 6 then
+qcks[#qcks + 1] = hsat .. _d("QhY") .. (ylyy ~= _d("") and ylyy or _d("FlkXCxgDTx1E"))
 end
 end
 
-df.setCodeText(string.format(_d("SVBVWgRHVQgUWBVHA1AeURFQBwoVCBhVEAZHEQBGEFQGHlxMEREVEAIWGUcQUUw"), ducr, mctf, nxd, ndf, nrza))
+zhpb.setCodeText(string.format(_d("XVIXBRBQHRwWGkpTFBgKU1MPEx1dHBoXTxJQWRREUgsSCRRYE1NKBBVeDUVSDlg"), cywe, owu, avz, czq, qo))
 
-if ducr < mctf and xkj() then
+if cywe < owu and gsk() then
 task.wait(1.8)
 end
 end
 
-local iiy = {
-string.format(_d("PlERUAcKFQgUUFFORxEARhBUBh5QBFURFUcDXExGEFMXFBUIFFBRQggWTBERGw"), nxd, ndf, nrza, mctf),
+local ovaw = {
+string.format(_d("KlNTDxMdXRwWEg5aUFkURFILEgkYEFdTSlMUFFhEUgwDA10cFhIOVh9eWBNTRA"), avz, czq, qo, owu),
 }
 
-for lsw, fvqd in ipairs(cb) do
-iiy[#iiy + 1] = fvqd
+for qfc, cjdr in ipairs(qcks) do
+ovaw[#ovaw + 1] = cjdr
 end
 
-df.redeeming = false
-df.setCodeText(table.concat(iiy, _d("Zg")))
+zhpb.redeeming = false
+zhpb.setCodeText(table.concat(ovaw, _d("cg")))
 end)
 end
 
-df.codesSection:Button({
-Name = _d("PlERUAcKUA1YGRUBCBQJRw"),
+zhpb.codesSection:Button({
+Name = _d("KlNTDxMdGBlaW0oVH1wdRQ"),
 Callback = function()
-df.redeemCodes()
+zhpb.redeemCodes()
 end,
 })
 
-df.codeParagraph = df.codesSection:Paragraph({
-Header = _d("L1sRUBE"),
-Body = df.codeText,
+zhpb.codeParagraph = zhpb.codesSection:Paragraph({
+Header = _d("O1lTDwU"),
+Body = zhpb.codeText,
 })
 
-df.scriptSection = df.tab:Section({
-Side = _d("Pl0SXRY"),
+zhpb.scriptSection = zhpb.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-df.scriptSection:Header({
-Name = _d("P1cHXBIT"),
+zhpb.scriptSection:Header({
+Name = _d("K1VFAwYE"),
 })
 
-df.scriptSection:Button({
-Name = _d("OVoZWgMDUB9XB1wSEw"),
+zhpb.scriptSection:Button({
+Name = _d("LVhbBRcUGAtVRQMGBA"),
 Callback = function()
 pcall(function()
-qza:Unload()
+zcwe:Unload()
 end)
 
 getgenv().ACBXWindow = nil
@@ -11270,68 +11277,68 @@ end,
 })
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-if os.clock() >= df.savesAt then
-df.savesAt = os.clock() + 3
+if os.clock() >= zhpb.savesAt then
+zhpb.savesAt = os.clock() + 3
 
-local kcn = df.saves()
-local dmp = table.concat(kcn, _d("EA"))
+local typd = zhpb.saves()
+local irw = table.concat(typd, _d("BA"))
 
-if dmp ~= df.knownSaves then
-df.knownSaves = dmp
+if irw ~= zhpb.knownSaves then
+zhpb.knownSaves = irw
 
 pcall(function()
-df.fileDropdown:ClearOptions()
-df.fileDropdown:InsertOptions(kcn)
+zhpb.fileDropdown:ClearOptions()
+zhpb.fileDropdown:InsertOptions(typd)
 end)
 end
 
-if df.selected and df.selectionShown ~= df.selected then
-df.selectionShown = df.selected
+if zhpb.selected and zhpb.selectionShown ~= zhpb.selected then
+zhpb.selectionShown = zhpb.selected
 
 pcall(function()
-df.fileDropdown:UpdateSelection(df.selected)
+zhpb.fileDropdown:UpdateSelection(zhpb.selected)
 end)
 end
 end
 
-if df.autoSave and os.clock() >= df.autoSaveAt then
-df.autoSaveAt = os.clock() + 60
+if zhpb.autoSave and os.clock() >= zhpb.autoSaveAt then
+zhpb.autoSaveAt = os.clock() + 60
 
-local xrbj = df.selected or _d("CFETVBcLBA")
-local cyl, uyrq = df.save(xrbj)
+local fiz = zhpb.selected or _d("HFNRCwMcTA")
+local ibh, yjq = zhpb.save(fiz)
 
-df.selected = xrbj
-df.lastText = cyl and (_d("LUEBWkIUERpRERU") .. xrbj .. _d("TFUBFQ") .. os.date(_d("SXxPEC8")) .. _d("Qg"))
-or (_d("LUEBWkIUERpRVVMDDhwJUE8V") .. tostring(uyrq))
+zhpb.selected = fiz
+zhpb.lastText = ibh and (_d("OUNDBVYDWQ5TU0o") .. fiz .. _d("WFdDSg") .. os.date(_d("XX4NTzs")) .. _d("Vg"))
+or (_d("OUNDBVYDWQ5TFwwXGVQdUg1K") .. tostring(yjq))
 end
 
-if os.clock() >= df.themeAt then
-df.themeAt = os.clock() + 3
-df.applyTheme()
+if os.clock() >= zhpb.themeAt then
+zhpb.themeAt = os.clock() + 3
+zhpb.applyTheme()
 end
 
-if os.clock() >= df.capAt then
-df.capAt = os.clock() + 2
-df.refreshScaleCap()
+if os.clock() >= zhpb.capAt then
+zhpb.capAt = os.clock() + 2
+zhpb.refreshScaleCap()
 end
 
-if os.clock() >= df.statusAt then
-df.statusAt = os.clock() + 2
+if os.clock() >= zhpb.statusAt then
+zhpb.statusAt = os.clock() + 2
 
-local oagb = df.autoLoadName()
-local xg = table.concat({
-_d("LUEBWkILHw1QTxU") .. (oagb or _d("AlsbUA")),
-_d("P1UDUBFdUA") .. tostring(#df.saves()),
-df.lastText,
-}, _d("Zg"))
+local ns = zhpb.autoLoadName()
+local igj = table.concat({
+_d("OUNDBVYcVxlSDUo") .. (ns or _d("FllZDw")),
+_d("K1dBDwVKGA") .. tostring(#zhpb.saves()),
+zhpb.lastText,
+}, _d("cg"))
 
-if xg ~= df.shownStatus then
-df.shownStatus = xg
+if igj ~= zhpb.shownStatus then
+zhpb.shownStatus = igj
 
 pcall(function()
-df.statusParagraph:UpdateBody(xg)
+zhpb.statusParagraph:UpdateBody(igj)
 end)
 end
 end
@@ -11341,154 +11348,154 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-local oztt = df.scalePending
+local nqva = zhpb.scalePending
 
-if oztt and os.clock() - (df.scalePendingAt or 0) > 0.35 then
-local drs = df.scaleCeiling()
-local zfh = math.clamp(oztt, 0.5, drs)
+if nqva and os.clock() - (zhpb.scalePendingAt or 0) > 0.35 then
+local hsiy = zhpb.scaleCeiling()
+local axfx = math.clamp(nqva, 0.5, hsiy)
 
-df.scalePending = nil
+zhpb.scalePending = nil
 
-if math.abs(zfh - df.scaleTarget) > 0.002 then
-df.scaleTarget = zfh
-df.scaleAnchor = nil
+if math.abs(axfx - zhpb.scaleTarget) > 0.002 then
+zhpb.scaleTarget = axfx
+zhpb.scaleAnchor = nil
 
-df.saveUi()
+zhpb.saveUi()
 end
 end
 
-if math.abs(df.scaleTarget - df.scale) > 0.002 then
-local dkgl = df.guiRoot()
+if math.abs(zhpb.scaleTarget - zhpb.scale) > 0.002 then
+local cqml = zhpb.guiRoot()
 
-if dkgl and not df.baseWidth then
-df.baseWidth = dkgl.Size.X.Offset
-df.baseHeight = dkgl.Size.Y.Offset
+if cqml and not zhpb.baseWidth then
+zhpb.baseWidth = cqml.Size.X.Offset
+zhpb.baseHeight = cqml.Size.Y.Offset
 end
 
-local evh = df.baseWidth or 720
-local zfuv = df.baseHeight or 500
-local hmp = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1280, 720)
-local emd, zsgv = 8, 40
+local aoj = zhpb.baseWidth or 720
+local cus = zhpb.baseHeight or 500
+local ijzg = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1280, 720)
+local aq, bzkw = 8, 40
 
-if not df.scaleAnchor and dkgl then
+if not zhpb.scaleAnchor and cqml then
 
-local pcp = df.widthFactor(df.scaleTarget)
-local odkt, qfas = evh * pcp * df.scaleTarget, zfuv * df.scaleTarget
-local poht = dkgl.AbsolutePosition
+local vyqd = zhpb.widthFactor(zhpb.scaleTarget)
+local fuj, bheg = aoj * vyqd * zhpb.scaleTarget, cus * zhpb.scaleTarget
+local nsob = cqml.AbsolutePosition
 
-df.scaleAnchor = Vector2.new(
-math.clamp(poht.X, emd, math.max(emd, hmp.X - odkt - emd)),
-math.clamp(poht.Y, zsgv, math.max(zsgv, hmp.Y - qfas - emd))
+zhpb.scaleAnchor = Vector2.new(
+math.clamp(nsob.X, aq, math.max(aq, ijzg.X - fuj - aq)),
+math.clamp(nsob.Y, bzkw, math.max(bzkw, ijzg.Y - bheg - aq))
 )
 end
 
-local at = df.scaleAnchor
+local zljn = zhpb.scaleAnchor
 
-df.scale = df.scale + (df.scaleTarget - df.scale) * 0.18
+zhpb.scale = zhpb.scale + (zhpb.scaleTarget - zhpb.scale) * 0.18
 
-local fpoa = df.widthFactor(df.scale)
+local kklc = zhpb.widthFactor(zhpb.scale)
 
 pcall(function()
-qza:SetScale(df.scale)
+zcwe:SetScale(zhpb.scale)
 
-if dkgl then
-local tgs = math.floor(evh * fpoa)
+if cqml then
+local unye = math.floor(aoj * kklc)
 
-dkgl.Size = UDim2.fromOffset(tgs, math.floor(zfuv))
+cqml.Size = UDim2.fromOffset(unye, math.floor(cus))
 
-local thef = dkgl:FindFirstChild(_d("L1sbQQcJBA"))
+local xvh = cqml:FindFirstChild(_d("O1lZHhMeTA"))
 
-if thef then
-local mlv = dkgl:FindFirstChild(_d("P10RUAAGAg"))
-local lxg = math.floor(mlv and mlv.Size.X.Scale * tgs or tgs * 0.325)
+if xvh then
+local frjx = cqml:FindFirstChild(_d("K19TDxQRSg"))
+local bllw = math.floor(frjx and frjx.Size.X.Scale * unye or unye * 0.325)
 
-thef.Size = UDim2.new(0, math.max(0, tgs - lxg), 1, 0)
+xvh.Size = UDim2.new(0, math.max(0, unye - bllw), 1, 0)
 end
 end
 end)
 
-if dkgl and at then
-local wta, diic = evh * fpoa * df.scale, zfuv * df.scale
-local cow = math.clamp(at.X, emd, math.max(emd, hmp.X - wta - emd))
-local hazr = math.clamp(at.Y, zsgv, math.max(zsgv, hmp.Y - diic - emd))
+if cqml and zljn then
+local ioml, kjyh = aoj * kklc * zhpb.scale, cus * zhpb.scale
+local bmln = math.clamp(zljn.X, aq, math.max(aq, ijzg.X - ioml - aq))
+local uupi = math.clamp(zljn.Y, bzkw, math.max(bzkw, ijzg.Y - kjyh - aq))
 
-local ybq = dkgl.Parent and dkgl.Parent.AbsolutePosition or Vector2.zero
+local nhv = cqml.Parent and cqml.Parent.AbsolutePosition or Vector2.zero
 
 pcall(function()
-dkgl.Position = UDim2.fromOffset(math.floor(cow - ybq.X), math.floor(hazr - ybq.Y))
+cqml.Position = UDim2.fromOffset(math.floor(bmln - nhv.X), math.floor(uupi - nhv.Y))
 end)
 end
 else
 
-df.scaleAnchor = nil
+zhpb.scaleAnchor = nil
 end
 
 task.wait()
 end
 end)
 
-btd.misc.tierLabels = {}
-btd.misc.labelToTier = {}
+yvcz.misc.tierLabels = {}
+yvcz.misc.labelToTier = {}
 
-btd.misc.expSection = btd.misc.tab:Section({
-Side = _d("IFETQQ"),
+yvcz.misc.expSection = yvcz.misc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-btd.misc.expSection:Header({
-Name = _d("KUwFUAYOBAVbG0ZCl+/7tpqN7Q"),
+yvcz.misc.expSection:Header({
+Name = _d("PU5HDxIZTBFZWRlWgKfvtNjS+Q"),
 })
 
-btd.misc.claimToggle = btd.misc.expSection:Toggle({
-Name = _d("LUEBWkIEHA1dGA"),
+yvcz.misc.claimToggle = yvcz.misc.expSection:Toggle({
+Name = _d("OUNDBVYTVBlfWg"),
 Default = false,
-Callback = function(oyb)
-local zwk = btd.misc.expeditions
+Callback = function(ugsa)
+local wvy = yvcz.misc.expeditions
 
-zwk.enabled = oyb
-zwk.claimAt = 0
+wvy.enabled = ugsa
+wvy.claimAt = 0
 
-if oyb then
-zwk.askedAt = 0
-zwk.request()
+if ugsa then
+wvy.askedAt = 0
+wvy.request()
 end
 end,
-}, _d("DUEBWj0EHA1dGA"))
+}, _d("GUNDBSkTVBlfWg"))
 
-btd.misc.rewardToggle = btd.misc.expSection:Toggle({
-Name = _d("LUEBWkIEHANHEBUQAgcNRhFG"),
+yvcz.misc.rewardToggle = yvcz.misc.expSection:Toggle({
+Name = _d("OUNDBVYTVBdFUkoEFU8ZRFMZ"),
 Default = false,
-Callback = function(rtcx)
-local ivpl = btd.misc.expeditions
+Callback = function(khv)
+local txl = yvcz.misc.expeditions
 
-ivpl.autoClose = rtcx
+txl.autoClose = khv
 
-if rtcx then
-ivpl.closeRewards()
+if khv then
+txl.closeRewards()
 end
 end,
-}, _d("CUwFagMSBANrFlkNFBU"))
+}, _d("HU5HNRcFTBdpVAYZA10"))
 
-btd.misc.startToggle = btd.misc.expSection:Toggle({
-Name = _d("LUEBWkIUBA1GAQ"),
+yvcz.misc.startToggle = yvcz.misc.expSection:Toggle({
+Name = _d("OUNDBVYDTBlEQw"),
 Default = false,
-Callback = function(ins)
-local jsx = btd.misc.expeditions
+Callback = function(yjc)
+local flgr = yvcz.misc.expeditions
 
-if ins and not next(jsx.tiersWanted) then
-jsx.autoStart = false
+if yjc and not next(flgr.tiersWanted) then
+flgr.autoStart = false
 
 pcall(function()
-btd.misc.startToggle:UpdateState(false)
+yvcz.misc.startToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkIUBA1GARUMAhUIR1VUQhMZCUY"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVFg4VHhQcW0ITGAkUIVwHFVAIRhpFBggHAhQTXBAUBEIUMFQRHlAYVR5QEUcEBFFVVgoCERxRBkFCBBEeUAYZQikZC1wBWAMVFUxAHVBCFREeUQZBTkcRAlBVVAweUAJBGFcHFVADUlVBCgIdTFcUW0IVBQIUFEFCCB4PUVs"),
+zcwe:Dialog({
+Title = _d("OUNDBVYDTBlEQ0oYFV0cRRcLVgRRHUQ"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKAhldChZeBFYEUB0WYwMTAhgcRFgaEh9PFhZRAwQDTFYWcgsFCRgMV1wPBVBMEFMXCR4VWQhTRB5WE1kKUkRGVj5RH15DBxcCXVhCXw9WAlkKU0QeWlBZFlIXCxgJGBZDWggTAhgXUBceHhVVWFVWBFYCTRYWVh5WH1YbUxk"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -11496,214 +11503,214 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-jsx.autoStart = ins
-jsx.startedAt = {}
+flgr.autoStart = yjc
+flgr.startedAt = {}
 
-if ins then
-jsx.askedAt = 0
-jsx.request()
+if yjc then
+flgr.askedAt = 0
+flgr.request()
 end
 end,
-}, _d("DUEBWj0UBA1GAQ"))
+}, _d("GUNDBSkDTBlEQw"))
 
-for jky, ycd in ipairs(btd.misc.expeditions.tiers()) do
-table.insert(btd.misc.tierLabels, tostring(ycd.name))
-btd.misc.labelToTier[tostring(ycd.name)] = ycd.id
+for hok, vxmn in ipairs(yvcz.misc.expeditions.tiers()) do
+table.insert(yvcz.misc.tierLabels, tostring(vxmn.name))
+yvcz.misc.labelToTier[tostring(vxmn.name)] = vxmn.id
 end
 
-btd.misc.building = true
+yvcz.misc.building = true
 
-btd.misc.tierDropdown = btd.misc.expSection:Dropdown({
-Name = _d("OF0QRw"),
+yvcz.misc.tierDropdown = yvcz.misc.expSection:Dropdown({
+Name = _d("LF9SGA"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = btd.misc.tierLabels,
-Callback = function(sny)
-local avn = btd.misc.expeditions
+Options = yvcz.misc.tierLabels,
+Callback = function(zqka)
+local rw = yvcz.misc.expeditions
 
-if btd.misc.building then
+if yvcz.misc.building then
 return
 end
 
-local hyge = {}
-local hllh = {}
+local eshx = {}
+local xtb = {}
 
-if type(sny) == _d("GFUXWQc") then
-for nbmw, mwkc in pairs(sny) do
-local aei = btd.misc.labelToTier[tostring(nbmw)]
+if type(zqka) == _d("DFdVBhM") then
+for jupu, rhb in pairs(zqka) do
+local pxt = yvcz.misc.labelToTier[tostring(jupu)]
 
-if mwkc and aei then
-hyge[aei] = true
-table.insert(hllh, tostring(nbmw))
+if rhb and pxt then
+eshx[pxt] = true
+table.insert(xtb, tostring(jupu))
 end
 end
 end
 
-table.sort(hllh)
-avn.tiersWanted = hyge
+table.sort(xtb)
+rw.tiersWanted = eshx
 
 pcall(function()
-btd.misc.tierDropdown:UpdateName(#hllh > 0 and (_d("OF0QR0KF8M4U") .. table.concat(hllh, _d("QBQ"))) or _d("OF0QR0KF8M4UG1oMAg"))
+yvcz.misc.tierDropdown:UpdateName(#xtb > 0 and (_d("LF9SGFaSuNoW") .. table.concat(xtb, _d("VBY"))) or _d("LF9SGFaSuNoWWQUYFQ"))
 end)
 end,
-}, _d("GF0QRw"))
+}, _d("DF9SGA"))
 
 task.defer(function()
-btd.misc.building = false
+yvcz.misc.building = false
 end)
 
-btd.misc.expSection:Button({
-Name = _d("L1gUXA9HHgND"),
+yvcz.misc.expSection:Button({
+Name = _d("O1pWAxtQVhdB"),
 Callback = function()
-local fbw = btd.misc.expeditions
+local vvho = yvcz.misc.expeditions
 
-if not fbw.claim() then
-qza:Notify({
-Title = _d("KUwFUAYOBAVbG0Y"),
-Description = _d("IlsBXQsJF0xcFEZCBB8BUVVXAwQbTE0QQUw"),
+if not vvho.claim() then
+zcwe:Notify({
+Title = _d("PU5HDxIZTBFZWRk"),
+Description = _d("NllDAh8eX1heVhlWE1cVUxcIFxNTWE9SHlg"),
 Lifetime = 5,
 })
 end
 end,
 })
 
-btd.misc.expSection:Button({
-Name = _d("P1EbUUIUFQBRFkEHAw"),
+yvcz.misc.expSection:Button({
+Name = _d("K1NZDlYDXRRTVB4TFA"),
 Callback = function()
-local isqb = btd.misc.expeditions
+local dtl = yvcz.misc.expeditions
 
-if not next(isqb.tiersWanted) then
-qza:Notify({
-Title = _d("KUwFUAYOBAVbG0Y"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVFg4VHhQcW0ITGAkUEUcNFxQDQxsVBA4CH0Bb"),
+if not next(dtl.tiersWanted) then
+zcwe:Notify({
+Title = _d("PU5HDxIZTBFZWRk"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKAhldChZeBFYEUB0WUxgZAFwXQVlKEBlKC0IZ"),
 Lifetime = 5,
 })
 
 return
 end
 
-local ryv = {}
-local ft = 0
+local bqli = {}
+local smkn = 0
 
-for bute, yagf in ipairs(isqb.tiers()) do
-if isqb.tiersWanted[yagf.id] and isqb.status(yagf.id) == _d("DUIUXA4GEgBR") then
-if isqb.start(yagf.id, ryv) then
-ft = ft + 1
+for zzg, ret in ipairs(dtl.tiers()) do
+if dtl.tiersWanted[ret.id] and dtl.status(ret.id) == _d("GUBWAxoRWhRT") then
+if dtl.start(ret.id, bqli) then
+smkn = smkn + 1
 end
 end
 end
 
-if ft == 0 then
-qza:Notify({
-Title = _d("KUwFUAYOBAVbG0Y"),
-Description = _d("IlsBXQsJF0xXGkAOA1AOUVVGBwkEVhQBXQdHAwlYEFYWAhRMQBxQEBRQDUYQFQMLAglVEUxCCAUYGFVaEEcEBFEHUEIGAgkUG1oWRxYDQQcVBwsZC10XWQdHEw1GEUZCAR8eFAFdBwpe"),
+if smkn == 0 then
+zcwe:Notify({
+Title = _d("PU5HDxIZTBFZWRk"),
+Description = _d("NllDAh8eX1hVWB8aFBgaUxcZEx5MQhZDAhNQSx1aUgkCFVxYQl4PBAMYGURSShccSh1XUxNWH00MGhcFBFBMEFNFD1YRSh0WWQUCUF4XQ0VKExxRH19VBhNQWxlEUxlWFlcKFkMCEx0W"),
 Lifetime = 6,
 })
 end
 end,
 })
 
-btd.misc.expInfo = btd.misc.tab:Section({
-Side = _d("Pl0SXRY"),
+yvcz.misc.expInfo = yvcz.misc.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-btd.misc.expInfo:Header({
-Name = _d("KUwFUAYOBAVbG0Y"),
+yvcz.misc.expInfo:Header({
+Name = _d("PU5HDxIZTBFZWRk"),
 })
 
-btd.misc.expParagraph = btd.misc.expInfo:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = btd.misc.expeditions.text(),
+yvcz.misc.expParagraph = yvcz.misc.expInfo:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = yvcz.misc.expeditions.text(),
 })
 
-btd.misc.expeditions.loadRewards()
+yvcz.misc.expeditions.loadRewards()
 
-btd.misc.expRewardParagraph = btd.misc.expInfo:Paragraph({
-Header = _d("L1gUXA8CFA"),
-Body = btd.misc.expeditions.rewardsText(),
+yvcz.misc.expRewardParagraph = yvcz.misc.expInfo:Paragraph({
+Header = _d("O1pWAxsVXA"),
+Body = yvcz.misc.expeditions.rewardsText(),
 })
 
 task.spawn(function()
-local gs = btd.misc.expeditions
-local ikbl = ipt(_d("P00bVicfAAlQHEELCB4f"), 3)
+local opp = yvcz.misc.expeditions
+local zrn = wek(_d("K09ZCTMISB1SXh4fH1YL"), 3)
 
-if ikbl then
-jxjd(ikbl.OnClientEvent, function(gtw)
-if type(gtw) ~= _d("GFUXWQc") then
+if zrn then
+im(zrn.OnClientEvent, function(hph)
+if type(hph) ~= _d("DFdVBhM") then
 return
 end
 
-gs.state = gtw
+opp.state = hph
 
-gs.offset = (tonumber(gtw.now) or os.time()) - os.time()
-gs.syncedAt = os.clock()
+opp.offset = (tonumber(hph.now) or os.time()) - os.time()
+opp.syncedAt = os.clock()
 
-if type(gtw.rewards) == _d("GFUXWQc") and #gtw.rewards > 0 then
-table.insert(gs.rewardLog, 1, {
+if type(hph.rewards) == _d("DFdVBhM") and #hph.rewards > 0 then
+table.insert(opp.rewardLog, 1, {
 at = os.time(),
-title = tostring(gtw.rewardTitle or _d("KUwFUAYOBAVbGw")),
-items = gtw.rewards,
+title = tostring(hph.rewardTitle or _d("PU5HDxIZTBFZWQ")),
+items = hph.rewards,
 })
 
-while #gs.rewardLog > 8 do
-table.remove(gs.rewardLog)
+while #opp.rewardLog > 8 do
+table.remove(opp.rewardLog)
 end
 
-gs.saveRewards()
+opp.saveRewards()
 
-if gs.autoClose then
+if opp.autoClose then
 
-task.delay(0.35, gs.closeRewards)
+task.delay(0.35, opp.closeRewards)
 end
 end
 end)
 end
 
-while xkj() do
+while gsk() do
 
-if os.clock() - gs.askedAt > 1 and os.clock() - gs.syncedAt > 20 then
-gs.request()
+if os.clock() - opp.askedAt > 1 and os.clock() - opp.syncedAt > 20 then
+opp.request()
 end
 
-if gs.enabled then
-gs.claim()
+if opp.enabled then
+opp.claim()
 end
 
-if gs.autoClose then
-gs.closeRewards()
+if opp.autoClose then
+opp.closeRewards()
 end
 
-if gs.autoStart and next(gs.tiersWanted) then
-local wlu = {}
+if opp.autoStart and next(opp.tiersWanted) then
+local jbf = {}
 
-for iyzg, mag in ipairs(gs.tiers()) do
-if gs.tiersWanted[mag.id] and gs.status(mag.id) == _d("DUIUXA4GEgBR") then
-if gs.start(mag.id, wlu) then
+for wmlu, grpg in ipairs(opp.tiers()) do
+if opp.tiersWanted[grpg.id] and opp.status(grpg.id) == _d("GUBWAxoRWhRT") then
+if opp.start(grpg.id, jbf) then
 break
 end
 end
 end
 end
 
-local zfzs = gs.text()
+local ettk = opp.text()
 
-if btd.misc.expParagraph and zfzs ~= btd.misc.expShown then
-btd.misc.expShown = zfzs
+if yvcz.misc.expParagraph and ettk ~= yvcz.misc.expShown then
+yvcz.misc.expShown = ettk
 
 pcall(function()
-btd.misc.expParagraph:UpdateBody(zfzs)
+yvcz.misc.expParagraph:UpdateBody(ettk)
 end)
 end
 
-local noq = gs.rewardsText()
+local qbf = opp.rewardsText()
 
-if btd.misc.expRewardParagraph and noq ~= gs.rewardsShown then
-gs.rewardsShown = noq
+if yvcz.misc.expRewardParagraph and qbf ~= opp.rewardsShown then
+opp.rewardsShown = qbf
 
 pcall(function()
-btd.misc.expRewardParagraph:UpdateBody(noq)
+yvcz.misc.expRewardParagraph:UpdateBody(qbf)
 end)
 end
 
@@ -11711,7 +11718,7 @@ task.wait(0.75)
 end
 end)
 
-btd.misc.util = {
+yvcz.misc.util = {
 profile = nil,
 profileAt = 0,
 askedAt = 0,
@@ -11741,261 +11748,261 @@ accessories = nil,
 shown = {},
 }
 
-function btd.misc.util.hook()
-local au = btd.misc.util
+function yvcz.misc.util.hook()
+local usfw = yvcz.misc.util
 
-if au.hooked then
+if usfw.hooked then
 return
 end
 
-au.hooked = true
+usfw.hooked = true
 
-if bo.SyncCollection then
-jxjd(bo.SyncCollection.OnClientEvent, function(shu)
-if type(shu) == _d("GFUXWQc") then
-au.profile = shu
-au.profileAt = os.clock()
+if xl.SyncCollection then
+im(xl.SyncCollection.OnClientEvent, function(xn)
+if type(xn) == _d("DFdVBhM") then
+usfw.profile = xn
+usfw.profileAt = os.clock()
 end
 end)
 end
 
-if bo.SyncAchievements then
-jxjd(bo.SyncAchievements.OnClientEvent, function(oryg)
-if type(oryg) == _d("GFUXWQc") then
-au.ach = oryg
+if xl.SyncAchievements then
+im(xl.SyncAchievements.OnClientEvent, function(mts)
+if type(mts) == _d("DFdVBhM") then
+usfw.ach = mts
 end
 end)
 end
 
-if bo.SyncQuests then
-jxjd(bo.SyncQuests.OnClientEvent, function(qaz)
-if type(qaz) == _d("GFUXWQc") and type(qaz.list) == _d("GFUXWQc") then
-au.quests = qaz
+if xl.SyncQuests then
+im(xl.SyncQuests.OnClientEvent, function(vskt)
+if type(vskt) == _d("DFdVBhM") and type(vskt.list) == _d("DFdVBhM") then
+usfw.quests = vskt
 end
 end)
 end
 
-if bo.SyncPeriodicQuests then
-jxjd(bo.SyncPeriodicQuests.OnClientEvent, function(fnxj, hpo)
-if fnxj == _d("G1EQXg4e") and type(hpo) == _d("GFUXWQc") and type(hpo.list) == _d("GFUXWQc") then
-au.weekly = hpo
+if xl.SyncPeriodicQuests then
+im(xl.SyncPeriodicQuests.OnClientEvent, function(pn, fzzv)
+if pn == _d("D1NSARoJ") and type(fzzv) == _d("DFdVBhM") and type(fzzv.list) == _d("DFdVBhM") then
+usfw.weekly = fzzv
 end
 end)
 end
 end
 
-function btd.misc.util.askProfile()
-local dz = btd.misc.util
+function yvcz.misc.util.askProfile()
+local di = yvcz.misc.util
 
-if os.clock() - dz.askedAt < 1.5 then
+if os.clock() - di.askedAt < 1.5 then
 return
 end
 
-dz.askedAt = os.clock()
+di.askedAt = os.clock()
 
-if bo.RequestSync then
+if xl.RequestSync then
 pcall(function()
-bo.RequestSync:FireServer()
+xl.RequestSync:FireServer()
 end)
 end
 end
 
-function btd.misc.util.currentProfile()
-local vbv = btd.misc.util
+function yvcz.misc.util.currentProfile()
+local wq = yvcz.misc.util
 
-if type(vbv.profile) ~= _d("GFUXWQc") then
-vbv.askProfile()
+if type(wq.profile) ~= _d("DFdVBhM") then
+wq.askProfile()
 
 return nil
 end
 
-if os.clock() - vbv.profileAt > 20 then
-vbv.askProfile()
+if os.clock() - wq.profileAt > 20 then
+wq.askProfile()
 end
 
-return vbv.profile
+return wq.profile
 end
 
-function btd.misc.util.forgetProfile()
-local lcta = btd.misc.util
+function yvcz.misc.util.forgetProfile()
+local yygq = yvcz.misc.util
 
-lcta.profile = nil
-lcta.profileAt = 0
-lcta.askedAt = 0
+yygq.profile = nil
+yygq.profileAt = 0
+yygq.askedAt = 0
 end
 
-function btd.misc.util.indexedTotal(vyx)
-local hxu = 0
+function yvcz.misc.util.indexedTotal(tp)
+local rc = 0
 
-for pda, jjn in pairs((vyx and vyx.cardIndex) or {}) do
-if jjn then
-hxu = hxu + 1
-end
-end
-
-return hxu
-end
-
-function btd.misc.util.indexPending(emyp)
-local drq = {}
-
-if type(emyp) ~= _d("GFUXWQc") then
-return drq
-end
-
-local ajsr = btd.misc.util.indexedTotal(emyp)
-local ena = emyp.indexMilestones or {}
-
-for mg = 1, 30 do
-if not ena[mg] and mg * 5 <= ajsr then
-table.insert(drq, mg)
+for ffqp, uax in pairs((tp and tp.cardIndex) or {}) do
+if uax then
+rc = rc + 1
 end
 end
 
-return drq
+return rc
 end
 
-function btd.misc.util.indexFrame()
-local yrr = rd:FindFirstChild(_d("L1UHUSsJFAlMMkAL"))
+function yvcz.misc.util.indexPending(ni)
+local ql = {}
 
-return yrr and yrr:FindFirstChild(_d("JVoRUBohAg1ZEA"))
+if type(ni) ~= _d("DFdVBhM") then
+return ql
 end
 
-function btd.misc.util.clickButton(ysnc)
-if not ysnc then
+local vpt = yvcz.misc.util.indexedTotal(ni)
+local udm = ni.indexMilestones or {}
+
+for gigx = 1, 30 do
+if not udm[gigx] and gigx * 5 <= vpt then
+table.insert(ql, gigx)
+end
+end
+
+return ql
+end
+
+function yvcz.misc.util.indexFrame()
+local rqlp = ff:FindFirstChild(_d("O1dFDj8eXB1OcB8f"))
+
+return rqlp and rqlp:FindFirstChild(_d("MVhTDw42ShlbUg"))
+end
+
+function yvcz.misc.util.clickButton(ppov)
+if not ppov then
 return false
 end
 
 if firesignal then
-local xfli = pcall(firesignal, ysnc.MouseButton1Click)
+local crod = pcall(firesignal, ppov.MouseButton1Click)
 
-if xfli then
+if crod then
 return true
 end
 end
 
 return pcall(function()
-ysnc:Activate()
+ppov:Activate()
 end)
 end
 
-function btd.misc.util.closeIndex()
-local gb = btd.misc.util.indexFrame()
+function yvcz.misc.util.closeIndex()
+local qg = yvcz.misc.util.indexFrame()
 
-if not gb or not gb.Visible then
+if not qg or not qg.Visible then
 return false
 end
 
 pcall(function()
-local dlhp = kq:FindFirstChild(_d("IVsRQA4CIw9GHEUWFA"))
-local zwpq = dlhp and dlhp:FindFirstChild(_d("IVEbQC8GHg1TEEc"))
+local wzlp = ayu:FindFirstChild(_d("NVlTHxoVaxtEXhoCAw"))
+local ubf = wzlp and wzlp:FindFirstChild(_d("NVNZHzsRVhlRUhg"))
 
-if zwpq then
-require(zwpq).close(gb)
+if ubf then
+require(ubf).close(qg)
 end
 end)
 
-btd.misc.util.clickButton(gb:FindFirstChild(_d("L1gaRgclBRhAGls")))
+yvcz.misc.util.clickButton(qg:FindFirstChild(_d("O1pYGRMyTQxCWAQ")))
 
 pcall(function()
-gb.Visible = false
+qg.Visible = false
 end)
 
 return true
 end
 
-function btd.misc.util.claimIndex()
-local qo = btd.misc.util
+function yvcz.misc.util.claimIndex()
+local vv = yvcz.misc.util
 
-if os.clock() < qo.indexAt then
+if os.clock() < vv.indexAt then
 return false
 end
 
-local zxk = qo.currentProfile()
+local kpyh = vv.currentProfile()
 
-if not zxk then
+if not kpyh then
 return false
 end
 
-local tae = qo.indexPending(zxk)
-local qqet = tae[1]
+local gph = vv.indexPending(kpyh)
+local uowg = gph[1]
 
-if not qqet then
+if not uowg then
 return false
 end
 
-local ome = qo.indexedTotal(zxk)
-local vwb = qo.indexAsked
+local zw = vv.indexedTotal(kpyh)
+local ufn = vv.indexAsked
 
-if type(vwb) == _d("GFUXWQc") and vwb.milestone == qqet and vwb.total == ome then
+if type(ufn) == _d("DFdVBhM") and ufn.milestone == uowg and ufn.total == zw then
 return false
 end
 
-qo.indexAsked = { milestone = qqet, total = ome }
+vv.indexAsked = { milestone = uowg, total = zw }
 
 pcall(function()
-bo.ClaimIndexReward:FireServer(qqet)
+xl.ClaimIndexReward:FireServer(uowg)
 end)
 
-qo.indexAt = os.clock() + 1.5
+vv.indexAt = os.clock() + 1.5
 
-qo.profile = nil
-qo.profileAt = 0
+vv.profile = nil
+vv.profileAt = 0
 
-task.delay(0.4, qo.closeIndex)
+task.delay(0.4, vv.closeIndex)
 
 return true
 end
 
-function btd.misc.util.achPending()
-local nk = {}
-local dbb = btd.misc.util.ach
+function yvcz.misc.util.achPending()
+local by = {}
+local ixd = yvcz.misc.util.ach
 
-if type(dbb) ~= _d("GFUXWQc") then
-return nk
+if type(ixd) ~= _d("DFdVBhM") then
+return by
 end
 
-for elm, itzc in ipairs(dbb.chains or {}) do
-for gux, ckp in ipairs(itzc.levels or {}) do
-if ckp.reached and not ckp.claimed then
-table.insert(nk, { chain = tostring(itzc.id), index = ckp.index, name = tostring(ckp.name or ckp.index) })
+for etq, qtw in ipairs(ixd.chains or {}) do
+for eq, ghc in ipairs(qtw.levels or {}) do
+if ghc.reached and not ghc.claimed then
+table.insert(by, { chain = tostring(qtw.id), index = ghc.index, name = tostring(ghc.name or ghc.index) })
 end
 end
 end
 
-return nk
+return by
 end
 
-function btd.misc.util.claimAchievement()
-local tokk = btd.misc.util
+function yvcz.misc.util.claimAchievement()
+local buu = yvcz.misc.util
 
-if os.clock() < tokk.achAt then
+if os.clock() < buu.achAt then
 return false
 end
 
-if type(tokk.ach) ~= _d("GFUXWQc") then
-if os.clock() - tokk.achAskedAt > 4 and bo.RequestAchievements then
-tokk.achAskedAt = os.clock()
+if type(buu.ach) ~= _d("DFdVBhM") then
+if os.clock() - buu.achAskedAt > 4 and xl.RequestAchievements then
+buu.achAskedAt = os.clock()
 
 pcall(function()
-bo.RequestAchievements:FireServer()
+xl.RequestAchievements:FireServer()
 end)
 end
 
 return false
 end
 
-for xo, dogt in ipairs(tokk.achPending()) do
+for of, twgd in ipairs(buu.achPending()) do
 pcall(function()
-bo.ClaimAchievement:FireServer(dogt.chain, dogt.index)
+xl.ClaimAchievement:FireServer(twgd.chain, twgd.index)
 end)
 
-tokk.achAt = os.clock() + 1
+buu.achAt = os.clock() + 1
 
 task.delay(1, function()
-if bo.RequestAchievements then
+if xl.RequestAchievements then
 pcall(function()
-bo.RequestAchievements:FireServer()
+xl.RequestAchievements:FireServer()
 end)
 end
 end)
@@ -12006,85 +12013,85 @@ end
 return false
 end
 
-function btd.misc.util.questRows()
-local ulj = btd.misc.util
-local bnn = {}
+function yvcz.misc.util.questRows()
+local xxl = yvcz.misc.util
+local ghll = {}
 
-for ql, nltc in ipairs({ { list = _d("CFUcWRs"), payload = ulj.quests }, { list = _d("G1EQXg4e"), payload = ulj.weekly } }) do
-for za, ilpa in ipairs((type(nltc.payload) == _d("GFUXWQc") and nltc.payload.list) or {}) do
-if type(ilpa) == _d("GFUXWQc") then
-table.insert(bnn, { list = nltc.list, index = za, quest = ilpa })
+for pun, rxn in ipairs({ { list = _d("HFdeBg8"), payload = xxl.quests }, { list = _d("D1NSARoJ"), payload = xxl.weekly } }) do
+for pca, aoxl in ipairs((type(rxn.payload) == _d("DFdVBhM") and rxn.payload.list) or {}) do
+if type(aoxl) == _d("DFdVBhM") then
+table.insert(ghll, { list = rxn.list, index = pca, quest = aoxl })
 end
 end
 end
 
-return bnn
+return ghll
 end
 
-function btd.misc.util.questPending()
-local rpv = {}
+function yvcz.misc.util.questPending()
+local uw = {}
 
-for czt, qtm in ipairs(btd.misc.util.questRows()) do
-local lde = qtm.quest
+for woa, evx in ipairs(yvcz.misc.util.questRows()) do
+local ukq = evx.quest
 
-if not lde.claimed and (tonumber(lde.progress) or 0) >= (tonumber(lde.target) or math.huge) then
-table.insert(rpv, qtm)
+if not ukq.claimed and (tonumber(ukq.progress) or 0) >= (tonumber(ukq.target) or math.huge) then
+table.insert(uw, evx)
 end
 end
 
-return rpv
+return uw
 end
 
-function btd.misc.util.askQuests()
-local vhe = btd.misc.util
+function yvcz.misc.util.askQuests()
+local mvxd = yvcz.misc.util
 
-if os.clock() - vhe.questAskedAt > 4 and bo.RequestQuests then
-vhe.questAskedAt = os.clock()
+if os.clock() - mvxd.questAskedAt > 4 and xl.RequestQuests then
+mvxd.questAskedAt = os.clock()
 
 pcall(function()
-bo.RequestQuests:FireServer()
+xl.RequestQuests:FireServer()
 end)
 end
 
-if os.clock() - vhe.weeklyAskedAt > 4 and bo.RequestPeriodicQuests then
-vhe.weeklyAskedAt = os.clock()
+if os.clock() - mvxd.weeklyAskedAt > 4 and xl.RequestPeriodicQuests then
+mvxd.weeklyAskedAt = os.clock()
 
 pcall(function()
-bo.RequestPeriodicQuests:FireServer(_d("G1EQXg4e"))
+xl.RequestPeriodicQuests:FireServer(_d("D1NSARoJ"))
 end)
 end
 end
 
-function btd.misc.util.claimQuest()
-local fvt = btd.misc.util
+function yvcz.misc.util.claimQuest()
+local kxr = yvcz.misc.util
 
-if os.clock() < fvt.questAt then
+if os.clock() < kxr.questAt then
 return false
 end
 
-if type(fvt.quests) ~= _d("GFUXWQc") and type(fvt.weekly) ~= _d("GFUXWQc") then
-fvt.askQuests()
+if type(kxr.quests) ~= _d("DFdVBhM") and type(kxr.weekly) ~= _d("DFdVBhM") then
+kxr.askQuests()
 
 return false
 end
 
-for eoy, hfvy in ipairs(fvt.questPending()) do
-if hfvy.list == _d("G1EQXg4e") then
-if bo.ClaimPeriodicQuest then
+for tg, exjm in ipairs(kxr.questPending()) do
+if exjm.list == _d("D1NSARoJ") then
+if xl.ClaimPeriodicQuest then
 pcall(function()
-bo.ClaimPeriodicQuest:FireServer(_d("G1EQXg4e"), hfvy.index)
+xl.ClaimPeriodicQuest:FireServer(_d("D1NSARoJ"), exjm.index)
 end)
 end
 else
 pcall(function()
-bo.ClaimQuest:FireServer(hfvy.index)
+xl.ClaimQuest:FireServer(exjm.index)
 end)
 end
 
-fvt.questAt = os.clock() + 1.2
+kxr.questAt = os.clock() + 1.2
 
 task.delay(1, function()
-fvt.askQuests()
+kxr.askQuests()
 end)
 
 return true
@@ -12093,206 +12100,206 @@ end
 return false
 end
 
-function btd.misc.util.packCatalog()
-local vote = btd.misc.util
+function yvcz.misc.util.packCatalog()
+local aaxu = yvcz.misc.util
 
-if vote.packs then
-return vote.packs
+if aaxu.packs then
+return aaxu.packs
 end
 
-local gk = {}
-local mvs, wwjg = pcall(function()
-return require(kq.ModuleScripts.PackData)
+local xjcz = {}
+local xcwa, svq = pcall(function()
+return require(ayu.ModuleScripts.PackData)
 end)
 
-if mvs and type(wwjg) == _d("GFUXWQc") and type(wwjg.Packs) == _d("GFUXWQc") then
-for hinw, yoo in ipairs(wwjg.Packs) do
-if yoo.id then
-table.insert(gk, { id = tostring(yoo.id), name = tostring(yoo.name or yoo.id) })
+if xcwa and type(svq) == _d("DFdVBhM") and type(svq.Packs) == _d("DFdVBhM") then
+for sq, bltd in ipairs(svq.Packs) do
+if bltd.id then
+table.insert(xjcz, { id = tostring(bltd.id), name = tostring(bltd.name or bltd.id) })
 end
 end
 end
 
-vote.packs = gk
+aaxu.packs = xjcz
 
-return gk
+return xjcz
 end
 
-function btd.misc.util.packUnlocked(nyb, ay)
-if type(nyb) ~= _d("GFUXWQc") then
+function yvcz.misc.util.packUnlocked(jfk, bnp)
+if type(jfk) ~= _d("DFdVBhM") then
 return true
 end
 
-local hl, yds = pcall(function()
-return require(kq.ModuleScripts.PackData)
+local lob, opcd = pcall(function()
+return require(ayu.ModuleScripts.PackData)
 end)
-local kw, nxb = pcall(function()
-return require(kq.ModuleScripts.PackSlotData)
+local nq, ovds = pcall(function()
+return require(ayu.ModuleScripts.PackSlotData)
 end)
 
-if not (hl and kw) then
+if not (lob and nq) then
 return true
 end
 
-local yawd = yds.ById and yds.ById[ay]
+local vvo = opcd.ById and opcd.ById[bnp]
 
-if not yawd then
+if not vvo then
 return false
 end
 
-local rxye, mpgj = pcall(nxb.isPackUnlocked, yawd, nyb)
+local svt, vfgu = pcall(ovds.isPackUnlocked, vvo, jfk)
 
-return (not rxye) or mpgj == true
+return (not svt) or vfgu == true
 end
 
-function btd.misc.util.visit(inov)
-local cuqh = workspace:FindFirstChild(_d("ImQ2Rg"))
-local xrf = cuqh and cuqh:FindFirstChild(inov)
-local il = fh.Character
-local nmha = il and il:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local xna = xrf and (xrf:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA")) or xrf:FindFirstChildWhichIsA(_d("LlUGUDIGAhg"), true))
+function yvcz.misc.util.visit(wam)
+local ienp = workspace:FindFirstChild(_d("NmZ0GQ"))
+local lui = ienp and ienp:FindFirstChild(wam)
+local zyb = omhv.Character
+local wfoi = zyb and zyb:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local yryh = lui and (lui:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg")) or lui:FindFirstChildWhichIsA(_d("OldEDyYRSgw"), true))
 
-if not (xna and nmha) then
+if not (yryh and wfoi) then
 return nil
 end
 
-local huk = nmha.CFrame
+local ytuk = wfoi.CFrame
 
-nmha.CFrame = CFrame.new((xna.CFrame * CFrame.new(0, 0, -5)).Position)
+wfoi.CFrame = CFrame.new((yryh.CFrame * CFrame.new(0, 0, -5)).Position)
 
-return huk
+return ytuk
 end
 
-function btd.misc.util.returnTo(acyk)
-local fevf = fh.Character
-local jvjx = fevf and fevf:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function yvcz.misc.util.returnTo(gxak)
+local pxz = omhv.Character
+local rrmf = pxz and pxz:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if jvjx and acyk then
-jvjx.CFrame = acyk
+if rrmf and gxak then
+rrmf.CFrame = gxak
 end
 end
 
-function btd.misc.util.applyPacks(vsq, uboc)
-local sep = btd.misc.util
+function yvcz.misc.util.applyPacks(xp, wgnw)
+local lsn = yvcz.misc.util
 
-if os.clock() < sep.packAt then
-return false, _d("O1UcQUIGUAFbGFAME14")
+if os.clock() < lsn.packAt then
+return false, _d("L1deHlYRGBVZWg8YBBY")
 end
 
-local ggfw = sep.currentProfile()
+local guxt = lsn.currentProfile()
 
-if not ggfw then
-return false, _d("PlEUUQsJF0xNGkAQRwAeWxNcDgJQQRQBRxtHEQtVHFtCDh5MVVVGBwQfAlBb")
+if not guxt then
+return false, _d("KlNWDh8eX1hPWB8EUEgKWVEDGhUYVRZDGA9QWR9XXgRWGVZYVxcZExNXFlIZ")
 end
 
-if uboc and (tonumber(ggfw.packSlots) or 1) < 2 then
-return false, _d("P1gaQUJVUAJREFERRwQEUVVQGhMCDRQFVAEMUB9YGkFCABEBUQVUERRe")
+if wgnw and (tonumber(guxt.packSlots) or 1) < 2 then
+return false, _d("K1pYHlZCGBZTUg4FUEwQUxcPDgRKGRZHCxUbGAtaWB5WF1kVU0cLBQMW")
 end
 
-if not (bo.OpenPackShop and bo.EquipPack) then
-return false, _d("OFwQFRIGEwcUBl0NF1AFR1VbDRNQBVpVQQoOA0xTFFgHRwYJRgZcDQle")
+if not (xl.OpenPackShop and xl.EquipPack) then
+return false, _d("LF5SSgYRWxMWRAIZABgRRRcEGQQYEVgXHh4ZS1hRVgcTUE4dREQDGR4W")
 end
 
-sep.packAt = os.clock() + 8
+lsn.packAt = os.clock() + 8
 
 task.spawn(function()
-local cdz = sep.visit(_d("IlsXWQcUAwVaEkY"))
+local clyj = lsn.visit(_d("NllVBhMDSxFYUBk"))
 
-if not cdz then
+if not clyj then
 return
 end
 
 pcall(function()
-bo.OpenPackShop:FireServer(_d("HFUWXj0KFR5XHVQMEw"))
+xl.OpenPackShop:FireServer(_d("CFdUASkdXQpVXwsYBA"))
 end)
 
 task.wait(1.2)
 
-if vsq then
+if xp then
 pcall(function()
-bo.EquipPack:FireServer(vsq, 1)
+xl.EquipPack:FireServer(xp, 1)
 end)
 end
 
-if uboc then
+if wgnw then
 task.wait(0.8)
 
 pcall(function()
-bo.EquipPack:FireServer(uboc, 2)
+xl.EquipPack:FireServer(wgnw, 2)
 end)
 end
 
 task.wait(0.8)
-sep.returnTo(cdz)
-sep.forgetProfile()
+lsn.returnTo(clyj)
+lsn.forgetProfile()
 end)
 
 return true
 end
 
-function btd.misc.util.accScore(qjez)
-local sqbr = qjez.effects or {}
+function yvcz.misc.util.accScore(gbgx)
+local khm = gbgx.effects or {}
 
-return (sqbr.luckBonus or 0) * 10
-+ ((sqbr.luckMult or 1) - 1) * 200
-+ ((sqbr.borderLuckMult or 1) - 1) * 200
-- ((sqbr.rollCdMult or 1) - 1) * 30
+return (khm.luckBonus or 0) * 10
++ ((khm.luckMult or 1) - 1) * 200
++ ((khm.borderLuckMult or 1) - 1) * 200
+- ((khm.rollCdMult or 1) - 1) * 30
 end
 
-function btd.misc.util.accCatalog()
-local qwp = btd.misc.util
+function yvcz.misc.util.accCatalog()
+local sjz = yvcz.misc.util
 
-if qwp.accessories then
-return qwp.accessories
+if sjz.accessories then
+return sjz.accessories
 end
 
-local ipzz = {}
+local slc = {}
 
-for nii, ypqo in ipairs({ _d("LVcWUBEUHx5NMVQWBg"), _d("LVcWUBEUHx5NMVQWBkI") }) do
-local cxld, aau = pcall(function()
-return require(kq.ModuleScripts[ypqo])
+for eedx, agza in ipairs({ _d("OVVUDwUDVwpPcwsCEQ"), _d("OVVUDwUDVwpPcwsCEQo") }) do
+local dgdb, wcw = pcall(function()
+return require(ayu.ModuleScripts[agza])
 end)
 
-if cxld and type(aau) == _d("GFUXWQc") and type(aau.Accessories) == _d("GFUXWQc") then
-for ksl, yzvm in ipairs(aau.Accessories) do
-if yzvm.id then
-table.insert(ipzz, {
-id = tostring(yzvm.id),
-name = tostring(yzvm.name or yzvm.id),
-shop = nii,
+if dgdb and type(wcw) == _d("DFdVBhM") and type(wcw.Accessories) == _d("DFdVBhM") then
+for yvd, dl in ipairs(wcw.Accessories) do
+if dl.id then
+table.insert(slc, {
+id = tostring(dl.id),
+name = tostring(dl.name or dl.id),
+shop = eedx,
 
-shopName = nii == 1 and _d("LVcWUBEUHx5NVWYKCAA") or _d("IU0GQQcVGQNBBhUvBh4"),
-raidable = yzvm.raidShopOnly == true,
-hidden = yzvm.hidden == true,
-requirements = yzvm.requirements or {},
-score = btd.misc.util.accScore(yzvm),
+shopName = eedx == 1 and _d("OVVUDwUDVwpPFzkeH0g") or _d("NU9EHhMCURdDREo7EVY"),
+raidable = dl.raidShopOnly == true,
+hidden = dl.hidden == true,
+requirements = dl.requirements or {},
+score = yvcz.misc.util.accScore(dl),
 })
 end
 end
 end
 end
 
-qwp.accessories = ipzz
+sjz.accessories = slc
 
-return ipzz
+return slc
 end
 
-function btd.misc.util.accOwned(ggho)
-local cuwp = {}
+function yvcz.misc.util.accOwned(rohz)
+local sjvi = {}
 
-for sqky, dvhh in ipairs((ggho and ggho.accessories) or {}) do
-cuwp[tostring(dvhh)] = true
+for abe, prqd in ipairs((rohz and rohz.accessories) or {}) do
+sjvi[tostring(prqd)] = true
 end
 
-return cuwp
+return sjvi
 end
 
-function btd.misc.util.accMeets(caa, bk)
-for yst, wuwe in ipairs(bk.requirements) do
-local nofj = caa.cards and caa.cards[wuwe.cardId]
-local ucf = type(nofj) == _d("GFUXWQc") and (tonumber(nofj[wuwe.borderLevel]) or 0) or 0
+function yvcz.misc.util.accMeets(wvn, fcp)
+for osp, nbnn in ipairs(fcp.requirements) do
+local xdw = wvn.cards and wvn.cards[nbnn.cardId]
+local hti = type(xdw) == _d("DFdVBhM") and (tonumber(xdw[nbnn.borderLevel]) or 0) or 0
 
-if ucf < (tonumber(wuwe.amount) or 0) then
+if hti < (tonumber(nbnn.amount) or 0) then
 return false
 end
 end
@@ -12300,487 +12307,487 @@ end
 return true
 end
 
-function btd.misc.util.accPlan(dmra)
-local egg = btd.misc.util
-local aixb = egg.accOwned(dmra)
-local udmw = {}
+function yvcz.misc.util.accPlan(gdq)
+local yfe = yvcz.misc.util
+local exbw = yfe.accOwned(gdq)
+local tldh = {}
 
-for sj, pefv in ipairs(egg.accCatalog()) do
-if not aixb[pefv.id] and not pefv.raidable and not pefv.hidden and egg.accMeets(dmra, pefv) then
-local ulvu = udmw[pefv.shop]
+for qfm, fis in ipairs(yfe.accCatalog()) do
+if not exbw[fis.id] and not fis.raidable and not fis.hidden and yfe.accMeets(gdq, fis) then
+local cg = tldh[fis.shop]
 
-if not ulvu or pefv.score > ulvu.score then
-udmw[pefv.shop] = pefv
-end
-end
-end
-
-return udmw
-end
-
-function btd.misc.util.accPicks(njb)
-local yvq = btd.misc.util
-local dw = yvq.accOwned(njb)
-local gui, egc
-
-for he, ikc in ipairs(yvq.accCatalog()) do
-if dw[ikc.id] then
-if not gui or ikc.score > gui.score then
-gui = ikc
-end
-elseif not ikc.raidable and not ikc.hidden and yvq.accMeets(njb, ikc) then
-if not egc or ikc.score > egc.score then
-egc = ikc
+if not cg or fis.score > cg.score then
+tldh[fis.shop] = fis
 end
 end
 end
 
-return gui, egc
+return tldh
 end
 
-function btd.misc.util.equipBest()
-local cpe = btd.misc.util
-local fymn = cpe.currentProfile()
+function yvcz.misc.util.accPicks(la)
+local qznc = yvcz.misc.util
+local vw = qznc.accOwned(la)
+local bk, qpft
 
-if not fymn or not bo.EquipAccessory then
+for iwd, oap in ipairs(qznc.accCatalog()) do
+if vw[oap.id] then
+if not bk or oap.score > bk.score then
+bk = oap
+end
+elseif not oap.raidable and not oap.hidden and qznc.accMeets(la, oap) then
+if not qpft or oap.score > qpft.score then
+qpft = oap
+end
+end
+end
+
+return bk, qpft
+end
+
+function yvcz.misc.util.equipBest()
+local gei = yvcz.misc.util
+local ri = gei.currentProfile()
+
+if not ri or not xl.EquipAccessory then
 return false
 end
 
-local pwk = cpe.accPicks(fymn)
+local izb = gei.accPicks(ri)
 
-if not pwk or fymn.equippedAccessory == pwk.id then
-return pwk ~= nil
+if not izb or ri.equippedAccessory == izb.id then
+return izb ~= nil
 end
 
 pcall(function()
-bo.EquipAccessory:FireServer(pwk.id)
+xl.EquipAccessory:FireServer(izb.id)
 end)
 
 task.delay(1.5, function()
-cpe.forgetProfile()
+gei.forgetProfile()
 end)
 
 return true
 end
 
-function btd.misc.util.buyBest()
-local gmis = btd.misc.util
+function yvcz.misc.util.buyBest()
+local tmyf = yvcz.misc.util
 
-if os.clock() < gmis.accAt then
-return false, _d("O1UcQUIGUAFbGFAME14")
+if os.clock() < tmyf.accAt then
+return false, _d("L1deHlYRGBVZWg8YBBY")
 end
 
-if rqc.busy(1) or rqc.busy(2) then
-gmis.accNote = _d("JVpVVEIFERhAGVBCSlANFAZdDRdQGEYcRUIQHxlYERUHCRRMXQE")
-return false, _d("JVpVVEIFERhAGVBCSlANFAZdDRdQGEYcRUIQHxlYERUHCRRMXQEb")
+if fq.busy(1) or fq.busy(2) then
+tmyf.accNote = _d("MVgXC1YSWQxCWw9WXRgZFkQCGQAYDEReGlYHVw1aU0oTHlxYX0M")
+return false, _d("MVgXC1YSWQxCWw9WXRgZFkQCGQAYDEReGlYHVw1aU0oTHlxYX0NE")
 end
 
-local ue = gmis.currentProfile()
+local lvp = tmyf.currentProfile()
 
-if not ue then
-gmis.accNote = _d("PlEUUQsJF0xNGkAQRwAeWxNcDgJQQRQCXA4LUBhGDBUDABEFWlVcDEcRTEcQVg0JFA")
-return false, _d("PlEUUQsJF0xNGkAQRwAeWxNcDgJQQRQBRxtHEQtVHFtCDh5MVVVGBwQfAlBb")
+if not lvp then
+tmyf.accNote = _d("KlNWDh8eX1hPWB8EUEgKWVEDGhUYVRZAAxocGAxETkoXF1kRWBcDGFBZWEVSCRkeXA")
+return false, _d("KlNWDh8eX1hPWB8EUEgKWVEDGhUYVRZDGA9QWR9XXgRWGVZYVxcZExNXFlIZ")
 end
 
-local cruk = gmis.accPlan(ue)
-local cqjl = {}
+local ka = tmyf.accPlan(lvp)
+local zr = {}
 
-for rwx = 1, 2 do
-if cruk[rwx] then
-table.insert(cqjl, cruk[rwx].name)
+for mnnj = 1, 2 do
+if ka[mnnj] then
+table.insert(zr, ka[mnnj].name)
 end
 end
 
-if #cqjl == 0 then
-gmis.accNote = _d("IlsBXQsJF0xaEEJCEh4AWxZeBwNQFVEBFU9HBARRVVYDFRQfFBNaEEcZGBQURwdHHgNAVVwMRwQEUVVWDQscCVcBXA0J")
-return false, _d("IlsBXQsJF0xaEEJCBBECFBdQQhIeAFsWXgcDUBVRARVPRwQEUVVWAxUUHxQTWhBHGRgUFEcHRx4DQFVcDEcEBFFVVg0LHAlXAVwNCV4")
+if #zr == 0 then
+tmyf.accNote = _d("NllDAh8eX1hYUh1WBVYUWVQBExQYAVNDSltQTBBTFwkXAlwLFlEFBFBRDBZWGBNQVhdCFwMYUEwQUxcJGRxUHVVDAxke")
+return false, _d("NllDAh8eX1hYUh1WE1kWFlUPVgVWFFlUARMUGAFTQ0pbUEwQUxcJFwJcCxZRBQRQUQwWVhgTUFYXQhcDGFBMEFMXCRkcVB1VQwMZHhY")
 end
 
-gmis.accAt = os.clock() + 12
-gmis.accNote = _d("O1UZXgsJF0xAGhUWDxVMVxpADBMVHhQTWhBH") .. table.concat(cqjl, _d("TFUbUUI"))
+tmyf.accAt = os.clock() + 12
+tmyf.accNote = _d("L1dbAR8eX1hCWEoCGF1YVVgfGARdChZRBQRQ") .. table.concat(zr, _d("WFdZDlY"))
 
 task.spawn(function()
-for dvbs = 1, 2 do
-local vvs = cruk[dvbs]
+for efv = 1, 2 do
+local rdqj = ka[efv]
 
-if vvs then
-local yn = dvbs == 1 and _d("HEEHRhcOBAlQEQ") or _d("G1UTUwcLHQ1aEFQWFAcNUhNQDhQ")
-local pmfa = dvbs == 1 and bo.OpenAccessoryShop or bo.OpenAccessoryShop2
-local ln = dvbs == 1 and bo.BuyAccessory or bo.BuyAccessory2
-local hd = yn and gmis.visit(yn) or nil
+if rdqj then
+local izjz = efv == 1 and _d("CENFGQMZTB1SUw") or _d("D1dRDBMcVRlYUgsCA08ZUFEPGgM")
+local iw = efv == 1 and xl.OpenAccessoryShop or xl.OpenAccessoryShop2
+local kns = efv == 1 and xl.BuyAccessory or xl.BuyAccessory2
+local rhp = izjz and tmyf.visit(izjz) or nil
 
-if not hd then
-local ltf = workspace:FindFirstChild(_d("ImQ2Rg"))
-local jisr = ltf and ltf:FindFirstChild(yn)
+if not rhp then
+local yucj = workspace:FindFirstChild(_d("NmZ0GQ"))
+local iqu = yucj and yucj:FindFirstChild(izjz)
 
-if jisr and os.clock() - (gmis.worldAskedAt or 0) > 25 then
+if iqu and os.clock() - (tmyf.worldAskedAt or 0) > 25 then
 
-gmis.worldAskedAt = os.clock()
-gmis.accNote = _d("L1wURwMEBAlGVVsNE1AeURRRG0ddTEAHTAsJF0xVElQLCVAfXBpHFgsJ")
-elseif not jisr and os.clock() - (gmis.worldAskedAt or 0) > 25 then
+tmyf.worldAskedAt = os.clock()
+tmyf.accNote = _d("O15WGBcTTB1EFwQZBBgKU1YOD1AVWEJFEx8eX1hXUAsfHhgLXlgYAhxB")
+elseif not iqu and os.clock() - (tmyf.worldAskedAt or 0) > 25 then
 
-gmis.worldAskedAt = os.clock()
-gmis.accNote = _d("IltVVg0SHhhRBxULCVAYXBxGQhAfHlgRFU9HBA1fHFsFRwQEUVVZDQUSFRQBUA4CAANGAQ")
+tmyf.worldAskedAt = os.clock()
+tmyf.accNote = _d("NlkXCRkFVgxTRUofHhgMXl4ZVgdXClpTSltQTBldXgQRUEwQUxcGGRJaARZDDxoVSBdEQw")
 
 pcall(function()
-bo.TeleportToWorld:FireServer(_d("AFsXVxs"))
+xl.TeleportToWorld:FireServer(_d("FFlVCA8"))
 end)
 
 task.wait(4.5)
-hd = gmis.visit(yn)
+rhp = tmyf.visit(izjz)
 end
 end
 
-if hd and pmfa and ln then
+if rhp and iw and kns then
 
 task.wait(0.9)
 
 pcall(function()
-pmfa:FireServer()
+iw:FireServer()
 end)
 
 task.wait(1.2)
 
 pcall(function()
-ln:FireServer(vvs.id)
+kns:FireServer(rdqj.id)
 end)
 
 task.wait(0.9)
-gmis.returnTo(hd)
-gmis.accNote = _d("LlsAUgoTUA") .. tostring(vvs.name)
-elseif not hd then
-gmis.accNote = _d("L1sAWQZHHgNAVUcHBhMEFAFdB0cTA0EbQQcVUEEUAUcbRxELVRxbQg4eTFVVWA0KFQJA")
+tmyf.returnTo(rhp)
+tmyf.accNote = _d("OllCDR4EGA") .. tostring(rdqj.name)
+elseif not rhp then
+tmyf.accNote = _d("O1lCBhJQVhdCFxgTEVsQFkMCE1BbF0NZHhMCGFUWQxgPUFkfV14EVhlWWFcXBxkdXRZC")
 end
 
 task.wait(0.6)
 end
 end
 
-gmis.forgetProfile()
+tmyf.forgetProfile()
 
-for iso = 1, 8 do
-if type(gmis.profile) == _d("GFUXWQc") then
+for nmc = 1, 8 do
+if type(tmyf.profile) == _d("DFdVBhM") then
 break
 end
 
-gmis.askProfile()
+tmyf.askProfile()
 task.wait(0.7)
 end
 
-gmis.equipBest()
+tmyf.equipBest()
 end)
 
-return true, table.concat(cqjl, _d("QBQ"))
+return true, table.concat(zr, _d("VBY"))
 end
 
-function btd.misc.util.indexText()
-local jymm = btd.misc.util
+function yvcz.misc.util.indexText()
+local pot = yvcz.misc.util
 
-if type(jymm.profile) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xNGkAQRxMNRhEVCwkUCUxbG0w")
+if type(pot.profile) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hPWB8EUFsZRFNKHx5cHU4ZRFg")
 end
 
-local ohyv = jymm.indexPending(jymm.profile)
-local mrc = 0
+local axf = pot.indexPending(pot.profile)
+local mkl = 0
 
-for sfwy, fvbv in pairs(jymm.profile.indexMilestones or {}) do
-if fvbv then
-mrc = mrc + 1
-end
-end
-
-local hyvn = tostring(jymm.indexedTotal(jymm.profile)) .. _d("TFcURwYUUAVaEVAaAhRAFA") .. tostring(mrc) .. _d("TFsTFVFXUB5RAlQQAwNMVxlUCwoVCA")
-
-if #ohyv > 0 then
-hyvn = hyvn .. _d("ZmYQVAYeSkw") .. table.concat(ohyv, _d("QBQ"))
-end
-
-return hyvn
-end
-
-function btd.misc.util.achText()
-local qqe = btd.misc.util
-
-if type(qqe.ach) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xVFl0LAgYJWRBbFhReQho")
-end
-
-local xzf = qqe.achPending()
-local eys = 0
-
-for dn, hgnw in ipairs(qqe.ach.chains or {}) do
-for myz in ipairs(hgnw.levels or {}) do
-eys = eys + 1
+for uc, almb in pairs(pot.profile.indexMilestones or {}) do
+if almb then
+mkl = mkl + 1
 end
 end
 
-return tostring(#xzf) .. _d("TFsTFQ") .. tostring(eys) .. _d("TFUWXQsCBglZEFsWFFAeURRRGw")
+local jy = tostring(pot.indexedTotal(pot.profile)) .. _d("WFVWGBIDGBFYUw8OFVxUFg") .. tostring(mkl) .. _d("WFlRSkVAGApTQAsEFEtYVVsLHx1dHA")
+
+if #axf > 0 then
+jy = jy .. _d("cmRSCxIJAlg") .. table.concat(axf, _d("VBY"))
 end
 
-function btd.misc.util.questText()
-local vb = btd.misc.util
-
-if type(vb.quests) ~= _d("GFUXWQc") and type(vb.weekly) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xFAFAREwNCGls")
+return jy
 end
 
-local mwtw, prmj = 0, 0
+function yvcz.misc.util.achText()
+local umiz = yvcz.misc.util
 
-for vmxa, hext in ipairs(vb.questPending()) do
-if hext.list == _d("G1EQXg4e") then
-prmj = prmj + 1
+if type(umiz.ach) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hXVAIfFU4dW1IEAgMWVhg")
+end
+
+local atty = umiz.achPending()
+local akct = 0
+
+for cyd, sko in ipairs(umiz.ach.chains or {}) do
+for tjaq in ipairs(sko.levels or {}) do
+akct = akct + 1
+end
+end
+
+return tostring(#atty) .. _d("WFlRSg") .. tostring(akct) .. _d("WFdUAh8VTh1bUgQCAxgKU1YODw")
+end
+
+function yvcz.misc.util.questText()
+local mf = yvcz.misc.util
+
+if type(mf.quests) ~= _d("DFdVBhM") and type(mf.weekly) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hHQg8FBEtWGBk")
+end
+
+local gb, wttm = 0, 0
+
+for dmy, jxve in ipairs(mf.questPending()) do
+if jxve.list == _d("D1NSARoJ") then
+wttm = wttm + 1
 else
-mwtw = mwtw + 1
+gb = gb + 1
 end
 end
 
-local bft = type(vb.quests) == _d("GFUXWQc") and #(vb.quests.list or {}) or 0
-local ipr = type(vb.weekly) == _d("GFUXWQc") and #(vb.weekly.list or {}) or 0
+local zlv = type(mf.quests) == _d("DFdVBhM") and #(mf.quests.list or {}) or 0
+local nqe = type(mf.weekly) == _d("DFdVBhM") and #(mf.weekly.list or {}) or 0
 
-return tostring(mwtw) .. _d("TFsTFQ") .. tostring(bft) .. _d("TFAUXA4eUB5RFFEbbQ")
-.. tostring(prmj) .. _d("TFsTFQ") .. tostring(ipr) .. _d("TEMQUAkLCUxGEFQGHg")
+return tostring(gb) .. _d("WFlRSg") .. tostring(zlv) .. _d("WFJWAxoJGApTVg4Peg")
+.. tostring(wttm) .. _d("WFlRSg") .. tostring(nqe) .. _d("WEFSDx0cQVhEUgsSCQ")
 end
 
-function btd.misc.util.packText()
-local hju = btd.misc.util
-local vwtk = hju.profile
+function yvcz.misc.util.packText()
+local nx = yvcz.misc.util
+local wuv = nx.profile
 
-if type(vwtk) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xNGkAQRwANVx5GTEle")
+if type(wuv) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hPWB8EUEgZVVwZWF4W")
 end
 
-local function alx(khm)
-for gpxj, hlrd in ipairs(hju.packCatalog()) do
-if hlrd.id == khm then
-return hlrd.name
+local function aaie(dkp)
+for plf, tho in ipairs(nx.packCatalog()) do
+if tho.id == dkp then
+return tho.name
 end
 end
 
-return tostring(khm)
+return tostring(dkp)
 end
 
-local mfi = _d("P1gaQUJWSkw") .. alx(vwtk.equippedPack)
+local pac = _d("K1pYHlZBAlg") .. aaie(wuv.equippedPack)
 
-if (tonumber(vwtk.packSlots) or 1) >= 2 then
-mfi = mfi .. _d("ZmcZWhZHQlYU") .. alx(vwtk.equippedPack2)
+if (tonumber(wuv.packSlots) or 1) >= 2 then
+pac = pac .. _d("cmVbBQJQCkIW") .. aaie(wuv.equippedPack2)
 else
-mfi = mfi .. _d("ZmcZWhZHQlYUElQPAgANRwYVDAgETFsCWwcD")
+pac = pac .. _d("cmVbBQJQCkIWUAsbFUgZRURKGB9MWFlABBMU")
 end
 
-return mfi
+return pac
 end
 
-function btd.misc.util.accText()
-local csr = btd.misc.util
-local xsg = csr.profile
+function yvcz.misc.util.accText()
+local lcd = yvcz.misc.util
+local fut = lcd.profile
 
-if type(xsg) ~= _d("GFUXWQc") then
-return _d("PlEUUQsJF0xNGkAQRxEPVxBGEQgCBVEGG0xJ")
+if type(fut) ~= _d("DFdVBhM") then
+return _d("KlNWDh8eX1hPWB8EUFkbVVIZBR9KEVNERFhe")
 end
 
-local bpff = csr.accPicks(xsg)
-local bppi = csr.accPlan(xsg)
-local sxf = _d("AlsbUA")
+local vvzi = lcd.accPicks(fut)
+local eu = lcd.accPlan(fut)
+local dns = _d("FllZDw")
 
-for jmm, mnz in ipairs(csr.accCatalog()) do
-if mnz.id == xsg.equippedAccessory then
-sxf = mnz.name .. _d("TBw") .. mnz.shopName .. _d("RQ")
+for wr, ydga in ipairs(lcd.accCatalog()) do
+if ydga.id == fut.equippedAccessory then
+dns = ydga.name .. _d("WB4") .. ydga.shopName .. _d("UQ")
 end
 end
 
-local kv = _d("KUUAXBIXFQgOVQ") .. sxf
+local cyg = _d("PUdCAwYAXRwMFw") .. dns
 
-if bpff then
-kv = kv .. _d("ZnYQRhZHHxtaEFFYRw") .. bpff.name
+if vvzi then
+cyg = cyg .. _d("cnRSGQJQVw9YUg5MUA") .. vvzi.name
 end
 
-kv = kv .. _d("ZnUWVgcUAwNGDBUxDx8cDlU") .. (bppi[1] and bppi[1].name or _d("AlsBXQsJF0xaEEI"))
-kv = kv .. _d("ZnkMRhYCAgVbAEZCKhECDlU") .. (bppi[2] and bppi[2].name or _d("AlsBXQsJF0xaEEI"))
+cyg = cyg .. _d("cndUCRMDSxdETkolGFcIDBc") .. (eu[1] and eu[1].name or _d("FllDAh8eX1hYUh0"))
+cyg = cyg .. _d("cntOGQIVShFZQhlWPVkWDBc") .. (eu[2] and eu[2].name or _d("FllDAh8eX1hYUh0"))
 
-if csr.accNote then
-kv = kv .. _d("ZngURhZHBB5dBQ9C") .. csr.accNote
+if lcd.accNote then
+cyg = cyg .. _d("cnpWGQJQTApfR1BW") .. lcd.accNote
 end
 
-return kv
+return cyg
 end
 
-btd.misc.util.hook()
-btd.misc.util.askProfile()
+yvcz.misc.util.hook()
+yvcz.misc.util.askProfile()
 
-btd.misc.indexSection = btd.misc.tab:Section({
-Side = _d("IFETQQ"),
+yvcz.misc.indexSection = yvcz.misc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-btd.misc.indexSection:Header({
-Name = _d("L1UHUUIuHghRDRWS+OPr"),
+yvcz.misc.indexSection:Header({
+Name = _d("O1dFDlY5VhxTT0qG76v/"),
 })
 
-btd.misc.indexToggle = btd.misc.indexSection:Toggle({
-Name = _d("LUEBWkIEHA1dGA"),
+yvcz.misc.indexToggle = yvcz.misc.indexSection:Toggle({
+Name = _d("OUNDBVYTVBlfWg"),
 Default = false,
-Callback = function(of)
-btd.misc.util.indexOn = of
-btd.misc.util.indexAt = 0
+Callback = function(nvt)
+yvcz.misc.util.indexOn = nvt
+yvcz.misc.util.indexAt = 0
 
-btd.misc.util.indexAsked = nil
+yvcz.misc.util.indexAsked = nil
 end,
-}, _d("DUEBWj0EHA1dGGpQ"))
+}, _d("GUNDBSkTVBlfWjVE"))
 
-btd.misc.indexSection:Button({
-Name = _d("L1gUXA9HHgND"),
+yvcz.misc.indexSection:Button({
+Name = _d("O1pWAxtQVhdB"),
 Callback = function()
-local zhop = btd.misc.util
+local utpo = yvcz.misc.util
 
-zhop.indexAt = 0
-zhop.indexAsked = nil
+utpo.indexAt = 0
+utpo.indexAsked = nil
 
-if not zhop.claimIndex() then
-qza:Notify({
-Title = _d("L1UHUUIuHghRDQ"),
-Description = _d("IltVWAsLFR9AGlsHRxkfFAdQAwMJTEAaFQELEQVZWw"),
+if not utpo.claimIndex() then
+zcwe:Notify({
+Title = _d("O1dFDlY5VhxTTw"),
+Description = _d("NlkXBx8cXQtCWAQTUFELFkUPFxRBWEJYShUcWRFbGQ"),
 Lifetime = 5,
 })
 end
 end,
 })
 
-btd.misc.claimSection = btd.misc.tab:Section({
-Side = _d("IFETQQ"),
+yvcz.misc.claimSection = yvcz.misc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-btd.misc.claimSection:Header({
-Name = _d("LVcdXAcRFQFRG0ERR1ZMZQBQERMDTMTquuQ"),
+yvcz.misc.claimSection:Header({
+Name = _d("OVVfAxMGXRVTWR4FUB5YZ0IPBQRLWMao5fA"),
 })
 
-btd.misc.achToggle = btd.misc.claimSection:Toggle({
-Name = _d("LUEBWkIEHA1dGBUDBBgFUQNQDwIeGEc"),
+yvcz.misc.achToggle = yvcz.misc.claimSection:Toggle({
+Name = _d("OUNDBVYTVBlfWkoXE1ARU0EPGxVWDEU"),
 Default = false,
-Callback = function(qehr)
-btd.misc.util.achOn = qehr
-btd.misc.util.achAt = 0
+Callback = function(iuaa)
+yvcz.misc.util.achOn = iuaa
+yvcz.misc.util.achAt = 0
 
-if qehr and bo.RequestAchievements then
+if iuaa and xl.RequestAchievements then
 pcall(function()
-bo.RequestAchievements:FireServer()
+xl.RequestAchievements:FireServer()
 end)
 end
 end,
-}, _d("DUEBWj0EHA1dGGoDBBgFUQNQDwIeGEc"))
+}, _d("GUNDBSkTVBlfWjUXE1ARU0EPGxVWDEU"))
 
-btd.misc.questToggle = btd.misc.claimSection:Toggle({
-Name = _d("LUEBWkIEHA1dGBUTEhUfQAY"),
+yvcz.misc.questToggle = yvcz.misc.claimSection:Toggle({
+Name = _d("OUNDBVYTVBlfWkoHBV0LQkQ"),
 Default = false,
-Callback = function(aab)
-btd.misc.util.questOn = aab
-btd.misc.util.questAt = 0
-btd.misc.util.questAskedAt = 0
-btd.misc.util.weeklyAskedAt = 0
+Callback = function(gqdi)
+yvcz.misc.util.questOn = gqdi
+yvcz.misc.util.questAt = 0
+yvcz.misc.util.questAskedAt = 0
+yvcz.misc.util.weeklyAskedAt = 0
 
-if aab then
-btd.misc.util.askQuests()
+if gqdi then
+yvcz.misc.util.askQuests()
 end
 end,
-}, _d("DUEBWj0EHA1dGGoTEhUfQAY"))
+}, _d("GUNDBSkTVBlfWjUHBV0LQkQ"))
 
-btd.misc.claimSection:Button({
-Name = _d("L1gUXA9HEQBYVVsNEA"),
+yvcz.misc.claimSection:Button({
+Name = _d("O1pWAxtQWRRaFwQZBw"),
 Callback = function()
-local qnbf = btd.misc.util
+local imwc = yvcz.misc.util
 
-qnbf.achAt = 0
-qnbf.questAt = 0
+imwc.achAt = 0
+imwc.questAt = 0
 
-local boc = qnbf.claimAchievement()
-local osd = qnbf.claimQuest()
+local aw = imwc.claimAchievement()
+local ibk = imwc.claimQuest()
 
-if not (boc or osd) then
-qza:Notify({
-Title = _d("LVcdXAcRFQFRG0ERR1ZMZQBQERMD"),
-Description = _d("IlsBXQsJF0xdBhUQAhEITVVBDUcTAFUcWEw"),
+if not (aw or ibk) then
+zcwe:Notify({
+Title = _d("OVVfAxMGXRVTWR4FUB5YZ0IPBQRL"),
+Description = _d("NllDAh8eX1hfREoEFVkcTxceGVBbFFdeB1g"),
 Lifetime = 5,
 })
 end
 end,
 })
 
-btd.misc.packSection = btd.misc.tab:Section({
-Side = _d("IFETQQ"),
+yvcz.misc.packSection = yvcz.misc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-btd.misc.packSection:Header({
-Name = _d("L1UHUUI3EQ9fBhWS+P7Y"),
+yvcz.misc.packSection:Header({
+Name = _d("O1dFDlYgWRtdREqG77bM"),
 })
 
-btd.misc.packSection:Paragraph({
-Header = _d("OEMaFRELHxhH"),
-Body = _d("PF0WXhFHERxEGUxCCB4ATVVCCgIeTE0aQEIXAglHBhUjFwAATVVFAwQbHxhVVwcEERlHEBUWDxVMRwJcFgQYTEMUWQkUUBhbVUEKAlABUQdWCgYeGBo"),
+yvcz.misc.packSection:Paragraph({
+Header = _d("LEFYSgUcVwxF"),
+Body = _d("KF9UAQVQWQhGWxNWH1YUTxcdHhVWWE9YH1YASh1FREo3AEgUTxcaFxNTCxoXCBMTWQ1FUkoCGF1YRUADAhNQWEFWBh0DGAxZFx4eFRgVU0UJHhFWDBg"),
 })
 
-local dzh = {}
-local xr = {}
+local hcq = {}
+local hz = {}
 
-for thi, laq in ipairs(btd.misc.util.packCatalog()) do
-table.insert(dzh, laq.name)
-xr[laq.name] = laq.id
+for fo, rchm in ipairs(yvcz.misc.util.packCatalog()) do
+table.insert(hcq, rchm.name)
+hz[rchm.name] = rchm.id
 end
 
-btd.misc.packSlotOne = nil
-btd.misc.packSlotTwo = nil
+yvcz.misc.packSlotOne = nil
+yvcz.misc.packSlotTwo = nil
 
-btd.misc.packDropdownOne = btd.misc.packSection:Dropdown({
-Name = _d("P1gaQUJW"),
+yvcz.misc.packDropdownOne = yvcz.misc.packSection:Dropdown({
+Name = _d("K1pYHlZB"),
 Search = false,
 Multi = false,
 Required = false,
 Default = 1,
-Options = dzh,
-Callback = function(ufzf)
-local yu = type(ufzf) == _d("GFUXWQc") and ufzf[1] or ufzf
+Options = hcq,
+Callback = function(nir)
+local hvn = type(nir) == _d("DFdVBhM") and nir[1] or nir
 
-btd.misc.packSlotOne = xr[tostring(yu)]
+yvcz.misc.packSlotOne = hz[tostring(hvn)]
 end,
-}, _d("H1gaQT1W"))
+}, _d("C1pYHilB"))
 
-btd.misc.packDropdownTwo = btd.misc.packSection:Dropdown({
-Name = _d("P1gaQUJV"),
+yvcz.misc.packDropdownTwo = yvcz.misc.packSection:Dropdown({
+Name = _d("K1pYHlZC"),
 Search = false,
 Multi = false,
 Required = false,
 Default = 1,
-Options = dzh,
-Callback = function(tly)
-local mfgz = type(tly) == _d("GFUXWQc") and tly[1] or tly
+Options = hcq,
+Callback = function(dnlo)
+local yc = type(dnlo) == _d("DFdVBhM") and dnlo[1] or dnlo
 
-btd.misc.packSlotTwo = xr[tostring(mfgz)]
+yvcz.misc.packSlotTwo = hz[tostring(yc)]
 end,
-}, _d("H1gaQT1V"))
+}, _d("C1pYHilC"))
 
-btd.misc.packSection:Button({
-Name = _d("LUQFWRtHAA1XHkY"),
+yvcz.misc.packSection:Button({
+Name = _d("OUZHBg9QSBlVXBk"),
 Callback = function()
-local mo = btd.misc.util
-local tc = btd.misc.packSlotOne
-local ka = btd.misc.packSlotTwo
+local ebf = yvcz.misc.util
+local bxt = yvcz.misc.packSlotOne
+local hpin = yvcz.misc.packSlotTwo
 
-if not tc then
-qza:Notify({
-Title = _d("L1UHUUI3EQ9fBg"),
-Description = _d("PF0WXkIGUBxVFl5CAR8eFAZZDRNQXRQTXBAUBEI"),
+if not bxt then
+zcwe:Notify({
+Title = _d("O1dFDlYgWRtdRA"),
+Description = _d("KF9UAVYRGAhXVAFWFlcKFkQGGQQYSRZRAwQDTFY"),
 Lifetime = 5,
 })
 
 return
 end
 
-local bfwr, hgnh = mo.applyPacks(tc, ka)
+local olo, hab = ebf.applyPacks(bxt, hpin)
 
-if not bfwr then
-qza:Dialog({
-Title = _d("L1UHUUI3EQ9fBg"),
-Description = hgnh,
+if not olo then
+zcwe:Dialog({
+Title = _d("O1dFDlYgWRtdRA"),
+Description = hab,
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -12788,8 +12795,8 @@ end
 end,
 })
 
-btd.misc.cards = {
-rarityLabels = { _d("LVgZ"), _d("IlsHWAML"), _d("K1sZUQ"), _d("PlUcWwAIBw"), _d("OVocQwcVAw1Y") },
+yvcz.misc.cards = {
+rarityLabels = { _d("OVpb"), _d("NllFBxcc"), _d("P1lbDg"), _d("KldeBBQfTw"), _d("LVheHBMCSxla") },
 borderOf = { Normal = 1, Gold = 2, Rainbow = 3, Universal = 4 },
 mergeOn = false,
 deconOn = false,
@@ -12797,8 +12804,8 @@ mergeWanted = {},
 deconWanted = {},
 mergeAt = 0,
 deconAt = 0,
-mergeDone = _d("IlsBXQsJF0xHEFsWRwkJQA"),
-deconDone = _d("IlsBXQsJF0xHEFsWRwkJQA"),
+mergeDone = _d("NllDAh8eX1hFUgQCUEEdQg"),
+deconDone = _d("NllDAh8eX1hFUgQCUEEdQg"),
 
 inFlight = false,
 
@@ -12814,64 +12821,64 @@ deconConfirmed = false,
 burnAskedAt = 0,
 }
 
-function btd.misc.cards.isProtected(stp, cfm)
-local zjng = btd.misc.cards
-local onl = tostring(stp or _d(""))
-local fob = onl:match(_d("MhwuVE8dQEENKB5LOA"))
+function yvcz.misc.cards.isProtected(btuh, jep)
+local on = yvcz.misc.cards
+local eqlc = tostring(btuh or _d(""))
+local dx = eqlc:match(_d("Jh5sC1sKCFUPakFfLw"))
 
-if not (fob and zjng.protectedPrefixes[fob]) then
+if not (dx and on.protectedPrefixes[dx]) then
 return false
 end
 
-return not (zjng.deconExceptions[onl] and cfm == 2)
+return not (on.deconExceptions[eqlc] and jep == 2)
 end
 
-function btd.misc.cards.burnAllowed(byty)
-local ane = btd.misc.cards
-local sism = ane.wantedFor(_d("CFEWWgwwEQJAEFE"))
+function yvcz.misc.cards.burnAllowed(wos)
+local dpsu = yvcz.misc.cards
+local fvw = dpsu.wantedFor(_d("HFNUBRgnWRZCUg4"))
 
-if not (sism == nil or sism[3] or sism[4]) then
-ane.deconConfirmed = false
+if not (fvw == nil or fvw[3] or fvw[4]) then
+dpsu.deconConfirmed = false
 
 return true
 end
 
-if ane.deconConfirmed then
+if dpsu.deconConfirmed then
 return true
 end
 
-if byty then
+if wos then
 return false
 end
 
-if os.clock() < (ane.burnAskedAt or 0) then
+if os.clock() < (dpsu.burnAskedAt or 0) then
 return false
 end
 
-ane.burnAskedAt = os.clock() + 20
+dpsu.burnAskedAt = os.clock() + 20
 
-qza:Dialog({
-Title = _d("LkEHW0I1EQVaF1oVRx8eFCBbCxEVHkcUWUIEER5QBgo"),
-Description = _d("LUEBWkIDFQ9bG0YWFQUPQFVGBwkUHxQQQwcVCUxXGkUbRxkCFAFdB0cdDUAWXQsJF0xGGkIRRxECUFVWAwkeA0BVVwdHBQJQGlsHSVA")
-.. _d("O1EUQQoCAkAUF1oRFFxMRhRcBkcSA0cGGUIQHx5YERUACAMfGFVTCxQYBVoSGUIvEQBYGkIHAh5MVRtRQgIGCVoBFQEGAghHVVQQAlAEURlRQgURD19VUAsTGAlGVUIDHl4"),
+zcwe:Dialog({
+Title = _d("OkNFBFYiWRFYVQUBUFcKFmIEHwZdCkVWBlYTWQpSRFU"),
+Description = _d("OUNDBVYUXRtZWRkCAk0bQhcZEx5cCxZSHBMCQVhVWBoPUFEWFkMCE1BVGUJUAh8eX1hEWB0FUFkWUhcJFx5WF0IXCBNQTRZSWAQTXhg")
+.. _d("L1NWHh4VSlQWVQUFAxRYRFYDElBaF0VERlYHVwpaU0oUH0sLGhcMHwNQEVhQRlY4WRRaWB0TFVZYV1kOVhVOHVhDShURShxFFwsEFRgQU1sOVhJZG10XDx8EUB1EFx0XCRY"),
 Buttons = {
 {
-Name = _d("LkEHW0ITGAlZ"),
+Name = _d("OkNFBFYEUB1b"),
 Callback = function()
-ane.deconConfirmed = true
-ane.deconAt = 0
-ane.manualAt = 0
+dpsu.deconConfirmed = true
+dpsu.deconAt = 0
+dpsu.manualAt = 0
 
 pcall(function()
-btd.misc.deconToggle:UpdateState(true)
+yvcz.misc.deconToggle:UpdateState(true)
 end)
 end,
 },
 {
-Name = _d("L1UbVgcL"),
+Name = _d("O1dZCRMc"),
 Callback = function()
 pcall(function()
-btd.misc.deconToggle:UpdateState(false)
+yvcz.misc.deconToggle:UpdateState(false)
 end)
 end,
 },
@@ -12881,51 +12888,51 @@ end,
 return false
 end
 
-function btd.misc.cards.wantedFor(hrav)
-local awju = btd.misc.cards[hrav] or {}
+function yvcz.misc.cards.wantedFor(uvxt)
+local ipp = yvcz.misc.cards[uvxt] or {}
 
-if next(awju) == nil or awju[0] then
+if next(ipp) == nil or ipp[0] then
 return nil
 end
 
-return awju
+return ipp
 end
 
-function btd.misc.cards.npcFor(eng)
-local igts = workspace:FindFirstChild(_d("ImQ2Rg"))
+function yvcz.misc.cards.npcFor(mhme)
+local te = workspace:FindFirstChild(_d("NmZ0GQ"))
 
-if not igts then
+if not te then
 return nil
 end
 
-local ytc = eng and _d("CkEGUD0JAA8") or _d("CFEWWgwUBB5BFkE9CQAP")
+local sur = mhme and _d("HkNEDykeSBs") or _d("HFNUBRgDTApDVB4pHkgb")
 
-for mikl, npg in ipairs(igts:GetChildren()) do
-if npg:GetAttribute(_d("ImQ2fAY")) == ytc then
-return npg
+for ljxx, jxc in ipairs(te:GetChildren()) do
+if jxc:GetAttribute(_d("NmZ0IxI")) == sur then
+return jxc
 end
 end
 
-local aljj = eng and { _d("I1sFXQ4e"), _d("A1sFWRsC") } or { _d("P1wUQA4G"), _d("JFUDUDYQHyhVEUY") }
+local qrz = mhme and { _d("N1lHAhoJ"), _d("F1lHBg8V") } or { _d("K15WHxoR"), _d("MFdBDyIHVzxXUxk") }
 
-for rk, evbr in ipairs(igts:GetChildren()) do
-for gwmu, jsn in ipairs(aljj) do
-if evbr.Name == jsn then
-return evbr
+for jlsx, ima in ipairs(te:GetChildren()) do
+for km, woqf in ipairs(qrz) do
+if ima.Name == woqf then
+return ima
 end
 end
 end
 
-local ar = eng and { _d("D1UHUUIKFR5THFsF"), _d("A1sFXQ4e") } or { _d("CFEWWgwUBB5BFkELCB4"), _d("H1wUQA4G") }
+local pyoc = mhme and { _d("G1dFDlYdXQpRXgQR"), _d("F1lHAhoJ") } or { _d("HFNUBRgDTApDVB4fH1Y"), _d("C15WHxoR") }
 
-for ogf, eik in ipairs(igts:GetChildren()) do
-for je, cnpw in ipairs(eik:GetDescendants()) do
-if cnpw:IsA(_d("OFENQS4GEglY")) and cnpw.Text ~= _d("") then
-local wz = cnpw.Text:lower()
+for fes, gjyj in ipairs(te:GetChildren()) do
+for xea, fl in ipairs(gjyj:GetDescendants()) do
+if fl:IsA(_d("LFNPHjoRWh1a")) and fl.Text ~= _d("") then
+local xxq = fl.Text:lower()
 
-for gulv, plx in ipairs(ar) do
-if wz:find(plx, 1, true) then
-return eik
+for nps, cudu in ipairs(pyoc) do
+if xxq:find(cudu, 1, true) then
+return gjyj
 end
 end
 
@@ -12937,320 +12944,320 @@ end
 return nil
 end
 
-function btd.misc.cards.rarityText(zmji)
-local kipp = btd.misc.cards.wantedFor(zmji)
+function yvcz.misc.cards.rarityText(nytw)
+local pxdp = yvcz.misc.cards.wantedFor(nytw)
 
-if not kipp then
-return _d("LVgZ")
+if not pxdp then
+return _d("OVpb")
 end
 
-local myta = {}
+local izg = {}
 
-for lhuv, yqg in pairs(btd.misc.cards.borderOf) do
-if kipp[yqg] then
-table.insert(myta, lhuv)
+for gnl, nnt in pairs(yvcz.misc.cards.borderOf) do
+if pxdp[nnt] then
+table.insert(izg, gnl)
 end
 end
 
-if #myta == 0 then
-return _d("LVgZ")
+if #izg == 0 then
+return _d("OVpb")
 end
 
-table.sort(myta)
+table.sort(izg)
 
-return table.concat(myta, _d("QBQ"))
+return table.concat(izg, _d("VBY"))
 end
 
-function btd.misc.cards.run(ngjh, tmnz, jkw)
-local tpj = btd.misc.cards
-local mst = btd.misc.util
-local ks = ngjh and _d("AVEHUgcmBA") or _d("CFEWWgwmBA")
+function yvcz.misc.cards.run(xdo, fydu, itcs)
+local ntn = yvcz.misc.cards
+local uv = yvcz.misc.util
+local bjd = xdo and _d("FVNFDRMxTA") or _d("HFNUBRgxTA")
 
-if jkw then
-if os.clock() < tpj[ks] then
-return false, _d("IlsBFQYSFUxNEEFM")
+if itcs then
+if os.clock() < ntn[bjd] then
+return false, _d("NllDShIFXVhPUh5Y")
 end
-elseif os.clock() < tpj.manualAt then
-return false, _d("O1UcQUIGUAFbGFAME14")
-end
-
-if tpj.inFlight then
-return false, _d("LVoaQQoCAkxXFEcGRwQeXQUVCxRQDVgHUAMDCUxGAFsMDh4LGg")
+elseif os.clock() < ntn.manualAt then
+return false, _d("L1deHlYRGBVZWg8YBBY")
 end
 
-local gfsy = rqc.busy(1) and 1 or (rqc.busy(2) and 2 or nil)
-local fkk = os.clock() - (oi.floorAt or 0) < 90
-local ylop = gfsy ~= nil and rqc.towerSlot() == gfsy and fkk
-
-if gfsy and not ylop then
-return false, _d("JVpVVEIFERhAGVBCSlAYXBAVFhUZHBQCWhcLFExRG1FCDgRC")
+if ntn.inFlight then
+return false, _d("OVhYHh4VSlhVVhgSUEwKX0dKHwMYGVpFDxcUQVhEQgQYGVYfGA")
 end
 
-if rcj.battlePending and os.time() < (rcj.battlePendingUntil or 0) then
-return false, _d("LRQXVBYTHAkUHEZCFAQNRgFcDABQQRQBXQdHBB5dBRUVCAUAUFVWAwkTCVhVXBZJ")
+local dso = fq.busy(1) and 1 or (fq.busy(2) and 2 or nil)
+local ylpa = os.clock() - (gapk.floorAt or 0) < 90
+local mcy = dso ~= nil and fq.towerSlot() == dso and ylpa
+
+if dso and not mcy then
+return false, _d("MVgXC1YSWQxCWw9WXRgMXlJKAgJRCBZABQMcXFhTWQ5WGUxW")
 end
 
-if not ngjh and not tpj.burnAllowed() then
-return false, _d("L1sbUwsVHUxmFFwMBR8bGyBbCxEVHkcUWUIBGR5HARs")
+if npj.battlePending and os.time() < (npj.battlePendingUntil or 0) then
+return false, _d("ORZVCwIEVB0WXhlWA0wZREMDGBcYVRZDAhNQTApfR0oBH00UUhcJFx5bHVoXAwJe")
 end
 
-local vjr = tpj.npcFor(ngjh)
-
-if not vjr then
-return false, ngjh
-and _d("I1sFXQ4eUAVHVVsNE1AFWlVBCg4DTFkURUJKUBhGFEMHC1AYW1VdCwpQDVoRFRIVFR9HVVwWRxELVRxbTA")
-or _d("OFwQFQYCEwNaBkEQEhMYFDtlIUcZHxQbWhZHGQIUAV0LFFABVQUVT0cEHlUDUA5HBAMUHEFCBh4IFAVHBxQDTF0BFQMAEQVaWw")
+if not xdo and not ntn.burnAllowed() then
+return false, _d("O1lZDB8CVVhkVgMYElcPGWIEHwZdCkVWBlYWUQpFQ0Q")
 end
 
-local uwl = ngjh and bo.OpenFuseDialog or bo.OpenDeconstructDialog
-local ghn = ngjh and bo.FuseCards or bo.DeconstructCards
+local ffi = ntn.npcFor(xdo)
 
-if not (uwl and ghn) then
-return false, _d("OFwUQUIOA0xaGkFCDh5MQB1cEUcXDVkQFRQCAh9dGltM")
+if not ffi then
+return false, xdo
+and _d("N1lHAhoJGBFFFwQZBBgRWBceHhlLWFtWGlZdGAxEVhwTHBgMWRcCHx0YGVhTSgYCXQtFFwMCUFkfV14EWA")
+or _d("LF5SShIVWxdYRB4EBVsMFnk6NVBRCxZZBQJQURYWQwIfAxgVV0dKW1BMCldBDxpQTBcWXh5WEVYcFkcYEwNLWF9DShcXWRFYGQ")
 end
 
-local wvv = ngjh and _d("AVEHUgcwEQJAEFE") or _d("CFEWWgwwEQJAEFE")
-local nbo = tpj.wantedFor(wvv)
+local wtr = xdo and xl.OpenFuseDialog or xl.OpenDeconstructDialog
+local bdr = xdo and xl.FuseCards or xl.DeconstructCards
 
-tpj.manualAt = os.clock() + tpj.manualGap
-
-if jkw then
-tpj[ks] = os.clock() + tpj.interval
+if not (wtr and bdr) then
+return false, _d("LF5WHlYZS1hYWB5WGVZYQl8DBVBfGVtSSgAVSgtfWARY")
 end
 
-tpj.inFlight = true
+local jin = xdo and _d("FVNFDRMnWRZCUg4") or _d("HFNUBRgnWRZCUg4")
+local ao = ntn.wantedFor(jin)
+
+ntn.manualAt = os.clock() + ntn.manualGap
+
+if itcs then
+ntn[bjd] = os.clock() + ntn.interval
+end
+
+ntn.inFlight = true
 
 task.spawn(function()
 
-local rnl = nil
+local puj = nil
 
-local function faen(qgsx, upb)
-if ngjh then
-tpj.mergeDone = qgsx
+local function gff(hx, unma)
+if xdo then
+ntn.mergeDone = hx
 else
-tpj.deconDone = qgsx
+ntn.deconDone = hx
 end
 
-if upb and jkw then
-tpj[ks] = os.clock() + 120
+if unma and itcs then
+ntn[bjd] = os.clock() + 120
 end
 
-tpj.inFlight = false
+ntn.inFlight = false
 end
 
-local fyw = mst.visit(vjr.Name)
+local ncg = uv.visit(ffi.Name)
 
-if not fyw then
-faen(_d("L1wURwMEBAlGVVwRRx4DQFVHBwYUFRRYFRACBB5NHFsFRxkCFAFCDUcdBVoAQQcUXg"), true)
+if not ncg then
+gff(_d("O15WGBcTTB1EFwMFUFYXQhcYExFcARYaSgQVTApPXgQRUFEWFkMdGVBVEVhCHhMDFg"), true)
 
 return
 end
 
 task.wait(0.9)
 
-local hwvv = nil
-local umas = jxjd(uwl.OnClientEvent, function(otv)
-if type(otv) == _d("GFUXWQc") then
-hwvv = otv
+local gar = nil
+local txqz = im(wtr.OnClientEvent, function(ulf)
+if type(ulf) == _d("DFdVBhM") then
+gar = ulf
 end
 end)
 
-for tt = 1, 3 do
+for xezc = 1, 3 do
 pcall(function()
-uwl:FireServer()
+wtr:FireServer()
 end)
 
-for rrbf = 1, 20 do
-if hwvv then
+for qfh = 1, 20 do
+if gar then
 break
 end
 
 task.wait(0.3)
 end
 
-if hwvv then
+if gar then
 break
 end
 
 task.wait(1.5)
 end
 
-umas:Disconnect()
-mst.returnTo(fyw)
+txqz:Disconnect()
+uv.returnTo(ncg)
 
-if type(hwvv) ~= _d("GFUXWQc") then
-faen(_d("OFwQFQYOEQBbEhUGDhRMWhpBQgYeH0MQR0JKUB5RAUcbDh4LFBxbQhMHAxQYXAwSBAlHWw"), true)
-
-return
-end
-
-local ewh = {}
-
-for oihh, kvj in ipairs(hwvv) do
-local bubf = tonumber(kvj.borderLevel)
-local yjj = kvj.cardId or kvj.id
-
-if bubf and (not nbo or nbo[bubf])
-and (ngjh or not btd.misc.cards.isProtected(yjj, bubf)) then
-table.insert(ewh, kvj)
-end
-end
-
-if #ewh == 0 then
-
-btd.misc.cards.closeFrame(ngjh)
-faen(_d("IlsBXQsJF0xAGhURAh4IFBNaEEc") .. btd.misc.cards.rarityText(wvv) .. _d("Qg"))
+if type(gar) ~= _d("DFdVBhM") then
+gff(_d("LF5SShIZWRRZUEoSGVxYWFgeVhFWC0FSGFZdGApTQxgPGVYfFl4EVgRPFxZaAxgFTB1FGQ"), true)
 
 return
 end
 
-if tmnz then
+local reuz = {}
 
-local fwoa = {}
+for smdd, ffkq in ipairs(gar) do
+local oyud = tonumber(ffkq.borderLevel)
+local aaxf = ffkq.cardId or ffkq.id
 
-for xoyl, qgom in ipairs(ewh) do
-if (tonumber(qgom.count) or 0) >= tmnz then
-table.insert(fwoa, qgom)
+if oyud and (not ao or ao[oyud])
+and (xdo or not yvcz.misc.cards.isProtected(aaxf, oyud)) then
+table.insert(reuz, ffkq)
 end
 end
 
-if #fwoa == 0 then
-btd.misc.cards.closeFrame(ngjh)
-faen(_d("IltV") .. btd.misc.cards.rarityText(wvv) .. _d("TEYaQkIPER8U") .. tmnz .. _d("TFcaRQsCA0xNEEFM"))
+if #reuz == 0 then
+
+yvcz.misc.cards.closeFrame(xdo)
+gff(_d("NllDAh8eX1hCWEoFFVYcFlEFBFA") .. yvcz.misc.cards.rarityText(jin) .. _d("Vg"))
 
 return
 end
 
-ewh = fwoa
+if fydu then
 
-table.sort(ewh, function(mmfo, ezsy)
-return (tonumber(mmfo.count) or 0) < (tonumber(ezsy.count) or 0)
+local pjpp = {}
+
+for yarc, hhmk in ipairs(reuz) do
+if (tonumber(hhmk.count) or 0) >= fydu then
+table.insert(pjpp, hhmk)
+end
+end
+
+if #pjpp == 0 then
+yvcz.misc.cards.closeFrame(xdo)
+gff(_d("NlkX") .. yvcz.misc.cards.rarityText(jin) .. _d("WERYHVYYWQsW") .. fydu .. _d("WFVYGh8VS1hPUh5Y"))
+
+return
+end
+
+reuz = pjpp
+
+table.sort(reuz, function(br, sevo)
+return (tonumber(br.count) or 0) < (tonumber(sevo.count) or 0)
 end)
 
-local uwrx, fuv = {}, 0
+local ke, mr = {}, 0
 
-for tza, mnyk in ipairs(ewh) do
-local mxw = tonumber(mnyk.count) or 0
+for bhw, qoe in ipairs(reuz) do
+local pfaj = tonumber(qoe.count) or 0
 
-if #uwrx > 0 and fuv + mxw > tmnz then
+if #ke > 0 and mr + pfaj > fydu then
 break
 end
 
-table.insert(uwrx, mnyk)
-fuv = fuv + mxw
+table.insert(ke, qoe)
+mr = mr + pfaj
 end
 
-ewh = uwrx
-rnl = fuv
+reuz = ke
+puj = mr
 end
 
-local dg = 0
+local vryx = 0
 
-btd.misc.cards.closeFrame(ngjh)
+yvcz.misc.cards.closeFrame(xdo)
 
-if ngjh then
-if not nbo then
+if xdo then
+if not ao then
 
 pcall(function()
-ghn:FireServer(_d("DVgZ"), nil)
+bdr:FireServer(_d("GVpb"), nil)
 end)
 
-dg = #ewh
+vryx = #reuz
 else
-local evo = {}
+local ljs = {}
 
-for rp, bw in ipairs(ewh) do
-table.insert(evo, { bw.cardId, tonumber(bw.borderLevel) })
+for ish, tht in ipairs(reuz) do
+table.insert(ljs, { tht.cardId, tonumber(tht.borderLevel) })
 end
 
 pcall(function()
-ghn:FireServer(_d("H1EZUAETFQhrFFkO"), evo)
+bdr:FireServer(_d("C1NbDxUEXRxpVgYa"), ljs)
 end)
 
-dg = #evo
+vryx = #ljs
 end
 else
-local gor = {}
+local obf = {}
 
-for hvdo, ybn in ipairs(ewh) do
-if #gor >= 25 then
+for gn, awep in ipairs(reuz) do
+if #obf >= 25 then
 break
 end
 
-table.insert(gor, { ybn.cardId, tonumber(ybn.borderLevel), _d("DVgZ") })
+table.insert(obf, { awep.cardId, tonumber(awep.borderLevel), _d("GVpb") })
 end
 
 pcall(function()
-ghn:FireServer(gor)
+bdr:FireServer(obf)
 end)
 
-dg = #gor
+vryx = #obf
 end
 
-faen(_d("P1EbQUI") .. tostring(dg) .. _d("TEYaQg") .. (dg == 1 and _d("") or _d("Hw"))
-.. _d("TBw") .. btd.misc.cards.rarityText(wvv) .. _d("RQ")
-.. (rnl and (_d("QBQ") .. tostring(rnl) .. _d("TFcURwYU")) or _d("")))
+gff(_d("K1NZHlY") .. tostring(vryx) .. _d("WERYHQ") .. (vryx == 1 and _d("") or _d("Cw"))
+.. _d("WB4") .. yvcz.misc.cards.rarityText(jin) .. _d("UQ")
+.. (puj and (_d("VBY") .. tostring(puj) .. _d("WFVWGBID")) or _d("")))
 end)
 
 return true
 end
 
-function btd.misc.cards.closeFrame(nksm)
+function yvcz.misc.cards.closeFrame(npjp)
 pcall(function()
-local wbj = nksm and { _d("KkEGUCUSGQ"), _d("KkEGUCQVEQFR") } or { _d("KFEWWgwUBB5BFkElEhk"), _d("KFEWWgwUBB5BFkEkFREBUQ") }
-local vms = require(kq.ModuleScripts.MenuManager)
-local feb = rd:FindFirstChild(wbj[1])
-local mi = feb and feb:FindFirstChild(wbj[2])
+local tfex = npjp and { _d("PkNEDzEFUQ"), _d("PkNEDzACWRVT") } or { _d("PFNUBRgDTApDVB4xBVE"), _d("PFNUBRgDTApDVB4wAlkVUw") }
+local vaa = require(ayu.ModuleScripts.MenuManager)
+local nqr = ff:FindFirstChild(tfex[1])
+local ow = nqr and nqr:FindFirstChild(tfex[2])
 
-if mi then
-vms.close(mi)
+if ow then
+vaa.close(ow)
 end
 
-if not nksm then
-local lid = feb and feb:FindFirstChild(_d("KFEWWgwUBB5BFkEwBgQJRzNHAwoV"))
+if not npjp then
+local ugap = nqr and nqr:FindFirstChild(_d("PFNUBRgDTApDVB4kEUwdRXEYFx1d"))
 
-if lid then
-vms.close(lid)
+if ugap then
+vaa.close(ugap)
 else
-lid = rd:FindFirstChild(_d("KFEWWgwUBB5BFkEwBgQJRzNHAwoV"))
+ugap = ff:FindFirstChild(_d("PFNUBRgDTApDVB4kEUwdRXEYFx1d"))
 
-if lid then
-vms.close(lid)
+if ugap then
+vaa.close(ugap)
 end
 end
 end
 end)
 end
 
-function btd.misc.cards.refresh(jcpw)
+function yvcz.misc.cards.refresh(vvkp)
 
-local mhg = jcpw and btd.misc.mergeParagraph or btd.misc.deconParagraph
+local ojn = vvkp and yvcz.misc.mergeParagraph or yvcz.misc.deconParagraph
 
-if not mhg then
+if not ojn then
 return
 end
 
 pcall(function()
-mhg:UpdateBody(jcpw
-and btd.misc.cards.mergeText()
-or btd.misc.cards.deconText())
+ojn:UpdateBody(vvkp
+and yvcz.misc.cards.mergeText()
+or yvcz.misc.cards.deconText())
 end)
 end
 
-function btd.misc.cards.mergeText()
-local funx = btd.misc.cards
+function yvcz.misc.cards.mergeText()
+local tvgg = yvcz.misc.cards
 
-return _d("PlUHXBYOFR8OVQ") .. funx.rarityText(_d("AVEHUgcwEQJAEFE")) .. _d("Zg") .. funx.mergeDone
+return _d("KldFAwIZXQsMFw") .. tvgg.rarityText(_d("FVNFDRMnWRZCUg4")) .. _d("cg") .. tvgg.mergeDone
 end
 
-function btd.misc.cards.deconText()
-local ejp = btd.misc.cards
+function yvcz.misc.cards.deconText()
+local bnj = yvcz.misc.cards
 
-return _d("PlUHXBYOFR8OVQ") .. ejp.rarityText(_d("CFEWWgwwEQJAEFE")) .. _d("Zg") .. ejp.deconDone
-.. _d("ZmMQVBYPFR4YVVcNFANAFAdUCwNcTEMaRw4DUA5bBkZORxYFRx1cDABcTHwUWQ4IBwlRGxUDCRRMUQNQDBNQD1UHURFHER5RVVsHERUeFAZQDBNe")
+return _d("KldFAwIZXQsMFw") .. bnj.rarityText(_d("HFNUBRgnWRZCUg4")) .. _d("cg") .. bnj.deconDone
+.. _d("cmFSCwIYXQoaFwgZA0tUFkULHxQUWEFYGBoUGBpZRBlaUF4RRV8DGBcUWH5WBhofTx1TWUoXHlxYU0EPGAQYG1dFDgVQWQpTFwQTBl0KFkQPGAQW")
 end
 
-btd.misc.skill = {
+yvcz.misc.skill = {
 on = false,
 at = 0,
 mainWanted = {},
@@ -13258,371 +13265,371 @@ raidWanted = {},
 
 mainOrder = {},
 raidOrder = {},
-last = _d("IlsBXQsJF0xWGkAFDwRMTRBB"),
+last = _d("NllDAh8eX1hUWB8RGExYT1Ie"),
 shown = _d(""),
 }
 
-function btd.misc.skill.branchMap(rciw)
-local hfu = {}
+function yvcz.misc.skill.branchMap(tbs)
+local gr = {}
 
-for inni, qcor in ipairs(patj.Trees[rciw].branches) do
-hfu[qcor.name] = qcor
+for np, vlq in ipairs(wo.Trees[tbs].branches) do
+gr[vlq.name] = vlq
 end
 
-return hfu
+return gr
 end
 
-function btd.misc.skill.branchLabels(whme)
-local ppop = {}
+function yvcz.misc.skill.branchLabels(mh)
+local zlch = {}
 
-for zik, yahy in ipairs(patj.Trees[whme].branches) do
-table.insert(ppop, yahy.name)
+for mnza, lthw in ipairs(wo.Trees[mh].branches) do
+table.insert(zlch, lthw.name)
 end
 
-return ppop
+return zlch
 end
 
-function btd.misc.skill.wantedFrom(uwq, fjd)
-local xcg = {}
-local zskf = btd.misc.skill.branchMap(fjd)
+function yvcz.misc.skill.wantedFrom(llia, us)
+local ddz = {}
+local jldo = yvcz.misc.skill.branchMap(us)
 
-if type(uwq) == _d("GFUXWQc") then
-for ambr, rgit in pairs(uwq) do
-if rgit and zskf[tostring(ambr)] then
-xcg[zskf[tostring(ambr)].id] = true
-end
-end
-end
-
-return xcg
-end
-
-function btd.misc.skill.ordered(ubu, qqlu)
-local ufwt = {}
-local jtu = {}
-
-for eohe, eg in ipairs(qqlu or {}) do
-if ubu[eg] then
-table.insert(ufwt, eg)
-jtu[eg] = true
-end
-end
-
-for gnqu in pairs(ubu) do
-if not jtu[gnqu] then
-table.insert(ufwt, gnqu)
-end
-end
-
-return ufwt
-end
-
-function btd.misc.skill.branchById(osbj)
-local iay = {}
-
-for znom, pmj in ipairs(patj.Trees[osbj].branches) do
-iay[pmj.id] = pmj
-end
-
-return iay
-end
-
-function btd.misc.skill.upgrade()
-local csi = btd.misc.skill
-local sal = btd.misc.util
-local fuh = sal.currentProfile and sal.currentProfile()
-
-if type(fuh) ~= _d("GFUXWQc") then
-return false, _d("IltVRRAIFgVYEBUbAgRC")
-end
-
-local lew = fuh.skillTrees or {}
-local ewp = { [1] = csi.mainOrder, [2] = csi.raidOrder }
-local dlhd = nil
-
-for ig, ddgl in ipairs(patj.Trees) do
-local oaey = lew[ddgl.id]
-local bl = tonumber(fuh[ddgl.pointsField or _d("H18cWQ43HwVaAUY")]) or 0
-local oy = btd.misc.skill.branchById(ig)
-
-if type(oaey) == _d("GFUXWQc") and bl > 0 then
-for dq, gqlc in ipairs(ewp[ig] or {}) do
-local juwv = oy[gqlc]
-
-if juwv and not dlhd then
-local dd = patj.getBranchLevel(lew, ddgl.id, juwv.id) or 0
-local jitq = dd + 1
-
-if jitq <= juwv.levels then
-local gamn = juwv.id .. jitq
-local lsc = 1
-
-if type(juwv.costs) == _d("GFUXWQc") and tonumber(juwv.costs[jitq]) then
-lsc = tonumber(juwv.costs[jitq])
-elseif tonumber(juwv.cost) then
-lsc = tonumber(juwv.cost)
-end
-
-if lsc <= bl and patj.isAvailable(lew, ddgl.id, gamn) then
-dlhd = { tree = ddgl.id, node = gamn, name = juwv.name, level = jitq }
-end
-end
-end
+if type(llia) == _d("DFdVBhM") then
+for tsd, dcl in pairs(llia) do
+if dcl and jldo[tostring(tsd)] then
+ddz[jldo[tostring(tsd)].id] = true
 end
 end
 end
 
-if not dlhd then
-return false, _d("IlsBXQsJF0xAGhUAEglMTRBBTA")
+return ddz
 end
 
-bo.BuySkillNode:FireServer(dlhd.tree, dlhd.node)
+function yvcz.misc.skill.ordered(uel, eysy)
+local fgba = {}
+local nlh = {}
 
-if sal.askProfile then
-pcall(sal.askProfile)
+for ejzn, kwrd in ipairs(eysy or {}) do
+if uel[kwrd] then
+table.insert(fgba, kwrd)
+nlh[kwrd] = true
+end
 end
 
-csi.last = _d("LlsAUgoTUA") .. dlhd.name .. _d("TA") .. tostring(dlhd.level)
+for fhry in pairs(uel) do
+if not nlh[fhry] then
+table.insert(fgba, fhry)
+end
+end
+
+return fgba
+end
+
+function yvcz.misc.skill.branchById(vlz)
+local xg = {}
+
+for ibf, hre in ipairs(wo.Trees[vlz].branches) do
+xg[hre.id] = hre
+end
+
+return xg
+end
+
+function yvcz.misc.skill.upgrade()
+local amrd = yvcz.misc.skill
+local afr = yvcz.misc.util
+local mtkm = afr.currentProfile and afr.currentProfile()
+
+if type(mtkm) ~= _d("DFdVBhM") then
+return false, _d("NlkXGgQfXhFaUkoPFUxW")
+end
+
+local iwed = mtkm.skillTrees or {}
+local agd = { [1] = amrd.mainOrder, [2] = amrd.raidOrder }
+local pwqo = nil
+
+for xvbd, zbr in ipairs(wo.Trees) do
+local byn = iwed[zbr.id]
+local qzn = tonumber(mtkm[zbr.pointsField or _d("C11eBhogVxFYQxk")]) or 0
+local zorg = yvcz.misc.skill.branchById(xvbd)
+
+if type(byn) == _d("DFdVBhM") and qzn > 0 then
+for yykb, zpct in ipairs(agd[xvbd] or {}) do
+local krg = zorg[zpct]
+
+if krg and not pwqo then
+local ab = wo.getBranchLevel(iwed, zbr.id, krg.id) or 0
+local vb = ab + 1
+
+if vb <= krg.levels then
+local spvo = krg.id .. vb
+local ppt = 1
+
+if type(krg.costs) == _d("DFdVBhM") and tonumber(krg.costs[vb]) then
+ppt = tonumber(krg.costs[vb])
+elseif tonumber(krg.cost) then
+ppt = tonumber(krg.cost)
+end
+
+if ppt <= qzn and wo.isAvailable(iwed, zbr.id, spvo) then
+pwqo = { tree = zbr.id, node = spvo, name = krg.name, level = vb }
+end
+end
+end
+end
+end
+end
+
+if not pwqo then
+return false, _d("NllDAh8eX1hCWEoUBUFYT1IeWA")
+end
+
+xl.BuySkillNode:FireServer(pwqo.tree, pwqo.node)
+
+if afr.askProfile then
+pcall(afr.askProfile)
+end
+
+amrd.last = _d("OllCDR4EGA") .. pwqo.name .. _d("WA") .. tostring(pwqo.level)
 
 return true
 end
 
-function btd.misc.skill.text()
-local fppe = btd.misc.skill
-local jm = btd.misc.util
-local ycv = jm.currentProfile and jm.currentProfile()
+function yvcz.misc.skill.text()
+local dpkj = yvcz.misc.skill
+local olm = yvcz.misc.util
+local lggi = olm.currentProfile and olm.currentProfile()
 
-if type(ycv) ~= _d("GFUXWQc") then
-return _d("PFscWxYUSkwLfw") .. fppe.last
+if type(lggi) ~= _d("DFdVBhM") then
+return _d("KFleBAIDAlgJPQ") .. dpkj.last
 end
 
-local mjar = ycv.skillTrees or {}
-local xio = {}
+local hn = lggi.skillTrees or {}
+local quvm = {}
 
-local petk = { [1] = fppe.mainOrder, [2] = fppe.raidOrder }
+local dkav = { [1] = dpkj.mainOrder, [2] = dpkj.raidOrder }
 
-for ttso, qsay in ipairs(patj.Trees) do
-local mpze = tonumber(ycv[qsay.pointsField or _d("H18cWQ43HwVaAUY")]) or 0
-local bjfd = {}
-local cjs = btd.misc.skill.branchById(ttso)
+for ny, fmyg in ipairs(wo.Trees) do
+local ecqi = tonumber(lggi[fmyg.pointsField or _d("C11eBhogVxFYQxk")]) or 0
+local cvfv = {}
+local pss = yvcz.misc.skill.branchById(ny)
 
-for jwyw, wyr in ipairs(petk[ttso] or {}) do
-local ied = cjs[wyr]
+for pyt, gkj in ipairs(dkav[ny] or {}) do
+local fnan = pss[gkj]
 
-if ied then
-local ryj = patj.getBranchLevel(mjar, qsay.id, ied.id) or 0
-table.insert(bjfd, ied.name .. _d("TA") .. tostring(ryj) .. _d("Qw") .. tostring(ied.levels))
+if fnan then
+local nse = wo.getBranchLevel(hn, fmyg.id, fnan.id) or 0
+table.insert(cvfv, fnan.name .. _d("WA") .. tostring(nse) .. _d("Vw") .. tostring(fnan.levels))
 end
 end
 
-xio[#xio + 1] = qsay.name .. _d("VhQ") .. tostring(mpze) .. _d("TEQBRg")
-.. (#bjfd > 0 and (_d("TBlV") .. table.concat(bjfd, _d("QBQ"))) or _d("TBlVWw0TGAVaEhUSDhMHURE"))
+quvm[#quvm + 1] = fmyg.name .. _d("QhY") .. tostring(ecqi) .. _d("WEZDGQ")
+.. (#cvfv > 0 and (_d("WBsX") .. table.concat(cvfv, _d("VBY"))) or _d("WBsXBBkEUBFYUEoGGVsTU1M"))
 end
 
-xio[#xio + 1] = fppe.last
+quvm[#quvm + 1] = dpkj.last
 
-return table.concat(xio, _d("Zg"))
+return table.concat(quvm, _d("cg"))
 end
 
-btd.misc.mergeSection = btd.misc.tab:Section({
-Side = _d("IFETQQ"),
+yvcz.misc.mergeSection = yvcz.misc.tab:Section({
+Side = _d("NFNRHg"),
 })
 
-btd.misc.mergeSection:Header({
-Name = _d("IVEHUgdHgPOT2Q"),
+yvcz.misc.mergeSection:Header({
+Name = _d("NVNFDRNQyOeRmw"),
 })
 
-btd.misc.mergeToggle = btd.misc.mergeSection:Toggle({
-Name = _d("LUEBWkIKFR5TEA"),
+yvcz.misc.mergeToggle = yvcz.misc.mergeSection:Toggle({
+Name = _d("OUNDBVYdXQpRUg"),
 Default = false,
-Callback = function(fbz)
-local skq = btd.misc.cards
+Callback = function(uvaq)
+local vmwk = yvcz.misc.cards
 
-skq.mergeOn = fbz
+vmwk.mergeOn = uvaq
 
-skq.mergeAt = (fbz and df.loading) and (os.clock() + skq.interval) or 0
+vmwk.mergeAt = (uvaq and zhpb.loading) and (os.clock() + vmwk.interval) or 0
 end,
-}, _d("DUEBWj0KFR5TEA"))
+}, _d("GUNDBSkdXQpRUg"))
 
-btd.misc.mergeDropdown = btd.misc.mergeSection:Dropdown({
-Name = _d("PlUHXBYOFR8"),
+yvcz.misc.mergeDropdown = yvcz.misc.mergeSection:Dropdown({
+Name = _d("KldFAwIZXQs"),
 Search = false,
 Multi = true,
 Required = false,
-Default = { _d("LVgZ") },
-Options = btd.misc.cards.rarityLabels,
-Callback = function(eqqm)
-local agj = {}
+Default = { _d("OVpb") },
+Options = yvcz.misc.cards.rarityLabels,
+Callback = function(fsjz)
+local naf = {}
 
-if type(eqqm) == _d("GFUXWQc") then
-for dgvp, tuew in pairs(eqqm) do
-if tuew then
-if dgvp == _d("LVgZ") then
-agj[0] = true
+if type(fsjz) == _d("DFdVBhM") then
+for nqw, nnsn in pairs(fsjz) do
+if nnsn then
+if nqw == _d("OVpb") then
+naf[0] = true
 else
-agj[btd.misc.cards.borderOf[tostring(dgvp)]] = true
+naf[yvcz.misc.cards.borderOf[tostring(nqw)]] = true
 end
 end
 end
 end
 
-btd.misc.cards.mergeWanted = agj
-btd.misc.cards.refresh(true)
+yvcz.misc.cards.mergeWanted = naf
+yvcz.misc.cards.refresh(true)
 end,
-}, _d("HlUHXBYOFR8"))
+}, _d("CldFAwIZXQs"))
 
-btd.misc.mergeSection:Button({
-Name = _d("IVEHUgdHHgND"),
+yvcz.misc.mergeSection:Button({
+Name = _d("NVNFDRNQVhdB"),
 Callback = function()
-local sarg, hhdz = btd.misc.cards.run(true)
+local ahen, ya = yvcz.misc.cards.run(true)
 
-if not sarg then
-qza:Notify({
-Title = _d("IVEHUgc"),
-Description = hhdz,
+if not ahen then
+zcwe:Notify({
+Title = _d("NVNFDRM"),
+Description = ya,
 Lifetime = 6,
 })
 end
 end,
 })
 
-btd.misc.mergeSection:Button({
-Name = _d("IVEHUgdHSVw"),
+yvcz.misc.mergeSection:Button({
+Name = _d("NVNFDRNQAUg"),
 Callback = function()
 
-local uvxk, ephw = btd.misc.cards.run(true, 90)
+local kun, fmwn = yvcz.misc.cards.run(true, 90)
 
-if not uvxk then
-qza:Notify({
-Title = _d("IVEHUgdHSVw"),
-Description = ephw,
+if not kun then
+zcwe:Notify({
+Title = _d("NVNFDRNQAUg"),
+Description = fmwn,
 Lifetime = 6,
 })
 end
 end,
 })
 
-btd.misc.mergeParagraph = btd.misc.mergeSection:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = btd.misc.cards.mergeText(),
+yvcz.misc.mergeParagraph = yvcz.misc.mergeSection:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = yvcz.misc.cards.mergeText(),
 })
 
-btd.misc.accSection = btd.misc.tab:Section({
-Side = _d("Pl0SXRY"),
+yvcz.misc.accSection = yvcz.misc.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-btd.misc.accSection:Header({
-Name = _d("LVcWUBEUHx5dEEZCl+/+ug"),
+yvcz.misc.accSection:Header({
+Name = _d("OVVUDwUDVwpfUhlWgKfquA"),
 })
 
-btd.misc.accToggle = btd.misc.accSection:Toggle({
-Name = _d("LUEBWkIFFR9AVVQBBBUfRxpHGw"),
+yvcz.misc.accToggle = yvcz.misc.accSection:Toggle({
+Name = _d("OUNDBVYSXQtCFwsVE10LRVgYDw"),
 Default = false,
-Callback = function(erug)
-btd.misc.util.accOn = erug
-btd.misc.util.accAt = 0
+Callback = function(pmqw)
+yvcz.misc.util.accOn = pmqw
+yvcz.misc.util.accAt = 0
 end,
-}, _d("DUEBWj0FFR9AKlQBBBUfRxpHGw"))
+}, _d("GUNDBSkSXQtCaAsVE10LRVgYDw"))
 
-btd.misc.accBuyToggle = btd.misc.accSection:Toggle({
-Name = _d("LUEBWkIFBRUUF1AREw"),
+yvcz.misc.accBuyToggle = yvcz.misc.accSection:Toggle({
+Name = _d("OUNDBVYSTQEWVQ8FBA"),
 Default = false,
-Callback = function(jzm)
-btd.misc.util.accBuyOn = jzm
-btd.misc.util.accBuyAt = 0
-btd.misc.util.accAt = 0
+Callback = function(bfjo)
+yvcz.misc.util.accBuyOn = bfjo
+yvcz.misc.util.accBuyAt = 0
+yvcz.misc.util.accAt = 0
 end,
-}, _d("DUEBWj0FBRVrF1AREw"))
+}, _d("GUNDBSkSTQFpVQ8FBA"))
 
-btd.misc.accSection:Button({
-Name = _d("LkEMFQACAxg"),
+yvcz.misc.accSection:Button({
+Name = _d("OkNOShQVSww"),
 Callback = function()
-local zmgv, kuyq = btd.misc.util.buyBest()
+local tphl, kktd = yvcz.misc.util.buyBest()
 
-if not zmgv then
-qza:Notify({
-Title = _d("LVcWUBEUHx5dEEY"),
-Description = kuyq,
+if not tphl then
+zcwe:Notify({
+Title = _d("OVVUDwUDVwpfUhk"),
+Description = kktd,
 Lifetime = 6,
 })
 end
 end,
 })
 
-btd.misc.accSection:Button({
-Name = _d("KUUAXBJHEglHAQ"),
+yvcz.misc.accSection:Button({
+Name = _d("PUdCAwZQWh1FQw"),
 Callback = function()
-if not btd.misc.util.equipBest() then
-qza:Notify({
-Title = _d("LVcWUBEUHx5dEEY"),
-Description = _d("IlsBXQsJF0xWEEEWAgJMXQYVDRAeCVBVTAcTXg"),
+if not yvcz.misc.util.equipBest() then
+zcwe:Notify({
+Title = _d("OVVUDwUDVwpfUhk"),
+Description = _d("NllDAh8eX1hUUh4CFUpYX0RKGQdWHVIXExMEFg"),
 Lifetime = 5,
 })
 end
 end,
 })
 
-btd.misc.accParagraph = btd.misc.accSection:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = btd.misc.util.accText(),
+yvcz.misc.accParagraph = yvcz.misc.accSection:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = yvcz.misc.util.accText(),
 })
 
-btd.misc.claimInfo = btd.misc.tab:Section({
-Side = _d("Pl0SXRY"),
+yvcz.misc.claimInfo = yvcz.misc.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-btd.misc.claimInfo:Header({
-Name = _d("IV0GVgcLHA1aEFoXFA"),
+yvcz.misc.claimInfo:Header({
+Name = _d("NV9ECRMcVBlYUgUDAw"),
 })
 
-btd.misc.indexParagraph = btd.misc.claimInfo:Paragraph({
-Header = _d("L1UHUUIuHghRDQ"),
-Body = btd.misc.util.indexText(),
+yvcz.misc.indexParagraph = yvcz.misc.claimInfo:Paragraph({
+Header = _d("O1dFDlY5VhxTTw"),
+Body = yvcz.misc.util.indexText(),
 })
 
-btd.misc.achParagraph = btd.misc.claimInfo:Paragraph({
-Header = _d("LVcdXAcRFQFRG0ER"),
-Body = btd.misc.util.achText(),
+yvcz.misc.achParagraph = yvcz.misc.claimInfo:Paragraph({
+Header = _d("OVVfAxMGXRVTWR4F"),
+Body = yvcz.misc.util.achText(),
 })
 
-btd.misc.questParagraph = btd.misc.claimInfo:Paragraph({
-Header = _d("PUEQRhYU"),
-Body = btd.misc.util.questText(),
+yvcz.misc.questParagraph = yvcz.misc.claimInfo:Paragraph({
+Header = _d("KUNSGQID"),
+Body = yvcz.misc.util.questText(),
 })
 
-btd.misc.packParagraph = btd.misc.claimInfo:Paragraph({
-Header = _d("PFUWXhE"),
-Body = btd.misc.util.packText(),
+yvcz.misc.packParagraph = yvcz.misc.claimInfo:Paragraph({
+Header = _d("KFdUAQU"),
+Body = yvcz.misc.util.packText(),
 })
 
-btd.misc.skillSection = btd.misc.tab:Section({
-Side = _d("Pl0SXRY"),
+yvcz.misc.skillSection = yvcz.misc.tab:Section({
+Side = _d("Kl9QAgI"),
 })
 
-btd.misc.skillSection:Header({
-Name = _d("P18cWQ5HJB5REBWS+Pzf"),
+yvcz.misc.skillSection:Header({
+Name = _d("K11eBhpQbApTUkqG77TL"),
 })
 
-btd.misc.skillToggle = btd.misc.skillSection:Toggle({
-Name = _d("LUEBWkISAAtGFFEH"),
+yvcz.misc.skillToggle = yvcz.misc.skillSection:Toggle({
+Name = _d("OUNDBVYFSB9EVg4T"),
 Default = false,
-Callback = function(syb)
-local mtxu = btd.misc.skill
+Callback = function(bw)
+local wrn = yvcz.misc.skill
 
-if syb and not (next(mtxu.mainWanted) or next(mtxu.raidWanted)) then
-mtxu.on = false
+if bw and not (next(wrn.mainWanted) or next(wrn.raidWanted)) then
+wrn.on = false
 
 pcall(function()
-btd.misc.skillToggle:UpdateState(false)
+yvcz.misc.skillToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("PF0WXkIGUA5GFFsBD1AKXQdGFg"),
-Description = _d("L1waWhECUA1AVVkHBgMYFBpbB0cSHlUbVgpHGQIUAV0HRz0NXRsVFhUVCRQaR0I1EQVQVUEQAhVMUAdaEgMfG1pVGEI")
-.. _d("LUEBWkISAAtGFFEHRx8CWAwVERcVAlAGFRIIGQJABhUVDxUeUVVMDRJQHFscWxZHGRga"),
+zcwe:Dialog({
+Title = _d("KF9UAVYRGBpEVgQVGBgeX0UZAg"),
+Description = _d("O15YBQUVGBlCFwYTEUsMFlgEE1BaCldZCR5QURYWQwITUHUZX1lKAgJdHRZYGFYiWRFSFx4EFV1YUkUFBhRXD1gXR1Y")
+.. _d("OUNDBVYFSB9EVg4TUFcWWk5KBQBdFlJESgYfURZCREoBGF0KUxcTGQUYCFleBAJQUQwY"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -13630,153 +13637,153 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-mtxu.on = syb
-mtxu.at = 0
+wrn.on = bw
+wrn.at = 0
 end,
-}, _d("DUEBWj0SAAtGFFEH"))
+}, _d("GUNDBSkFSB9EVg4T"))
 
-btd.misc.skillMainDropdown = btd.misc.skillSection:Dropdown({
-Name = _d("IVUcW0ITAglR"),
+yvcz.misc.skillMainDropdown = yvcz.misc.skillSection:Dropdown({
+Name = _d("NVdeBFYESh1T"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = btd.misc.skill.branchLabels(1),
-Callback = function(ngq)
-local qt = btd.misc.skill
-local sk = qt.wantedFrom(ngq, 1)
+Options = yvcz.misc.skill.branchLabels(1),
+Callback = function(ytfl)
+local bby = yvcz.misc.skill
+local atkg = bby.wantedFrom(ytfl, 1)
 
-qt.mainWanted = sk
-qt.mainOrder = qt.ordered(sk, qt.mainOrder)
-qt.shown = _d("")
+bby.mainWanted = atkg
+bby.mainOrder = bby.ordered(atkg, bby.mainOrder)
+bby.shown = _d("")
 end,
-}, _d("AVUcWz0TAglR"))
+}, _d("FVdeBCkESh1T"))
 
-btd.misc.skillRaidDropdown = btd.misc.skillSection:Dropdown({
-Name = _d("PlUcUUITAglR"),
+yvcz.misc.skillRaidDropdown = yvcz.misc.skillSection:Dropdown({
+Name = _d("KldeDlYESh1T"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = btd.misc.skill.branchLabels(2),
-Callback = function(pne)
-local mnvo = btd.misc.skill
-local gnfp = mnvo.wantedFrom(pne, 2)
+Options = yvcz.misc.skill.branchLabels(2),
+Callback = function(szb)
+local cnx = yvcz.misc.skill
+local sm = cnx.wantedFrom(szb, 2)
 
-mnvo.raidWanted = gnfp
-mnvo.raidOrder = mnvo.ordered(gnfp, mnvo.raidOrder)
-mnvo.shown = _d("")
+cnx.raidWanted = sm
+cnx.raidOrder = cnx.ordered(sm, cnx.raidOrder)
+cnx.shown = _d("")
 end,
-}, _d("HlUcUT0TAglR"))
+}, _d("CldeDikESh1T"))
 
 pcall(function()
-btd.misc.skillMainDropdown:UpdateSelection({})
+yvcz.misc.skillMainDropdown:UpdateSelection({})
 end)
 
 pcall(function()
-btd.misc.skillRaidDropdown:UpdateSelection({})
+yvcz.misc.skillRaidDropdown:UpdateSelection({})
 end)
 
-btd.misc.skillParagraph = btd.misc.skillSection:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = btd.misc.skill.text(),
+yvcz.misc.skillParagraph = yvcz.misc.skillSection:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = yvcz.misc.skill.text(),
 })
 
 task.spawn(function()
-local xitl = btd.misc.util
+local pdl = yvcz.misc.util
 
-while xkj() do
-if xitl.indexOn or xitl.achOn or xitl.questOn or xitl.accOn or xitl.accBuyOn then
-xitl.currentProfile()
+while gsk() do
+if pdl.indexOn or pdl.achOn or pdl.questOn or pdl.accOn or pdl.accBuyOn then
+pdl.currentProfile()
 end
 
-if xitl.indexOn then
-xitl.claimIndex()
+if pdl.indexOn then
+pdl.claimIndex()
 end
 
-if xitl.achOn then
-xitl.claimAchievement()
+if pdl.achOn then
+pdl.claimAchievement()
 end
 
-if xitl.questOn then
+if pdl.questOn then
 
-if os.clock() - xitl.questAskedAt > 20 or os.clock() - xitl.weeklyAskedAt > 20 then
-xitl.askQuests()
+if os.clock() - pdl.questAskedAt > 20 or os.clock() - pdl.weeklyAskedAt > 20 then
+pdl.askQuests()
 end
 
-xitl.claimQuest()
+pdl.claimQuest()
 end
 
-if xitl.accOn and os.clock() >= xitl.accAt then
-xitl.accAt = os.clock() + 3
-xitl.equipBest()
+if pdl.accOn and os.clock() >= pdl.accAt then
+pdl.accAt = os.clock() + 3
+pdl.equipBest()
 end
 
-local bst = btd.misc.cards
+local yq = yvcz.misc.cards
 
-if not bst.inFlight then
-if bst.mergeOn and os.clock() >= bst.mergeAt then
-bst.run(true, nil, true)
-elseif bst.deconOn and os.clock() >= bst.deconAt then
-bst.run(false, nil, true)
+if not yq.inFlight then
+if yq.mergeOn and os.clock() >= yq.mergeAt then
+yq.run(true, nil, true)
+elseif yq.deconOn and os.clock() >= yq.deconAt then
+yq.run(false, nil, true)
 end
 end
 
-if bst.mergeDone ~= bst.mergeShown then
-bst.mergeShown = bst.mergeDone
+if yq.mergeDone ~= yq.mergeShown then
+yq.mergeShown = yq.mergeDone
 
 pcall(function()
-btd.misc.mergeParagraph:UpdateBody(btd.misc.cards.mergeText())
+yvcz.misc.mergeParagraph:UpdateBody(yvcz.misc.cards.mergeText())
 end)
 end
 
-if bst.deconDone ~= bst.deconShown then
-bst.deconShown = bst.deconDone
+if yq.deconDone ~= yq.deconShown then
+yq.deconShown = yq.deconDone
 
 pcall(function()
-btd.misc.deconParagraph:UpdateBody(btd.misc.cards.deconText())
+yvcz.misc.deconParagraph:UpdateBody(yvcz.misc.cards.deconText())
 end)
 end
 
-local fs = btd.misc.skill
+local blmo = yvcz.misc.skill
 
-if fs.on and os.clock() >= fs.at then
+if blmo.on and os.clock() >= blmo.at then
 
-fs.at = os.clock() + 2
-fs.upgrade()
+blmo.at = os.clock() + 2
+blmo.upgrade()
 end
 
-local lnr = btd.misc.skill.text()
+local itp = yvcz.misc.skill.text()
 
-if fs.shown ~= lnr then
-fs.shown = lnr
+if blmo.shown ~= itp then
+blmo.shown = itp
 
 pcall(function()
-btd.misc.skillParagraph:UpdateBody(lnr)
+yvcz.misc.skillParagraph:UpdateBody(itp)
 end)
 end
 
-if xitl.accBuyOn and os.clock() >= xitl.accBuyAt then
+if pdl.accBuyOn and os.clock() >= pdl.accBuyAt then
 
-local ug = xitl.buyBest()
+local mffl = pdl.buyBest()
 
-xitl.accBuyAt = os.clock() + (ug and 45 or 10)
+pdl.accBuyAt = os.clock() + (mffl and 45 or 10)
 end
 
-local rewd = {
-{ key = _d("BVoRUBo"), paragraph = btd.misc.indexParagraph, value = xitl.indexText() },
-{ key = _d("DVcd"), paragraph = btd.misc.achParagraph, value = xitl.achText() },
-{ key = _d("HUEQRhY"), paragraph = btd.misc.questParagraph, value = xitl.questText() },
-{ key = _d("HFUWXg"), paragraph = btd.misc.packParagraph, value = xitl.packText() },
-{ key = _d("DVcW"), paragraph = btd.misc.accParagraph, value = xitl.accText() },
+local xoey = {
+{ key = _d("EVhTDw4"), paragraph = yvcz.misc.indexParagraph, value = pdl.indexText() },
+{ key = _d("GVVf"), paragraph = yvcz.misc.achParagraph, value = pdl.achText() },
+{ key = _d("CUNSGQI"), paragraph = yvcz.misc.questParagraph, value = pdl.questText() },
+{ key = _d("CFdUAQ"), paragraph = yvcz.misc.packParagraph, value = pdl.packText() },
+{ key = _d("GVVU"), paragraph = yvcz.misc.accParagraph, value = pdl.accText() },
 }
 
-for zaz, ajla in ipairs(rewd) do
-if ajla.paragraph and xitl.shown[ajla.key] ~= ajla.value then
-xitl.shown[ajla.key] = ajla.value
+for vdo, drjq in ipairs(xoey) do
+if drjq.paragraph and pdl.shown[drjq.key] ~= drjq.value then
+pdl.shown[drjq.key] = drjq.value
 
 pcall(function()
-ajla.paragraph:UpdateBody(ajla.value)
+drjq.paragraph:UpdateBody(drjq.value)
 end)
 end
 end
@@ -13785,138 +13792,138 @@ task.wait(0.75)
 end
 end)
 
-local yoan = styw:Section({
-Side = _d("Pl0SXRY"),
+local xxrq = jsi:Section({
+Side = _d("Kl9QAgI"),
 })
 
-yoan:Paragraph({
-Header = _d("Kl0GXQsJFw"),
-Body = _d("LUEBWkIhGR9cVVATEhkcR1VMDRICTEYaUU5HFg1XEEZCExgJFAJUFgICTFUbUUIEER9ABhUNCVAFQAYVDRAeQBQBXQcJUB5REFkRRwcEURsVEQgdCUAdXAwAUA5dAVARSVA4ZFVBDUcyDU1VRRcLHB8UDFoXRxINVx4VFghQGFwQFQAGCUxSHEcRE1xMVRtRQhMYCRQBQg1HNAlRBVARE1A7VQFQEEcDG10BVgoCA0xcGlkGRwQEUVVGEggETE0aQEIQFR5RVUYWBh4IXRtSQggeTEMdUAxHCQNBVVQQChUIFAFdBwpQQRQBXQdHFAlRBVARE1AeXRtSQgQRHkYcUBFHBARRVVcLABcJRwEVDhITBxQXWgwSA0I+f2EKAlAfXBpFQgUFFUdVVAwDUAlFAFwSFFAeWxFGQgYeCBQXVAsTUBtdAV1CExgJFBZUERMDTE0aQEIPERpRWxUgEgkFWhIVDAIVCEdVQQoCUA9bAFsWAgJMGVVXDRMYTFcaWAdHFh5bGBUWDxVMchxGCgICAVUbG2htMw1AFl0HFFAHURBFEUcRTEYAWwwOHgsUAVQOCwlMVgwVCxMVARQUWwZHAw1CEEZCDgRAFAZaQhMYCRQBWhYGHExXFEcQDhUfFBpDBxVQDlEBQgcCHkxHEEYRDh8CR1s"),
+xxrq:Paragraph({
+Header = _d("Pl9EAh8eXw"),
+Body = _d("OUNDBVY2UQteFw8HBVEIRRcTGQVKWERYDlpQXhlVUhlWBFAdFkALAhVKWFdZDlYTWQtCREoZHhgRQkRKGQdWVBZDAhMeGApTUgYFUE8QU1lKBR9VHUJfAxgXGBpfQw8FXhgsZhceGVB6GU8XGgMcVAsWTgUDUFoZVVxKAh8YDF5SShQRQVhQXhgFBBRYV1kOVgRQHRZDHRlQfB1TRw8FBBgvV0MPBFBLD19DCR4VS1heWAYSUEwQUxcZBh9MWE9YH1YHXQpTFxkCEVYcX1kNVh9WWEFfDxhQQRdDFwsEHV0cFkMCEx0YVRZDAhNQXB1TRw8FBBgKX1kNVhNZCkReDwVQTBBTFwgfF18dRUNKGgVbExZVBRgFS1Y8PT4eFRgLXlgaVhJNAUUXCxgUGB1HQgMGAxgKWVMZVhFWHBZVCx8EGA9fQwJWBFAdFlQLBQRLWE9YH1YYWQ5TGUo0BUERWFBKGBVdHEUXHh4VGBtZQgQCFUpYGxcIGQRQWFVYBxNQXgpZWkoCGF1YcF4ZHhVKFVdZRHx6exlCVAITAxgTU1IaBVBZWERCBBgZVh8WQwsaHEFYVE5KHwRdFRZWBBJQSxlAUhlWGUxUFkQFVgRQHRZDBQIRVFhVVhgEGV0LFlgcEwIYGlNDHRMVVlhFUhkFGVcWRRk"),
 })
 
-local poer = styw:Section({
-Side = _d("Pl0SXRY"),
+local gjhu = jsi:Section({
+Side = _d("Kl9QAgI"),
 })
 
-poer:Header({
-Name = _d("L1UBVgoCAw"),
+gjhu:Header({
+Name = _d("O1dDCR4VSw"),
 })
 
-local ucbk
+local iubh
 
-ucbk = poer:Paragraph({
-Header = _d("O1wUQUIeHxkUFlQXABgY"),
-Body = olo(),
+iubh = gjhu:Paragraph({
+Header = _d("L15WHlYJVw0WVAsDF1AM"),
+Body = ss(),
 })
 
-local ngs = styw:Section({
-Side = _d("Pl0SXRY"),
+local yun = jsi:Section({
+Side = _d("Kl9QAgI"),
 })
 
-ngs:Header({
-Name = _d("JUcZVAwDUB9cGkU"),
+yun:Header({
+Name = _d("MUVbCxgUGAteWBo"),
 })
 
-ngs:Toggle({
-Name = _d("LUEBWkIEAg1SARUQCBQ"),
+yun:Toggle({
+Name = _d("OUNDBVYTShlQQ0oEH1w"),
 Default = false,
-Callback = function(wogy)
-pa.island.autoRod = wogy
-pa.islandAt = 0
+Callback = function(dvi)
+wf.island.autoRod = dvi
+wf.islandAt = 0
 end,
-}, _d("BUcZVAwDLw1BAVo9FR8I"))
+}, _d("EUVbCxgUZxlDQwUpAlcc"))
 
-ngs:Toggle({
-Name = _d("LUEBWkIEAg1SARUDBBMJRwZaEB4"),
+yun:Toggle({
+Name = _d("OUNDBVYTShlQQ0oXE1sdRUQFBAk"),
 Default = false,
-Callback = function(ezv)
-pa.island.autoAcc = ezv
-pa.islandAt = 0
+Callback = function(gvq)
+wf.island.autoAcc = gvq
+wf.islandAt = 0
 end,
-}, _d("BUcZVAwDLw1BAVo9BhMPUQZGDRUJ"))
+}, _d("EUVbCxgUZxlDQwUpEVsbU0QZGQJB"))
 
-ngs:Toggle({
-Name = _d("KUUAXBJHEQ9XEEYRCAIV"),
+yun:Toggle({
+Name = _d("PUdCAwZQWRtVUhkFH0oB"),
 Default = false,
-Callback = function(qmzg)
-pa.island.equipAcc = qmzg
-pa.islandAt = 0
+Callback = function(gtey)
+wf.island.equipAcc = gtey
+wf.islandAt = 0
 end,
-}, _d("BUcZVAwDLwlFAFwSOBEPVxBGEQgCFQ"))
+}, _d("EUVbCxgUZx1HQgMGL1kbVVIZBR9KAQ"))
 
-local xgk
+local kwmd
 
-xgk = ngs:Paragraph({
-Header = _d("JUcZVAwDUAtRFEc"),
-Body = pa.shopIsland.text(),
+kwmd = yun:Paragraph({
+Header = _d("MUVbCxgUGB9TVhg"),
+Body = wf.shopIsland.text(),
 })
 
-local gy = styw:Section({
-Side = _d("IFETQQ"),
+local qcz = jsi:Section({
+Side = _d("NFNRHg"),
 })
 
-gy:Header({
-Name = _d("PlEXXBATGA"),
+qcz:Header({
+Name = _d("KlNVAwQEUA"),
 })
 
-pa.rebirthToggle = gy:Toggle({
-Name = _d("LUEBWkIVFQ5dB0EK"),
+wf.rebirthToggle = qcz:Toggle({
+Name = _d("OUNDBVYCXRpfRR4e"),
 Default = false,
-Callback = function(hhox)
-pa.autoRebirth = hhox
+Callback = function(glhy)
+wf.autoRebirth = glhy
 end,
-}, _d("DUEBWj0VFQ5dB0EK"))
+}, _d("GUNDBSkCXRpfRR4e"))
 
-pa.rebirthParagraph = gy:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = pa.rebirthText(),
+wf.rebirthParagraph = qcz:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = wf.rebirthText(),
 })
 
-gy:Button({
-Name = _d("OGRVQQ1HGR9YFFsG"),
+qcz:Button({
+Name = _d("LGYXHhlQUQtaVgQS"),
 Callback = function()
-if not pa.gotoIsland() then
-qza:Notify({
-Title = _d("LVYUWwYIHglQVXwRCxECUA"),
-Description = _d("L1wURwMEBAlGVVwRRx4DQFVHBwYUFRQMUBZHXUxAB0xCBhcNXRsVCwlQDRQYWg8CHhga"),
+if not wf.gotoIsland() then
+zcwe:Notify({
+Title = _d("OVRWBBIfVh1SFyMFHFkWUg"),
+Description = _d("O15WGBcTTB1EFwMFUFYXQhcYExFcARZODwJQFVhCRRNWEV8ZX1lKHx4YGRZaBRsVVgwY"),
 Lifetime = 5,
 })
 end
 end,
 })
 
-local xcp
+local ngv
 
-xcp = gy:Toggle({
-Name = _d("LUEBWkIuAwBVG1FCLxEeUBZaEAI"),
+ngv = qcz:Toggle({
+Name = _d("OUNDBVY5SxRXWQ5WOFkKUlQFBBU"),
 Default = false,
-Callback = function(gli)
-yme.island = gli
-yme.pending = false
-yme.pendingUntil = 0
-yme.paused = false
-yme.gaveUp = false
-yme.stoodDown = false
-yme.manualPause = false
+Callback = function(lct)
+rs.island = lct
+rs.pending = false
+rs.pendingUntil = 0
+rs.paused = false
+rs.gaveUp = false
+rs.stoodDown = false
+rs.manualPause = false
 
-if not gli then
+if not lct then
 return
 end
 
-if rqc.otherTowerOn(_d("BFUHUQEIAgk")) then
-yme.island = false
+if fq.otherTowerOn(_d("EFdFDhUfSh0")) then
+rs.island = false
 
 pcall(function()
-xcp:UpdateState(false)
+ngv:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIuAwBVG1FCLxEeUBZaEAJQA1IT"),
-Description = _d("OFwQFSoGHABbAlAHCVAYWwJQEEcZHxQUWRACEQhNVUcXCR4FWhIZQgYeCBQCXBYPUANaEBURCx8YFAFdB0cXDVkQFQ0JHBUUB0AMFFADWhAVCwkWBVocQQdHAgNbGBUDE1ANFAFcDwJeTGAARwxHBARVARUNARZAFBpHQhMFHlpVWgxHMRlAGhUxCx8YFAZaQgIRD1xVQQ0QFR4UElAWFFAFQAYVDRAeTEcZWhZJ"),
+zcwe:Dialog({
+Title = _d("OUNDBVY5SxRXWQ5WOFkKUlQFBBUYF1BR"),
+Description = _d("LF5SSj4RVBRZQA8THhgMWUAPBFBRCxZWBgQVWRxPFxgDHlYRWFBGVhFWHBZAAwIYGBdYUkoFHFcMFkMCE1BfGVtSShkeVAEWRR8YAxgXWFJKHx5eEVheHhNQShdZWkoXBBgZFkMDGxUWWGJCGBhQTBBXQ0oZFl5UFlgYVgRNClgXBRhQeQ1CWEolHFcMFkQFVhVZG14XHhkHXQoWUA8CAxgRQkRKGQdWWEVbBQJe"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -13925,20 +13932,20 @@ end)
 return
 end
 
-if rqc.enabled and rqc.hardcoreSlot() == nil then
-yme.island = false
+if fq.enabled and fq.hardcoreSlot() == nil then
+rs.island = false
 
 pcall(function()
-xcp:UpdateState(false)
+ngv:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIuAwBVG1FCLxEeUBZaEAJQA1IT"),
-Description = _d("IltVRg4IBExdBhURAgRMQBoVA0cEA0MQR05HEQJQVUEKAlALVRhQQggeAE1VRhYGAhhHVVRCEx8bUQcVEBIeTFIHWg9HEUxAGkIHFVAfWBpBTEcjCUBVWgwCUBhbVXwRCxECUFVdAxUUD1sHUE5HHx4UAUAQCVAtQQFaQjQcA0BVWgQBXg"),
+zcwe:Dialog({
+Title = _d("OUNDBVY5SxRXWQ5WOFkKUlQFBBUYF1BR"),
+Description = _d("NlkXGRofTFhfREoFFUxYQlhKF1BMF0FSGFpQWRZSFx4eFRgfV1oPVh9WFE8XGQIRSgxFFwtWBFcPU0VKBAVWWFBFBRtQWVhCWB0TAhgLWlgeWFBrHUIXBRgVGAxZFyMFHFkWUhcCFwJcG1lFD1pQVwoWQx8EHhg5Q0MFViNUF0IXBRAWFg"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -13947,20 +13954,20 @@ end)
 return
 end
 
-if not yme.data then
-yme.island = false
+if not rs.data then
+rs.island = false
 
 pcall(function()
-xcp:UpdateState(false)
+ngv:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIuAwBVG1FCLxEeUBZaEAJQA1IT"),
-Description = _d("OFwcRkIFBQVYERUKBgNMWhoVKgYCCFcaRwczHxtRB3EDExFAFAZaQhMYCRQBWhUCAktHVUYWBhcJR1VWAwkeA0BVVwdHAglVERUDCRRMVVVHFwlQD1UbWw0TUA5RVUYWBgIYUREb"),
+zcwe:Dialog({
+Title = _d("OUNDBVY5SxRXWQ5WOFkKUlQFBBUYF1BR"),
+Description = _d("LF5eGVYSTRFaU0oeEUtYWFhKPhFKHFVYGBMkVw9TRS4XBFlUFkQFVgRQHRZDBQEVSl9FFxkCEV8dRRcJFx5WF0IXCBNQSh1XU0oXHlxYVxcYAx4YG1dZBBkEGBpTFxkCEUoMU1NE"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -13969,131 +13976,131 @@ end)
 return
 end
 
-local fdgf = yme.remotes.request
+local nbh = rs.remotes.request
 
-if fdgf then
+if nbh then
 pcall(function()
-fdgf:FireServer()
+nbh:FireServer()
 end)
 end
 end,
-}, _d("DUEBWj0OAwBVG1E9DxEeUBZaEAI"))
+}, _d("GUNDBSkZSxRXWQ4pGFkKUlQFBBU"))
 
-yme.islandToggle = xcp
+rs.islandToggle = ngv
 
-yme.islandParagraph = gy:Paragraph({
-Header = _d("LkETUxE"),
-Body = yme.buffText(),
+rs.islandParagraph = qcz:Paragraph({
+Header = _d("OkNRDAU"),
+Body = rs.buffText(),
 })
 
-gy:Button({
-Name = _d("PFUARgdHOR9YFFsGRzgNRhFWDRUV"),
+qcz:Button({
+Name = _d("KFdCGRNQcQtaVgQSUHAZRFMJGQJd"),
 Callback = function()
-if yme.pauseRun then
-yme.pauseRun()
+if rs.pauseRun then
+rs.pauseRun()
 end
 end,
 })
 
-gy:Button({
-Name = _d("K10DUEIyAEx9BlkDCRRMfBRHBgQfHlE"),
+qcz:Button({
+Name = _d("P19BD1YlSFh/RAYXHlxYflYYEhNXClM"),
 Callback = function()
-if yme.giveUpRun then
-yme.giveUpRun()
+if rs.giveUpRun then
+rs.giveUpRun()
 end
 end,
 })
 
-local jwq = styw:Section({
-Side = _d("IFETQQ"),
+local ti = jsi:Section({
+Side = _d("NFNRHg"),
 })
 
-jwq:Header({
-Name = _d("Kl0GXQsJF0xHHVoS"),
+ti:Header({
+Name = _d("Pl9EAh8eX1hFXwUG"),
 })
 
-jwq:Toggle({
-Name = _d("LUEBWkIFBRUUF1ARE1AeWxE"),
+ti:Toggle({
+Name = _d("OUNDBVYSTQEWVQ8FBBgKWVM"),
 Default = false,
-Callback = function(dwv)
-pa.shop.autoBuyRod = dwv
-pa.shopAt = 0
+Callback = function(vjux)
+wf.shop.autoBuyRod = vjux
+wf.shopAt = 0
 end,
-}, _d("DUEBWj0FBRVrF1AREy8eWxE"))
+}, _d("GUNDBSkSTQFpVQ8FBGcKWVM"))
 
-jwq:Toggle({
-Name = _d("LUEBWkIFBRUUF1ARE1AOVRxB"),
+ti:Toggle({
+Name = _d("OUNDBVYSTQEWVQ8FBBgaV14e"),
 Default = false,
-Callback = function(nz)
-pa.shop.autoBuyBait = nz
-pa.shopAt = 0
+Callback = function(obqi)
+wf.shop.autoBuyBait = obqi
+wf.shopAt = 0
 end,
-}, _d("DUEBWj0FBRVrF1AREy8OVRxB"))
+}, _d("GUNDBSkSTQFpVQ8FBGcaV14e"))
 
-jwq:Toggle({
-Name = _d("KUUAXBJHEglHARUQCBQ"),
+ti:Toggle({
+Name = _d("PUdCAwZQWh1FQ0oEH1w"),
 Default = false,
-Callback = function(hvt)
-pa.shop.equipRod = hvt
-pa.shopAt = 0
+Callback = function(hey)
+wf.shop.equipRod = hey
+wf.shopAt = 0
 end,
-}, _d("CUUAXBI4EglHAWoQCBQ"))
+}, _d("HUdCAwYvWh1FQzUEH1w"))
 
-jwq:Toggle({
-Name = _d("KUUAXBJHEglHARUABhkY"),
+ti:Toggle({
+Name = _d("PUdCAwZQWh1FQ0oUEVEM"),
 Default = false,
-Callback = function(qxb)
-pa.shop.equipBait = qxb
-pa.shopAt = 0
+Callback = function(caeg)
+wf.shop.equipBait = caeg
+wf.shopAt = 0
 end,
-}, _d("CUUAXBI4EglHAWoABhkY"))
+}, _d("HUdCAwYvWh1FQzUUEVEM"))
 
-local jbz
+local kk
 
-jbz = jwq:Paragraph({
-Header = _d("LlEGQUIeHxkUFlQMRxUdQRxF"),
-Body = pr(),
+kk = ti:Paragraph({
+Header = _d("OlNEHlYJVw0WVAsYUF0JQ14a"),
+Body = fdv(),
 })
 task.spawn(function()
-local sgwn = dr()
-local czl = olo()
-local jzse = pr()
-local ndnb = pa.shopIsland.text()
+local rvh = quz()
+local fvq = ss()
+local nkl = fdv()
+local kjen = wf.shopIsland.text()
 
-while xkj() do
-local llny = dr()
+while gsk() do
+local wnfh = quz()
 
-if llny ~= sgwn then
-sgwn = llny
+if wnfh ~= rvh then
+rvh = wnfh
 pcall(function()
-gfg:UpdateBody(llny)
+hrv:UpdateBody(wnfh)
 end)
 end
 
-local xgc = olo()
+local jug = ss()
 
-if xgc ~= czl then
-czl = xgc
+if jug ~= fvq then
+fvq = jug
 pcall(function()
-ucbk:UpdateBody(xgc)
+iubh:UpdateBody(jug)
 end)
 end
 
-local sty = pr()
+local uqo = fdv()
 
-if sty ~= jzse then
-jzse = sty
+if uqo ~= nkl then
+nkl = uqo
 pcall(function()
-jbz:UpdateBody(sty)
+kk:UpdateBody(uqo)
 end)
 end
 
-local fxb = pa.shopIsland.text()
+local clus = wf.shopIsland.text()
 
-if fxb ~= ndnb then
-ndnb = fxb
+if clus ~= kjen then
+kjen = clus
 pcall(function()
-xgk:UpdateBody(fxb)
+kwmd:UpdateBody(clus)
 end)
 end
 
@@ -14102,57 +14109,57 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-if mw() and os.clock() >= (pa.shopAt or 0)
-and os.clock() >= (pa.islandTripUntil or 0) then
-pa.shopAt = os.clock() + 1
-pcall(vsz)
+if md() and os.clock() >= (wf.shopAt or 0)
+and os.clock() >= (wf.islandTripUntil or 0) then
+wf.shopAt = os.clock() + 1
+pcall(mgr)
 end
 
-if pa.shopIsland.active() and os.clock() >= (pa.islandAt or 0)
-and os.clock() >= math.max(pa.shopHoldUntil or 0, pa.tpHoldUntil or 0) then
-pa.islandAt = os.clock() + 2
-pcall(pa.shopIsland.run)
+if wf.shopIsland.active() and os.clock() >= (wf.islandAt or 0)
+and os.clock() >= math.max(wf.shopHoldUntil or 0, wf.tpHoldUntil or 0) then
+wf.islandAt = os.clock() + 2
+pcall(wf.shopIsland.run)
 end
 
 task.wait(1)
 end
 end)
 
-njun:Select()
+uxr:Select()
 
-local onnk = njun:Section({
-Side = _d("IFETQQ"),
+local vh = uxr:Section({
+Side = _d("NFNRHg"),
 })
 
-local wzc = njun:Section({
-Side = _d("Pl0SXRY"),
+local inn = uxr:Section({
+Side = _d("Kl9QAgI"),
 })
 
-local js = onnk:Paragraph({
-Header = _d("P0AUQRcU"),
-Body = rkj(),
+local xcku = vh:Paragraph({
+Header = _d("K0JWHgMD"),
+Body = qph(),
 })
 
-onnk:Divider()
+vh:Divider()
 
-rcj.npcToggle = onnk:Toggle({
-Name = _d("LUEBWkIpIC8"),
+npj.npcToggle = vh:Toggle({
+Name = _d("OUNDBVY+aDs"),
 Default = false,
-Callback = function(wjf)
+Callback = function(sjb)
 
-if wjf and not rcj.story and #zhc() == 0 then
+if sjb and not npj.story and #fipo() == 0 then
 pcall(function()
-rcj.npcToggle:UpdateState(false)
+npj.npcToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkIpIC8UG1AHAwNMVVVBAxUXCUA"),
-Description = _d("PF0WXkIGBExYEFQRE1ADWhAVLDczTFIHWg9HBARRVUINFRwIR1VXBwsfGxhVWhBHBBlGGxUNCVAtQQFaQiQfAUQZUBYCUD9AGkcbSVA4XBBHB0cZHxQbWhYPGQJTVUENRxYFUx1BQh4VGBo"),
+zcwe:Dialog({
+Title = _d("OUNDBVY+aDsWWQ8TFEtYVxceFwJfHUI"),
+Description = _d("KF9UAVYRTFhaUgsFBBgXWFJKOCB7WFBFBRtQTBBTFx0ZAlQcRRcIExxXDxoXBQRQTA1EWUoZHhg5Q0MFVjNXFUZbDwIVGCtCWBgPXhgsXlIYE1BRCxZZBQIYURZRFx4ZUF4RUV8eVgldDBg"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -14160,84 +14167,84 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-rcj.enabled = wjf
+npj.enabled = sjb
 end,
-}, _d("DUEBWj0JAA8"))
+}, _d("GUNDBSkeSBs"))
 
-onnk:Toggle({
-Name = _d("O1UZXkITH0x6JXY"),
+vh:Toggle({
+Name = _d("L1dbAVYEV1h4Zyk"),
 Default = false,
-Callback = function(vdu)
-rcj.walkToNpc = vdu
+Callback = function(wb)
+npj.walkToNpc = wb
 end,
-}, _d("G1UZXj0THzNaBVY"))
+}, _d("D1dbASkEVydYRwk"))
 
-onnk:Dropdown({
-Name = _d("KF0TUwsEBQBADA"),
+vh:Dropdown({
+Name = _d("PF9RDB8TTRRCTg"),
 Search = false,
 Multi = true,
 Required = false,
-Default = { _d("IlsHWAML") },
-Options = mho,
-Callback = function(ye)
-local lbhp = {}
+Default = { _d("NllFBxcc") },
+Options = kp,
+Callback = function(cskq)
+local xba = {}
 
-if type(ye) == _d("GFUXWQc") then
-for ldhu, vf in ipairs(mho) do
-if ye[vf] then
-table.insert(lbhp, lle[vf])
+if type(cskq) == _d("DFdVBhM") then
+for xxae, tir in ipairs(kp) do
+if cskq[tir] then
+table.insert(xba, acyl[tir])
 end
 end
-end
-
-if #lbhp == 0 then
-lbhp = { _d("AlsHWAML") }
 end
 
-rcj.difficulties = lbhp
+if #xba == 0 then
+xba = { _d("FllFBxcc") }
+end
+
+npj.difficulties = xba
 end,
-}, _d("CF0TUwsEBQBADA"))
+}, _d("HF9RDB8TTRRCTg"))
 
-onnk:Toggle({
-Name = _d("LUEBWkI1HwNZBg"),
+vh:Toggle({
+Name = _d("OUNDBVYiVxdbRA"),
 Default = false,
-Callback = function(ms)
-fwd.enabled = ms
-fwd.inBattle = false
-fwd.pending = false
+Callback = function(iww)
+dyx.enabled = iww
+dyx.inBattle = false
+dyx.pending = false
 end,
-}, _d("DUEBWj0VHwNZBg"))
+}, _d("GUNDBSkCVxdbRA"))
 
-local pnz = njun:Section({
-Side = _d("IFETQQ"),
+local kdy = uxr:Section({
+Side = _d("NFNRHg"),
 })
 
-pnz:Header({
-Name = _d("P1gaQQ"),
+kdy:Header({
+Name = _d("K1pYHg"),
 })
 
-pnz:Paragraph({
-Header = _d("JFsCFRYPFUxHGVoWFFAbWwde"),
-Body = _d("P1gaQUJWUEEUPFsEDh4FQAwVNggHCUZVHQwIAgFVGRUNFVAiXRJdFgoRHlFcFQ0VUCRVGVkNEBUJWlVhDRAVHhhVRQ4SA0x6JXZCBREYQBlQEUcHBFEbFRELHxgURxULFFAOQQZMTG16P1gaQUJVUEEUO2UhFFxMRhRcBhRcTEYaWg8UXEx9BlkDCRRMfBRHBgQfHlFbP2glHxhcVUYOCAQfFBpbQikgLxQXVBYTHAlHTxUWEB9MeiV2QgEVDUAARwcUUA1AVVoMBBVAFBRbBkcRTEYUXAZHEgNHBhUHBhMEGn8/NhAfTEAaQgcVUB5BG0ZCDgNMQB1QQggeAE1VRwcBBR9RERUSBhkeFFgVKxQcDVoRFSoGAghXGkcHRx8CFBdaFg9QH1gaQRFHGR8UGlsHRwIZWlVUEQwVCBQTWhBHBBtdFlBMbXo/WBpBEUcfClJPFQ0JFUxHGVoWS1AYWwJQEBRQGFUeUEITBR5aBhs"),
+kdy:Paragraph({
+Header = _d("MFlASgIYXVhFWwUCAxgPWUUB"),
+Body = _d("K1pYHlZBGFUWfgQQGVYRQk5KIh9PHUQXQhgfShVXW0oZAhg2X1ACAh1ZClMeShkCGDBXWwYZB10dWBc+GQddChoXGhoFS1h4ZylWElkMQlsPBVBPEFNZSgUcVwwWBUofAxgaQ0QTWHoyK1pYHlZCGFUWeTo1AxRYRFYDEgMUWERYBRsDFFh/RAYXHlxYflYYEhNXClMZYHwyVwxeFxkaH0wLFlgEVj5oOxZVCwIEVB1FDUoCB1dYeGcpVhZdGUJCGBMDGBlCFwUYE11UFlYEElBZWERWAxJQWhdFREoTEVsQGD1gIgdXWEJYHRMCGApDWRlWGUtYQl8PVh9WFE8XGBMWTQtTU0oGEVEKFhpKPwNUGVhTSj4RShxVWBgTUFcWFlUFAhgYC1pYHgVQUQsWWAQTUEoNWBcLBRtdHBZRBQRQTA9fVA9YejIrWlgeBVBXHlANShkeXVhFWwUCXBgMWUAPBAMYDFdcD1YETQpYREQ"),
 })
 
-rqc.toggle = pnz:Toggle({
-Name = _d("LUEBWkI0HANA"),
+fq.toggle = kdy:Toggle({
+Name = _d("OUNDBVYjVBdC"),
 Default = false,
-Callback = function(po)
-if po and rqc.role[1] == rqc.role[2] and rqc.role[1] ~= _d("AkQW") then
-rqc.enabled = false
+Callback = function(llth)
+if llth and fq.role[1] == fq.role[2] and fq.role[1] ~= _d("FkZU") then
+fq.enabled = false
 
 pcall(function()
-rqc.toggle:UpdateState(false)
+fq.toggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkI0HANA"),
-Description = _d("P1gaQUJWUA1aERUxCx8YFEcVAxUVTFYaQQpH") .. rqc.roleLabel(1) .. _d("QhQhXQMTUAVHVVoMAlAeQRsVAxQbCVBVUw0VUBhDHFYHS1AfW1VaDAJQA1JVQQoCUBhDGhURCx8YR1VdAxRQGFtVVwdHAwNZEEEKDh4LFBBZEQJe"),
+zcwe:Dialog({
+Title = _d("OUNDBVYjVBdC"),
+Description = _d("K1pYHlZBGBlYU0olHFcMFgVKFwJdWFRYHh5Q") .. fq.roleLabel(1) .. _d("VhZjAhcEGBFFFwUYFRgKQ1lKFwNTHVIXDBkCGAxBXgkTXBgLWRcFGBUYF1AXHh4VGAxBWEoFHFcMRRcCFwMYDFkXCBNQSxdbUh4eGVYfFlIGBRUW"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -14245,45 +14252,45 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-rqc.enabled = po
+fq.enabled = llth
 
-if po then
-rqc.hasSlot2 = rqc.detectSlot2()
+if llth then
+fq.hasSlot2 = fq.detectSlot2()
 
-if rqc.hasSlot2 == false then
-qza:Dialog({
-Title = _d("LUEBWkI0HANA"),
-Description = _d("P1gaQUJVUABbGl4RRxwDVx5QBkddTF0BFQwCFQhHVUEKAlAoQRRZQiURGEAZUEI0HANAVVIDChUcVQZGTkcfHhQ8WwQOHgVAEBUwCB8BFEcAUkcTAFEURwcDXExWEFMNFRVMQB1QQhQVD1sbUUIUHANAVVYDCVAOVQFBDgJeTGYaQBYOHgsUBkEDHgNMWxsVEQsfGBREFRcJBAVYVUEKAh5C"),
+if fq.hasSlot2 == false then
+zcwe:Dialog({
+Title = _d("OUNDBVYjVBdC"),
+Description = _d("K1pYHlZCGBRZWAEFUFQXVVwPElAVWF9DShgVXRxFFx4eFRg8Q1YGVjJZDEJbD1YjVBdCFw0XHV0IV0QZWlBXChZ+BBAZVhFCUkokH1cVFgVfRlBbFFNWGBMUFFhUUgwZAl1YQl8PVgNdG1lZDlYDVBdCFwkXHhgaV0MeGhUWWGRYHwIZVh8WRB4XCUtYWVlKBRxXDBYGSgMeTBFaFx4eFVZW"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
 end
 end
 end,
-}, _d("DUEBWj0UHANA"))
+}, _d("GUNDBSkDVBdC"))
 
-function rqc.applyRoles()
-if not rqc.enabled then
+function fq.applyRoles()
+if not fq.enabled then
 return
 end
 
-if rqc.role[1] == rqc.role[2] and rqc.role[1] ~= _d("AkQW") then
-rqc.enabled = false
+if fq.role[1] == fq.role[2] and fq.role[1] ~= _d("FkZU") then
+fq.enabled = false
 
 pcall(function()
-rqc.toggle:UpdateState(false)
+fq.toggle:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkI0HANAVVoEAQ"),
-Description = _d("P1gaQUJWUA1aERUxCx8YFEcVAxUVTFYaQQpH") .. rqc.roleLabel(1) .. _d("QhQhXQMTUAVHVVoMAlAeQRsVAxQbCVBVUw0VUBhDHFYHS1ANWhEVCxNQD1UbWw0TUBhVHlBCEwcDFAZZDRMDQhQmUBZHHwJRVUYOCARMQBoVEQgdCUAdXAwAUAlYBlBM"),
+zcwe:Dialog({
+Title = _d("OUNDBVYjVBdCFwUQFg"),
+Description = _d("K1pYHlZBGBlYU0olHFcMFgVKFwJdWFRYHh5Q") .. fq.roleLabel(1) .. _d("VhZjAhcEGBFFFwUYFRgKQ1lKFwNTHVIXDBkCGAxBXgkTXBgZWFNKHwQYG1dZBBkEGAxXXA9WBE8XFkQGGQRLVhZkDwJQVxZTFxkaH0xYQlhKBR9VHUJfAxgXGB1aRA9Y"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -14292,43 +14299,43 @@ end)
 return
 end
 
-local cp = {}
+local tnug = {}
 
-if rqc.towerSlot() ~= 1 and oi.enabled then
-oi.enabled = false
-table.insert(cp, _d("LUEBWkIzHxtRBw"))
+if fq.towerSlot() ~= 1 and gapk.enabled then
+gapk.enabled = false
+table.insert(tnug, _d("OUNDBVYkVw9TRQ"))
 
 pcall(function()
-oi.ui:UpdateState(false)
+gapk.ui:UpdateState(false)
 end)
 end
 
-if rqc.hardcoreSlot() == nil and yme.island then
-yme.island = false
-table.insert(cp, _d("LUEBWkIuAwBVG1FCLxEeUBZaEAI"))
+if fq.hardcoreSlot() == nil and rs.island then
+rs.island = false
+table.insert(tnug, _d("OUNDBVY5SxRXWQ5WOFkKUlQFBBU"))
 
 pcall(function()
-yme.islandToggle:UpdateState(false)
+rs.islandToggle:UpdateState(false)
 end)
 end
 
-if rqc.halloweenSlot() == nil and pwc.run.enabled then
-pwc.run.enabled = false
-table.insert(cp, _d("LUEBWkIvEQBYGkIHAh5MYBpCBxU"))
+if fq.halloweenSlot() == nil and rtjv.run.enabled then
+rtjv.run.enabled = false
+table.insert(tnug, _d("OUNDBVY4WRRaWB0TFVZYYlgdEwI"))
 
 pcall(function()
-pwc.toggle:UpdateState(false)
+rtjv.toggle:UpdateState(false)
 end)
 end
 
-if #cp > 0 then
+if #tnug > 0 then
 pcall(function()
-qza:Dialog({
-Title = table.concat(cp, _d("TFUbUUI")) .. _d("TFsTUw"),
-Description = _d("IltVRg4IBExdBhURAgRMQBoVFg8RGBQBWhUCAkxVG0xCCh8eUVkVEQhQBUBVXQMDUAJbAl0HFRVMQBoVEBIeQhQyXBQCUAVAVVRCFBwDQFVUBQYZAhhVWhBHBBlGGxUjEgQDFCZZDRNQA1ITGw"),
+zcwe:Dialog({
+Title = table.concat(tnug, _d("WFdZDlY")) .. _d("WFlRDA"),
+Description = _d("NlkXGRofTFhfREoFFUxYQlhKAhhZDBZDBQEVSlhXWRNWHVcKUxtKBR8YEUIXAhcUGBZZQAITAl1YQlhKBAVWVhZwAwAVGBFCFwtWA1QXQhcLERFRFhoXBQRQTA1EWUo3BUwXFmQGGQQYF1BRRA"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -14336,202 +14343,202 @@ end)
 end
 end
 
-rqc.oneDropdown = pnz:Dropdown({
-Name = _d("P1gaQUJW"),
+fq.oneDropdown = kdy:Dropdown({
+Name = _d("K1pYHlZB"),
 Search = false,
 Multi = false,
 Required = false,
 
 Default = 1,
-Options = rqc.optionsFor[1],
-Callback = function(gisx)
-local mhz = type(gisx) == _d("GFUXWQc") and gisx[1] or gisx
+Options = fq.optionsFor[1],
+Callback = function(ytnn)
+local mxkv = type(ytnn) == _d("DFdVBhM") and ytnn[1] or ytnn
 
-if type(mhz) == _d("H0AHXAwA") and rqc.roleIds[mhz] then
-rqc.role[1] = rqc.roleIds[mhz]
-rqc.picked[1] = mhz
+if type(mxkv) == _d("C0JFAxgX") and fq.roleIds[mxkv] then
+fq.role[1] = fq.roleIds[mxkv]
+fq.picked[1] = mxkv
 end
 
 pcall(function()
-rqc.oneDropdown:UpdateName(_d("P1gaQUJWUI601xU") .. rqc.roleLabel(1))
+fq.oneDropdown:UpdateName(_d("K1pYHlZBGJq2lUo") .. fq.roleLabel(1))
 end)
 
-if rqc.applyRoles then
-rqc.applyRoles()
+if fq.applyRoles then
+fq.applyRoles()
 end
 end,
-}, _d("H1gaQT1WL14"))
+}, _d("C1pYHilBZ0o"))
 
-rqc.twoDropdown = pnz:Dropdown({
-Name = _d("P1gaQUJV"),
+fq.twoDropdown = kdy:Dropdown({
+Name = _d("K1pYHlZC"),
 Search = false,
 Multi = false,
 Required = false,
 Default = 1,
-Options = rqc.optionsFor[2],
-Callback = function(ixat)
-local uiq = type(ixat) == _d("GFUXWQc") and ixat[1] or ixat
+Options = fq.optionsFor[2],
+Callback = function(pyke)
+local iguo = type(pyke) == _d("DFdVBhM") and pyke[1] or pyke
 
-if type(uiq) == _d("H0AHXAwA") and rqc.roleIds[uiq] then
-rqc.role[2] = rqc.roleIds[uiq]
-rqc.picked[2] = uiq
+if type(iguo) == _d("C0JFAxgX") and fq.roleIds[iguo] then
+fq.role[2] = fq.roleIds[iguo]
+fq.picked[2] = iguo
 end
 
 pcall(function()
-rqc.twoDropdown:UpdateName(_d("P1gaQUJVUI601xU") .. rqc.roleLabel(2))
+fq.twoDropdown:UpdateName(_d("K1pYHlZCGJq2lUo") .. fq.roleLabel(2))
 end)
 
-if rqc.applyRoles then
-rqc.applyRoles()
+if fq.applyRoles then
+fq.applyRoles()
 end
 end,
-}, _d("H1gaQT1VL14"))
+}, _d("C1pYHilCZ0o"))
 
 pcall(function()
-rqc.oneDropdown:UpdateSelection(_d("OFsCUBA"))
+fq.oneDropdown:UpdateSelection(_d("LFlADwQ"))
 end)
 
 pcall(function()
-rqc.twoDropdown:UpdateSelection(_d("ImQ2FQAGBBhYEEY"))
+fq.twoDropdown:UpdateSelection(_d("NmZ0ShQRTAxaUhk"))
 end)
 
-getgenv().ACBXSlot = rqc
+getgenv().ACBXSlot = fq
 
-local flcq = njun:Section({
-Side = _d("IFETQQ"),
+local am = uxr:Section({
+Side = _d("NFNRHg"),
 })
 
-flcq:Header({
-Name = _d("PlUcUUIFHx9H"),
+am:Header({
+Name = _d("KldeDlYSVwtF"),
 })
 
-flcq:Toggle({
-Name = _d("LUEBWkI1EQVQVXcNFAM"),
+am:Toggle({
+Name = _d("OUNDBVYiWRFSFygZA0s"),
 Default = false,
-Callback = function(vdp)
-btd.enabled = vdp
-btd.pending = {}
-btd.pendingUntil = {}
+Callback = function(jrq)
+yvcz.enabled = jrq
+yvcz.pending = {}
+yvcz.pendingUntil = {}
 
-if vdp then
-btd.cleared = {}
+if jrq then
+yvcz.cleared = {}
 end
 end,
-}, _d("DUEBWj0VEQVQKlcNFAM"))
+}, _d("GUNDBSkCWRFSaAgZA0s"))
 
-flcq:Toggle({
-Name = _d("LUEBWkIwEQBfVUENRyINXREVIAgDHw"),
+am:Toggle({
+Name = _d("OUNDBVYnWRRdFx4ZUGoZX1NKNB9LCw"),
 Default = false,
-Callback = function(wloj)
-btd.walkToBoss = wloj
+Callback = function(gqa)
+yvcz.walkToBoss = gqa
 end,
-}, _d("DUEBWj0QEQBfKkENOAINXRFqAAgDHw"))
+}, _d("GUNDBSkHWRRdaB4ZL0oZX1M1FB9LCw"))
 
-local lsh
-lsh = flcq:Slider({
-Name = _d("O1UZXkI0AAlREQ"),
+local wiq
+wiq = am:Slider({
+Name = _d("L1dbAVYjSB1TUw"),
 Minimum = 0,
 Maximum = 72,
 Default = 18,
 Precision = 0,
-Callback = function(yvh)
-local nnft = math.floor(yvh + 0.5)
-btd.walkSpeed = nnft
+Callback = function(oeh)
+local brlg = math.floor(oeh + 0.5)
+yvcz.walkSpeed = brlg
 
-if lsh and nnft ~= yvh then
-lsh:UpdateValue(nnft)
+if wiq and brlg ~= oeh then
+wiq:UpdateValue(brlg)
 end
 end,
-}, _d("G1UZXj0UAAlREQ"))
+}, _d("D1dbASkDSB1TUw"))
 
-flcq:Dropdown({
-Name = _d("PlUcUUIjGQpSHFYXCwQV"),
+am:Dropdown({
+Name = _d("KldeDlY0UR5QXgkDHEwB"),
 Search = false,
 Multi = true,
 Required = false,
-Default = { _d("IlsHWAML") },
-Options = ccg,
-Callback = function(rexj)
-local hzk = {}
+Default = { _d("NllFBxcc") },
+Options = fia,
+Callback = function(wda)
+local akb = {}
 
-if type(rexj) == _d("GFUXWQc") then
-for iv, mka in ipairs(ccg) do
-if rexj[mka] then
-table.insert(hzk, vmn[mka])
+if type(wda) == _d("DFdVBhM") then
+for qzvd, ehhf in ipairs(fia) do
+if wda[ehhf] then
+table.insert(akb, vrm[ehhf])
 end
 end
-end
-
-if #hzk == 0 then
-hzk = { _d("AlsHWAML") }
 end
 
-btd.difficulties = hzk
+if #akb == 0 then
+akb = { _d("FllFBxcc") }
+end
+
+yvcz.difficulties = akb
 end,
-}, _d("HlUcUT0DGQpSHFYXCwQV"))
+}, _d("CldeDikUUR5QXgkDHEwB"))
 
-function btd.pickedIds(lxuu)
-local wqn = {}
+function yvcz.pickedIds(qxfd)
+local tcrv = {}
 
-if type(lxuu) == _d("GFUXWQc") then
-for pnnb, sts in ipairs(dcus) do
-if lxuu[sts] and wzcl[sts] then
-table.insert(wqn, wzcl[sts])
+if type(qxfd) == _d("DFdVBhM") then
+for rgx, inzc in ipairs(qzfs) do
+if qxfd[inzc] and llr[inzc] then
+table.insert(tcrv, llr[inzc])
 end
 end
-elseif type(lxuu) == _d("H0AHXAwA") and wzcl[lxuu] then
-wqn = { wzcl[lxuu] }
+elseif type(qxfd) == _d("C0JFAxgX") and llr[qxfd] then
+tcrv = { llr[qxfd] }
 end
 
-return wqn
+return tcrv
 end
 
-flcq:Dropdown({
-Name = _d("PlUcUUIlHx9H"),
-Search = false,
-Multi = true,
-Required = false,
-Default = {},
-Options = dcus,
-Callback = function(aw)
-btd.picks[1] = btd.pickedIds(aw)
-btd.cursor[1] = 1
-btd.losses[1] = {}
-end,
-}, _d("HlUcUT0FHx9H"))
-
-btd.boss2Dropdown = flcq:Dropdown({
-Name = _d("PlUcUUIlHx9HVR0xCx8YFEcc"),
+am:Dropdown({
+Name = _d("KldeDlYyVwtF"),
 Search = false,
 Multi = true,
 Required = false,
 Default = {},
-Options = dcus,
-Callback = function(ohco)
-btd.picks[2] = btd.pickedIds(ohco)
-btd.cursor[2] = 1
-btd.losses[2] = {}
+Options = qzfs,
+Callback = function(ytz)
+yvcz.picks[1] = yvcz.pickedIds(ytz)
+yvcz.cursor[1] = 1
+yvcz.losses[1] = {}
 end,
-}, _d("HlUcUT0FHx9HKkYOCAQzBg"))
+}, _d("CldeDikSVwtF"))
+
+yvcz.boss2Dropdown = am:Dropdown({
+Name = _d("KldeDlYyVwtFF0IlHFcMFgVD"),
+Search = false,
+Multi = true,
+Required = false,
+Default = {},
+Options = qzfs,
+Callback = function(io)
+yvcz.picks[2] = yvcz.pickedIds(io)
+yvcz.cursor[2] = 1
+yvcz.losses[2] = {}
+end,
+}, _d("CldeDikSVwtFaBkaH0wnBA"))
 
 pcall(function()
-btd.boss2Dropdown:SetVisibility(false)
+yvcz.boss2Dropdown:SetVisibility(false)
 end)
 
 task.spawn(function()
-local nm = nil
+local dqk = nil
 
-while xkj() do
-local dahj = rqc.splitNpc()
+while gsk() do
+local rvb = fq.splitNpc()
 
-if dahj ~= nm then
-nm = dahj
+if rvb ~= dqk then
+dqk = rvb
 
-local dmu = btd.boss2Dropdown
+local sdkw = yvcz.boss2Dropdown
 
-if dmu then
+if sdkw then
 pcall(function()
-dmu:SetVisibility(dahj)
+sdkw:SetVisibility(rvb)
 end)
 end
 end
@@ -14540,100 +14547,100 @@ task.wait(0.5)
 end
 end)
 
-wzc:Paragraph({
-Header = _d("LUEBWkIhGQtcAQ"),
-Body = _d("P1EZUAETUANaEBUNFVABWwdQQikgL0dVUxAIHUxAHVBCEB8eWBFGQgUVAFsCGw"),
+inn:Paragraph({
+Header = _d("OUNDBVY2UR9eQw"),
+Body = _d("K1NbDxUEGBdYUkoZAhgVWUUPVj5oO0UXDAQfVVhCXw9WB1cKWlMZVhJdFFlARA"),
 })
 
-for pgdj, pff in ipairs(hdp) do
-wzc:Dropdown({
-Name = pff.name,
+for zid, ygbi in ipairs(ubmj) do
+inn:Dropdown({
+Name = ygbi.name,
 Search = true,
 Multi = true,
 Required = false,
 Default = {},
-Options = pff.options,
-Callback = function(dqf)
-local bte = {}
+Options = ygbi.options,
+Callback = function(mei)
+local vvjg = {}
 
-if type(dqf) == _d("GFUXWQc") then
-if dqf.All then
-for kjqc, wyw in ipairs(pff.ids) do
-table.insert(bte, wyw)
+if type(mei) == _d("DFdVBhM") then
+if mei.All then
+for mbc, syg in ipairs(ygbi.ids) do
+table.insert(vvjg, syg)
 end
 else
-for bmjz, scyl in ipairs(pff.options) do
-if dqf[scyl] and pff.byName[scyl] then
-table.insert(bte, pff.byName[scyl])
+for rje, ixsz in ipairs(ygbi.options) do
+if mei[ixsz] and ygbi.byName[ixsz] then
+table.insert(vvjg, ygbi.byName[ixsz])
 end
 end
 end
-elseif type(dqf) == _d("H0AHXAwA") then
-if dqf == _d("LVgZ") then
-for zw, cag in ipairs(pff.ids) do
-table.insert(bte, cag)
+elseif type(mei) == _d("C0JFAxgX") then
+if mei == _d("OVpb") then
+for blxo, asg in ipairs(ygbi.ids) do
+table.insert(vvjg, asg)
 end
 else
-bte = { pff.byName[dqf] }
+vvjg = { ygbi.byName[mei] }
 end
 end
 
-rcj.selectedByWorld[pff.name] = bte
+npj.selectedByWorld[ygbi.name] = vvjg
 end,
-}, _d("AkQWag") .. pff.id)
+}, _d("FkZUNQ") .. ygbi.id)
 end
 
-wzc:Toggle({
-Name = _d("LUEBWkIkHwFEGVAWAlA/QBpHGw"),
+inn:Toggle({
+Name = _d("OUNDBVYzVxVGWw8CFRgrQlgYDw"),
 Default = false,
-Callback = function(tiud)
-rcj.story = tiud
-rcj.battlePending = false
-rcj.battlePendingUntil = 0
+Callback = function(sgsm)
+npj.story = sgsm
+npj.battlePending = false
+npj.battlePendingUntil = 0
 end,
-}, _d("DUEBWj0EHwFEGVAWAi8fQBpHGw"))
+}, _d("GUNDBSkTVxVGWw8CFWcLQlgYDw"))
 
-rcj.storyDropdown = wzc:Dropdown({
-Name = _d("KF0TUwsEBQBAHFAR"),
+npj.storyDropdown = inn:Dropdown({
+Name = _d("PF9RDB8TTRRCXg8F"),
 Search = false,
 Multi = false,
 Required = false,
 Default = 1,
-Options = mho,
-Callback = function(thx)
-local nljz = type(thx) == _d("GFUXWQc") and thx[1] or thx
+Options = kp,
+Callback = function(hqeh)
+local fapq = type(hqeh) == _d("DFdVBhM") and hqeh[1] or hqeh
 
-if type(nljz) == _d("H0AHXAwA") and lle[nljz] then
-rcj.storyDifficulty = lle[nljz]
+if type(fapq) == _d("C0JFAxgX") and acyl[fapq] then
+npj.storyDifficulty = acyl[fapq]
 end
 end,
-}, _d("CF0TUwsEBQBAHFAR"))
+}, _d("HF9RDB8TTRRCXg8F"))
 
 pcall(function()
-rcj.storyDropdown:UpdateSelection(mho[1])
+npj.storyDropdown:UpdateSelection(kp[1])
 end)
 
 pcall(function()
-rcj.storyDropdown:UpdateName(_d("KF0TUwsEBQBAHFARR5LsllU") .. mho[1])
+npj.storyDropdown:UpdateName(_d("PF9RDB8TTRRCXg8FUNr4lBc") .. kp[1])
 end)
 
-wzc:Paragraph({
-Header = _d("JFsCFSMSBAMUNloPFxwJQBAVMRMfHk1VQg0VGx8"),
-Body = _d("Kl0SXRYUUAlCEEcbRwMYWwdMQikgLxRYFSwGHQlfVUEKFR8ZUx0VKxQVB1UcFU9HHwIUAV0HRx8CUVVRCwEWBVcAWRYeUA1WGkMHS1AbWwdeCwkXTEAdUEIGAglVBhULCVADRhFQEEcRAlBVVg0KGQJTVVcDBBtMRhpADANQDUdVVg0IHAhbAlsRRxMAURRHTG16JUBVRwcXHA1XEEZCExgJFBRHBwZQCEYaRQYIBwJHVUIKDhwJFBxBQg4DTFsbGUIGHggUGVADERUfFAdUCwNQDlsGRgcUUA1YGlsHSQ"),
+inn:Paragraph({
+Header = _d("MFlASjcFTBcWdAUbAFQdQlJKJQRXCk8XHRkCUws"),
+Body = _d("Pl9QAgIDGB1AUhgPUEsMWUUTVj5oOxYaSjgRVR1dFx4eAlcNUV9KPwNdE1deSltQVxYWQwITUFcWUxcOHxZeEVVCBgIJGBlUWBwTXBgPWUUBHx5fWEJfD1YRSh1XREofHhgXRFMPBFBZFlIXCRkdURZRFwgXE1NYRFgfGBQYGUUXCRkfVBxZQAQFUFsUU1YYWHoyMUIXGBMAVBlVUhlWBFAdFlYYExEYHERYGhIfTxZFFx0eGVQdFl4eVhlLWFlZRlYRVhwWWw8XBl0LFkULHxQYGllEGRMDGBlaWAQTXg"),
 })
 
-local rdow = shjs:Section({
-Side = _d("IFETQQ"),
+local erlu = xq:Section({
+Side = _d("NFNRHg"),
 })
 
-rdow:Header({
-Name = _d("OFsCUBA"),
+erlu:Header({
+Name = _d("LFlADwQ"),
 })
 
-local nzy
-local gcx
+local wuvu
+local pam
 
-local gbg = {
+local bzzv = {
 remotes = {},
 watcher = false,
 hidMenu = false,
@@ -14642,171 +14649,171 @@ hardWatch = {},
 }
 
 pcall(function()
-local yqdn = getgenv().ACBXHardWatch
+local qank = getgenv().ACBXHardWatch
 
-if type(yqdn) == _d("GFUXWQc") then
-for stz, bfq in pairs(yqdn) do
+if type(qank) == _d("DFdVBhM") then
+for ee, nsmk in pairs(qank) do
 pcall(function()
-if bfq.Connected then
-bfq:Disconnect()
+if nsmk.Connected then
+nsmk:Disconnect()
 end
 end)
 end
 end
 
-getgenv().ACBXHardWatch = gbg.hardWatch
+getgenv().ACBXHardWatch = bzzv.hardWatch
 end)
 
-function gbg.hardPick(qln)
-qln = qln == true
+function bzzv.hardPick(cpp)
+cpp = cpp == true
 
-for vwgc, hvya in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local pbw = rd:FindFirstChild(hvya)
+for ai, dkc in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local wjcc = ff:FindFirstChild(dkc)
 
-if pbw then
-if pbw:GetAttribute(_d("OFsCUBAvER5QJVwBDA")) ~= qln then
+if wjcc then
+if wjcc:GetAttribute(_d("LFlADwQ4WQpSZwMVGw")) ~= cpp then
 pcall(function()
-pbw:SetAttribute(_d("OFsCUBAvER5QJVwBDA"), qln)
+wjcc:SetAttribute(_d("LFlADwQ4WQpSZwMVGw"), cpp)
 end)
 end
 
-if pbw:GetAttribute(_d("OFsCUBAvER5QJ0AM")) ~= nil and pbw:GetAttribute(_d("OFsCUBAvER5QJ0AM")) ~= qln then
+if wjcc:GetAttribute(_d("LFlADwQ4WQpSZR8Y")) ~= nil and wjcc:GetAttribute(_d("LFlADwQ4WQpSZR8Y")) ~= cpp then
 pcall(function()
-pbw:SetAttribute(_d("OFsCUBAvER5QJ0AM"), qln)
+wjcc:SetAttribute(_d("LFlADwQ4WQpSZR8Y"), cpp)
 end)
 end
 end
 end
 end
 
-function gbg.pinMode()
-if not (oi.enabled or oi.nightmare) then
+function bzzv.pinMode()
+if not (gapk.enabled or gapk.nightmare) then
 return
 end
 
-local lise = oi.nightmare == true
+local ulao = gapk.nightmare == true
 
-for yeh, ypi in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local chhg = rd:FindFirstChild(ypi)
+for ga, fi in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local naj = ff:FindFirstChild(fi)
 
-if chhg then
-if chhg:GetAttribute(_d("OFsCUBAvER5QJVwBDA")) ~= lise then
+if naj then
+if naj:GetAttribute(_d("LFlADwQ4WQpSZwMVGw")) ~= ulao then
 pcall(function()
-chhg:SetAttribute(_d("OFsCUBAvER5QJVwBDA"), lise)
+naj:SetAttribute(_d("LFlADwQ4WQpSZwMVGw"), ulao)
 end)
 end
 
-local mwtf = gbg.hardWatch[chhg]
+local zrq = bzzv.hardWatch[naj]
 
-if mwtf and mwtf.Connected == false then
-gbg.hardWatch[chhg] = nil
-mwtf = nil
+if zrq and zrq.Connected == false then
+bzzv.hardWatch[naj] = nil
+zrq = nil
 end
 
-if mwtf == nil then
-local hjy, hexd = pcall(function()
-return jxjd(chhg:GetAttributeChangedSignal(_d("OFsCUBAvER5QJVwBDA")), function()
-if not (oi.enabled or oi.nightmare) then
+if zrq == nil then
+local yqn, rvyo = pcall(function()
+return im(naj:GetAttributeChangedSignal(_d("LFlADwQ4WQpSZwMVGw")), function()
+if not (gapk.enabled or gapk.nightmare) then
 return
 end
 
-local zsb = oi.nightmare == true
+local vdf = gapk.nightmare == true
 
-if chhg.Parent and chhg:GetAttribute(_d("OFsCUBAvER5QJVwBDA")) ~= zsb then
+if naj.Parent and naj:GetAttribute(_d("LFlADwQ4WQpSZwMVGw")) ~= vdf then
 pcall(function()
-chhg:SetAttribute(_d("OFsCUBAvER5QJVwBDA"), zsb)
+naj:SetAttribute(_d("LFlADwQ4WQpSZwMVGw"), vdf)
 end)
 end
 end)
 end)
 
-if hjy then
-gbg.hardWatch[chhg] = hexd
+if yqn then
+bzzv.hardWatch[naj] = rvyo
 end
 end
 end
 end
 end
 
-function gbg.pauseRows()
-local nyr = fh:FindFirstChild(_d("PFgUTAcVNxld")) and fh.PlayerGui:FindFirstChild(_d("P1EBQQsJFx9zAFw"))
+function bzzv.pauseRows()
+local hcc = omhv:FindFirstChild(_d("KFpWExMCfw1f")) and omhv.PlayerGui:FindFirstChild(_d("K1NDHh8eXwtxQgM"))
 
-if not nyr then
+if not hcc then
 return nil, nil
 end
 
-return nyr:FindFirstChild(_d("PFUARgcuHgpdG1wWAjkCRABB"), true), nyr:FindFirstChild(_d("PFUARgcuHgpdG1wWAjMEURZe"), true)
+return hcc:FindFirstChild(_d("KFdCGRM5Vh5fWQMCFXEWRkIe"), true), hcc:FindFirstChild(_d("KFdCGRM5Vh5fWQMCFXsQU1QB"), true)
 end
 
-function gbg.pauseState()
-local ygi = fh:FindFirstChild(_d("PFgUTAcVNxld")) and fh.PlayerGui:FindFirstChild(_d("P1EBQQsJFx9zAFw"))
-local vhz = ygi and ygi:FindFirstChild(_d("K1EBZgcTBAVaEkY"), true)
+function bzzv.pauseState()
+local lqk = omhv:FindFirstChild(_d("KFpWExMCfw1f")) and omhv.PlayerGui:FindFirstChild(_d("K1NDHh8eXwtxQgM"))
+local phk = lqk and lqk:FindFirstChild(_d("P1NDORMETBFYUBk"), true)
 
-if not vhz then
+if not phk then
 return nil
 end
 
-local mks, avx = pcall(function()
-return vhz:Invoke()
+local iah, aqt = pcall(function()
+return phk:Invoke()
 end)
 
-if mks and type(avx) == _d("GFUXWQc") then
-return avx.pauseInfiniteEnabled == true
+if iah and type(aqt) == _d("DFdVBhM") then
+return aqt.pauseInfiniteEnabled == true
 end
 
 return nil
 end
 
-function gbg.pauseAt(ymjf, ktrh)
-ktrh = math.max(1, math.floor(tonumber(ktrh) or 1))
+function bzzv.pauseAt(jlp, wpmu)
+wpmu = math.max(1, math.floor(tonumber(wpmu) or 1))
 
-local amtl, zuth = gbg.pauseRows()
+local pco, nj = bzzv.pauseRows()
 
-if not (amtl and zuth) then
+if not (pco and nj) then
 return false
 end
 
-local ytf = pcall(function()
-if tonumber(amtl.Text) ~= ktrh then
-amtl.Text = tostring(ktrh)
+local aoci = pcall(function()
+if tonumber(pco.Text) ~= wpmu then
+pco.Text = tostring(wpmu)
 
 if getconnections then
-for dgr, rvga in ipairs(getconnections(amtl.FocusLost)) do
+for bihx, ebl in ipairs(getconnections(pco.FocusLost)) do
 pcall(function()
-rvga:Fire(true, Enum.UserInputType.Focus)
+ebl:Fire(true, Enum.UserInputType.Focus)
 end)
 end
 end
 end
 end)
 
-if ymjf ~= nil then
-local gmz = gbg.pauseState()
+if jlp ~= nil then
+local ywe = bzzv.pauseState()
 
-if gmz ~= nil and gmz ~= ymjf and getconnections then
+if ywe ~= nil and ywe ~= jlp and getconnections then
 pcall(function()
-for sx, nfm in ipairs(getconnections(zuth.MouseButton1Click)) do
+for quyt, gjw in ipairs(getconnections(nj.MouseButton1Click)) do
 pcall(function()
-nfm:Fire()
+gjw:Fire()
 end)
 end
 end)
 end
 end
 
-return ytf
+return aoci
 end
 
-function gbg.restorePause()
-slpc.triggered = false
+function bzzv.restorePause()
+xqv.triggered = false
 
-if slpc.enabled and slpc.floor > 0 then
-gbg.pauseAt(true, slpc.floor)
+if xqv.enabled and xqv.floor > 0 then
+bzzv.pauseAt(true, xqv.floor)
 
 pcall(function()
-bo.SaveClientData:FireServer({
+xl.SaveClientData:FireServer({
 pauseInfiniteEnabled = true,
-pauseInfiniteAt = slpc.floor,
+pauseInfiniteAt = xqv.floor,
 })
 end)
 
@@ -14814,38 +14821,38 @@ return
 end
 
 pcall(function()
-bo.SaveClientData:FireServer({
+xl.SaveClientData:FireServer({
 pauseInfiniteEnabled = false,
 pauseInfiniteAt = 1,
 })
 end)
 
-gbg.pauseAt(false, 1)
+bzzv.pauseAt(false, 1)
 end
 
-function gbg.remote(yl)
-local dhe = gbg.remotes[yl]
+function bzzv.remote(kia)
+local cit = bzzv.remotes[kia]
 
-if dhe and dhe.Parent then
-return dhe
+if cit and cit.Parent then
+return cit
 end
 
-local jub = kq:FindFirstChild(_d("PlEYWhYCAw"))
-local byz = jub and jub:FindFirstChild(yl)
+local yh = ayu:FindFirstChild(_d("KlNaBQIVSw"))
+local ew = yh and yh:FindFirstChild(kia)
 
-if byz then
-gbg.remotes[yl] = byz
+if ew then
+bzzv.remotes[kia] = ew
 end
 
-return byz
+return ew
 end
 
-function gbg.historyOpen()
-for wkvf, wqo in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local nafd = rd:FindFirstChild(wqo)
-local zmdr = nafd and nafd:FindFirstChild(_d("OFsCUBAvGR9AGkcbIQINWRA"))
+function bzzv.historyOpen()
+for avq, jya in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local ehuw = ff:FindFirstChild(jya)
+local ofmw = ehuw and ehuw:FindFirstChild(_d("LFlADwQ4UQtCWBgPNkoZW1I"))
 
-if zmdr and zmdr.Visible then
+if ofmw and ofmw.Visible then
 return true
 end
 end
@@ -14853,165 +14860,165 @@ end
 return false
 end
 
-function gbg.generationOpen()
-local wlz = rd:FindFirstChild(_d("OFsCUBA1FR9BGUElEhk"))
-local tpkk = wlz and wlz:FindFirstChild(_d("PlEGQA4TNh5VGFA"))
+function bzzv.generationOpen()
+local yg = ff:FindFirstChild(_d("LFlADwQiXQtDWx4xBVE"))
+local hhi = yg and yg:FindFirstChild(_d("KlNEHxoEfgpXWg8"))
 
-return tpkk ~= nil and tpkk.Visible
+return hhi ~= nil and hhi.Visible
 end
 
-function gbg.standDown(nig)
-if not gbg.hidMenu then
-local bt = true
+function bzzv.standDown(jrg)
+if not bzzv.hidMenu then
+local kuvv = true
 
 pcall(function()
-bt = qza:GetState() ~= false
+kuvv = zcwe:GetState() ~= false
 end)
 
-if bt then
-gbg.hidMenu = true
+if kuvv then
+bzzv.hidMenu = true
 
 pcall(function()
-qza:SetState(false)
+zcwe:SetState(false)
 end)
 end
 end
 
-if gbg.watcher then
+if bzzv.watcher then
 return
 end
 
-gbg.watcher = true
+bzzv.watcher = true
 
 task.spawn(function()
 
-local uvl = os.clock() + 6
+local hyu = os.clock() + 6
 
-while xkj() and os.clock() < uvl and not nig() do
+while gsk() and os.clock() < hyu and not jrg() do
 task.wait(0.2)
 end
 
-while xkj() and nig() do
+while gsk() and jrg() do
 task.wait(0.4)
 end
 
-gbg.watcher = false
+bzzv.watcher = false
 
-if gbg.hidMenu then
-gbg.hidMenu = false
+if bzzv.hidMenu then
+bzzv.hidMenu = false
 
 pcall(function()
-qza:SetState(true)
+zcwe:SetState(true)
 end)
 end
 end)
 end
 
-oi.floorAt = 0
-oi.battleAt = 0
-oi.floor = nil
-oi.manualPause = false
+gapk.floorAt = 0
+gapk.battleAt = 0
+gapk.floor = nil
+gapk.manualPause = false
 
 task.spawn(function()
-local bdkl = ipt(_d("LlUBQQ4CJRxQFEEH"))
-local lyok = ipt(_d("P00bVjYIBwlGM1kNCAI"))
-local dpi = ipt(_d("LlUBQQ4CNQJQ"))
-local ymx = ipt(_d("OFsCUBA1BQJxG1EHAw"))
+local wobu = wek(_d("OldDHhoVbQhSVh4T"))
+local yt = wek(_d("K09ZCSIfTx1EcQYZH0o"))
+local szi = wek(_d("OldDHhoVfRZS"))
+local pu = wek(_d("LFlADwQiTRZzWQ4TFA"))
 
-if bdkl then
-jxjd(bdkl.OnClientEvent, function()
-oi.battleAt = os.clock()
+if wobu then
+im(wobu.OnClientEvent, function()
+gapk.battleAt = os.clock()
 end)
 end
 
-if lyok then
-jxjd(lyok.OnClientEvent, function(tcz)
-oi.floorAt = os.clock()
+if yt then
+im(yt.OnClientEvent, function(xwa)
+gapk.floorAt = os.clock()
 
-if type(tcz) == _d("AkEYVwcV") and tcz > 1 then
-oi.floor = tcz
+if type(xwa) == _d("FkNaCBMC") and xwa > 1 then
+gapk.floor = xwa
 else
-oi.floor = nil
+gapk.floor = nil
 end
 end)
 end
 
-if dpi then
-jxjd(dpi.OnClientEvent, function(apov)
-if type(apov) == _d("GFUXWQc") and apov.mode == _d("GFsCUBA") then
-oi.floorAt = os.clock()
+if szi then
+im(szi.OnClientEvent, function(skz)
+if type(skz) == _d("DFdVBhM") and skz.mode == _d("DFlADwQ") then
+gapk.floorAt = os.clock()
 end
 end)
 end
 
-if ymx then
-jxjd(ymx.OnClientEvent, function()
+if pu then
+im(pu.OnClientEvent, function()
 
-oi.lastRunEnded = {
+gapk.lastRunEnded = {
 clock = os.clock(),
-floor = oi.floor,
+floor = gapk.floor,
 }
 
 task.delay(1, function()
-local tngb = rd:FindFirstChild(_d("OFsCUBA1FR9BGUElEhk"))
-local xj = tngb and tngb:FindFirstChild(_d("PlEGQA4TNh5VGFA"))
-local lkjw = {}
+local iuk = ff:FindFirstChild(_d("LFlADwQiXQtDWx4xBVE"))
+local brdb = iuk and iuk:FindFirstChild(_d("KlNEHxoEfgpXWg8"))
+local tzh = {}
 
-if xj then
-for ehko, upvl in ipairs(xj:GetDescendants()) do
-if upvl:IsA(_d("OFENQS4GEglY")) and upvl.Visible and upvl.Text ~= _d("") and #lkjw < 12 then
-lkjw[#lkjw + 1] = upvl.Text
+if brdb then
+for vd, azjf in ipairs(brdb:GetDescendants()) do
+if azjf:IsA(_d("LFNPHjoRWh1a")) and azjf.Visible and azjf.Text ~= _d("") and #tzh < 12 then
+tzh[#tzh + 1] = azjf.Text
 end
 end
 end
 
-if oi.lastRunEnded then
-oi.lastRunEnded.texts = table.concat(lkjw, _d("TEhV"))
-end
-end)
-
-oi.floorAt = 0
-oi.battleAt = 0
-oi.floor = nil
-
-if oi.manualPause then
-gbg.restorePause()
+if gapk.lastRunEnded then
+gapk.lastRunEnded.texts = table.concat(tzh, _d("WEoX"))
 end
 end)
+
+gapk.floorAt = 0
+gapk.battleAt = 0
+gapk.floor = nil
+
+if gapk.manualPause then
+bzzv.restorePause()
+end
+end)
 end
 
 end)
 
-local function sok()
-local fxj = os.clock()
+local function uknx()
+local jkwu = os.clock()
 
-if fxj - (oi.floorAt or 0) < 90 and fxj - (oi.battleAt or 0) < 12 then
+if jkwu - (gapk.floorAt or 0) < 90 and jkwu - (gapk.battleAt or 0) < 12 then
 return true
 end
 
-for zqyk, lps in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local ukde = rd:FindFirstChild(lps)
+for ztla, pgzj in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local opb = ff:FindFirstChild(pgzj)
 
-if ukde then
+if opb then
 
-local kyhl = ukde:FindFirstChild(_d("OFsCUBAhHANbB3kDBRUA"))
+local zt = opb:FindFirstChild(_d("LFlADwQ2VBdZRSYXEl0U"))
 
-if kyhl and kyhl.Visible then
+if zt and zt.Visible then
 return true
 end
 
-local qf = ukde:FindFirstChild(_d("KlgaWhA0Ex5REFs"))
+local cej = opb:FindFirstChild(_d("PlpYBQQjWwpTUgQ"))
 
-if qf and qf.Visible then
+if cej and cej.Visible then
 return true
 end
 
-local vrj = ukde:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
+local dvop = opb:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
 
-if vrj and vrj.Visible then
-local kgu = vrj:FindFirstChild(_d("PUEcVgkgGRpRIEUgEgQYWxs"))
+if dvop and dvop.Visible then
+local lsxg = dvop:FindFirstChild(_d("KUNeCR03UQ5TYho0BUwMWVk"))
 
-if kgu and kgu.Visible then
+if lsxg and lsxg.Visible then
 return true
 end
 end
@@ -15021,63 +15028,63 @@ end
 return false
 end
 
-function gbg.hardNow()
+function bzzv.hardNow()
 
-local aer = rd:FindFirstChild(_d("LlUBQQ4CNxld"))
-local xrz = aer and aer:GetAttribute(_d("OFsCUBAvER5QJVwBDA"))
+local dkcv = ff:FindFirstChild(_d("OldDHhoVfw1f"))
+local hefl = dkcv and dkcv:GetAttribute(_d("LFlADwQ4WQpSZwMVGw"))
 
-if xrz ~= nil then
-return xrz == true
+if hefl ~= nil then
+return hefl == true
 end
 
-local eff = btd.misc.util.profile
+local xhd = yvcz.misc.util.profile
 
-return type(eff) == _d("GFUXWQc") and eff.lastTowerHard == true
+return type(xhd) == _d("DFdVBhM") and xhd.lastTowerHard == true
 end
 
-function gbg.endIfWrongMode(pe)
-if not sok() or gbg.hardNow() == (pe == true) then
+function bzzv.endIfWrongMode(lon)
+if not uknx() or bzzv.hardNow() == (lon == true) then
 return false
 end
 
 pcall(function()
-if type(gcx) == _d("CkEbVhYOHwI") then
-gcx()
+if type(pam) == _d("HkNZCQIZVxY") then
+pam()
 else
-bo.EndTowerRemote:FireServer(1)
+xl.EndTowerRemote:FireServer(1)
 end
 end)
 
-oi.floor = nil
+gapk.floor = nil
 
 return true
 end
 
-function gbg.hardPickNow()
-for ddwk, kho in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local pemu = rd:FindFirstChild(kho)
-local lslg = pemu and pemu:GetAttribute(_d("OFsCUBAvER5QJVwBDA"))
+function bzzv.hardPickNow()
+for kd, pba in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local cvek = ff:FindFirstChild(pba)
+local tma = cvek and cvek:GetAttribute(_d("LFlADwQ4WQpSZwMVGw"))
 
-if lslg ~= nil then
-return lslg == true
+if tma ~= nil then
+return tma == true
 end
 end
 
 return nil
 end
 
-function gbg.parked()
-for mee, giya in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local lcgf = rd:FindFirstChild(giya)
+function bzzv.parked()
+for fox, kegd in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local suoi = ff:FindFirstChild(kegd)
 
-if lcgf then
-local khta = lcgf:FindFirstChild(_d("OFsCUBAhHANbB3kDBRUA"))
-local gj = lcgf:FindFirstChild(_d("KlgaWhA0Ex5REFs"))
-local rzod = lcgf:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
+if suoi then
+local ii = suoi:FindFirstChild(_d("LFlADwQ2VBdZRSYXEl0U"))
+local nyk = suoi:FindFirstChild(_d("PlpYBQQjWwpTUgQ"))
+local vln = suoi:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
 
-if khta and khta.Visible
-and not (gj and gj.Visible)
-and not (rzod and rzod.Visible) then
+if ii and ii.Visible
+and not (nyk and nyk.Visible)
+and not (vln and vln.Visible) then
 return true
 end
 end
@@ -15086,35 +15093,35 @@ end
 return false
 end
 
-oi.ui = rdow:Toggle({
-Name = _d("LUEBWkIzHxtRBw"),
+gapk.ui = erlu:Toggle({
+Name = _d("OUNDBVYkVw9TRQ"),
 Default = false,
-Callback = function(mmn)
+Callback = function(nkp)
 
-if oi.quiet then
+if gapk.quiet then
 return
 end
 
-oi.enabled = mmn
-oi.pending = false
-oi.pendingUntil = 0
+gapk.enabled = nkp
+gapk.pending = false
+gapk.pendingUntil = 0
 
-if mmn then
+if nkp then
 
-if rqc.enabled and rqc.role[1] ~= _d("GFsCUBA") then
-oi.enabled = false
+if fq.enabled and fq.role[1] ~= _d("DFlADwQ") then
+gapk.enabled = false
 
 pcall(function()
-oi.ui:UpdateState(false)
+gapk.ui:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIzHxtRBxUNARY"),
-Description = _d("P1gaQUJWUAVHVUYHE1AYW1U") .. rqc.roleName(1) .. _d("QhQhXQdHOQJSHFsLEwlMdxRGFgsVTFsbWRtHAxhVB0ERRx8CFAZZDRNQXRhVRg1HAwlAVWYOCARMBVVBDUckA0MQR0IBGR5HARs"),
+zcwe:Dialog({
+Title = _d("OUNDBVYkVw9TRUoZFl4"),
+Description = _d("K1pYHlZBGBFFFxkTBBgMWRc") .. fq.roleName(1) .. _d("VhZjAhNQcRZQXgQfBEFYdVYZAhxdWFlZBg9QSwxXRR4FUFcWFkQGGQQYSRoXGRlQSx1CFzkaH0xYBxceGVBsF0FSGFYWUQpFQ0Q"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15123,20 +15130,20 @@ end)
 return
 end
 
-if rqc.otherTowerOn(_d("GFsCUBA")) then
-oi.enabled = false
+if fq.otherTowerOn(_d("DFlADwQ")) then
+gapk.enabled = false
 
 pcall(function()
-oi.ui:UpdateState(false)
+gapk.ui:UpdateState(false)
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIzHxtRBxUNARY"),
-Description = _d("LVoaQQoCAkxAGkIHFVANQQFaDwYEBVsbFQsUUA1YB1ADAwlMWxsZQgYeCBQBXQsUUA1XFloXCQRMWxtZG0cRAFgaQhFHHwJRVUENEBUeFAdADEcRGBQUFRYOHQkaVWEXFR5MQB1UFkcfAlFVWgQBUApdB0YWS1ADRlVBFxUeTFsbFSMSBAMUJlkNE1AfW1VQAwQYTEcZWhZHFwlABhULEwNMWwJbQhMfG1EHGw"),
+zcwe:Dialog({
+Title = _d("OUNDBVYkVw9TRUoZFl4"),
+Description = _d("OVhYHh4VSlhCWB0TAhgZQ0MFGxFMEVlZSh8DGBlaRQ8XFEFYWVlGVhFWHBZDAh8DGBlVVAUDHkxYWVkGD1BZFFpYHQVQVxZTFx4ZB10KFkUfGFBZDBZWSgIZVR0YFz4DAlZYQl8LAlBXFlMXBRAWGB5fRRkCXBgXRBceAwJWWFlZSjcFTBcWZAYZBBgLWRcPFxNQWEVbBQJQXx1CREofBEtYWUAEVgRXD1NFRA"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15145,71 +15152,71 @@ end)
 return
 end
 
-oi.nightmare = false
+gapk.nightmare = false
 
 pcall(function()
-oi.quiet = true
-oi.nightmareToggle:UpdateState(false)
-oi.quiet = false
+gapk.quiet = true
+gapk.nightmareToggle:UpdateState(false)
+gapk.quiet = false
 end)
 
-oi.manualPause = false
-oi.paused = false
-gbg.restorePause()
-oi.pauseArmed = false
+gapk.manualPause = false
+gapk.paused = false
+bzzv.restorePause()
+gapk.pauseArmed = false
 
-gbg.endIfWrongMode(false)
-gbg.hardPick(false)
+bzzv.endIfWrongMode(false)
+bzzv.hardPick(false)
 
 return
 end
 
-if not sok() then
+if not uknx() then
 return
 end
 
-oi.paused = true
-local xntp = nzy()
+gapk.paused = true
+local bit = wuvu()
 
-qza:Notify({
-Title = _d("LUEBWkIzHxtRBxUNARY"),
-Description = xntp and _d("OFsCUBBHAhlaVUUDEgMJUFs") or _d("PkEbFQsUUABdA1BORxIZQFVbDUcSHlEUXkIFBRhAGltCAR8ZWhEb"),
+zcwe:Notify({
+Title = _d("OUNDBVYkVw9TRUoZFl4"),
+Description = bit and _d("LFlADwRQSg1YFxoXBUsdUhk") or _d("KkNZSh8DGBRfQQ9aUFoNQhcEGVBaClNWAVYSTQxCWARWFlcNWFNE"),
 Lifetime = 5,
 })
 end,
-}, _d("DUEBWj0THxtRBw"))
+}, _d("GUNDBSkEVw9TRQ"))
 
-oi.nightmareToggle = rdow:Toggle({
-Name = _d("LUEBWkIpGQtcAVgDFRVMYBpCBxU"),
+gapk.nightmareToggle = erlu:Toggle({
+Name = _d("OUNDBVY+UR9eQwcXAl1YYlgdEwI"),
 Default = false,
-Callback = function(xix)
-if oi.quiet then
+Callback = function(db)
+if gapk.quiet then
 return
 end
 
-oi.nightmare = xix
+gapk.nightmare = db
 
-if not xix then
+if not db then
 
-oi.enabled = false
-oi.pending = false
-oi.pendingUntil = 0
+gapk.enabled = false
+gapk.pending = false
+gapk.pendingUntil = 0
 
-gbg.hardPick(false)
+bzzv.hardPick(false)
 
 pcall(function()
-oi.quiet = true
-oi.ui:UpdateState(false)
-oi.quiet = false
+gapk.quiet = true
+gapk.ui:UpdateState(false)
+gapk.quiet = false
 end)
 
-if sok() then
-oi.paused = true
-local jmhz = nzy()
+if uknx() then
+gapk.paused = true
+local inti = wuvu()
 
-qza:Notify({
-Title = _d("LUEBWkIpGQtcAVgDFRVMYBpCBxVQA1IT"),
-Description = jmhz and _d("Il0SXRYKER5RVUcXCVAcVQBGBwNe") or _d("PkEbFQsUUABdA1BORxIZQFVbDUcSHlEUXkIFBRhAGltCAR8ZWhEb"),
+zcwe:Notify({
+Title = _d("OUNDBVY+UR9eQwcXAl1YYlgdEwIYF1BR"),
+Description = inti and _d("Nl9QAgIdWQpTFxgDHhgIV0IZExQW") or _d("KkNZSh8DGBRfQQ9aUFoNQhcEGVBaClNWAVYSTQxCWARWFlcNWFNE"),
 Lifetime = 5,
 })
 end
@@ -15217,22 +15224,22 @@ end
 return
 end
 
-if rqc.enabled and rqc.role[1] ~= _d("GFsCUBA") then
-oi.nightmare = false
+if fq.enabled and fq.role[1] ~= _d("DFlADwQ") then
+gapk.nightmare = false
 
 pcall(function()
-oi.quiet = true
-oi.nightmareToggle:UpdateState(false)
-oi.quiet = false
+gapk.quiet = true
+gapk.nightmareToggle:UpdateState(false)
+gapk.quiet = false
 end)
 
 pcall(function()
-qza:Dialog({
-Title = _d("LUEBWkIpGQtcAVgDFRVMYBpCBxVQA1IT"),
-Description = _d("Il0SXRYKER5RVWENEBUeFBZaFwkEHxQURkIzHxtRBxULCVAfWBpBQlZcTFUbUUIeHxlGVUYOCARMBVVcEUcfAhQ") .. rqc.roleName(1) .. _d("TEYcUgoTUAJbAhtCNBUYFAZZDRNQXRQBWkIzHxtRBxUEDgIfQFs"),
+zcwe:Dialog({
+Title = _d("OUNDBVY+UR9eQwcXAl1YYlgdEwIYF1BR"),
+Description = _d("Nl9QAgIdWQpTFz4ZB10KFlQFAx5MCxZWGVYkVw9TRUofHhgLWlgeVkEUWFdZDlYJVw1EFxkaH0xYBxcDBVBXFhY") .. fq.roleName(1) .. _d("WEReDR4EGBZZQERWI10MFkQGGQQYSRZDBVYkVw9TRUoQGUoLQhk"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15242,55 +15249,55 @@ return
 end
 
 pcall(function()
-oi.quiet = true
-oi.ui:UpdateState(false)
-oi.quiet = false
+gapk.quiet = true
+gapk.ui:UpdateState(false)
+gapk.quiet = false
 end)
 
-oi.enabled = true
-oi.manualPause = false
-oi.paused = false
+gapk.enabled = true
+gapk.manualPause = false
+gapk.paused = false
 
-gbg.restorePause()
-oi.pauseArmed = false
+bzzv.restorePause()
+gapk.pauseArmed = false
 
-gbg.endIfWrongMode(true)
-gbg.hardPick(true)
+bzzv.endIfWrongMode(true)
+bzzv.hardPick(true)
 
-oi.pending = false
-oi.pendingUntil = 0
+gapk.pending = false
+gapk.pendingUntil = 0
 end,
-}, _d("DUEBWj0JGQtcAVgDFRUzQBpCBxU"))
+}, _d("GUNDBSkeUR9eQwcXAl0nQlgdEwI"))
 
-rdow:Header({
-Name = _d("LUEBWkI3ERlHEBU2CAcJRg"),
+erlu:Header({
+Name = _d("OUNDBVYgWQ1FUkoiH08dRA"),
 })
 
-local pk
+local fzi
 
-pk = rdow:Toggle({
-Name = _d("LUEBWkI3ERlHEBUkCx8DRg"),
+fzi = erlu:Toggle({
+Name = _d("OUNDBVYgWQ1FUkowHFcXRA"),
 Default = false,
-Callback = function(ygwb)
-slpc.triggered = false
+Callback = function(imn)
+xqv.triggered = false
 
-if ygwb and slpc.floor <= 0 then
-slpc.enabled = false
+if imn and xqv.floor <= 0 then
+xqv.enabled = false
 
 pcall(function()
-pk:UpdateState(false)
+fzi:UpdateState(false)
 end)
 
 pcall(function()
-bo.SaveClientData:FireServer({ pauseInfiniteEnabled = false })
+xl.SaveClientData:FireServer({ pauseInfiniteEnabled = false })
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkI3ERlHEBUkCx8DRg"),
-Description = _d("P1EBFQNHAA1BBlBCARwDWwcVAwUfGlFVBUIBGR5HARVPRzEZQBoVMgYFH1FVYQ0QFR4UG1AHAwNMQBoVCQkfGxQCXQcVFUxAGhUREx8cGg"),
+zcwe:Dialog({
+Title = _d("OUNDBVYgWQ1FUkowHFcXRA"),
+Description = _d("K1NDShdQSBlDRA9WFlQXWUVKFxJXDlMXWlYWUQpFQ0pbUHkNQlhKJhFNC1MXPhkHXQoWWQ8TFEtYQlhKHR5XDxZAAhMCXVhCWEoFBFcIGA"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15298,102 +15305,102 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-slpc.enabled = ygwb
+xqv.enabled = imn
 
 pcall(function()
-bo.SaveClientData:FireServer({
-pauseInfiniteEnabled = ygwb,
-pauseInfiniteAt = slpc.floor,
+xl.SaveClientData:FireServer({
+pauseInfiniteEnabled = imn,
+pauseInfiniteAt = xqv.floor,
 })
 end)
 end,
-}, _d("DUEBWj0XERlHEGoECx8DRg"))
+}, _d("GUNDBSkAWQ1FUjUQHFcXRA"))
 
-rdow:Input({
-Name = _d("PFUARgdHERgUE1kNCAI"),
-Placeholder = _d("CRoSG0JSQA"),
-AcceptedCharacters = _d("IkEYVwcVAw"),
-Callback = function(czpw)
-local omo = tonumber(czpw) or 0
+erlu:Input({
+Name = _d("KFdCGRNQWQwWUQYZH0o"),
+Placeholder = _d("HRhQRFZFCA"),
+AcceptedCharacters = _d("NkNaCBMCSw"),
+Callback = function(pp)
+local urjt = tonumber(pp) or 0
 
-if omo < 0 then
-omo = 0
+if urjt < 0 then
+urjt = 0
 end
 
-if omo == slpc.floor then
+if urjt == xqv.floor then
 return
 end
 
-slpc.floor = omo
-slpc.triggered = false
+xqv.floor = urjt
+xqv.triggered = false
 
-if omo <= 0 and slpc.enabled then
-slpc.enabled = false
+if urjt <= 0 and xqv.enabled then
+xqv.enabled = false
 
 pcall(function()
-pk:UpdateState(false)
+fzi:UpdateState(false)
 end)
 end
 
 pcall(function()
-bo.SaveClientData:FireServer({
-pauseInfiniteAt = omo,
-pauseInfiniteEnabled = slpc.enabled,
+xl.SaveClientData:FireServer({
+pauseInfiniteAt = urjt,
+pauseInfiniteEnabled = xqv.enabled,
 })
 end)
 end,
-}, _d("HFUARgc4ERhrE1kNCAI"))
+}, _d("CFdCGRMvWQxpUQYZH0o"))
 
-rdow:Button({
-Name = _d("PFUARgdHJANDEEc"),
+erlu:Button({
+Name = _d("KFdCGRNQbBdBUhg"),
 Callback = function()
-local dne = false
+local ginp = false
 
 pcall(function()
-dne = nzy()
+ginp = wuvu()
 end)
 
-if dne then
+if ginp then
 
-oi.manualPause = true
+gapk.manualPause = true
 return
 end
 
-qza:Dialog({
-Title = _d("PFUARgdHJANDEEc"),
-Description = _d("IltVWQsRFUxAGkIHFVAeQRsVFghQHFUARgdHAgVTHUFCCR8bGg"),
+zcwe:Dialog({
+Title = _d("KFdCGRNQbBdBUhg"),
+Description = _d("NlkXBh8GXVhCWB0TAhgKQ1lKAh8YCFdCGRNQShFRXx5WHlcPGA"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
 end,
 })
 
-rdow:Header({
-Name = _d("LUEBWkIgGRpRVWAS"),
+erlu:Header({
+Name = _d("OUNDBVY3UQ5TFz8G"),
 })
 
-cm.toggle = rdow:Toggle({
-Name = _d("LUEBWkIgGRpRVWAS"),
+vyac.toggle = erlu:Toggle({
+Name = _d("OUNDBVY3UQ5TFz8G"),
 Default = false,
-Callback = function(zjdv)
-cm.triggered = false
+Callback = function(wws)
+vyac.triggered = false
 
-if zjdv and cm.floor <= 0 then
-cm.enabled = false
+if wws and vyac.floor <= 0 then
+vyac.enabled = false
 
 pcall(function()
-cm.toggle:UpdateState(false)
+vyac.toggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("LUEBWkIgGRpRVWAS"),
-Description = _d("P1EBFQNHFwVCEBUXF1AKWBpaEEcRDlsDUEJXUApdB0YWR11MdQBBDUc3BUIQFTcXUAJREFERRwQDFB5bDRBQG1wQRwdHBAMUBkENF14"),
+zcwe:Dialog({
+Title = _d("OUNDBVY3UQ5TFz8G"),
+Description = _d("K1NDShdQXxFAUkoDABgeWlgFBFBZGllBD1ZAGB5fRRkCUBVYd0IeGVB/EUBSSiMAGBZTUg4FUEwXFlwEGQcYD15SGBNQTBcWRB4ZABY"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15401,57 +15408,57 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-cm.enabled = zjdv
+vyac.enabled = wws
 end,
-}, _d("DUEBWj0AGRpRKkAS"))
+}, _d("GUNDBSkXUQ5TaB8G"))
 
-rdow:Input({
-Name = _d("K10DUEISAExbGxUECx8DRg"),
-Placeholder = _d("CRoSG0JQQA"),
-AcceptedCharacters = _d("IkEYVwcVAw"),
-Callback = function(ly)
-local bikr = tonumber(ly) or 0
+erlu:Input({
+Name = _d("P19BD1YFSFhZWUoQHFcXRA"),
+Placeholder = _d("HRhQRFZHCA"),
+AcceptedCharacters = _d("NkNaCBMCSw"),
+Callback = function(dcbk)
+local cwfc = tonumber(dcbk) or 0
 
-if bikr < 0 then
-bikr = 0
+if cwfc < 0 then
+cwfc = 0
 end
 
-if bikr == cm.floor then
+if cwfc == vyac.floor then
 return
 end
 
-cm.floor = bikr
-cm.triggered = false
+vyac.floor = cwfc
+vyac.triggered = false
 
-if bikr <= 0 and cm.enabled then
-cm.enabled = false
+if cwfc <= 0 and vyac.enabled then
+vyac.enabled = false
 
 pcall(function()
-cm.toggle:UpdateState(false)
+vyac.toggle:UpdateState(false)
 end)
 end
 end,
-}, _d("C10DUD0SADNbG2oECx8DRg"))
+}, _d("H19BDykFSCdZWTUQHFcXRA"))
 
-cm.weatherToggle = rdow:Toggle({
-Name = _d("LUEBWkIAGRpRVUASRx8CFAJQAxMYCUY"),
+vyac.weatherToggle = erlu:Toggle({
+Name = _d("OUNDBVYXUQ5TFx8GUFcWFkAPFwRQHUQ"),
 Default = false,
-Callback = function(zxuo)
-cm.weatherTriggered = false
+Callback = function(bzpa)
+vyac.weatherTriggered = false
 
-if zxuo and next(cm.weathers) == nil then
-cm.weatherEnabled = false
+if bzpa and next(vyac.weathers) == nil then
+vyac.weatherEnabled = false
 
 pcall(function()
-cm.weatherToggle:UpdateState(false)
+vyac.weatherToggle:UpdateState(false)
 end)
 
-qza:Dialog({
-Title = _d("O1EUQQoCAkxzHEMHRyUc"),
-Description = _d("OF0WXkIGBExYEFQRE1ADWhAVFQIRGFwQR0IFFQBbAhUEDgIfQFUYQggEBFEHQgsUFUxAHVAQAlAFR1VbDRMYBVoSFRYIUAtdA1BCEgBMWxsb"),
+zcwe:Dialog({
+Title = _d("L1NWHh4VSlhxXhwTUG0I"),
+Description = _d("LF9UAVYRTFhaUgsFBBgXWFJKARVZDF5SGFYSXRRZQEoQGUoLQhdHVh9MEFNFHR8DXVhCXw8EFRgRRRcEGQRQEVhQSgIfGB9fQQ9WBUhYWVlE"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15459,71 +15466,71 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-cm.weatherEnabled = zxuo
+vyac.weatherEnabled = bzpa
 end,
-}, _d("DUEBWj0AGRpRKkASOB8CawJQAxMYCUY"))
+}, _d("GUNDBSkXUQ5TaB8GL1cWaUAPFwRQHUQ"))
 
-rdow:Dropdown({
-Name = _d("K10DUEISAExDEFQWDxUeRw"),
+erlu:Dropdown({
+Name = _d("P19BD1YFSFhBUgsCGF0KRQ"),
 Multi = true,
 Required = false,
-Options = { _d("OE0FXQ0IHg"), _d("LlgcTxgGAgg"), _d("IF0SXRYJGQJT"), _d("O10bURETHx5Z"), _d("P1wURwsJFw1a"), _d("P10bUhcLER5dAUw"), _d("IVsbVBAEGExwGlgDDh4"), _d("OlscUQ"), _d("IVURUEIOHkx8EFQUAh4"), _d("IVUbUgM") },
-Callback = function(aeb)
-cm.weathers = {}
+Options = { _d("LE9HAhkfVg"), _d("OlpeEAwRShw"), _d("NF9QAgIeURZR"), _d("L19ZDgUEVwpb"), _d("K15WGB8eXxlY"), _d("K19ZDQMcWQpfQxM"), _d("NVlZCwQTUFhyWAcXGVY"), _d("LlleDg"), _d("NVdTD1YZVlh+UgsAFVY"), _d("NVdZDRc") },
+Callback = function(gwjd)
+vyac.weathers = {}
 
-if type(aeb) == _d("GFUXWQc") then
-for fgjw, aoq in pairs(aeb) do
-if aoq then
-cm.weathers[fgjw] = true
+if type(gwjd) == _d("DFdVBhM") then
+for bqbk, tpev in pairs(gwjd) do
+if tpev then
+vyac.weathers[bqbk] = true
 end
 end
 end
 
-cm.weatherTriggered = false
+vyac.weatherTriggered = false
 end,
-}, _d("C10DUD0SADNDEFQWDxUeRw"))
+}, _d("H19BDykFSCdBUgsCGF0KRQ"))
 
-rdow:Input({
-Name = _d("IV0bXA8SHUxSGVoNFQM"),
-Placeholder = _d("XBRIFQMJCUxSGVoNFQ"),
-AcceptedCharacters = _d("IkEYUBAOEw"),
-Callback = function(jhfh)
-local brum = math.floor(tonumber(jhfh) or 0)
+erlu:Input({
+Name = _d("NV9ZAxsFVVhQWwUZAks"),
+Placeholder = _d("SBYKShceQVhQWwUZAg"),
+AcceptedCharacters = _d("NkNaDwQZWw"),
+Callback = function(snyw)
+local fzfr = math.floor(tonumber(snyw) or 0)
 
-if brum < 0 then
-brum = 0
+if fzfr < 0 then
+fzfr = 0
 end
 
-cm.weatherMinFloor = brum
-cm.weatherTriggered = false
+vyac.weatherMinFloor = fzfr
+vyac.weatherTriggered = false
 end,
-}, _d("AV0bXA8SHTNSGVoNFQM"))
+}, _d("FV9ZAxsFVSdQWwUZAks"))
 
-cm.weatherLateToggle = rdow:Toggle({
-Name = _d("K10DUEISAExDHEEKR0JcR1VZBwEE"),
+vyac.weatherLateToggle = erlu:Toggle({
+Name = _d("P19BD1YFSFhBXh4eUApIRRcGExZM"),
 Default = false,
-Callback = function(oz)
-cm.weatherLate = oz
-cm.weatherTriggered = false
+Callback = function(erc)
+vyac.weatherLate = erc
+vyac.weatherTriggered = false
 
-if oz and not cm.weatherEnabled then
+if erc and not vyac.weatherEnabled then
 pcall(function()
-cm.weatherToggle:UpdateState(true)
+vyac.weatherToggle:UpdateState(true)
 end)
 end
 end,
-}, _d("C10DUD0SADNYFEEH"))
+}, _d("H19BDykFSCdaVh4T"))
 
-rdow:Button({
-Name = _d("K10DUEIyAExgGkIHFQ"),
+erlu:Button({
+Name = _d("P19BD1YlSFhiWB0TAg"),
 Callback = function()
-if not sok() then
-qza:Dialog({
-Title = _d("K10DUEIyAExgGkIHFQ"),
-Description = _d("IltVWQsRFUxAGkIHFVAeQRsVFghQC10DUEISAExGHFIKE1ACWwIb"),
+if not uknx() then
+zcwe:Dialog({
+Title = _d("P19BD1YlSFhiWB0TAg"),
+Description = _d("NlkXBh8GXVhCWB0TAhgKQ1lKAh8YH19BD1YFSFhEXg0eBBgWWUBE"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15531,35 +15538,35 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-qza:Dialog({
-Title = _d("K10DUEIyAExgGkIHFQ"),
-Description = _d("KlsHUwcOBExAHVBCBAUeRhBbFkcEA0MQR0IVBQILVWEKDgNMVxRbDAgETFYQFRcJFANaEBs"),
+zcwe:Dialog({
+Title = _d("P19BD1YlSFhiWB0TAg"),
+Description = _d("PllFDBMZTFhCXw9WE00KRFIEAlBMF0FSGFYCTRYJFz4eGUtYVVYEGB9MWFRSSgMeXBdYUkQ"),
 Buttons = {
 {
-Name = _d("K1tVVwMEGw"),
+Name = _d("P1kXCBcTUw"),
 },
 {
-Name = _d("K10DUEISAA"),
+Name = _d("P19BD1YFSA"),
 Callback = function()
-local xmf = false
+local ofu = false
 
 pcall(function()
-xmf = gcx()
+ofu = pam()
 end)
 
-if xmf then
+if ofu then
 return
 end
 
 task.defer(function()
 task.wait(0.3)
 
-qza:Dialog({
-Title = _d("K10DUEIyAExgGkIHFQ"),
-Description = _d("IltVUgsRFUxBBRUAEgQYWxsVAwkDG1EHUAZHXUxAHVBCFQUCFBhUG0cRAEYQVAYeUA5RVVoUAgJC"),
+zcwe:Dialog({
+Title = _d("P19BD1YlSFhiWB0TAg"),
+Description = _d("NlkXDR8GXVhDR0oUBUwMWVlKFx5LD1NFDxJQFVhCXw9WAk0WFloLD1BZFERSCxIJGBpTFwUAFUpW"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15571,18 +15578,18 @@ end,
 end,
 })
 
-rdow:Button({
-Name = _d("L1wQVglHHANHBhUKDgMYWwdM"),
+erlu:Button({
+Name = _d("O15SCR1QVBdFREoeGUsMWUUT"),
 Callback = function()
-local pmrs = gbg.remote(_d("PlEEQAcUBDhbAlAQLxkfQBpHGw"))
+local wpx = bzzv.remote(_d("KlNGHxMDTCxZQA8EOFELQlgYDw"))
 
-if not pmrs then
-qza:Dialog({
-Title = _d("IFsGRkIvGR9AGkcb"),
-Description = _d("OFwcRkIFBQVYERUKBgNMWhoVFggHCUZVXQsUBANGDBUQAh0DQBAb"),
+if not wpx then
+zcwe:Dialog({
+Title = _d("NFlEGVY4UQtCWBgP"),
+Description = _d("LF5eGVYSTRFaU0oeEUtYWFhKAh9PHUQXAh8DTBdETkoEFVUXQlJE"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15590,28 +15597,28 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-gbg.standDown(gbg.historyOpen)
+bzzv.standDown(bzzv.historyOpen)
 
 pcall(function()
-pmrs:FireServer()
+wpx:FireServer()
 end)
 end,
 })
 
-rdow:Button({
-Name = _d("L1wQVglHFwlaEEcDExkDWgY"),
+erlu:Button({
+Name = _d("O15SCR1QXx1YUhgXBFEXWEQ"),
 Callback = function()
 
-local acj = rd:FindFirstChild(_d("OFsCUBA1FR9BGUElEhk"))
-local imfw = acj and acj:FindFirstChild(_d("I0QQWyUCHiRdBkENFQk"))
+local bsrv = ff:FindFirstChild(_d("LFlADwQiXQtDWx4xBVE"))
+local wwrp = bsrv and bsrv:FindFirstChild(_d("N0ZSBDEVVjBfRB4ZAkE"))
 
-if not imfw then
-qza:Dialog({
-Title = _d("K1EbUBAGBAVbG0Y"),
-Description = _d("OFwcRkIFBQVYERUKBgNMWhoVBQIeCUYUQQsIHh8UAlwMAx8bGg"),
+if not wwrp then
+zcwe:Dialog({
+Title = _d("P1NZDwQRTBFZWRk"),
+Description = _d("LF5eGVYSTRFaU0oeEUtYWFhKERVWHURWHh8fVgsWQAMYFFcPGA"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -15619,379 +15626,379 @@ Name = _d("K1sBFQsT"),
 return
 end
 
-gbg.standDown(gbg.generationOpen)
+bzzv.standDown(bzzv.generationOpen)
 
 pcall(function()
-imfw:Fire()
+wwrp:Fire()
 end)
 end,
 })
 
-rcj.bossTeams.towerSection = shjs:Section({
-Side = _d("IFETQQ"),
+npj.bossTeams.towerSection = xq:Section({
+Side = _d("NFNRHg"),
 })
 
-rcj.bossTeams.towerSection:Header({
-Name = _d("OFsCUBBHJAlVGEY"),
+npj.bossTeams.towerSection:Header({
+Name = _d("LFlADwRQbB1XWhk"),
 })
 
-rcj.bossTeams.towerSection:Paragraph({
-Header = _d("JFsCFRYIBwlGVUEHBh0fFAJaEAw"),
-Body = _d("I1ITD0ICEQ9cVUcXCVAZRxBGQhAYDUAQQwcVUBhRFFhCDgQfFAZZDRNQDVgHUAMDCUxcGlkGFF5mPjpbWEcVDVcdFRYIBwlGVVcHCx8bFAdADBRQG10BXUITGAkUAVADClAcXRZeBwNQClsHFQsTXg"),
+npj.bossTeams.towerSection:Paragraph({
+Header = _d("MFlASgIfTx1EFx4TEVULFkAFBBs"),
+Body = _d("N1BRUFYVWRteFxgDHhgNRVIZVgdQGUJSHBMCGAxTVgdWGUwLFkQGGQQYGVpFDxcUQVheWAYSAxZyPHgETFBdGVVfSgIfTx1EFwgTHFcPFkUfGAMYD19DAlYEUB0WQw8XHRgIX1QBExQYHllFSh8EFg"),
 })
 
-rcj.bossTeams.towerToggle = rcj.bossTeams.towerSection:Toggle({
-Name = _d("OFsCUBBHJAlVGEY"),
+npj.bossTeams.towerToggle = npj.bossTeams.towerSection:Toggle({
+Name = _d("LFlADwRQbB1XWhk"),
 Default = false,
-Callback = function(va)
-rcj.bossTeams.towersOn = va
+Callback = function(ooa)
+npj.bossTeams.towersOn = ooa
 end,
-}, _d("GFsCUBA4BAlVGEY"))
+}, _d("DFlADwQvTB1XWhk"))
 
-for btz, uab in ipairs({
-{ kind = _d("GFsCUBA"), name = _d("JVoTXAwOBBUUNlQRExwJFFoVLA4XBEAYVBAC") },
-{ kind = _d("BFUHUQEIAgk"), name = _d("JUcZVAwDUCRVB1EBCAIJ") },
+for ex, qpid in ipairs({
+{ kind = _d("DFlADwQ"), name = _d("MVhRAxgZTAEWdAsFBFQdFhhKOBlfEEJaCwQV") },
+{ kind = _d("EFdFDhUfSh0"), name = _d("MUVbCxgUGDBXRQ4VH0od") },
 }) do
-local aael = math.clamp(math.floor(tonumber(rcj.bossTeams.towerPicked[uab.kind]) or 1), 1, 4)
+local nfb = math.clamp(math.floor(tonumber(npj.bossTeams.towerPicked[qpid.kind]) or 1), 1, 4)
 
-rcj.bossTeams.towerPicked[uab.kind] = aael
+npj.bossTeams.towerPicked[qpid.kind] = nfb
 
-rcj.bossTeams.towerUi[uab.kind] = rcj.bossTeams.towerSection:Dropdown({
-Name = uab.name,
+npj.bossTeams.towerUi[qpid.kind] = npj.bossTeams.towerSection:Dropdown({
+Name = qpid.name,
 Search = false,
 Multi = false,
 Required = false,
-Default = aael,
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(las)
-local ab = type(las) == _d("GFUXWQc") and las[1] or las
-local kbd = type(ab) == _d("H0AHXAwA") and tonumber(ab:match(_d("RBERHks"))) or nil
+Default = nfb,
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(urp)
+local sxnr = type(urp) == _d("DFdVBhM") and urp[1] or urp
+local ip = type(sxnr) == _d("C0JFAxgX") and tonumber(sxnr:match(_d("UBNTQV8"))) or nil
 
-if kbd then
-rcj.bossTeams.towerPicked[uab.kind] = kbd
-rcj.bossTeams.save()
+if ip then
+npj.bossTeams.towerPicked[qpid.kind] = ip
+npj.bossTeams.save()
 end
 
 pcall(function()
-rcj.bossTeams.towerUi[uab.kind]:UpdateName(uab.name .. _d("TNb1l0I") .. (ab or _d("OFEUWEJW")))
+npj.bossTeams.towerUi[qpid.kind]:UpdateName(qpid.name .. _d("WNS3yFY") .. (sxnr or _d("LFNWB1ZB")))
 end)
 end,
-}, _d("GFEUWD0THxtRB2o") .. uab.kind)
+}, _d("DFNWBykEVw9TRTU") .. qpid.kind)
 
 pcall(function()
-rcj.bossTeams.towerUi[uab.kind]:UpdateSelection(_d("OFEUWEI") .. tostring(aael))
-rcj.bossTeams.towerUi[uab.kind]:UpdateName(uab.name .. _d("TNb1l0IzFQ1ZVQ") .. tostring(aael))
+npj.bossTeams.towerUi[qpid.kind]:UpdateSelection(_d("LFNWB1Y") .. tostring(nfb))
+npj.bossTeams.towerUi[qpid.kind]:UpdateName(qpid.name .. _d("WNS3yFYkXRlbFw") .. tostring(nfb))
 end)
 end
 
-rcj.bossTeams.towerSection:Header({
-Name = _d("P0MURUIIHkxSGVoNFQ"),
+npj.bossTeams.towerSection:Header({
+Name = _d("K0FWGlYfVlhQWwUZAg"),
 })
 
-rcj.bossTeams.towerSection:Paragraph({
-Header = _d("P0MURUITFQ1ZVVoMRxFMUhlaDRU"),
-Body = _d("OFwQFQUGHQkTBhUNEB5MRwJUEktQAlsBFQNHAA1BBlBMRzUNVx0VEBIcCRQcRkIGUApYGloQRxECUFVBCgJQGFEUWEIQHx5aVVMQCB1MQB1UFkcWAFsaR0IIHkAUAkcLEwQJWlVcDBMfTEAdUEIAEQFRUkZCNBUYQBxbBRRQQQpVdBcTH0xgEFQPRyMbVQUVU0cRAlBVB05HAwMUAV0HRxcNWRAVDwYbCUdVQQoCUB9DHEEBD1AFQAZQDgFQG1wQW0IGUB5BGxURExEeQAYVFg8RGBQTWQ0IAkIUO1oWDxkCU1VcEUcDGFsFRQcDUA1aERUWDxVMRgBbQgwVCUQGFQsTA0xHGVoWSXpmdVVWAxQEAFFVRxcJUAtRAUZCExgJFAZUDwJQH0McQQEPUApGGlhCExgFR1VFAwkVABhVVwcEERlHEBUWDxVMUxRYB0ADTFsCW0IUBw1EVVoMCwlMUhxHBxRQBVoGXAYCUCVaE1wMDgQJFCdaDQoDQj5/eQcGBgkUFBUECx8DRlVUFkdATEAaFRYSAgIUAV0DE1AeQRlQQggWCho"),
+npj.bossTeams.towerSection:Paragraph({
+Header = _d("K0FWGlYEXRlbFwUYUFlYUFsFGQI"),
+Body = _d("LF5SShERVR0RREoZB1ZYRUALBlwYFllDShdQSBlDRA9YUH0ZVV9KBAVUHRZeGVYRGB5aWAUEUFkWUhceHhUYDFNWB1YHVwpYFwwEH1VYQl8LAlBeFFlYGFYfVlQWQBgfBEwdWBcDGARXWEJfD1YXWRVTEBlWI10MQl4EEQMYVQgXKwMEV1hiUgsbUGsPV0dKR1BZFlIXWFpQSxcWQwITUF8ZW1JKGxFTHUUXHh4VGAtBXh4VGBgRQkQPGhYYD15SBFYRGApDWUoFBFkKQkRKAhhZDBZRBhkfSlYWeQUCGFEWURcDBVBLDFlHGhMUGBlYU0oCGF1YREIEVhtdHUZESh8ES1hFWwUCXjJydxcJFwNMFFMXGAMeGB9TQxlWBFAdFkQLGxUYC0FeHhUYGB5EWAdWBFARRRcaFx5dFBoXCBMTWQ1FUkoCGF1YUVYHE1dLWFlABFYDTxlGFwUYHEFYUF4YEwMYEVhEAxIVGDFYUQMYGUwdFmUFGR1LVjw9JhMRTh0WVkoQHFcXRBcLAlAIWEJYSgIFShYWQwIXBBgKQ1sPVh9eHhg"),
 })
 
-function rcj.bossTeams.swapStatusText()
-local se = rcj.bossTeams.swap
-local cr = {}
+function npj.bossTeams.swapStatusText()
+local eugs = npj.bossTeams.swap
+local kqts = {}
 
-if se.on then
-table.insert(cr, _d("I1pVGEIQAgVAAVAMRwQDFAFdB0cXDVkQEhFHMRlAGhU2AhEBFCZCAxdQHlsCRkw"))
+if eugs.on then
+table.insert(kqts, _d("N1gXR1YHShFCQw8YUEwXFkMCE1BfGVtSTQVQeQ1CWEoiFVkVFmQdFwAYCllAGVg"))
 else
-table.insert(cr, _d("I1ITFU9HBARRVVIDChVLR1VGFQYATF0GFQ4CFhgUFFkNCRVC"))
+table.insert(kqts, _d("N1BRSltQTBBTFw0XHV1fRRcZARFIWF9EShoVXgwWVgYZHl1W"))
 end
 
-local klx = {
-{ index = 1, floor = se.floor, team = se.team },
-{ index = 2, floor = se.floor2, team = se.team2 },
+local fwfk = {
+{ index = 1, floor = eugs.floor, team = eugs.team },
+{ index = 2, floor = eugs.floor2, team = eugs.team2 },
 }
 
-for pyn, bnxj in ipairs(klx) do
-if bnxj.floor > 0 then
-table.insert(cr, string.format(_d("P0MURUJCFFYUIVADClBJUFVTEAgdTFIZWg0VUElQ"), bnxj.index, bnxj.team, bnxj.floor))
+for hp, wkin in ipairs(fwfk) do
+if wkin.floor > 0 then
+table.insert(kqts, string.format(_d("K0FWGlZVXEIWYw8XHRhdUhcMBB9VWFBbBRkCGF1S"), wkin.index, wkin.team, wkin.floor))
 else
-table.insert(cr, string.format(_d("P0MURUJCFFYUGlMER1gCW1VTDggfHhQGUBZO"), bnxj.index))
+table.insert(kqts, string.format(_d("K0FWGlZVXEIWWAwQUBAWWRcMGh9XChZEDwJZ"), wkin.index))
 end
 end
 
-if rcj.bossTeams.swapMessage ~= _d("") then
-table.insert(cr, rcj.bossTeams.swapMessage)
+if npj.bossTeams.swapMessage ~= _d("") then
+table.insert(kqts, npj.bossTeams.swapMessage)
 end
 
-return table.concat(cr, _d("Zg"))
+return table.concat(kqts, _d("cg"))
 end
 
-function rcj.bossTeams.paintSwap()
+function npj.bossTeams.paintSwap()
 pcall(function()
-rcj.bossTeams.swapStatus:UpdateBody(rcj.bossTeams.swapStatusText())
+npj.bossTeams.swapStatus:UpdateBody(npj.bossTeams.swapStatusText())
 end)
 end
 
-rcj.bossTeams.swapToggle = rcj.bossTeams.towerSection:Toggle({
-Name = _d("P0MURUITFQ1ZVVoMRxYAWxpH"),
-Default = rcj.bossTeams.swap.on,
-Callback = function(kzj)
-rcj.bossTeams.swap.on = kzj
+npj.bossTeams.swapToggle = npj.bossTeams.towerSection:Toggle({
+Name = _d("K0FWGlYEXRlbFwUYUF4UWVgY"),
+Default = npj.bossTeams.swap.on,
+Callback = function(nhpn)
+npj.bossTeams.swap.on = nhpn
 
-rcj.bossTeams.swapReset()
+npj.bossTeams.swapReset()
 
-rcj.bossTeams.swapApply()
-rcj.bossTeams.save()
+npj.bossTeams.swapApply()
+npj.bossTeams.save()
 end,
-}, _d("H0MURT0TFQ1ZKloMOBYAWxpH"))
+}, _d("C0FWGikEXRlbaAUYL14UWVgY"))
 
-rcj.bossTeams.swapInput = rcj.bossTeams.towerSection:Input({
-Name = _d("KlgaWhA"),
-Placeholder = _d("CRoSG0JSQFwUXQVCWlADUhMc"),
-AcceptedCharacters = _d("IkEYUBAOEw"),
-Callback = function(ler)
-local ev = tonumber(type(ler) == _d("H0AHXAwA") and ler:match(_d("RBERHks")) or ler)
+npj.bossTeams.swapInput = npj.bossTeams.towerSection:Input({
+Name = _d("PlpYBQQ"),
+Placeholder = _d("HRhQRFZFCEgWH1pWTRgXUFFD"),
+AcceptedCharacters = _d("NkNaDwQZWw"),
+Callback = function(gzxu)
+local lplq = tonumber(type(gzxu) == _d("C0JFAxgX") and gzxu:match(_d("UBNTQV8")) or gzxu)
 
-if ev then
-rcj.bossTeams.swap.floor = ev
-rcj.bossTeams.swapReset()
-rcj.bossTeams.swapApply()
-rcj.bossTeams.save()
+if lplq then
+npj.bossTeams.swap.floor = lplq
+npj.bossTeams.swapReset()
+npj.bossTeams.swapApply()
+npj.bossTeams.save()
 end
 end,
-}, _d("ClgaWhA"))
+}, _d("HlpYBQQ"))
 
-rcj.bossTeams.swapDropdown = rcj.bossTeams.towerSection:Dropdown({
-Name = _d("P0MURUITHw"),
+npj.bossTeams.swapDropdown = npj.bossTeams.towerSection:Dropdown({
+Name = _d("K0FWGlYEVw"),
 Search = false,
 Multi = false,
 Required = false,
-Default = math.clamp(math.floor(tonumber(rcj.bossTeams.swap.team) or 1), 1, 4),
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(zlya)
-local ltg = type(zlya) == _d("GFUXWQc") and zlya[1] or zlya
-local vgml = type(ltg) == _d("H0AHXAwA") and tonumber(ltg:match(_d("RBERHks"))) or nil
+Default = math.clamp(math.floor(tonumber(npj.bossTeams.swap.team) or 1), 1, 4),
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(bjk)
+local gpx = type(bjk) == _d("DFdVBhM") and bjk[1] or bjk
+local fbyo = type(gpx) == _d("C0JFAxgX") and tonumber(gpx:match(_d("UBNTQV8"))) or nil
 
-if vgml then
-rcj.bossTeams.swap.team = vgml
-rcj.bossTeams.swapReset()
-rcj.bossTeams.swapApply()
-rcj.bossTeams.save()
+if fbyo then
+npj.bossTeams.swap.team = fbyo
+npj.bossTeams.swapReset()
+npj.bossTeams.swapApply()
+npj.bossTeams.save()
 end
 
 pcall(function()
-rcj.bossTeams.swapDropdown:UpdateName(_d("P0MURUITH0zW9ZdC") .. (ltg or _d("OFEUWEJW")))
+npj.bossTeams.swapDropdown:UpdateName(_d("K0FWGlYEV1jUt8hW") .. (gpx or _d("LFNWB1ZB")))
 end)
 
-rcj.bossTeams.paintSwap()
+npj.bossTeams.paintSwap()
 end,
-}, _d("H0MURT0THw"))
+}, _d("C0FWGikEVw"))
 
-rcj.bossTeams.swapInput2 = rcj.bossTeams.towerSection:Input({
-Name = _d("KlgaWhBHQg"),
-Placeholder = _d("CRoSG0JWQFwEVR1SR01MWxNTSw"),
-AcceptedCharacters = _d("IkEYUBAOEw"),
-Callback = function(mfo)
-local iqio = tonumber(type(mfo) == _d("H0AHXAwA") and mfo:match(_d("RBERHks")) or mfo)
+npj.bossTeams.swapInput2 = npj.bossTeams.towerSection:Input({
+Name = _d("PlpYBQRQCg"),
+Placeholder = _d("HRhQRFZBCEgGF0JGUAVYWVEMXw"),
+AcceptedCharacters = _d("NkNaDwQZWw"),
+Callback = function(jkhj)
+local tje = tonumber(type(jkhj) == _d("C0JFAxgX") and jkhj:match(_d("UBNTQV8")) or jkhj)
 
-if iqio then
-rcj.bossTeams.swap.floor2 = iqio
-rcj.bossTeams.swapReset()
-rcj.bossTeams.swapApply()
-rcj.bossTeams.save()
+if tje then
+npj.bossTeams.swap.floor2 = tje
+npj.bossTeams.swapReset()
+npj.bossTeams.swapApply()
+npj.bossTeams.save()
 end
 end,
-}, _d("ClgaWhA4Qg"))
+}, _d("HlpYBQQvCg"))
 
-rcj.bossTeams.swapDropdown2 = rcj.bossTeams.towerSection:Dropdown({
-Name = _d("P0MURUITH0wG"),
+npj.bossTeams.swapDropdown2 = npj.bossTeams.towerSection:Dropdown({
+Name = _d("K0FWGlYEV1gE"),
 Search = false,
 Multi = false,
 Required = false,
-Default = math.clamp(math.floor(tonumber(rcj.bossTeams.swap.team2) or 1), 1, 4),
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(np)
-local cwce = type(np) == _d("GFUXWQc") and np[1] or np
-local omz = type(cwce) == _d("H0AHXAwA") and tonumber(cwce:match(_d("RBERHks"))) or nil
+Default = math.clamp(math.floor(tonumber(npj.bossTeams.swap.team2) or 1), 1, 4),
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(gmrq)
+local casz = type(gmrq) == _d("DFdVBhM") and gmrq[1] or gmrq
+local hvum = type(casz) == _d("C0JFAxgX") and tonumber(casz:match(_d("UBNTQV8"))) or nil
 
-if omz then
-rcj.bossTeams.swap.team2 = omz
-rcj.bossTeams.swapReset()
-rcj.bossTeams.swapApply()
-rcj.bossTeams.save()
+if hvum then
+npj.bossTeams.swap.team2 = hvum
+npj.bossTeams.swapReset()
+npj.bossTeams.swapApply()
+npj.bossTeams.save()
 end
 
 pcall(function()
-rcj.bossTeams.swapDropdown2:UpdateName(_d("P0MURUITH0wGVdfixVA") .. (cwce or _d("OFEUWEJW")))
+npj.bossTeams.swapDropdown2:UpdateName(_d("K0FWGlYEV1gEF4j20hg") .. (casz or _d("LFNWB1ZB")))
 end)
 
-rcj.bossTeams.paintSwap()
+npj.bossTeams.paintSwap()
 end,
-}, _d("H0MURT0THzMG"))
+}, _d("C0FWGikEVycE"))
 
-rcj.bossTeams.swapStatus = rcj.bossTeams.towerSection:Paragraph({
-Header = _d("P0MURUIUBA1AAEY"),
-Body = rcj.bossTeams.swapStatusText(),
+npj.bossTeams.swapStatus = npj.bossTeams.towerSection:Paragraph({
+Header = _d("K0FWGlYDTBlCQhk"),
+Body = npj.bossTeams.swapStatusText(),
 })
 
 pcall(function()
-local ycue = math.clamp(math.floor(tonumber(rcj.bossTeams.swap.team) or 1), 1, 4)
-local ppn = math.clamp(math.floor(tonumber(rcj.bossTeams.swap.team2) or 1), 1, 4)
+local omd = math.clamp(math.floor(tonumber(npj.bossTeams.swap.team) or 1), 1, 4)
+local hf = math.clamp(math.floor(tonumber(npj.bossTeams.swap.team2) or 1), 1, 4)
 
-rcj.bossTeams.swapDropdown:UpdateSelection(_d("OFEUWEI") .. tostring(ycue))
-rcj.bossTeams.swapDropdown:UpdateName(_d("P0MURUITH0zW9ZdCMxUNWVU") .. tostring(ycue))
-rcj.bossTeams.swapDropdown2:UpdateSelection(_d("OFEUWEI") .. tostring(ppn))
-rcj.bossTeams.swapDropdown2:UpdateName(_d("P0MURUITH0wGVdfixVA4URRYQg") .. tostring(ppn))
+npj.bossTeams.swapDropdown:UpdateSelection(_d("LFNWB1Y") .. tostring(omd))
+npj.bossTeams.swapDropdown:UpdateName(_d("K0FWGlYEV1jUt8hWJF0ZWxc") .. tostring(omd))
+npj.bossTeams.swapDropdown2:UpdateSelection(_d("LFNWB1Y") .. tostring(hf))
+npj.bossTeams.swapDropdown2:UpdateName(_d("K0FWGlYEV1gEF4j20hgsU1YHVg") .. tostring(hf))
 end)
 
 task.spawn(function()
-local mz = rcj.bossTeams.swapStatusText()
+local eme = npj.bossTeams.swapStatusText()
 
-while xkj() do
-local algg = rcj.bossTeams.swapStatusText()
+while gsk() do
+local lomq = npj.bossTeams.swapStatusText()
 
-if algg ~= mz then
-mz = algg
-rcj.bossTeams.paintSwap()
+if lomq ~= eme then
+eme = lomq
+npj.bossTeams.paintSwap()
 end
 
 task.wait(2)
 end
 end)
 
-if rcj.bossTeams.swap.on then
+if npj.bossTeams.swap.on then
 task.delay(2, function()
-pcall(rcj.bossTeams.swapApply)
+pcall(npj.bossTeams.swapApply)
 end)
 end
 
-rcj.bossTeams.section = shjs:Section({
-Side = _d("Pl0SXRY"),
+npj.bossTeams.section = xq:Section({
+Side = _d("Kl9QAgI"),
 })
 
-rcj.bossTeams.section:Header({
-Name = _d("LlsGRkIzFQ1ZBg"),
+npj.bossTeams.section:Header({
+Name = _d("OllEGVYkXRlbRA"),
 })
 
-rcj.bossTeams.section:Paragraph({
-Header = _d("JFsCFQAIAx8UAVADCgNMQxpHCQ"),
-Body = _d("I1ITD0IJHxhcHFsFRxkfFAZCCxMTBFERFU9HFRpRB0xCARkLXAEVFxQVHxQBXQdHBAlVGBUbCAVMVRlHBwYUFRQdVBQCUABdG1AGRwUcGFVCCg4TBBQcRkITGAkUJlkNE1BdFAFQAwpQGVoZUBEUUB9YGkFCVVAYVR5QEUcEBFFVVwMTBABRWz9oKB5WFBBUAQ9QDUYQVEIFFQBbAhUEDhcEQAYVFQ4EBBQBXQdHBAlVGBUbCAVMRBxWCUcWA0ZVXBZJ"),
+npj.bossTeams.section:Paragraph({
+Header = _d("MFlAShQfSwsWQw8XHUtYQVgYHQ"),
+Body = _d("N1BRUFYeVwxeXgQRUFELFkQdHwRbEFNTSltQXQ5TRRNWFlEfXkNKAwNdCxZDAhNQTB1XWkoPH01YV1sYExFcARZfCwAVGBRfWQ8SUE0IGhcdHhlbEBZeGVYEUB0WZAYZBBhJFkMPFx0YDVhbDwUDGAtaWB5WQhgMV1wPBVBMEFMXCBcETBRTGWB8P1ZCFlILFRgYGURSC1YSXRRZQEoQGV8QQkRKARlMEBZDAhNQTB1XWkoPH01YRl4JHVBeF0QXAwJe"),
 })
 
-rcj.bossTeams.toggle = rcj.bossTeams.section:Toggle({
-Name = _d("LlsGRkIzFQ1ZBg"),
+npj.bossTeams.toggle = npj.bossTeams.section:Toggle({
+Name = _d("OllEGVYkXRlbRA"),
 Default = false,
-Callback = function(usr)
-rcj.bossTeams.enabled = usr
+Callback = function(jqlp)
+npj.bossTeams.enabled = jqlp
 end,
-}, _d("DlsGRj0TFQ1ZBg"))
+}, _d("GllEGSkEXRlbRA"))
 
-for yahj, llyi in ipairs(hdp) do
-local xshp = rcj.bossTeams.picked[llyi.id] or 1
+for ghzv, obo in ipairs(ubmj) do
+local pb = npj.bossTeams.picked[obo.id] or 1
 
-xshp = math.clamp(math.floor(tonumber(xshp) or 1), 1, 4)
-rcj.bossTeams.picked[llyi.id] = xshp
+pb = math.clamp(math.floor(tonumber(pb) or 1), 1, 4)
+npj.bossTeams.picked[obo.id] = pb
 
-rcj.bossTeams.ui[llyi.id] = rcj.bossTeams.section:Dropdown({
-Name = llyi.name,
+npj.bossTeams.ui[obo.id] = npj.bossTeams.section:Dropdown({
+Name = obo.name,
 Search = false,
 Multi = false,
 Required = false,
 
-Default = xshp,
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(dgdn)
-local phx = type(dgdn) == _d("GFUXWQc") and dgdn[1] or dgdn
-local rlxa = type(phx) == _d("H0AHXAwA") and tonumber(phx:match(_d("RBERHks"))) or nil
+Default = pb,
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(kh)
+local uhpk = type(kh) == _d("DFdVBhM") and kh[1] or kh
+local xvjf = type(uhpk) == _d("C0JFAxgX") and tonumber(uhpk:match(_d("UBNTQV8"))) or nil
 
-if rlxa then
-rcj.bossTeams.picked[llyi.id] = rlxa
+if xvjf then
+npj.bossTeams.picked[obo.id] = xvjf
 
-rcj.bossTeams.save()
+npj.bossTeams.save()
 end
 
 pcall(function()
-rcj.bossTeams.ui[llyi.id]:UpdateName(llyi.name .. _d("TNb1l0I") .. (phx or _d("OFEUWEJW")))
+npj.bossTeams.ui[obo.id]:UpdateName(obo.name .. _d("WNS3yFY") .. (uhpk or _d("LFNWB1ZB")))
 end)
 end,
-}, _d("GFEUWD0QHx5YEWo") .. llyi.id)
+}, _d("DFNWBykHVwpaUzU") .. obo.id)
 
 pcall(function()
-rcj.bossTeams.ui[llyi.id]:UpdateSelection(_d("OFEUWEI") .. tostring(xshp))
-rcj.bossTeams.ui[llyi.id]:UpdateName(llyi.name .. _d("TNb1l0IzFQ1ZVQ") .. tostring(xshp))
+npj.bossTeams.ui[obo.id]:UpdateSelection(_d("LFNWB1Y") .. tostring(pb))
+npj.bossTeams.ui[obo.id]:UpdateName(obo.name .. _d("WNS3yFYkXRlbFw") .. tostring(pb))
 end)
 end
 
-rcj.bossTeams.raidSection = shjs:Section({
-Side = _d("Pl0SXRY"),
+npj.bossTeams.raidSection = xq:Section({
+Side = _d("Kl9QAgI"),
 })
 
-rcj.bossTeams.raidSection:Header({
-Name = _d("PlUcUUIzFQ1ZBg"),
+npj.bossTeams.raidSection:Header({
+Name = _d("KldeDlYkXRlbRA"),
 })
 
-rcj.bossTeams.raidSection:Paragraph({
-Header = _d("JFsCFRAGGQgUAVADCgNMQxpHCQ"),
-Body = _d("I1ITD0IVEQVQBhUXFBVMQx1UFgIGCUZVQQcGHUxAHVBCFBwDQFVUDhUVDVAMFQoIHAhHWz9oKB5WFBBUAQ9QHlUcUUIFFQBbAhULFFAKWwBSChNQG10BXUITGAkUAVADClAcXRZeBwNQClsHFQsTXg"),
+npj.bossTeams.raidSection:Paragraph({
+Header = _d("MFlASgQRURwWQw8XHUtYQVgYHQ"),
+Body = _d("N1BRUFYCWRFSREoDA11YQV8LAhVOHUQXHhMRVVhCXw9WA1QXQhcLGgJdGVJOSh4fVBxFGWB8P1ZCFlILFRgYCldeDlYSXRRZQEofAxgeWUINHgQYD19DAlYEUB0WQw8XHRgIX1QBExQYHllFSh8EFg"),
 })
 
-rcj.bossTeams.raidToggle = rcj.bossTeams.raidSection:Toggle({
-Name = _d("PlUcUUIzFQ1ZBg"),
+npj.bossTeams.raidToggle = npj.bossTeams.raidSection:Toggle({
+Name = _d("KldeDlYkXRlbRA"),
 Default = false,
-Callback = function(hg)
-rcj.bossTeams.raidsOn = hg
+Callback = function(jxj)
+npj.bossTeams.raidsOn = jxj
 end,
-}, _d("HlUcUT0TFQ1ZBg"))
+}, _d("CldeDikEXRlbRA"))
 
-for zk, zjrg in ipairs(qpz.Raids) do
-if zjrg.BossTitle and zjrg.id then
-local yfyu = rcj.bossTeams.raidPicked[zjrg.id] or 1
+for ptlx, fttg in ipairs(shz.Raids) do
+if fttg.BossTitle and fttg.id then
+local zer = npj.bossTeams.raidPicked[fttg.id] or 1
 
-yfyu = math.clamp(math.floor(tonumber(yfyu) or 1), 1, 4)
-rcj.bossTeams.raidPicked[zjrg.id] = yfyu
+zer = math.clamp(math.floor(tonumber(zer) or 1), 1, 4)
+npj.bossTeams.raidPicked[fttg.id] = zer
 
-rcj.bossTeams.raidUi[zjrg.id] = rcj.bossTeams.raidSection:Dropdown({
-Name = zjrg.BossTitle,
+npj.bossTeams.raidUi[fttg.id] = npj.bossTeams.raidSection:Dropdown({
+Name = fttg.BossTitle,
 Search = false,
 Multi = false,
 Required = false,
-Default = yfyu,
-Options = { _d("OFEUWEJW"), _d("OFEUWEJV"), _d("OFEUWEJU"), _d("OFEUWEJT") },
-Callback = function(jqdy)
-local cvy = type(jqdy) == _d("GFUXWQc") and jqdy[1] or jqdy
-local vlhj = type(cvy) == _d("H0AHXAwA") and tonumber(cvy:match(_d("RBERHks"))) or nil
+Default = zer,
+Options = { _d("LFNWB1ZB"), _d("LFNWB1ZC"), _d("LFNWB1ZD"), _d("LFNWB1ZE") },
+Callback = function(sn)
+local wh = type(sn) == _d("DFdVBhM") and sn[1] or sn
+local cks = type(wh) == _d("C0JFAxgX") and tonumber(wh:match(_d("UBNTQV8"))) or nil
 
-if vlhj then
-rcj.bossTeams.raidPicked[zjrg.id] = vlhj
-rcj.bossTeams.save()
+if cks then
+npj.bossTeams.raidPicked[fttg.id] = cks
+npj.bossTeams.save()
 end
 
 pcall(function()
-rcj.bossTeams.raidUi[zjrg.id]:UpdateName(zjrg.BossTitle .. _d("TNb1l0I") .. (cvy or _d("OFEUWEJW")))
+npj.bossTeams.raidUi[fttg.id]:UpdateName(fttg.BossTitle .. _d("WNS3yFY") .. (wh or _d("LFNWB1ZB")))
 end)
 end,
-}, _d("GFEUWD0VEQVQKg") .. zjrg.id)
+}, _d("DFNWBykCWRFSaA") .. fttg.id)
 
 pcall(function()
-rcj.bossTeams.raidUi[zjrg.id]:UpdateSelection(_d("OFEUWEI") .. tostring(yfyu))
-rcj.bossTeams.raidUi[zjrg.id]:UpdateName(zjrg.BossTitle .. _d("TNb1l0IzFQ1ZVQ") .. tostring(yfyu))
+npj.bossTeams.raidUi[fttg.id]:UpdateSelection(_d("LFNWB1Y") .. tostring(zer))
+npj.bossTeams.raidUi[fttg.id]:UpdateName(fttg.BossTitle .. _d("WNS3yFYkXRlbFw") .. tostring(zer))
 end)
 end
 end
 
 task.spawn(function()
-local fnd = rkj()
+local cc = qph()
 
-while xkj() do
-local wcn = rkj()
+while gsk() do
+local imt = qph()
 
-if rqc.enabled and rqc.statusText then
-wcn = rqc.statusText()
+if fq.enabled and fq.statusText then
+imt = fq.statusText()
 end
 
-wcn = wcn .. _d("Zj4mUBARFR4UAEVC") .. wznk()
+imt = imt .. _d("cjxkDwQGXQoWQhpW") .. cob()
 
-if wcn ~= fnd then
-fnd = wcn
+if imt ~= cc then
+cc = imt
 pcall(function()
-js:UpdateBody(wcn)
+xcku:UpdateBody(imt)
 end)
 end
 task.wait(0.5)
@@ -15999,14 +16006,14 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
-for bzb, txxh in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local irfs = rd:FindFirstChild(txxh)
-local zsck = irfs and irfs:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-local fx = irfs and irfs:FindFirstChild(_d("JF0RUCAGBBhYEHcXEwQDWg"))
+while gsk() do
+for bglk, uy in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local ust = ff:FindFirstChild(uy)
+local jcmt = ust and ust:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+local dyq = ust and ust:FindFirstChild(_d("MF9TDzQRTAxaUigDBEwXWA"))
 
-if zsck and zsck.Visible and fx and not fx.Visible then
-fx.Visible = true
+if jcmt and jcmt.Visible and dyq and not dyq.Visible then
+dyq.Visible = true
 end
 end
 
@@ -16015,89 +16022,89 @@ end
 end)
 
 task.spawn(function()
-local bcy = false
+local fbt = false
 
-while xkj() do
-if kocb then
-local ljug = rd:FindFirstChild(_d("OFsCUBA1FR9BGUElEhk"))
-local iixa = ljug and ljug:FindFirstChild(_d("PlEGQA4TNh5VGFA"))
-local fay = ljug and ljug:FindFirstChild(_d("K1EbUBAGBAVaEnMQBh0J"))
+while gsk() do
+if vf then
+local qf = ff:FindFirstChild(_d("LFlADwQiXQtDWx4xBVE"))
+local zuz = qf and qf:FindFirstChild(_d("KlNEHxoEfgpXWg8"))
+local uro = qf and qf:FindFirstChild(_d("P1NZDwQRTBFYUCwEEVUd"))
 
-if fay and fay.Visible then
-fay.Visible = false
+if uro and uro.Visible then
+uro.Visible = false
 end
 
-local jsb = iixa and iixa.Visible or false
+local wii = zuz and zuz.Visible or false
 
-if jsb and not bcy then
-local luk = iixa:FindFirstChild(_d("L1gaRgclBRhAGls"))
-local odnq = false
+if wii and not fbt then
+local pznb = zuz:FindFirstChild(_d("O1pYGRMyTQxCWAQ"))
+local jrak = false
 
-if luk then
-for qqra, olvc in ipairs({ _d("IVsARgclBRhAGltTJBwFVx4"), _d("LVcBXBQGBAlQ") }) do
-local mfjz = luk[olvc]
-if mfjz then
-for ncu, dqws in ipairs(getconnections(mfjz)) do
+if pznb then
+for wehc, bsvk in ipairs({ _d("NVlCGRMyTQxCWARHM1QRVVw"), _d("OVVDAwARTB1S") }) do
+local chq = pznb[bsvk]
+if chq then
+for ag, zvyc in ipairs(getconnections(chq)) do
 pcall(function()
-dqws:Fire()
+zvyc:Fire()
 end)
-odnq = true
+jrak = true
 end
 end
 end
 end
 
-if not odnq then
-iixa.Visible = false
+if not jrak then
+zuz.Visible = false
 else
 task.spawn(function()
 task.wait(0.3)
-if iixa.Parent and iixa.Visible then
-iixa.Visible = false
+if zuz.Parent and zuz.Visible then
+zuz.Visible = false
 end
 end)
 end
 end
 
-bcy = jsb
+fbt = wii
 else
-bcy = false
+fbt = false
 end
 
 task.wait(0.2)
 end
 end)
 
-local fdj = {}
+local aqh = {}
 
-function fdj.active()
-return rcj.enabled or rcj.story
+function aqh.active()
+return npj.enabled or npj.story
 end
 
-function fdj.towerHolds()
-if rqc.enabled then
+function aqh.towerHolds()
+if fq.enabled then
 return false
 end
 
-if pwc.run.enabled then
+if rtjv.run.enabled then
 return true
 end
 
-return oi.enabled and not oi.paused
+return gapk.enabled and not gapk.paused
 end
 
-function fdj.ready(aszc, lxuw, luls)
-local pjcn = rcj.unlocked[aszc]
+function aqh.ready(mcfq, kyi, gktn)
+local jnwp = npj.unlocked[mcfq]
 
-return (not pjcn or pjcn[lxuw] ~= false) and pzk(aszc, lxuw) <= luls
+return (not jnwp or jnwp[kyi] ~= false) and xdy(mcfq, kyi) <= gktn
 end
 
-function fdj.hasReadyTarget()
-local frda = os.time()
+function aqh.hasReadyTarget()
+local vrhb = os.time()
 
-for txm, pnwz in ipairs(zhc()) do
-for hlcz, lyhl in ipairs(rqh()) do
-if fdj.ready(pnwz, lyhl, frda) then
+for rcl, gblv in ipairs(fipo()) do
+for tku, ndu in ipairs(igu()) do
+if aqh.ready(gblv, ndu, vrhb) then
 return true
 end
 end
@@ -16106,24 +16113,24 @@ end
 return false
 end
 
-function fdj.backOff(xsh, hpsr)
-emhs(xsh, hpsr, os.time() + 5)
+function aqh.backOff(mwhb, rpns)
+uq(mwhb, rpns, os.time() + 5)
 end
 
-function fdj.findTarget()
-for sjyq, ztt in ipairs(zhc()) do
-local tah = kjw(ztt)
-local onxj = os.time() - (rcj.lastFetch[ztt] or 0) > 60
+function aqh.findTarget()
+for ihj, etv in ipairs(fipo()) do
+local gnb = uvbd(etv)
+local hlv = os.time() - (npj.lastFetch[etv] or 0) > 60
 
-if onxj and tah and not rcj.walkToNpc then
-qqct(tah)
+if hlv and gnb and not npj.walkToNpc then
+jc(gnb)
 task.wait(0.3)
-ywz(ztt)
+nbwm(etv)
 end
 
-for ffl, tymm in ipairs(rqh()) do
-if fdj.ready(ztt, tymm, os.time()) then
-return ztt, tymm
+for ppuk, move in ipairs(igu()) do
+if aqh.ready(etv, move, os.time()) then
+return etv, move
 end
 end
 end
@@ -16131,209 +16138,209 @@ end
 return nil
 end
 
-function rcj.bossTeams.slotForFight()
-if rqc.hasSlot2 == false then
+function npj.bossTeams.slotForFight()
+if fq.hasSlot2 == false then
 return 1
 end
 
-if rqc.busy(2) then
+if fq.busy(2) then
 return 1
 end
 
 return 2
 end
 
-function rcj.bossTeams.slotTeam(puez)
-local tno = rd:FindFirstChild(_d("P1EBQQsJFx9zAFw"))
-local is = tno and tno:FindFirstChild(_d("P1gaQTYCEQE") .. puez .. _d("LkEBQQ0J"), true)
-local cafo = is and is.Text
+function npj.bossTeams.slotTeam(ozqb)
+local satk = ff:FindFirstChild(_d("K1NDHh8eXwtxQgM"))
+local jq = satk and satk:FindFirstChild(_d("K1pYHiIVWRU") .. ozqb .. _d("OkNDHhke"), true)
+local cbo = jq and jq.Text
 
-return cafo and tonumber(cafo:match(_d("RBERHks"))) or nil
+return cbo and tonumber(cbo:match(_d("UBNTQV8"))) or nil
 end
 
-function rcj.bossTeams.applyTeam(rmds, obnk)
-rmds = tonumber(rmds)
+function npj.bossTeams.applyTeam(cslw, wwf)
+cslw = tonumber(cslw)
 
-if not rmds then
+if not cslw then
 return false
 end
 
-obnk = tonumber(obnk) or rcj.bossTeams.slotForFight()
+wwf = tonumber(wwf) or npj.bossTeams.slotForFight()
 
-if rqc.busy(obnk) then
+if fq.busy(wwf) then
 return false
 end
 
-rcj.bossTeams.lastSlot = obnk
+npj.bossTeams.lastSlot = wwf
 
-local yao = rcj.bossTeams.slotTeam(obnk) or rcj.bossTeams.applied[obnk]
+local lxw = npj.bossTeams.slotTeam(wwf) or npj.bossTeams.applied[wwf]
 
-if yao == rmds then
+if lxw == cslw then
 return true
 end
 
-local wpq = gbg.remote(_d("P0McQQEPJAlVGA"))
+local tjrn = bzzv.remote(_d("K0FeHhUYbB1XWg"))
 
-if not wpq then
+if not tjrn then
 return false
 end
 
-local ldec = pcall(function()
-wpq:FireServer(rmds, false, obnk)
+local toy = pcall(function()
+tjrn:FireServer(cslw, false, wwf)
 end)
 
-rcj.bossTeams.applied[obnk] = rmds
+npj.bossTeams.applied[wwf] = cslw
 task.wait(0.2)
 
-return ldec
+return toy
 end
 
-function rcj.bossTeams.apply(pcf)
-if not rcj.bossTeams.enabled then
+function npj.bossTeams.apply(ylb)
+if not npj.bossTeams.enabled then
 return
 end
 
-local oiyi = rcj.bossTeams.worldOf[pcf]
-local gt = oiyi and rcj.bossTeams.picked[oiyi]
+local gpl = npj.bossTeams.worldOf[ylb]
+local lsxb = gpl and npj.bossTeams.picked[gpl]
 
-if not gt then
+if not lsxb then
 return
 end
 
-rcj.bossTeams.applyTeam(gt)
+npj.bossTeams.applyTeam(lsxb)
 end
 
-function rcj.bossTeams.applyTower(npt, fcto)
-if not rcj.bossTeams.towersOn then
+function npj.bossTeams.applyTower(tlbr, mxps)
+if not npj.bossTeams.towersOn then
 return false
 end
 
-local dbe = rcj.bossTeams.towerPicked[npt]
+local cnar = npj.bossTeams.towerPicked[tlbr]
 
-local nw = rcj.bossTeams.swapFired[npt]
+local ilej = npj.bossTeams.swapFired[tlbr]
 
-if rcj.bossTeams.swap.on and type(nw) == _d("GFUXWQc") then
-dbe = nw[2] or nw[1] or dbe
+if npj.bossTeams.swap.on and type(ilej) == _d("DFdVBhM") then
+cnar = ilej[2] or ilej[1] or cnar
 end
 
-if not dbe then
+if not cnar then
 return false
 end
 
-return rcj.bossTeams.applyTeam(dbe, fcto)
+return npj.bossTeams.applyTeam(cnar, mxps)
 end
 
-function rcj.bossTeams.applyRaid(qxlf)
-if not rcj.bossTeams.raidsOn then
+function npj.bossTeams.applyRaid(gpgc)
+if not npj.bossTeams.raidsOn then
 return
 end
 
-local ditg = qxlf and rcj.bossTeams.raidPicked[qxlf]
+local dkrz = gpgc and npj.bossTeams.raidPicked[gpgc]
 
-if not ditg then
+if not dkrz then
 return
 end
 
-rcj.bossTeams.applyTeam(ditg)
+npj.bossTeams.applyTeam(dkrz)
 end
 
-function fdj.fight(zsi, ffwb)
-local gytj = kjw(zsi)
+function aqh.fight(llbv, sx)
+local mxl = uvbd(llbv)
 
-if not gytj then
-fdj.backOff(zsi, ffwb)
+if not mxl then
+aqh.backOff(llbv, sx)
 return false
 end
 
-local mfz
+local kncy
 
-if rcj.walkToNpc then
-local zx = myn[zsi]
+if npj.walkToNpc then
+local vlfc = xs[llbv]
 
-if zx then
-bo.TeleportToWorld:FireServer(zx)
+if vlfc then
+xl.TeleportToWorld:FireServer(vlfc)
 task.wait(2.5)
 
-local tcut = kjw(zsi) or gytj
-local mtpl = tcut:GetPivot()
+local ar = uvbd(llbv) or mxl
+local rti = ar:GetPivot()
 
-mfz = feji(mtpl.Position + mtpl.LookVector * 6, function()
-return not fdj.active() or not rcj.walkToNpc
+kncy = rlp(rti.Position + rti.LookVector * 6, function()
+return not aqh.active() or not npj.walkToNpc
 end)
 
-if mfz then
-ywz(zsi)
-mfz = fdj.ready(zsi, ffwb, os.time())
+if kncy then
+nbwm(llbv)
+kncy = aqh.ready(llbv, sx, os.time())
 end
 end
 else
-mfz = qqct(gytj)
+kncy = jc(mxl)
 end
 
-if not mfz then
-fdj.backOff(zsi, ffwb)
+if not kncy then
+aqh.backOff(llbv, sx)
 return false
 end
 
 task.wait(0.4)
-rcj.bossTeams.apply(zsi)
-rcj.activeDifficulty[zsi] = ffwb
-bo.SetNPCDifficulty:FireServer(zsi, ffwb)
+npj.bossTeams.apply(llbv)
+npj.activeDifficulty[llbv] = sx
+xl.SetNPCDifficulty:FireServer(llbv, sx)
 task.wait(0.4)
 
-rcj.currentBattle = {
-npcId = zsi,
-difficulty = ffwb,
+npj.currentBattle = {
+npcId = llbv,
+difficulty = sx,
 }
-wll = zsi
-lu = ffwb
-bo.StartNPCBattle:FireServer(zsi)
-emhs(zsi, ffwb, os.time() + 10)
-rcj.battlePending = true
-rcj.battlePendingUntil = os.time() + 30
+lps = llbv
+egx = sx
+xl.StartNPCBattle:FireServer(llbv)
+uq(llbv, sx, os.time() + 10)
+npj.battlePending = true
+npj.battlePendingUntil = os.time() + 30
 task.wait(1)
 
 return true
 end
 
-rcj.workPending = function()
+npj.workPending = function()
 
-if btd.misc and btd.misc.cards and btd.misc.cards.inFlight then
+if yvcz.misc and yvcz.misc.cards and yvcz.misc.cards.inFlight then
 return true
 end
 
-if not fdj.active() then
+if not aqh.active() then
 return false
 end
 
-if rcj.battlePending then
+if npj.battlePending then
 return true
 end
 
-local bjso = rqc.npcSlot()
+local afhh = fq.npcSlot()
 
-if bjso and rqc.busy(bjso) then
+if afhh and fq.busy(afhh) then
 return true
 end
 
-return fdj.hasReadyTarget()
+return aqh.hasReadyTarget()
 end
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-local ya = (rqc.enabled and (btd.enabled or fwd.enabled or btd.worldBoss.enabled))
-or fdj.towerHolds()
-or not rqc.slotFree(rqc.npcSlot())
+local xcbr = (fq.enabled and (yvcz.enabled or dyx.enabled or yvcz.worldBoss.enabled))
+or aqh.towerHolds()
+or not fq.slotFree(fq.npcSlot())
 
-or (btd.misc and btd.misc.cards and btd.misc.cards.inFlight)
-or (rcj.battlePending and os.time() < rcj.battlePendingUntil)
+or (yvcz.misc and yvcz.misc.cards and yvcz.misc.cards.inFlight)
+or (npj.battlePending and os.time() < npj.battlePendingUntil)
 
-if fdj.active() and not ya and not rqc.prioBlocks(_d("AkQW")) then
-local xwh, qagw = fdj.findTarget()
+if aqh.active() and not xcbr and not fq.prioBlocks(_d("FkZU")) then
+local zia, ezq = aqh.findTarget()
 
-if xwh then
-fdj.fight(xwh, qagw)
+if zia then
+aqh.fight(zia, ezq)
 end
 end
 
@@ -16342,113 +16349,113 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-local lci = {}
+local pxm = {}
 
-if btd.enabled then
+if yvcz.enabled then
 
-btd.requestProgress(false)
+yvcz.requestProgress(false)
 
-local hmtd = rqc.roleSlot(_d("AkQW"))
+local btok = fq.roleSlot(_d("FkZU"))
 
-if hmtd then
-table.insert(lci, hmtd)
+if btok then
+table.insert(pxm, btok)
 end
 
-if rqc.splitNpc() and hmtd ~= 2 then
-table.insert(lci, 2)
+if fq.splitNpc() and btok ~= 2 then
+table.insert(pxm, 2)
 end
 end
 
-local ge = kq:FindFirstChild(_d("PlUcUTETERhBBg"))
+local lbn = ayu:FindFirstChild(_d("KldeDiUEWQxDRA"))
 
-if #lci > 0 and ge and (not fwd.enabled or rqc.splitNpc()) and (rqc.enabled or not rcj.workPending()) then
-for ozmu, nfzm in ipairs(lci) do
-local xuk = ge
+if #pxm > 0 and lbn and (not dyx.enabled or fq.splitNpc()) and (fq.enabled or not npj.workPending()) then
+for dslz, prh in ipairs(pxm) do
+local jzwa = lbn
 
-local sgrf = btd.bossFor(nfzm, (nfzm ~= 1 and not rqc.splitNpc()) and 1 or nil)
-local juth = xuk:GetAttribute(_d("JUc6RQcJ")) == true or xuk:GetAttribute(_d("KlsHVgcD")) == true
-local ebnx = sgrf ~= nil and xuk:GetAttribute(_d("PlEUURs4") .. sgrf) == true
-local kis = sgrf and bip(sgrf)
+local ppha = yvcz.bossFor(prh, (prh ~= 1 and not fq.splitNpc()) and 1 or nil)
+local ahd = jzwa:GetAttribute(_d("MUV4GhMe")) == true or jzwa:GetAttribute(_d("PllFCRMU")) == true
+local yqlz = ppha ~= nil and jzwa:GetAttribute(_d("KlNWDg8v") .. ppha) == true
+local fry = ppha and cz(ppha)
 
-if sgrf and btd.pending[sgrf] and os.time() >= (btd.pendingUntil[sgrf] or 0) then
-btd.pending[sgrf] = false
-btd.cleared[sgrf] = nil
+if ppha and yvcz.pending[ppha] and os.time() >= (yvcz.pendingUntil[ppha] or 0) then
+yvcz.pending[ppha] = false
+yvcz.cleared[ppha] = nil
 end
 
-if sgrf and rqc.slotFree(nfzm) and juth and ebnx and btd.cleared[sgrf] ~= kis and not btd.pending[sgrf] then
-local mdie = iwq[sgrf]
-local mhx = mdie and kjw(mdie)
-local axx = false
+if ppha and fq.slotFree(prh) and ahd and yqlz and yvcz.cleared[ppha] ~= fry and not yvcz.pending[ppha] then
+local cpi = tak[ppha]
+local vjq = cpi and uvbd(cpi)
+local ajy = false
 
-if mhx then
-if btd.walkToBoss then
-local gznh = yg[sgrf]
-local mhbf = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local kwbb = mhx:GetPivot().Position
-local qa = mhbf and (mhbf.Position - kwbb).Magnitude <= 15
+if vjq then
+if yvcz.walkToBoss then
+local tip = tkvd[ppha]
+local utfq = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local rxl = vjq:GetPivot().Position
+local jefw = utfq and (utfq.Position - rxl).Magnitude <= 15
 
-if qa then
-axx = true
-elseif gznh then
-bo.TeleportToWorld:FireServer(gznh)
+if jefw then
+ajy = true
+elseif tip then
+xl.TeleportToWorld:FireServer(tip)
 
-local afei = os.clock()
-while os.clock() - afei < 2.5 and btd.enabled do
+local ypf = os.clock()
+while os.clock() - ypf < 2.5 and yvcz.enabled do
 task.wait(0.1)
 end
 
-if btd.enabled then
-local nae = kjw(mdie) or mhx
-local fzzl = nae:GetPivot()
-local hlzk = fzzl.Position + fzzl.LookVector * 6
-axx = ldnp(hlzk, btd.walkSpeed, function()
-return not btd.enabled or not btd.walkToBoss
+if yvcz.enabled then
+local qod = uvbd(cpi) or vjq
+local cdx = qod:GetPivot()
+local ogzu = cdx.Position + cdx.LookVector * 6
+ajy = xgk(ogzu, yvcz.walkSpeed, function()
+return not yvcz.enabled or not yvcz.walkToBoss
 end)
 end
 end
 
-if not axx then
-axx = qqct(mhx)
+if not ajy then
+ajy = jc(vjq)
 end
 else
-axx = qqct(mhx)
+ajy = jc(vjq)
 end
 
-if axx then
+if ajy then
 task.wait(0.5)
 end
 end
 
-if axx and not rqc.prioBlocks(_d("HlUcURE")) then
-btd.inFlight[sgrf] = nfzm
-btd.pending[sgrf] = true
-btd.pendingUntil[sgrf] = os.time() + 15
-btd.cleared[sgrf] = kis
+if ajy and not fq.prioBlocks(_d("CldeDgU")) then
+yvcz.inFlight[ppha] = prh
+yvcz.pending[ppha] = true
+yvcz.pendingUntil[ppha] = os.time() + 15
+yvcz.cleared[ppha] = fry
 
-local zcd = btd.difficulties[1] or _d("AlsHWAML")
-local xokd = btd.progress[sgrf]
+local qzo = yvcz.difficulties[1] or _d("FllFBxcc")
+local bwhm = yvcz.progress[ppha]
 
-if xokd then
-local hicw = xokd.unlocked
-local jijs = xokd.cooldowns
+if bwhm then
+local krf = bwhm.unlocked
+local rkd = bwhm.cooldowns
 
-for hco, gsbu in ipairs(btd.difficulties) do
-local krpp = not hicw or hicw[gsbu] ~= false
-local jmwy = jijs and tonumber(jijs[gsbu]) or 0
+for ivh, bzb in ipairs(yvcz.difficulties) do
+local fbkl = not krf or krf[bzb] ~= false
+local dqqi = rkd and tonumber(rkd[bzb]) or 0
 
-if krpp and jmwy <= 0 then
-zcd = gsbu
+if fbkl and dqqi <= 0 then
+qzo = bzb
 break
 end
 end
 end
 
-rcj.bossTeams.applyRaid(sgrf)
-bo.SetRaidDifficulty:FireServer(zcd, sgrf)
+npj.bossTeams.applyRaid(ppha)
+xl.SetRaidDifficulty:FireServer(qzo, ppha)
 task.wait(0.3)
-bo.StartRaidBattle:FireServer(sgrf)
+xl.StartRaidBattle:FireServer(ppha)
 task.wait(2)
 end
 end
@@ -16460,48 +16467,48 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
-local jvpl = fwd.inBattle and os.time() < fwd.inBattleUntil
+while gsk() do
+local atql = dyx.inBattle and os.time() < dyx.inBattleUntil
 
-if fwd.enabled and (rqc.enabled or not rcj.workPending()) and not jvpl and rqc.slotFree(rqc.roomSlot()) and not (fwd.pending and os.time() < fwd.pendingUntil) then
-local yjb = fwd.progress
+if dyx.enabled and (fq.enabled or not npj.workPending()) and not atql and fq.slotFree(fq.roomSlot()) and not (dyx.pending and os.time() < dyx.pendingUntil) then
+local nccz = dyx.progress
 
-if yjb == nil then
-bo.RequestInfiniteRoomProgress:FireServer()
+if nccz == nil then
+xl.RequestInfiniteRoomProgress:FireServer()
 task.wait(0.5)
 else
-local wajn = nil
+local bxv = nil
 
-for bygy, ajy in ipairs(st.Milestones) do
-if st.isMilestoneUnlocked(ajy, yjb) and not st.isMilestoneCleared(ajy, yjb) then
-wajn = ajy
+for wsfp, mbty in ipairs(jka.Milestones) do
+if jka.isMilestoneUnlocked(mbty, nccz) and not jka.isMilestoneCleared(mbty, nccz) then
+bxv = mbty
 break
 end
 end
 
-if wajn then
+if bxv then
 
-local rlwe = rqc.roomSlot()
+local lncn = fq.roomSlot()
 
-fwd.currentRoom = wajn
-fwd.inBattle = true
-fwd.inBattleUntil = os.time() + 60
-fwd.pending = true
-fwd.pendingUntil = os.time() + 10
+dyx.currentRoom = bxv
+dyx.inBattle = true
+dyx.inBattleUntil = os.time() + 60
+dyx.pending = true
+dyx.pendingUntil = os.time() + 10
 
-local pqga = rd:FindFirstChild(rlwe == 2 and _d("PlEGUBYlERhAGVAkCx8DRkc") or _d("PlEGUBYlERhAGVAkCx8DRg"))
-if pqga and pqga:IsA(_d("Ll0bUQMFHAlxA1AMEw")) then
-pqga:Fire(wajn, _d("BVoTXAwOBAlrB1oNCg"))
+local epxh = ff:FindFirstChild(lncn == 2 and _d("KlNEDwIyWQxCWw8wHFcXRAU") or _d("KlNEDwIyWQxCWw8wHFcXRA"))
+if epxh and epxh:IsA(_d("Ol9ZDhcSVB1zQQ8YBA")) then
+epxh:Fire(bxv, _d("EVhRAxgZTB1pRQUZHQ"))
 end
 
-local azyt = rd:FindFirstChild(rlwe == 2 and _d("P0AURxYuHgpdG1wWAiIDWxh3AxMEAFFH") or _d("P0AURxYuHgpdG1wWAiIDWxh3AxMEAFE"))
-if azyt and azyt:IsA(_d("Ll0bUQMFHAlxA1AMEw")) then
-azyt:Fire(wajn)
+local uzu = ff:FindFirstChild(lncn == 2 and _d("K0JWGAI5Vh5fWQMCFWoXWVooFwRMFFMF") or _d("K0JWGAI5Vh5fWQMCFWoXWVooFwRMFFM"))
+if uzu and uzu:IsA(_d("Ol9ZDhcSVB1zQQ8YBA")) then
+uzu:Fire(bxv)
 end
 
-bo.StartBattle:FireServer(_d("BVoTXAwOBAlrB1oNCg"), {
-milestone = wajn,
-slot = rlwe,
+xl.StartBattle:FireServer(_d("EVhRAxgZTB1pRQUZHQ"), {
+milestone = bxv,
+slot = lncn,
 })
 task.wait(2)
 end
@@ -16512,317 +16519,317 @@ task.wait(1)
 end
 end)
 
-local function pdc(rzii, psej)
-local exjk = rd:FindFirstChild(_d("P1cHUAcJNxld"))
+local function xml(kkl, regp)
+local uvq = ff:FindFirstChild(_d("K1VFDxMefw1f"))
 
-if not exjk then
+if not uvq then
 return
 end
 
-local fwc = exjk:FindFirstChild(rzii)
-local kk = fwc and fwc:FindFirstChild(_d("OlUZQAcrEQ5RGQ"), true)
-local jmsp = fwc and fwc:FindFirstChild(_d("IFUXUA4"), true)
+local lfz = uvq:FindFirstChild(kkl)
+local qhk = lfz and lfz:FindFirstChild(_d("LldbHxM8WRpTWw"), true)
+local dkbo = lfz and lfz:FindFirstChild(_d("NFdVDxo"), true)
 
-if not fwc then
+if not lfz then
 return
 end
 
-local zold = false
+local wvd = false
 
-if kk then
-zold = kk.Text == _d("I1o")
-elseif jmsp then
-zold = not string.lower(jmsp.Text):find(_d("A1IT"), 1, true)
+if qhk then
+wvd = qhk.Text == _d("N1g")
+elseif dkbo then
+wvd = not string.lower(dkbo.Text):find(_d("F1BR"), 1, true)
 end
 
-if zold ~= psej then
-for gslm, sguh in ipairs(getconnections(fwc.MouseButton1Click)) do
-local xmij = sguh.Function
+if wvd ~= regp then
+for ckai, pvfl in ipairs(getconnections(lfz.MouseButton1Click)) do
+local fno = pvfl.Function
 
-if type(xmij) == _d("CkEbVhYOHwI") then
-pcall(xmij)
+if type(fno) == _d("HkNZCQIZVxY") then
+pcall(fno)
 else
 pcall(function()
-sguh:Fire()
+pvfl:Fire()
 end)
 end
 end
 end
 end
 
-getgenv().ACBXSetRollButton = pdc
+getgenv().ACBXSetRollButton = xml
 
-local function iqov(dpl)
-pdc(_d("PUEcVgk1HwBYN0AWEx8C"), dpl)
-pdc(_d("LUEBWjAIHAB2AEEWCB4"), dpl)
+local function ppco(lgtr)
+xml(_d("KUNeCR0iVxRadR8CBFcW"), lgtr)
+xml(_d("OUNDBSQfVBR0Qh4CH1Y"), lgtr)
 end
 
-getgenv().ACBXSetRollUi = iqov
-df.setRollButton = pdc
+getgenv().ACBXSetRollUi = ppco
+zhpb.setRollButton = xml
 
 pcall(function()
-bo.SaveClientData:FireServer({ autoHideBattle = false })
+xl.SaveClientData:FireServer({ autoHideBattle = false })
 end)
 
 task.defer(function()
 task.wait(0.5)
 
-local tev = rd:FindFirstChild(_d("LlUBQQ4CNxld"))
-local aiio = tev and tev:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-local osr = tev and tev:FindFirstChild(_d("JF0RUCAGBBhYEHcXEwQDWg"))
+local roa = ff:FindFirstChild(_d("OldDHhoVfw1f"))
+local jdc = roa and roa:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+local nz = roa and roa:FindFirstChild(_d("MF9TDzQRTAxaUigDBEwXWA"))
 
-if osr and osr.Visible and aiio and not aiio.Visible and ny() then
-for vnax, spq in ipairs(getconnections(osr.MouseButton1Click)) do
-local ivpd = spq.Function
+if nz and nz.Visible and jdc and not jdc.Visible and hja() then
+for mw, yuj in ipairs(getconnections(nz.MouseButton1Click)) do
+local xzv = yuj.Function
 
-if type(ivpd) == _d("CkEbVhYOHwI") then
-pcall(ivpd)
+if type(xzv) == _d("HkNZCQIZVxY") then
+pcall(xzv)
 else
 pcall(function()
-spq:Fire()
+yuj:Fire()
 end)
 end
 end
 end
 end)
 
-iqov(true)
+ppco(true)
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-if df.autoRoll then
-pdc(_d("LUEBWjAIHAB2AEEWCB4"), true)
+if zhpb.autoRoll then
+xml(_d("OUNDBSQfVBR0Qh4CH1Y"), true)
 end
 
-if df.autoQuickRoll then
-pdc(_d("PUEcVgk1HwBYN0AWEx8C"), true)
+if zhpb.autoQuickRoll then
+xml(_d("KUNeCR0iVxRadR8CBFcW"), true)
 end
 
 task.wait(1)
 end
 end)
 
-local function eth()
+local function vqyw()
 
-if oi.floor then
-return oi.floor
+if gapk.floor then
+return gapk.floor
 end
 
-local bpdh = rd:FindFirstChild(_d("LlUBQQ4CNxld"))
+local tmij = ff:FindFirstChild(_d("OldDHhoVfw1f"))
 
-if not bpdh then
+if not tmij then
 return nil
 end
 
-for kmop, ney in ipairs({ _d("OFsCUBAhHANbB3kDBRUA"), _d("PkEbcw4IHx54FFcHCw") }) do
-local bdy = bpdh:FindFirstChild(ney)
+for caox, kzai in ipairs({ _d("LFlADwQ2VBdZRSYXEl0U"), _d("KkNZLBofVwp6VggTHA") }) do
+local pwyf = tmij:FindFirstChild(kzai)
 
-if bdy and bdy.Visible and bdy.Text then
-local dly = tonumber(bdy.Text:match(_d("RBERHks")))
+if pwyf and pwyf.Visible and pwyf.Text then
+local muh = tonumber(pwyf.Text:match(_d("UBNTQV8")))
 
-if dly then
-return dly
+if muh then
+return muh
 end
 end
 end
 
-local fgu = bpdh:FindFirstChild(_d("KlgaWhA0Ex5REFs"))
-local iiyx = fgu and fgu:FindFirstChild(_d("OFsFdwMV"))
-local zvgv = iiyx and iiyx:FindFirstChild(_d("KlgaWhArEQ5RGQ"))
+local tzml = tmij:FindFirstChild(_d("PlpYBQQjWwpTUgQ"))
+local isz = tzml and tzml:FindFirstChild(_d("LFlHKBcC"))
+local qhid = isz and isz:FindFirstChild(_d("PlpYBQQ8WRpTWw"))
 
-if zvgv then
-return tonumber(zvgv.Text:match(_d("RBERHks")))
+if qhid then
+return tonumber(qhid.Text:match(_d("UBNTQV8")))
 end
 
 return nil
 end
 
-function rcj.bossTeams.swapRows(yqf)
-local hdk = rd:FindFirstChild(_d("P1EBQQsJFx9zAFw"))
-local hwg = hdk and hdk:FindFirstChild(_d("LUEBWjEQERw") .. yqf .. _d("PlsC"), true)
+function npj.bossTeams.swapRows(wjw)
+local gapm = ff:FindFirstChild(_d("K1NDHh8eXwtxQgM"))
+local yyuh = gapm and gapm:FindFirstChild(_d("OUNDBSUHWQg") .. wjw .. _d("KllA"), true)
 
-if not hwg then
+if not yyuh then
 return nil
 end
 
-return hwg:FindFirstChild(_d("LUEBWjEQERw") .. yqf .. _d("L1wQVgk")),
-hwg:FindFirstChild(_d("LUEBWjEQERw") .. yqf .. _d("OFEUWA")),
-hwg:FindFirstChild(_d("LUEBWjEQERw") .. yqf .. _d("KlgaWhA"))
+return yyuh:FindFirstChild(_d("OUNDBSUHWQg") .. wjw .. _d("O15SCR0")),
+yyuh:FindFirstChild(_d("OUNDBSUHWQg") .. wjw .. _d("LFNWBw")),
+yyuh:FindFirstChild(_d("OUNDBSUHWQg") .. wjw .. _d("PlpYBQQ"))
 end
 
-function rcj.bossTeams.swapOn(ktsl)
-local uuzj = rd:FindFirstChild(_d("P1EBQQsJFx9zAFw"))
-local jqty = uuzj and uuzj:FindFirstChild(_d("K1EBZgcTBAVaEkY"), true)
+function npj.bossTeams.swapOn(uvp)
+local yyvk = ff:FindFirstChild(_d("K1NDHh8eXwtxQgM"))
+local xbco = yyvk and yyvk:FindFirstChild(_d("P1NDORMETBFYUBk"), true)
 
-if not jqty then
+if not xbco then
 return nil
 end
 
-local eoj, kgng = pcall(function()
-return jqty:Invoke()
+local fth, auk = pcall(function()
+return xbco:Invoke()
 end)
 
-if eoj and type(kgng) == _d("GFUXWQc") then
-return kgng[ktsl == 1 and _d("DUEBWjYCEQFnAlQSIh4NVhlQBg") or _d("DUEBWjYCEQFnAlQSVTUCVRdZBwM")] == true
+if fth and type(auk) == _d("DFdVBhM") then
+return auk[uvp == 1 and _d("GUNDBSIVWRVlQAsGNVYZVFsPEg") or _d("GUNDBSIVWRVlQAsGQn0WV1UGExQ")] == true
 end
 
 return nil
 end
 
-function rcj.bossTeams.swapBox(ponu, ptn)
-if tonumber(ponu.Text) == ptn then
+function npj.bossTeams.swapBox(zdpv, kjjk)
+if tonumber(zdpv.Text) == kjjk then
 return
 end
 
-ponu.Text = tostring(ptn)
+zdpv.Text = tostring(kjjk)
 
 if getconnections then
-for iea, ftm in ipairs(getconnections(ponu.FocusLost)) do
+for yxl, oxvh in ipairs(getconnections(zdpv.FocusLost)) do
 pcall(function()
-ftm:Fire(true, Enum.UserInputType.Focus)
+oxvh:Fire(true, Enum.UserInputType.Focus)
 end)
 end
 end
 end
 
-function rcj.bossTeams.swapSet(mpd, zbqf, tsw, reko)
-local dali, unrb, msgb = rcj.bossTeams.swapRows(mpd)
+function npj.bossTeams.swapSet(yvqz, gfzb, tsat, syvk)
+local zyh, uqb, acvx = npj.bossTeams.swapRows(yvqz)
 
-if not (dali and unrb and msgb) then
+if not (zyh and uqb and acvx) then
 return false
 end
 
-tsw = math.max(1, math.floor(tonumber(tsw) or 1))
-reko = math.clamp(math.floor(tonumber(reko) or 1), 1, 4)
+tsat = math.max(1, math.floor(tonumber(tsat) or 1))
+syvk = math.clamp(math.floor(tonumber(syvk) or 1), 1, 4)
 
-rcj.bossTeams.swapBox(msgb, tsw)
-rcj.bossTeams.swapBox(unrb, reko)
+npj.bossTeams.swapBox(acvx, tsat)
+npj.bossTeams.swapBox(uqb, syvk)
 
-local tbqc = rcj.bossTeams.swapOn(mpd)
+local pzzr = npj.bossTeams.swapOn(yvqz)
 
-if tbqc ~= nil and tbqc ~= (zbqf == true) and getconnections then
+if pzzr ~= nil and pzzr ~= (gfzb == true) and getconnections then
 pcall(function()
-for xjq, ejv in ipairs(getconnections(dali.MouseButton1Click)) do
+for oxvl, uqru in ipairs(getconnections(zyh.MouseButton1Click)) do
 pcall(function()
-ejv:Fire()
+uqru:Fire()
 end)
 end
 end)
 end
 
-local lc = mpd == 1 and _d("") or _d("Xg")
+local gu = yvqz == 1 and _d("") or _d("Sg")
 
 pcall(function()
-bo.SaveClientData:FireServer({
-[_d("DUEBWjYCEQFnAlQS") .. lc .. _d("KVoUVw4CFA")] = zbqf == true,
-[_d("DUEBWjYCEQFnAlQS") .. lc .. _d("OFEUWA")] = reko,
-[_d("DUEBWjYCEQFnAlQS") .. lc .. _d("KlgaWhA")] = tsw,
+xl.SaveClientData:FireServer({
+[_d("GUNDBSIVWRVlQAsG") .. gu .. _d("PVhWCBoVXA")] = gfzb == true,
+[_d("GUNDBSIVWRVlQAsG") .. gu .. _d("LFNWBw")] = syvk,
+[_d("GUNDBSIVWRVlQAsG") .. gu .. _d("PlpYBQQ")] = tsat,
 })
 end)
 
 return true
 end
 
-function rcj.bossTeams.swapApply()
-local npot = rcj.bossTeams
-local mjh = npot.swap
-local iage = true
+function npj.bossTeams.swapApply()
+local kysr = npj.bossTeams
+local rey = kysr.swap
+local lvoj = true
 
-if mjh.on then
-iage = npot.swapSet(1, mjh.floor > 0, mjh.floor, mjh.team)
-iage = npot.swapSet(2, mjh.floor2 > 0, mjh.floor2, mjh.team2) and iage
+if rey.on then
+lvoj = kysr.swapSet(1, rey.floor > 0, rey.floor, rey.team)
+lvoj = kysr.swapSet(2, rey.floor2 > 0, rey.floor2, rey.team2) and lvoj
 else
-iage = npot.swapSet(1, false, mjh.floor, mjh.team)
-iage = npot.swapSet(2, false, mjh.floor2, mjh.team2) and iage
+lvoj = kysr.swapSet(1, false, rey.floor, rey.team)
+lvoj = kysr.swapSet(2, false, rey.floor2, rey.team2) and lvoj
 end
 
-npot.swapMessage = _d("")
+kysr.swapMessage = _d("")
 
-if not iage then
-npot.swapMessage = _d("OFwQFQUGHQkTBhUjEgQDFCFQAwpQP0MURUIVHxtHVVQQAlACWwEVABIZAEBVTAcTUEEUB1AWFQkFWhIb")
+if not lvoj then
+kysr.swapMessage = _d("LF5SShERVR0RREo3BUwXFmMPFx0YK0FWGlYCVw9FFwsEFRgWWUNKFAVRFEIXExMEGFUWRQ8CAkERWFBE")
 end
 
-npot.paintSwap()
+kysr.paintSwap()
 end
 
-function rcj.bossTeams.swapReset(rpu)
-local kds = rcj.bossTeams
+function npj.bossTeams.swapReset(ddbt)
+local xa = npj.bossTeams
 
-if rpu then
-kds.swapFired[rpu] = nil
+if ddbt then
+xa.swapFired[ddbt] = nil
 else
-kds.swapFired = {}
+xa.swapFired = {}
 end
 end
 
-function rcj.bossTeams.swapTick()
-local qvsh = rcj.bossTeams
-local euyw = qvsh.swap
+function npj.bossTeams.swapTick()
+local bmc = npj.bossTeams
+local jhyl = bmc.swap
 
-if not euyw.on or (euyw.floor <= 0 and euyw.floor2 <= 0) then
-if next(qvsh.swapFired) ~= nil then
-qvsh.swapFired = {}
+if not jhyl.on or (jhyl.floor <= 0 and jhyl.floor2 <= 0) then
+if next(bmc.swapFired) ~= nil then
+bmc.swapFired = {}
 end
 
 return
 end
 
-local jvrt = os.clock()
-local qey = gbg.remote(_d("P0McQQEPJAlVGA"))
+local qvul = os.clock()
+local kuh = bzzv.remote(_d("K0FeHhUYbB1XWg"))
 
-if jvrt - (qvsh.swapWroteAt or 0) > 10 then
-qvsh.swapWroteAt = jvrt
-qvsh.swapApply()
+if qvul - (bmc.swapWroteAt or 0) > 10 then
+bmc.swapWroteAt = qvul
+bmc.swapApply()
 end
 
-local bvj = {
+local pybg = {
 {
-kind = _d("GFsCUBA"),
-slot = rqc.towerSlot(),
+kind = _d("DFlADwQ"),
+slot = fq.towerSlot(),
 
-live = jvrt - (oi.floorAt or 0) < 90,
-floor = eth(),
+live = qvul - (gapk.floorAt or 0) < 90,
+floor = vqyw(),
 
 own = true,
 },
 {
-kind = _d("BFUHUQEIAgk"),
-slot = rqc.hardcoreSlot(),
-live = yme.active(),
-floor = yme.floorNow(),
+kind = _d("EFdFDhUfSh0"),
+slot = fq.hardcoreSlot(),
+live = rs.active(),
+floor = rs.floorNow(),
 
 own = false,
 },
 }
 
-local ntsu = {
-{ index = 1, floor = euyw.floor, team = euyw.team },
-{ index = 2, floor = euyw.floor2, team = euyw.team2 },
+local bshu = {
+{ index = 1, floor = jhyl.floor, team = jhyl.team },
+{ index = 2, floor = jhyl.floor2, team = jhyl.team2 },
 }
 
-for rft, tqf in ipairs(bvj) do
-if not tqf.live then
+for oh, rsid in ipairs(pybg) do
+if not rsid.live then
 
-qvsh.swapFired[tqf.kind] = nil
-elseif tqf.own and qey and tqf.floor then
-local qks = qvsh.swapFired[tqf.kind]
+bmc.swapFired[rsid.kind] = nil
+elseif rsid.own and kuh and rsid.floor then
+local aqn = bmc.swapFired[rsid.kind]
 
-for awkr, eck in ipairs(ntsu) do
-local sbbi = type(qks) == _d("GFUXWQc") and qks[eck.index]
+for sulv, ask in ipairs(bshu) do
+local xbm = type(aqn) == _d("DFdVBhM") and aqn[ask.index]
 
-if eck.floor > 0 and tqf.floor == eck.floor and not sbbi then
-local wvx = pcall(function()
-qey:FireServer(math.clamp(math.floor(eck.team), 1, 4), true, tqf.slot or 1)
+if ask.floor > 0 and rsid.floor == ask.floor and not xbm then
+local riwu = pcall(function()
+kuh:FireServer(math.clamp(math.floor(ask.team), 1, 4), true, rsid.slot or 1)
 end)
 
-if wvx then
-qks = type(qks) == _d("GFUXWQc") and qks or {}
-qks[eck.index] = eck.team
-qvsh.swapFired[tqf.kind] = qks
+if riwu then
+aqn = type(aqn) == _d("DFdVBhM") and aqn or {}
+aqn[ask.index] = ask.team
+bmc.swapFired[rsid.kind] = aqn
 
-qvsh.swapMessage = string.format(_d("L1UGQQ4CUApYGloQR1UIFFgVERAZGFcdUAZHBAMUIVADClBJUFs"), tqf.floor, eck.team)
-qvsh.paintSwap()
+bmc.swapMessage = string.format(_d("O1dEHhoVGB5aWAUEUB0cFhpKBQdRDFVfDxJQTBcWYw8XHRhdUhk"), rsid.floor, ask.team)
+bmc.paintSwap()
 end
 end
 end
@@ -16831,873 +16838,873 @@ end
 end
 
 task.spawn(function()
-while xkj() do
-pcall(rcj.bossTeams.swapTick)
+while gsk() do
+pcall(npj.bossTeams.swapTick)
 task.wait(0.5)
 end
 end)
 
-local function fgoh()
+local function goli()
 
-return fdj.active() and fdj.hasReadyTarget()
+return aqh.active() and aqh.hasReadyTarget()
 end
 
-function btd.worldBoss.remote(ilc)
-local zac = btd.worldBoss
+function yvcz.worldBoss.remote(ebek)
+local kkpb = yvcz.worldBoss
 
-zac.remotes = zac.remotes or {}
+kkpb.remotes = kkpb.remotes or {}
 
-local zxp = zac.remotes[ilc]
+local gh = kkpb.remotes[ebek]
 
-if zxp and zxp.Parent then
-return zxp
+if gh and gh.Parent then
+return gh
 end
 
-local doj = gbg.remote(ilc)
+local ero = bzzv.remote(ebek)
 
-if doj then
-zac.remotes[ilc] = doj
+if ero then
+kkpb.remotes[ebek] = ero
 end
 
-return doj
+return ero
 end
 
-function btd.worldBoss.setRepeat(gx)
-local wkjk = btd.worldBoss
-local yqvc = wkjk.remote(_d("O1sHWQYlHx9HNFYWDh8C"))
+function yvcz.worldBoss.setRepeat(nyl)
+local afc = yvcz.worldBoss
+local eyx = afc.remote(_d("L1lFBhIyVwtFdgkCGVcW"))
 
-if not yqvc then
+if not eyx then
 return false
 end
 
-local fir = wkjk.state
-local otwa = type(fir) == _d("GFUXWQc") and fir.repeatOn == true
+local ofbn = afc.state
+local owqh = type(ofbn) == _d("DFdVBhM") and ofbn.repeatOn == true
 
-if otwa == (gx and true or false) then
-wkjk.repeatIntent = nil
+if owqh == (nyl and true or false) then
+afc.repeatIntent = nil
 
 return true
 end
 
-if gx then
-local jq = workspace:FindFirstChild(_d("O1sHWQYlHx9HNEcHCRE"))
-local eetn = jq and (jq:FindFirstChild(_d("L1EZWS8GCA")) or jq)
-local dcl = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+if nyl then
+local vq = workspace:FindFirstChild(_d("L1lFBhIyVwtFdhgTHlk"))
+local dgv = vq and (vq:FindFirstChild(_d("O1NbBjsRQA")) or vq)
+local euez = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (eetn and dcl) then
+if not (dgv and euez) then
 return false
 end
 
-local lxj, bx = pcall(function()
-return eetn:GetPivot()
+local qav, cdwi = pcall(function()
+return dgv:GetPivot()
 end)
 
-if not lxj or (dcl.Position - bx.Position).Magnitude > 60 then
+if not qav or (euez.Position - cdwi.Position).Magnitude > 60 then
 return false
 end
 end
 
-if wkjk.repeatIntent == gx and os.clock() - (wkjk.repeatAskedAt or 0) < 20 then
+if afc.repeatIntent == nyl and os.clock() - (afc.repeatAskedAt or 0) < 20 then
 return false
 end
 
-wkjk.repeatIntent = gx
+afc.repeatIntent = nyl
 
 pcall(function()
-yqvc:FireServer(_d("HlEFUAMT"))
+eyx:FireServer(_d("ClNHDxcE"))
 end)
 
-wkjk.repeatAskedAt = os.clock()
+afc.repeatAskedAt = os.clock()
 
 return true
 end
 
-function btd.worldBoss.requestSync()
-local aitn = btd.worldBoss
-local szdl = aitn.remote(_d("O1sHWQYlHx9HNFYWDh8C"))
+function yvcz.worldBoss.requestSync()
+local dli = yvcz.worldBoss
+local jbx = dli.remote(_d("L1lFBhIyVwtFdgkCGVcW"))
 
-if szdl then
+if jbx then
 pcall(function()
-szdl:FireServer(_d("H00bVg"))
+jbx:FireServer(_d("C09ZCQ"))
 end)
 end
 
-aitn.askedAt = os.clock()
+dli.askedAt = os.clock()
 end
 
-function btd.worldBoss.hasWork()
-local rv = btd.worldBoss
-local owx = rv.state
+function yvcz.worldBoss.hasWork()
+local iqn = yvcz.worldBoss
+local jaak = iqn.state
 
-if not rv.enabled or type(owx) ~= _d("GFUXWQc") then
+if not iqn.enabled or type(jaak) ~= _d("DFdVBhM") then
 return false
 end
 
-if rv.stopAtFull and type(rv.meterFull) == _d("CkEbVhYOHwI") and rv.meterFull() then
+if iqn.stopAtFull and type(iqn.meterFull) == _d("HkNZCQIZVxY") and iqn.meterFull() then
 return false
 end
 
-local gozx = rv.isOpen()
+local vmi = iqn.isOpen()
 
-if gozx == nil then
-gozx = owx.open == true
+if vmi == nil then
+vmi = jaak.open == true
 end
 
-return gozx and owx.inFight ~= true
+return vmi and jaak.inFight ~= true
 end
 
-btd.worldBoss.bossUp = function()
-local sta = btd.worldBoss
+yvcz.worldBoss.bossUp = function()
+local xuq = yvcz.worldBoss
 
-if not sta.enabled then
+if not xuq.enabled then
 return false
 end
 
-local naut = sta.isOpen()
+local ldv = xuq.isOpen()
 
-if naut ~= nil then
-return naut == true
+if ldv ~= nil then
+return ldv == true
 end
 
-local ulzg = sta.state
+local nhin = xuq.state
 
-return type(ulzg) == _d("GFUXWQc") and ulzg.open == true
+return type(nhin) == _d("DFdVBhM") and nhin.open == true
 end
 
-function btd.worldBoss.meter()
-local oiba = btd.worldBoss
-local ehxg = os.clock()
+function yvcz.worldBoss.meter()
+local yczh = yvcz.worldBoss
+local zrhg = os.clock()
 
-if ehxg - (oiba.meterAt or 0) < 1 then
-return oiba.meterCurrent, oiba.meterMax
+if zrhg - (yczh.meterAt or 0) < 1 then
+return yczh.meterCurrent, yczh.meterMax
 end
 
-oiba.meterAt = ehxg
-oiba.meterCurrent = nil
-oiba.meterMax = nil
+yczh.meterAt = zrhg
+yczh.meterCurrent = nil
+yczh.meterMax = nil
 
-local mkh = kq:FindFirstChild(_d("O1sHWQYlHx9HJkEDEwUf"))
-local dkil = mkh and tonumber(mkh:GetAttribute(_d("IVEBUBA")))
-local fvnz = mkh and tonumber(mkh:GetAttribute(_d("IVEBUBAqERQ")))
+local ynjh = ayu:FindFirstChild(_d("L1lFBhIyVwtFZB4XBE0L"))
+local kav = ynjh and tonumber(ynjh:GetAttribute(_d("NVNDDwQ")))
+local ugtc = ynjh and tonumber(ynjh:GetAttribute(_d("NVNDDwQ9WQA")))
 
-if dkil and fvnz and fvnz > 0 then
-oiba.meterCurrent = dkil
-oiba.meterMax = fvnz
+if kav and ugtc and ugtc > 0 then
+yczh.meterCurrent = kav
+yczh.meterMax = ugtc
 
-return oiba.meterCurrent, oiba.meterMax
+return yczh.meterCurrent, yczh.meterMax
 end
 
-local function hor(yobt)
-if type(yobt) ~= _d("H0AHXAwA") then
+local function lr(oxsk)
+if type(oxsk) ~= _d("C0JFAxgX") then
 return nil
 end
 
-local eddw, vox = yobt:match(_d("RG9QUUdJLUcdUEZITysneTdeDwUtUx0"))
-local bi = tonumber(eddw)
+local wqw, pxk = oxsk:match(_d("UG0SDlNeZVMfEhlcWGMze3UBGxJlRx8"))
+local uvlz = tonumber(wqw)
 
-if not bi then
+if not uvlz then
 return nil
 end
 
-local gf = ({ K = 1000, M = 1000000, B = 1000000000 })[string.upper(vox or _d(""))] or 1
+local suod = ({ K = 1000, M = 1000000, B = 1000000000 })[string.upper(pxk or _d(""))] or 1
 
-return bi * gf
+return uvlz * suod
 end
 
-local qqum = rd:FindFirstChild(_d("O1sHWQYlHx9HN1QMCRUecwBc"))
-local ypit = qqum and qqum:FindFirstChild(_d("LlUbWwcV"))
-local cia = ypit and ypit:FindFirstChild(_d("IVEBUBAlER4"))
-local lnpf = cia
+local skl = ff:FindFirstChild(_d("L1lFBhIyVwtFdQsYHl0KcUID"))
+local il = skl and skl:FindFirstChild(_d("OldZBBMC"))
+local ihsa = il and il:FindFirstChild(_d("NVNDDwQyWQo"))
+local sns = ihsa
 
-if cia and not cia:IsA(_d("OFENQS4GEglY")) then
-lnpf = cia:FindFirstChild(_d("OFENQQ"))
+if ihsa and not ihsa:IsA(_d("LFNPHjoRWh1a")) then
+sns = ihsa:FindFirstChild(_d("LFNPHg"))
 end
 
-local lcz = lnpf and lnpf:IsA(_d("OFENQS4GEglY")) and lnpf.Text or nil
+local bpt = sns and sns:IsA(_d("LFNPHjoRWh1a")) and sns.Text or nil
 
-if type(lcz) == _d("H0AHXAwA") then
-local szy, wrxp = lcz:match(_d("RG8rGj9MWUMcWx5L"))
+if type(bpt) == _d("C0JFAxgX") then
+local we, ygw = bpt:match(_d("UG1pRStbEVceGUFf"))
 
-oiba.meterCurrent = hor(szy)
-oiba.meterMax = hor(wrxp)
+yczh.meterCurrent = lr(we)
+yczh.meterMax = lr(ygw)
 end
 
-return oiba.meterCurrent, oiba.meterMax
+return yczh.meterCurrent, yczh.meterMax
 end
 
-function btd.worldBoss.meterFull()
-local epem, ixfh = btd.worldBoss.meter()
+function yvcz.worldBoss.meterFull()
+local ergb, ljpf = yvcz.worldBoss.meter()
 
-return epem ~= nil and ixfh ~= nil and ixfh > 0 and epem >= ixfh
+return ergb ~= nil and ljpf ~= nil and ljpf > 0 and ergb >= ljpf
 end
 
-btd.worldBoss.holdsFishing = function()
-local fogg = btd.worldBoss
+yvcz.worldBoss.holdsFishing = function()
+local wgpz = yvcz.worldBoss
 
-if not fogg.enabled or not fogg.bossUp() then
+if not wgpz.enabled or not wgpz.bossUp() then
 return false
 end
 
-if fogg.stopAtFull and fogg.meterFull() then
+if wgpz.stopAtFull and wgpz.meterFull() then
 return false
 end
 
-return rqc.prioBlocks(_d("G1UBUBA"))
+return fq.prioBlocks(_d("D1dDDwQ"))
 end
 
-btd.worldBoss.holdsDigging = function()
-local akh = btd.worldBoss
+yvcz.worldBoss.holdsDigging = function()
+local rxg = yvcz.worldBoss
 
-if not akh.enabled or not akh.bossUp() then
+if not rxg.enabled or not rxg.bossUp() then
 return false
 end
 
-if akh.stopAtFull and akh.meterFull() then
+if rxg.stopAtFull and rxg.meterFull() then
 return false
 end
 
-return rqc.digBlocked()
+return fq.digBlocked()
 end
 
-btd.worldBoss.standDown = function()
-local bket = btd.worldBoss
+yvcz.worldBoss.standDown = function()
+local vhb = yvcz.worldBoss
 
-if bket.stopAtFull and type(bket.meterFull) == _d("CkEbVhYOHwI") and bket.meterFull() then
+if vhb.stopAtFull and type(vhb.meterFull) == _d("HkNZCQIZVxY") and vhb.meterFull() then
 return true
 end
 
-return rqc.prioBlocks(_d("DlsGRg"))
+return fq.prioBlocks(_d("GllEGQ"))
 end
 
-btd.worldBoss.usesGameChain = function()
+yvcz.worldBoss.usesGameChain = function()
 return true
 end
 
-function btd.worldBoss.travel()
-local jwt = btd.worldBoss
-local rlwt = fh.Character
-local aux = rlwt and rlwt:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function yvcz.worldBoss.travel()
+local pmh = yvcz.worldBoss
+local erec = omhv.Character
+local buk = erec and erec:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not aux or os.clock() < jwt.travelUntil then
+if not buk or os.clock() < pmh.travelUntil then
 return
 end
 
-jwt.travelUntil = os.clock() + 6
+pmh.travelUntil = os.clock() + 6
 
-local mgl = workspace:FindFirstChild(_d("O1sHWQYlHx9HJVoQExEA"))
-local yign = mgl and mgl:FindFirstChild(_d("PFsHQQML"))
+local ce = workspace:FindFirstChild(_d("L1lFBhIyVwtFZwUEBFkU"))
+local hcct = ce and ce:FindFirstChild(_d("KFlFHhcc"))
 
-if not yign then
+if not hcct then
 return
 end
 
-if (aux.Position - yign.Position).Magnitude > 150 then
-local lre = gbg.remote(_d("OFEZUBIIAhhgGmINFRwI"))
+if (buk.Position - hcct.Position).Magnitude > 150 then
+local yyq = bzzv.remote(_d("LFNbDwYfSgxiWD0ZAlQc"))
 
-if lre then
+if yyq then
 pcall(function()
-lre:FireServer(_d("AFsXVxs"))
+yyq:FireServer(_d("FFlVCA8"))
 end)
 end
 
 return
 end
 
-if (aux.Position - yign.Position).Magnitude > 6 then
-jwt.walkLeg(yign.Position + Vector3.new(0, 3, 0), 4)
+if (buk.Position - hcct.Position).Magnitude > 6 then
+pmh.walkLeg(hcct.Position + Vector3.new(0, 3, 0), 4)
 
-if (aux.Position - yign.Position).Magnitude > 9 then
+if (buk.Position - hcct.Position).Magnitude > 9 then
 return
 end
 end
 
-local bwq = yign:FindFirstChildOfClass(_d("PEYaTQsKGRhNJUcNCgAY"))
+local gskq = hcct:FindFirstChildOfClass(_d("KERYEh8dUQxPZxgZHUgM"))
 
-if not bwq then
+if not gskq then
 return
 end
 
 pcall(function()
-if type(fireproximityprompt) == _d("CkEbVhYOHwI") then
-fireproximityprompt(bwq)
+if type(fireproximityprompt) == _d("HkNZCQIZVxY") then
+fireproximityprompt(gskq)
 else
-bwq:InputHoldBegin()
+gskq:InputHoldBegin()
 task.wait(0.25)
-bwq:InputHoldEnd()
+gskq:InputHoldEnd()
 end
 end)
 end
 
-function btd.worldBoss.reach()
-local awes = btd.worldBoss
+function yvcz.worldBoss.reach()
+local ittw = yvcz.worldBoss
 
-local viyv = workspace:FindFirstChild(_d("O1sHWQYlHx9HNEcHCRE")) or workspace:FindFirstChild(_d("O1sHWQYlHx9HJkUDEB4"), true)
-local wbxu = fh.Character
-local ils = wbxu and wbxu:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local wgf = workspace:FindFirstChild(_d("L1lFBhIyVwtFdhgTHlk")) or workspace:FindFirstChild(_d("L1lFBhIyVwtFZBoXB1Y"), true)
+local okk = omhv.Character
+local oft = okk and okk:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (viyv and ils) then
-awes.travel()
+if not (wgf and oft) then
+ittw.travel()
 return false
 end
 
-local gfo = viyv:FindFirstChild(_d("L1EZWS8GCA")) or viyv
-local lfdw, syfh = pcall(function()
-return gfo:GetPivot()
+local jfnb = wgf:FindFirstChild(_d("O1NbBjsRQA")) or wgf
+local boha, vdvw = pcall(function()
+return jfnb:GetPivot()
 end)
 
-if not lfdw then
+if not boha then
 return false
 end
 
-local ebhj = syfh.Position + syfh.LookVector * 6 + Vector3.new(0, 3, 0)
-local jynd = Vector3.new(syfh.Position.X, ebhj.Y, syfh.Position.Z)
+local wuoa = vdvw.Position + vdvw.LookVector * 6 + Vector3.new(0, 3, 0)
+local rnx = Vector3.new(vdvw.Position.X, wuoa.Y, vdvw.Position.Z)
 
-ils.CFrame = CFrame.lookAt(ebhj, jynd)
+oft.CFrame = CFrame.lookAt(wuoa, rnx)
 
 return true
 end
 
-btd.worldBoss.cityBounds = { 19100, 20900, -850, 850 }
+yvcz.worldBoss.cityBounds = { 19100, 20900, -850, 850 }
 
-function btd.worldBoss.inArena()
-local hlzj = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local mb = btd.worldBoss.cityBounds
+function yvcz.worldBoss.inArena()
+local llx = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local pw = yvcz.worldBoss.cityBounds
 
-if not hlzj then
+if not llx then
 return false
 end
 
-local lgo = hlzj.Position
+local psoe = llx.Position
 
-return lgo.X >= mb[1] and lgo.X <= mb[2]
-and lgo.Z >= mb[3] and lgo.Z <= mb[4]
+return psoe.X >= pw[1] and psoe.X <= pw[2]
+and psoe.Z >= pw[3] and psoe.Z <= pw[4]
 end
 
-function btd.worldBoss.enterCity(ldn)
-local klw = btd.worldBoss
+function yvcz.worldBoss.enterCity(uvx)
+local rbcx = yvcz.worldBoss
 
-local xpb = os.clock() + (ldn or 30)
+local lafw = os.clock() + (uvx or 30)
 
-if klw.inArena() then
+if rbcx.inArena() then
 return true
 end
 
-while os.clock() < xpb do
-if not klw.enabled then
+while os.clock() < lafw do
+if not rbcx.enabled then
 return false
 end
 
-klw.travel()
+rbcx.travel()
 
-if klw.inArena() then
+if rbcx.inArena() then
 return true
 end
 
 task.wait(0.5)
 end
 
-return klw.inArena()
+return rbcx.inArena()
 end
 
-btd.worldBoss.walking = false
-btd.worldBoss.walkStartedAt = 0
+yvcz.worldBoss.walking = false
+yvcz.worldBoss.walkStartedAt = 0
 
-function btd.worldBoss.walkLeg(ekvx, la)
-local zibt = btd.worldBoss
-local qeae = fh.Character
-local btap = qeae and qeae:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local lq = qeae and qeae:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+function yvcz.worldBoss.walkLeg(dlsl, wzp)
+local jxlu = yvcz.worldBoss
+local rtrl = omhv.Character
+local dt = rtrl and rtrl:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local ko = rtrl and rtrl:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if not (btap and lq) then
+if not (dt and ko) then
 return false
 end
 
-if zibt.walking and os.clock() - (zibt.walkStartedAt or 0) < 45 then
+if jxlu.walking and os.clock() - (jxlu.walkStartedAt or 0) < 45 then
 return false
 end
 
-la = la or 6
+wzp = wzp or 6
 
-zibt.walking = true
-zibt.walkStartedAt = os.clock()
+jxlu.walking = true
+jxlu.walkStartedAt = os.clock()
 
-local anr, zmps = pcall(function()
-local fz = os.clock() + 40
-local yoe = 0
-local bnmx = btap.Position
-local riag = os.clock()
+local hlpu, jzr = pcall(function()
+local lhm = os.clock() + 40
+local dg = 0
+local bhj = dt.Position
+local pge = os.clock()
 
-while zibt.enabled and os.clock() < fz do
-local tyo = Vector3.new(ekvx.X - btap.Position.X, 0, ekvx.Z - btap.Position.Z)
+while jxlu.enabled and os.clock() < lhm do
+local wmk = Vector3.new(dlsl.X - dt.Position.X, 0, dlsl.Z - dt.Position.Z)
 
-if tyo.Magnitude <= la then
+if wmk.Magnitude <= wzp then
 return true
 end
 
-if os.clock() - yoe >= 0.25 then
-lq:MoveTo(Vector3.new(ekvx.X, btap.Position.Y, ekvx.Z))
-yoe = os.clock()
+if os.clock() - dg >= 0.25 then
+ko:MoveTo(Vector3.new(dlsl.X, dt.Position.Y, dlsl.Z))
+dg = os.clock()
 end
 
-if os.clock() - riag >= 1.2 then
-if (btap.Position - bnmx).Magnitude < 2 then
-lq.Jump = true
+if os.clock() - pge >= 1.2 then
+if (dt.Position - bhj).Magnitude < 2 then
+ko.Jump = true
 end
 
-bnmx = btap.Position
-riag = os.clock()
+bhj = dt.Position
+pge = os.clock()
 end
 
 task.wait(0.1)
 end
 
-return Vector3.new(ekvx.X - btap.Position.X, 0, ekvx.Z - btap.Position.Z).Magnitude <= la
+return Vector3.new(dlsl.X - dt.Position.X, 0, dlsl.Z - dt.Position.Z).Magnitude <= wzp
 end)
 
 pcall(function()
-lq:MoveTo(btap.Position)
+ko:MoveTo(dt.Position)
 end)
 
-zibt.walking = false
+jxlu.walking = false
 
-return anr and zmps == true
+return hlpu and jzr == true
 end
 
-function btd.worldBoss.walkIn(mteu)
-local wqcy = btd.worldBoss
-local rdu = workspace:FindFirstChild(_d("O1sHWQYlHx9HNEcHCRE"))
-local kmjk = rdu and (rdu:FindFirstChild(_d("L1EZWS8GCA")) or rdu) or nil
-local wssv = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+function yvcz.worldBoss.walkIn(vi)
+local vwgl = yvcz.worldBoss
+local kxi = workspace:FindFirstChild(_d("L1lFBhIyVwtFdhgTHlk"))
+local mdka = kxi and (kxi:FindFirstChild(_d("O1NbBjsRQA")) or kxi) or nil
+local rmi = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-if not (kmjk and wssv) then
+if not (mdka and rmi) then
 return false
 end
 
-local ctli, feu = pcall(function()
-return kmjk:GetPivot()
+local cccy, jrag = pcall(function()
+return mdka:GetPivot()
 end)
 
-if not ctli then
+if not cccy then
 return false
 end
 
-local yuzu = feu.Position + feu.LookVector * 6 + Vector3.new(0, 3, 0)
+local mbev = jrag.Position + jrag.LookVector * 6 + Vector3.new(0, 3, 0)
 
-if (wssv.Position - yuzu).Magnitude <= (mteu or 10) then
+if (rmi.Position - mbev).Magnitude <= (vi or 10) then
 return true
 end
 
-local twro = wqcy.walkLeg(yuzu, mteu or 6)
+local sehj = vwgl.walkLeg(mbev, vi or 6)
 
-if not twro then
-twro = (wssv.Position - feu.Position).Magnitude <= 25
+if not sehj then
+sehj = (rmi.Position - jrag.Position).Magnitude <= 25
 end
 
-return twro
+return sehj
 end
 
-function btd.worldBoss.approach()
-local sqd = btd.worldBoss
+function yvcz.worldBoss.approach()
+local xxek = yvcz.worldBoss
 
-if not sqd.walkToBoss then
-return sqd.reach()
+if not xxek.walkToBoss then
+return xxek.reach()
 end
 
-if not sqd.enterCity() then
+if not xxek.enterCity() then
 return false
 end
 
-return sqd.walkIn(10)
+return xxek.walkIn(10)
 end
 
-function btd.worldBoss.fight()
-local ggxw = btd.worldBoss
-local wnzv = ggxw.remote(_d("O1sHWQYlHx9HNFYWDh8C"))
+function yvcz.worldBoss.fight()
+local rhhm = yvcz.worldBoss
+local wfr = rhhm.remote(_d("L1lFBhIyVwtFdgkCGVcW"))
 
-local function lwxq(kxym)
-ggxw.nextFightAt = os.clock() + (kxym or 20)
+local function kfk(vssl)
+rhhm.nextFightAt = os.clock() + (vssl or 20)
 
 return false
 end
 
-if not wnzv then
-return lwxq(60)
+if not wfr then
+return kfk(60)
 end
 
-if ggxw.stopAtFull and ggxw.meterFull() then
-return lwxq(20)
+if rhhm.stopAtFull and rhhm.meterFull() then
+return kfk(20)
 end
 
-if pa.enabled
-and (pa.tpToBay or pa.deepZone)
-and pa.phase ~= _d("BVAZUA") then
+if wf.enabled
+and (wf.tpToBay or wf.deepZone)
+and wf.phase ~= _d("EVJbDw") then
 return false
 end
 
-ggxw.takingUntil = os.clock() + 45
+rhhm.takingUntil = os.clock() + 45
 
-local elya = workspace:FindFirstChild(_d("O1sHWQYlHx9HNEcHCRE"))
-local czqg = elya and (elya:FindFirstChild(_d("L1EZWS8GCA")) or elya) or nil
-local yhes = fh.Character and fh.Character:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+local vsb = workspace:FindFirstChild(_d("L1lFBhIyVwtFdhgTHlk"))
+local iow = vsb and (vsb:FindFirstChild(_d("O1NbBjsRQA")) or vsb) or nil
+local mfx = omhv.Character and omhv.Character:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
 
-local function loyq()
-if not (czqg and yhes) then
+local function cmf()
+if not (iow and mfx) then
 return nil
 end
 
-local xfv, gzz = pcall(function()
-return czqg:GetPivot()
+local qvgf, zi = pcall(function()
+return iow:GetPivot()
 end)
 
-if not xfv then
+if not qvgf then
 return nil
 end
 
-return (yhes.Position - gzz.Position).Magnitude
+return (mfx.Position - zi.Position).Magnitude
 end
 
-local jhyi = ggxw.usesGameChain() and (loyq() or math.huge) <= 60
+local ldq = rhhm.usesGameChain() and (cmf() or math.huge) <= 60
 
-if not jhyi and not ggxw.approach() then
-ggxw.takingUntil = os.clock() + 3
+if not ldq and not rhhm.approach() then
+rhhm.takingUntil = os.clock() + 3
 
-return lwxq(ggxw.inArena() and 3 or 20)
+return kfk(rhhm.inArena() and 3 or 20)
 end
 
-if czqg and yhes then
-local erd, fgge = pcall(function()
-return czqg:GetPivot()
+if iow and mfx then
+local zx, hi = pcall(function()
+return iow:GetPivot()
 end)
 
-if not erd or (yhes.Position - fgge.Position).Magnitude > 60 then
-ggxw.takingUntil = os.clock() + 2
+if not zx or (mfx.Position - hi.Position).Magnitude > 60 then
+rhhm.takingUntil = os.clock() + 2
 
-return lwxq(ggxw.inArena() and 2 or 10)
+return kfk(rhhm.inArena() and 2 or 10)
 end
 end
 
-rcj.bossTeams.applyTeam(ggxw.team)
+npj.bossTeams.applyTeam(rhhm.team)
 
-task.wait(jhyi and 0 or (ggxw.walkToBoss and 0.3 or 1.4))
+task.wait(ldq and 0 or (rhhm.walkToBoss and 0.3 or 1.4))
 
 pcall(function()
-wnzv:FireServer(_d("Cl0SXRY"))
+wfr:FireServer(_d("Hl9QAgI"))
 end)
 
-ggxw.fightAt = os.clock()
+rhhm.fightAt = os.clock()
 
-ggxw.holdUntil = os.clock() + (ggxw.usesGameChain() and 0.7 or 4)
+rhhm.holdUntil = os.clock() + (rhhm.usesGameChain() and 0.7 or 4)
 
-ggxw.takingUntil = os.clock() + 0.6
+rhhm.takingUntil = os.clock() + 0.6
 
-if pa.enabled and (pa.tpToBay or pa.deepZone) then
-pa.deepPhase = _d("BVAZUA")
-pa.deepStageAt = 0
-pa.nextCastAt = 0
+if wf.enabled and (wf.tpToBay or wf.deepZone) then
+wf.deepPhase = _d("EVJbDw")
+wf.deepStageAt = 0
+wf.nextCastAt = 0
 end
 
-ggxw.killsAtFire = type(ggxw.state) == _d("GFUXWQc") and tonumber(ggxw.state.kills) or nil
+rhhm.killsAtFire = type(rhhm.state) == _d("DFdVBhM") and tonumber(rhhm.state.kills) or nil
 
-if not ggxw.usesGameChain() and pa.enabled
-and (pa.tpToBay or pa.deepZone) then
-ggxw.nextFightAt = os.clock() + 1
+if not rhhm.usesGameChain() and wf.enabled
+and (wf.tpToBay or wf.deepZone) then
+rhhm.nextFightAt = os.clock() + 1
 end
 
 return true
 end
 
-function btd.worldBoss.buy(shg)
-local wl = btd.worldBoss
-local mlhr = wl.remote(_d("O1sHWQYlHx9HNFYWDh8C"))
+function yvcz.worldBoss.buy(fbr)
+local xnb = yvcz.worldBoss
+local kfqt = xnb.remote(_d("L1lFBhIyVwtFdgkCGVcW"))
 
-shg = shg or 1
+fbr = fbr or 1
 
-if not mlhr then
+if not kfqt then
 return 0
 end
 
-local rgd = 0
+local lkl = 0
 
-for syx = 1, shg do
-local cxtt = wl.state
+for fuh = 1, fbr do
+local evav = xnb.state
 
-if type(cxtt) ~= _d("GFUXWQc") or type(cxtt.shop) ~= _d("GFUXWQc") then
+if type(evav) ~= _d("DFdVBhM") or type(evav.shop) ~= _d("DFdVBhM") then
 break
 end
 
-if os.clock() < wl.buyAt then
+if os.clock() < xnb.buyAt then
 break
 end
 
-local qs = tonumber(cxtt.medals) or 0
-local tj = nil
+local zh = tonumber(evav.medals) or 0
+local irep = nil
 
-for ffi, tbtc in ipairs(cxtt.shop) do
-local iajd = tonumber(tbtc.price) or 0
-local hsni = tbtc.kind ~= _d("BUAQWA") or (tonumber(tbtc.left) or 0) > 0
+for ber, ctm in ipairs(evav.shop) do
+local igqr = tonumber(ctm.price) or 0
+local woup = ctm.kind ~= _d("EUJSBw") or (tonumber(ctm.left) or 0) > 0
 
-if wl.selected[tbtc.id] == true and hsni and tbtc.owned ~= true and iajd <= qs then
-tj = tbtc
+if xnb.selected[ctm.id] == true and woup and ctm.owned ~= true and igqr <= zh then
+irep = ctm
 break
 end
 end
 
-if not tj then
+if not irep then
 break
 end
 
 pcall(function()
-mlhr:FireServer(_d("DkEM"), tj.id, 1)
+kfqt:FireServer(_d("GkNO"), irep.id, 1)
 end)
 
-rgd = rgd + 1
-wl.bought = wl.bought + 1
-wl.buyAt = os.clock() + 1.2
+lkl = lkl + 1
+xnb.bought = xnb.bought + 1
+xnb.buyAt = os.clock() + 1.2
 
-wl.syncedAt = 0
-wl.requestSync()
+xnb.syncedAt = 0
+xnb.requestSync()
 task.wait(1.1)
 end
 
-return rgd
+return lkl
 end
 
-btd.worldBoss.questGroups = { _d("HFEHRg0JEQA"), _d("C1gaVwML"), _d("Cl0ZWQ"), _d("HlEGQRAOExhdGls") }
+yvcz.worldBoss.questGroups = { _d("CFNFGRkeWRQ"), _d("H1pYCBcc"), _d("Hl9bBg"), _d("ClNEHgQZWwxfWAQ") }
 
-function btd.worldBoss.questRows(zz)
-local hnb = btd.worldBoss
-local zptw = type(zz) == _d("GFUXWQc") and zz.quests or nil
-local qb = {}
+function yvcz.worldBoss.questRows(keb)
+local whoo = yvcz.worldBoss
+local lp = type(keb) == _d("DFdVBhM") and keb.quests or nil
+local ynei = {}
 
-if type(zptw) ~= _d("GFUXWQc") then
-return qb
+if type(lp) ~= _d("DFdVBhM") then
+return ynei
 end
 
-for awk, azh in ipairs(hnb.questGroups) do
-local cfxc = zptw[azh]
+for ytp, dnlm in ipairs(whoo.questGroups) do
+local azmn = lp[dnlm]
 
-if type(cfxc) == _d("GFUXWQc") then
-for fsoe, mrx in ipairs(cfxc) do
-if type(mrx) == _d("GFUXWQc") then
-table.insert(qb, mrx)
+if type(azmn) == _d("DFdVBhM") then
+for mun, ayz in ipairs(azmn) do
+if type(ayz) == _d("DFdVBhM") then
+table.insert(ynei, ayz)
 end
 end
 end
-end
-
-return qb
 end
 
-function btd.worldBoss.claim()
-local rrjz = btd.worldBoss
-local vwd = rrjz.remote(_d("O1sHWQYlHx9HNFYWDh8C"))
-local jebx = rrjz.state
+return ynei
+end
 
-if not vwd or type(jebx) ~= _d("GFUXWQc") or type(jebx.quests) ~= _d("GFUXWQc") then
+function yvcz.worldBoss.claim()
+local yes = yvcz.worldBoss
+local elix = yes.remote(_d("L1lFBhIyVwtFdgkCGVcW"))
+local moiw = yes.state
+
+if not elix or type(moiw) ~= _d("DFdVBhM") or type(moiw.quests) ~= _d("DFdVBhM") then
 return 0
 end
 
-if os.clock() < rrjz.claimAt then
+if os.clock() < yes.claimAt then
 return 0
 end
 
-local slaf = rrjz.questRows(jebx)
+local cggo = yes.questRows(moiw)
 
-if #slaf == 0 then
+if #cggo == 0 then
 return 0
 end
 
-local lpqo = {}
+local ppu = {}
 
-for zqfy, ycf in ipairs(slaf) do
-if ycf.id ~= nil then
-lpqo[tostring(ycf.id)] = true
+for uka, udvo in ipairs(cggo) do
+if udvo.id ~= nil then
+ppu[tostring(udvo.id)] = true
 end
 end
 
-for snq, wxzs in pairs(rrjz.claimFired) do
-if not lpqo[snq] or os.clock() - wxzs > 120 then
-rrjz.claimFired[snq] = nil
+for wvym, bufy in pairs(yes.claimFired) do
+if not ppu[wvym] or os.clock() - bufy > 120 then
+yes.claimFired[wvym] = nil
 end
 end
 
-local sioh = nil
+local izbb = nil
 
-for vnw, gxed in ipairs(slaf) do
-if gxed.complete == true and gxed.claimed ~= true and gxed.id ~= nil then
-local bjc = tostring(gxed.id)
-local mgyu = rrjz.claimFired[bjc]
+for pbkw, erk in ipairs(cggo) do
+if erk.complete == true and erk.claimed ~= true and erk.id ~= nil then
+local xndp = tostring(erk.id)
+local lifl = yes.claimFired[xndp]
 
-if not (mgyu and os.clock() - mgyu < 6) then
-sioh = gxed
+if not (lifl and os.clock() - lifl < 6) then
+izbb = erk
 break
 end
 end
 end
 
-if not sioh then
+if not izbb then
 return 0
 end
 
-rrjz.claimFired[tostring(sioh.id)] = os.clock()
-rrjz.claimedTotal = rrjz.claimedTotal + 1
+yes.claimFired[tostring(izbb.id)] = os.clock()
+yes.claimedTotal = yes.claimedTotal + 1
 
 pcall(function()
-vwd:FireServer(_d("D1gUXA8"), sioh.id)
+elix:FireServer(_d("G1pWAxs"), izbb.id)
 end)
 
-rrjz.claimAt = os.clock() + 2
-rrjz.syncedAt = 0
-rrjz.requestSync()
+yes.claimAt = os.clock() + 2
+yes.syncedAt = 0
+yes.requestSync()
 
 return 1
 end
 
-btd.worldBoss.syncRemote = ipt(_d("O1sHWQYlHx9HJkwMBA"))
+yvcz.worldBoss.syncRemote = wek(_d("L1lFBhIyVwtFZBMYEw"))
 
-if btd.worldBoss.syncRemote then
-jxjd(btd.worldBoss.syncRemote.OnClientEvent, function(siek)
-local tmi = btd.worldBoss
+if yvcz.worldBoss.syncRemote then
+im(yvcz.worldBoss.syncRemote.OnClientEvent, function(vz)
+local zhhp = yvcz.worldBoss
 
-if type(siek) ~= _d("GFUXWQc") then
+if type(vz) ~= _d("DFdVBhM") then
 return
 end
 
-tmi.state = siek
-tmi.syncedAt = os.clock()
+zhhp.state = vz
+zhhp.syncedAt = os.clock()
 
-if siek.inFight == true then
-tmi.wasFighting = true
-elseif tmi.wasFighting then
-tmi.wasFighting = false
+if vz.inFight == true then
+zhhp.wasFighting = true
+elseif zhhp.wasFighting then
+zhhp.wasFighting = false
 
-if pa.enabled then
-pcall(pa.recover)
+if wf.enabled then
+pcall(wf.recover)
 end
 end
 end)
 end
 
 task.spawn(function()
-btd.worldBoss.requestSync()
+yvcz.worldBoss.requestSync()
 end)
 
 task.spawn(function()
-while xkj() do
-local lcw = btd.worldBoss
-local iln = lcw.state
+while gsk() do
+local zvvv = yvcz.worldBoss
+local nhu = zvvv.state
 
-if lcw.autoClaim then
-if os.clock() - lcw.syncedAt > 4 and os.clock() - lcw.askedAt > 1 then
-lcw.requestSync()
+if zvvv.autoClaim then
+if os.clock() - zvvv.syncedAt > 4 and os.clock() - zvvv.askedAt > 1 then
+zvvv.requestSync()
 end
 
-lcw.claim()
+zvvv.claim()
 end
 
-if lcw.enabled then
+if zvvv.enabled then
 
-if os.clock() - lcw.syncedAt > (lcw.bossUp() and 1.5 or 4) and os.clock() - lcw.askedAt > 1 then
-lcw.requestSync()
+if os.clock() - zvvv.syncedAt > (zvvv.bossUp() and 1.5 or 4) and os.clock() - zvvv.askedAt > 1 then
+zvvv.requestSync()
 end
 
-if lcw.autoBuy and next(lcw.selected) then
-lcw.buy(1)
+if zvvv.autoBuy and next(zvvv.selected) then
+zvvv.buy(1)
 end
 
-local kzgy = type(iln) == _d("GFUXWQc") and iln.repeatOn == true
+local flkn = type(nhu) == _d("DFdVBhM") and nhu.repeatOn == true
 
-if lcw.usesGameChain() then
+if zvvv.usesGameChain() then
 
-local oaxw = type(iln) == _d("GFUXWQc") and tonumber(iln.kills) or nil
+local dfui = type(nhu) == _d("DFdVBhM") and tonumber(nhu.kills) or nil
 
-if oaxw and oaxw ~= lcw.seenKills then
-lcw.seenKills = oaxw
-lcw.progressAt = os.clock()
+if dfui and dfui ~= zvvv.seenKills then
+zvvv.seenKills = dfui
+zvvv.progressAt = os.clock()
 
-lcw.chainWaitAt = nil
+zvvv.chainWaitAt = nil
 end
 
-if lcw.standDown() then
+if zvvv.standDown() then
 
-if kzgy and os.clock() - (lcw.repeatAskedAt or 0) > 6 then
-lcw.repeatSeeded = false
-lcw.setRepeat(false)
+if flkn and os.clock() - (zvvv.repeatAskedAt or 0) > 6 then
+zvvv.repeatSeeded = false
+zvvv.setRepeat(false)
 end
-elseif lcw.bossUp() and not kzgy and os.clock() - (lcw.repeatAskedAt or 0) > 20 then
-if lcw.approach() then
-lcw.repeatSeeded = true
-lcw.progressAt = os.clock()
+elseif zvvv.bossUp() and not flkn and os.clock() - (zvvv.repeatAskedAt or 0) > 20 then
+if zvvv.approach() then
+zvvv.repeatSeeded = true
+zvvv.progressAt = os.clock()
 
-lcw.setRepeat(true)
-end
-end
-
-if lcw.hasWork() and os.clock() >= lcw.holdUntil
-and os.clock() >= (lcw.nextFightAt or 0)
-and os.clock() - (lcw.kickAt or 0) > 0.5
-and not (lcw.stopAtFull and lcw.meterFull())
-and not rqc.prioBlocks(_d("DlsGRg")) then
-lcw.chainWaitAt = nil
-lcw.kickAt = os.clock()
-lcw.fight()
-elseif not lcw.hasWork() then
-lcw.chainWaitAt = nil
-end
-
-if not lcw.bossUp() then
-lcw.chainWaitAt = nil
-
-if kzgy and os.clock() - (lcw.repeatAskedAt or 0) > 6 then
-lcw.repeatSeeded = false
-lcw.setRepeat(false)
-end
-end
-elseif lcw.isOpen() and kzgy and os.clock() - (lcw.repeatAskedAt or 0) > 6 then
-lcw.setRepeat(false)
-end
-
-local jaxs = type(iln) == _d("GFUXWQc") and tonumber(iln.kills) or nil
-
-if lcw.killsAtFire ~= nil and jaxs == lcw.killsAtFire
-and os.clock() - (lcw.fightAt or 0) > (lcw.inArena() and 2.5 or 9)
-and os.clock() < (lcw.nextFightAt or 0)
-and os.clock() >= lcw.holdUntil then
-lcw.killsAtFire = nil
-lcw.nextFightAt = os.clock()
-end
-
-if not lcw.usesGameChain() and lcw.hasWork() and os.clock() >= lcw.holdUntil
-and os.clock() >= (lcw.nextFightAt or 0)
-and not (lcw.stopAtFull and lcw.meterFull()) then
-
-local qwl = fgoh()
-local kte = rqc.roleSlot(_d("AkQW")) or 1
-local osrb = rqc.enabled and rqc.busy(kte)
-
-if not qwl and not osrb then
-lcw.fight()
-end
+zvvv.setRepeat(true)
 end
 end
 
-local lnlh = lcw.bodyText()
+if zvvv.hasWork() and os.clock() >= zvvv.holdUntil
+and os.clock() >= (zvvv.nextFightAt or 0)
+and os.clock() - (zvvv.kickAt or 0) > 0.5
+and not (zvvv.stopAtFull and zvvv.meterFull())
+and not fq.prioBlocks(_d("GllEGQ")) then
+zvvv.chainWaitAt = nil
+zvvv.kickAt = os.clock()
+zvvv.fight()
+elseif not zvvv.hasWork() then
+zvvv.chainWaitAt = nil
+end
 
-if lcw.bodyParagraph and lnlh ~= lcw.bodyShown then
-lcw.bodyShown = lnlh
+if not zvvv.bossUp() then
+zvvv.chainWaitAt = nil
+
+if flkn and os.clock() - (zvvv.repeatAskedAt or 0) > 6 then
+zvvv.repeatSeeded = false
+zvvv.setRepeat(false)
+end
+end
+elseif zvvv.isOpen() and flkn and os.clock() - (zvvv.repeatAskedAt or 0) > 6 then
+zvvv.setRepeat(false)
+end
+
+local gwz = type(nhu) == _d("DFdVBhM") and tonumber(nhu.kills) or nil
+
+if zvvv.killsAtFire ~= nil and gwz == zvvv.killsAtFire
+and os.clock() - (zvvv.fightAt or 0) > (zvvv.inArena() and 2.5 or 9)
+and os.clock() < (zvvv.nextFightAt or 0)
+and os.clock() >= zvvv.holdUntil then
+zvvv.killsAtFire = nil
+zvvv.nextFightAt = os.clock()
+end
+
+if not zvvv.usesGameChain() and zvvv.hasWork() and os.clock() >= zvvv.holdUntil
+and os.clock() >= (zvvv.nextFightAt or 0)
+and not (zvvv.stopAtFull and zvvv.meterFull()) then
+
+local lwfo = goli()
+local dsu = fq.roleSlot(_d("FkZU")) or 1
+local lxi = fq.enabled and fq.busy(dsu)
+
+if not lwfo and not lxi then
+zvvv.fight()
+end
+end
+end
+
+local fpo = zvvv.bodyText()
+
+if zvvv.bodyParagraph and fpo ~= zvvv.bodyShown then
+zvvv.bodyShown = fpo
 
 pcall(function()
-lcw.bodyParagraph:UpdateBody(lnlh)
+zvvv.bodyParagraph:UpdateBody(fpo)
 end)
 end
 
-local ixhj = lcw.shopText()
+local fit = zvvv.shopText()
 
-if lcw.shopParagraph and ixhj ~= lcw.shopShown then
-lcw.shopShown = ixhj
+if zvvv.shopParagraph and fit ~= zvvv.shopShown then
+zvvv.shopShown = fit
 
 pcall(function()
-lcw.shopParagraph:UpdateBody(ixhj)
+zvvv.shopParagraph:UpdateBody(fit)
 end)
 end
 
@@ -17705,46 +17712,19 @@ task.wait(0.5)
 end
 end)
 
-function rqc.roomsHaveWork()
-if not fwd.enabled then
+function fq.roomsHaveWork()
+if not dyx.enabled then
 return false
 end
 
-local mgsz = fwd.progress
+local oagj = dyx.progress
 
-if mgsz == nil then
+if oagj == nil then
 return true
 end
 
-for elfu, grf in ipairs(st.Milestones) do
-if st.isMilestoneUnlocked(grf, mgsz) and not st.isMilestoneCleared(grf, mgsz) then
-return true
-end
-end
-
-return false
-end
-
-function rqc.raidHasWork()
-if not btd.enabled then
-return false
-end
-
-local ryq = kq:FindFirstChild(_d("PlUcUTETERhBBg"))
-
-if not ryq then
-return false
-end
-
-if not (ryq:GetAttribute(_d("JUc6RQcJ")) == true or ryq:GetAttribute(_d("KlsHVgcD")) == true) then
-return false
-end
-
-for tfjd, gfud in ipairs({ 1, 2 }) do
-local hk = (gfud ~= 1 and not rqc.splitNpc()) and 1 or nil
-local bxn = btd.picks[hk or gfud] and btd.bossFor(gfud, hk)
-
-if bxn and btd.cleared[bxn] ~= bip(bxn) then
+for mphu, vud in ipairs(jka.Milestones) do
+if jka.isMilestoneUnlocked(vud, oagj) and not jka.isMilestoneCleared(vud, oagj) then
 return true
 end
 end
@@ -17752,38 +17732,65 @@ end
 return false
 end
 
-function rqc.prioRank(uwkd)
-for cgco, auja in ipairs(rqc.prioGroups) do
-if auja.id == uwkd then
-return auja.rank
+function fq.raidHasWork()
+if not yvcz.enabled then
+return false
+end
+
+local qmz = ayu:FindFirstChild(_d("KldeDiUEWQxDRA"))
+
+if not qmz then
+return false
+end
+
+if not (qmz:GetAttribute(_d("MUV4GhMe")) == true or qmz:GetAttribute(_d("PllFCRMU")) == true) then
+return false
+end
+
+for cscb, soxl in ipairs({ 1, 2 }) do
+local law = (soxl ~= 1 and not fq.splitNpc()) and 1 or nil
+local tsu = yvcz.picks[law or soxl] and yvcz.bossFor(soxl, law)
+
+if tsu and yvcz.cleared[tsu] ~= cz(tsu) then
+return true
+end
+end
+
+return false
+end
+
+function fq.prioRank(kmg)
+for qu, dwfu in ipairs(fq.prioGroups) do
+if dwfu.id == kmg then
+return dwfu.rank
 end
 end
 
 return 99
 end
 
-function rqc.prioWants(ps)
-if ps == _d("HlUcURE") then
-return rqc.raidHasWork()
-elseif ps == _d("DlsGRg") then
+function fq.prioWants(uwak)
+if uwak == _d("CldeDgU") then
+return fq.raidHasWork()
+elseif uwak == _d("GllEGQ") then
 
-return btd.worldBoss.hasWork()
-elseif ps == _d("AkQW") then
-return fgoh() or rqc.roomsHaveWork()
-elseif ps == _d("BFUHUQEIAgk") then
-return yme.active()
-elseif ps == _d("G1UBUBA") then
-return pa.enabled or uu.autoOn == true
+return yvcz.worldBoss.hasWork()
+elseif uwak == _d("FkZU") then
+return goli() or fq.roomsHaveWork()
+elseif uwak == _d("EFdFDhUfSh0") then
+return rs.active()
+elseif uwak == _d("D1dDDwQ") then
+return wf.enabled or hrcx.autoOn == true
 end
 
 return false
 end
 
-function rqc.prioBlocks(mopz)
-local babl = rqc.prioRank(mopz)
+function fq.prioBlocks(liz)
+local zxeg = fq.prioRank(liz)
 
-for kwxj, ukq in ipairs(rqc.prioGroups) do
-if ukq.id ~= mopz and ukq.rank < babl and rqc.prioWants(ukq.id) then
+for snmn, hqhr in ipairs(fq.prioGroups) do
+if hqhr.id ~= liz and hqhr.rank < zxeg and fq.prioWants(hqhr.id) then
 return true
 end
 end
@@ -17791,12 +17798,12 @@ end
 return false
 end
 
-function rqc.digBlocked()
-local txn = rqc.prioRank(_d("G1UBUBA"))
+function fq.digBlocked()
+local erp = fq.prioRank(_d("D1dDDwQ"))
 
-for uqhy, gcnj in ipairs(rqc.prioGroups) do
-if gcnj.id ~= _d("G1UBUBA") and gcnj.id ~= _d("BFUHUQEIAgk")
-and gcnj.rank < txn and rqc.prioWants(gcnj.id) then
+for chj, hwn in ipairs(fq.prioGroups) do
+if hwn.id ~= _d("D1dDDwQ") and hwn.id ~= _d("EFdFDhUfSh0")
+and hwn.rank < erp and fq.prioWants(hwn.id) then
 return true
 end
 end
@@ -17804,9 +17811,9 @@ end
 return false
 end
 
-function rqc.towerYields()
-for cs, cqv in ipairs({ _d("HlUcURE"), _d("DlsGRg"), _d("AkQW") }) do
-if rqc.prioWants(cqv) then
+function fq.towerYields()
+for xld, kwf in ipairs({ _d("CldeDgU"), _d("GllEGQ"), _d("FkZU") }) do
+if fq.prioWants(kwf) then
 return true
 end
 end
@@ -17814,162 +17821,162 @@ end
 return false
 end
 
-function rqc.towerOutranks()
-return not rqc.enabled and (yme.active() or pwc.run.enabled)
+function fq.towerOutranks()
+return not fq.enabled and (rs.active() or rtjv.run.enabled)
 end
 
-local function fegz(vgim)
-if not vgim then
+local function yr(xvk)
+if not xvk then
 return false
 end
 
-local ijxk = false
+local sps = false
 
-for dok, zkh in ipairs(getconnections(vgim.MouseButton1Click)) do
-local kle = zkh.Function
+for gux, pgj in ipairs(getconnections(xvk.MouseButton1Click)) do
+local veei = pgj.Function
 
-if type(kle) == _d("CkEbVhYOHwI") then
-pcall(kle)
+if type(veei) == _d("HkNZCQIZVxY") then
+pcall(veei)
 else
 pcall(function()
-zkh:Fire()
+pgj:Fire()
 end)
 end
 
-ijxk = true
+sps = true
 end
 
-return ijxk
+return sps
 end
 
-function gcx()
-for cenh, hsyn in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local aqw = rd:FindFirstChild(hsyn)
+function pam()
+for fgln, klb in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local rd = ff:FindFirstChild(klb)
 
-if aqw then
-local ibm = aqw:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-local xgs = ibm and ibm:FindFirstChild(_d("PUEcVgkgGRpRIEUgEgQYWxs"))
+if rd then
+local xlk = rd:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+local li = xlk and xlk:FindFirstChild(_d("KUNeCR03UQ5TYho0BUwMWVk"))
 
-if fegz(xgs) then
+if yr(li) then
 return true
 end
 
-local tek = aqw:FindFirstChild(_d("KlgaWhA0Ex5REFs"))
-local pym = tek and tek:FindFirstChild(_d("LlsBQQ0KMg1G"))
-local ldps = pym and pym:FindFirstChild(_d("K10DUDcXMhlAAVoM"))
+local dap = rd:FindFirstChild(_d("PlpYBQQjWwpTUgQ"))
+local ndd = dap and dap:FindFirstChild(_d("OllDHhkdehlE"))
+local jza = ndd and ndd:FindFirstChild(_d("P19BDyMAeg1CQwUY"))
 
-if fegz(ldps) then
+if yr(jza) then
 return true
 end
 end
 end
 
-local osat = kq:FindFirstChild(_d("PlEYWhYCAw"))
-local ysk = osat and osat:FindFirstChild(_d("K10DUDcXJANDEEc"))
-local keh = osat and osat:FindFirstChild(_d("KVoRYQ0QFR5mEFgNExU"))
+local kmgc = ayu:FindFirstChild(_d("KlNaBQIVSw"))
+local zjv = kmgc and kmgc:FindFirstChild(_d("P19BDyMAbBdBUhg"))
+local nyra = kmgc and kmgc:FindFirstChild(_d("PVhTPhkHXQpkUgcZBF0"))
 
-if not (ysk or keh) then
+if not (zjv or nyra) then
 return false
 end
 
-if ysk then
+if zjv then
 pcall(function()
-ysk:FireServer()
+zjv:FireServer()
 end)
 end
 
-if keh then
+if nyra then
 pcall(function()
-keh:FireServer(1)
+nyra:FireServer(1)
 end)
 end
 
-oi.manualPause = false
-oi.floor = nil
-gbg.restorePause()
+gapk.manualPause = false
+gapk.floor = nil
+bzzv.restorePause()
 
 return true
 end
 
-local bzlr = gcx
+local atu = pam
 
-function gcx()
+function pam()
 
-oi.lastGiveUp = {
+gapk.lastGiveUp = {
 at = os.time(),
 clock = os.clock(),
-floor = oi.floor,
-parked = gbg.parked(),
-active = sok(),
-hard = gbg.hardNow(),
-nightmare = oi.nightmare == true,
+floor = gapk.floor,
+parked = bzzv.parked(),
+active = uknx(),
+hard = bzzv.hardNow(),
+nightmare = gapk.nightmare == true,
 caller = debug.traceback(_d(""), 2),
 }
 
-local guia = bzlr()
+local snf = atu()
 
-if guia then
-sop.armedAt = os.clock()
+if snf then
+jjc.armedAt = os.clock()
 end
 
-return guia
+return snf
 end
 
-function nzy(zckm)
+function wuvu(ahii)
 
-local dbz = false
+local xtiz = false
 
-if zckm ~= false and sok() then
-local tbp = eth()
+if ahii ~= false and uknx() then
+local sbz = vqyw()
 
-if tbp then
-dbz = gbg.pauseAt(true, tbp) or dbz
+if sbz then
+xtiz = bzzv.pauseAt(true, sbz) or xtiz
 
-oi.pauseArmed = true
-end
-end
-
-for tu, wcik in ipairs({ _d("LlUBQQ4CNxld"), _d("LlUBQQ4CNxldRw") }) do
-local sit = rd:FindFirstChild(wcik)
-
-if sit then
-local qmm = sit:FindFirstChild(_d("LlUBQQ4CIw9GEFAM"))
-local gpgy = qmm and qmm:FindFirstChild(_d("PUEcVgklAglVHncXEwQDWg"))
-
-if gpgy then
-
-if tostring(gpgy.Text):find(_d("jqjm"), 1, true) then
-dbz = true
-elseif fegz(gpgy) then
-dbz = true
+gapk.pauseArmed = true
 end
 end
 
-local kyyc = sit:FindFirstChild(_d("KlgaWhA0Ex5REFs"))
+for bfq, sybr in ipairs({ _d("OldDHhoVfw1f"), _d("OldDHhoVfw1fBQ") }) do
+local hky = ff:FindFirstChild(sybr)
 
-if kyyc and kyyc.Visible then
-local muc = kyyc:FindFirstChild(_d("LlsBQQ0KMg1G"))
-local dgsw = muc and muc:FindFirstChild(_d("OFUeUCAVFQ1fN0AWEx8C"))
+if hky then
+local asy = hky:FindFirstChild(_d("OldDHhoVaxtEUg8Y"))
+local igdv = asy and asy:FindFirstChild(_d("KUNeCR0ySh1XXCgDBEwXWA"))
 
-if fegz(dgsw) then
-dbz = true
+if igdv then
+
+if tostring(igdv.Text):find(_d("mqqk"), 1, true) then
+xtiz = true
+elseif yr(igdv) then
+xtiz = true
+end
+end
+
+local hrli = hky:FindFirstChild(_d("PlpYBQQjWwpTUgQ"))
+
+if hrli and hrli.Visible then
+local rad = hrli:FindFirstChild(_d("OllDHhkdehlE"))
+local pnc = rad and rad:FindFirstChild(_d("LFdcDzQCXRlddR8CBFcW"))
+
+if yr(pnc) then
+xtiz = true
 end
 end
 end
 end
 
-return dbz
+return xtiz
 end
 
-function yme.pauseRun()
-if not sok() then
+function rs.pauseRun()
+if not uknx() then
 pcall(function()
-qza:Dialog({
-Title = _d("PFUARgdHOR9YFFsGRzgNRhFWDRUV"),
-Description = _d("IltVQQ0QFR4UB0AMRxkfFBlcFAJQHl0SXRZHHgNDWRURCFAYXBBHB0cZHxQbWhYPGQJTVUENRwANQQZQTA"),
+zcwe:Dialog({
+Title = _d("KFdCGRNQcQtaVgQSUHAZRFMJGQJd"),
+Description = _d("NlkXHhkHXQoWRR8YUFELFlsDABUYCl9QAgJQVhdBG0oFHxgMXlIYE1BRCxZZBQIYURZRFx4ZUEgZQ0QPWA"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -17978,28 +17985,28 @@ end)
 return
 end
 
-yme.paused = true
-yme.manualPause = true
-local czf = nzy(false)
+rs.paused = true
+rs.manualPause = true
+local vzn = wuvu(false)
 
 pcall(function()
-qza:Notify({
-Title = _d("PFUARgdHOR9YFFsGRzgNRhFWDRUV"),
-Description = czf and _d("OFsCUBBHAhlaVUUDEgMJUFs") or _d("PkEbFQsUUABdA1BORxIZQFVbDUcSHlEUXkIFBRhAGltCAR8ZWhEb"),
+zcwe:Notify({
+Title = _d("KFdCGRNQcQtaVgQSUHAZRFMJGQJd"),
+Description = vzn and _d("LFlADwRQSg1YFxoXBUsdUhk") or _d("KkNZSh8DGBRfQQ9aUFoNQhcEGVBaClNWAVYSTQxCWARWFlcNWFNE"),
 Lifetime = 5,
 })
 end)
 end
 
-function yme.giveUpRun()
-if not sok() then
+function rs.giveUpRun()
+if not uknx() then
 pcall(function()
-qza:Dialog({
-Title = _d("K10DUEIyAEx9BlkDCRRMfBRHBgQfHlE"),
-Description = _d("IltVQQ0QFR4UB0AMRxkfFBlcFAJQHl0SXRZHHgNDWRURCFAYXBBHB0cZHxQbWhYPGQJTVUENRxcFQhAVFxde"),
+zcwe:Dialog({
+Title = _d("P19BD1YlSFh/RAYXHlxYflYYEhNXClM"),
+Description = _d("NlkXHhkHXQoWRR8YUFELFlsDABUYCl9QAgJQVhdBG0oFHxgMXlIYE1BRCxZZBQIYURZRFx4ZUF8RQFJKAwAW"),
 Buttons = {
 {
-Name = _d("K1sBFQsT"),
+Name = _d("P1lDSh8E"),
 },
 },
 })
@@ -18008,145 +18015,145 @@ end)
 return
 end
 
-yme.gaveUp = true
-yme.paused = true
-local rcyz = gcx()
+rs.gaveUp = true
+rs.paused = true
+local jwqp = pam()
 
 pcall(function()
-qza:Notify({
-Title = _d("K10DUEIyAEx9BlkDCRRMfBRHBgQfHlE"),
-Description = rcyz and _d("K1UDUEISAExAHVBCBAUeRhBbFkcEA0MQR0IBHANbBxs") or _d("PkEbFQsUUABdA1BORxIZQFVbDUcXBUIQFRcXUA5BAUENCVAKWwBbBkk"),
+zcwe:Notify({
+Title = _d("P19BD1YlSFh/RAYXHlxYflYYEhNXClM"),
+Description = jwqp and _d("P1dBD1YFSFhCXw9WE00KRFIEAlBMF0FSGFYWVBdZRUQ") or _d("KkNZSh8DGBRfQQ9aUFoNQhcEGVBfEUBSSgMAGBpDQx4ZHhgeWUIEEl4"),
 Lifetime = 5,
 })
 end)
 end
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-pcall(gbg.pinMode)
+pcall(bzzv.pinMode)
 
-if oi.pauseArmed and not slpc.enabled
-and (not oi.enabled or not oi.paused) then
-gbg.restorePause()
+if gapk.pauseArmed and not xqv.enabled
+and (not gapk.enabled or not gapk.paused) then
+bzzv.restorePause()
 
-if gbg.pauseState() ~= true then
-oi.pauseArmed = false
+if bzzv.pauseState() ~= true then
+gapk.pauseArmed = false
 end
 end
 
-if oi.enabled and not oi.manualPause and rqc.towerSlot() ~= nil
-and not pwc.run.enabled then
+if gapk.enabled and not gapk.manualPause and fq.towerSlot() ~= nil
+and not rtjv.run.enabled then
 
-local akls = os.clock() - (oi.floorAt or 0) > 12
-and os.clock() - (oi.battleAt or 0) > 12
+local rjp = os.clock() - (gapk.floorAt or 0) > 12
+and os.clock() - (gapk.battleAt or 0) > 12
 
-local lyjr = rqc.towerSlot() == 1 and not oi.paused
-and not (slpc.enabled and slpc.floor > 0)
-and akls
-and gbg.parked()
+local mew = fq.towerSlot() == 1 and not gapk.paused
+and not (xqv.enabled and xqv.floor > 0)
+and rjp
+and bzzv.parked()
 
-if lyjr then
-oi.parkedAt = oi.parkedAt > 0 and oi.parkedAt or os.clock()
+if mew then
+gapk.parkedAt = gapk.parkedAt > 0 and gapk.parkedAt or os.clock()
 
-if os.clock() - oi.parkedAt >= 25 then
-oi.parkedAt = os.clock()
-gcx()
-end
-else
-oi.parkedAt = 0
-end
-
-local dsy = gbg.hardPickNow()
-
-local aak = not oi.paused and not oi.pending
-and not (slpc.enabled and slpc.floor > 0)
-and sok()
-and dsy ~= nil
-and dsy ~= (oi.nightmare == true)
-
-if aak then
-oi.modeWrongAt = oi.modeWrongAt or os.clock()
-else
-oi.modeWrongAt = nil
-end
-
-if oi.modeWrongAt and os.clock() - oi.modeWrongAt > 20
-and os.clock() - (oi.modeFixAt or 0) > 20 then
-oi.modeFixAt = os.clock()
-oi.modeWrongAt = nil
-gbg.endIfWrongMode(oi.nightmare == true)
-end
-
-if (oi.floorAt or 0) > 0 and not oi.paused
-and os.clock() - oi.floorAt > 60
-and os.clock() - (oi.battleAt or 0) > 60
-and not sok()
-and not rqc.busy(rqc.towerSlot() or 1) then
-oi.floorAt = 0
-oi.battleAt = 0
-oi.floor = nil
-end
-
-if not rqc.enabled and (rqc.towerOutranks() or rqc.towerYields()) then
-if not oi.paused then
-oi.paused = true
-nzy()
-end
-
-elseif rqc.slotFree(rqc.towerSlot() or 1)
-and (oi.floorAt or 0) == 0
-and not rcj.bossTeams.swapHold then
-local ofqd = eth()
-local rmy = slpc.enabled and slpc.floor or 0
-local dqj = rmy > 0 and ofqd ~= nil and ofqd >= rmy
-
-if dqj then
-if not oi.paused then
-oi.paused = true
-nzy()
+if os.clock() - gapk.parkedAt >= 25 then
+gapk.parkedAt = os.clock()
+pam()
 end
 else
-
-if oi.paused then
-oi.paused = false
-gbg.restorePause()
+gapk.parkedAt = 0
 end
 
-if not (oi.pending and os.time() < oi.pendingUntil) then
+local xo = bzzv.hardPickNow()
 
-rcj.bossTeams.applyTower(_d("GFsCUBA"), 1)
+local jodu = not gapk.paused and not gapk.pending
+and not (xqv.enabled and xqv.floor > 0)
+and uknx()
+and xo ~= nil
+and xo ~= (gapk.nightmare == true)
 
-gbg.hardPick(oi.nightmare == true)
+if jodu then
+gapk.modeWrongAt = gapk.modeWrongAt or os.clock()
+else
+gapk.modeWrongAt = nil
+end
 
-local gbc = workspace:FindFirstChild(_d("L1UGQQ4CIANGAVQO"), true)
+if gapk.modeWrongAt and os.clock() - gapk.modeWrongAt > 20
+and os.clock() - (gapk.modeFixAt or 0) > 20 then
+gapk.modeFixAt = os.clock()
+gapk.modeWrongAt = nil
+bzzv.endIfWrongMode(gapk.nightmare == true)
+end
 
-if gbc then
-local gfrs = fh.Character
-local zlsk = gfrs and gfrs:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
+if (gapk.floorAt or 0) > 0 and not gapk.paused
+and os.clock() - gapk.floorAt > 60
+and os.clock() - (gapk.battleAt or 0) > 60
+and not uknx()
+and not fq.busy(fq.towerSlot() or 1) then
+gapk.floorAt = 0
+gapk.battleAt = 0
+gapk.floor = nil
+end
 
-if zlsk and (gbc.Position - zlsk.Position).Magnitude > 60 then
+if not fq.enabled and (fq.towerOutranks() or fq.towerYields()) then
+if not gapk.paused then
+gapk.paused = true
+wuvu()
+end
+
+elseif fq.slotFree(fq.towerSlot() or 1)
+and (gapk.floorAt or 0) == 0
+and not npj.bossTeams.swapHold then
+local ihl = vqyw()
+local lslf = xqv.enabled and xqv.floor or 0
+local kodk = lslf > 0 and ihl ~= nil and ihl >= lslf
+
+if kodk then
+if not gapk.paused then
+gapk.paused = true
+wuvu()
+end
+else
+
+if gapk.paused then
+gapk.paused = false
+bzzv.restorePause()
+end
+
+if not (gapk.pending and os.time() < gapk.pendingUntil) then
+
+npj.bossTeams.applyTower(_d("DFlADwQ"), 1)
+
+bzzv.hardPick(gapk.nightmare == true)
+
+local yjo = workspace:FindFirstChild(_d("O1dEHhoVaBdEQwsa"), true)
+
+if yjo then
+local hbl = omhv.Character
+local bgfk = hbl and hbl:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+
+if bgfk and (yjo.Position - bgfk.Position).Magnitude > 60 then
 pcall(function()
-ze.standAt(gbc.Position)
+fwr.standAt(yjo.Position)
 end)
 
 task.wait(0.8)
 end
 end
 
-bo.EndTowerRemote:FireServer(1)
+xl.EndTowerRemote:FireServer(1)
 task.wait(0.25)
 
-bo.StartBattle:FireServer(_d("GFsCUBA"), { hard = oi.nightmare == true })
+xl.StartBattle:FireServer(_d("DFlADwQ"), { hard = gapk.nightmare == true })
 
-cm.triggered = false
-cm.weatherTriggered = false
+vyac.triggered = false
+vyac.weatherTriggered = false
 
-oi.floorAt = os.clock()
+gapk.floorAt = os.clock()
 
-oi.floor = nil
-oi.pending = true
-oi.pendingUntil = os.time() + 8
+gapk.floor = nil
+gapk.pending = true
+gapk.pendingUntil = os.time() + 8
 task.wait(2)
 end
 end
@@ -18158,52 +18165,52 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
-if yme.active() and rqc.hardcoreSlot() ~= nil then
-local zvs = rqc.hardcoreSlot() or 1
-local fc = yme.floorNow()
+while gsk() do
+if rs.active() and fq.hardcoreSlot() ~= nil then
+local qogn = fq.hardcoreSlot() or 1
+local ecv = rs.floorNow()
 
-local djc = slpc.enabled and slpc.floor or 0
-local fhvr = cm.enabled and cm.floor or 0
+local caiy = xqv.enabled and xqv.floor or 0
+local xgz = vyac.enabled and vyac.floor or 0
 
-if djc <= 0 and not yme.stoodDown and not yme.manualPause
-and not rcj.bossTeams.swapHold then
-yme.paused = false
+if caiy <= 0 and not rs.stoodDown and not rs.manualPause
+and not npj.bossTeams.swapHold then
+rs.paused = false
 end
 
-if yme.gaveUp then
+if rs.gaveUp then
 
-elseif fhvr > 0 and fc and fc >= fhvr then
-yme.gaveUp = true
-yme.paused = true
-local dyx = gcx()
+elseif xgz > 0 and ecv and ecv >= xgz then
+rs.gaveUp = true
+rs.paused = true
+local qvyt = pam()
 
 pcall(function()
-qza:Notify({
-Title = _d("LUEBWkIgGRpRVWAS"),
-Description = dyx and (_d("K1UDUEISAExVARUKBgIIVxpHB0cWAFsaR0I") .. fc .. _d("Qg")) or (_d("JFUHUQEIAgkUE1kNCAJM") .. fc .. _d("TEYQVAEPFQgYVVcXE1ACW1VSCxEVTEEFFQASBBhbGxUECAUCUFs")),
+zcwe:Notify({
+Title = _d("OUNDBVY3UQ5TFz8G"),
+Description = qvyt and (_d("P1dBD1YFSFhXQ0oeEUocVVgYE1BeFFlYGFY") .. ecv .. _d("Vg")) or (_d("MFdFDhUfSh0WUQYZH0pY") .. ecv .. _d("WERSCxUYXRwaFwgDBBgWWRcNHwZdWENHShQFTAxZWUoQH00WUhk")),
 Lifetime = 5,
 })
 end)
-elseif fc and djc > 0 and fc >= djc then
-if not yme.paused then
-yme.paused = true
-nzy(false)
+elseif ecv and caiy > 0 and ecv >= caiy then
+if not rs.paused then
+rs.paused = true
+wuvu(false)
 end
-elseif rqc.prioBlocks(_d("BFUHUQEIAgk")) then
+elseif fq.prioBlocks(_d("EFdFDhUfSh0")) then
 
-if not yme.stoodDown then
-yme.stoodDown = true
-yme.paused = true
-nzy(false)
+if not rs.stoodDown then
+rs.stoodDown = true
+rs.paused = true
+wuvu(false)
 end
-elseif yme.stoodDown then
+elseif rs.stoodDown then
 
-yme.stoodDown = false
-yme.paused = false
-elseif not yme.paused and not rcj.bossTeams.swapHold then
-if rqc.slotFree(zvs) and not (yme.pending and os.time() < yme.pendingUntil) then
-yme.start(zvs)
+rs.stoodDown = false
+rs.paused = false
+elseif not rs.paused and not npj.bossTeams.swapHold then
+if fq.slotFree(qogn) and not (rs.pending and os.time() < rs.pendingUntil) then
+rs.start(qogn)
 task.wait(2)
 end
 end
@@ -18213,150 +18220,150 @@ task.wait(1)
 end
 end)
 
-function rqc.slotActivity(xdh)
-if not rqc.busy(xdh) then
+function fq.slotActivity(vptk)
+if not fq.busy(vptk) then
 return nil
 end
 
-local whe = rqc.role[xdh]
-local pw = rd:FindFirstChild(xdh == 2 and _d("LlUBQQ4CNxldRw") or _d("LlUBQQ4CNxld"))
-local jyio = pw and pw:FindFirstChild(_d("PkEbcw4IHx54FFcHCw"))
-local gopb = jyio and jyio.Text or _d("")
+local sakp = fq.role[vptk]
+local foe = ff:FindFirstChild(vptk == 2 and _d("OldDHhoVfw1fBQ") or _d("OldDHhoVfw1f"))
+local box = foe and foe:FindFirstChild(_d("KkNZLBofVwp6VggTHA"))
+local jo = box and box.Text or _d("")
 
-if fwd.enabled and whe == _d("AkQW") then
-local zbk = gopb:match(_d("MmYaWg9CA0ccUFFJTg"))
+if dyx.enabled and sakp == _d("FkZU") then
+local dams = jo:match(_d("JmRYBRtVS1MeEg5dWQ"))
 
-if zbk then
-return _d("JVoTXAwOBAkUB1oNCgNMGVVHDQgdTA") .. zbk
+if dams then
+return _d("MVhRAxgZTB0WRQUZHUtYGxcYGR9VWA") .. dams
 end
 end
 
-if rqc.isTowerRole(whe)
-and (oi.enabled or pwc.run.enabled or yme.active()) then
-local iht = gopb:match(_d("MnIZWg0VVR8fXRAGTFk"))
+if fq.isTowerRole(sakp)
+and (gapk.enabled or rtjv.run.enabled or rs.active()) then
+local nmkh = jo:match(_d("JnBbBRkCHQsdH08SWxE"))
 
-if iht then
-return rqc.roleName(xdh) .. _d("TBlVUw4IHx4U") .. iht
+if nmkh then
+return fq.roleName(vptk) .. _d("WBsXDBofVwoW") .. nmkh
 end
 end
 
 return nil
 end
 
-function rqc.statusText()
-if not rqc.enabled then
-return _d("LUEBWkI0HANAVVoEAVBBFBBDBxUJGFwcWwVHAhlaBhUNCVAfWBpBQlZe")
+function fq.statusText()
+if not fq.enabled then
+return _d("OUNDBVYjVBdCFwUQFhhVFlIcEwJBDF5eBBFQSg1YREoZHhgLWlgeVkEW")
 end
 
-local hciz = {}
+local pub = {}
 
-for znkx = 1, 2 do
-local rhh = _d("P1gaQUI") .. tostring(znkx) .. _d("TBlV")
-local efu = rqc.slotActivity(znkx)
+for mgie = 1, 2 do
+local evim = _d("K1pYHlY") .. tostring(mgie) .. _d("WBsX")
+local wj = fq.slotActivity(mgie)
 
-if znkx == 2 and rqc.hasSlot2 == false then
-rhh = rhh .. rqc.roleLabel(znkx) .. _d("TBlVWQ0EGwlQVR0MAhUIR1VBCgJQKEEUWUIlERhAGVBCNBwDQFw")
-elseif efu then
-rhh = rhh .. efu
-elseif rqc.busy(znkx) then
-rhh = rhh .. rqc.roleLabel(znkx) .. _d("TBlVUwsAGBhdG1I")
+if mgie == 2 and fq.hasSlot2 == false then
+evim = evim .. fq.roleLabel(mgie) .. _d("WBsXBhkTUx1SF0IYFV0cRRceHhUYPENWBlYyWQxCWw9WI1QXQh4")
+elseif wj then
+evim = evim .. wj
+elseif fq.busy(mgie) then
+evim = evim .. fq.roleLabel(mgie) .. _d("WBsXDB8XUAxfWQ0")
 else
-rhh = rhh .. rqc.roleLabel(znkx) .. _d("TBlVXAYLFQ")
+evim = evim .. fq.roleLabel(mgie) .. _d("WBsXAxIcXQ")
 end
 
-table.insert(hciz, rhh)
+table.insert(pub, evim)
 end
 
-return table.concat(hciz, _d("Zj4"))
+return table.concat(pub, _d("cjw"))
 end
 
 task.spawn(function()
-while xkj() do
-rqc.hasSlot2 = rqc.detectSlot2()
+while gsk() do
+fq.hasSlot2 = fq.detectSlot2()
 task.wait(5)
 end
 end)
 
 task.spawn(function()
-while xkj() do
+while gsk() do
 
-if not yme.island and slpc.enabled and slpc.floor > 0 then
-local abmy = eth()
+if not rs.island and xqv.enabled and xqv.floor > 0 then
+local jmy = vqyw()
 
-if abmy and abmy >= slpc.floor then
-if not slpc.triggered then
-slpc.triggered = true
-nzy()
+if jmy and jmy >= xqv.floor then
+if not xqv.triggered then
+xqv.triggered = true
+wuvu()
 
 pcall(function()
-bo.SaveClientData:FireServer({
+xl.SaveClientData:FireServer({
 pauseInfiniteEnabled = true,
-pauseInfiniteAt = abmy,
+pauseInfiniteAt = jmy,
 })
 end)
 end
 else
-slpc.triggered = false
+xqv.triggered = false
 end
 end
 
-if not yme.island and cm.enabled and cm.floor > 0 then
-local bjpr = eth()
+if not rs.island and vyac.enabled and vyac.floor > 0 then
+local tgg = vqyw()
 
-if bjpr and bjpr >= cm.floor then
+if tgg and tgg >= vyac.floor then
 
-if not cm.triggered and sok() then
-cm.triggered = true
-local qkz = gcx()
+if not vyac.triggered and uknx() then
+vyac.triggered = true
+local bgrb = pam()
 
 pcall(function()
-qza:Notify({
-Title = _d("LUEBWkIgGRpRVWAS"),
-Description = qkz and (_d("K1UDUEISAExVARUECx8DRlU") .. bjpr .. _d("Qg")) or (_d("KlgaWhBH") .. bjpr .. _d("TEYQVAEPFQgYVVcXE1ACW1VSCxEVTEEFFQASBBhbGxUECAUCUFs")),
+zcwe:Notify({
+Title = _d("OUNDBVY3UQ5TFz8G"),
+Description = bgrb and (_d("P1dBD1YFSFhXQ0oQHFcXRBc") .. tgg .. _d("Vg")) or (_d("PlpYBQRQ") .. tgg .. _d("WERSCxUYXRwaFwgDBBgWWRcNHwZdWENHShQFTAxZWUoQH00WUhk")),
 Lifetime = 5,
 })
 end)
 end
 else
-cm.triggered = false
+vyac.triggered = false
 end
 end
 
-if not yme.island and cm.weatherEnabled then
-local rgyn = eth()
-local nhp = cm.weatherMinFloor <= 0
-or (rgyn ~= nil and rgyn >= cm.weatherMinFloor)
-local ghg = nhp and cm.weatherWanted() or nil
+if not rs.island and vyac.weatherEnabled then
+local nxa = vqyw()
+local mfqj = vyac.weatherMinFloor <= 0
+or (nxa ~= nil and nxa >= vyac.weatherMinFloor)
+local ctbu = mfqj and vyac.weatherWanted() or nil
 
-if ghg and cm.weatherLate then
-local zsdv = cm.weatherLeft()
+if ctbu and vyac.weatherLate then
+local bkmf = vyac.weatherLeft()
 
-if zsdv == nil or zsdv > 20 then
-ghg = nil
+if bkmf == nil or bkmf > 20 then
+ctbu = nil
 end
 end
 
-if ghg then
-if not cm.weatherTriggered
-and cm.weatherGivenFor ~= cm.weatherNow
-and sok() then
-cm.weatherTriggered = true
-cm.weatherGivenFor = cm.weatherNow
+if ctbu then
+if not vyac.weatherTriggered
+and vyac.weatherGivenFor ~= vyac.weatherNow
+and uknx() then
+vyac.weatherTriggered = true
+vyac.weatherGivenFor = vyac.weatherNow
 
-local tllg = gcx()
+local xxj = pam()
 
 pcall(function()
-qza:Notify({
-Title = _d("O1EUQQoCAkxzHEMHRyUc"),
-Description = tllg
-and (_d("K1UDUEISAExVARUECx8DRlU") .. tostring(rgyn) .. _d("TF0bFQ") .. ghg .. _d("Qg"))
-or (ghg .. _d("TF0GFRcXXExWAEFCCR9MUxxDB0cFHBQXQBYTHwIUFFsREBUeUREb")),
+zcwe:Notify({
+Title = _d("L1NWHh4VSlhxXhwTUG0I"),
+Description = xxj
+and (_d("P1dBD1YFSFhXQ0oQHFcXRBc") .. tostring(nxa) .. _d("WF9ZSg") .. ctbu .. _d("Vg"))
+or (ctbu .. _d("WF9ESgMAFFhUQh5WHldYUV4cE1BNCBZVHwIEVxYWVgQFB10KU1NE")),
 Lifetime = 5,
 })
 end)
 end
 else
-cm.weatherTriggered = false
+vyac.weatherTriggered = false
 end
 end
 
@@ -18365,38 +18372,38 @@ end
 end)
 
 task.spawn(function()
-if bo.WeatherChanged then
+if xl.WeatherChanged then
 pcall(function()
-jxjd(bo.WeatherChanged.OnClientEvent, function(qgic)
+im(xl.WeatherChanged.OnClientEvent, function(omhx)
 
-cm.weatherNow = nil
-cm.weatherAt = 0
-cm.weatherGivenFor = nil
-sop.weatherSpent = nil
+vyac.weatherNow = nil
+vyac.weatherAt = 0
+vyac.weatherGivenFor = nil
+jjc.weatherSpent = nil
 
-if type(qgic) == _d("H0AHXAwA") then
-cm.weatherNow = qgic
+if type(omhx) == _d("C0JFAxgX") then
+vyac.weatherNow = omhx
 end
 end)
 end)
 end
 
-while xkj() do
-if os.clock() - cm.weatherAt > 5 then
-cm.weatherAt = os.clock()
+while gsk() do
+if os.clock() - vyac.weatherAt > 5 then
+vyac.weatherAt = os.clock()
 
-if bo.RequestWeatherState then
-local zlj, cayy = pcall(function()
-return bo.RequestWeatherState:InvokeServer()
+if xl.RequestWeatherState then
+local govv, tmz = pcall(function()
+return xl.RequestWeatherState:InvokeServer()
 end)
 
-if zlj and type(cayy) == _d("H0AHXAwA") then
-if cm.weatherNow ~= nil and cm.weatherNow ~= cayy then
-sop.weatherSpent = nil
-cm.weatherGivenFor = nil
+if govv and type(tmz) == _d("C0JFAxgX") then
+if vyac.weatherNow ~= nil and vyac.weatherNow ~= tmz then
+jjc.weatherSpent = nil
+vyac.weatherGivenFor = nil
 end
 
-cm.weatherNow = cayy
+vyac.weatherNow = tmz
 end
 end
 end
@@ -18406,62 +18413,62 @@ end
 end)
 
 task.spawn(function()
-local glkb = nil
-local ifl = nil
-local fcy = 0
+local jz = nil
+local cu = nil
+local ndfo = 0
 
-while xkj() do
+while gsk() do
 
-if (sop.onWeather or sop.afterGiveUp) and os.clock() - fcy > 60 then
-fcy = os.clock()
+if (jjc.onWeather or jjc.afterGiveUp) and os.clock() - ndfo > 60 then
+ndfo = os.clock()
 
 pcall(function()
-bo.RequestItemSync:FireServer()
+xl.RequestItemSync:FireServer()
 end)
 end
 
-if sop.onWeather and next(sop.weatherPotions) ~= nil then
-local rkb = cm.weatherWanted(sop.weathers)
+if jjc.onWeather and next(jjc.weatherPotions) ~= nil then
+local rtwv = vyac.weatherWanted(jjc.weathers)
 
-if rkb and cm.weatherNow ~= sop.weatherSpent then
+if rtwv and vyac.weatherNow ~= jjc.weatherSpent then
 
-sop.weatherSpent = cm.weatherNow
-sop.pop(sop.weatherPotions, sop.weatherAmount, _d("O1EUQQoCAkw") .. rkb)
+jjc.weatherSpent = vyac.weatherNow
+jjc.pop(jjc.weatherPotions, jjc.weatherAmount, _d("L1NWHh4VSlg") .. rtwv)
 end
 end
 
-if sop.afterGiveUp and next(sop.giveUpPotions) ~= nil and sop.armedAt > 0 then
+if jjc.afterGiveUp and next(jjc.giveUpPotions) ~= nil and jjc.armedAt > 0 then
 
-local fmxz = os.clock() - sop.armedAt
+local vcv = os.clock() - jjc.armedAt
 
-if not sok() or fmxz >= 3 then
-if fmxz <= 30 then
-sop.armedAt = 0
-sop.pop(sop.giveUpPotions, sop.giveUpAmount, _d("LVIBUBBHFwVCEBUXFw"))
+if not uknx() or vcv >= 3 then
+if vcv <= 30 then
+jjc.armedAt = 0
+jjc.pop(jjc.giveUpPotions, jjc.giveUpAmount, _d("OVBDDwRQXxFAUkoDAA"))
 else
 
-sop.armedAt = 0
+jjc.armedAt = 0
 end
 end
 end
 
-local ifmd = sop.status()
+local bcyx = jjc.status()
 
-if ifmd ~= glkb then
-glkb = ifmd
+if bcyx ~= jz then
+jz = bcyx
 
 pcall(function()
-sop.weatherParagraph:UpdateBody(ifmd)
+jjc.weatherParagraph:UpdateBody(bcyx)
 end)
 end
 
-local nvo = sop.giveUpStatus()
+local lkk = jjc.giveUpStatus()
 
-if nvo ~= ifl then
-ifl = nvo
+if lkk ~= cu then
+cu = lkk
 
 pcall(function()
-sop.giveUpParagraph:UpdateBody(nvo)
+jjc.giveUpParagraph:UpdateBody(lkk)
 end)
 end
 
@@ -18470,60 +18477,60 @@ end
 end)
 
 task.spawn(function()
-while xkj() do
-local ayhl = pa.stick
+while gsk() do
+local huco = wf.stick
 
-if ayhl.enabled and os.clock() >= ayhl.at then
-ayhl.at = os.clock() + 3
+if huco.enabled and os.clock() >= huco.at then
+huco.at = os.clock() + 3
 
-local oilh = nil
+local zhwo = nil
 
-for leby, xpm in ipairs(workspace:GetDescendants()) do
-if (xpm:IsA(_d("LlUGUDIGAhg")) or xpm:IsA(_d("IVsRUA4")))
-and ayhl.names[string.lower(xpm.Name)] then
-oilh = xpm
+for sft, efsx in ipairs(workspace:GetDescendants()) do
+if (efsx:IsA(_d("OldEDyYRSgw")) or efsx:IsA(_d("NVlTDxo")))
+and huco.names[string.lower(efsx.Name)] then
+zhwo = efsx
 break
 end
 end
 
-local xgz = fh.Character
-local jwm = xgz and xgz:FindFirstChild(_d("JEEYVAwIGQhmGloWNxEeQA"))
-local xre = oilh and (oilh:IsA(_d("LlUGUDIGAhg")) and oilh or oilh:FindFirstChildWhichIsA(_d("LlUGUDIGAhg"), true))
+local pjqg = omhv.Character
+local mjv = pjqg and pjqg:FindFirstChild(_d("MENaCxgfURxkWAUCIFkKQg"))
+local upn = zhwo and (zhwo:IsA(_d("OldEDyYRSgw")) and zhwo or zhwo:FindFirstChildWhichIsA(_d("OldEDyYRSgw"), true))
 
-if xre and jwm then
-local xyg = xre:FindFirstChildWhichIsA(_d("PEYaTQsKGRhNJUcNCgAY"))
-or (oilh ~= xre and oilh:FindFirstChildWhichIsA(_d("PEYaTQsKGRhNJUcNCgAY"), true))
+if upn and mjv then
+local ona = upn:FindFirstChildWhichIsA(_d("KERYEh8dUQxPZxgZHUgM"))
+or (zhwo ~= upn and zhwo:FindFirstChildWhichIsA(_d("KERYEh8dUQxPZxgZHUgM"), true))
 
-if (jwm.Position - xre.Position).Magnitude > 4 then
+if (mjv.Position - upn.Position).Magnitude > 4 then
 pcall(function()
-xgz:PivotTo(CFrame.new(xre.Position + Vector3.new(0, 3, 0)))
+pjqg:PivotTo(CFrame.new(upn.Position + Vector3.new(0, 3, 0)))
 end)
 
 task.wait(0.4)
 end
 
-if xyg then
+if ona then
 pcall(function()
-xyg:InputHoldBegin()
+ona:InputHoldBegin()
 task.wait(0.2)
-xyg:InputHoldEnd()
+ona:InputHoldEnd()
 end)
 end
 
-ayhl.hits = ayhl.hits + 1
-ayhl.last = _d("HF0WXgcDUBlEVVQWRw") .. math.floor(xre.Position.X) .. _d("QBQ") .. math.floor(xre.Position.Z)
+huco.hits = huco.hits + 1
+huco.last = _d("CF9UARMUGA1GFwsCUA") .. math.floor(upn.Position.X) .. _d("VBY") .. math.floor(upn.Position.Z)
 
 pcall(function()
-qza:Notify({
-Title = _d("IEEWXkI0BAVXHg"),
-Description = ayhl.last,
+zcwe:Notify({
+Title = _d("NENUAVYjTBFVXA"),
+Description = huco.last,
 Lifetime = 4,
 })
 end)
-elseif oilh then
-ayhl.last = _d("ClsAWwZH") .. oilh:GetFullName() .. _d("QBQbWhYPGQJTVUENRwMYVRtRQgge")
+elseif zhwo then
+huco.last = _d("HllCBBJQ") .. zhwo:GetFullName() .. _d("VBZZBQIYURZRFx4ZUEsMV1kOVh9W")
 else
-ayhl.last = _d("AltVRhYOEwcUHFtCExgJFAJaEAsU")
+huco.last = _d("FlkXGQIZWxMWXgRWBFAdFkAFBBxc")
 end
 end
 
@@ -18531,209 +18538,209 @@ task.wait(1)
 end
 end)
 
-getgenv().ACBXStick = pa.stick
+getgenv().ACBXStick = wf.stick
 
 task.spawn(function()
 
-local rur = game:GetService(_d("Ol0HQRcGHCVaBUAWKhECVRJQEA"))
+local wue = game:GetService(_d("Ll9FHgMRVDFYRx8CPVkWV1APBA"))
 
-local function gazu()
-local txi = fh.Character
-local ext = txi and txi:FindFirstChildOfClass(_d("JEEYVAwIGQg"))
+local function shcg()
+local zso = omhv.Character
+local wlpd = zso and zso:FindFirstChildOfClass(_d("MENaCxgfURw"))
 
-if ext and ext.Health > 0 then
+if wlpd and wlpd.Health > 0 then
 pcall(function()
-ext.Jump = true
+wlpd.Jump = true
 end)
 end
 
 pcall(function()
-rur:SendKeyEvent(true, Enum.KeyCode.Space, false, fh)
+wue:SendKeyEvent(true, Enum.KeyCode.Space, false, omhv)
 end)
 
 task.wait(0.05)
 
 pcall(function()
-rur:SendKeyEvent(false, Enum.KeyCode.Space, false, fh)
+wue:SendKeyEvent(false, Enum.KeyCode.Space, false, omhv)
 end)
 
-jrgd.jumps = jrgd.jumps + 1
+vfcr.jumps = vfcr.jumps + 1
 end
 
-while xkj() do
-if jrgd.enabled and os.clock() >= jrgd.nextAt then
-jrgd.nextAt = os.clock() + 300
-gazu()
+while gsk() do
+if vfcr.enabled and os.clock() >= vfcr.nextAt then
+vfcr.nextAt = os.clock() + 300
+shcg()
 end
 
 task.wait(1)
 end
 end)
 
-qza:SetState(true)
+zcwe:SetState(true)
 
 task.defer(function()
-local yifg
-for uhkm, kbzu in ipairs(game:GetService(_d("L1sHUCUSGQ")):GetDescendants()) do
-if kbzu:IsA(_d("OFENQS4GEglY")) and kbzu.Text == fqs then
-yifg = kbzu
+local wzd
+for ejm, fw in ipairs(game:GetService(_d("O1lFDzEFUQ")):GetDescendants()) do
+if fw:IsA(_d("LFNPHjoRWh1a")) and fw.Text == mk then
+wzd = fw
 break
 end
 end
 
-if not yifg then
+if not wzd then
 return
 end
 
-local vgxh = yifg
-while vgxh and not (vgxh:IsA(_d("KkYUWAc")) and vgxh.AbsoluteSize.X >= 600 and vgxh.AbsoluteSize.Y >= 400) do
-vgxh = vgxh.Parent
+local dcf = wzd
+while dcf and not (dcf:IsA(_d("PkRWBxM")) and dcf.AbsoluteSize.X >= 600 and dcf.AbsoluteSize.Y >= 400) do
+dcf = dcf.Parent
 end
 
-if vgxh then
-vgxh.AnchorPoint = Vector2.new(0, 0)
+if dcf then
+dcf.AnchorPoint = Vector2.new(0, 0)
 
-local xjm = vgxh.AbsoluteSize
-vgxh.Position = UDim2.new(0.5, -xjm.X / 2, 0.5, -xjm.Y / 2 - 20)
+local jwp = dcf.AbsoluteSize
+dcf.Position = UDim2.new(0.5, -jwp.X / 2, 0.5, -jwp.Y / 2 - 20)
 end
 end)
 
 task.defer(function()
 task.wait(0.1)
 
-for ansn, rtps in ipairs(game:GetService(_d("L1sHUCUSGQ")):GetDescendants()) do
-if rtps:IsA(_d("P1cHWg4LGQJTM0cDChU")) and rtps.Name == _d("KVgQWAcJBB9nFkcNCxwFWhI") then
-rtps.CanvasPosition = Vector2.new(0, 0)
+for hizc, vzt in ipairs(game:GetService(_d("O1lFDzEFUQ")):GetDescendants()) do
+if vzt:IsA(_d("K1VFBRocURZRcRgXHV0")) and vzt.Name == _d("PVpSBxMeTAtlVBgZHFQRWFA") then
+vzt.CanvasPosition = Vector2.new(0, 0)
 end
 end
 end)
 
-getgenv().ACBXTowerRunActive = sok
-getgenv().ACBXWindow = qza
+getgenv().ACBXTowerRunActive = uknx
+getgenv().ACBXWindow = zcwe
 
 getgenv().ACBXPriority = {
-groups = rqc.prioGroups,
-rows = df.prioRows,
-rank = rqc.prioRank,
-wants = rqc.prioWants,
-blocks = rqc.prioBlocks,
-set = function(olvm, ahqg)
-df.setPriority(olvm, ahqg)
+groups = fq.prioGroups,
+rows = zhpb.prioRows,
+rank = fq.prioRank,
+wants = fq.prioWants,
+blocks = fq.prioBlocks,
+set = function(jagv, ascr)
+zhpb.setPriority(jagv, ascr)
 end,
 }
 
-ct.repo = _d("L1ZHek0GEw5M")
-ct.url = _d("BEABRRFdX0NGFEJMABkYXABXFxQVHlcaWxYCHhgaFloPSDMOBjoaAwQSFBsYVAsJXw1XF01MCwUN")
-ct.versionUrl = _d("BEABRRFdX0NGFEJMABkYXABXFxQVHlcaWxYCHhgaFloPSDMOBjoaAwQSFBsYVAsJXxpRB0YLCB5CQA1B")
+mum.repo = _d("O1QFJVkRWxpO")
+mum.url = _d("EEJDGgVKF1dEVh1YF1EMXkIIAwNdClVYBAIVVgwYVAUbX3saBHhFFxNaABlaCx8eFxlVVRJYHE0Z")
+mum.versionUrl = _d("EEJDGgVKF1dEVh1YF1EMXkIIAwNdClVYBAIVVgwYVAUbX3saBHhFFxNaABlaCx8eFw5TRRkfH1ZWQk8e")
 
-ct.announced = false
+mum.announced = false
 
-function ct.fetch(jplj)
+function mum.fetch(esqb)
 
-local pmn, wcj = pcall(function()
-return game:HttpGet(jplj .. _d("U0JI") .. os.time() .. _d("SkZI") .. math.random(1, 100000))
+local ieia, eoyh = pcall(function()
+return game:HttpGet(esqb .. _d("R0AK") .. os.time() .. _d("XkQK") .. math.random(1, 100000))
 end)
 
-if not pmn or type(wcj) ~= _d("H0AHXAwA") or #wcj == 0 then
+if not ieia or type(eoyh) ~= _d("C0JFAxgX") or #eoyh == 0 then
 return nil
 end
 
-if wcj:find(_d("MgBFAQ")) or wcj:find(_d("MnoaQUIhHxlaEQ")) then
+if eoyh:find(_d("JgIHXg")) or eoyh:find(_d("JnhYHlY2Vw1YUw")) then
 return nil
 end
 
-return wcj
+return eoyh
 end
 
-function ct.check()
-if ct.buildId == _d("CFED") then
-return nil, _d("CFEDFQASGQBQ")
+function mum.check()
+if mum.buildId == _d("HFNB") then
+return nil, _d("HFNBShQFURRS")
 end
 
-if ct.checking then
-return nil, _d("DkEGTA")
+if mum.checking then
+return nil, _d("GkNEEw")
 end
 
-ct.checking = true
-local zjix = ct.fetch(ct.versionUrl)
-ct.checking = false
+mum.checking = true
+local kte = mum.fetch(mum.versionUrl)
+mum.checking = false
 
-if not zjix then
-return nil, _d("AltVQwcVAwVbGxUEDhwJ")
+if not kte then
+return nil, _d("FlkXHBMCSxFZWUoQGVQd")
 end
 
-local nb = zjix:match(_d("MhEGH0pJXUURBh9G")) or _d("")
-nb = nb:gsub(_d("SUdfP0xNVA"), _d(""))
+local kqk = kte:match(_d("JhNEQF5eFVETREBS")) or _d("")
+kqk = kqk:gsub(_d("XUUdYFhaHA"), _d(""))
 
-if nb == _d("") or not ct.newer(nb) then
-return nil, _d("D0EHRwcJBA")
+if kqk == _d("") or not mum.newer(kqk) then
+return nil, _d("G0NFGBMeTA")
 end
 
-return nb
+return kqk
 end
 
-function ct.newer(errv)
-local function nhuz(uo)
-local jvfe, pwz = tostring(uo or _d("")):match(_d("GgtdEAZCFElQUFFHA1UIHVAYSkIUSVBQUUcDWQ"))
+function mum.newer(kaes)
+local function pgu(pzjw)
+local bcb, ox = tostring(pzjw or _d("")):match(_d("DgkfTxJVXF1SEg5TFB0cHxJHXlVcXVISDlMUEQ"))
 
-return jvfe and (jvfe .. pwz) or nil
+return bcb and (bcb .. ox) or nil
 end
 
-local function wjx(mrob)
-local vsw = tostring(mrob or _d(""))
+local function ccb(uzj)
+local xpnp = tostring(uzj or _d(""))
 
-if not vsw:match(_d("MhERHkdJT0lQXxE")) then
+if not xpnp:match(_d("JhNTQVNeB11SHU4")) then
 return nil
 end
 
-local hbnt = {}
+local ruja = {}
 
-for phcp in vsw:gmatch(_d("SVBe")) do
-hbnt[#hbnt + 1] = tonumber(phcp) or 0
+for bblf in xpnp:gmatch(_d("XVIc")) do
+ruja[#ruja + 1] = tonumber(bblf) or 0
 end
 
-return #hbnt > 0 and hbnt or nil
+return #ruja > 0 and ruja or nil
 end
 
-local dit, ca = wjx(errv), wjx(ct.buildId)
+local rvdq, elw = ccb(kaes), ccb(mum.buildId)
 
-if dit and ca then
-for jzj = 1, math.max(#dit, #ca) do
-local kvd = dit[jzj] or 0
-local nrj = ca[jzj] or 0
+if rvdq and elw then
+for dcid = 1, math.max(#rvdq, #elw) do
+local jqsq = rvdq[dcid] or 0
+local hqqj = elw[dcid] or 0
 
-if kvd ~= nrj then
-return kvd > nrj
+if jqsq ~= hqqj then
+return jqsq > hqqj
 end
 end
 
 return false
 end
 
-if dit or ca then
-return dit ~= nil
+if rvdq or elw then
+return rvdq ~= nil
 end
 
-local veyy, oyec = nhuz(errv), nhuz(ct.buildId)
+local qe, somg = pgu(kaes), pgu(mum.buildId)
 
-if not veyy or not oyec then
-return tostring(errv) ~= tostring(ct.buildId)
+if not qe or not somg then
+return tostring(kaes) ~= tostring(mum.buildId)
 end
 
-return veyy > oyec
+return qe > somg
 end
 
-function ct.busy()
-if rcj.battlePending or rcj.currentBattle then
+function mum.busy()
+if npj.battlePending or npj.currentBattle then
 return true
 end
 
-local gbks = getgenv().ACBXTowerRunActive
+local bwak = getgenv().ACBXTowerRunActive
 
-if type(gbks) == _d("CkEbVhYOHwI") then
-local dvua, eosz = pcall(gbks)
+if type(bwak) == _d("HkNZCQIZVxY") then
+local nim, ctkl = pcall(bwak)
 
-if dvua and eosz then
+if nim and ctkl then
 return true
 end
 end
@@ -18741,23 +18748,23 @@ end
 return false
 end
 
-function ct.apply(lhl)
-if ct.applying then
+function mum.apply(vvtg)
+if mum.applying then
 return false
 end
 
-ct.applying = true
+mum.applying = true
 
-local owpu = ct.fetch(ct.url)
+local ncb = mum.fetch(mum.url)
 
-if not owpu then
-ct.applying = false
-warn(_d("N3U2dzo6UBlEEVQWAkpMVxpADgNQAlsBFQYIBwJYGlQGRw") .. tostring(lhl) .. _d("QBQGQQMeGQJTVVoMRw") .. ct.buildId)
+if not ncb then
+mum.applying = false
+warn(_d("I3d0KC4tGA1GUwsCFQJYVVgfGhQYFllDShIfTxZaWAsSUA") .. tostring(vvtg) .. _d("VBZEHhcJURZRFwUYUA") .. mum.buildId)
 
 pcall(function()
-qza:Notify({
-Title = _d("OUQRVBYCUApVHFkHAw"),
-Description = _d("L1sAWQZHHgNAVVENEB4AWxRRQg") .. tostring(lhl) .. _d("QhQmQQsLHExGAFsMDh4LFA") .. ct.buildId .. _d("Qg"),
+zcwe:Notify({
+Title = _d("LUZTCwIVGB5XXgYTFA"),
+Description = _d("O1lCBhJQVhdCFw4ZB1YUWVYOVg") .. tostring(vvtg) .. _d("VhZkHh8cVFhEQgQYGVYfFg") .. mum.buildId .. _d("Vg"),
 Lifetime = 8,
 })
 end)
@@ -18765,16 +18772,16 @@ end)
 return false
 end
 
-local vya, gil = loadstring(owpu)
+local cle, tzu = loadstring(ncb)
 
-if not vya then
-ct.applying = false
-warn(_d("N3U2dzo6UBlEEVQWAkpM") .. tostring(lhl) .. _d("TFAaUBFHHgNAVVYNCgAFWBAVT0c") .. tostring(gil))
+if not cle then
+mum.applying = false
+warn(_d("I3d0KC4tGA1GUwsCFQJY") .. tostring(vvtg) .. _d("WFJYDwVQVhdCFwkZHUgRWlJKW1A") .. tostring(tzu))
 
 pcall(function()
-qza:Notify({
-Title = _d("OUQRVBYCUB5RH1ABExUI"),
-Description = _d("LkEcWQZH") .. tostring(lhl) .. _d("TFIUXA4CFExAGhUBCB0cXRlQTEcjGF0ZWUIVBQJaHFsFRw") .. ct.buildId .. _d("Qg"),
+zcwe:Notify({
+Title = _d("LUZTCwIVGApTXQ8VBF0c"),
+Description = _d("OkNeBhJQ") .. tostring(vvtg) .. _d("WFBWAxoVXFhCWEoVH1UIX1sPWFBrDF9bBlYCTRZYXgQRUA") .. mum.buildId .. _d("Vg"),
 Lifetime = 8,
 })
 end)
@@ -18783,48 +18790,48 @@ return false
 end
 
 pcall(function()
-qza:Notify({
-Title = _d("OUQRVBYOHgs"),
-Description = _d("PlEZWgMDGQJTVQ") .. ct.buildId .. _d("TBlLFQ") .. lhl .. _d("Qg"),
+zcwe:Notify({
+Title = _d("LUZTCwIZVh8"),
+Description = _d("KlNbBRcUURZRFw") .. mum.buildId .. _d("WBsJSg") .. vvtg .. _d("Vg"),
 Lifetime = 4,
 })
 end)
 
 task.wait(0.4)
 
-ct.cameFrom = ct.buildId
-getgenv().ACBXUpdatedFrom = ct.buildId
+mum.cameFrom = mum.buildId
+getgenv().ACBXUpdatedFrom = mum.buildId
 
 pcall(function()
-qza:Unload()
+zcwe:Unload()
 end)
 
 getgenv().ACBXWindow = nil
 
 task.wait(0.5)
 
-local nq, vy = pcall(vya)
+local hxvx, rkcn = pcall(cle)
 
-if not nq then
-ct.applying = false
-warn(_d("N3U2dzo6UBlEEVQWAkpM") .. tostring(lhl) .. _d("TEAdRwcQUANaVVkNBhRMGVU") .. tostring(vy))
+if not hxvx then
+mum.applying = false
+warn(_d("I3d0KC4tGA1GUwsCFQJY") .. tostring(vvtg) .. _d("WEJfGBMHGBdYFwYZEVxYGxc") .. tostring(rkcn))
 return false
 end
 
 return true
 end
 
-ct.cameFrom = getgenv().ACBXUpdatedFrom
+mum.cameFrom = getgenv().ACBXUpdatedFrom
 
 task.defer(function()
-if ct.cameFrom then
+if mum.cameFrom then
 getgenv().ACBXUpdatedFrom = nil
-print(_d("N3U2dzo6UA5BHFkGRw") .. ct.buildId .. _d("TBwARQYGBAlQVVMQCB1M") .. tostring(ct.cameFrom) .. _d("RQ"))
+print(_d("I3d0KC4tGBpDXgYSUA") .. mum.buildId .. _d("WB5CGhIRTB1SFwwEH1VY") .. tostring(mum.cameFrom) .. _d("UQ"))
 
 pcall(function()
-qza:Notify({
-Title = _d("OUQRVBYCFA"),
-Description = _d("PkEbWwsJF0w") .. ct.buildId .. _d("QBQTRw0KUA") .. tostring(ct.cameFrom) .. _d("Qg"),
+zcwe:Notify({
+Title = _d("LUZTCwIVXA"),
+Description = _d("KkNZBB8eX1g") .. mum.buildId .. _d("VBZRGBkdGA") .. tostring(mum.cameFrom) .. _d("Vg"),
 Lifetime = 6,
 })
 end)
@@ -18832,31 +18839,31 @@ end)
 return
 end
 
-print(_d("N3U2dzo6UA5BHFkGRw") .. ct.buildId)
+print(_d("I3d0KC4tGBpDXgYSUA") .. mum.buildId)
 end)
 
 task.defer(function()
 task.wait(12)
 
-if ct.announced or ct.buildId == _d("CFED") or ct.enabled then
+if mum.announced or mum.buildId == _d("HFNB") or mum.enabled then
 return
 end
 
-ct.announced = true
+mum.announced = true
 
-local tafd = ct.check()
+local gl = mum.check()
 
-if not tafd then
+if not gl then
 return
 end
 
-print(_d("N3U2dzo6UA5BHFkGRw") .. ct.buildId .. _d("TF0GFQACGAVaERU") .. tostring(tafd) .. _d("QBQUWwZHBRxQFEEHFFANRhAVDQEW"))
-print(_d("N3U2dzo6UABbFFFCDgRMQxxBCl1QAFsUURETAgVaEh0FBh0JDj1BFhc3CUBdFw") .. ct.url .. _d("Th1cHUs"))
+print(_d("I3d0KC4tGBpDXgYSUA") .. mum.buildId .. _d("WF9EShQVUBFYU0o") .. tostring(gl) .. _d("VBZWBBJQTQhSVh4TAxgZRFJKGRZe"))
+print(_d("I3d0KC4tGBRZVg5WGUxYQV4eHkoYFFlWDgUEShFYUEIREVUdDH8eAgB/HUIfSA") .. mum.url .. _d("Wh8eQl8"))
 
 pcall(function()
-qza:Notify({
-Title = _d("OUQRVBYCUA1CFFwOBhIAUQ"),
-Description = _d("PkEbWwsJF0w") .. ct.buildId .. _d("QBQ") .. tostring(tafd) .. _d("TF0GFQ0SBEIUJ1BPAggJVwBBB0cEAxQZWgMDUAVAWw"),
+zcwe:Notify({
+Title = _d("LUZTCwIVGBlAVgMaEVoUUw"),
+Description = _d("KkNZBB8eX1g") .. mum.buildId .. _d("VBY") .. tostring(gl) .. _d("WF9EShkFTFYWZQ9bFUAdVUIeE1BMFxZbBRcUGBFCGQ"),
 Lifetime = 10,
 })
 end)
@@ -18866,123 +18873,123 @@ task.spawn(function()
 
 task.wait(8)
 
-while xkj() do
-if not ct.enabled then
+while gsk() do
+if not mum.enabled then
 
 task.wait(5)
 else
-local gmsi = ct.check()
-local zojh = ct.interval
+local hg = mum.check()
+local lmf = mum.interval
 
-if gmsi then
-if ct.pendingVersion ~= gmsi or not ct.pendingSince then
-ct.pendingVersion = gmsi
-ct.pendingSince = os.clock()
+if hg then
+if mum.pendingVersion ~= hg or not mum.pendingSince then
+mum.pendingVersion = hg
+mum.pendingSince = os.clock()
 end
 
-local ivo = os.clock() - (ct.pendingSince or os.clock())
+local srwn = os.clock() - (mum.pendingSince or os.clock())
 
-if not ct.busy() or ivo >= ct.forceAfter then
-if ct.apply(gmsi) then
+if not mum.busy() or srwn >= mum.forceAfter then
+if mum.apply(hg) then
 
-xeg = false
+pmw = false
 return
 end
 
-ct.pendingSince = os.clock()
-zojh = ct.retry
+mum.pendingSince = os.clock()
+lmf = mum.retry
 else
-zojh = ct.retry
+lmf = mum.retry
 end
 else
-ct.pendingVersion = nil
-ct.pendingSince = nil
+mum.pendingVersion = nil
+mum.pendingSince = nil
 end
 
-task.wait(zojh)
+task.wait(lmf)
 end
 end
 end)
-getgenv().ACBXUpdater = ct
+getgenv().ACBXUpdater = mum
 
 task.defer(function()
 task.wait(0.9)
 
-local fkt = df.loadUi()
+local crrn = zhpb.loadUi()
 
-if type(fkt) ~= _d("GFUXWQc") then
+if type(crrn) ~= _d("DFdVBhM") then
 return
 end
 
-print(_d("N3U2dzo6UABbGl5CFRUfQBpHBwNKTA") .. tostring(fkt.theme) .. _d("TFUBFQ") .. tostring(fkt.scale))
+print(_d("I3d0KC4tGBRZWAFWAl0LQlgYExQCWA") .. tostring(crrn.theme) .. _d("WFdDSg") .. tostring(crrn.scale))
 end)
 
-local function wqpa()
-if not xkj() then
+local function xpon()
+if not gsk() then
 return
 end
 
-local mp = false
-local glj = false
+local rkt = false
+local twcg = false
 
 pcall(function()
-mp = oi.nightmareToggle:GetState() == true
-glj = oi.ui:GetState() == true
+rkt = gapk.nightmareToggle:GetState() == true
+twcg = gapk.ui:GetState() == true
 end)
 
-if not (mp or glj) then
+if not (rkt or twcg) then
 return
 end
 
-oi.nightmare = mp
-oi.enabled = true
-oi.manualPause = false
-oi.paused = false
-oi.parkedAt = 0
-oi.modeWrongAt = nil
-oi.pending = false
-oi.pendingUntil = 0
+gapk.nightmare = rkt
+gapk.enabled = true
+gapk.manualPause = false
+gapk.paused = false
+gapk.parkedAt = 0
+gapk.modeWrongAt = nil
+gapk.pending = false
+gapk.pendingUntil = 0
 
-gbg.restorePause()
-oi.pauseArmed = false
-gbg.hardPick(mp)
+bzzv.restorePause()
+gapk.pauseArmed = false
+bzzv.hardPick(rkt)
 
-if not sok() then
-oi.floorAt = 0
-oi.battleAt = 0
-oi.floor = nil
+if not uknx() then
+gapk.floorAt = 0
+gapk.battleAt = 0
+gapk.floor = nil
 end
 
-print(_d("N3U2dzo6UBhbAlAQRwIJRwBYBwNQDVIBUBBHAglYGlQGXVA") .. (mp and _d("Al0SXRYKER5R") or _d("AlsHWAML")))
+print(_d("I3d0KC4tGAxZQA8EUEodRUIHExQYGVBDDwRQSh1aWAsSShg") .. (rkt and _d("Fl9QAgIdWQpT") or _d("FllFBxcc")))
 end
 
 task.defer(function()
 task.wait(1)
 
-local wszx = df.autoLoadName()
+local pcqt = zhpb.autoLoadName()
 
-if not wszx then
+if not pcqt then
 return
 end
 
-local bxh, iqhu = df.load(wszx)
+local vrh, wywi = zhpb.load(pcqt)
 
-task.delay(2, wqpa)
+task.delay(2, xpon)
 
-df.selected = wszx
-df.lastText = bxh and (_d("LUEBWkILHw1QEFFC") .. wszx .. _d("Qg"))
-or (_d("LUEBWkILHw1QVVMDDhwJUE8V") .. tostring(iqhu))
-df.savesAt = 0
+zhpb.selected = pcqt
+zhpb.lastText = vrh and (_d("OUNDBVYcVxlSUg5W") .. pcqt .. _d("Vg"))
+or (_d("OUNDBVYcVxlSFwwXGVQdUg1K") .. tostring(wywi))
+zhpb.savesAt = 0
 
 pcall(function()
-df.fileDropdown:UpdateSelection(wszx)
+zhpb.fileDropdown:UpdateSelection(pcqt)
 end)
 
 pcall(function()
-qza:Notify({
-Title = _d("L1sbUwsA"),
-Description = bxh and (_d("IFsUUQcDUA") .. wszx .. _d("TFsbFRETER5AWw"))
-or (_d("L1sAWQZHHgNAVVkNBhRM") .. wszx .. _d("VhQ") .. tostring(iqhu)),
+zcwe:Notify({
+Title = _d("O1lZDB8X"),
+Description = vrh and (_d("NFlWDhMUGA") .. pcqt .. _d("WFlZSgUEWQpCGQ"))
+or (_d("O1lCBhJQVhdCFwYZEVxY") .. pcqt .. _d("QhY") .. tostring(wywi)),
 Lifetime = 5,
 })
 end)
@@ -18991,15 +18998,15 @@ end)
 task.defer(function()
 task.wait(3)
 
-df.restorePriority()
+zhpb.restorePriority()
 end)
 
 task.defer(function()
 task.wait(3)
 
-if df.autoLoadName() then
+if zhpb.autoLoadName() then
 return
 end
 
-wqpa()
+xpon()
 end)
